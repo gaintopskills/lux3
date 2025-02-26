@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ParallaxHeader from '../components/ParallaxHeader.astro'
+import { TabsAccordion } from '../components/TabsAccordion.jsx'
+
+
+const structuredData = {
+	"@context": "https://schema.org",
+	"@type": "WebPage",
+	"name": "Welcome to Astro",
+	"description": "Build faster websites with Astro  - a modern static site builder that delivers lightning-fast performance",
+	"publisher": {
+		"@type": "Organization",
+		"name": "Astro",
+		"url": "https://astro.build"
+	},
+	"datePublished": new Date().toISOString(),
+	"dateModified": new Date().toISOString()
+};
+
+// Example breadcrumbs for the home page
+const breadcrumbs = [
+	{ text: 'Welcome' }
+];
+---
+
+<Layout
+	title="Welcome to Astro"
+	description="Build faster websites with Astro - a modern static site builder that delivers lightning-fast performance"
+	structuredData={structuredData}
+	
+>
+
+<ParallaxHeader />
+
+
+<TabsAccordion client:visible/>
+</Layout>

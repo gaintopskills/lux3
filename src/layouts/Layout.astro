@@ -1,0 +1,122 @@
+---
+import MegaMenu from '../components/MegaMenu.astro';
+import Credentials from '../components/Credentials.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Footer from '../components/Footer.astro';
+import type { BreadcrumbItem } from '../components/Breadcrumbs.astro';
+
+interface Props {
+	title?: string;
+	description?: string;
+	type?: 'website' | 'article';
+	structuredData?: object;
+	breadcrumbs?: BreadcrumbItem[];
+}
+
+const { 
+	title = "Astro Basics",
+	description = "Welcome to Astro Basics - A starter template for building fast websites with Astro",
+	type = "website",
+	structuredData,
+	breadcrumbs = []
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'http://localhost:4321');
+
+const defaultStructuredData = {
+	"@context": "https://schema.org",
+	"@type": "WebSite",
+	"name": title,
+	"description": description,
+	"url": canonicalURL.toString()
+};
+
+const finalStructuredData = structuredData || defaultStructuredData;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<link rel="preload" href="/img/logo.webp" as="image">
+		<link rel="preload" href="https://samedayappliance.repair/dryer-repair/dryer-page_header_photos.webp " as="image">
+	
+		<meta name="generator" content={Astro.generator} />
+		
+		<title>{title}</title>
+		<meta name="title" content={title} />
+		<meta name="description" content={description} />
+		
+		<meta property="og:type" content={type} />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={canonicalURL} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+
+		<script type="application/ld+json" set:html={JSON.stringify(finalStructuredData)} />
+	</head>
+	<body>
+		<MegaMenu />
+	
+		{breadcrumbs.length > 0 && <Breadcrumbs items={breadcrumbs} />}
+		<main style="margin-top: 4rem;">
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+/* Self-hosted Poppins Font */
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+	/* Global font settings */
+html {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px; /* Default size */
+  line-height: 1.6;
+  color: #333; /* Adjust based on design */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+/* Paragraphs & text */
+p {
+  font-weight: 300;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Buttons */
+button, .btn {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		background:#000000;
+		color:#ffffff;
+		
+	}
+	p{font-size: 10em; /* Responsive font size */}
+</style>
