@@ -354,17 +354,3 @@
   }
 </style>
 
-<script defer>
- const header = document.getElementById('header');
-  const logo = document.querySelector('.logo');
-  const stickyOffset = header.offsetTop;
-
-  window.addEventListener('scroll', () => {
-    if (window.pageYOffset > stickyOffset) {
-      header.classList.add('fixed', 'shrink');
-    } else {
-      header.classList.remove('fixed', 'shrink');
-    }
-  });
-
-</script>
