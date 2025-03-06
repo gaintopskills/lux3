@@ -1,9 +1,5 @@
 
----
-import StickyHeader from "../components/StickyHeader.jsx";
----
-
-<StickyHeader client:load>
+<div id="header" class="sticky">
 <div class="navbar">
   <!-- First Row -->
   <div class="first-row">
@@ -179,7 +175,7 @@ import StickyHeader from "../components/StickyHeader.jsx";
   </div>
   <a href="#top" class="phone-number">(323) 870-4790</a>
 
-</div>
+</div></div>
 
 <!-- Arrow Up Button -->
 
@@ -362,3 +358,16 @@ import StickyHeader from "../components/StickyHeader.jsx";
 
 
 
+<script defer>
+  const header = document.getElementById('header');
+  const logo = document.querySelector('.logo');
+  const stickyOffset = header.offsetTop;
+
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > stickyOffset) {
+      header.classList.add('fixed', 'shrink');
+    } else {
+      header.classList.remove('fixed', 'shrink');
+    }
+  });
+</script>
