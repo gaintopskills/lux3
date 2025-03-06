@@ -186,17 +186,17 @@ import StickyHeader from "../components/StickyHeader.jsx";
 <style>
   /*-- sticky header*/
   .sticky {
-    position: relative;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
 
-    color: white;
-  }
-  .fixed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  
-    z-index: 1000;
-  }
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 1000;
+}
 
   /*-- end sticky header*/
   * {
