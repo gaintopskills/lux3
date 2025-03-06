@@ -354,20 +354,30 @@
   }
 </style>
 
-
-
-
-
 <script defer>
-  const header = document.getElementById('header');
-  const logo = document.querySelector('.logo');
-  const stickyOffset = header.offsetTop;
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.getElementById("header");
+  let lastScrollY = 0;
+  let ticking = false;
 
-  window.addEventListener('scroll', () => {
-    if (window.pageYOffset > stickyOffset) {
-      header.classList.add('fixed', 'shrink');
-    } else {
-      header.classList.remove('fixed', 'shrink');
+  function handleScroll() {
+    lastScrollY = window.scrollY;
+
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        if (lastScrollY > 50) {
+          header.classList.add("fixed", "shrink");
+        } else {
+          header.classList.remove("fixed", "shrink");
+        }
+        ticking = false;
+      });
+
+      ticking = true;
     }
-  });
+  }
+
+  window.addEventListener("scroll", handleScroll, { passive: true });
+});
+
 </script>
