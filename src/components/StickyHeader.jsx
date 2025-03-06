@@ -13,7 +13,7 @@ const StickyHeader = ({ children }) => {
   }, []);
 
   return (
-    <div id="header" className={`sticky ${isSticky ? "fixed" : ""}`}>
+    <div className={`sticky-header ${isSticky ? "fixed" : ""}`}>
       {children}
     </div>
   );

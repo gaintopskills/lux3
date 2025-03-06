@@ -3,7 +3,7 @@
 import StickyHeader from "../components/StickyHeader.jsx";
 ---
 
-<StickyHeader>
+<StickyHeader client:load>
 <div class="navbar">
   <!-- First Row -->
   <div class="first-row">
@@ -185,18 +185,22 @@ import StickyHeader from "../components/StickyHeader.jsx";
 
 <style>
   /*-- sticky header*/
-  .sticky {
+  /* Default sticky header */
+.sticky-header {
   position: relative;
   transition: all 0.3s ease-in-out;
 }
 
+/* Sticky effect when scrolled */
 .fixed {
   position: fixed;
   top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.95);
   z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
   /*-- end sticky header*/
   * {
