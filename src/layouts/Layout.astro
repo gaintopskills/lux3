@@ -60,7 +60,6 @@ const finalStructuredData = structuredData || defaultStructuredData;
 		<script type="application/ld+json" set:html={JSON.stringify(finalStructuredData)} />
 	</head>
 	<body>
-		
 	<MegaMenu client:load />
 	
 		{breadcrumbs.length > 0 && <Breadcrumbs items={breadcrumbs} />}
