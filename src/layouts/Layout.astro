@@ -1,5 +1,5 @@
 ---
-import MegaMenu1 from '../components/MegaMenu1.astro';
+import MegaMenu from '../components/MegaMenu.jsx';
 import Credentials from '../components/Credentials.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import Footer from '../components/Footer.astro';
@@ -63,7 +63,7 @@ const finalStructuredData = structuredData || defaultStructuredData;
 	</head>
 	<body>
 		
-		<MegaMenu1 />
+		<MegaMenu client:load />
 	
 		{breadcrumbs.length > 0 && <Breadcrumbs items={breadcrumbs} />}
 		<main style="margin-top: 4rem;">
