@@ -138,12 +138,6 @@
 
     <style>
    /* General Resets */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 
 /* Full-Screen Parallax Background */
 .main {
@@ -155,14 +149,11 @@
     justify-content: center;
     align-items: center;
     background: none;
-  
 }
 .main.loaded {
     background: url("/bg.webp") no-repeat center center/cover;
     background-attachment: fixed;
 }
-
-
 /* Dark Overlay for Readability */
 .main::before {
     content: "";
@@ -171,8 +162,7 @@
     background: rgba(0, 0, 0, 0.2);
     z-index: 0;
 }
-
-/* Grass Effect on Text Box */
+/* Glass Effect on Text Box */
 .maintext {
     position: relative;
     padding: 30px;
@@ -195,8 +185,6 @@
         background: rgba(0, 0, 0, 0.8);
     }
 }
-
-
 /* Headings */
 h1 {
     font-size: 2.2em;
@@ -205,10 +193,7 @@ h1 {
     text-transform: uppercase;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
-
 /* Paragraphs */
-
-
 /* ✅ Fix: Buttons Positioned at Bottom of Parallax */
 .menu {
     position: absolute; /* Stays at bottom of .main */
@@ -222,7 +207,6 @@ h1 {
     z-index: 2;
     padding: 10px;
 }
-
 /* Keep the Buttons Exactly the Same */
 .button {
     line-height: 1;
@@ -243,7 +227,6 @@ h1 {
     width: 160px;
     border: 1px #ffffff solid;
 }
-
 .button__icon-wrapper {
     flex-shrink: 0;
     width: 25px;
@@ -256,15 +239,12 @@ h1 {
     place-items: center;
     overflow: hidden;
 }
-
 .button:hover {
     background-color: #000;
 }
-
 .button:hover .button__icon-wrapper {
     color: #000;
 }
-
 .button__icon-svg--copy {
     position: absolute;
     transform: translate(-150%, 150%);
@@ -274,12 +254,10 @@ h1 {
     transition: transform .3s ease-in-out;
     transform: translate(150%, -150%);
 }
-
 .button:hover .button__icon-svg--copy {
     transition: transform .3s ease-in-out .1s;
     transform: translate(0);
 }
-
 /* Responsive */
 @media (max-width: 872px) {
     .main {
@@ -288,15 +266,12 @@ h1 {
         justify-content: center;
         align-items: center;
     }
-
     .menu {
         flex-direction: row;
         flex-wrap: wrap;
         bottom: 10px;
     }
 }
-
-
 /* ✅ Hide buttons on mobile */
 @media (max-width: 768px) {
     .menu {
@@ -304,7 +279,7 @@ h1 {
     }
 }
     </style>
-    <script>
+    <script defer>
   window.addEventListener("load", () => {
     document.querySelector(".main").classList.add("loaded");
   });
