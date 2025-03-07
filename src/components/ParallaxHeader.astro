@@ -1,10 +1,12 @@
 <!-- Parallax Header Section -->
 <header class="parallax-header">
     <!-- Background Video -->
-    <video id="bgVideo" class="bg-video" autoplay muted loop playsinline>
-        <source src="/bg.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <div class="video-container">
+        <video id="bgVideo" class="bg-video" autoplay muted loop playsinline>
+            <source src="/bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
     <!-- Dark Overlay for Readability -->
     <div class="overlay"></div>
@@ -25,17 +27,36 @@
 
 <!-- 🔹 CSS -->
 <style>
-/* 🔥 Full-Screen Video Header */
+/* 🔥 Reset Default Margins & Padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* 🔥 Full-Screen Parallax Video Header */
 .parallax-header {
     position: relative;
     width: 100%;
     height: 100vh; /* Full-screen height */
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
+    overflow: hidden;
+    background: url('/bg.webp') no-repeat center center/cover; /* Fallback image */
+}
+
+/* 🔹 Video Container with Parallax */
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Ensure full height */
+    overflow: hidden;
+    will-change: transform;
 }
 
 /* 🔹 Background Video */
@@ -46,7 +67,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: -2;
 }
 
 /* 🔹 Dark Overlay */
@@ -57,7 +78,7 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4); /* Darken the video for readability */
-    z-index: 0;
+    z-index: -1;
 }
 
 /* 🔹 Main Content Styling */
@@ -70,25 +91,33 @@
     border-radius: 10px;
 }
 
+/* 🔹 Page Content Styling */
+.content {
+    height: 250vh; /* Extra scrolling space for strong parallax effect */
+    padding: 100px;
+    background: white;
+    color: black;
+}
+
 /* 🔹 Mobile Optimization: Disable Video */
 @media (max-width: 768px) {
     .bg-video {
         display: none; /* Hide video on mobile */
     }
     .parallax-header {
-        background: url('/bg.webp') no-repeat center center/cover; /* Use fallback image */
+        background-attachment: scroll; /* No parallax on mobile */
     }
 }
 </style>
 
-<!-- 🔹 JavaScript -->
+<!-- 🔹 JavaScript for Strong Parallax Effect -->
 <script defer>
-window.addEventListener("load", () => {
-    const video = document.getElementById("bgVideo");
-    if (video) {
-        video.addEventListener("loadeddata", () => {
-            video.style.opacity = "1"; // Ensure video loads fully
-        });
+window.addEventListener("scroll", () => {
+    const scrollPos = window.scrollY;
+    const videoContainer = document.querySelector(".video-container");
+
+    if (videoContainer) {
+        videoContainer.style.transform = `translateY(${scrollPos * 0.5}px)`; // More intense parallax effect
     }
 });
 </script>
