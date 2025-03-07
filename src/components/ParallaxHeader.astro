@@ -149,13 +149,17 @@
 .main {
     position: relative;
     height: 100vh; /* Fullscreen height */
-    background: url("/bg.webp") no-repeat center center/cover;
     background-attachment: fixed;
     display: flex;
     flex-direction: column; /* Stack content */
     justify-content: center;
     align-items: center;
+    background: none;
   
+}
+.main.loaded {
+    background: url("/bg.webp") no-repeat center center/cover;
+    background-attachment: fixed;
 }
 
 
@@ -291,6 +295,10 @@ h1 {
         display: none;
     }
 }
-
-
     </style>
+
+    <script defer>
+  window.addEventListener("load", () => {
+    document.querySelector(".main").classList.add("loaded");
+  });
+</script>
