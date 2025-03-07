@@ -145,7 +145,7 @@
     background: none;
 }
 .main.loaded {
-    background: url("/bg.webp") no-repeat center center/cover;
+    background: url("/bg.mp4") no-repeat center center/cover;
     background-attachment: fixed;
 }
 
@@ -290,8 +290,11 @@ h1 {
     }
 }
     </style>
-    <script defer>
+<script defer>
   window.addEventListener("load", () => {
-    document.querySelector(".main").classList.add("loaded");
+    const video = document.getElementById("bgVideo");
+    video.addEventListener("loadeddata", () => {
+      video.style.opacity = "1"; // Fade in the video after it loads
+    });
   });
 </script>
