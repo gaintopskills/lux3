@@ -150,7 +150,7 @@
    .phone-number{background-color: red;}
      /* Logo Transition */
      .logo {
-      width: 150px; /* Default Width */
+      width: 200px; /* Default Width */
       transition: width 0.3s ease; /* Smooth resizing */
     }
   
