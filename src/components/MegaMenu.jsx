@@ -37,7 +37,7 @@ export const MegaMenu = () => {
         <div className="first-row">
        
           <a className="logo" href="#home">
-            <img  alt="Logo" src="/logo16.jpg" />
+            <img width="150" alt="Logo" src="/logo777.png" />
           </a>
 
           {/* Home Dropdown */}
