@@ -35,8 +35,9 @@ export const MegaMenu = () => {
     <div className={`sticky-header ${isSticky ? "fixed" : ""}`}>
       <div className="navbar">
         <div className="first-row">
+       
           <a className="logo" href="#home">
-            <img alt="Logo" src="/bumble-bee-bees.gif" />
+            <img  alt="Logo" src="/logo16.jpg" />
           </a>
 
           {/* Home Dropdown */}
