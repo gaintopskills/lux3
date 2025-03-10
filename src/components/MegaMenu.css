@@ -1,5 +1,4 @@
  /*-- sticky header*/
-  /* Default sticky header */
   .sticky-header {
     position: relative;
     transition: all 0.3s ease-in-out;
@@ -88,7 +87,7 @@
       width: 25px; /* Set icon width */
       height: 25px; /* Set icon height */
       display: inline-block; /* Ensure inline layout */
-      margin:0 10px -6px; 0;
+      margin:0 10px -6px;
     }
    .dropdown:hover .dropdown-content {
       opacity: 1;
@@ -102,7 +101,6 @@
   }
   
     .dropdown-content .header {
-      background:;
       padding: 16px;
       color: white;
     }
@@ -110,15 +108,6 @@
     .dropdown:hover .dropdown-content {
       display: block;
     }
-  
-    /* Mobile-specific margin for the first row */
-    @media screen and (max-width: 768px) {
-      .first-row .dropdown-content .transparent{
-       
-      }
-    }
-  
-    
     /* Create three equal columns */
     .column {
       float: left;
