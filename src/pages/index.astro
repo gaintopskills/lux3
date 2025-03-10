@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ParallaxHeader from '../components/ParallaxHeader.astro'
-import Offers from '../components/Offers.astro'
+import Offers from '../components/Offers.jsx'
 import { TabsAccordion } from '../components/TabsAccordion.jsx'
 
 
@@ -33,6 +33,6 @@ const breadcrumbs = [
 >
 
 <ParallaxHeader />
-<!--<Offers />-->
+<Offers client:idle/>
 <TabsAccordion client:visible/>
 </Layout>
