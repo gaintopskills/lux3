@@ -10,7 +10,7 @@ export const TabsAccordion = () => {
       title: "Air Conditioner Repair",
       img: "air-conditioner.jpg",
       description:
-        "Air conditioners are probably one of man’s greatest inventions. To keep them working properly, regular maintenance is required.",
+        "Testing Air conditioners are probably one of man’s greatest inventions. To keep them working properly, regular maintenance is required.",
       button: "Fix My Air Conditioner",
     },
     {
