@@ -62,7 +62,7 @@ const finalStructuredData = structuredData || defaultStructuredData;
 	</head>
 	<body>
 	<MegaMenu client:load />
-	<Reviews client:idle />
+	<!--<Reviews client:idle />-->
 		{breadcrumbs.length > 0 && <Breadcrumbs items={breadcrumbs} />}
 		<main style="margin-top: 4rem;">
 			<slot />
@@ -80,8 +80,6 @@ const finalStructuredData = structuredData || defaultStructuredData;
   font-weight: 400;
   src: url('../fonts/poppins-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
-
 	/* Global font settings */
 html {
   font-family: 'Poppins', sans-serif;
