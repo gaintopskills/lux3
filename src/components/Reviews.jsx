@@ -36,12 +36,12 @@ const Reviews = () => {
       {/* Image Section */}
       <div className="header-licenses-foto">
         {[
-          { href: "/credentials/bbb-accredited-appliance-repair/", src: "/credentials/bbb-accredited-appliance-repair.webp", alt: "BBB Accredited" },
-          { href: "/credentials/licensed-appliance-repair/", src: "/credentials/licensed-appliance-repair.webp", alt: "Licensed Repair" },
-          { href: "/credentials/insured-appliance-repair/", src: "/credentials/insured-appliance-repair.webp", alt: "Insured Repair" },
-          { href: "/credentials/epa-certified-appliance-repair/", src: "/credentials/epa-certified-appliance-repair.webp", alt: "EPA Certified" },
-          { href: "/credentials/osha-certified-appliance-repair/", src: "/credentials/osha-certified-appliance-repair.webp", alt: "OSHA Certified" },
-          { href: "/credentials/background-checked-appliance-repair/", src: "/credentials/background-checked-technicians.webp", alt: "Background Checked" }
+          { href: "/credentials/bbb-accredited-appliance-repair/", src: "/credentials/bbb-accredited-appliance-repair.webp", alt: "BBB Accredited", width: "217px", height: "80px"},
+          { href: "/credentials/licensed-appliance-repair/", src: "/credentials/licensed-appliance-repair.webp", alt: "Licensed Repair", width:"130px", height:"90px"},
+          { href: "/credentials/insured-appliance-repair/", src: "/credentials/insured-appliance-repair.webp", alt: "Insured Repair", width:"112px", height:"90px"},
+          { href: "/credentials/epa-certified-appliance-repair/", src: "/credentials/epa-certified-appliance-repair.webp", alt: "EPA Certified", width:"165px", height:"90px"},
+          { href: "/credentials/osha-certified-appliance-repair/", src: "/credentials/osha-certified-appliance-repair.webp", alt: "OSHA Certified", width:"98px", height:"90px"},
+          { href: "/credentials/background-checked-appliance-repair/", src: "/credentials/background-checked-technicians.webp", alt: "Background Checked", width:"98px", height:"90px"}
         ].map((item, index) => (
           <a key={index} href={item.href} target="_blank" rel="noopener noreferrer">
             <img src={item.src} alt={item.alt} />
