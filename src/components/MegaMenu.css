@@ -75,8 +75,13 @@
       padding: 0 100px 0 100px;
       opacity: 0;
       visibility: hidden;
-      backdrop-filter: blur(6px); /* Blur effect behind the menu */
-      top: 100%;
+     
+    border-radius: 12px;
+    background: url('/images/grass-texture.webp') no-repeat center center/cover,
+    rgba(0, 0, 0, 0.9);
+    background-blend-mode: overlay;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
     }
   /* Style for dropdown links with icons */
   .dropdown-content a {
@@ -95,7 +100,7 @@
       margin:0 10px -6px;
     }
    .dropdown:hover .dropdown-content {
-      opacity: 1;
+      opacity: 0.9;
       visibility: visible;
       transition: opacity 1s ease, visibility 1s ease;
   }
@@ -146,7 +151,7 @@
     }
     a.logo {
     margin: 0 50px 10px 0 !important;
-    padding:10px 0 0 20px;
+    padding:10px 0 0 20px !important;
   }
   a.logo:hover {
    background-color: #000000;
