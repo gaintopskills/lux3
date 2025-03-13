@@ -21,7 +21,7 @@
       float: left;
       color: white;
       text-align: center;
-      padding: 14px 8px;
+      padding: 14px 16px;
       text-decoration: none;
     }
     .dropdown {
@@ -35,7 +35,6 @@
       padding: 14px 16px;
       background-color: inherit;
       font: inherit;
-      margin: 0;
     }
     .navbar a:hover,
     .dropdown:hover .dropbtn {
@@ -59,7 +58,6 @@
       display: flex;
       align-items: center; /* Center icon and text vertically */
       text-decoration: none;
-  
       font-size: 16px;
       padding: 8px 0; /* Space between items */
     }
@@ -122,10 +120,11 @@
       width: 90px; /* Width when scrolled */
     }
     a.logo {
-    margin: 5px 50px 0 20px !important;
+    margin: 0 30px 10px 0 !important;
+    padding:10px 0 0 20px;
   }
-    a.logo {
-    padding: 0 !important;
+  a.logo:hover {
+   background-color: ;
   }
    /* Hide the logo image on mobile screens */
    @media screen and (max-width: 768px) {
