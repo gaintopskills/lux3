@@ -46,16 +46,24 @@ export const MegaMenu = () => {
 
           {/* Home Dropdown */}
           <div className="dropdown">
-            <button className="dropbtn" onClick={() => handleDropdownToggle("home")}>
-              Home <ArrowIcon isOpen={openDropdown === "home"} />
+            <button className="dropbtn" onClick={() => handleDropdownToggle("Household")}>
+              Household <ArrowIcon isOpen={openDropdown === "Household"} />
             </button>
-            <div className={`dropdown-content ${openDropdown === "home" ? "show" : ""}`}>
+            <div className={`dropdown-content ${openDropdown === "Household" ? "show" : ""}`}>
               <h3>Home Appliances We Repair</h3>
               <div className="row">
-                {["Refrigerator", "Freezer", "Dishwasher", "Dryer", "Oven"].map((item) => (
-                  <a key={item} href="#">
-                    <img src={`/svg/${item.toLowerCase()}.svg`} alt={item} /> {item}
-                  </a>
+                {[
+                  ["Refrigerator", "Oven", "Dishwasher", "Dryer"],
+                  ["Washer Repair", "Microwave Repair", "Cooktop Repair", "Range Hood Repair"],
+                  ["Get a Quote", "Same Day Pricing", "Custom Requests"],
+                ].map((col, idx) => (
+                  <div className="column" key={idx}>
+                    {col.map((item) => (
+                       <a key={item} href="#">
+                       <img src={`/svg/${item.toLowerCase()}.svg`} alt={item} /> {item}
+                     </a>
+                    ))}
+                  </div>
                 ))}
               </div>
             </div>
@@ -73,6 +81,81 @@ export const MegaMenu = () => {
                   <a key={item} href="#">
                     <img src={`/svg/${item.toLowerCase()}.svg`} alt={item} /> {item}
                   </a>
+                ))}
+
+              </div>
+            </div>
+          </div>
+
+           {/* HVAC Dropdown */}
+           <div className="dropdown">
+            <button className="dropbtn" onClick={() => handleDropdownToggle("HVAC")}>
+              HVAC <ArrowIcon isOpen={openDropdown === "HVAC"} />
+            </button>
+            <div className={`dropdown-content ${openDropdown === "HVAC" ? "show" : ""}`}>
+              <div className="row">
+                {[
+                  ["Refrigerator Repair", "Oven Repair", "Dishwasher Repair", "Dryer Repair"],
+                  ["Washer Repair", "Microwave Repair", "Cooktop Repair", "Range Hood Repair"],
+                  ["Get a Quote", "Same Day Pricing", "Custom Requests"],
+                ].map((col, idx) => (
+                  <div className="column" key={idx}>
+                    {col.map((item) => (
+                       <a key={item} href="#">
+                       <img src={`/svg/${item.toLowerCase()}.svg`} alt={item} /> {item}
+                     </a>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Brands Dropdown */}
+          <div className="dropdown">
+            <button className="dropbtn" onClick={() => handleDropdownToggle("Brands")}>
+            Brands <ArrowIcon isOpen={openDropdown === "Brands"} />
+            </button>
+            <div className={`dropdown-content ${openDropdown === "Brands" ? "show" : ""}`}>
+              <div className="row">
+                {[
+                  ["Refrigerator Repair", "Oven Repair", "Dishwasher Repair", "Dryer Repair"],
+                  ["Washer Repair", "Microwave Repair", "Cooktop Repair", "Range Hood Repair"],
+                  ["Get a Quote", "Same Day Pricing", "Custom Requests"],
+                ].map((col, idx) => (
+                  <div className="column" key={idx}>
+                    {col.map((item) => (
+                       <a key={item} href="#">
+                       <img src={`/svg/${item.toLowerCase()}.svg`} alt={item} /> {item}
+                     </a>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+
+
+             {/* Areas Dropdown */}
+             <div className="dropdown">
+            <button className="dropbtn" onClick={() => handleDropdownToggle("Areas")}>
+              Areas <ArrowIcon isOpen={openDropdown === "Areas"} />
+            </button>
+            <div className={`dropdown-content ${openDropdown === "Areas" ? "show" : ""}`}>
+              <div className="row">
+                {[
+                  ["Refrigerator Repair", "Oven Repair", "Dishwasher Repair", "Dryer Repair"],
+                  ["Washer Repair", "Microwave Repair", "Cooktop Repair", "Range Hood Repair"],
+                  ["Get a Quote", "Same Day Pricing", "Custom Requests"],
+                ].map((col, idx) => (
+                  <div className="column" key={idx}>
+                    {col.map((item) => (
+                       <a key={item} href="#">
+                       <img src={`/svg/${item.toLowerCase()}.svg`} alt={item} /> {item}
+                     </a>
+                    ))}
+                  </div>
                 ))}
               </div>
             </div>
@@ -92,9 +175,9 @@ export const MegaMenu = () => {
                 ].map((col, idx) => (
                   <div className="column" key={idx}>
                     {col.map((item) => (
-                      <a key={item} href="#">
-                        {item}
-                      </a>
+                       <a key={item} href="#">
+                       <img src={`/svg/${item.toLowerCase()}.svg`} alt={item} /> {item}
+                     </a>
                     ))}
                   </div>
                 ))}
