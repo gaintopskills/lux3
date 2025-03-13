@@ -41,7 +41,6 @@
     .dropdown:hover .dropbtn {
       background-color: red;
     }
-  
     .dropdown-content {
       display: block;
       position: absolute;
@@ -64,7 +63,6 @@
       font-size: 16px;
       padding: 8px 0; /* Space between items */
     }
-  
     /* Style for the SVG icon */
     .dropdown-content a img {
      
@@ -77,19 +75,16 @@
       opacity: 1;
       visibility: visible;
       transition: opacity 1s ease, visibility 1s ease;
-    
   }
     @media screen and (max-width: 768px) {
       .dropdown-content {
           padding: 0; /* Remove padding for mobile */
       }
   }
-  
     .dropdown-content .header {
       padding: 16px;
       color: white;
     }
-  
     .dropdown:hover .dropdown-content {
       display: block;
     }
@@ -100,7 +95,6 @@
       padding: 10px;
       height: 100%;
     }
-  
     .column a {
       float: none;
       color: #fff;
@@ -109,18 +103,15 @@
       display: block;
       text-align: left;
     }
-  
     .column a:hover {
       background-color: red;
     }
-  
     /* Clear floats */
     .row:after {
       content: "";
       display: table;
       clear: both;
     }
-  
    .phone-number{background-color: red;}
      /* Logo Transition */
      .logo {
@@ -129,7 +120,6 @@
     }
     .fixed .logo {
       width: 90px; /* Width when scrolled */
-      
     }
     a.logo {
     margin: 5px 50px 0 20px !important;
@@ -153,19 +143,11 @@
         .dropdown-content a img {
           display: none !important; /* Forcefully hide the images */
         }
+        .dropdown .dropbtn {
+          font-size: 15px!Important;
+          padding: 5px 5px;
+        }
+        .navbar a {
+          padding: 5px 5px;
+        }
   }
-  @media screen and (max-width: 768px) {
-  .dropdown .dropbtn {
-    font-size: 15px!Important;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 5px 5px;
-    background-color: inherit;
-    font: inherit;
-    margin: 0;
-  }
-  .navbar a {
-    padding: 5px 5px;
-  }
-}
