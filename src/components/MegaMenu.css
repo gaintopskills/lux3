@@ -120,11 +120,11 @@
       width: 90px; /* Width when scrolled */
     }
     a.logo {
-    margin: 0 30px 10px 0 !important;
+    margin: 0 50px 10px 0 !important;
     padding:10px 0 0 20px;
   }
   a.logo:hover {
-   background-color: ;
+   background-color: #000000;
   }
    /* Hide the logo image on mobile screens */
    @media screen and (max-width: 768px) {
