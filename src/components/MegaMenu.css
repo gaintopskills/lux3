@@ -71,6 +71,8 @@
       visibility: hidden;
       transition: opacity 0.4s ease, visibility 0.4s ease;
       backdrop-filter: blur(6px); /* Blur effect behind the menu */
+      top: 100%;
+      visibility: hidden;
     }
   /* Style for dropdown links with icons */
   .dropdown-content a {
