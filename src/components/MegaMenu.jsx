@@ -54,14 +54,14 @@ export const MegaMenu = () => {
               <h3>Home Appliances We Repair</h3>
               <div className="row">
                 {[
-                  ["Refrigerator", "Oven", "Dishwasher", "Dryer"],
+                  ["Refrigerator Repair", "Freezer Repair", "Washer Repair", "Dryer Repair", "Stove repair", "Range Repair"],
                   ["Washer Repair", "Microwave Repair", "Cooktop Repair", "Range Hood Repair"],
                   ["Get a Quote", "Same Day Pricing", "Custom Requests"],
                 ].map((col, idx) => (
                   <div className="column" key={idx}>
                     {col.map((item) => (
                        <a key={item} href="#">
-                       <img src={`/svg/${item.toLowerCase()}.svg`} alt={item} /> {item}
+                       <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> {item}
                      </a>
                     ))}
                   </div>
@@ -80,7 +80,7 @@ export const MegaMenu = () => {
               <div className="row">
                 {["Refrigerator", "Freezer", "Dishwasher", "Dryer", "Oven"].map((item) => (
                   <a key={item} href="#">
-                    <img src={`/svg/${item.toLowerCase()}.svg`} alt={item} /> {item}
+                   <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> {item}
                   </a>
                 ))}
 
@@ -103,7 +103,7 @@ export const MegaMenu = () => {
                   <div className="column" key={idx}>
                     {col.map((item) => (
                        <a key={item} href="#">
-                       <img src={`/svg/${item.toLowerCase()}.svg`} alt={item} /> {item}
+                       <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> {item}
                      </a>
                     ))}
                   </div>
@@ -127,7 +127,7 @@ export const MegaMenu = () => {
                   <div className="column" key={idx}>
                     {col.map((item) => (
                        <a key={item} href="#">
-                       <img src={`/svg/${item.toLowerCase()}.svg`} alt={item} /> {item}
+                    <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> {item}
                      </a>
                     ))}
                   </div>
@@ -153,7 +153,7 @@ export const MegaMenu = () => {
                   <div className="column" key={idx}>
                     {col.map((item) => (
                        <a key={item} href="#">
-                       <img src={`/svg/${item.toLowerCase()}.svg`} alt={item} /> {item}
+                       <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> {item}
                      </a>
                     ))}
                   </div>
@@ -177,7 +177,7 @@ export const MegaMenu = () => {
                   <div className="column" key={idx}>
                     {col.map((item) => (
                        <a key={item} href="#">
-                       <img src={`/svg/${item.toLowerCase()}.svg`} alt={item} /> {item}
+                       <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> {item}
                      </a>
                     ))}
                   </div>
