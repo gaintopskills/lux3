@@ -23,31 +23,12 @@ const ArrowIcon = ({ isOpen }) => (
 
 export const MegaMenu = () => {
   const [isSticky, setIsSticky] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState(null);
-  const [delayedDropdown, setDelayedDropdown] = useState(null);
-  let dropdownTimer = null;
 
   useEffect(() => {
     const handleScroll = () => setIsSticky(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll, { passive: true });
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  // Function to handle dropdown toggle with delay
-  const handleDropdownToggle = (menuId) => {
-    if (openDropdown === menuId) {
-      setOpenDropdown(null);
-      setDelayedDropdown(null);
-      clearTimeout(dropdownTimer);
-    } else {
-      setOpenDropdown(menuId);
-      clearTimeout(dropdownTimer); // Clear previous timeout if user switches fast
-      dropdownTimer = setTimeout(() => {
-        setDelayedDropdown(menuId);
-      }, 300); // Adjust delay as needed
-    }
-  };
 
   return (
     <header className={`sticky-header ${isSticky ? "fixed" : ""}`}>
@@ -58,12 +39,12 @@ export const MegaMenu = () => {
             <img width="140" alt="Logo" src="/logo999.jpg" />
           </a>
 
-          {/* Home Dropdown */}
+          {/* Household Dropdown */}
           <div className="dropdown">
-            <button className="dropbtn" onClick={() => handleDropdownToggle("Household")}>
-              Household <ArrowIcon isOpen={openDropdown === "Household"} />
+            <button className="dropbtn">
+              Household <ArrowIcon />
             </button>
-            <div className={`dropdown-content ${delayedDropdown === "Household" ? "show" : ""}`}>
+            <div className="dropdown-content">
               <h3>Home Appliances We Repair</h3>
               <div className="row">
                 {["Refrigerator", "Oven", "Dishwasher", "Dryer"].map((item) => (
@@ -77,10 +58,10 @@ export const MegaMenu = () => {
 
           {/* Commercial Dropdown */}
           <div className="dropdown">
-            <button className="dropbtn" onClick={() => handleDropdownToggle("commercial")}>
-              Commercial <ArrowIcon isOpen={openDropdown === "commercial"} />
+            <button className="dropbtn">
+              Commercial <ArrowIcon />
             </button>
-            <div className={`dropdown-content ${delayedDropdown === "commercial" ? "show" : ""}`}>
+            <div className="dropdown-content">
               <h3>Commercial Appliances We Repair</h3>
               <div className="row">
                 {["Refrigerator", "Freezer", "Dishwasher", "Dryer", "Oven"].map((item) => (
