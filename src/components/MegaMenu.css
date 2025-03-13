@@ -40,7 +40,7 @@
     /*-- end sticky header*/
     .navbar {
       overflow: hidden;
-      background-color: #000;
+      background: rgba(0, 0, 0, 0.9);
     }
     .navbar a {
       float: left;
@@ -68,20 +68,20 @@
     .dropdown-content {
       display: block;
       position: absolute;
-      background-color: rgba(0, 0, 0, 0.87);
+      background-color: rgba(0, 0, 0, 0.9); /* Lighter to allow blur effect */
       width: 100%;
       left: 0;
       z-index: 1;
       padding: 0 100px 0 100px;
       opacity: 0;
       visibility: hidden;
-     
     border-radius: 12px;
-    background: url('/images/grass-texture.webp') no-repeat center center/cover,
-    rgba(0, 0, 0, 0.9);
     background-blend-mode: overlay;
-    border: 3px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.4), 
+    0px 4px 15px rgba(0, 0, 0, 0.2);
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px); /* Safari Support */
     }
   /* Style for dropdown links with icons */
   .dropdown-content a {
@@ -102,7 +102,7 @@
    .dropdown:hover .dropdown-content {
       opacity: 0.9;
       visibility: visible;
-      transition: opacity 1s ease, visibility 1s ease;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
   }
     @media screen and (max-width: 768px) {
       .dropdown-content {
