@@ -142,11 +142,10 @@
    .phone-number{background-color: red;}
      /* Logo Transition */
      .logo {
-      width: 200px; /* Default Width */
+      width: 140px; /* Default Width */
       transition: width 0.3s ease; /* Smooth resizing */
     }
-  
-    .shrink .logo {
+    .fixed .logo {
       width: 90px; /* Width when scrolled */
       
     }
@@ -158,7 +157,11 @@
   }
    /* Hide the logo image on mobile screens */
    @media screen and (max-width: 768px) {
-      a.logo{
-        display: none;
-      }
+    .dropdown-content {
+      padding: 0;
+      width: 100%;
     }
+    .logo {
+      display: none;
+    }
+  }
