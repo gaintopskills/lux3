@@ -2,6 +2,7 @@
   .sticky-header {
     position: relative;
     transition: all 0.3s ease-in-out;
+    min-height: 60px; /* Prevents layout shift */
   }
   
   /* Sticky effect when scrolled */
