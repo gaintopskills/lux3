@@ -1,3 +1,28 @@
+ /* LOGO*/
+ /* Desktop Logo - Visible by default */
+.logo-desktop {
+  display: block;
+}
+
+/* Mobile Logo - Hidden by default */
+.logo-mobile {
+  display: none;
+}
+
+/* On mobile screens, show the mobile logo and hide the desktop logo */
+@media screen and (max-width: 768px) {
+  .logo-desktop {
+    display: none;
+  }
+  
+  .logo-mobile {
+    display: block;
+  }
+}
+
+.logo-desktop
+{margin:0!Important; 
+  padding:0!Important;}
  /*-- sticky header*/
   .sticky-header {
     position: relative;
@@ -131,9 +156,6 @@
     .dropdown-content {
       padding: 0;
       width: 100%;
-    }
-    .logo {
-      display: none;
     }
     .dropdown-content img {
       display: none;

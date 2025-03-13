@@ -41,10 +41,12 @@ export const MegaMenu = () => {
       <nav className="navbar">
         <div className="first-row">
           {/* Logo */}
-          <a className="logo" href="#home">
-            <img width="140" alt="Logo" src="/logo999.jpg" />
-          </a>
-
+          <a className="logo logo-desktop" href="#home">
+  <img width="140" alt="Logo" src="/logo999.jpg" />
+</a>
+<a className="logo-mobile" href="#home">
+  <img width="25" alt="Mobile Logo" src="/logo-mobile.png" />
+</a>
           {/* Home Dropdown */}
           <div className="dropdown">
             <button className="dropbtn" onClick={() => handleDropdownToggle("Household")}>
