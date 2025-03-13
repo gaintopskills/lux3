@@ -157,10 +157,11 @@
     .dropdown-content img {
       display: none;
     }
+        /* Ensure dropdown images are hidden */
+        .dropdown-content a img {
+          display: none !important; /* Forcefully hide the images */
+        }
   }
 
-  @media screen and (max-width: 768px) {
-    .dropdown-content.household img {
-      display: none;
-    }
-  }
+  
+  
