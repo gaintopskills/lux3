@@ -3,9 +3,8 @@
     align-items: center;
     justify-content: space-between;
     text-align: left;
-    background: url('/images/grass-texture.webp') no-repeat center center/cover, rgba(0, 0, 0, 0.6);
     background-blend-mode: overlay;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     border-bottom: 3px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
