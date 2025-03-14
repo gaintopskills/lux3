@@ -198,19 +198,24 @@
   }
 
   /* Close Button - Only visible on mobile when a dropdown is open */
-.close-btn {
-  display: none;
-  position: absolute;
-  top: 30px;
-  right: 15px;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 1001;
-}
+  .close-btn {
+    display: none; /* Default hidden */
+    position: absolute;
+    bottom: 10px;  /* Moves the button to the bottom */
+    left: 10px;    /* Moves it slightly away from the edge */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  /* Ensure button shows when dropdown is open */
+  .close-btn.show {
+    display: block;
+  }
 
 /* Show close button only on mobile */
 @media screen and (max-width: 768px) {
