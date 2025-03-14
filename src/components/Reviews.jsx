@@ -29,7 +29,6 @@ const Reviews = () => {
           </a>
         </p>
       </div>
-
       {/* Image Section */}
       <div className="header-licenses-foto">
         {[
@@ -41,7 +40,8 @@ const Reviews = () => {
           { href: "/credentials/background-checked-appliance-repair/", src: "/credentials/background-checked-technicians.webp", alt: "Background Checked", width:"98px", height:"90px"}
         ].map((item, index) => (
           <a key={index} href={item.href} target="_blank" rel="noopener noreferrer">
-            <img src={item.src} alt={item.alt} />
+            <img loading="lazy" src={item.src} alt={item.alt} width={item.width} height={item.height} />
+
           </a>
         ))}
       </div>
