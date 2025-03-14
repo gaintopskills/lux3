@@ -31,13 +31,12 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.95);
     z-index: 1000;
   }
     /*-- end sticky header*/
     .navbar {
       overflow: hidden;
-      background: rgba(0, 0, 0, 0.9);
+      background-color: #000000; 
     }
     .navbar a {
       float: left;
@@ -65,17 +64,18 @@
     .dropdown-content {
       display: block;
       position: absolute;
-      background-color: rgba(0, 0, 0, 1); /* Lighter to allow blur effect */
       width: 100%;
       left: 0;
-      z-index: 1;
+      z-index: 1; /* Ensure it's on top */
       padding: 0 100px 0 100px;
-      opacity: 0;
       visibility: hidden;
-    background-blend-mode: overlay;
     border-bottom: 5px solid rgba(123, 122, 122, 0.9);
-    backdrop-filter: blur(40px); /* Adjust blur strength */
-    }
+    background-color:rgba(0, 0, 0, 0.8);
+    text-align: center;
+    background-blend-mode: overlay;
+    backdrop-filter: blur(10px);
+     -webkit-backdrop-filter: blur(10px); /* Safari Support */ 
+  }
   /* Style for dropdown links with icons */
   .dropdown-content a {
       display: flex;
@@ -93,7 +93,6 @@
       margin:0 10px -6px;
     }
    .dropdown:hover .dropdown-content {
-      opacity: 0.9;
       visibility: visible;
       transition: opacity 0.5s ease, visibility 0.5s ease;
   }
