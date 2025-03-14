@@ -35,8 +35,9 @@
   }
     /*-- end sticky header*/
     .navbar {
+      
       overflow: hidden;
-      background-color: #000000; 
+      background-color: #000000;
     }
     .navbar a {
       float: left;
@@ -65,6 +66,7 @@
       display: block;
       position: absolute;
       width: 100%;
+      top: 100%; /* Ensures dropdown is always below */
       left: 0;
       z-index: 1; /* Ensure it's on top */
       padding: 0 100px 0 100px;
