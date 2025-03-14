@@ -5,9 +5,7 @@ const Reviews = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsVisible(true);
-    }, 500);
+    setIsVisible(true);
   }, []);
 
   return (
