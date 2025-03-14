@@ -27,13 +27,20 @@ export const MegaMenu = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
 
   useEffect(() => {
-    const handleScroll = () => setIsSticky(window.scrollY > 50);
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 50);
+    };
+
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleDropdownToggle = (menuId) => {
     setOpenDropdown((prev) => (prev === menuId ? null : menuId));
+  };
+
+  const handleCloseDropdown = () => {
+    setOpenDropdown(null);
   };
 
   return (
@@ -47,6 +54,15 @@ export const MegaMenu = () => {
 <a className="logo-mobile" href="#home">
   <img width="25" alt="Mobile Logo" src="/logo-mobile.png" />
 </a>
+
+          {/* Close Button - Visible only when a dropdown is open */}
+          <button className={`close-btn ${openDropdown ? "show" : ""}`} onClick={handleCloseDropdown}>
+            ✖
+          </button>
+{/* Close Button - Only visible on mobile when a dropdown is open */}
+{openDropdown && (
+            <button className="close-btn" onClick={handleCloseDropdown}>✖</button>
+          )}
           {/* Home Dropdown */}
           <div className="dropdown">
             <button className="dropbtn" onClick={() => handleDropdownToggle("Household")}>
@@ -89,7 +105,6 @@ export const MegaMenu = () => {
               </div>
             </div>
           </div>
-
            {/* HVAC Dropdown */}
            <div className="dropdown">
             <button className="dropbtn" onClick={() => handleDropdownToggle("HVAC")}>
@@ -113,7 +128,6 @@ export const MegaMenu = () => {
               </div>
             </div>
           </div>
-
           {/* Brands Dropdown */}
           <div className="dropdown">
             <button className="dropbtn" onClick={() => handleDropdownToggle("Brands")}>
@@ -137,9 +151,6 @@ export const MegaMenu = () => {
               </div>
             </div>
           </div>
-
-
-
              {/* Areas Dropdown */}
              <div className="dropdown">
             <button className="dropbtn" onClick={() => handleDropdownToggle("Areas")}>

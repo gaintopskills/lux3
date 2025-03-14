@@ -13,17 +13,14 @@
     transform: translateY(20px);
     transition: opacity 1.2s ease-out, transform 1.2s ease-out;
 }
-
 .reviews.show {
     opacity: 1;
     transform: translateY(0);
 }
-
 .reviews a {
     color: white;
     text-decoration: none;
 }
-
 .reviews-content {
     flex: 1;
     padding: 15px;
@@ -33,7 +30,6 @@
     text-align: center;
     max-width: 380px;
 }
-
 /* Desktop & Mobile Toggling */
 .reviews-content .desktop {
     display: block;
@@ -41,7 +37,6 @@
 .reviews-content .mobile {
     display: none;
 }
-
 /* License Image Section */
 .header-licenses-foto {
     display: flex;
@@ -50,19 +45,16 @@
     justify-content: flex-end;
     flex: 1;
 }
-
 .header-licenses-foto img {
     max-height: 70px;
     width: auto;
     margin: 10px 0;
 }
-
 @media (min-width: 784px) {
     .reviews-content-mobile {
         display: none;
     }
 }
-
 /* Responsive Adjustments */
 @media (max-width: 1200px) {
     .reviews-content {
@@ -70,36 +62,30 @@
         margin-right: 10px;
         max-width: 250px;
     }
-
     .header-licenses-foto {
         justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
     }
-
     .header-licenses-foto img {
         max-height: 60px;
     }
 }
-
 @media (max-width: 940px) {
     .reviews-content {
         padding: 5px;
         margin-right: 10px;
         max-width: 200px;
     }
-
     .header-licenses-foto {
         justify-content: center;
         flex-wrap: wrap;
         gap: 6px;
     }
-
     .header-licenses-foto img {
         max-height: 50px;
     }
 }
-
 /* Responsive for Mobile */
 @media (max-width: 783px) {
     .reviews {
@@ -119,7 +105,6 @@
         max-height: 40px;
     }
 }
-
 /* Extra Small Mobile Adjustments */
 @media (max-width: 500px) {
     .header-licenses-foto {
@@ -129,3 +114,27 @@
         max-height: 33px;
     }
 }
+/* Default hidden state */
+.close-btn {
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  /* Show close button when dropdown is open */
+  .close-btn.show {
+    display: block;
+  }
+  /* Show close button only on mobile */
+  @media screen and (max-width: 768px) {
+    .close-btn {
+      display: block;
+    }
+  }

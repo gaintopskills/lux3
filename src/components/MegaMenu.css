@@ -77,7 +77,7 @@
       display: block;
       position: absolute;
       width: 100%;
-      top: 100%; /* Ensures dropdown is always below */
+    
       left: 0;
       z-index: 1; /* Ensure it's on top */
       padding: 0 100px 0 100px;
@@ -196,3 +196,25 @@
           padding: 5px 5px;
         }
   }
+
+  /* Close Button - Only visible on mobile when a dropdown is open */
+.close-btn {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Show close button only on mobile */
+@media screen and (max-width: 768px) {
+  .close-btn {
+    display: block;
+  }
+}
