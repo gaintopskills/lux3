@@ -1,4 +1,15 @@
  /* LOGO*/
+
+ /* Default Logo Size */
+.logo img {
+  width: 140px; /* Default width */
+  transition: width 0.3s ease-in-out; /* Smooth shrinking */
+}
+
+/* Shrink Logo in Sticky Menu */
+.fixed .logo img {
+  width: 100px; /* Shrinks to 50% */
+}
  /* Desktop Logo - Visible by default */
 .logo-desktop {
   display: block;
