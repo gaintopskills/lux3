@@ -218,3 +218,9 @@
     display: block;
   }
 }
+
+/* Show the close button when hovering over the navbar */
+.navbar:hover .close-btn,
+.dropdown:hover .close-btn {
+  display: block;
+}
