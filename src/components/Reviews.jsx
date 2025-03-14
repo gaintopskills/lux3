@@ -21,7 +21,6 @@ const Reviews = () => {
           </a>
         </p>
       </div>
-      
       {/* Mobile Specific Reviews */}
       <div className="reviews-content-mobile">
         <p>
