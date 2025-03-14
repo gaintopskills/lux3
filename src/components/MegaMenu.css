@@ -3,12 +3,10 @@
 .logo-desktop {
   display: block;
 }
-
 /* Mobile Logo - Hidden by default */
 .logo-mobile {
   display: none;
 }
-
 /* On mobile screens, show the mobile logo and hide the desktop logo */
 @media screen and (max-width: 768px) {
   .logo-desktop {
@@ -19,7 +17,6 @@
     display: block;
   }
 }
-
 .logo-desktop
 {margin:0!Important; 
   padding:0!Important;}
@@ -115,9 +112,11 @@
     /* Create three equal columns */
     .column {
       float: left;
+      flex: 1; /* Each column takes equal space */
       width: 33.33%;
       padding: 10px;
       height: 100%;
+      box-sizing: border-box;
     }
     .column a {
       float: none;
@@ -127,9 +126,21 @@
       display: block;
       text-align: left;
     }
+    /* Ensure icons align correctly */
+.column a img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
     .column a:hover {
       background-color: red;
     }
+    /* Ensure row uses flexbox */
+.row {
+  display: flex; 
+  flex-wrap: nowrap; /* Prevent wrapping */
+  justify-content: space-between; /* Distribute columns evenly */
+}
     /* Clear floats */
     .row:after {
       content: "";
