@@ -216,21 +216,16 @@ h1 {
     background: white;
     color: black;
 }
-
 /* 🔹 Mobile Optimization: Disable Video */
 @media (max-width: 768px) {
     .video-container {
         display: none; /* Hide video on mobile */
     }
     .parallax-header {
-        background: url('/bg.webp') no-repeat center center/cover; /* Use fallback image */
         background-attachment: scroll; /* No parallax on mobile */
     }
 }
-
 /* Menu */
-/* Paragraphs */
-/* ✅ Fix: Buttons Positioned at Bottom of Parallax */
 .menu {
     position: absolute; /* Stays at bottom of .main */
     bottom: 20px;
