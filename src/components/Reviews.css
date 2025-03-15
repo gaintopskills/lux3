@@ -119,11 +119,9 @@
     }
 }
   @media (max-width: 768px) {
-    .reviews {
         .reviews {
             background-color: #000 !important; /* Solid black for better performance */
             backdrop-filter: none !important;
-        }
     }
 }
 
