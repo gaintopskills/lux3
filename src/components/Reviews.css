@@ -49,7 +49,6 @@
     flex: 1;
 }
 .header-licenses-foto img {
-    max-height: 70px;
     width: auto;
     display: block; /* Prevents unwanted extra space */
 
