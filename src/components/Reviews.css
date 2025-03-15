@@ -96,6 +96,10 @@
         flex-direction: column;
         text-align: center;
         padding: 10px;
+        .reviews {
+            background-color: #000 !important; /* Solid black for better performance */
+            backdrop-filter: none !important;
+    }
     }
     .reviews-content {
         display: none !important; /* Ensures override */
@@ -116,12 +120,6 @@
     }
     .header-licenses-foto img {
         max-height: 33px;
-    }
-}
-  @media (max-width: 768px) {
-        .reviews {
-            background-color: #000 !important; /* Solid black for better performance */
-            backdrop-filter: none !important;
     }
 }
 
