@@ -51,8 +51,13 @@
     max-height: 70px;
     width: auto;
     display: block; /* Prevents unwanted extra space */
-}
 
+}
+@media (min-width: 784px) {
+    .reviews-content-mobile {
+        display: none !important; /* Ensures override */
+    }
+}
 /* Responsive Adjustments */
 @media (max-width: 1200px) {
     .reviews-content {
@@ -84,33 +89,40 @@
         max-height: 50px;
     }
 }
-@media (min-width: 784px) {
-    .reviews-content-mobile {
+/* Responsive for Mobile */
+@media (max-width: 783px) {
+    .reviews {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    .reviews-content {
         display: none !important; /* Ensures override */
+    }
+    .header-licenses-foto {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .header-licenses-foto img {
+        max-height: 40px;
+    }
+}
+/* Extra Small Mobile Adjustments */
+@media (max-width: 500px) {
+    .header-licenses-foto {
+        gap: 2px;
+    }
+    .header-licenses-foto img {
+        max-height: 33px;
     }
 }
   @media (max-width: 768px) {
+    .reviews {
         .reviews {
             background-color: #000 !important; /* Solid black for better performance */
             backdrop-filter: none !important;
-            flex-direction: column;
-            text-align: center;
-            padding: 10px;
-        }
-        .header-licenses-foto {
-            gap: 2px;
-        }
-        .header-licenses-foto img {
-            max-height: 33px;
-        }
-        .reviews-content {
-            display: none !important; /* Ensures override */
-        }
-        .header-licenses-foto {
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
         }
     }
-
+}
 
