@@ -6,19 +6,16 @@
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     border-bottom: 3px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    padding: 20px;
     will-change: opacity, transform;
     animation: fadeIn 0.5s ease-out forwards;
+    padding: 20px;
 }
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(15px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 .reviews a {
@@ -54,8 +51,8 @@
     max-height: 70px;
     width: auto;
     display: block; /* Prevents unwanted extra space */
-    margin: 10px 0;
 }
+
 @media (min-width: 784px) {
     .reviews-content-mobile {
         display: none !important; /* Ensures override */
