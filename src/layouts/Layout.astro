@@ -53,7 +53,7 @@ const finalStructuredData = structuredData || defaultStructuredData;
 	</head>
 	<body>
 	<MegaMenu client:load />
-	<!--<Reviews client:idle />-->
+	<Reviews client:idle />
 		{breadcrumbs.length > 0 && <Breadcrumbs items={breadcrumbs} />}
 		<main style="margin-top: 4rem;">
 			<slot />
@@ -62,8 +62,6 @@ const finalStructuredData = structuredData || defaultStructuredData;
 	</body>
 </html>
 <style>
-/* Self-hosted Poppins Font */
-/* poppins-regular - latin */
 	/* Global font settings */
 html {
   font-family: Verdana, sans-serif;
