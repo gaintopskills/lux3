@@ -53,6 +53,7 @@
 .header-licenses-foto img {
     max-height: 70px;
     width: auto;
+    display: block; /* Prevents unwanted extra space */
     margin: 10px 0;
 }
 @media (min-width: 784px) {
@@ -109,9 +110,6 @@
     .header-licenses-foto img {
         max-height: 40px;
     }
-    .close-btn {
-        display: block;
-      }
 }
 /* Extra Small Mobile Adjustments */
 @media (max-width: 500px) {
@@ -122,24 +120,6 @@
         max-height: 33px;
     }
 }
-/* Default hidden state */
-.close-btn {
-    display: none !important; /* Ensures override */
-    position: absolute;
-    top: 1px;
-    right: 5px;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 1001;
-  }
-  /* Show close button when dropdown is open */
-  .close-btn.show {
-    display: block;
-  }
   @media (max-width: 768px) {
     .reviews {
         .reviews {
