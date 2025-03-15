@@ -36,7 +36,6 @@ const finalStructuredData = structuredData || defaultStructuredData;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 		<link rel="preload" href="/img/bumble-bee-bees.gif" as="image">
-		<link rel="preload" href="https://samedayappliance.repair/dryer-repair/dryer-page_header_photos.webp " as="image">
 		<link rel="preload" as="image" href="/bg.webp" type="image/webp">
 		<link rel="preload" href="/bg.mp4" as="video" type="video/mp4">
 		<meta name="generator" content={Astro.generator} />
@@ -55,7 +54,7 @@ const finalStructuredData = structuredData || defaultStructuredData;
 	</head>
 	<body>
 	<MegaMenu client:load />
-	<!--<Reviews client:idle />-->
+	<Reviews client:idle />
 		{breadcrumbs.length > 0 && <Breadcrumbs items={breadcrumbs} />}
 		<main style="margin-top: 4rem;">
 			<slot />
