@@ -34,7 +34,7 @@ const Reviews = () => {
         {[
           { href: "/credentials/bbb-accredited-appliance-repair/", src: "/credentials/bbb-accredited-appliance-repair-70.webp", alt: "BBB Accredited", width: "184px", height: "70px"},
           { href: "/credentials/licensed-appliance-repair/", src: "/credentials/same-day-appliance-repair-licensed-70.webp", alt: "Licensed Repair", width:"101px", height:"70px"},
-          { href: "/credentials/insured-appliance-repair/", src: "/credentials/insured-appliance-repair.webp", alt: "Insured Repair", width:"112px", height:"90px"},
+          { href: "/credentials/insured-appliance-repair/", src: "/credentials/same-day-appliance-repair-insured-70.webp", alt: "Insured Repair", width:"87px", height:"70px"},
           { href: "/credentials/epa-certified-appliance-repair/", src: "/credentials/epa-certified-appliance-repair-70.webp", alt: "EPA Certified", width:"129px", height:"70px"},
           { href: "/credentials/osha-certified-appliance-repair/", src: "/credentials/same-day-appliance-repair-osha-trained-70.webp", alt: "OSHA Certified", width:"76px", height:"70px"},
           { href: "/credentials/background-checked-appliance-repair/", src: "/credentials/same-day-appliance-repair-background-checked-70.webp", alt: "Background Checked", width:"72px", height:"70px"}
