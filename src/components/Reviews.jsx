@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
 import "./Reviews.css"; // Move styles to a CSS file for better separation
 
 const Reviews = () => {
   return (
-    <div className="reviews reviews-header">
+    <div className="reviews">
       {/* Reviews Content - Different for Desktop & Mobile */}
       <div className="reviews-content">
         <p>
