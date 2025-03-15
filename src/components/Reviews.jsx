@@ -7,7 +7,7 @@ const Reviews = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoaded(true);
-    }, 1000); // 2.5-second delay
+    }, 500); // 0.5-second delay
 
     return () => clearTimeout(timer); // Cleanup function
   }, []);
