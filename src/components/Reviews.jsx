@@ -32,7 +32,7 @@ const Reviews = () => {
       {/* Image Section */}
       <div className="header-licenses-foto">
         {[
-          { href: "/credentials/bbb-accredited-appliance-repair/", src: "/credentials/bbb-accredited-appliance-repair.webp", alt: "BBB Accredited", width: "217px", height: "80px"},
+          { href: "/credentials/bbb-accredited-appliance-repair/", src: "/credentials/bbb-accredited-appliance-repair-70.webp", alt: "BBB Accredited", width: "184px", height: "70px"},
           { href: "/credentials/licensed-appliance-repair/", src: "/credentials/same-day-appliance-repair-licensed-70.webp", alt: "Licensed Repair", width:"101px", height:"70px"},
           { href: "/credentials/insured-appliance-repair/", src: "/credentials/insured-appliance-repair.webp", alt: "Insured Repair", width:"112px", height:"90px"},
           { href: "/credentials/epa-certified-appliance-repair/", src: "/credentials/epa-certified-appliance-repair-70.webp", alt: "EPA Certified", width:"129px", height:"70px"},

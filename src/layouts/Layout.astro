@@ -4,7 +4,6 @@ import Reviews from '../components/Reviews.jsx';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import Footer from '../components/Footer.astro';
 import type { BreadcrumbItem } from '../components/Breadcrumbs.astro';
-
 interface Props {
 	title?: string;
 	description?: string;
@@ -12,7 +11,6 @@ interface Props {
 	structuredData?: object;
 	breadcrumbs?: BreadcrumbItem[];
 }
-
 const { 
 	title = "Astro Basics",
 	description = "Welcome to Astro Basics - A starter template for building fast websites with Astro",
@@ -20,7 +18,6 @@ const {
 	structuredData,
 	breadcrumbs = []
 } = Astro.props;
-
 const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'http://localhost:4321');
 
 const defaultStructuredData = {
@@ -30,7 +27,6 @@ const defaultStructuredData = {
 	"description": description,
 	"url": canonicalURL.toString()
 };
-
 const finalStructuredData = structuredData || defaultStructuredData;
 ---
 <!doctype html>
