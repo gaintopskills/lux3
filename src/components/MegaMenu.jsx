@@ -47,7 +47,6 @@ export const MegaMenu = () => {
       setIsCloseVisible(true);
     }
   };
-
   const handleCloseDropdown = () => {
     setOpenDropdown(null);
     setIsCloseVisible(false);
