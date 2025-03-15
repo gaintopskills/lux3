@@ -88,9 +88,6 @@
     .reviews-content-mobile {
         display: none !important; /* Ensures override */
     }
-    .reviews {
-        background-color: #000 !important;
-    }
 }
 /* Responsive for Mobile */
 @media (max-width: 784px) {
