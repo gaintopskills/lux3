@@ -36,7 +36,7 @@ const Reviews = () => {
           { href: "/credentials/licensed-appliance-repair/", src: "/credentials/same-day-appliance-repair-licensed-70.webp", alt: "Licensed Repair", width:"101px", height:"70px"},
           { href: "/credentials/insured-appliance-repair/", src: "/credentials/insured-appliance-repair.webp", alt: "Insured Repair", width:"112px", height:"90px"},
           { href: "/credentials/epa-certified-appliance-repair/", src: "/credentials/epa-certified-appliance-repair.webp", alt: "EPA Certified", width:"165px", height:"90px"},
-          { href: "/credentials/osha-certified-appliance-repair/", src: "/credentials/osha-certified-appliance-repair.webp", alt: "OSHA Certified", width:"98px", height:"90px"},
+          { href: "/credentials/osha-certified-appliance-repair/", src: "/credentials/same-day-appliance-repair-osha-trained-70.webp", alt: "OSHA Certified", width:"76px", height:"70px"},
           { href: "/credentials/background-checked-appliance-repair/", src: "/credentials/background-checked-technicians.webp", alt: "Background Checked", width:"98px", height:"90px"}
         ].map((item, index) => (
           <a key={index} href={item.href} target="_blank" rel="noopener noreferrer">
