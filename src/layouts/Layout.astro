@@ -51,12 +51,11 @@ const finalStructuredData = structuredData || defaultStructuredData;
 		<meta property="twitter:url" content={canonicalURL} />
 		<meta property="twitter:title" content={title} />
 		<meta property="twitter:description" content={description} />
-
 		<script type="application/ld+json" set:html={JSON.stringify(finalStructuredData)} />
 	</head>
 	<body>
 	<MegaMenu client:load />
-	<Reviews client:idle />
+	<!--<Reviews client:idle />-->
 		{breadcrumbs.length > 0 && <Breadcrumbs items={breadcrumbs} />}
 		<main style="margin-top: 4rem;">
 			<slot />
