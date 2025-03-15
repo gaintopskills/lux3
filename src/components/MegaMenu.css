@@ -46,7 +46,7 @@
   }
     /*-- end sticky header*/
     .navbar {
-      
+      font-family: "Poppins", Arial, Helvetica, sans-serif;
       overflow: hidden;
       background-color: #000000;
     }
