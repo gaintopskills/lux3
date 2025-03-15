@@ -25,6 +25,7 @@ const ArrowIcon = ({ isOpen }) => (
 export const MegaMenu = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [isCloseVisible, setIsCloseVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,11 +37,20 @@ export const MegaMenu = () => {
   }, []);
 
   const handleDropdownToggle = (menuId) => {
-    setOpenDropdown((prev) => (prev === menuId ? null : menuId));
+    if (openDropdown === menuId) {
+      // Do not toggle it off, just keep it open
+      setOpenDropdown(menuId);
+      setIsCloseVisible(true);
+    } else {
+      // Open new dropdown and keep close button visible
+      setOpenDropdown(menuId);
+      setIsCloseVisible(true);
+    }
   };
 
   const handleCloseDropdown = () => {
     setOpenDropdown(null);
+    setIsCloseVisible(false);
   };
 
   return (
@@ -54,9 +64,9 @@ export const MegaMenu = () => {
 <a className="logo-mobile" href="#home">
   <img width="25" alt="Mobile Logo" src="/logo-mobile.png" />
 </a>
- {/* Close Button - Only appears when a dropdown is open */}
- {openDropdown && (
-            <button className="close-btn" onClick={handleCloseDropdown}>
+ {/* Close Button - Always visible when a dropdown is open */}
+ {isCloseVisible && (
+            <button className="close-btn show" onClick={handleCloseDropdown}>
               ✖
             </button>
           )}
