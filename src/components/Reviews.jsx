@@ -30,9 +30,7 @@ const Reviews = () => {
           { href: "/credentials/background-checked-appliance-repair/", src: "/credentials/same-day-appliance-repair-background-checked-70.webp", alt: "Background Checked", width:"72px", height:"70px"}
         ].map((item, index) => (
           <a key={index} href={item.href} target="_blank" rel="noopener noreferrer">
-            <img
-  loading="lazy"
-  srcSet={`${item.src} 1x, ${item.src.replace("-70", "-35")} 0.5x`} 
+            <img srcSet={`${item.src} 1x, ${item.src.replace("-70", "-35")} 0.5x`} 
   sizes="(max-width: 600px) 35px, 70px"
   src={item.src}
   alt={item.alt}
