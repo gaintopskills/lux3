@@ -16,9 +16,6 @@ const Reviews = () => {
           <a href="/reviews-page/" title="reviews" className="desktop">
             Reviews ⭐⭐⭐⭐⭐ 5.0 (Google Rating)
           </a>
-          <a href="/reviews-page/" title="reviews" className="mobile">
-            Reviews ⭐⭐⭐⭐⭐ 5.0
-          </a>
         </p>
       </div>
       {/* Mobile Specific Reviews */}
