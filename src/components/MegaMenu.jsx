@@ -62,7 +62,7 @@ export const MegaMenu = () => {
   <img width="140" alt="Logo" src="/logo999.jpg" />
 </a>
 <a className="logo-mobile" href="#home">
-  <img width="25" height="25" alt="Mobile Logo" src="/logo-mobile.png" />
+  <img width="25" height="25" alt="Mobile Logo" src="/logo-mobile.webp" />
 </a>
  {/* Close Button - Always visible when a dropdown is open */}
  {isCloseVisible && (
