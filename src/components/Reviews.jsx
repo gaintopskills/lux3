@@ -39,7 +39,6 @@ const Reviews = () => {
   width={item.width}
   height={item.height}
 />
-
           </a>
         ))}
       </div>
