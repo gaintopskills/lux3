@@ -87,7 +87,6 @@
     background-blend-mode: overlay;
     backdrop-filter: blur(10px);
      -webkit-backdrop-filter: blur(10px); /* Safari Support */ 
-     top: 100%; /* Ensures dropdown starts right below navbar */
   }
   /* Style for dropdown links with icons */
   .dropdown-content a {
@@ -183,6 +182,7 @@ margin: 0 30px 0 0;}
     .dropdown-content {
       padding: 0;
       width: 100%;
+      top: 100%; /* Ensures dropdown starts right below navbar */
     }
     .dropdown-content img {
       display: none;
@@ -214,26 +214,9 @@ margin: 0 30px 0 0;}
     z-index: 1001;
   }
   
-  /* Ensure button appears when dropdown is open */
-  .close-btn.show {
-    display: block;
-  }
-
 /* Show close button only on mobile */
 @media screen and (max-width: 768px) {
   .close-btn {
     display: block;
   }
-}
-
-/* Show the close button when hovering over the navbar */
-.navbar:hover .close-btn,
-.dropdown:hover .close-btn {
-  display: block;
-}
-
-
-/* Ensure the close button is always visible when a dropdown is open */
-.dropdown-content.show ~ .close-btn {
-  display: block;
 }
