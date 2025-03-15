@@ -108,15 +108,6 @@
     .header-licenses-foto {
         justify-content: center;
         flex-wrap: wrap;
-        gap: 10px;
-    }
-    .header-licenses-foto img {
-        max-height: 40px;
-    }
-}
-/* Extra Small Mobile Adjustments */
-@media (max-width: 500px) {
-    .header-licenses-foto {
         gap: 2px;
     }
     .header-licenses-foto img {
