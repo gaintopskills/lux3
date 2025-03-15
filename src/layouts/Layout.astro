@@ -35,7 +35,8 @@ const finalStructuredData = structuredData || defaultStructuredData;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
-		<link rel="preload" href="/img/bumble-bee-bees.gif" as="image">
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" as="style" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" />
 		<link rel="preload" as="image" href="/bg.webp" type="image/webp">
 		<link rel="preload" href="/bg.mp4" as="video" type="video/mp4">
 		<meta name="generator" content={Astro.generator} />
@@ -54,7 +55,7 @@ const finalStructuredData = structuredData || defaultStructuredData;
 	</head>
 	<body>
 	<MegaMenu client:load />
-	<Reviews client:idle />
+	<!--<Reviews client:idle />-->
 		{breadcrumbs.length > 0 && <Breadcrumbs items={breadcrumbs} />}
 		<main style="margin-top: 4rem;">
 			<slot />
@@ -67,7 +68,7 @@ const finalStructuredData = structuredData || defaultStructuredData;
 /* poppins-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: Tahoma;
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   src: url('../fonts/poppins-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
