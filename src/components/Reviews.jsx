@@ -1,6 +1,20 @@
+import React, { useState, useEffect } from "react";
 import "./Reviews.css"; // Move styles to a CSS file for better separation
 
 const Reviews = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoaded(true);
+    }, 2000); // 2-second delay
+
+    return () => clearTimeout(timer); // Cleanup function
+  }, []);
+
+  // Prevent rendering until the delay completes
+  if (!isLoaded) return null;
+
   return (
     <div className="reviews">
       {/* Reviews Content - Different for Desktop & Mobile */}
@@ -31,13 +45,13 @@ const Reviews = () => {
         ].map((item, index) => (
           <a key={index} href={item.href} target="_blank" rel="noopener noreferrer">
             <img
-  srcSet={`${item.src} 1x, ${item.src.replace("-70", "-35")} 0.5x`} 
-  sizes="(max-width: 600px) 35px, 70px"
-  src={item.src}
-  alt={item.alt}
-  width={item.width}
-  height={item.height}
-/>
+              srcSet={`${item.src} 1x, ${item.src.replace("-70", "-35")} 0.5x`} 
+              sizes="(max-width: 600px) 35px, 70px"
+              src={item.src}
+              alt={item.alt}
+              width={item.width}
+              height={item.height}
+            />
           </a>
         ))}
       </div>
