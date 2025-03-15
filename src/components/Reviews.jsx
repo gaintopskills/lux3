@@ -4,10 +4,6 @@ import "./Reviews.css"; // Move styles to a CSS file for better separation
 const Reviews = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-
   return (
     <div className={`reviews reviews-header ${isVisible ? "show" : ""}`}>
       {/* Reviews Content - Different for Desktop & Mobile */}
