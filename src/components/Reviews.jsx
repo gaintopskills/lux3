@@ -31,7 +31,6 @@ const Reviews = () => {
         ].map((item, index) => (
           <a key={index} href={item.href} target="_blank" rel="noopener noreferrer">
             <img
-  loading="lazy"
   srcSet={`${item.src} 1x, ${item.src.replace("-70", "-35")} 0.5x`} 
   sizes="(max-width: 600px) 35px, 70px"
   src={item.src}
