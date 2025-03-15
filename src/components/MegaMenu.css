@@ -77,9 +77,9 @@
       display: block;
       position: absolute;
       width: 100%;
+      min-height: 50px; /* Reserve space to prevent shift */
       left: 0;
       z-index: 1; /* Ensure it's on top */
-      padding: 0 100px 0 100px;
       visibility: hidden;
     border-bottom: 5px solid rgba(123, 122, 122, 0.9);
     background-color:rgba(0, 0, 0, 0.8);
