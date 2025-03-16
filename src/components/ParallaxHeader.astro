@@ -193,32 +193,13 @@ h1 {
      -webkit-backdrop-filter: blur(10px); /* Safari Support */ 
     z-index: 0;
 }
-<!--Reduce the blur value for mobile devices:
-@media (max-width: 768px) {
-    .maintext {
-        backdrop-filter: none;
-        background: none;
-        padding: 5px;
-    }
-    .bg-video {
-        display: none; /* Disable video for mobile */
-    }
-}
+
 /* 🔹 Page Content Styling */
 .content {
     height: 250vh; /* Extra scrolling space for strong parallax effect */
     padding: 100px;
     background: white;
     color: black;
-}
-/* 🔹 Mobile Optimization: Disable Video */
-@media (max-width: 768px) {
-    .video-container {
-        display: none; /* Hide video on mobile */
-    }
-    .parallax-header {
-        background-attachment: scroll; /* No parallax on mobile */
-    }
 }
 /* Menu */
 .menu {
@@ -297,10 +278,24 @@ h1 {
         bottom: 10px;
     }
 }
-/* ✅ Hide buttons on mobile */
+/* 🔹 Mobile Optimization: Disable Video */
 @media (max-width: 768px) {
-    .menu {
+    .video-container {
+        display: none; /* Hide video on mobile */
+    }
+    .parallax-header {
+        background-attachment: scroll; /* No parallax on mobile */
+    }
+     .maintext {
+        backdrop-filter: none !important;
+        background: #000000;
+        padding: 5px;
+    }
+     .menu {
         display: none;
+    }
+    .bg-video {
+        display: none; /* Disable video for mobile */
     }
 }
 </style>
