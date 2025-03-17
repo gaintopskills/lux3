@@ -57,11 +57,12 @@ export const TabsAccordion = () => {
   return (
     <div
       style={{
-        maxWidth: "1200px",
+        maxWidth: "100%",
         margin: "20px auto",
         border: "2px solid #fff",
         borderRadius: "5px",
         overflow: "hidden",
+        backgroundColor: "#000", // Ensures the entire background is black
 
       }}
     >
@@ -210,5 +211,4 @@ export const TabsAccordion = () => {
     </div>
   );
 };
-
 export default TabsAccordion;
