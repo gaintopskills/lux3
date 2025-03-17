@@ -6,14 +6,13 @@
              <source src="/bg.mp4" type="video/mp4" media="(min-width: 769px)">
             Your browser does not support the video tag.
         </video>
+    <!-- Main Text Content -->
          <div class="maintext">
                     <h1>Same Day Appliance Repair</h1>
                     <p>Need fast, reliable appliance repair? Look no further! Our team offers same-day, expert repair services for all major home and commercial appliances...</p>
                     <p>We’re trusted by customers throughout Los Angeles to repair top brands like KitchenAid, Frigidaire, LG, Samsung, GE, Sub-Zero, Wolf, and more...</p>
     </div>
     </div>
-    <!-- Main Text Content -->
-</header>
 <!--Menu-->
    <div class="menu">
             <a style="--clr: #7808d0" class="button" href="#price-list">
@@ -132,7 +131,7 @@
           </span>
                 Cleaning
             </a>
-        </div>
+        </div></div>
         <!-- End Menu-->
 
 <!-- 🔹 CSS -->
@@ -148,13 +147,19 @@ h1 {
 /* 🔹 Video Container with Parallax */
 .video-container {
      position: relative;
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
   box-sizing: border-box;
   box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
 	transform-style: inherit;
-    z-index: -2;
+    z-index: -3;
     background: black; /* Placeholder background */
+
+    display:flex;
+     align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
 }
 
 /* 🔹 Background Video */
@@ -266,9 +271,6 @@ h1 {
 }
 /* 🔹 Mobile Optimization: Disable Video */
 @media (max-width: 768px) {
-    .video-container {
-        display: none; /* Hide video on mobile */
-    }
     .parallax-header {
         background-attachment: scroll; /* No parallax on mobile */
     }
