@@ -165,6 +165,7 @@ h1 {
     height: 100vh;
     z-index: -2;
     background: black; /* Placeholder background */
+    will-change: transform;
 }
 
 /* 🔹 Background Video */
@@ -194,12 +195,12 @@ h1 {
 }
 /* 🔹 Page Content Styling */
 .content {
-    height: 150vh; /* Extra scrolling space for strong parallax effect */
+    height: 100vh; /* Extra scrolling space for strong parallax effect */
     padding: 100px;
 }
 /* Menu */
 .menu {
-    position: absolute; /* Stays at bottom of .main */
+    position: fixed; /* Stays at bottom of .main */
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -305,7 +306,7 @@ window.addEventListener("scroll", () => {
     const videoContainer = document.querySelector(".video-container");
 
     if (videoContainer) {
-        videoContainer.style.transform = `translateY(${scrollPos * 0.3}px)`; // Adjust for smooth parallax
+        videoContainer.style.transform = `translateY(${scrollPos * 0.3}px)`; // Causes reflow
     }
 });
 </script>
