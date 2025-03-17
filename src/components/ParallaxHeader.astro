@@ -1,19 +1,18 @@
 <!-- Parallax Header Section -->
 <div class="main">
-<header class="parallax-header">
     <!-- Background Video -->
     <div class="video-container">
         <video id="bgVideo" class="bg-video" autoplay muted loop playsinline>
              <source src="/bg.mp4" type="video/mp4" media="(min-width: 769px)">
             Your browser does not support the video tag.
         </video>
-    </div>
-    <!-- Main Text Content -->
-   <div class="maintext">
+         <div class="maintext">
                     <h1>Same Day Appliance Repair</h1>
                     <p>Need fast, reliable appliance repair? Look no further! Our team offers same-day, expert repair services for all major home and commercial appliances...</p>
                     <p>We’re trusted by customers throughout Los Angeles to repair top brands like KitchenAid, Frigidaire, LG, Samsung, GE, Sub-Zero, Wolf, and more...</p>
     </div>
+    </div>
+    <!-- Main Text Content -->
 </header>
 <!--Menu-->
    <div class="menu">
@@ -145,28 +144,17 @@ h1 {
     text-transform: uppercase;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
-/* 🔥 Full-Screen Parallax Video Header */
-.parallax-header {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full-screen height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-}
 
 /* 🔹 Video Container with Parallax */
 .video-container {
-    position: fixed; /* Initially covers the full screen */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+     position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
     z-index: -2;
     background: black; /* Placeholder background */
-    will-change: transform;
 }
 
 /* 🔹 Background Video */
@@ -299,3 +287,15 @@ h1 {
     }
 }
 </style>
+
+<!-- 🔹 JavaScript for Smooth Parallax Effect -->
+<script defer>
+window.addEventListener("scroll", () => {
+    const scrollPos = window.scrollY;
+    const videoContainer = document.querySelector(".video-container");
+
+    if (videoContainer) {
+        videoContainer.style.transform = `translateY(${scrollPos * 0.3}px)`; // Causes reflow
+    }
+});
+</script>
