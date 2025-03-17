@@ -13,7 +13,8 @@
     background-blend-mode: overlay;
     backdrop-filter: blur(10px);
      -webkit-backdrop-filter: blur(10px); /* Safari Support */ 
-     position: fixed; /* or fixed */
+     position: absolute; /* or fixed */
+     width:100%;
 }
 @keyframes fadeIn {
     from {
