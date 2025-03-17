@@ -275,15 +275,3 @@ h1 {
     }
 }
 </style>
-
-<!-- 🔹 JavaScript for Smooth Parallax Effect -->
-<script defer>
-window.addEventListener("scroll", () => {
-    const scrollPos = window.scrollY;
-    const videoContainer = document.querySelector(".video-container");
-
-    if (videoContainer) {
-        videoContainer.style.transform = `translateY(${scrollPos * 0.3}px)`; // Causes reflow
-    }
-});
-</script>
