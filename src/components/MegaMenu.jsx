@@ -80,12 +80,12 @@ export const MegaMenu = () => {
               Services <ArrowIcon isOpen={openDropdown === "Household"} />
             </button>
             <div className={`dropdown-content ${openDropdown === "Household" ? "show" : ""}`}>
-              <h3>Home Appliances We Repair</h3>
+              <h3>High-End  Appliances We Repair</h3>
               <div className="row">
                 {[
-                  ["Refrigerator Repair", "Freezer Repair", "Washer Repair", "Dryer Repair", "Stove repair", "Range Repair"],
-                  ["Washer Repair", "Microwave Repair", "Cooktop Repair", "Range Hood Repair"],
-                  ["Get a Quote", "Same Day Pricing", "Custom Requests"],
+                  ["Oven Repair", "Stove repair", "Range Repair", "Cooktop Repair", "Range Hood Repair"],
+                  ["Washer Repair", "Dryer Repair", "Dishwasher Repair","Microwave Repair","Refrigerator Repair", "Freezer Repair",  ],
+                  ["Fireplace repair", "BBQ Repair", "Wine Cooler Repair", "Wine Cellar Repair", "Induction Cooktop Repair", ],
                 ].map((col, idx) => (
                   <div className="column" key={idx}>
                     {col.map((item) => (
@@ -104,15 +104,22 @@ export const MegaMenu = () => {
             <button className="dropbtn" onClick={() => handleDropdownToggle("commercial")}>
               Brands <ArrowIcon isOpen={openDropdown === "commercial"} />
             </button>
-            <div className={`dropdown-content ${openDropdown === "commercial" ? "show" : ""}`}>
-              <h3>Commercial Appliances We Repair</h3>
+            <div className={`dropdown-content ${openDropdown === "Household" ? "show" : ""}`}>
+              <h3>High-End  Appliances We Repair</h3>
               <div className="row">
-                {["Refrigerator", "Freezer", "Dishwasher", "Dryer", "Oven"].map((item) => (
-                  <a key={item} href="#">
-                   <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> {item}
-                  </a>
+                {[
+                  ["AGA", "Big Chill", "BlueStar", "Bosch",],
+                  ["Dacor", "Elmira Stove Works", "Fisher & Paykel","Gaggenau","Jenn-Air", "KitchenAid", "La Cornue", "Miele",],
+                  ["Smeg", "Thermador", "Viking", "Wolf", "Wine Cellar Repair", "Induction Cooktop Repair", ],
+                ].map((col, idx) => (
+                  <div className="column" key={idx}>
+                    {col.map((item) => (
+                       <a key={item} href="#">
+                       <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> {item}
+                     </a>
+                    ))}
+                  </div>
                 ))}
-
               </div>
             </div>
           </div>
@@ -189,7 +196,7 @@ export const MegaMenu = () => {
           {/* Prices Dropdown */}
           <div className="dropdown">
             <button className="dropbtn" onClick={() => handleDropdownToggle("prices")}>
-               <ArrowIcon isOpen={openDropdown === "prices"} />
+             Foundation  <ArrowIcon isOpen={openDropdown === "prices"} />
             </button>
             <div className={`dropdown-content ${openDropdown === "prices" ? "show" : ""}`}>
               <div className="row">
