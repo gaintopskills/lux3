@@ -82,12 +82,12 @@ export const MegaMenu = () => {
                 {[
                   ["Oven Repair", "Stove repair", "Range Repair", "Cooktop Repair", "Range Hood Repair"],
                   ["Washer Repair", "Dryer Repair", "Dishwasher Repair","Microwave Repair","Refrigerator Repair", "Freezer Repair",  ],
-                  ["Fireplace repair", "BBQ Repair", "Wine Cooler Repair", "Wine Cellar Repair", "Induction Cooktop Repair", ],
+                  ["Fireplace repair", "BBQ Repair", "Wine Cooler Repair", "Wine Cellar Repair",  ],
                 ].map((col, idx) => (
                   <div className="column" key={idx}>
-                    {col.map((item) => (
+                  {col.map((item) => (
                        <a key={item} href="#">
-                       <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> {item}
+                       {/* <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> */}{item}
                      </a>
                     ))}
                   </div>
@@ -112,7 +112,7 @@ export const MegaMenu = () => {
                   <div className="column" key={idx}>
                     {col.map((item) => (
                        <a key={item} href="#">
-                       <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> {item}
+                      {/* <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} />*/} {item}
                      </a>
                     ))}
                   </div>
@@ -135,7 +135,7 @@ export const MegaMenu = () => {
                   <div className="column" key={idx}>
                     {col.map((item) => (
                        <a key={item} href="#">
-                       <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> {item}
+                    {/*   <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> */}{item}
                      </a>
                     ))}
                   </div>
@@ -152,14 +152,14 @@ export const MegaMenu = () => {
             <div className={`dropdown-content ${openDropdown === "Areas" ? "show" : ""}`}>
               <div className="row">
                 {[
-                  ["Refrigerator Repair", "Oven Repair", "Dishwasher Repair", "Dryer Repair"],
-                  ["Washer Repair", "Microwave Repair", "Cooktop Repair", "Range Hood Repair"],
-                  ["Get a Quote", "Same Day Pricing", "Custom Requests"],
+                  ["Yearly Maintenance"],
+                  ["Maintenance Twice A Year"],
+                  ["Donate To Low Income Familisies"],
                 ].map((col, idx) => (
                   <div className="column" key={idx}>
                     {col.map((item) => (
                        <a key={item} href="#">
-                       <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> {item}
+                     {/*  <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> */}{item}
                      </a>
                     ))}
                   </div>
@@ -183,7 +183,7 @@ export const MegaMenu = () => {
                   <div className="column" key={idx}>
                     {col.map((item) => (
                        <a key={item} href="#">
-                       <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> {item}
+                      {/* <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} />*/} {item}
                      </a>
                     ))}
                   </div>
