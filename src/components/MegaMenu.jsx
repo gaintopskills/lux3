@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./MegaMenu.css";
-
-
 // Reusable Arrow Icon Component
 const ArrowIcon = ({ isOpen }) => (
   <svg
@@ -21,7 +19,6 @@ const ArrowIcon = ({ isOpen }) => (
     />
   </svg>
 );
-
 export const MegaMenu = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -108,9 +105,9 @@ export const MegaMenu = () => {
               <h3>High-End  Appliances We Repair</h3>
               <div className="row">
                 {[
-                  ["AGA", "Big Chill", "BlueStar", "Bosch",],
-                  ["Dacor", "Elmira Stove Works", "Fisher & Paykel","Gaggenau","Jenn-Air", "KitchenAid", "La Cornue", "Miele",],
-                  ["Smeg", "Thermador", "Viking", "Wolf", "Wine Cellar Repair", "Induction Cooktop Repair", ],
+                  ["AGA", "Big Chill", "BlueStar", "Bosch", "Dacor", "Elmira Stove Works",],
+                  [ "Fisher & Paykel","Gaggenau","Jenn-Air", "KitchenAid", "La Cornue", "Miele",],
+                  ["Smeg", "Thermador", "Viking", "Wolf", ],
                 ].map((col, idx) => (
                   <div className="column" key={idx}>
                     {col.map((item) => (
@@ -146,29 +143,7 @@ export const MegaMenu = () => {
               </div>
             </div>
           </div>
-          {/* Brands Dropdown */}
-          <div className="dropdown">
-            <button className="dropbtn" onClick={() => handleDropdownToggle("Brands")}>
-            Brands <ArrowIcon isOpen={openDropdown === "Brands"} />
-            </button>
-            <div className={`dropdown-content ${openDropdown === "Brands" ? "show" : ""}`}>
-              <div className="row">
-                {[
-                  ["Refrigerator Repair", "Oven Repair", "Dishwasher Repair", "Dryer Repair"],
-                  ["Washer Repair", "Microwave Repair", "Cooktop Repair", "Range Hood Repair"],
-                  ["Get a Quote", "Same Day Pricing", "Custom Requests"],
-                ].map((col, idx) => (
-                  <div className="column" key={idx}>
-                    {col.map((item) => (
-                       <a key={item} href="#">
-                    <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> {item}
-                     </a>
-                    ))}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+          
              {/* Areas Dropdown */}
              <div className="dropdown">
             <button className="dropbtn" onClick={() => handleDropdownToggle("Areas")}>
@@ -216,7 +191,6 @@ export const MegaMenu = () => {
               </div>
             </div>
           </div>
-
           {/* Phone Number */}
           <a href="#top" className="phone-number">(323) 870-4790</a>
         </div>
