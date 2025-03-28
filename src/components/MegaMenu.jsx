@@ -102,7 +102,7 @@ export const MegaMenu = () => {
               Brands <ArrowIcon isOpen={openDropdown === "commercial"} />
             </button>
             <div className={`dropdown-content ${openDropdown === "Household" ? "show" : ""}`}>
-              <h3>High-End  Appliances We Repair</h3>
+              <h3>High-End  Brands We Repair</h3>
               <div className="row">
                 {[
                   ["AGA", "Big Chill", "BlueStar", "Bosch", "Dacor", "Elmira Stove Works",],
@@ -174,11 +174,10 @@ export const MegaMenu = () => {
              Foundation  <ArrowIcon isOpen={openDropdown === "prices"} />
             </button>
             <div className={`dropdown-content ${openDropdown === "prices" ? "show" : ""}`}>
+            <h3>10% of the revenues goes towards helping law income families fix their appliances!</h3>
               <div className="row">
                 {[
-                  ["Refrigerator Repair", "Oven Repair", "Dishwasher Repair", "Dryer Repair"],
-                  ["Washer Repair", "Microwave Repair", "Cooktop Repair", "Range Hood Repair"],
-                  ["Get a Quote", "Same Day Pricing", "Custom Requests"],
+                  [],
                 ].map((col, idx) => (
                   <div className="column" key={idx}>
                     {col.map((item) => (
