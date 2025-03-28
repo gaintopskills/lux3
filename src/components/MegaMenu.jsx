@@ -171,7 +171,8 @@ export const MegaMenu = () => {
           {/* Prices Dropdown */}
           <div className="dropdown">
             <button className="dropbtn" onClick={() => handleDropdownToggle("prices")}>
-             Foundation  <ArrowIcon isOpen={openDropdown === "prices"} />
+            Charity Program
+  <ArrowIcon isOpen={openDropdown === "prices"} />
             </button>
             <div className={`dropdown-content ${openDropdown === "prices" ? "show" : ""}`}>
             <h3>10% of the revenues goes towards helping law income families fix their appliances!</h3>
