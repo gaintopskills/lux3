@@ -77,7 +77,7 @@ export const MegaMenu = () => {
           {/* Home Dropdown */}
           <div className="dropdown">
             <button className="dropbtn" onClick={() => handleDropdownToggle("Household")}>
-              Household <ArrowIcon isOpen={openDropdown === "Household"} />
+              Services <ArrowIcon isOpen={openDropdown === "Household"} />
             </button>
             <div className={`dropdown-content ${openDropdown === "Household" ? "show" : ""}`}>
               <h3>Home Appliances We Repair</h3>
@@ -102,7 +102,7 @@ export const MegaMenu = () => {
           {/* Commercial Dropdown */}
           <div className="dropdown">
             <button className="dropbtn" onClick={() => handleDropdownToggle("commercial")}>
-              Commercial <ArrowIcon isOpen={openDropdown === "commercial"} />
+              Brands <ArrowIcon isOpen={openDropdown === "commercial"} />
             </button>
             <div className={`dropdown-content ${openDropdown === "commercial" ? "show" : ""}`}>
               <h3>Commercial Appliances We Repair</h3>
@@ -119,7 +119,7 @@ export const MegaMenu = () => {
            {/* HVAC Dropdown */}
            <div className="dropdown">
             <button className="dropbtn" onClick={() => handleDropdownToggle("HVAC")}>
-              HVAC <ArrowIcon isOpen={openDropdown === "HVAC"} />
+            Service Areas <ArrowIcon isOpen={openDropdown === "HVAC"} />
             </button>
             <div className={`dropdown-content ${openDropdown === "HVAC" ? "show" : ""}`}>
               <div className="row">
@@ -165,7 +165,7 @@ export const MegaMenu = () => {
              {/* Areas Dropdown */}
              <div className="dropdown">
             <button className="dropbtn" onClick={() => handleDropdownToggle("Areas")}>
-              Areas <ArrowIcon isOpen={openDropdown === "Areas"} />
+              VIP <ArrowIcon isOpen={openDropdown === "Areas"} />
             </button>
             <div className={`dropdown-content ${openDropdown === "Areas" ? "show" : ""}`}>
               <div className="row">
@@ -189,7 +189,7 @@ export const MegaMenu = () => {
           {/* Prices Dropdown */}
           <div className="dropdown">
             <button className="dropbtn" onClick={() => handleDropdownToggle("prices")}>
-              Prices <ArrowIcon isOpen={openDropdown === "prices"} />
+               <ArrowIcon isOpen={openDropdown === "prices"} />
             </button>
             <div className={`dropdown-content ${openDropdown === "prices" ? "show" : ""}`}>
               <div className="row">
