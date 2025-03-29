@@ -192,7 +192,7 @@ export const MegaMenu = () => {
             </div>
           </div>
           {/* Phone Number */}
-          <a href="#top" className="phone-number">(323) 870-4790</a>
+          <a href="#top" className="phone-number">(213) 309-1924</a>
         </div>
       </nav>
     </header>
