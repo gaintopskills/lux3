@@ -105,20 +105,33 @@ export const MegaMenu = () => {
             <div className={`dropdown-content ${openDropdown === "Household" ? "show" : ""}`}>
               <h3>High-End  Brands We Repair</h3>
               <div className="row">
-                {[
-                  ["AGA", "Big Chill", "BlueStar", "Bosch", "Dacor", "Elmira Stove Works",],
-                  [ "Fisher & Paykel","Gaggenau","Jenn-Air", "KitchenAid", "La Cornue", "Miele",],
-                  ["Smeg", "Thermador", "Viking", "Wolf", ],
-                ].map((col, idx) => (
-                  <div className="column" key={idx}>
-                    {col.map((item) => (
-                       <a key={item} href="#">
-                      {/* <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} />*/} {item}
-                     </a>
-                    ))}
-                  </div>
-                ))}
-              </div>
+  {[
+    ["AGA", "Big Chill", "BlueStar", "Bosch", "Dacor", "Elmira Stove Works"],
+    ["Fisher & Paykel", "Gaggenau", "Jenn-Air", "KitchenAid", "La Cornue", "Miele"],
+    [
+      "Smeg",
+      { label: "Sub-Zero", href: "/sub-zero-repair" },
+      "Thermador",
+      "Viking",
+      "Wolf",
+    ],
+  ].map((col, idx) => (
+    <div className="column" key={idx}>
+      {col.map((item) =>
+        typeof item === "string" ? (
+          <a key={item} href="#">
+            {/* <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> */} {item}
+          </a>
+        ) : (
+          <a key={item.label} href={item.href}>
+            {/* <img src={`/svg/${item.label.split(" ")[0].toLowerCase()}.svg`} alt={item.label} /> */} {item.label}
+          </a>
+        )
+      )}
+    </div>
+  ))}
+</div>
+
             </div>
           </div>
            {/* HVAC Dropdown */}
