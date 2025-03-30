@@ -117,10 +117,10 @@ export const MegaMenu = () => {
     ["AGA", "Big Chill", "BlueStar", "Bosch", "Dacor", "Elmira Stove Works"],
     ["Fisher & Paykel", "Gaggenau", "Jenn-Air", "KitchenAid", "La Cornue", "Miele"],
     [ "Smeg",
-      { label: "Sub-Zero", href: "/sub-zero-repair" },
-      "Thermador", 
-      { label: "Viking", href: "/viking-appliance-repair" },
-      { label: "Wolf", href: "/wolf-appliance-repair" },
+      { label: "Sub-Zero", href: "/sub-zero-repair/" },
+      { label: "Thermador", href: "/thermador-appliance-repair/" },
+      { label: "Viking", href: "/viking-appliance-repair/" },
+      { label: "Wolf", href: "/wolf-appliance-repair/" },
     ],
   ].map((col, idx) => (
     <div className="column" key={idx}>
