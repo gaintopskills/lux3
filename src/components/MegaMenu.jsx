@@ -119,8 +119,9 @@ export const MegaMenu = () => {
     ["Fisher & Paykel", "Gaggenau", "Jenn-Air", "KitchenAid", "La Cornue", "Miele"],
     [ "Smeg",
       { label: "Sub-Zero", href: "/sub-zero-repair" },
-      "Thermador", { label: "Viking", href: "/viking-appliance-repair" },
-      "Wolf",
+      "Thermador", 
+      { label: "Viking", href: "/viking-appliance-repair" },
+      { label: "Wolf", href: "/wolf-appliance-repair" },
     ],
   ].map((col, idx) => (
     <div className="column" key={idx}>
