@@ -19,10 +19,7 @@ const ArrowIcon = ({ isOpen }) => (
     />
   </svg>
 );
-links = {
-  "Oven Repair": "/sub-zero-repair/",
-  // ... other mappings
-};
+
 export const MegaMenu = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -77,9 +74,9 @@ export const MegaMenu = () => {
           )}
           {/* Home Dropdown */}
           <div className="dropdown">
-            <a className="dropbtn" href="/services/" onClick={() => handleDropdownToggle("Household")}>
+           <button className="dropbtn" ><a href="/services/" onClick={() => handleDropdownToggle("Household")}>
               Services <ArrowIcon isOpen={openDropdown === "Household"} />
-            </a>
+            </a></button>
             <div className={`dropdown-content ${openDropdown === "Household" ? "show" : ""}`}>
               <h3>High-End  Appliances We Repair</h3>
               <div className="row">
