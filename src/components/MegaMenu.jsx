@@ -218,5 +218,4 @@ export const MegaMenu = () => {
     </header>
   );
 };
-
 export default MegaMenu;
