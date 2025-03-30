@@ -83,7 +83,9 @@ export const MegaMenu = () => {
                 {[
                   ["Oven Repair", "Stove repair", "Range Repair", "Cooktop Repair", "Range Hood Repair"],
                   ["Washer Repair", "Dryer Repair", "Dishwasher Repair","Microwave Repair","Refrigerator Repair", "Freezer Repair",  ],
-                  ["Fireplace repair", "BBQ Repair", "Wine Cooler Repair", "Wine Cellar Repair",  ],
+                  ["Fireplace repair", "BBQ Repair", 
+                  { label: "Wine Cooler", href: "/wine-cooler-repair/" },
+                  "Wine Cooler Repair", "Wine Cellar Repair",  ],
                 ].map((col, idx) => (
                   <div className="column" key={idx}>
                   {col.map((item) => (
