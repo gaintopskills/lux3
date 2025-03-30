@@ -111,8 +111,7 @@ export const MegaMenu = () => {
     [
       "Smeg",
       { label: "Sub-Zero", href: "/sub-zero-repair" },
-      "Thermador",
-      "Viking",
+      "Thermador", { label: "Viking", href: "/viking-appliance-repair" },
       "Wolf",
     ],
   ].map((col, idx) => (
