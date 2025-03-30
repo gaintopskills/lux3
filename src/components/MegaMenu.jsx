@@ -114,7 +114,9 @@ export const MegaMenu = () => {
               <h3>High-End  Brands We Repair</h3>
               <div className="row">
   {[
-    ["AGA", "Big Chill", "BlueStar", "Bosch", "Dacor", "Elmira Stove Works"],
+    ["AGA", "Big Chill", "BlueStar", "Bosch", 
+    { label: "Bosch", href: "/bosch-appliance-repair/" },
+    "Dacor", "Elmira Stove Works"],
     ["Fisher & Paykel", "Gaggenau", "Jenn-Air", "KitchenAid", "La Cornue", "Miele",
     { label: "Miele", href: "/miele-zero-repair/" },],
     [ "Smeg",
