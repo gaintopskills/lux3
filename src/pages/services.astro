@@ -1,0 +1,111 @@
+---
+import Layout from '../layouts/Layout.astro';
+const structuredData = {
+	"@context": "https://schema.org",
+	"@type": "WebPage",
+	"name": "Welcome to Zaricci Luxury Appliance Repair",
+	"description": "High-End Appliance Repair services",
+	"publisher": {
+		"@type": "Organization",
+		"name": "Zaricci",
+	},
+	"datePublished": new Date().toISOString(),
+	"dateModified": new Date().toISOString()
+};
+// Example breadcrumbs for the home page
+const breadcrumbs = [
+	{ text: 'Welcome' }
+];
+---
+<Layout
+	title="XXX"
+	description="XXX"
+	structuredData={structuredData}
+>
+<div style="margin: 50px">
+<section>
+  <h2>Our Services – Your One-Stop Solution for Luxury Appliance Repair</h2>
+  <p>When it comes to high-end appliance service, you want a team you can trust to deliver precision, care, and efficiency. At <strong>Zaricci Luxury Appliance Repair</strong>, we bring years of experience to every project, ensuring that your premium appliances continue to perform at their best. From Sub-Zero refrigerator repair to Thermador oven servicing, we cover a wide spectrum of repair for luxury brands—all under one roof.</p>
+</section>
+
+<section>
+  <h3>Refrigerator Repair</h3>
+  <ul>
+    <li><strong>Sub-Zero Refrigerator Repair:</strong> We specialize in diagnosing and fixing temperature fluctuations, water leaks, and other common issues that can affect the performance of your Sub-Zero unit.</li>
+    <li><strong>Viking & Thermador:</strong> Our expert technicians are trained to resolve cooling problems, faulty ice makers, and electrical malfunctions unique to these premium refrigerator brands.</li>
+    <li><strong>Wine Coolers & Built-ins:</strong> Whether you own a Miele wine cooler or a custom-built unit, we ensure your precious collection remains at the perfect temperature.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Oven & Stove Repair</h3>
+  <ul>
+    <li><strong>Wolf Oven & Range Service:</strong> From uneven baking to ignition troubles, our high-end appliance service experts quickly get your Wolf ovens and ranges back to optimal performance.</li>
+    <li><strong>Viking & Thermador Cooktops:</strong> We use authentic replacement parts to tackle issues like erratic burners, broken knobs, or heat distribution problems.</li>
+    <li><strong>Gaggenau & La Cornue:</strong> These upscale cooking appliances demand specialized knowledge—count on us for an expert touch and lasting solutions.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Dishwasher Repair</h3>
+  <ul>
+    <li><strong>Miele & Bosch Dishwashers:</strong> Known for their quiet efficiency, these premium appliances may require occasional part replacements or software updates. We handle it all seamlessly.</li>
+    <li><strong>High-End Built-ins:</strong> Custom panel dishwashers add style to your kitchen; we preserve that aesthetic while swiftly resolving any mechanical or electrical issues.</li>
+    <li><strong>Leak Detection & Repair:</strong> If you’ve noticed water pooling around your dishwasher, our technicians pinpoint the source and fix it before it causes further damage.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Washer & Dryer Repair</h3>
+  <ul>
+    <li><strong>Premium Washer Diagnostics:</strong> If your machine won’t start or is giving error codes, we’ll diagnose it quickly—saving you time and preventing costly replacements.</li>
+    <li><strong>Smart Dryer Technology:</strong> Today’s high-tech dryers often need specialized attention. We stay updated on the latest software and hardware advancements to provide effective luxury appliance repair.</li>
+    <li><strong>Routine Maintenance:</strong> Preventative care keeps your laundry appliances running smoothly. Ask us about our maintenance plans to extend the life of your machines.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Additional Services</h3>
+  <ul>
+    <li><strong>Appliance Installation:</strong> Get it right the first time with our professional installation service, designed to optimize appliance performance from day one.</li>
+    <li><strong>Emergency Repair:</strong> Don’t let a sudden breakdown derail your day. We offer same-day service for many high-end appliance repairs, ensuring minimal disruption.</li>
+    <li><strong>Maintenance Plans:</strong> Protect your investment with regular check-ups. Our plans help prevent unexpected issues and costly downtime.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Brands We Service</h3>
+  <p>We pride ourselves on offering repair for luxury brands such as:</p>
+  <ul>
+    <li>Sub-Zero</li>
+    <li>Viking</li>
+    <li>Wolf</li>
+    <li>Thermador</li>
+    <li>Miele</li>
+    <li>Gaggenau</li>
+    <li>Bosch</li>
+    <li>Jenn-Air</li>
+    <li>La Cornue</li>
+    <li>And many more!</li>
+  </ul>
+  <p>If you own a premium appliance not listed here, reach out—we’re equipped to handle a wide variety of upscale models.</p>
+</section>
+
+<section>
+  <h3>Why Choose Zaricci Luxury Appliance Repair?</h3>
+  <ul>
+    <li><strong>Certified Expertise:</strong> Our technicians undergo rigorous brand-specific training to ensure accurate, efficient service.</li>
+    <li><strong>Transparent Pricing:</strong> No hidden fees—just clear, upfront quotes tailored to your unique needs.</li>
+    <li><strong>Quality Replacement Parts:</strong> We use only manufacturer-approved components, preserving the integrity and warranty of your luxury appliances.</li>
+    <li><strong>Customer-First Approach:</strong> We work around your schedule, respect your home, and prioritize your satisfaction above all.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Schedule Your High-End Appliance Service Today</h3>
+  <p>Don’t let a malfunctioning premium appliance disrupt your home. Contact us now to book your luxury appliance repair appointment and experience the peace of mind that comes from working with true industry experts. We’re here to keep your home running at its best—every day of the year.</p>
+</section>
+
+</div>
+</Layout>
+

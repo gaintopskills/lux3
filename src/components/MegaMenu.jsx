@@ -74,7 +74,7 @@ export const MegaMenu = () => {
           {/* Home Dropdown */}
           <div className="dropdown">
             <button className="dropbtn" onClick={() => handleDropdownToggle("Household")}>
-              Services <ArrowIcon isOpen={openDropdown === "Household"} />
+            <a className="dropbtn" href="/services"> Services </a><ArrowIcon isOpen={openDropdown === "Household"} />
             </button>
             <div className={`dropdown-content ${openDropdown === "Household" ? "show" : ""}`}>
               <h3>High-End  Appliances We Repair</h3>
