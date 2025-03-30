@@ -19,6 +19,10 @@ const ArrowIcon = ({ isOpen }) => (
     />
   </svg>
 );
+links = {
+  "Oven Repair": "/sub-zero-repair/",
+  // ... other mappings
+};
 export const MegaMenu = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
