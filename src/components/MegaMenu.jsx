@@ -115,7 +115,8 @@ export const MegaMenu = () => {
               <div className="row">
   {[
     ["AGA", "Big Chill", "BlueStar", "Bosch", "Dacor", "Elmira Stove Works"],
-    ["Fisher & Paykel", "Gaggenau", "Jenn-Air", "KitchenAid", "La Cornue", "Miele"],
+    ["Fisher & Paykel", "Gaggenau", "Jenn-Air", "KitchenAid", "La Cornue", "Miele",
+    { label: "Miele", href: "/miele-zero-repair/" },],
     [ "Smeg",
       { label: "Sub-Zero", href: "/sub-zero-repair/" },
       { label: "Thermador", href: "/thermador-appliance-repair/" },
