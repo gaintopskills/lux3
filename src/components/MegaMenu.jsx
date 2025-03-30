@@ -105,7 +105,6 @@ export const MegaMenu = () => {
               </div>
             </div>
           </div>
-
           {/* Commercial Dropdown */}
           <div className="dropdown">
           <button className="dropbtn" ><a href="/brands/" onClick={() => handleDropdownToggle("commercial")}>
