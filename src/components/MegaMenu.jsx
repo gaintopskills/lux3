@@ -82,7 +82,7 @@ export const MegaMenu = () => {
               <div className="row">
                 {[
                   ["Oven Repair", "Stove repair", "Range Repair", "Cooktop Repair", "Range Hood Repair"],
-                  ["Washer Repair", "Dryer Repair", 
+                  [{ label: "Wachine Machine Repair", href: "/washing-machine-repair/" },, "Dryer Repair", 
                   { label: "Dishwasher Repair", href: "/dishwasher-repair/" },"Microwave Repair","Refrigerator Repair", "Freezer Repair",  ],
                   ["Fireplace repair", "BBQ Repair", 
                   { label: "Wine Cooler", href: "/wine-cooler-repair/" },
