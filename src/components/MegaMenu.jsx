@@ -85,14 +85,20 @@ export const MegaMenu = () => {
                   ["Washer Repair", "Dryer Repair", "Dishwasher Repair","Microwave Repair","Refrigerator Repair", "Freezer Repair",  ],
                   ["Fireplace repair", "BBQ Repair", 
                   { label: "Wine Cooler", href: "/wine-cooler-repair/" },
-                  "Wine Cooler Repair", "Wine Cellar Repair",  ],
+                   "Wine Cellar Repair",  ],
                 ].map((col, idx) => (
                   <div className="column" key={idx}>
-                  {col.map((item) => (
-                       <a key={item} href="#">
-                       {/* <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> */}{item}
-                     </a>
-                    ))}
+                    {col.map((item) =>
+                      typeof item === "string" ? (
+                        <a key={item} href="#">
+                          {/* <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> */} {item}
+                        </a>
+                      ) : (
+                        <a key={item.label} href={item.href}>
+                          {/* <img src={`/svg/${item.label.split(" ")[0].toLowerCase()}.svg`} alt={item.label} /> */} {item.label}
+                        </a>
+                      )
+                    )}
                   </div>
                 ))}
               </div>
