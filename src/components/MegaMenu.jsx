@@ -56,10 +56,10 @@ export const MegaMenu = () => {
       <nav className="navbar">
         <div className="first-row">
           {/* Logo */}
-          <a className="logo logo-desktop" href="#home">
+          <a className="logo logo-desktop" href="/">
   <img width="140" height="41" alt="Logo" src="/logo.webp" />
 </a>
-<a className="logo-mobile" href="#home">
+<a className="logo-mobile" href="/">
   <img width="25" height="25" alt="Mobile Logo" src="/logo-mobile.webp" />
 </a>
  {/* Close Button - Always visible when a dropdown is open */}
