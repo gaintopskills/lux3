@@ -154,8 +154,8 @@ export const MegaMenu = () => {
           </div>
            {/* HVAC Dropdown */}
            <div className="dropdown">
-            <button className="dropbtn" onClick={() => handleDropdownToggle("HVAC")}>
-            Service Areas <ArrowIcon isOpen={openDropdown === "HVAC"} />
+            <button className="dropbtn" onClick={() => handleDropdownToggle("HVAC")}><a>
+            Service Areas </a><ArrowIcon isOpen={openDropdown === "HVAC"} />
             </button>
             <div className={`dropdown-content ${openDropdown === "HVAC" ? "show" : ""}`}>
               <div className="row">
@@ -179,7 +179,7 @@ export const MegaMenu = () => {
              {/* Areas Dropdown */}
              <div className="dropdown">
             <button className="dropbtn" onClick={() => handleDropdownToggle("Areas")}>
-              VIP <ArrowIcon isOpen={openDropdown === "Areas"} />
+             <a> VIP</a><ArrowIcon isOpen={openDropdown === "Areas"} />
             </button>
             <div className={`dropdown-content ${openDropdown === "Areas" ? "show" : ""}`}>
               <div className="row">
@@ -203,7 +203,7 @@ export const MegaMenu = () => {
           {/* Prices Dropdown */}
           <div className="dropdown">
             <button className="dropbtn" onClick={() => handleDropdownToggle("prices")}>
-            Charity Program
+           <a> Charity Program</a>
   <ArrowIcon isOpen={openDropdown === "prices"} />
             </button>
             <div className={`dropdown-content ${openDropdown === "prices" ? "show" : ""}`}>
