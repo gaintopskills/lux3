@@ -116,7 +116,9 @@ export const MegaMenu = () => {
   {[
     [{ label: "AGA",
      href: "/aga-appliance-repair/" },
-    "Big Chill", "BlueStar", "Bosch", 
+    "Big Chill",
+    { label: "BlueStar", href: "/bluestar-appliance-repair/" },
+    "Bosch", 
     { label: "Bosch", href: "/bosch-appliance-repair/" },
     "Dacor", "Elmira Stove Works"],
     ["Fisher & Paykel", "Gaggenau", "Jenn-Air", "KitchenAid", "La Cornue", 
