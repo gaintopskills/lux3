@@ -118,7 +118,7 @@ export const MegaMenu = () => {
     { label: "Big Chill", href: "/bill-chill-appliance-repair/" },
     { label: "BlueStar", href: "/bluestar-appliance-repair/" },
     { label: "Bosch", href: "/bosch-appliance-repair/" },
-    "Dacor", 
+    { label: "Dacor", href: "/dacor-appliance-repair/" },
     { label: "Elmira Stove Works", href: "/elmira-stove-works-appliance-repair/" },],
     [{ label: "Fisher & Paykel", href: "/fisher-paykel-appliance-repair/"},
     { label: "Gaggenau", href: "/gaggenau-appliance-repair/" },
