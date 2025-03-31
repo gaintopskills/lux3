@@ -126,7 +126,7 @@ export const MegaMenu = () => {
     { label: "KitchenAid", href: "/kitchenaid-appliance-repair/" },
     { label: "La Cornue", href: "/la-cornue-appliance-repair/" },
     { label: "Miele", href: "/miele-zero-repair/" },],
-    [ "Smeg",
+    [ { label: "Smeg", href: "/smeg-zero-repair/" },
       { label: "Sub-Zero", href: "/sub-zero-repair/" },
       { label: "Thermador", href: "/thermador-appliance-repair/" },
       { label: "Viking", href: "/viking-appliance-repair/" },
