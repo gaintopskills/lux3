@@ -121,7 +121,9 @@ export const MegaMenu = () => {
     "Dacor", 
     
     { label: "Elmira Stove Works", href: "/elmira-stove-works-appliance-repair/" },],
-    ["Fisher & Paykel", "Gaggenau", "Jenn-Air", "KitchenAid", "La Cornue", 
+    ["Fisher & Paykel", 
+    { label: "Fisher & Paykel", href: "/fisher-paykel-appliance-repair/" },
+    "Gaggenau", "Jenn-Air", "KitchenAid", "La Cornue", 
     { label: "La Cornue", href: "/la-cornue-appliance-repair/" },
     { label: "Miele", href: "/miele-zero-repair/" },],
     [ "Smeg",
