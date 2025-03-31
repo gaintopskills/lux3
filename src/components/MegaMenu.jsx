@@ -115,8 +115,7 @@ export const MegaMenu = () => {
               <div className="row">
   {[
     [{ label: "AGA", href: "/aga-appliance-repair/" },
-    "Big Chill",
-    { label: "Big Chill", href: "/big-chill-appliance-repair/" },
+    { label: "Big Chill", href: "/bill-chill-appliance-repair/" },
     { label: "BlueStar", href: "/bluestar-appliance-repair/" },
     { label: "Bosch", href: "/bosch-appliance-repair/" },
     { label: "Big Chill", href: "/bill-chill-appliance-repair/" },
