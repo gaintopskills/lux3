@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+const structuredData = {
+	"@context": "https://schema.org",
+	"@type": "WebPage",
+	"name": "Welcome to Zaricci Luxury Appliance Repair",
+	"description": "High-End Appliance Repair services",
+	"publisher": {
+		"@type": "Organization",
+		"name": "Zaricci",
+	},
+	"datePublished": new Date().toISOString(),
+	"dateModified": new Date().toISOString()
+};
+// Example breadcrumbs for the home page
+const breadcrumbs = [
+	{ text: 'Welcome' }
+];
+---
+<Layout
+	title="XXX"
+	description="XXX"
+	structuredData={structuredData}
+>
+<div style="margin: 50px">
+
+</div>
+</Layout>
+
