@@ -119,7 +119,6 @@ export const MegaMenu = () => {
     { label: "BlueStar", href: "/bluestar-appliance-repair/" },
     { label: "Bosch", href: "/bosch-appliance-repair/" },
     "Dacor", 
-    
     { label: "Elmira Stove Works", href: "/elmira-stove-works-appliance-repair/" },],
     ["Fisher & Paykel", 
     { label: "Fisher & Paykel", href: "/fisher-paykel-appliance-repair/" },
