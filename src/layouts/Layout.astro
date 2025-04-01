@@ -58,7 +58,7 @@ const finalStructuredData = structuredData || defaultStructuredData;
 	</head>
 	<body>
 	<MegaMenu client:idle/>
-	<Reviews client:idle />u
+	<Reviews client:idle />
 		{breadcrumbs.length > 0 && <Breadcrumbs items={breadcrumbs} />}
 		<main style="margin-top: 4rem;">
 			<slot />
@@ -82,18 +82,17 @@ html {
 		background:#000000;
 		scroll-behavior: smooth;
 	}
-	#page-content{
+#page-content{
     margin: 50px!important;
   }
-/* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
-a{color:ffffff;}
+  
+a{color:#ffffff;}
 /* Buttons */
 button, .btn {
   font-weight: 600;
   text-transform: uppercase;
 }
-
 </style>
