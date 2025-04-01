@@ -27,7 +27,9 @@ export const BrandShowcase = () => {
         {brands.map((brand, index) => (
           <div key={index} className="brand-card">
             <div className="shine" />
-            <span>{brand}</span>
+            <span className={brand === "Fisher & Paykel" ? "brand-small" : ""}>
+              {brand}
+            </span>
           </div>
         ))}
       </div>
@@ -36,4 +38,3 @@ export const BrandShowcase = () => {
 };
 
 export default BrandShowcase;
-
