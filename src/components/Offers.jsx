@@ -42,7 +42,6 @@ const offers = [
     image: "same-day.jpg",
   },
 ];
-
 const Offers = () => {
   const [flipped, setFlipped] = useState(Array(offers.length).fill(false));
 
@@ -53,7 +52,6 @@ const Offers = () => {
       return newFlipped;
     });
   };
-
   return (
     <div className="wrapper">
       <h2>Offers</h2>
@@ -76,7 +74,7 @@ const Offers = () => {
     <span>{offer.subtitle}</span>
   </div>
 </div>
-              <div className="back">
+<div className="back">
                 <div className="inner">
                   <p>{offer.description}</p>
                 </div>
@@ -88,5 +86,4 @@ const Offers = () => {
     </div>
   );
 };
-
 export default Offers;
