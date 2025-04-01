@@ -66,15 +66,16 @@ const Offers = () => {
             onTouchStart={() => handleFlip(index)}
           >
             <div className="container">
-              <div
-                className="front"
-                style={{ backgroundImage: `url(${offer.image})` }}
-              >
-                <div className="inner">
-                  <p>{offer.title}</p>
-                  <span>{offer.subtitle}</span>
-                </div>
-              </div>
+            <div
+  className="front"
+  style={{ backgroundImage: `url(${offer.image})` }}
+>
+  <div className="overlay"></div> {/* New overlay div */}
+  <div className="inner">
+    <p>{offer.title}</p>
+    <span>{offer.subtitle}</span>
+  </div>
+</div>
               <div className="back">
                 <div className="inner">
                   <p>{offer.description}</p>
