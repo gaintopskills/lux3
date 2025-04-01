@@ -59,7 +59,7 @@ export const TabsAccordion = () => {
       style={{
         maxWidth: "100%",
         margin: "20px auto",
-        border: "2px solid #fff",
+        border: "2px solid rgba(224, 192, 141, 0.4)", // ← Updated here
         borderRadius: "5px",
         overflow: "hidden",
         backgroundColor: "#000", // Ensures the entire background is black
@@ -87,8 +87,8 @@ export const TabsAccordion = () => {
                   padding: "15px",
                   cursor: "pointer",
                   textAlign: "left",
-                  borderBottom: "1px solid #fff",
-                  backgroundColor: activeTab === item.id ? "#004080" : "transparent",
+                  borderBottom: "1px solid rgba(224, 192, 141, 0.4)",
+                  backgroundColor: activeTab === item.id ? "#333" : "transparent",
                   transition: "background-color 0.3s ease",
                 }}
               >
@@ -117,7 +117,7 @@ export const TabsAccordion = () => {
                   <button
                     style={{
                       padding: "10px 20px",
-                      backgroundColor: "#333",
+                      backgroundColor: "#990000",
                       color: "white",
                       border: "none",
                       borderRadius: "5px",
@@ -192,7 +192,7 @@ export const TabsAccordion = () => {
                   <button
                     style={{
                       padding: "10px 20px",
-                      backgroundColor: "#004080",
+                      backgroundColor: "#990000",
                       color: "white",
                       border: "none",
                       borderRadius: "5px",
