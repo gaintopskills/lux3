@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import ParallaxHeader from '../components/ParallaxHeader.astro'
 import Offers from '../components/Offers.jsx'
 import Services from '../components/Services.jsx'
+import HowWeWork from '../components/HowWeWork.astro'
 import { TabsAccordion } from '../components/TabsAccordion.jsx'
 import { BrandShowcase } from '../components/BrandShowcase.jsx'
 const structuredData = {
@@ -68,6 +69,8 @@ const breadcrumbs = [
 </section>
 </div>-->
 <Services client:visible/>
+<HowWeWork client:visible/>
+
 <Offers client:visible/>
 <TabsAccordion client:visible/>
 <BrandShowcase client:visible/>
