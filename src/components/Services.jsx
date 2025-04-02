@@ -46,7 +46,7 @@ const Services = () => {
   };
   return (
     <div className="wrapper">
-      <h2>Offers</h2>
+      <h2>Services</h2>
       <div className="cols">
         {offers.map((offer, index) => (
           <div
