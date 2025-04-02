@@ -5,7 +5,7 @@ const offers = [
   {
     id: 1,
     title: "Home Appliance Services",
-    subtitle: "For Booking Online",
+    subtitle: "",
     description: "",
     image: "appliance-repair-services.webp",
   },
