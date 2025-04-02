@@ -38,7 +38,7 @@ const offers = [
     title: "Same-Day Appointment",
     subtitle: "Next-day if scheduled at the end of the day.",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit.",
+      "We always do our best to accomotade your prefered time for the technician. Same-day or Next Day appointments are available all day long.",
     image: "same-day.webp",
   },
 ];
