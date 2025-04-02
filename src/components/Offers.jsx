@@ -7,7 +7,7 @@ const offers = [
     title: "5% Off",
     subtitle: "For Booking Online",
     description: "Book online to have a 5% discount",
-    image: "book.jpeg",
+    image: "book.webp",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const offers = [
     subtitle: "Comprehensive Maintenance",
     description:
       "We offer 10% off comprehensive household appliance maintenance for return customers.",
-    image: "maintenance.jpeg",
+    image: "maintenance.webp",
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const offers = [
     subtitle: "Your Existing Written Invoice",
     description:
       "We offer a discount for a written invoice from another company providing competitive pricing.",
-    image: "invoice.jpeg",
+    image: "invoice.webp",
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ const offers = [
     subtitle: "For High-End Appliances",
     description:
       "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
-    image: "warranty5.jpeg",
+    image: "warranty.webp",
   },
   {
     id: 5,
@@ -39,7 +39,7 @@ const offers = [
     subtitle: "Next-day if scheduled at the end of the day.",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit.",
-    image: "same-day.jpg",
+    image: "same-day.webp",
   },
 ];
 const Offers = () => {
