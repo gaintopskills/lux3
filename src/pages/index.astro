@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import ParallaxHeader from '../components/ParallaxHeader.astro'
 import Offers from '../components/Offers.jsx'
+import Services from '../components/Services.jsx'
 import { TabsAccordion } from '../components/TabsAccordion.jsx'
 import { BrandShowcase } from '../components/BrandShowcase.jsx'
 const structuredData = {
@@ -66,6 +67,7 @@ const breadcrumbs = [
   <p><strong>At Luxury Appliance Repair</strong>, we take pride in making your home a place of uncompromising comfort and convenience. Allow us to protect your investment with our exceptional premium appliance repair services in your area.</p>
 </section>
 </div>-->
+<Services client:visible/>
 <Offers client:visible/>
 <TabsAccordion client:visible/>
 <BrandShowcase client:visible/>
