@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer>
       <div className="footer-grid">
         <div className="footer-brand">
-          <h4>Zaricci Luxury Appliance Repair</h4>
+          <h3>Zaricci Luxury Appliance Repair</h3>
           <p>
             Precision. Elegance. Legacy. Trusted in luxury appliance care for over 30 years.
           </p>
