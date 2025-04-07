@@ -17,7 +17,7 @@ export const Footer = () => {
           <ul>
             <li><a href="/about/">About Us</a></li>
             <li>Address: 814 S. Westgate Ave, Los Angeles, CA 90049</li>
-            
+            <li>Email: info@luxuryappliance.repair</li>
             <li>Call: (213) 309-1924</li>
             <li><a href="/sitemap-index.xml" className="sitemap-link">Sitemap</a></li>
           </ul>
