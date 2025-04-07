@@ -1,5 +1,4 @@
 import React from "react";
-import "./Brands.css";
 
 const brands = [
   "Sub-Zero",
