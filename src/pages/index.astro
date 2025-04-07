@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ParallaxHeader from '../components/ParallaxHeader.astro'
+import ParallaxHeader from '../components/ParallaxHeader.jsx'
 import Offers from '../components/Offers.jsx'
 import Services from '../components/Services.jsx'
 import { TabsAccordion } from '../components/TabsAccordion.jsx'
@@ -30,7 +30,7 @@ const breadcrumbs = [
 	description="Luxury Appliance Repair Services"
 	structuredData={structuredData}
 >
-<ParallaxHeader />
+<ParallaxHeader client:idle/>
 <div id="maincontent">
 
 <section>
