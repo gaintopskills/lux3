@@ -1,12 +1,40 @@
-/* Brands */
+/* Website General*/
+	/* Global font settings */
+  html {
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 17px; /* Default size */
+    line-height: 1.6;
+    color: #ffffff; /* Adjust based on design */
+  }
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background:#000000;
+      scroll-behavior: smooth;
+    }
+  #page-content{
+      margin: 50px!important;
+    }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+  a{color:#ffffff;}
+  /* Buttons */
+  button, .btn {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  #maincontent{margin: 50px}
+/* Website General*/
 
+/* Brands */
 .brand-showcase {
-  background-color: #000;
   padding: 4rem 2rem;
   text-align: center;
   color: white;
 }
-
 .section-title {
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -14,7 +42,6 @@
   font-weight: 600;
   color: #e0c08d; /* Elegant golden-beige tone */
 }
-
 .brand-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -22,7 +49,6 @@
   justify-items: center;
   align-items: center;
 }
-
 .brand-card {
   position: relative;
   padding: 1rem;
@@ -42,7 +68,6 @@
   -webkit-backdrop-filter: blur(2px);
   border: 2px groove rgba(224, 192, 141, 0.4);
 }
-
 .brand-card:hover {
   transform: translateY(-4px);
   background: radial-gradient(
@@ -70,7 +95,6 @@
   animation: subtle-shine 6s infinite ease-in-out;
   opacity: 0.6;
 }
-
 @keyframes subtle-shine {
   0% {
     transform: translate(-120%, -120%) rotate(45deg);
@@ -87,7 +111,6 @@
 
 /*Footer*/
 footer {
-  background-color: #000;
   padding: 4rem 1.5rem;
   font-family: 'Inter', 'Helvetica Neue', sans-serif;
 }
@@ -99,13 +122,11 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 @media (min-width: 768px) {
   .footer-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
 .footer-brand h4 {
   font-size: 1.75rem;
   text-transform: uppercase;
@@ -113,12 +134,10 @@ footer {
   font-weight: 600;
   margin: 0;
 }
-
 .footer-brand p {
   font-size: 0.875rem;
   max-width: 280px;
 }
-
 .footer-section h3 {
   text-transform: uppercase;
   font-size: 0.75rem;
@@ -367,7 +386,7 @@ h1 {
     }
      .maintext {
         backdrop-filter: none !important;
-        background: #000000;
+        background: none;
         padding: 5px;
     }
      .menu {
