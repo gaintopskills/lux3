@@ -1,5 +1,5 @@
 ---
-import MegaMenu from '../components/MegaMenu.astro';
+import MegaMenu from '../components/MegaMenu.jsx';
 import Reviews from '../components/Reviews.jsx';
 import Footer from '../components/Footer.jsx';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
@@ -59,7 +59,7 @@ const finalStructuredData = structuredData || defaultStructuredData;
 		<Footer client:visible/>
 	</body>
 </html>
-<style is:global>
+<style>
 /*MegaMenu*/
 		 /* Default Logo Size */
 .logo img {
