@@ -34,13 +34,6 @@ const finalStructuredData = structuredData || defaultStructuredData;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-	<!--	<link rel="icon" type="image/svg+xml" href="/favicon.png" />
-<link rel="preload" as="image" href="/credentials/bbb-accredited-appliance-repair-70.webp" type="image/webp">
-<link rel="preload" as="image" href="/credentials/same-day-appliance-repair-licensed-70.webp">
-<link rel="preload" as="image" href="/credentials/same-day-appliance-repair-insured-70.webp" type="image/webp">
-<link rel="preload" as="image" href="/credentials/epa-certified-appliance-repair-70.webp" type="image/webp">
-<link rel="preload" as="image" href="/credentials/same-day-appliance-repair-osha-trained-70.webp" type="image/webp">
-<link rel="preload" as="image" href="/credentials/same-day-appliance-repair-background-checked-70.webp" type="image/webp">-->
 		<link rel="preload" href="/bg.mp4" as="video" type="video/mp4">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
@@ -57,8 +50,8 @@ const finalStructuredData = structuredData || defaultStructuredData;
 		<script type="application/ld+json" set:html={JSON.stringify(finalStructuredData)} />
 	</head>
 	<body>
-	<MegaMenu client:idle/>
-	<Reviews client:idle />
+	<MegaMenu client:load/>
+	<Reviews client:load />
 		{breadcrumbs.length > 0 && <Breadcrumbs items={breadcrumbs} />}
 		<main style="margin-top: 4rem;">
 			<slot />
