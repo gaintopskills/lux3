@@ -4,7 +4,9 @@ import ParallaxHeader from '../components/ParallaxHeader.astro'
 import Offers from '../components/Offers.jsx'
 import Services from '../components/Services.jsx'
 import { TabsAccordion } from '../components/TabsAccordion.jsx'
-import { BrandShowcase } from '../components/BrandShowcase.jsx'
+import { Brands } from '../components/Brands.jsx'
+import '../styles/global.css';
+
 const structuredData = {
 	"@context": "https://schema.org",
 	"@type": "WebPage",
@@ -68,9 +70,7 @@ const breadcrumbs = [
 </section>
 </div>
 <Services client:visible/>
-
 <Offers client:visible/>
 <!--<TabsAccordion client:visible/>-->
-<BrandShowcase client:visible/>
+<Brands client:visible/>
 </Layout>
-

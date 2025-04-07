@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./MegaMenu.css";
+
 // Reusable Arrow Icon Component
 const ArrowIcon = ({ isOpen }) => (
   <svg

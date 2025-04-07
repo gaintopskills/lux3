@@ -1,5 +1,5 @@
 import React from "react";
-import "./BrandShowcase.css";
+import "./Brands.css";
 
 const brands = [
   "Sub-Zero",
@@ -19,7 +19,7 @@ const brands = [
   "Smeg"
 ];
 
-export const BrandShowcase = () => {
+export const Brands = () => {
   return (
     <section className="brand-showcase">
       <h2 className="section-title">Brands We Repair</h2>
@@ -36,5 +36,4 @@ export const BrandShowcase = () => {
     </section>
   );
 };
-
-export default BrandShowcase;
+export default Brands;
