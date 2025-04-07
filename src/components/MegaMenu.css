@@ -193,7 +193,6 @@ margin: 0 30px 0 0;}
           padding: 5px 5px;
         }
   }
-
   .close-btn {
     display: none; /* Hidden by default */
     position: absolute;
@@ -207,7 +206,6 @@ margin: 0 30px 0 0;}
     cursor: pointer;
     z-index: 1001;
   }
-  
 /* Show close button only on mobile */
 @media screen and (max-width: 768px) {
   .close-btn {
