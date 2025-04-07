@@ -48,7 +48,7 @@ const finalStructuredData = structuredData || defaultStructuredData;
 		<meta property="twitter:title" content={title} />
 		<meta property="twitter:description" content={description} />
 		<script type="application/ld+json" set:html={JSON.stringify(finalStructuredData)} />
-		<style>
+		<style is:global>
 /*MegaMenu*/
 		 /* Default Logo Size */
 .logo img {
