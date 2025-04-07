@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import "./Offers.css"; // Import the CSS styles
-
 const offers = [
   {
     id: 1,
