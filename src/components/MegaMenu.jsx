@@ -160,9 +160,9 @@ export const MegaMenu = () => {
             <div className={`dropdown-content ${openDropdown === "HVAC" ? "show" : ""}`}>
               <div className="row">
                 {[
-                  ["Refrigerator Repair", "Oven Repair", "Dishwasher Repair", "Dryer Repair"],
-                  ["Washer Repair", "Microwave Repair", "Cooktop Repair", "Range Hood Repair"],
-                  ["Get a Quote", "Same Day Pricing", "Custom Requests"],
+                  ["Alhambra", "Beverly Hills", "Brentwood", "Burbank", "Culver City", "Hollywood", "Glendale"],
+                  ["Los Angeles", "Los Feliz", "Malibu", "Marina Del Rey", "Pacific Palisades", "Pasadena",],
+                  [ "Playa Del Rey", "San Marino", "Santa Monica", "South Pasadena", "Thousand Oaks", "West Hollywood"],
                 ].map((col, idx) => (
                   <div className="column" key={idx}>
                     {col.map((item) => (
