@@ -8,17 +8,27 @@ import { Brands } from '../components/Brands.jsx'
 import '../styles/global.css';
 
 const structuredData = {
-	"@context": "https://schema.org",
-	"@type": "WebPage",
-	"name": "Welcome to Zaricci Luxury Appliance Repair",
-	"description": "High-End Appliance Repair services",
-	"publisher": {
-		"@type": "Organization",
-		"name": "Zaricci",
-	},
-	"datePublished": new Date().toISOString(),
-	"dateModified": new Date().toISOString()
-};
+"@context":"https://schema.org",
+"@type":"LocalBusiness","name":"Zaricci Luxury Appliance Repair",
+"image":"https://luxuryappliance.repair/luxury-appliance-repair-services.webp",
+"url":"https://luxuryappliance.repair","telephone":"+12133091924",
+"address":{"@type":"PostalAddress","streetAddress":"814 S. Westgate Ave","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90049","addressCountry":"US"},
+"areaServed":[{"@type":"City","name":"Los Angeles","sameAs":"https://en.wikipedia.org/wiki/Los_Angeles"},{"@type":"City","name":"Burbank","sameAs":"https://en.wikipedia.org/wiki/Burbank,_California"},
+{"@type":"City","name":"Alhambra","sameAs":"https://en.wikipedia.org/wiki/Alhambra,_California"}
+,{"@type":"City","name":"Glendale","sameAs":"https://en.wikipedia.org/wiki/Glendale,_California"},
+{"@type":"City","name":"Pasadena","sameAs":"https://en.wikipedia.org/wiki/Pasadena,_California"},
+{"@type":"City","name":"South Pasadena","sameAs":"https://en.wikipedia.org/wiki/South_Pasadena,_California"},
+{"@type":"City","name":"Santa Monica","sameAs":"https://en.wikipedia.org/wiki/Santa_Monica,_California"},
+{"@type":"City","name":"Beverly Hills","sameAs":"https://en.wikipedia.org/wiki/Beverly_Hills,_California"},
+{"@type":"City","name":"Monterey Park","sameAs":"https://en.wikipedia.org/wiki/Monterey_Park,_California"},
+{"@type":"City","name":"Thousand Oaks","sameAs":"https://en.wikipedia.org/wiki/Thousand_Oaks,_California"},
+{"@type":"City","name":"Universal City","sameAs":"https://en.wikipedia.org/wiki/Universal_City,_California"},
+{"@type":"City","name":"West Hollywood","sameAs":"https://en.wikipedia.org/wiki/West_Hollywood,_California"},
+{"@type":"City","name":"San Marino","sameAs":"https://en.wikipedia.org/wiki/San_Marino,_California"},
+{"@type":"City","name":"Malibu","sameAs":"https://en.wikipedia.org/wiki/Malibu,_California"}],
+"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+"opens":"08:00","closes":"20:00"}}
+
 // Example breadcrumbs for the home page
 const breadcrumbs = [
 	{ text: 'Welcome' }
