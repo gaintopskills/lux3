@@ -1,0 +1,111 @@
+---
+import Layout from '../layouts/Layout.astro';
+const structuredData = {
+	"@context": "https://schema.org",
+	"@type": "WebPage",
+	"name": "Welcome to Zaricci Luxury Appliance Repair",
+	"description": "High-End Appliance Repair services",
+	"publisher": {
+		"@type": "Organization",
+		"name": "Zaricci",
+	},
+	"datePublished": new Date().toISOString(),
+	"dateModified": new Date().toISOString()
+};
+// Example breadcrumbs for the home page
+const breadcrumbs = [
+	{ text: 'Welcome' }
+];
+---
+<Layout
+	title="Local Luxury Appliance Repair – Thousand Oaks"
+	description="High-end appliances repair by certified technicians. Same-day appointments are available. Call today!"
+	structuredData={structuredData}
+>
+<div style="margin: 50px">
+<section>
+  <h1>Luxury Appliance Repair - Thousand Oaks</h1>
+  <p><strong>Premium In-Home Service for the Finest Appliances</strong></p>
+  <p>Nestled between the Santa Monica Mountains and the rolling hills of Ventura County, Thousand Oaks is known for its elegance, comfort, and attention to detail. In homes where the kitchen is both a gathering place and a gourmet workspace, luxury appliances play a central role in daily life. When they need expert care, there’s only one name to trust.</p>
+  <p>At <strong>ZARICCI Luxury Appliance Repair</strong>, we offer white-glove appliance repair services in Thousand Oaks, specializing in high-end brands like Sub-Zero, Wolf, Thermador, Viking, Gaggenau, Miele, La Cornue, and more. Our certified technicians deliver fast, discreet, and professional service tailored to the expectations of discerning homeowners.</p>
+</section>
+
+<section>
+  <h3>🔧 Why Homeowners in Thousand Oaks Trust ZARICCI</h3>
+  <ul>
+    <li><strong>✅ Certified Experts in High-End Brands</strong><br/>Our technicians are trained in the latest technologies and best practices for servicing luxury brands, including smart systems, convection cooking, dual-fuel units, and custom panel designs.</li>
+    <li><strong>✅ Genuine Manufacturer Parts</strong><br/>We use only OEM parts to protect your appliance’s longevity, maintain warranty coverage, and ensure your repair meets factory-level standards.</li>
+    <li><strong>✅ Same-Day & Next-Day Availability</strong><br/>We offer priority scheduling in Thousand Oaks and surrounding communities, so you don’t have to wait days for service.</li>
+    <li><strong>✅ White-Glove In-Home Experience</strong><br/>From protective gear to spotless clean-up, we treat your home and appliances with the same care and precision they were built with.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>🛠️ Luxury Appliances We Repair</h3>
+  <h4>❄️ Refrigerators & Freezers</h4>
+  <ul>
+    <li>Sub-Zero, Miele, Viking, Thermador</li>
+    <li>Temperature control problems</li>
+    <li>Ice maker & water dispenser issues</li>
+    <li>Noises, leaks, or frost buildup</li>
+  </ul>
+  <h4>🔥 Ranges, Ovens & Cooktops</h4>
+  <ul>
+    <li>Wolf, La Cornue, Gaggenau, BlueStar</li>
+    <li>Igniter failure or gas burner issues</li>
+    <li>Oven not heating or cooking unevenly</li>
+    <li>Convection and steam oven malfunctions</li>
+  </ul>
+  <h4>🚿 Dishwashers</h4>
+  <ul>
+    <li>Miele, Bosch, Smeg</li>
+    <li>Poor drainage or cleaning</li>
+    <li>Leaking or control panel failures</li>
+    <li>Cycle errors and drying issues</li>
+  </ul>
+  <h4>🧺 Washers & Dryers</h4>
+  <ul>
+    <li>Miele, LG Signature, Fisher & Paykel</li>
+    <li>Drum not spinning or draining</li>
+    <li>Dryer not heating or overheating</li>
+    <li>Smart sensor and display issues</li>
+  </ul>
+  <h4>🌬️ Built-In & Integrated Appliances</h4>
+  <ul>
+    <li>Wine fridges, warming drawers, espresso machines, ventilation systems</li>
+    <li>Performance calibration</li>
+    <li>Sensor or panel replacements</li>
+    <li>Cosmetic restoration</li>
+  </ul>
+</section>
+
+<section>
+  <h3>👨‍🔧 Our Process – Designed for Luxury Living</h3>
+  <ol>
+    <li><strong>Book Your Appointment</strong><br/>Schedule by phone or online. Our team will confirm availability and gather key details.</li>
+    <li><strong>On-Time Arrival & Diagnosis</strong><br/>Your technician arrives on time, in uniform, and ready to assess the issue with specialized tools and care.</li>
+    <li><strong>Clear, Upfront Quote</strong><br/>We provide a detailed quote for your review—covering labor, OEM parts, and timeline.</li>
+    <li><strong>Expert Repair & Testing</strong><br/>We perform the repair with precision, run full diagnostics, and ensure everything is functioning like new.</li>
+    <li><strong>Satisfaction Guaranteed</strong><br/>We clean the workspace, test the appliance, and back our work with a warranty for your peace of mind.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>🏡 Proudly Serving Thousand Oaks and Beyond</h3>
+  <p>We serve the most sought-after neighborhoods in and around Thousand Oaks, including:</p>
+  <ul>
+    <li>Lake Sherwood</li>
+    <li>Westlake Village</li>
+    <li>North Ranch</li>
+    <li>Dos Vientos</li>
+    <li>Lynn Ranch</li>
+    <li>Hidden Valley</li>
+    <li>Conejo Oaks</li>
+    <li>Lang Ranch</li>
+  </ul>
+  <p>Whether you’re a private homeowner, estate manager, or designer, we bring professional luxury appliance repair to your doorstep—quickly, discreetly, and efficiently.</p>
+</section>
+
+
+</div>
+</Layout>
