@@ -1,21 +1,61 @@
 ---
 import Layout from '../layouts/Layout.astro';
 const structuredData = {
-	"@context": "https://schema.org",
-	"@type": "WebPage",
-	"name": "Welcome to Zaricci Luxury Appliance Repair",
-	"description": "High-End Appliance Repair services",
-	"publisher": {
-		"@type": "Organization",
-		"name": "Zaricci",
-	},
-	"datePublished": new Date().toISOString(),
-	"dateModified": new Date().toISOString()
-};
-// Example breadcrumbs for the home page
-const breadcrumbs = [
-	{ text: 'Welcome' }
-];
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "@id": "https://luxuryappliance.repair/wolf-repair-thousand-oaks/",
+  "url": "https://luxuryappliance.repair/wolf-repair-thousand-oaks/",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+ 
+  "description": "ZARICCI Luxury Appliance Repair specializes in expert in-home service for Wolf appliances in Thousand Oaks. Our certified technicians offer precision repairs for Wolf ovens, ranges, cooktops, and built-in appliances. Same-day appointments and white-glove service available.",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Thousand Oaks, CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.1706,
+    "longitude": -118.8376
+  },
+  "serviceType": "Wolf Appliance Repair",
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Wolf Appliance Repair",
+      "description": "In-home repair for Wolf appliances in Thousand Oaks, including ovens, ranges, and cooktops. ZARICCI technicians provide certified service with OEM parts and same-day availability.",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Thousand Oaks, CA"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "ZARICCI Luxury Appliance Repair"
+      }
+    }
+  },
+  "brand": [
+    { "@type": "Brand", "name": "Wolf" }
+  ]
+}
 ---
 <Layout
 	title="Wolf Repair – Expert Care for Your Precision Cooking Appliances"
