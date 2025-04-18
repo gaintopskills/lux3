@@ -37,6 +37,7 @@
   -webkit-backdrop-filter: blur(2px);
   border: 2px groove rgba(224, 192, 141, 0.4);
 }
+.brand-card a{ text-decoration: none;}
 .brand-card:hover {
   transform: translateY(-4px);
   background: radial-gradient(

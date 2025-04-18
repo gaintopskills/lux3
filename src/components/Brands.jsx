@@ -6,7 +6,6 @@ const brands = [
   "BlueStar",
   "Bosch",
   "Dacor",
-
   "Fisher & Paykel",
   "Gaggenau",
   "Jenn-Air",
@@ -22,6 +21,12 @@ const brands = [
 ];
 
 export const Brands = () => {
+  const getBrandLink = (brand) => {
+    if (brand === "Sub-Zero") return "/sub-zero-repair/";
+    const slug = brand.toLowerCase().replace(/[\s&]+/g, "-");
+    return `/${slug}-appliance-repair/`;
+  };
+
   return (
     <section className="brand-showcase">
       <h2 className="section-title">Brands We Repair</h2>
@@ -29,13 +34,22 @@ export const Brands = () => {
         {brands.map((brand, index) => (
           <div key={index} className="brand-card">
             <div className="shine" />
-            <span className={["Fisher & Paykel", "Elmira Stove Works"].includes(brand)  ? "brand-small" : ""}>
-              {brand}
-            </span>
+            <a href={getBrandLink(brand)} title={`${brand} Repair`}>
+              <span
+                className={
+                  ["Fisher & Paykel", "Elmira Stove Works"].includes(brand)
+                    ? "brand-small"
+                    : ""
+                }
+              >
+                {brand}
+              </span>
+            </a>
           </div>
         ))}
       </div>
     </section>
   );
 };
+
 export default Brands;
