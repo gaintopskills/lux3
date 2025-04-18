@@ -1,21 +1,24 @@
 import React from "react";
 
 const brands = [
-  "Sub-Zero",
-  "Wolf",
-  "Viking",
-  "Miele",
-  "Gaggenau",
+  "AGA",
+  "Big Chill",
+  "BlueStar",
   "Bosch",
-  "La Cornue",
-  "Thermador",
+  "Dacor",
+
+  "Fisher & Paykel",
+  "Gaggenau",
   "Jenn-Air",
   "KitchenAid",
-  "Fisher & Paykel",
-  "Dacor",
-  "BlueStar",
-  "Big Chill",
-  "Smeg"
+  "La Cornue",
+  "Miele",
+  "Smeg",
+  "Sub-Zero",
+  "Thermador",
+  "Viking",
+  "Wolf",
+  "Elmira Stove Works",
 ];
 
 export const Brands = () => {
@@ -26,7 +29,7 @@ export const Brands = () => {
         {brands.map((brand, index) => (
           <div key={index} className="brand-card">
             <div className="shine" />
-            <span className={brand === "Fisher & Paykel" ? "brand-small" : ""}>
+            <span className={["Fisher & Paykel", "Elmira Stove Works"].includes(brand)  ? "brand-small" : ""}>
               {brand}
             </span>
           </div>
