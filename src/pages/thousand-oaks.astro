@@ -1,25 +1,63 @@
 ---
 import Layout from '../layouts/Layout.astro';
-const structuredData = {
-	"@context": "https://schema.org",
-	"@type": "WebPage",
-	"name": "Welcome to Zaricci Luxury Appliance Repair",
-	"description": "High-End Appliance Repair services",
-	"publisher": {
-		"@type": "Organization",
-		"name": "Zaricci",
-	},
-	"datePublished": new Date().toISOString(),
-	"dateModified": new Date().toISOString()
+const structuredData = const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "image": "luxury-appliance-repair-services.webp", // Update to actual logo URL
+  "@id": "https://luxuryappliance.repair/thousand-oaks/",
+  "url": "https://luxuryappliance.repair/thousand-oaks/",
+  "telephone": "+1-213-309-1924", // Replace with real number
+  "priceRange": "$$$",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Satarday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/zaricciappliancerepair",
+    "https://www.instagram.com/zaricciappliancerepair"
+  ],
+  "description": "ZARICCI Luxury Appliance Repair provides high-end, in-home appliance repair in Thousand Oaks. Certified technicians specialize in premium brands like Sub-Zero, Wolf, Thermador, Miele, and more. Offering same-day appointments and white-glove service.",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Thousand Oaks, CA"
+  },
+  "serviceType": "Luxury Appliance Repair",
+  "brand": [
+    { "@type": "Brand", "name": "AGA" },
+    { "@type": "Brand", "name": "Big Chill" },
+    { "@type": "Brand", "name": "BlueStar" },
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "Dacor" },
+    { "@type": "Brand", "name": "Fisher & Paykel" },
+    { "@type": "Brand", "name": "Gaggenau" },
+    { "@type": "Brand", "name": "Jenn-Air" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "La Cornue" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Smeg" },
+    { "@type": "Brand", "name": "Sub-Zero" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Elmira Stove Works" }
+  ]
 };
-// Example breadcrumbs for the home page
-const breadcrumbs = [
-	{ text: 'Welcome' }
-];
 ---
 <Layout
 	title="Local Luxury Appliance Repair – Thousand Oaks"
-	description="High-end appliances repair by certified technicians. Same-day appointments are available. Call today!"
+	description="High-end appliances repair - Thousand Oaks by certified technicians. Same-day appointments are available. Call today!"
 	structuredData={structuredData}
 >
 <div style="margin: 50px">
