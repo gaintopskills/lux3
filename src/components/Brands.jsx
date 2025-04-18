@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Brands.css";
 const brands = [
   "AGA",
   "Big Chill",
