@@ -162,14 +162,24 @@ export const MegaMenu = () => {
                 {[
                   ["Alhambra", "Beverly Hills", "Brentwood", "Burbank", "Culver City", "Hollywood", "Glendale"],
                   ["Los Angeles", "Los Feliz", "Malibu", "Marina Del Rey", "Pacific Palisades", "Pasadena",],
-                  [ "Playa Del Rey", "San Marino", "Santa Monica", "South Pasadena", "Thousand Oaks", "West Hollywood"],
+                  [ "Playa Del Rey", "San Marino", "Santa Monica", "South Pasadena", 
+                  
+                  { label: "Thousand Oaks", href: "/thousand-oaks/" },
+                  
+                  "West Hollywood"],
                 ].map((col, idx) => (
                   <div className="column" key={idx}>
-                    {col.map((item) => (
-                       <a key={item} href="#">
-                    {/*   <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> */}{item}
-                     </a>
-                    ))}
+                    {col.map((item) =>
+  typeof item === "string" ? (
+    <a key={item} href={`/${item.toLowerCase().replace(/\s+/g, "-")}/`}>
+      {item}
+    </a>
+  ) : (
+    <a key={item.label} href={item.href}>
+      {item.label}
+    </a>
+  )
+)}
                   </div>
                 ))}
               </div>
