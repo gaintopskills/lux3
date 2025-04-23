@@ -152,53 +152,6 @@ export const MegaMenu = () => {
 </div>
             </div>
           </div>
-           {/* HVAC Dropdown */}
-             {/* Commercial Dropdown */}
-          <div className="dropdown">
-          <button className="dropbtn"><a href="/brands/" onClick={() => handleDropdownToggle("commercial")}>
-              Brands <ArrowIcon isOpen={openDropdown === "commercial"} />
-            </a></button>
-            <div className={`dropdown-content ${openDropdown === "Household" ? "show" : ""}`}>
-              <h3>High-End  Brands We Repair</h3>
-              <div className="row">
-  {[
-    [{ label: "AGA", href: "/aga-appliance-repair/" },
-    { label: "Big Chill", href: "/bill-chill-appliance-repair/" },
-    { label: "BlueStar", href: "/bluestar-appliance-repair/" },
-    { label: "Bosch", href: "/bosch-appliance-repair/" },
-    { label: "Dacor", href: "/dacor-appliance-repair/" },
-    { label: "Elmira Stove Works", href: "/elmira-stove-works-appliance-repair/" },],
-    [{ label: "Fisher & Paykel", href: "/fisher-paykel-appliance-repair/"},
-    { label: "Gaggenau", href: "/gaggenau-appliance-repair/" },
-    { label: "Jenn-Air", href: "/jenn-air-appliance-repair/" },
-    { label: "KitchenAid", href: "/kitchenaid-appliance-repair/" },
-    { label: "La Cornue", href: "/la-cornue-appliance-repair/" },
-    { label: "Miele", href: "/miele-appliance-repair/" },],
-    [ { label: "Smeg", href: "/smeg-appliance-repair/" },
-      { label: "Sub-Zero", href: "/sub-zero-repair/" },
-      { label: "Thermador", href: "/thermador-appliance-repair/" },
-      { label: "Viking", href: "/viking-appliance-repair/" },
-      { label: "Wolf", href: "/wolf-appliance-repair/" },
-    ],
-  ].map((col, idx) => (
-    <div className="column" key={idx}>
-      {col.map((item) =>
-        typeof item === "string" ? (
-          <a key={item} href="#">
-            {/* <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> */} {item}
-          </a>
-        ) : (
-          <a key={item.label} href={item.href}>
-            {/* <img src={`/svg/${item.label.split(" ")[0].toLowerCase()}.svg`} alt={item.label} /> */} {item.label}
-          </a>
-        )
-      )}
-    </div>
-  ))}
-</div>
-            </div>
-          </div>
-          
            <div className="dropdown">
             <button className="dropbtn" onClick={() => handleDropdownToggle("HVAC")}><a>
             Service Areas <ArrowIcon isOpen={openDropdown === "HVAC"} />
