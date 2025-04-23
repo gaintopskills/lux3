@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-const structuredData = {
+const structuredData = <script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "ZARICCI Luxury Appliance Repair",
@@ -24,7 +25,6 @@ const structuredData = {
       "closes": "20:00"
     }
   ],
-
   "description": "ZARICCI Luxury Appliance Repair provides high-end, in-home appliance repair in Thousand Oaks. Certified technicians specialize in premium brands like Sub-Zero, Wolf, Thermador, Miele, and more. Offering same-day appointments and white-glove service.",
   "areaServed": {
     "@type": "Place",
@@ -37,20 +37,33 @@ const structuredData = {
   },
   "serviceType": "Luxury Appliance Repair",
   "makesOffer": {
-    "@type": "Offer",
-    "itemOffered": {
-      "@type": "Service",
-      "name": "Luxury Appliance Repair",
-      "description": "Certified in-home repair for luxury appliances including Sub-Zero, Wolf, Miele, Thermador, and more. Serving Thousand Oaks with same-day appointments and white-glove service.",
-      "areaServed": {
-        "@type": "Place",
-        "name": "Thousand Oaks, CA"
-      },
-      "provider": {
-        "@type": "Organization",
-        "name": "ZARICCI Luxury Appliance Repair"
-      }
-    }
+    "@type": "OfferCatalog",
+    "name": "Luxury Appliance Repair Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair" } }
+    ]
   },
   "brand": [
     { "@type": "Brand", "name": "AGA" },
@@ -69,10 +82,23 @@ const structuredData = {
     { "@type": "Brand", "name": "Thermador" },
     { "@type": "Brand", "name": "Viking" },
     { "@type": "Brand", "name": "Wolf" },
-    { "@type": "Brand", "name": "Elmira Stove Works" }
+    { "@type": "Brand", "name": "Elmira Stove Works" },
+    { "@type": "Brand", "name": "Monogram" },
+    { "@type": "Brand", "name": "Cove" },
+    { "@type": "Brand", "name": "Bertazzoni" },
+    { "@type": "Brand", "name": "ZLINE" },
+    { "@type": "Brand", "name": "ILVE" },
+    { "@type": "Brand", "name": "Fulgor Milano" },
+    { "@type": "Brand", "name": "Lacanche" },
+    { "@type": "Brand", "name": "Robam" },
+    { "@type": "Brand", "name": "Signature Kitchen Suite" },
+    { "@type": "Brand", "name": "True Residential" },
+    { "@type": "Brand", "name": "Hestan" },
+    { "@type": "Brand", "name": "Whirlpool Black Stainless" },
+    { "@type": "Brand", "name": "JennAir Noir" }
   ]
 }
-
+</script>
 
 ---
 <Layout
