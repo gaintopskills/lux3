@@ -153,6 +153,52 @@ export const MegaMenu = () => {
             </div>
           </div>
            {/* HVAC Dropdown */}
+             {/* Commercial Dropdown */}
+          <div className="dropdown">
+          <button className="dropbtn"><a href="/brands/" onClick={() => handleDropdownToggle("commercial")}>
+              Brands <ArrowIcon isOpen={openDropdown === "commercial"} />
+            </a></button>
+            <div className={`dropdown-content ${openDropdown === "Household" ? "show" : ""}`}>
+              <h3>High-End  Brands We Repair</h3>
+              <div className="row">
+  {[
+    [{ label: "AGA", href: "/aga-appliance-repair/" },
+    { label: "Big Chill", href: "/bill-chill-appliance-repair/" },
+    { label: "BlueStar", href: "/bluestar-appliance-repair/" },
+    { label: "Bosch", href: "/bosch-appliance-repair/" },
+    { label: "Dacor", href: "/dacor-appliance-repair/" },
+    { label: "Elmira Stove Works", href: "/elmira-stove-works-appliance-repair/" },],
+    [{ label: "Fisher & Paykel", href: "/fisher-paykel-appliance-repair/"},
+    { label: "Gaggenau", href: "/gaggenau-appliance-repair/" },
+    { label: "Jenn-Air", href: "/jenn-air-appliance-repair/" },
+    { label: "KitchenAid", href: "/kitchenaid-appliance-repair/" },
+    { label: "La Cornue", href: "/la-cornue-appliance-repair/" },
+    { label: "Miele", href: "/miele-appliance-repair/" },],
+    [ { label: "Smeg", href: "/smeg-appliance-repair/" },
+      { label: "Sub-Zero", href: "/sub-zero-repair/" },
+      { label: "Thermador", href: "/thermador-appliance-repair/" },
+      { label: "Viking", href: "/viking-appliance-repair/" },
+      { label: "Wolf", href: "/wolf-appliance-repair/" },
+    ],
+  ].map((col, idx) => (
+    <div className="column" key={idx}>
+      {col.map((item) =>
+        typeof item === "string" ? (
+          <a key={item} href="#">
+            {/* <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> */} {item}
+          </a>
+        ) : (
+          <a key={item.label} href={item.href}>
+            {/* <img src={`/svg/${item.label.split(" ")[0].toLowerCase()}.svg`} alt={item.label} /> */} {item.label}
+          </a>
+        )
+      )}
+    </div>
+  ))}
+</div>
+            </div>
+          </div>
+          
            <div className="dropdown">
             <button className="dropbtn" onClick={() => handleDropdownToggle("HVAC")}><a>
             Service Areas <ArrowIcon isOpen={openDropdown === "HVAC"} />
@@ -160,13 +206,55 @@ export const MegaMenu = () => {
             <div className={`dropdown-content ${openDropdown === "HVAC" ? "show" : ""}`}>
               <div className="row">
                 {[
-                  ["Alhambra", "Beverly Hills", "Brentwood", "Burbank", "Culver City", "Hollywood", "Glendale"],
-                  ["Los Angeles", "Los Feliz", "Malibu", "Marina Del Rey", "Pacific Palisades", "Pasadena",],
-                  [ "Playa Del Rey", "San Marino", "Santa Monica", "South Pasadena", 
-                  
-                  { label: "Thousand Oaks", href: "/thousand-oaks/" },
-                  
-                  "West Hollywood"],
+                   // Column 1
+  [
+    { label: "Alhambra", href: "/alhambra/" },
+    { label: "Bel Air", href: "/bel-air/" },
+    { label: "Beverly Hills", href: "/beverly-hills/" },
+    { label: "Brentwood", href: "/brentwood/" },
+    { label: "Burbank", href: "/burbank/" },
+    { label: "Calabasas", href: "/calabasas/" },
+    { label: "Century City", href: "/century-city/" },
+    { label: "Culver City", href: "/culver-city/" },
+    { label: "Encino", href: "/encino/" },
+    { label: "Glendale", href: "/glendale/" },
+    { label: "Hermosa Beach", href: "/hermosa-beach/" },
+    { label: "Hollywood", href: "/hollywood/" },
+    { label: "Holmby Hills", href: "/holmby-hills/" },
+    { label: "La Cañada Flintridge", href: "/la-canada-flintridge/" },
+  ],
+
+  // Column 2
+  [
+   
+    { label: "Los Angeles", href: "/los-angeles/" },
+    { label: "Los Feliz", href: "/los-feliz/" },
+    { label: "Malibu", href: "/malibu/" },
+    { label: "Manhattan Beach", href: "/manhattan-beach/" },
+    { label: "Marina Del Rey", href: "/marina-del-rey/" },
+    { label: "Pacific Palisades", href: "/pacific-palisades/" },
+    { label: "Palos Verdes Estates", href: "/palos-verdes-estates/" },
+    { label: "Pasadena", href: "/pasadena/" },
+    { label: "Playa Del Rey", href: "/playa-del-rey/" },
+    { label: "Rancho Palos Verdes", href: "/rancho-palos-verdes/" },
+    { label: "Rolling Hills Estates", href: "/rolling-hills-estates/" },
+  ],
+
+  // Column 3
+  [
+    
+    { label: "San Marino", href: "/san-marino/" },
+    { label: "Santa Monica", href: "/santa-monica/" },
+    { label: "Sherman Oaks", href: "/sherman-oaks/" },
+    { label: "South Pasadena", href: "/south-pasadena/" },
+    { label: "Studio City", href: "/studio-city/" },
+    { label: "Tarzana", href: "/tarzana/" },
+    { label: "Thousand Oaks", href: "/thousand-oaks/" },
+    { label: "Venice", href: "/venice/" },
+    { label: "West Hollywood", href: "/west-hollywood/" },
+    { label: "Westwood", href: "/westwood/" },
+    { label: "Woodland Hills", href: "/woodland-hills/" }
+  ],
                 ].map((col, idx) => (
                   <div className="column" key={idx}>
                     {col.map((item) =>
