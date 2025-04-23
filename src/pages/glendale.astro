@@ -1,0 +1,203 @@
+---
+import Layout from '../layouts/Layout.astro';
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "@id": "https://luxuryappliance.repair/glendale/",
+  "url": "https://luxuryappliance.repair/glendale/",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "description": "ZARICCI Luxury Appliance Repair provides same-day service and white-glove care to homeowners in Glendale. We specialize in high-end brands like Miele, Sub-Zero, Wolf, Thermador, and La Cornue, servicing luxury condos and hillside estates with expert precision.",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Glendale, CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.1425,
+    "longitude": -118.2551
+  },
+  "serviceType": "Luxury Appliance Repair",
+  "makesOffer": {
+    "@type": "OfferCatalog",
+    "name": "Luxury Appliance Repair Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair" } }
+    ]
+  },
+  "brand": [
+    { "@type": "Brand", "name": "AGA" },
+    { "@type": "Brand", "name": "Big Chill" },
+    { "@type": "Brand", "name": "BlueStar" },
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "Dacor" },
+    { "@type": "Brand", "name": "Fisher & Paykel" },
+    { "@type": "Brand", "name": "Gaggenau" },
+    { "@type": "Brand", "name": "Jenn-Air" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "La Cornue" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Smeg" },
+    { "@type": "Brand", "name": "Sub-Zero" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Elmira Stove Works" },
+    { "@type": "Brand", "name": "Monogram" },
+    { "@type": "Brand", "name": "Cove" },
+    { "@type": "Brand", "name": "Bertazzoni" },
+    { "@type": "Brand", "name": "ZLINE" },
+    { "@type": "Brand", "name": "ILVE" },
+    { "@type": "Brand", "name": "Fulgor Milano" },
+    { "@type": "Brand", "name": "Lacanche" },
+    { "@type": "Brand", "name": "Robam" },
+    { "@type": "Brand", "name": "Signature Kitchen Suite" },
+    { "@type": "Brand", "name": "True Residential" },
+    { "@type": "Brand", "name": "Hestan" },
+    { "@type": "Brand", "name": "Whirlpool Black Stainless" },
+    { "@type": "Brand", "name": "JennAir Noir" }
+  ]
+}
+---
+<Layout
+	title="Local Luxury Appliance Repair – Glendale"
+	description="High-end appliances repair - Glendale by certified technicians. Same-day appointments are available. Call today!"
+	structuredData={structuredData}
+>
+<div style="margin: 50px">
+<section>
+  <h1>Luxury Appliance Repair in Glendale, CA</h1>
+  <p><strong>White-Glove Service for High-End Homes in the Jewel City</strong></p>
+  <p>In Glendale, sophistication and comfort come together—from the classic estates of Rossmoyne to the custom-built homes in Chevy Chase Canyon. Whether you live in a hillside villa or a luxury condo downtown, your appliances reflect your taste for performance and design. When one stops working, you need a repair service that values those same standards.</p>
+  <p>At <strong>ZARICCI Luxury Appliance Repair</strong>, we specialize in premium appliance repair in Glendale, working with elite brands like Sub-Zero, Wolf, Thermador, Miele, La Cornue, Gaggenau, Viking, Bosch, and more. We deliver factory-trained expertise, genuine OEM parts, and white-glove service that protects your home—and your time.</p>
+</section>
+
+<section>
+  <h3>🔧 Why Glendale Homeowners Choose ZARICCI</h3>
+  <ul>
+    <li><strong>✅ Experts in High-End Appliance Brands</strong><br/>We’re certified to service top-tier appliances and understand the precision behind every detail—from dual-fuel ovens and integrated fridges to smart dishwashers and luxury laundry systems.</li>
+    <li><strong>✅ OEM Parts for Performance & Warranty Protection</strong><br/>We use manufacturer-approved parts only, ensuring every repair meets factory standards and preserves your investment.</li>
+    <li><strong>✅ Same-Day or Next-Day Service in Glendale</strong><br/>We prioritize speed, reliability, and clear communication, offering fast response times and flexible scheduling.</li>
+    <li><strong>✅ White-Glove In-Home Experience</strong><br/>Our technicians arrive on time, in uniform, and fully prepared. We work cleanly and discreetly, leaving your home exactly as we found it—only better.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>🛠️ High-End Appliances We Repair in Glendale</h3>
+  <h4>❄️ Refrigerators & Freezers</h4>
+  <ul>
+    <li>Sub-Zero, Thermador, Miele</li>
+    <li>Cooling or temperature issues</li>
+    <li>Ice maker not working</li>
+    <li>Water dispenser or panel errors</li>
+    <li>Door not sealing or aligned</li>
+  </ul>
+  <h4>🔥 Ranges, Ovens & Cooktops</h4>
+  <ul>
+    <li>Wolf, La Cornue, Gaggenau, Viking</li>
+    <li>Ignition problems, uneven heating</li>
+    <li>Convection or steam oven issues</li>
+    <li>Broken knobs, sensors, or fan motors</li>
+    <li>Smart system malfunctions</li>
+  </ul>
+  <h4>🚿 Dishwashers</h4>
+  <ul>
+    <li>Miele, Bosch, Cove</li>
+    <li>Won’t drain, clean, or dry properly</li>
+    <li>Leaks or strange noises</li>
+    <li>Control panel or display problems</li>
+    <li>Cycle won’t start or finish</li>
+  </ul>
+  <h4>🧺 Luxury Washers & Dryers</h4>
+  <ul>
+    <li>Miele, LG Signature, Fisher & Paykel</li>
+    <li>Drum not spinning or draining</li>
+    <li>Dryer not heating or overheating</li>
+    <li>Control board or smart features not working</li>
+  </ul>
+  <h4>☕ Specialty Built-In Appliances</h4>
+  <ul>
+    <li>Wine fridges, espresso machines, warming drawers</li>
+    <li>Inconsistent temps, water flow, power issues</li>
+    <li>Smart connectivity problems</li>
+    <li>Motor, pump, or internal component failures</li>
+  </ul>
+</section>
+
+<section>
+  <h3>👨‍🔧 The ZARICCI Repair Experience</h3>
+  <ol>
+    <li><strong>Schedule with Ease</strong><br/>Book by phone or online. We’ll confirm your appointment and match you with a technician trained in your specific appliance brand.</li>
+    <li><strong>On-Time, In-Home Diagnosis</strong><br/>Your technician arrives promptly, performs a full inspection, and identifies the issue using advanced diagnostic tools.</li>
+    <li><strong>Clear Quote. No Surprises.</strong><br/>You’ll receive a transparent, itemized estimate with no upselling or unexpected fees.</li>
+    <li><strong>Precision Repair with OEM Parts</strong><br/>We complete the work using genuine parts, run tests, and ensure your appliance works like new.</li>
+    <li><strong>Clean Exit & Warranty Guarantee</strong><br/>We leave your home spotless and back our repairs with a warranty for peace of mind.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>🏡 Serving All of Glendale’s Premier Neighborhoods</h3>
+  <p>We provide service in:</p>
+  <ul>
+    <li>Rossmoyne</li>
+    <li>Chevy Chase Canyon</li>
+    <li>Verdugo Woodlands</li>
+    <li>Adams Hill</li>
+    <li>Brockmont</li>
+    <li>Oakmont Country Club Estates</li>
+    <li>Downtown Glendale condos & penthouses</li>
+  </ul>
+  <p>Whether you’re restoring a historic home or managing a new luxury build, <strong>ZARICCI</strong> is trusted in Glendale’s finest properties.</p>
+</section>
+
+<section>
+  <h3>Service That Matches the Appliances You Chose</h3>
+  <p>Your appliances were built for performance, style, and longevity. At <strong>ZARICCI</strong>, we deliver a repair experience that reflects the same values—through craftsmanship, professionalism, and respect for your home.</p>
+</section>
+
+<section>
+  <h3>📞 Schedule Your Luxury Appliance Repair in Glendale Today</h3>
+  <p>Don’t let a faulty appliance slow down your lifestyle.<br/>Call <strong>ZARICCI Luxury Appliance Repair</strong> or book online now for expert, white-glove service in Glendale.</p>
+  <p><strong>👉 ZARICCI — Trusted by Homeowners. Preferred by Designers. Certified for Luxury.</strong></p>
+</section>
+</div>
+</Layout>

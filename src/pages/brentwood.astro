@@ -1,0 +1,208 @@
+---
+import Layout from '../layouts/Layout.astro';
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "@id": "https://luxuryappliance.repair/brentwood/",
+  "url": "https://luxuryappliance.repair/brentwood/",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "description": "ZARICCI Luxury Appliance Repair is Brentwood’s trusted provider for elite in-home appliance repair. From Sub-Zero to Wolf, Miele, and La Cornue, we service all major luxury brands with factory-trained precision and white-glove professionalism.",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Brentwood, CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.0522,
+    "longitude": -118.4732
+  },
+  "serviceType": "Luxury Appliance Repair",
+  "makesOffer": {
+    "@type": "OfferCatalog",
+    "name": "Luxury Appliance Repair Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair" } }
+    ]
+  },
+  "brand": [
+    { "@type": "Brand", "name": "AGA" },
+    { "@type": "Brand", "name": "Big Chill" },
+    { "@type": "Brand", "name": "BlueStar" },
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "Dacor" },
+    { "@type": "Brand", "name": "Fisher & Paykel" },
+    { "@type": "Brand", "name": "Gaggenau" },
+    { "@type": "Brand", "name": "Jenn-Air" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "La Cornue" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Smeg" },
+    { "@type": "Brand", "name": "Sub-Zero" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Elmira Stove Works" },
+    { "@type": "Brand", "name": "Monogram" },
+    { "@type": "Brand", "name": "Cove" },
+    { "@type": "Brand", "name": "Bertazzoni" },
+    { "@type": "Brand", "name": "ZLINE" },
+    { "@type": "Brand", "name": "ILVE" },
+    { "@type": "Brand", "name": "Fulgor Milano" },
+    { "@type": "Brand", "name": "Lacanche" },
+    { "@type": "Brand", "name": "Robam" },
+    { "@type": "Brand", "name": "Signature Kitchen Suite" },
+    { "@type": "Brand", "name": "True Residential" },
+    { "@type": "Brand", "name": "Hestan" },
+    { "@type": "Brand", "name": "Whirlpool Black Stainless" },
+    { "@type": "Brand", "name": "JennAir Noir" }
+  ]
+}
+
+
+---
+<Layout
+	title="Local Luxury Appliance Repair – Brentwood"
+	description="High-end appliances repair - Brentwood by certified technicians. Same-day appointments are available. Call today!"
+	structuredData={structuredData}
+>
+<div style="margin: 50px">
+<section>
+  <h1>Luxury Appliance Repair in Brentwood, CA</h1>
+  <p><strong>White-Glove Repair Service for High-End Homes on L.A.’s Westside</strong></p>
+  <p>In the prestigious community of Brentwood, elegance is a lifestyle—from the tree-lined estates of Mandeville Canyon to the custom kitchens of Brentwood Park. Homeowners here expect more—more performance, more style, and more reliability from every detail in their home. That includes appliances.</p>
+  <p>At <strong>ZARICCI Luxury Appliance Repair</strong>, we provide premium appliance repair services in Brentwood, specializing in high-end brands like Sub-Zero, Wolf, Thermador, Miele, La Cornue, Gaggenau, Viking, and more. Our certified technicians deliver a level of service designed for those who never compromise on quality.</p>
+</section>
+
+<section>
+  <h3>🔧 Why Brentwood Residents Trust ZARICCI</h3>
+  <ul>
+    <li><strong>✅ Luxury Brand Specialists</strong><br/>We’re trained to repair today’s most advanced luxury appliances—from panel-ready refrigerators and smart ovens to professional-grade gas ranges and steam dishwashers. Every technician is certified and equipped for brand-specific repairs.</li>
+    <li><strong>✅ OEM Parts. Lasting Performance.</strong><br/>We use only genuine manufacturer parts to maintain your appliance’s integrity, warranty, and performance—because shortcuts aren’t part of our process.</li>
+    <li><strong>✅ Same-Day & Next-Day Appointments in Brentwood</strong><br/>Your time matters. We offer prompt scheduling, clear communication, and on-time arrivals throughout Brentwood and surrounding Westside neighborhoods.</li>
+    <li><strong>✅ Discreet, White-Glove Service</strong><br/>We wear protective gear, use clean tools, and leave your home just as beautiful as we found it—only with fully restored appliances.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>🛠️ Luxury Appliances We Repair in Brentwood</h3>
+  <h4>❄️ Refrigerators & Freezers</h4>
+  <ul>
+    <li>Sub-Zero, Thermador, Miele</li>
+    <li>Not cooling properly</li>
+    <li>Ice maker or water line issues</li>
+    <li>Noisy compressor or fan</li>
+    <li>Door won’t close or seal properly</li>
+  </ul>
+  <h4>🔥 Ovens, Ranges & Cooktops</h4>
+  <ul>
+    <li>Wolf, La Cornue, Gaggenau, Viking</li>
+    <li>Gas ignition failure</li>
+    <li>Convection or fan not working</li>
+    <li>Smart oven not connecting</li>
+    <li>Induction zone issues</li>
+  </ul>
+  <h4>🚿 High-End Dishwashers</h4>
+  <ul>
+    <li>Miele, Bosch, Cove</li>
+    <li>Water not draining</li>
+    <li>Incomplete cycles</li>
+    <li>Interior leaks</li>
+    <li>Error codes or display issues</li>
+  </ul>
+  <h4>🧺 Luxury Washers & Dryers</h4>
+  <ul>
+    <li>Miele, LG Signature, Fisher & Paykel</li>
+    <li>Drum not spinning or draining</li>
+    <li>Dryer not heating or taking too long</li>
+    <li>Control board issues or app connectivity problems</li>
+  </ul>
+  <h4>☕ Specialty & Built-In Appliances</h4>
+  <ul>
+    <li>Wine coolers, espresso machines, warming drawers, downdraft systems</li>
+    <li>Inconsistent temps</li>
+    <li>Power failures</li>
+    <li>Internal part replacements</li>
+    <li>Integration with cabinetry or smart systems</li>
+  </ul>
+</section>
+
+<section>
+  <h3>👨‍🔧 Our Premium Repair Process</h3>
+  <ol>
+    <li><strong>Schedule Your Visit</strong><br/>Call or book online. We’ll gather details and confirm a convenient appointment time.</li>
+    <li><strong>In-Home Diagnosis</strong><br/>Your ZARICCI technician arrives in uniform, fully equipped to assess your appliance and explain the problem clearly.</li>
+    <li><strong>Clear, Upfront Estimate</strong><br/>No guesswork—just an honest quote with a breakdown of parts, labor, and timeframe.</li>
+    <li><strong>Expert Repairs with Genuine Parts</strong><br/>We restore your appliance using OEM components and brand-specific techniques to ensure full functionality.</li>
+    <li><strong>Final Testing & Warranty Coverage</strong><br/>We verify the repair, run safety checks, clean up the space, and back our work with a satisfaction guarantee.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>🏠 Proudly Serving Brentwood’s Most Prestigious Communities</h3>
+  <p>We’re trusted in homes throughout:</p>
+  <ul>
+    <li>Brentwood Park</li>
+    <li>Mandeville Canyon</li>
+    <li>Brentwood Glen</li>
+    <li>Crestwood Hills</li>
+    <li>Bundy Drive Estates</li>
+    <li>Brentwood Circle</li>
+    <li>Kenter Canyon & Sunset Blvd estates</li>
+  </ul>
+  <p>Whether you’re managing a private residence, luxury rental, or new build, ZARICCI provides discreet, concierge-style appliance service you can depend on.</p>
+</section>
+
+<section>
+  <h3>Your Home Deserves the Best—So Do Your Appliances</h3>
+  <p>You invested in performance, design, and durability when choosing your appliances. At <strong>ZARICCI</strong>, we help protect that investment with world-class service, brand-trained technicians, and a repair experience tailored to luxury living.</p>
+</section>
+
+<section>
+  <h3>📞 Book Your Luxury Appliance Repair in Brentwood Today</h3>
+  <p>Don’t let a minor issue become a major disruption.<br/>Call <strong>ZARICCI Luxury Appliance Repair</strong> or schedule your appointment online to restore the performance your home was built around.</p>
+  <p><strong>👉 ZARICCI — Elite Appliance Repair for Brentwood’s Finest Homes.</strong></p>
+</section>
+
+
+</div>
+</Layout>

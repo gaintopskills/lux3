@@ -1,0 +1,203 @@
+---
+import Layout from '../layouts/Layout.astro';
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "@id": "https://luxuryappliance.repair/burbank/",
+  "url": "https://luxuryappliance.repair/burbank/",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "description": "ZARICCI Luxury Appliance Repair brings white-glove appliance service to Burbank homeowners. From Thermador and Sub-Zero to Viking and Miele, we repair high-end appliances with expert care and same-day availability across the city.",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Burbank, CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.1808,
+    "longitude": -118.3089
+  },
+  "serviceType": "Luxury Appliance Repair",
+  "makesOffer": {
+    "@type": "OfferCatalog",
+    "name": "Luxury Appliance Repair Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair" } }
+    ]
+  },
+  "brand": [
+    { "@type": "Brand", "name": "AGA" },
+    { "@type": "Brand", "name": "Big Chill" },
+    { "@type": "Brand", "name": "BlueStar" },
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "Dacor" },
+    { "@type": "Brand", "name": "Fisher & Paykel" },
+    { "@type": "Brand", "name": "Gaggenau" },
+    { "@type": "Brand", "name": "Jenn-Air" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "La Cornue" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Smeg" },
+    { "@type": "Brand", "name": "Sub-Zero" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Elmira Stove Works" },
+    { "@type": "Brand", "name": "Monogram" },
+    { "@type": "Brand", "name": "Cove" },
+    { "@type": "Brand", "name": "Bertazzoni" },
+    { "@type": "Brand", "name": "ZLINE" },
+    { "@type": "Brand", "name": "ILVE" },
+    { "@type": "Brand", "name": "Fulgor Milano" },
+    { "@type": "Brand", "name": "Lacanche" },
+    { "@type": "Brand", "name": "Robam" },
+    { "@type": "Brand", "name": "Signature Kitchen Suite" },
+    { "@type": "Brand", "name": "True Residential" },
+    { "@type": "Brand", "name": "Hestan" },
+    { "@type": "Brand", "name": "Whirlpool Black Stainless" },
+    { "@type": "Brand", "name": "JennAir Noir" }
+  ]
+}
+
+
+---
+<Layout
+	title="Local Luxury Appliance Repair – Burbank"
+	description="High-end appliances repair - Burbank by certified technicians. Same-day appointments are available. Call today!"
+	structuredData={structuredData}
+>
+<div style="margin: 50px">
+<section>
+  <h2>Luxury Appliance Repair in Burbank, CA</h2>
+  <p><strong>High-End Repairs with White-Glove Service in the Media Capital of the World</strong></p>
+  <p>Burbank blends classic California charm with modern sophistication. From custom hillside homes with sweeping views to newly built estates in Magnolia Park, high-end living here means thoughtful design and premium appliances. When your high-performance appliance needs attention, trust the repair service that specializes in precision, discretion, and brand-specific expertise.</p>
+  <p>At <strong>ZARICCI Luxury Appliance Repair</strong>, we provide certified appliance repair in Burbank for luxury brands like Sub-Zero, Wolf, Miele, Thermador, Viking, Gaggenau, La Cornue, and more. Our technicians are trained to deliver flawless results—backed by genuine parts and an experience that’s professional from beginning to end.</p>
+</section>
+
+<section>
+  <h3>🔧 Why Burbank Homeowners Trust ZARICCI</h3>
+  <ul>
+    <li><strong>✅ Brand-Certified Luxury Repair Experts</strong><br/>We understand the advanced technology and craftsmanship behind high-end appliances. From Wi-Fi-enabled steam ovens to panel-ready refrigerators and pro cooktops, our technicians are certified in all major luxury brands.</li>
+    <li><strong>✅ OEM Parts. No Shortcuts.</strong><br/>We only use original manufacturer parts, so your appliance performs exactly as it should—no knockoffs, no guesswork.</li>
+    <li><strong>✅ Fast Scheduling for Burbank Homes</strong><br/>We offer same-day and next-day appointments across Burbank, from the Rancho District to the Hillside neighborhoods. We arrive on time and fully prepared.</li>
+    <li><strong>✅ White-Glove Service</strong><br/>Our technicians wear protective gear, maintain a clean workspace, and treat your home with the same respect and care your appliances were designed for.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>🛠️ High-End Appliances We Repair in Burbank</h3>
+  <h4>❄️ Refrigerators & Freezers</h4>
+  <ul>
+    <li>Sub-Zero, Thermador, Miele</li>
+    <li>Cooling problems, ice maker failure</li>
+    <li>Door not sealing, strange noises</li>
+    <li>Control panel malfunctions</li>
+  </ul>
+  <h4>🔥 Ovens, Ranges & Cooktops</h4>
+  <ul>
+    <li>Wolf, Gaggenau, La Cornue, Viking</li>
+    <li>Oven won’t heat or heats unevenly</li>
+    <li>Burner ignition issues</li>
+    <li>Smart tech glitches or error codes</li>
+  </ul>
+  <h4>🚿 Luxury Dishwashers</h4>
+  <ul>
+    <li>Miele, Bosch, Cove</li>
+    <li>Leaking, not draining, cycle errors</li>
+    <li>Unresponsive controls or display issues</li>
+    <li>Noisy operation or cleaning failure</li>
+  </ul>
+  <h4>🧺 Washer & Dryer Repairs</h4>
+  <ul>
+    <li>Miele, Fisher & Paykel, LG Signature</li>
+    <li>Drum won’t spin, dryer not heating</li>
+    <li>Unusual vibrations or smart sensor failures</li>
+    <li>Water not draining or control board issues</li>
+  </ul>
+  <h4>☕ Specialty Built-In Appliances</h4>
+  <ul>
+    <li>Wine coolers, espresso machines, warming drawers, smart hoods</li>
+    <li>Temperature issues, electrical failures</li>
+    <li>Integration or cabinetry fit repairs</li>
+    <li>Wi-Fi or app control failures</li>
+  </ul>
+</section>
+
+<section>
+  <h3>👨‍🔧 The ZARICCI Repair Process – Built for Luxury Homes</h3>
+  <ol>
+    <li><strong>Book Your Visit</strong><br/>Call or schedule online—our team confirms your appointment and gathers essential appliance info.</li>
+    <li><strong>On-Time, Brand-Specific Diagnosis</strong><br/>A certified ZARICCI technician arrives on time and performs a full, respectful inspection of your appliance.</li>
+    <li><strong>Clear, Honest Estimate</strong><br/>We present a detailed quote covering parts, labor, and expected completion—no pressure, no surprises.</li>
+    <li><strong>Expert Repairs with Authentic Parts</strong><br/>Using OEM components, we complete the repair with expert precision and retest every function before leaving.</li>
+    <li><strong>Clean Finish & Warranty</strong><br/>We leave your space spotless and back our repair with a satisfaction guarantee for peace of mind.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>🏠 Proudly Serving All of Burbank</h3>
+  <p>We serve luxury homes and estates throughout:</p>
+  <ul>
+    <li>Burbank Hills</li>
+    <li>Rancho District</li>
+    <li>Magnolia Park</li>
+    <li>Media District</li>
+    <li>Chandler Park</li>
+    <li>Glenoaks Canyon (border)</li>
+  </ul>
+  <p>Whether you're a homeowner, studio executive, or designer managing a new build, ZARICCI is trusted in homes where excellence is non-negotiable.</p>
+</section>
+
+<section>
+  <h3>Premium Appliances Deserve Premium Service</h3>
+  <p>Your Wolf range, Sub-Zero refrigerator, or Miele dishwasher was chosen for a reason—performance, reliability, and beauty. At <strong>ZARICCI</strong>, we honor that decision by providing service that reflects those same values: precision, integrity, and attention to detail.</p>
+</section>
+
+<section>
+  <h3>📞 Book Your Luxury Appliance Repair in Burbank Today</h3>
+  <p>Don’t let an appliance issue disrupt your day or your space.<br/>Call <strong>ZARICCI Luxury Appliance Repair</strong> or schedule your appointment online for certified luxury appliance service you can trust.</p>
+  <p><strong>👉 ZARICCI — Where Burbank’s Most Refined Homes Turn for Expert Repair.</strong></p>
+</section>
+
+
+</div>
+</Layout>

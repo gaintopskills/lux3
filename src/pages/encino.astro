@@ -1,0 +1,206 @@
+---
+import Layout from '../layouts/Layout.astro';
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "@id": "https://luxuryappliance.repair/encino/",
+  "url": "https://luxuryappliance.repair/encino/",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "description": "ZARICCI Luxury Appliance Repair is the trusted name for elite appliance service in Encino. We bring same-day service and white-glove care to high-end homes with appliances from Wolf, Miele, Sub-Zero, Thermador, and more.",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Encino, CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.1592,
+    "longitude": -118.5015
+  },
+  "serviceType": "Luxury Appliance Repair",
+  "makesOffer": {
+    "@type": "OfferCatalog",
+    "name": "Luxury Appliance Repair Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair" } }
+    ]
+  },
+  "brand": [
+    { "@type": "Brand", "name": "AGA" },
+    { "@type": "Brand", "name": "Big Chill" },
+    { "@type": "Brand", "name": "BlueStar" },
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "Dacor" },
+    { "@type": "Brand", "name": "Fisher & Paykel" },
+    { "@type": "Brand", "name": "Gaggenau" },
+    { "@type": "Brand", "name": "Jenn-Air" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "La Cornue" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Smeg" },
+    { "@type": "Brand", "name": "Sub-Zero" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Elmira Stove Works" },
+    { "@type": "Brand", "name": "Monogram" },
+    { "@type": "Brand", "name": "Cove" },
+    { "@type": "Brand", "name": "Bertazzoni" },
+    { "@type": "Brand", "name": "ZLINE" },
+    { "@type": "Brand", "name": "ILVE" },
+    { "@type": "Brand", "name": "Fulgor Milano" },
+    { "@type": "Brand", "name": "Lacanche" },
+    { "@type": "Brand", "name": "Robam" },
+    { "@type": "Brand", "name": "Signature Kitchen Suite" },
+    { "@type": "Brand", "name": "True Residential" },
+    { "@type": "Brand", "name": "Hestan" },
+    { "@type": "Brand", "name": "Whirlpool Black Stainless" },
+    { "@type": "Brand", "name": "JennAir Noir" }
+  ]
+}
+
+
+---
+<Layout
+	title="Local Luxury Appliance Repair – Enchino"
+	description="High-end appliances repair - Encino by certified technicians. Same-day appointments are available. Call today!"
+	structuredData={structuredData}
+>
+<div style="margin: 50px">
+<section>
+  <h1>Luxury Appliance Repair in Encino, CA</h1>
+  <p><strong>White-Glove Service for Homes That Demand the Best</strong></p>
+  <p>Encino is where tranquility meets luxury—known for its gated estates, modern hillside homes, and high-end amenities tucked into the heart of the San Fernando Valley. Your appliances aren’t just tools—they’re part of the lifestyle. Brands like Sub-Zero, Wolf, Thermador, Miele, La Cornue, Gaggenau, and Viking were chosen not just for looks, but for performance.</p>
+  <p>At <strong>ZARICCI Luxury Appliance Repair</strong>, we deliver expert high-end appliance repair in Encino, combining brand-specific training, genuine parts, and white-glove service trusted by the area’s most refined homeowners.</p>
+</section>
+
+<section>
+  <h3>🔧 Why Encino Residents Choose ZARICCI</h3>
+  <ul>
+    <li><strong>✅ Experts in Premium Appliance Brands</strong><br/>From smart ovens to integrated refrigeration and professional-grade cooktops, we’re factory-certified to repair elite brands with accuracy, discretion, and care.</li>
+    <li><strong>✅ Only Genuine Manufacturer Parts</strong><br/>We use OEM parts to protect your appliance’s performance and longevity—and to maintain your warranty where applicable.</li>
+    <li><strong>✅ Same-Day or Next-Day Appointments in Encino</strong><br/>Your time is valuable. We offer fast service to Encino and surrounding areas, always arriving on time and ready to work.</li>
+    <li><strong>✅ White-Glove, In-Home Service</strong><br/>We wear protective gear, work cleanly, and respect your home and privacy. From the moment we enter, you’ll know you’re working with professionals.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>🛠️ What We Repair in Encino</h3>
+  <h4>❄️ Refrigerators & Freezers</h4>
+  <ul>
+    <li>Sub-Zero, Thermador, Miele</li>
+    <li>Not cooling or inconsistent temperatures</li>
+    <li>Ice maker/water dispenser not working</li>
+    <li>Leaks, strange noises, or panel issues</li>
+  </ul>
+  <h4>🔥 Ovens, Ranges & Cooktops</h4>
+  <ul>
+    <li>Wolf, La Cornue, Gaggenau, Viking</li>
+    <li>Burners not igniting</li>
+    <li>Oven heating unevenly or not at all</li>
+    <li>Smart control or self-cleaning issues</li>
+    <li>Induction zones not responding</li>
+  </ul>
+  <h4>🚿 Dishwashers</h4>
+  <ul>
+    <li>Miele, Bosch, Cove</li>
+    <li>Won’t start or complete cycle</li>
+    <li>Poor cleaning or drying</li>
+    <li>Water leaks or error codes</li>
+  </ul>
+  <h4>🧺 Washing Machines & Dryers</h4>
+  <ul>
+    <li>Miele, LG Signature, Fisher & Paykel</li>
+    <li>Not draining or spinning</li>
+    <li>Dryer not heating or overheating</li>
+    <li>Control panel or smart sensor failures</li>
+  </ul>
+  <h4>☕ Specialty Appliances</h4>
+  <ul>
+    <li>Built-in espresso machines, wine coolers, warming drawers, and speed ovens</li>
+    <li>Temperature inconsistencies</li>
+    <li>Internal motor or heating issues</li>
+    <li>Smart app or connectivity problems</li>
+  </ul>
+</section>
+
+<section>
+  <h3>👨‍💻 Our Signature Repair Process</h3>
+  <ol>
+    <li><strong>Easy Scheduling</strong><br/>Call or book online. We’ll coordinate a time that suits your routine and the needs of your property.</li>
+    <li><strong>On-Time Arrival & Diagnosis</strong><br/>Your certified technician arrives on time, professionally dressed, and ready to assess your appliance.</li>
+    <li><strong>Detailed Estimate</strong><br/>We walk you through the issue and provide a clear, upfront quote—no hidden costs or surprises.</li>
+    <li><strong>Precision Repair with OEM Parts</strong><br/>We use only brand-approved parts and test every function after the repair is complete.</li>
+    <li><strong>Clean-Up & Warranty Backing</strong><br/>We leave your home just as we found it—only with your appliance fully functional—and we guarantee our work.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>🏡 Proudly Serving Encino’s Finest Communities</h3>
+  <p>ZARICCI provides luxury appliance repair in:</p>
+  <ul>
+    <li>Encino Hills</li>
+    <li>Royal Oaks</li>
+    <li>Amestoy Estates</li>
+    <li>Lake Encino</li>
+    <li>Clark Gable Estates</li>
+    <li>Rancho Estates</li>
+    <li>Encino Woods</li>
+    <li>Encino South of the Blvd</li>
+  </ul>
+  <p>Whether you're managing a new build or maintaining a custom estate, we bring precision, professionalism, and peace of mind to every home.</p>
+</section>
+
+<section>
+  <h3>When Performance Matters, Trust the Experts</h3>
+  <p>Your appliances are more than convenient—they’re central to your home’s flow, efficiency, and design. At <strong>ZARICCI</strong>, we bring the same attention to detail to our service that your appliances were built with.</p>
+</section>
+
+<section>
+  <h3>📞 Book Your Luxury Appliance Repair in Encino Today</h3>
+  <p>Don’t let a broken appliance disrupt the elegance of your home.<br/>Call <strong>ZARICCI Luxury Appliance Repair</strong> or book online now for same-day or next-day service in Encino.</p>
+  <p><strong>👉 ZARICCI — Elite Appliance Repair for Encino’s Most Exceptional Homes.</strong></p>
+</section>
+
+
+</div>
+</Layout>

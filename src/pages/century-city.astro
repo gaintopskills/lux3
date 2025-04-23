@@ -1,0 +1,207 @@
+---
+import Layout from '../layouts/Layout.astro';
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "@id": "https://luxuryappliance.repair/century-city/",
+  "url": "https://luxuryappliance.repair/century-city/",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "description": "ZARICCI Luxury Appliance Repair provides elite in-home repair services for high-rise condos and luxury homes in Century City. Specializing in brands like Sub-Zero, Miele, Wolf, and Thermador, we offer same-day appointments and white-glove care.",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Century City, CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.0584,
+    "longitude": -118.4186
+  },
+  "serviceType": "Luxury Appliance Repair",
+  "makesOffer": {
+    "@type": "OfferCatalog",
+    "name": "Luxury Appliance Repair Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair" } }
+    ]
+  },
+  "brand": [
+    { "@type": "Brand", "name": "AGA" },
+    { "@type": "Brand", "name": "Big Chill" },
+    { "@type": "Brand", "name": "BlueStar" },
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "Dacor" },
+    { "@type": "Brand", "name": "Fisher & Paykel" },
+    { "@type": "Brand", "name": "Gaggenau" },
+    { "@type": "Brand", "name": "Jenn-Air" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "La Cornue" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Smeg" },
+    { "@type": "Brand", "name": "Sub-Zero" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Elmira Stove Works" },
+    { "@type": "Brand", "name": "Monogram" },
+    { "@type": "Brand", "name": "Cove" },
+    { "@type": "Brand", "name": "Bertazzoni" },
+    { "@type": "Brand", "name": "ZLINE" },
+    { "@type": "Brand", "name": "ILVE" },
+    { "@type": "Brand", "name": "Fulgor Milano" },
+    { "@type": "Brand", "name": "Lacanche" },
+    { "@type": "Brand", "name": "Robam" },
+    { "@type": "Brand", "name": "Signature Kitchen Suite" },
+    { "@type": "Brand", "name": "True Residential" },
+    { "@type": "Brand", "name": "Hestan" },
+    { "@type": "Brand", "name": "Whirlpool Black Stainless" },
+    { "@type": "Brand", "name": "JennAir Noir" }
+  ]
+}
+
+
+---
+<Layout
+	title="Local Luxury Appliance Repair – Century City"
+	description="High-end appliances repair - Century City by certified technicians. Same-day appointments are available. Call today!"
+	structuredData={structuredData}
+>
+<div style="margin: 50px">
+<section>
+  <h1>Luxury Appliance Repair in Century City, CA</h1>
+  <p><strong>White-Glove Service for High-Rise Living & Elegant Urban Homes</strong></p>
+  <p>In the heart of Los Angeles, Century City stands as a symbol of modern prestige—home to sleek high-rises, penthouse residences, and beautifully designed condos with high-performance appliances built into every detail. When your luxury appliance needs expert attention, you deserve service that meets the same level of excellence.</p>
+  <p>At <strong>ZARICCI Luxury Appliance Repair</strong>, we specialize in premium appliance repair services in Century City, working with elite brands like Sub-Zero, Wolf, Thermador, Gaggenau, Miele, Viking, La Cornue, and more. Whether you’re in a luxury apartment, condo, or townhome, our technicians provide fast, discreet, and professional service designed for elevated living.</p>
+</section>
+
+<section>
+  <h3>🔧 Why Century City Residents Choose ZARICCI</h3>
+  <ul>
+    <li><strong>✅ Certified in High-End Brands</strong><br/>We know how to service the advanced technology behind today’s luxury appliances. From Wi-Fi enabled ovens to panel-ready refrigerators, our certified technicians are trained in the details that matter most.</li>
+    <li><strong>✅ Only OEM Parts</strong><br/>We use genuine manufacturer parts to maintain the quality, warranty, and longevity of your appliance—because when you’ve invested in the best, you deserve the best in return.</li>
+    <li><strong>✅ Same-Day or Next-Day Appointments in Century City</strong><br/>We offer priority scheduling for Century City residents and arrive on time, fully prepared for discreet, in-unit repairs.</li>
+    <li><strong>✅ White-Glove, Respectful Service</strong><br/>From elevators to entryways, we work quietly and cleanly in shared residential spaces, always respecting your privacy and home.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>🛠️ What We Repair in Century City</h3>
+  <h4>❄️ Luxury Refrigerators & Freezers</h4>
+  <ul>
+    <li>Sub-Zero, Thermador, Miele</li>
+    <li>Cooling problems</li>
+    <li>Water and ice dispenser issues</li>
+    <li>Compressor and control failures</li>
+    <li>Door seal or panel misalignment</li>
+  </ul>
+  <h4>🔥 Ranges, Ovens & Cooktops</h4>
+  <ul>
+    <li>Wolf, La Cornue, Gaggenau, Viking</li>
+    <li>Uneven heat or slow preheating</li>
+    <li>Ignition failure or burner issues</li>
+    <li>Smart control glitches</li>
+    <li>Self-cleaning or convection malfunctions</li>
+  </ul>
+  <h4>🚿 High-End Dishwashers</h4>
+  <ul>
+    <li>Miele, Bosch, Cove</li>
+    <li>Not draining or cleaning well</li>
+    <li>Leaks or electrical errors</li>
+    <li>Poor drying or stuck cycles</li>
+  </ul>
+  <h4>🮺 Washer & Dryer Repairs</h4>
+  <ul>
+    <li>Miele, Fisher & Paykel, LG Signature</li>
+    <li>Drum not spinning</li>
+    <li>Dryer not heating</li>
+    <li>Smart sensors or display issues</li>
+    <li>Drainage or noise problems</li>
+  </ul>
+  <h4>☕ Built-In Specialty Units</h4>
+  <ul>
+    <li>Wine coolers, warming drawers, espresso machines, speed ovens</li>
+    <li>Temperature inconsistencies</li>
+    <li>Electronic failure</li>
+    <li>Cosmetic or functional part replacement</li>
+    <li>Smart integration or app issues</li>
+  </ul>
+</section>
+
+<section>
+  <h3>👨‍💼 Our Trusted Process</h3>
+  <ol>
+    <li><strong>Schedule with Ease</strong><br/>Book online or by phone. We’ll confirm quickly and work around building guidelines or concierge access if needed.</li>
+    <li><strong>Professional In-Unit Diagnosis</strong><br/>Our certified technician arrives on time and performs a full diagnostic—no mess, no disruption.</li>
+    <li><strong>Transparent Estimate</strong><br/>We explain the issue in simple terms and provide a clear, upfront quote before any work begins.</li>
+    <li><strong>Expert Repair with OEM Parts</strong><br/>We complete your repair using genuine parts and test every feature for proper performance.</li>
+    <li><strong>Clean Exit & Service Guarantee</strong><br/>We leave your unit spotless and stand behind our work with a warranty-backed guarantee.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>🏢 Proudly Serving Century City's Premier Residences</h3>
+  <p>ZARICCI provides trusted appliance repair throughout Century City’s top buildings and communities, including:</p>
+  <ul>
+    <li>The Century</li>
+    <li>Ten Thousand</li>
+    <li>Century Plaza Towers</li>
+    <li>Park Place Condominiums</li>
+    <li>The Century Hill Residences</li>
+    <li>Boulevard at Century City</li>
+  </ul>
+  <p>Whether you’re in a luxury condo or managing a high-rise property, ZARICCI delivers the professionalism, discretion, and results you need.</p>
+</section>
+
+<section>
+  <h3>Sophistication in Service—Because That’s What You Expect</h3>
+  <p>You chose your appliances for their seamless integration and elite performance. At <strong>ZARICCI</strong>, we repair them with the same attention to design, detail, and excellence—with solutions tailored for refined, urban living.</p>
+</section>
+
+<section>
+  <h3>📞 Schedule Your Luxury Appliance Repair in Century City Today</h3>
+  <p>If your high-end appliance isn’t performing like it should, we’re here to restore it with care and precision.<br/>Call <strong>ZARICCI Luxury Appliance Repair</strong> or book online now for discreet, trusted service in Century City.</p>
+  <p><strong>🔙 ZARICCI — Precision Repairs for the Most Prestigious Addresses in Los Angeles.</strong></p>
+</section>
+
+
+</div>
+</Layout>
