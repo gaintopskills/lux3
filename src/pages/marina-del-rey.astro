@@ -1,0 +1,251 @@
+---
+import Layout from '../layouts/Layout.astro';
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://luxuryappliance.repair/marina-del-rey/",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "url": "https://luxuryappliance.repair/marina-del-rey/",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "description": "ZARICCI Luxury Appliance Repair delivers white-glove, same-day appliance repair services for waterfront homes, penthouses, and luxury condos throughout Marina del Rey. Our certified technicians specialize in premium brands like Sub-Zero, Wolf, Thermador, Miele, La Cornue, and more, ensuring unparalleled discretion, craftsmanship, and efficiency.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Marina del Rey",
+    "addressRegion": "CA",
+    "postalCode": "90292",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 33.9803,
+    "longitude": -118.4517
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "areaServed": {
+    "@type": "City",
+    "name": "Marina del Rey",
+    "sameAs": "https://en.wikipedia.org/wiki/Marina_del_Rey,_California"
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Luxury Appliance Repair Services",
+      "description": "In-home repair services for luxury appliances including refrigerators, ovens, cooktops, dishwashers, built-in coffee systems, and laundry units. Trusted brands serviced include Sub-Zero, Wolf, Thermador, Miele, Viking, and La Cornue. Available throughout Marina del Rey and surrounding coastal areas.",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Marina del Rey Metropolitan Area"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "ZARICCI Luxury Appliance Repair"
+      }
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Appliance Repair Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair", "description": "Precision oven repair services for luxury brands, including convection, steam, and wall-mounted ovens." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair", "description": "High-end stove repair, including gas and electric models from premium manufacturers like Wolf and Viking." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair", "description": "Expert range repair for dual-fuel, gas, and induction units from top-tier brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair", "description": "Professional repair for gas, electric, and induction cooktops by brands like Bosch, Miele, and KitchenAid." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair", "description": "Servicing designer and built-in range hoods with motor, lighting, and venting repairs." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair", "description": "Luxury washer repair for front-load, top-load, and smart models, including Miele and LG Signature." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair", "description": "In-home dryer repair for gas and electric units with vent or heating issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair", "description": "Built-in and panel-ready dishwasher repair for premium brands like Miele, Bosch, and Cove." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair", "description": "Built-in and drawer microwave repairs for high-end models from Wolf, Miele, and others." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair", "description": "Expert repair for built-in and integrated refrigerators including Sub-Zero and Thermador." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair", "description": "Freezer repair services for upright, column, and undercounter luxury freezers." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair", "description": "Repair services for electric and gas fireplaces including ignition, remote control, and burner repairs." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair", "description": "Luxury BBQ grill repair for built-in and freestanding outdoor kitchens and units." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair", "description": "Luxury wine cooler repair for dual-zone and built-in models including Sub-Zero and Liebherr." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair", "description": "Climate control, humidity regulation, and lighting repair for luxury wine cellars." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair", "description": "Repair for integrated coffee systems from Miele, Gaggenau, Wolf, and similar brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair", "description": "Steam oven repair including tank, sensor, and steam generator issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair", "description": "Warming drawer repairs for built-in kitchen systems including thermostat and heating repairs." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair", "description": "Combi-oven and speed oven repair services for luxury kitchen systems." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair", "description": "Repair for built-in and undercounter ice makers from premium brands like Sub-Zero and Scotsman." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair", "description": "Repair for high-end trash compactors including motors, drawers, and compression issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair", "description": "Built-in beverage center repairs for premium brands including True and U-Line." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair", "description": "Commercial and residential kegerator repair including cooling systems and tap issues." }}
+    ]
+  },
+  "brand": [
+    { "@type": "Brand", "name": "AGA" },
+    { "@type": "Brand", "name": "Big Chill" },
+    { "@type": "Brand", "name": "BlueStar" },
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "Dacor" },
+    { "@type": "Brand", "name": "Fisher & Paykel" },
+    { "@type": "Brand", "name": "Gaggenau" },
+    { "@type": "Brand", "name": "Jenn-Air" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "La Cornue" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Smeg" },
+    { "@type": "Brand", "name": "Sub-Zero" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Elmira Stove Works" },
+    { "@type": "Brand", "name": "Monogram" },
+    { "@type": "Brand", "name": "Cove" },
+    { "@type": "Brand", "name": "Bertazzoni" },
+    { "@type": "Brand", "name": "ZLINE" },
+    { "@type": "Brand", "name": "ILVE" },
+    { "@type": "Brand", "name": "Fulgor Milano" },
+    { "@type": "Brand", "name": "Lacanche" },
+    { "@type": "Brand", "name": "Robam" },
+    { "@type": "Brand", "name": "Signature Kitchen Suite" },
+    { "@type": "Brand", "name": "True Residential" },
+    { "@type": "Brand", "name": "Hestan" },
+    { "@type": "Brand", "name": "Whirlpool Black Stainless" },
+    { "@type": "Brand", "name": "JennAir Noir" }
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://same-day-appliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+12133091924",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
+---
+<Layout
+	title="Local Luxury Appliance Repair – Marina Del Rey"
+	description="High-end appliances repair - Marina Del Rey by certified technicians. Same-day appointments are available. Call today!"
+	structuredData={structuredData}
+>
+<div style="margin: 50px">
+<section>
+  <h1>Luxury Appliance Repair in Marina del Rey, CA</h1>
+  <p><strong>Precision Care for Waterfront Living</strong></p>
+  <p>In Marina del Rey, life moves at the perfect pace—where ocean breezes, sleek yachts, and stunning high-rise residences create a sense of effortless luxury. Your home’s appliances are a major part of that seamless lifestyle, combining innovation and design to support everyday comfort. When they need expert care, you deserve a service experience built on the same attention to quality, performance, and beauty.</p>
+  <p>At <strong>ZARICCI Luxury Appliance Repair</strong>, we specialize in high-end appliance repair in Marina del Rey, servicing elite brands like Sub-Zero, Wolf, Thermador, Miele, Gaggenau, Viking, La Cornue, and more. We provide certified expertise, genuine OEM parts, and white-glove service trusted by Marina’s most discerning residents.</p>
+</section>
+
+<section>
+  <h3>🔧 Why Marina del Rey Homeowners Trust ZARICCI</h3>
+  <ul>
+    <li><strong>✅ Certified Technicians for Luxury Brands</strong><br>We are trained directly by top manufacturers to handle the complex systems inside today’s smart refrigeration, custom cooktops, convection steam ovens, and more.</li>
+    <li><strong>✅ Genuine OEM Parts for Guaranteed Results</strong><br>Our repairs use only authentic manufacturer parts, ensuring longevity, maintaining your warranty, and preserving the performance and beauty of your appliances.</li>
+    <li><strong>✅ Same-Day or Next-Day Service in Marina del Rey</strong><br>Your time is precious. We offer priority scheduling to provide fast, discreet service across Marina del Rey.</li>
+    <li><strong>✅ White-Glove Professionalism at Every Step</strong><br>From protecting your floors and cabinetry to leaving your kitchen spotless, we deliver a true luxury service experience every time.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>🛠️ High-End Appliances We Repair in Marina del Rey</h3>
+  <h4>❄️ Luxury Refrigerators & Freezers</h4>
+  <ul>
+    <li>Sub-Zero, Thermador, Miele</li>
+    <li>Cooling inconsistencies, frost build-up</li>
+    <li>Ice maker failures, dispenser issues</li>
+    <li>Compressor, door seal, and integrated panel repairs</li>
+  </ul>
+  <h4>🔥 Ranges, Wall Ovens & Cooktops</h4>
+  <ul>
+    <li>Wolf, Gaggenau, La Cornue, Viking</li>
+    <li>Ignition issues, uneven cooking</li>
+    <li>Convection fan or steam oven malfunctions</li>
+    <li>Smart oven connectivity or display panel repairs</li>
+  </ul>
+  <h4>🚿 Luxury Dishwashers</h4>
+  <ul>
+    <li>Miele, Bosch, Cove</li>
+    <li>Water drainage problems, leaks, or cycle interruptions</li>
+    <li>Poor cleaning/drying performance</li>
+    <li>Smart features and Wi-Fi integration issues</li>
+  </ul>
+  <h4>🧺 High-End Washers & Dryers</h4>
+  <ul>
+    <li>Miele, Fisher & Paykel, LG Signature</li>
+    <li>Drum not spinning or draining</li>
+    <li>Dryer not heating properly or overheating</li>
+    <li>Control board or smart sensor issues</li>
+  </ul>
+  <h4>☕ Built-In Specialty Appliances</h4>
+  <ul>
+    <li>Wine coolers, espresso machines, warming drawers, steam ovens</li>
+    <li>Temperature inconsistencies</li>
+    <li>Water or airflow failures</li>
+    <li>Wi-Fi and smart home integration repairs</li>
+  </ul>
+</section>
+
+<section>
+  <h3>👨‍🔧 The ZARICCI White-Glove Service Process</h3>
+  <ol>
+    <li><strong>Effortless Booking</strong><br>Call or schedule online. We’ll coordinate your appointment discreetly, even with concierge services if needed.</li>
+    <li><strong>On-Time, Certified Diagnosis</strong><br>Our technician arrives promptly, fully equipped to diagnose your luxury appliance with precision.</li>
+    <li><strong>Transparent, Detailed Estimate</strong><br>You’ll receive a clear, upfront quote before any work begins—so you know exactly what to expect.</li>
+    <li><strong>Expert Repairs with OEM Parts</strong><br>Repairs are completed with manufacturer-certified parts to the highest factory specifications.</li>
+    <li><strong>Final Testing & Spotless Clean-Up</strong><br>We leave your space immaculate and your appliance restored to flawless performance—backed by our warranty.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>🏡 Proudly Serving Every Corner of Marina del Rey</h3>
+  <p><strong>ZARICCI</strong> proudly services:</p>
+  <ul>
+    <li>Marina Peninsula</li>
+    <li>Silver Strand</li>
+    <li>Villa Marina</li>
+    <li>Marina Arts District</li>
+    <li>Del Rey Shores</li>
+    <li>Luxury condominiums along Via Marina, Pacific Avenue, and Admiralty Way</li>
+  </ul>
+  <p>Whether you’re living steps from the marina or overlooking the Pacific, <strong>ZARICCI</strong> brings precision, discretion, and elite service to your doorstep.</p>
+</section>
+
+<section>
+  <h3>When Lifestyle and Performance Matter Most, Trust ZARICCI</h3>
+  <p>Your home reflects the best in architecture, design, and innovation. Your appliances should too—and so should your repair service.<br>At <strong>ZARICCI</strong>, we protect the performance, style, and functionality that define luxury living.</p>
+</section>
+
+<section>
+  <h3>📞 Schedule Your Luxury Appliance Repair in Marina del Rey Today</h3>
+  <p>Trust your high-end appliances to specialists who understand the world you live in.<br>Call <strong>ZARICCI Luxury Appliance Repair</strong> or book online now for white-glove service in Marina del Rey.</p>
+  <p><strong>👉 ZARICCI — Precision Repairs for Marina del Rey’s Finest Homes.</strong></p>
+</section>
+
+</div>
+</Layout>

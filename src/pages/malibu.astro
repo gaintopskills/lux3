@@ -1,0 +1,255 @@
+---
+import Layout from '../layouts/Layout.astro';
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://luxuryappliance.repair/malibu/",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "url": "https://luxuryappliance.repair/malibu/",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "description": "ZARICCI Luxury Appliance Repair proudly serves Malibu’s finest estates, offering expert in-home appliance repair for luxury coastal homes, oceanfront residences, and private villas. Specializing in premium brands like Sub-Zero, Wolf, Thermador, Miele, and La Cornue, we provide white-glove, same-day service with absolute precision and discretion.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Malibu",
+    "addressRegion": "CA",
+    "postalCode": "90265",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.0259,
+    "longitude": -118.7798
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "areaServed": {
+    "@type": "City",
+    "name": "Malibu",
+    "sameAs": "https://en.wikipedia.org/wiki/Malibu,_California"
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Luxury Appliance Repair Services",
+      "description": "In-home repair services for luxury appliances such as refrigerators, ovens, cooktops, dishwashers, wine coolers, built-in coffee machines, and laundry appliances. Trusted brands include Sub-Zero, Wolf, Thermador, Miele, Viking, La Cornue, and more. Serving Malibu and surrounding coastal areas with precision and discretion.",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Malibu Metropolitan Area"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "ZARICCI Luxury Appliance Repair"
+      }
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Appliance Repair Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair", "description": "Precision oven repair services for luxury brands, including convection, steam, and wall-mounted ovens." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair", "description": "High-end stove repair, including gas and electric models from premium manufacturers like Wolf and Viking." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair", "description": "Expert range repair for dual-fuel, gas, and induction units from top-tier brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair", "description": "Professional repair for gas, electric, and induction cooktops by Bosch, Miele, KitchenAid, and more." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair", "description": "Servicing built-in and designer range hoods, including motor, lighting, and venting repairs." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair", "description": "Luxury washing machine repair for front-load, top-load, and smart models, including Miele and LG Signature." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair", "description": "Gas and electric dryer repair, including venting, sensor, and heating issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair", "description": "Built-in dishwasher repair for luxury units from Miele, Bosch, Cove, and more." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair", "description": "Repair services for luxury microwaves including drawer, built-in, and convection models." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair", "description": "Expert repair for luxury built-in and integrated refrigerators including Sub-Zero, Thermador, and Viking." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair", "description": "Precision freezer repair for upright, undercounter, and column units from top luxury brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair", "description": "Repair for gas and electric fireplaces including burner, ignition, and remote control systems." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair", "description": "Luxury BBQ grill and outdoor kitchen repair services including burners, ignition, and temperature control." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair", "description": "Luxury wine cooler repair services for dual-zone and built-in units including Sub-Zero, Liebherr, and True." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair", "description": "Climate control, humidity regulation, and lighting repair for custom-built wine cellars." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair", "description": "Specialized built-in coffee machine repair for brands like Miele, Gaggenau, and Wolf." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair", "description": "Steam oven repair including tank issues, sensors, and steam generation systems." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair", "description": "Luxury warming drawer repair for built-in kitchen systems including thermostat and heater issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair", "description": "Repairs for luxury combi-ovens and speed ovens, combining microwave and convection technologies." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair", "description": "Built-in and undercounter ice maker repair for premium brands like Sub-Zero and Scotsman." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair", "description": "Trash compactor repair for luxury homes, addressing motor, ram, and drawer malfunctions." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair", "description": "Repair services for premium beverage centers and drink fridges from U-Line, Perlick, and True." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair", "description": "Residential and commercial kegerator repair, including cooling, taps, and CO2 systems." }}
+    ]
+  },
+  "brand": [
+    { "@type": "Brand", "name": "AGA" },
+    { "@type": "Brand", "name": "Big Chill" },
+    { "@type": "Brand", "name": "BlueStar" },
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "Dacor" },
+    { "@type": "Brand", "name": "Fisher & Paykel" },
+    { "@type": "Brand", "name": "Gaggenau" },
+    { "@type": "Brand", "name": "Jenn-Air" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "La Cornue" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Smeg" },
+    { "@type": "Brand", "name": "Sub-Zero" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Elmira Stove Works" },
+    { "@type": "Brand", "name": "Monogram" },
+    { "@type": "Brand", "name": "Cove" },
+    { "@type": "Brand", "name": "Bertazzoni" },
+    { "@type": "Brand", "name": "ZLINE" },
+    { "@type": "Brand", "name": "ILVE" },
+    { "@type": "Brand", "name": "Fulgor Milano" },
+    { "@type": "Brand", "name": "Lacanche" },
+    { "@type": "Brand", "name": "Robam" },
+    { "@type": "Brand", "name": "Signature Kitchen Suite" },
+    { "@type": "Brand", "name": "True Residential" },
+    { "@type": "Brand", "name": "Hestan" },
+    { "@type": "Brand", "name": "Whirlpool Black Stainless" },
+    { "@type": "Brand", "name": "JennAir Noir" }
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://same-day-appliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+12133091924",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
+---
+<Layout
+	title="Local Luxury Appliance Repair – Malibu"
+	description="High-end appliances repair - Malibu by certified technicians. Same-day appointments are available. Call today!"
+	structuredData={structuredData}
+>
+<div style="margin: 50px">
+<section>
+  <h1>Luxury Appliance Repair in Malibu, CA</h1>
+  <p><strong>White-Glove Service for Oceanfront Estates and Cliffside Retreats</strong></p>
+  <p>In Malibu, luxury is effortless—sweeping ocean views, architectural masterpieces, and interiors curated with the finest details. Your high-end appliances are a crucial part of this experience, blending beauty with performance to support your lifestyle. When something needs repair, you deserve a service that honors the investment you’ve made in your home.</p>
+  <p>At <strong>ZARICCI Luxury Appliance Repair</strong>, we provide elite appliance repair in Malibu, specializing in prestigious brands like Sub-Zero, Wolf, Thermador, Miele, La Cornue, Gaggenau, Viking, and more. Our technicians deliver brand-certified expertise, genuine OEM parts, and a white-glove experience tailored for Malibu’s most discerning residents.</p>
+</section>
+
+<section>
+  <h3>🔧 Why Malibu Homeowners Trust ZARICCI</h3>
+  <ul>
+    <li><strong>✅ Experts in the World’s Finest Brands</strong><br>From smart refrigeration systems to custom ranges and built-in wine storage, our technicians are factory-trained to service high-performance luxury appliances with precision.</li>
+    <li><strong>✅ Genuine OEM Parts Only</strong><br>We use manufacturer-approved parts to protect your appliance’s warranty, maintain peak performance, and ensure long-term reliability.</li>
+    <li><strong>✅ Priority Same-Day or Next-Day Service</strong><br>We offer prompt scheduling across Malibu, respecting your time with quick, efficient appointments—so your home’s flow is never interrupted.</li>
+    <li><strong>✅ White-Glove, Discreet In-Home Service</strong><br>We work cleanly, quietly, and respectfully, leaving your space pristine and your appliances flawlessly repaired. Your privacy is our priority.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>🛠️ What We Repair in Malibu</h3>
+  <h4>❄️ Luxury Refrigerators & Freezers</h4>
+  <ul>
+    <li>Sub-Zero, Thermador, Miele</li>
+    <li>Cooling issues and inconsistent temperatures</li>
+    <li>Ice maker or dispenser failures</li>
+    <li>Compressor, fan, or panel malfunctions</li>
+    <li>Custom integrated refrigeration repairs</li>
+  </ul>
+  <h4>🔥 Ranges, Ovens & Cooktops</h4>
+  <ul>
+    <li>Wolf, La Cornue, Gaggenau, Viking</li>
+    <li>Burners not igniting</li>
+    <li>Oven not heating properly or uneven cooking</li>
+    <li>Convection or steam oven malfunctions</li>
+    <li>Smart connectivity issues</li>
+  </ul>
+  <h4>🚿 High-End Dishwashers</h4>
+  <ul>
+    <li>Miele, Bosch, Cove</li>
+    <li>Water not draining or leaks</li>
+    <li>Poor cleaning or drying performance</li>
+    <li>Control panel or sensor failures</li>
+  </ul>
+  <h4>🧺 Luxury Washers & Dryers</h4>
+  <ul>
+    <li>Miele, LG Signature, Fisher & Paykel</li>
+    <li>Drum not spinning or draining</li>
+    <li>Dryer not heating or overheating</li>
+    <li>Smart diagnostics and connectivity troubleshooting</li>
+  </ul>
+  <h4>☕ Built-In Specialty Appliances</h4>
+  <ul>
+    <li>Wine fridges, espresso machines, steam ovens, warming drawers</li>
+    <li>Temperature control issues</li>
+    <li>Water or air flow failures</li>
+    <li>Smart app or system integration repairs</li>
+  </ul>
+</section>
+
+<section>
+  <h3>👨‍🔧 The ZARICCI Service Experience</h3>
+  <ol>
+    <li><strong>Effortless Booking</strong><br>Schedule by phone or online. We accommodate your needs and coordinate with estate managers or property teams when necessary.</li>
+    <li><strong>On-Time, Brand-Specific Diagnosis</strong><br>A certified ZARICCI technician arrives promptly, fully prepared to assess and explain the issue.</li>
+    <li><strong>Transparent Estimate</strong><br>We provide a clear, upfront quote—no hidden fees, no pressure.</li>
+    <li><strong>Precision Repairs with OEM Parts</strong><br>Every repair is performed with genuine manufacturer parts and tested meticulously for complete functionality.</li>
+    <li><strong>Clean-Up & Service Guarantee</strong><br>We leave your home immaculate, with a service warranty that gives you peace of mind.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>🏡 Serving All of Malibu’s Most Exclusive Communities</h3>
+  <p><strong>ZARICCI</strong> proudly provides service to:</p>
+  <ul>
+    <li>Carbon Beach</li>
+    <li>Malibu Colony</li>
+    <li>Broad Beach</li>
+    <li>Point Dume</li>
+    <li>Malibu Park</li>
+    <li>Serra Retreat</li>
+    <li>La Costa Beach</li>
+    <li>Zuma Beach Estates</li>
+  </ul>
+  <p>Whether your home overlooks the cliffs, the canyons, or the waves, <strong>ZARICCI</strong> brings expert, white-glove service directly to your door.</p>
+</section>
+
+<section>
+  <h3>Service as Elevated as the Homes We Work In</h3>
+  <p>Your home and appliances were built with care, craftsmanship, and a dedication to quality. At <strong>ZARICCI</strong>, we mirror those values in every service call—bringing precision, discretion, and respect to every project.</p>
+</section>
+
+<section>
+  <h3>📞 Schedule Your Luxury Appliance Repair in Malibu Today</h3>
+  <p>Don't trust your luxury appliances to anything less than the best.<br>Call <strong>ZARICCI Luxury Appliance Repair</strong> or book your appointment online for trusted, elite service in Malibu.</p>
+  <p><strong>👉 ZARICCI — Precision Repairs for Malibu’s Most Beautiful Homes.</strong></p>
+</section>
+
+</div>
+</Layout>

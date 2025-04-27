@@ -1,0 +1,261 @@
+---
+import Layout from '../layouts/Layout.astro';
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://luxuryappliance.repair/los-angeles/",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "url": "https://luxuryappliance.repair/los-angeles/",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "description": "ZARICCI Luxury Appliance Repair proudly serves the most prestigious homes, high-rises, and estates across Los Angeles. Our certified technicians specialize in high-end appliance brands like Sub-Zero, Wolf, Miele, Thermador, La Cornue, and more, providing same-day, white-glove repair services.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "814 S. Westgate Ave",
+    "addressLocality": "Los Angeles",
+    "addressRegion": "CA",
+    "postalCode": "90049",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.0539,
+    "longitude": -118.4750
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "areaServed": {
+    "@type": "City",
+    "name": "Los Angeles",
+    "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles"
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Luxury Appliance Repair Services",
+      "description": "In-home repair services for high-end appliances such as refrigerators, ovens, cooktops, dishwashers, and laundry units. Brands serviced include Sub-Zero, Wolf, Thermador, Miele, Viking, and more. Available throughout Los Angeles and surrounding areas.",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Los Angeles Metropolitan Area"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "ZARICCI Luxury Appliance Repair"
+      }
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Appliance Repair Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair", "description": "Precision oven repair services for luxury brands, including convection, steam, and wall-mounted ovens." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair", "description": "High-end stove repair, including gas and electric models from premium manufacturers like Wolf and Viking." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair", "description": "Expert range repair for dual-fuel, gas, and induction units from top-tier brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair", "description": "Professional repair for gas, electric, and induction cooktops by brands like Bosch, Miele, and KitchenAid." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair", "description": "Servicing designer and built-in range hoods with issues such as lighting, motors, or venting." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair", "description": "Luxury washer repair for front-load, top-load, and smart models, including Miele and LG Signature." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair", "description": "In-home dryer repair for gas and electric units with vent or heating issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair", "description": "Dishwasher repair services for built-in and panel-ready units from Miele, Bosch, and more." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair", "description": "Built-in microwave repair for drawer, over-the-range, and luxury convection microwave models." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair", "description": "Certified refrigerator repair for built-in and integrated models, including Sub-Zero and Thermador." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair", "description": "Freezer repair for upright, drawer, and column units with cooling or defrost issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair", "description": "Repair services for electric and gas fireplaces, including ignition, remote control, and burner issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair", "description": "Outdoor BBQ and grill repair for built-in and freestanding models, including burner and ignition repair." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair", "description": "Luxury wine cooler repair services for dual-zone and built-in models from brands like Sub-Zero and Liebherr." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair", "description": "Specialized wine cellar repair for climate control systems, lighting, and humidity regulation." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair", "description": "Repair for integrated coffee systems from brands like Miele and Gaggenau, including grinder, brew unit, and steam wand issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair", "description": "Expert steam oven repair for luxury models with water tank, sensor, or steam generation problems." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair", "description": "Warming drawer repair for built-in units, including thermostat and heating element issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair", "description": "Repair services for combination microwave and convection ovens with high-end control systems." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair", "description": "In-home repair for built-in and undercounter ice makers from Sub-Zero, Scotsman, and other luxury brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair", "description": "Repair for premium trash compactors with drawer, motor, or compression issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair", "description": "Service for built-in beverage centers and drink fridges from U-Line, Perlick, and True Residential." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair", "description": "Commercial and residential kegerator repair including cooling, taps, and CO2 systems." }}
+    ]
+  },
+  "brand": [
+    { "@type": "Brand", "name": "AGA" },
+    { "@type": "Brand", "name": "Big Chill" },
+    { "@type": "Brand", "name": "BlueStar" },
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "Dacor" },
+    { "@type": "Brand", "name": "Fisher & Paykel" },
+    { "@type": "Brand", "name": "Gaggenau" },
+    { "@type": "Brand", "name": "Jenn-Air" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "La Cornue" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Smeg" },
+    { "@type": "Brand", "name": "Sub-Zero" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Elmira Stove Works" },
+    { "@type": "Brand", "name": "Monogram" },
+    { "@type": "Brand", "name": "Cove" },
+    { "@type": "Brand", "name": "Bertazzoni" },
+    { "@type": "Brand", "name": "ZLINE" },
+    { "@type": "Brand", "name": "ILVE" },
+    { "@type": "Brand", "name": "Fulgor Milano" },
+    { "@type": "Brand", "name": "Lacanche" },
+    { "@type": "Brand", "name": "Robam" },
+    { "@type": "Brand", "name": "Signature Kitchen Suite" },
+    { "@type": "Brand", "name": "True Residential" },
+    { "@type": "Brand", "name": "Hestan" },
+    { "@type": "Brand", "name": "Whirlpool Black Stainless" },
+    { "@type": "Brand", "name": "JennAir Noir" }
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://same-day-appliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+12133091924",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
+---
+<Layout
+	title="Local Luxury Appliance Repair – Los Angeles"
+	description="High-end appliances repair - Los Angeles by certified technicians. Same-day appointments are available. Call today!"
+	structuredData={structuredData}
+>
+<div style="margin: 50px">
+<section>
+  <h1>Luxury Appliance Repair in Los Angeles, CA</h1>
+  <p><strong>Elite, White-Glove Service for the City of Dreams</strong></p>
+  <p>In a city like Los Angeles, where innovation meets sophistication, your home is more than a place to live—it’s a reflection of your standards. From the architectural icons of Beverly Hills and Bel Air to the sleek penthouses of Downtown LA, your appliances are essential to maintaining a life of effortless luxury. When something needs service, it deserves to be handled with the same attention to quality that it was built with.</p>
+  <p>At <strong>ZARICCI Luxury Appliance Repair</strong>, we provide certified luxury appliance repair in Los Angeles, specializing in the world’s finest brands like Sub-Zero, Wolf, Thermador, Miele, Gaggenau, Viking, La Cornue, and more. Our team delivers white-glove service, genuine OEM parts, and exceptional care for homes where excellence is the expectation.</p>
+</section>
+
+<section>
+  <h3>🔧 Why Los Angeles Homeowners Trust ZARICCI</h3>
+  <ul>
+    <li><strong>✅ Certified Technicians Across Leading Brands</strong><br>From smart refrigeration and custom wine storage to professional-grade ovens and steam appliances, our team is trained and certified by the most prestigious manufacturers.</li>
+    <li><strong>✅ Genuine OEM Parts for Superior Repairs</strong><br>We use only manufacturer-certified parts—protecting your appliance’s performance, appearance, and warranty.</li>
+    <li><strong>✅ Same-Day or Next-Day Service Throughout LA</strong><br>Your time is valuable. We offer priority scheduling and arrive promptly—whether you’re in Brentwood, Hollywood Hills, Santa Monica, or anywhere across Greater Los Angeles.</li>
+    <li><strong>✅ White-Glove In-Home Service</strong><br>Our technicians work quietly, respectfully, and cleanly—ensuring your home is treated with as much care as your appliance.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>🛠️ What We Repair in Los Angeles</h3>
+  <h4>❄️ Luxury Refrigerators & Freezers</h4>
+  <ul>
+    <li>Sub-Zero, Thermador, Miele</li>
+    <li>Cooling inconsistencies, frost buildup</li>
+    <li>Ice maker failures or smart system malfunctions</li>
+    <li>Built-in and integrated refrigeration repairs</li>
+  </ul>
+  <h4>🔥 Ranges, Ovens & Cooktops</h4>
+  <ul>
+    <li>Wolf, La Cornue, Gaggenau, Viking</li>
+    <li>Gas burner ignition issues</li>
+    <li>Uneven heating, convection fan failures</li>
+    <li>Smart oven connectivity or touchscreen malfunctions</li>
+  </ul>
+  <h4>🚿 High-End Dishwashers</h4>
+  <ul>
+    <li>Miele, Bosch, Cove</li>
+    <li>Water drainage or drying issues</li>
+    <li>Leaks, control panel failures, or smart error codes</li>
+  </ul>
+  <h4>🧺 Luxury Washers & Dryers</h4>
+  <ul>
+    <li>Miele, Fisher & Paykel, LG Signature</li>
+    <li>Drum not spinning or draining</li>
+    <li>Dryer overheating or not heating</li>
+    <li>Smart integration and app troubleshooting</li>
+  </ul>
+  <h4>☕ Built-In Specialty Appliances</h4>
+  <ul>
+    <li>Wine fridges, espresso machines, steam ovens, warming drawers</li>
+    <li>Temperature control failures</li>
+    <li>Pump, motor, and electronic control board repairs</li>
+    <li>Smart home and Wi-Fi system integration</li>
+  </ul>
+</section>
+
+<section>
+  <h3>👨‍🔧 The ZARICCI Signature Experience</h3>
+  <ol>
+    <li><strong>Effortless Scheduling</strong><br>Call or book online—our concierge team ensures quick, discreet coordination around your schedule.</li>
+    <li><strong>Certified, White-Glove Diagnosis</strong><br>A trained ZARICCI technician arrives on time, in uniform, with the specialized equipment needed for accurate, respectful diagnostics.</li>
+    <li><strong>Transparent Estimates</strong><br>You’ll receive a clear, detailed quote upfront—no hidden charges, no unexpected surprises.</li>
+    <li><strong>Precision Repairs Using OEM Parts</strong><br>Our repairs are performed to factory standards using authentic parts, restoring your appliance’s peak performance.</li>
+    <li><strong>Thorough Testing and Immaculate Clean-Up</strong><br>After rigorous testing, we leave your space clean, your appliance fully functional, and your experience backed by our service warranty.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>🏡 Serving All of Los Angeles’ Most Prestigious Neighborhoods</h3>
+  <p><strong>ZARICCI</strong> proudly serves luxury residences across:</p>
+  <ul>
+    <li>Beverly Hills</li>
+    <li>Bel Air</li>
+    <li>Brentwood</li>
+    <li>Holmby Hills</li>
+    <li>West Hollywood</li>
+    <li>Hollywood Hills</li>
+    <li>Pacific Palisades</li>
+    <li>Malibu</li>
+    <li>Santa Monica</li>
+    <li>Century City</li>
+    <li>Pasadena</li>
+    <li>La Cañada Flintridge</li>
+    <li>Encino</li>
+    <li>Marina del Rey</li>
+    <li>Manhattan Beach</li>
+    <li>Downtown Los Angeles luxury condos</li>
+  </ul>
+  <p>Whether it’s an architectural estate, a gated villa, or a modern high-rise, <strong>ZARICCI</strong> delivers precision, discretion, and unmatched service.</p>
+</section>
+
+<section>
+  <h3>Your Appliances Were Chosen for Excellence—So Was Our Service</h3>
+  <p>You invested in appliances known for their craftsmanship, innovation, and beauty.<br>At <strong>ZARICCI</strong>, we honor that investment with a repair experience built on precision, professionalism, and a true understanding of luxury living.</p>
+</section>
+
+<section>
+  <h3>📞 Schedule Your Luxury Appliance Repair in Los Angeles Today</h3>
+  <p>Don’t let anything disrupt the rhythm of your home.<br>Call <strong>ZARICCI Luxury Appliance Repair</strong> or book online now for expert service trusted across Los Angeles.</p>
+  <p><strong>👉 ZARICCI — Precision Repairs for Los Angeles’ Most Iconic Homes.</strong></p>
+</section>
+
+</div>
+</Layout>

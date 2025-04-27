@@ -1,0 +1,252 @@
+---
+import Layout from '../layouts/Layout.astro';
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://luxuryappliance.repair/pacific-palisades/",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "url": "https://luxuryappliance.repair/pacific-palisades/",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "description": "ZARICCI Luxury Appliance Repair provides expert, white-glove appliance repair services for luxury estates, hillside residences, and oceanview homes throughout Pacific Palisades. Our certified technicians specialize in premium brands like Sub-Zero, Wolf, Thermador, Miele, La Cornue, and more, delivering same-day service with exceptional precision and discretion.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pacific Palisades",
+    "addressRegion": "CA",
+    "postalCode": "90272",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.0356,
+    "longitude": -118.5156
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "areaServed": {
+    "@type": "City",
+    "name": "Pacific Palisades",
+    "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades"
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Luxury Appliance Repair Services",
+      "description": "In-home repair services for high-end appliances such as refrigerators, ovens, cooktops, dishwashers, and laundry units. Brands serviced include Sub-Zero, Wolf, Thermador, Miele, Viking, and more. Available throughout Pacific Palisades and neighboring communities.",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Pacific Palisades Metropolitan Area"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "ZARICCI Luxury Appliance Repair"
+      }
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Appliance Repair Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair", "description": "Precision oven repair services for luxury brands, including convection, steam, and wall-mounted ovens." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair", "description": "High-end stove repair, including gas and electric models from premium manufacturers like Wolf and Viking." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair", "description": "Expert range repair for dual-fuel, gas, and induction units from top-tier brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair", "description": "Professional repair for gas, electric, and induction cooktops by brands like Bosch, Miele, and KitchenAid." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair", "description": "Servicing designer and built-in range hoods with issues such as lighting, motors, or venting." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair", "description": "Luxury washer repair for front-load, top-load, and smart models, including Miele and LG Signature." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair", "description": "In-home dryer repair for gas and electric units with vent or heating issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair", "description": "Dishwasher repair services for built-in and panel-ready units from Miele, Bosch, and more." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair", "description": "Built-in microwave repair for drawer, over-the-range, and luxury convection microwave models." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair", "description": "Certified refrigerator repair for built-in and integrated models, including Sub-Zero and Thermador." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair", "description": "Freezer repair for upright, drawer, and column units with cooling or defrost issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair", "description": "Repair services for electric and gas fireplaces, including ignition, remote control, and burner issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair", "description": "Outdoor BBQ and grill repair for built-in and freestanding models, including burner and ignition repair." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair", "description": "Luxury wine cooler repair services for dual-zone and built-in models from brands like Sub-Zero and Liebherr." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair", "description": "Specialized wine cellar repair for climate control systems, lighting, and humidity regulation." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair", "description": "Repair for integrated coffee systems from brands like Miele and Gaggenau, including grinder, brew unit, and steam wand issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair", "description": "Expert steam oven repair for luxury models with water tank, sensor, or steam generation problems." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair", "description": "Warming drawer repair for built-in units, including thermostat and heating element issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair", "description": "Repair services for combination microwave and convection ovens with high-end control systems." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair", "description": "In-home repair for built-in and undercounter ice makers from Sub-Zero, Scotsman, and other luxury brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair", "description": "Repair for premium trash compactors with drawer, motor, or compression issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair", "description": "Service for built-in beverage centers and drink fridges from U-Line, Perlick, and True Residential." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair", "description": "Commercial and residential kegerator repair including cooling, taps, and CO2 systems." }}
+    ]
+  },
+  "brand": [
+    { "@type": "Brand", "name": "AGA" },
+    { "@type": "Brand", "name": "Big Chill" },
+    { "@type": "Brand", "name": "BlueStar" },
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "Dacor" },
+    { "@type": "Brand", "name": "Fisher & Paykel" },
+    { "@type": "Brand", "name": "Gaggenau" },
+    { "@type": "Brand", "name": "Jenn-Air" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "La Cornue" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Smeg" },
+    { "@type": "Brand", "name": "Sub-Zero" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Elmira Stove Works" },
+    { "@type": "Brand", "name": "Monogram" },
+    { "@type": "Brand", "name": "Cove" },
+    { "@type": "Brand", "name": "Bertazzoni" },
+    { "@type": "Brand", "name": "ZLINE" },
+    { "@type": "Brand", "name": "ILVE" },
+    { "@type": "Brand", "name": "Fulgor Milano" },
+    { "@type": "Brand", "name": "Lacanche" },
+    { "@type": "Brand", "name": "Robam" },
+    { "@type": "Brand", "name": "Signature Kitchen Suite" },
+    { "@type": "Brand", "name": "True Residential" },
+    { "@type": "Brand", "name": "Hestan" },
+    { "@type": "Brand", "name": "Whirlpool Black Stainless" },
+    { "@type": "Brand", "name": "JennAir Noir" }
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://same-day-appliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+12133091924",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
+---
+<Layout
+	title="Local Luxury Appliance Repair – Pacific Palisades"
+	description="High-end appliances repair - Pacific Palisades by certified technicians. Same-day appointments are available. Call today!"
+	structuredData={structuredData}
+>
+<div style="margin: 50px">
+<section>
+  <h1>Luxury Appliance Repair in Pacific Palisades, CA</h1>
+  <p><strong>White-Glove Service for Coastal Estates and Hillside Retreats</strong></p>
+  <p>Pacific Palisades is where coastal beauty meets refined living—home to elegant estates, ocean-view residences, and architecturally stunning homes. In neighborhoods like The Riviera, Rustic Canyon, and Huntington Palisades, high-end appliances are integral to daily luxury. When they need care, they deserve expert service that matches the quality and sophistication of your home.</p>
+  <p>At <strong>ZARICCI Luxury Appliance Repair</strong>, we provide high-end appliance repair in Pacific Palisades, specializing in elite brands like Sub-Zero, Wolf, Thermador, Miele, Gaggenau, Viking, La Cornue, and more. We deliver certified expertise, genuine OEM parts, and white-glove, discreet service trusted by homeowners and estate managers alike.</p>
+</section>
+
+<section>
+  <h3>🔧 Why Pacific Palisades Homeowners Trust ZARICCI</h3>
+  <ul>
+    <li><strong>✅ Certified Technicians for Luxury Brands</strong><br>From built-in refrigeration to smart ovens and professional-grade ranges, our technicians are factory-trained to handle the world's top appliance brands with precision.</li>
+    <li><strong>✅ Authentic OEM Parts Only</strong><br>We use genuine manufacturer parts to maintain your appliance’s performance, reliability, and warranty integrity—no shortcuts, no compromises.</li>
+    <li><strong>✅ Same-Day or Next-Day Service</strong><br>We understand that in a home like yours, time matters. That's why we offer priority scheduling and always arrive punctually.</li>
+    <li><strong>✅ White-Glove In-Home Service</strong><br>From careful floor protection to spotless clean-up, we respect your property and your time—delivering a seamless, discreet service experience every time.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>🛠️ What We Repair in Pacific Palisades</h3>
+  <h4>❄️ Luxury Refrigerators & Freezers</h4>
+  <ul>
+    <li>Sub-Zero, Thermador, Miele</li>
+    <li>Cooling issues, temperature inconsistencies</li>
+    <li>Ice maker and water dispenser problems</li>
+    <li>Custom panel fit, seal, and compressor repairs</li>
+  </ul>
+  <h4>🔥 Ranges, Wall Ovens & Cooktops</h4>
+  <ul>
+    <li>Wolf, La Cornue, Gaggenau, Viking</li>
+    <li>Ignition failure, uneven heating, slow preheating</li>
+    <li>Smart oven display and connectivity repairs</li>
+    <li>Steam and convection oven troubleshooting</li>
+  </ul>
+  <h4>🚿 High-End Dishwashers</h4>
+  <ul>
+    <li>Miele, Bosch, Cove</li>
+    <li>Poor cleaning, water leaks, or drainage problems</li>
+    <li>Cycle errors, smart sensor failures, or display issues</li>
+  </ul>
+  <h4>🧺 Luxury Washers & Dryers</h4>
+  <ul>
+    <li>Miele, LG Signature, Fisher & Paykel</li>
+    <li>Washer not draining or spinning</li>
+    <li>Dryer not heating properly</li>
+    <li>Smart home system connectivity issues</li>
+  </ul>
+  <h4>☕ Built-In Specialty Appliances</h4>
+  <ul>
+    <li>Wine coolers, espresso machines, warming drawers, and steam ovens</li>
+    <li>Temperature regulation failures</li>
+    <li>Water supply, pump, or internal motor issues</li>
+    <li>Smart app and integration troubleshooting</li>
+  </ul>
+</section>
+
+<section>
+  <h3>👨‍🔧 The ZARICCI Premium Repair Process</h3>
+  <ol>
+    <li><strong>Effortless Scheduling</strong><br>Call or book online. We accommodate your schedule and coordinate with estate managers or household staff if needed.</li>
+    <li><strong>On-Time, White-Glove Diagnosis</strong><br>A certified ZARICCI technician arrives on time, professionally dressed, and fully prepared to diagnose your appliance with precision.</li>
+    <li><strong>Transparent Quoting</strong><br>We provide a clear, detailed quote covering parts, labor, and timeline—no hidden fees, ever.</li>
+    <li><strong>Expert Repairs Using Genuine Parts</strong><br>Using OEM parts, we restore your appliance to peak performance with meticulous attention to detail.</li>
+    <li><strong>Final Testing and Pristine Clean-Up</strong><br>After thorough testing, we leave your appliance—and your home—in pristine condition, with repairs backed by a satisfaction guarantee.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>🏡 Proudly Serving All of Pacific Palisades</h3>
+  <p><strong>ZARICCI</strong> serves homes throughout:</p>
+  <ul>
+    <li>The Riviera</li>
+    <li>Rustic Canyon</li>
+    <li>Huntington Palisades</li>
+    <li>Alphabet Streets</li>
+    <li>Castellammare</li>
+    <li>Marquez Knolls</li>
+    <li>Palisades Highlands</li>
+    <li>Via Bluffs</li>
+  </ul>
+  <p>Whether you live in a historic estate or a newly built architectural marvel, <strong>ZARICCI</strong> provides the discreet, professional service you can trust.</p>
+</section>
+
+<section>
+  <h3>The Appliances You Chose Deserve the Service We Deliver</h3>
+  <p>Your luxury appliances were crafted for performance, beauty, and precision.<br>At <strong>ZARICCI</strong>, we treat every repair with the same dedication to excellence—ensuring your home continues to reflect the high standards you value.</p>
+</section>
+
+<section>
+  <h3>📞 Schedule Your Luxury Appliance Repair in Pacific Palisades Today</h3>
+  <p>Restore your premium appliances with the expertise they deserve.<br>Call <strong>ZARICCI Luxury Appliance Repair</strong> or book online now for white-glove service in Pacific Palisades.</p>
+  <p><strong>👉 ZARICCI — Precision Repairs for Pacific Palisades’ Most Beautiful Homes.</strong></p>
+</section>
+
+</div>
+</Layout>
