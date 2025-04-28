@@ -1,0 +1,252 @@
+---
+import Layout from '../layouts/Layout.astro';
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://luxuryappliance.repair/pasadena/",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "url": "https://luxuryappliance.repair/pasadena/",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "description": "ZARICCI Luxury Appliance Repair delivers premium in-home appliance repair services for luxury homes and historic estates throughout Pasadena. Our factory-certified technicians specialize in high-end brands like Sub-Zero, Wolf, Miele, Thermador, Viking, and La Cornue, providing discreet, white-glove same-day service.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pasadena",
+    "addressRegion": "CA",
+    "postalCode": "91101",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.1478,
+    "longitude": -118.1445
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "areaServed": {
+    "@type": "City",
+    "name": "Pasadena",
+    "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California"
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Luxury Appliance Repair Services",
+      "description": "In-home repair services for high-end appliances such as refrigerators, ovens, cooktops, dishwashers, wine coolers, built-in coffee systems, and laundry units. Trusted brands serviced include Sub-Zero, Wolf, Thermador, Miele, Viking, La Cornue, and more. Available across Pasadena and surrounding cities.",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Pasadena Metropolitan Area"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "ZARICCI Luxury Appliance Repair"
+      }
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Appliance Repair Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair", "description": "Precision oven repair services for luxury brands, including convection, steam, and wall-mounted ovens." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair", "description": "High-end stove repair, including gas and electric models from premium manufacturers like Wolf and Viking." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair", "description": "Expert range repair for dual-fuel, gas, and induction units from top-tier brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair", "description": "Professional repair for gas, electric, and induction cooktops by Bosch, Miele, KitchenAid, and others." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair", "description": "Servicing designer and built-in range hoods with motor, lighting, and venting repairs." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair", "description": "Luxury washer repair for front-load, top-load, and smart models, including Miele and LG Signature." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair", "description": "In-home dryer repair for gas and electric units, including venting and heating repairs." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair", "description": "Built-in and panel-ready dishwasher repair for luxury brands like Miele, Bosch, Cove, and more." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair", "description": "Repair services for luxury microwaves including drawer, built-in, and convection models." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair", "description": "Certified refrigerator repair for built-in and integrated models including Sub-Zero, Thermador, and Viking." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair", "description": "Expert freezer repair for upright, column, and drawer freezers from top brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair", "description": "Repair for luxury gas and electric fireplaces including burner, ignition, and control systems." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair", "description": "High-end BBQ and outdoor kitchen grill repair for burners, ignition systems, and temperature controls." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair", "description": "Luxury wine cooler repair services for dual-zone and built-in models including Sub-Zero and Liebherr." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair", "description": "Climate control, humidity regulation, and lighting repair services for custom wine cellars." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair", "description": "Built-in coffee system repair for Miele, Gaggenau, Wolf, and other luxury brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair", "description": "Luxury steam oven repairs, including water tank, sensor, and steam generator issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair", "description": "Warming drawer repairs for built-in kitchen systems including thermostats and heating elements." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair", "description": "Repairs for combi-ovens and speed ovens from premium brands combining microwave and convection technologies." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair", "description": "Repair for luxury built-in and undercounter ice makers from Sub-Zero, Scotsman, and others." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair", "description": "Luxury trash compactor repairs for premium built-in systems with mechanical and motorized issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair", "description": "Built-in beverage center repairs from brands like True Residential, Perlick, and U-Line." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair", "description": "Luxury residential and commercial kegerator repair services including taps, cooling systems, and CO2 systems." }}
+    ]
+  },
+  "brand": [
+    { "@type": "Brand", "name": "AGA" },
+    { "@type": "Brand", "name": "Big Chill" },
+    { "@type": "Brand", "name": "BlueStar" },
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "Dacor" },
+    { "@type": "Brand", "name": "Fisher & Paykel" },
+    { "@type": "Brand", "name": "Gaggenau" },
+    { "@type": "Brand", "name": "Jenn-Air" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "La Cornue" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Smeg" },
+    { "@type": "Brand", "name": "Sub-Zero" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Elmira Stove Works" },
+    { "@type": "Brand", "name": "Monogram" },
+    { "@type": "Brand", "name": "Cove" },
+    { "@type": "Brand", "name": "Bertazzoni" },
+    { "@type": "Brand", "name": "ZLINE" },
+    { "@type": "Brand", "name": "ILVE" },
+    { "@type": "Brand", "name": "Fulgor Milano" },
+    { "@type": "Brand", "name": "Lacanche" },
+    { "@type": "Brand", "name": "Robam" },
+    { "@type": "Brand", "name": "Signature Kitchen Suite" },
+    { "@type": "Brand", "name": "True Residential" },
+    { "@type": "Brand", "name": "Hestan" },
+    { "@type": "Brand", "name": "Whirlpool Black Stainless" },
+    { "@type": "Brand", "name": "JennAir Noir" }
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://same-day-appliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+12133091924",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
+
+---
+<Layout
+	title="Local Luxury Appliance Repair – Pasadena"
+	description="High-end appliances repair - Pasadena by certified technicians. Same-day appointments are available. Call today!"
+	structuredData={structuredData}
+>
+<div style="margin: 50px">
+<section>
+  <h1>Luxury Appliance Repair in Pasadena, CA</h1>
+  <p><strong>White-Glove Service for Homes Where Heritage Meets Modern Elegance</strong></p>
+  <p>In Pasadena, tradition and innovation live side by side—from the stately estates of Oak Knoll to the contemporary homes tucked into Linda Vista. Whether you live in a historic Craftsman masterpiece or a sleek architectural marvel, your luxury appliances play a vital role in your lifestyle. When they require attention, you deserve service that respects the craftsmanship and quality of your home.</p>
+  <p>At <strong>ZARICCI Luxury Appliance Repair</strong>, we proudly offer high-end appliance repair in Pasadena, specializing in elite brands like Sub-Zero, Wolf, Thermador, Miele, Gaggenau, Viking, La Cornue, and more. We combine factory-certified expertise, genuine OEM parts, and white-glove service trusted by Pasadena’s most discerning homeowners.</p>
+</section>
+
+<section>
+  <h3>🔧 Why Pasadena Homeowners Trust ZARICCI</h3>
+  <ul>
+    <li><strong>✅ Factory-Certified in Luxury Brands</strong><br>Our technicians are trained to work on today's most advanced and prestigious appliances, including integrated refrigeration, smart kitchen systems, and professional cooking ranges.</li>
+    <li><strong>✅ Genuine OEM Parts for Lasting Results</strong><br>We use manufacturer-certified parts only—protecting your appliance’s performance, maintaining warranty validity, and ensuring long-term reliability.</li>
+    <li><strong>✅ Same-Day or Next-Day Service</strong><br>We offer priority scheduling throughout Pasadena, arriving on time and ready to deliver fast, professional results without disruption to your home or routine.</li>
+    <li><strong>✅ White-Glove In-Home Service</strong><br>We work cleanly, discreetly, and respectfully—protecting floors, cabinetry, and surfaces—so the only sign we were ever there is an appliance working like new.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>🛠️ What We Repair in Pasadena</h3>
+  <h4>❄️ Luxury Refrigerators & Freezers</h4>
+  <ul>
+    <li>Sub-Zero, Thermador, Miele</li>
+    <li>Temperature fluctuations, cooling issues</li>
+    <li>Ice maker failures or dispenser malfunctions</li>
+    <li>Door seal, compressor, or smart system repairs</li>
+  </ul>
+  <h4>🔥 Ranges, Wall Ovens & Cooktops</h4>
+  <ul>
+    <li>Wolf, La Cornue, Gaggenau, Viking</li>
+    <li>Ignition failure, uneven heating, or convection fan issues</li>
+    <li>Smart system diagnostics and control panel repairs</li>
+    <li>Steam oven and dual-fuel range repairs</li>
+  </ul>
+  <h4>🚿 Luxury Dishwashers</h4>
+  <ul>
+    <li>Miele, Bosch, Cove</li>
+    <li>Water drainage problems, leaks, or incomplete cycles</li>
+    <li>Poor cleaning performance or smart connectivity issues</li>
+  </ul>
+  <h4>🧺 Luxury Washers & Dryers</h4>
+  <ul>
+    <li>Miele, Fisher & Paykel, LG Signature</li>
+    <li>Washer not spinning or draining properly</li>
+    <li>Dryer overheating or control board failures</li>
+    <li>App and smart home integration troubleshooting</li>
+  </ul>
+  <h4>☕ Built-In Specialty Appliances</h4>
+  <ul>
+    <li>Wine coolers, espresso machines, warming drawers, steam ovens</li>
+    <li>Temperature inconsistencies</li>
+    <li>Water flow, motor, and smart system repairs</li>
+  </ul>
+</section>
+
+<section>
+  <h3>👨‍🔧 The ZARICCI White-Glove Repair Process</h3>
+  <ol>
+    <li><strong>Effortless Booking</strong><br>Book online or call us. Our team handles every detail, coordinating around your schedule for a seamless experience.</li>
+    <li><strong>On-Time, Professional Diagnosis</strong><br>A certified ZARICCI technician arrives on time, fully prepared to diagnose your appliance quickly and accurately.</li>
+    <li><strong>Transparent, Written Estimate</strong><br>We provide a clear, itemized quote before beginning any work—no hidden charges, ever.</li>
+    <li><strong>Precision Repairs with OEM Parts</strong><br>Repairs are performed to factory standards, using genuine parts that ensure peak performance and durability.</li>
+    <li><strong>Final Testing & Immaculate Clean-Up</strong><br>After extensive testing, we leave your appliance—and your home—flawless and ready to use, backed by a satisfaction guarantee.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>🏡 Proudly Serving Pasadena’s Most Beautiful Neighborhoods</h3>
+  <p><strong>ZARICCI</strong> is trusted across:</p>
+  <ul>
+    <li>Oak Knoll</li>
+    <li>Linda Vista</li>
+    <li>South Pasadena</li>
+    <li>San Rafael Hills</li>
+    <li>Bungalow Heaven</li>
+    <li>Madison Heights</li>
+    <li>Chapman Woods</li>
+    <li>Historic Highlands</li>
+  </ul>
+  <p>Whether you’re maintaining a historic estate, a modern luxury home, or a custom-built residence, <strong>ZARICCI</strong> brings world-class repair service to your door.</p>
+</section>
+
+<section>
+  <h3>When Craftsmanship Matters, Trust the Experts</h3>
+  <p>Your appliances are a reflection of your investment in quality, innovation, and beauty. At <strong>ZARICCI</strong>, we match that investment with service built on precision, professionalism, and integrity—delivering a repair experience worthy of your home.</p>
+</section>
+
+<section>
+  <h3>📞 Schedule Your Luxury Appliance Repair in Pasadena Today</h3>
+  <p>Trust your home’s finest appliances to the experts who deliver flawless service every time.<br>Call <strong>ZARICCI Luxury Appliance Repair</strong> or book your appointment online now for Pasadena’s premier luxury appliance service.</p>
+  <p><strong>👉 ZARICCI — Precision Repairs for Pasadena’s Most Iconic Homes.</strong></p>
+</section>
+
+</div>
+</Layout>

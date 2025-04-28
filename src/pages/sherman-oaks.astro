@@ -1,0 +1,251 @@
+---
+import Layout from '../layouts/Layout.astro';
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://luxuryappliance.repair/sherman-oaks/",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "url": "https://luxuryappliance.repair/sherman-oaks/",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "description": "ZARICCI Luxury Appliance Repair offers elite, white-glove in-home appliance repair services for luxury homes, modern estates, and designer residences in Sherman Oaks. We specialize in premium brands like Sub-Zero, Wolf, Thermador, Miele, La Cornue, and more—providing discreet, certified repairs with same-day service available.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sherman Oaks",
+    "addressRegion": "CA",
+    "postalCode": "91403",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.1483,
+    "longitude": -118.4514
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "areaServed": {
+    "@type": "City",
+    "name": "Sherman Oaks",
+    "sameAs": "https://en.wikipedia.org/wiki/Sherman_Oaks,_Los_Angeles"
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Luxury Appliance Repair Services",
+      "description": "In-home repair services for high-end appliances including refrigerators, ovens, cooktops, dishwashers, wine coolers, built-in coffee machines, and laundry units. Brands serviced include Sub-Zero, Wolf, Thermador, Miele, Viking, La Cornue, and more. Serving Sherman Oaks with precision and discretion.",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Sherman Oaks Metropolitan Area"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "ZARICCI Luxury Appliance Repair"
+      }
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Appliance Repair Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair", "description": "Precision oven repair services for luxury brands, including convection, steam, and wall-mounted ovens." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair", "description": "High-end stove repair, including gas and electric models from premium manufacturers like Wolf and Viking." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair", "description": "Expert range repair for dual-fuel, gas, and induction units from top-tier brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair", "description": "Professional repair for gas, electric, and induction cooktops by Bosch, Miele, and KitchenAid." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair", "description": "Servicing designer and built-in range hoods with motor, lighting, and venting repairs." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair", "description": "Luxury washer repair for front-load, top-load, and smart models, including Miele and LG Signature." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair", "description": "In-home dryer repair for gas and electric units with vent or heating issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair", "description": "Built-in and panel-ready dishwasher repair services for premium brands like Miele, Bosch, and Cove." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair", "description": "Luxury microwave repair including drawer, built-in, and convection microwave models." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair", "description": "Certified refrigerator repair for built-in and integrated models including Sub-Zero and Thermador." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair", "description": "Freezer repair services for upright, drawer, and column units from top brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair", "description": "Luxury fireplace repair for gas and electric units, including ignition, remote control, and burner issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair", "description": "Outdoor luxury BBQ and built-in grill repair for burners, ignition systems, and controls." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair", "description": "Luxury wine cooler repair services for dual-zone and built-in models by Sub-Zero, Liebherr, and others." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair", "description": "Climate control, humidity regulation, and cooling repairs for custom luxury wine cellars." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair", "description": "Built-in coffee system repair for Miele, Gaggenau, and Wolf brands including grinders and steam units." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair", "description": "Steam oven repair including tank, sensor, and steam generation unit repairs." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair", "description": "Repair services for luxury warming drawers including heating elements and thermostats." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair", "description": "Luxury combi-oven repair for microwave-convection systems from premium brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair", "description": "Built-in ice maker repair for brands like Sub-Zero, True, and Scotsman." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair", "description": "High-end trash compactor repairs for mechanical and compression issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair", "description": "Repair for built-in beverage centers from True Residential, Perlick, and others." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair", "description": "Luxury kegerator repair services for residential and commercial units." }}
+    ]
+  },
+  "brand": [
+    { "@type": "Brand", "name": "AGA" },
+    { "@type": "Brand", "name": "Big Chill" },
+    { "@type": "Brand", "name": "BlueStar" },
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "Dacor" },
+    { "@type": "Brand", "name": "Fisher & Paykel" },
+    { "@type": "Brand", "name": "Gaggenau" },
+    { "@type": "Brand", "name": "Jenn-Air" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "La Cornue" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Smeg" },
+    { "@type": "Brand", "name": "Sub-Zero" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Elmira Stove Works" },
+    { "@type": "Brand", "name": "Monogram" },
+    { "@type": "Brand", "name": "Cove" },
+    { "@type": "Brand", "name": "Bertazzoni" },
+    { "@type": "Brand", "name": "ZLINE" },
+    { "@type": "Brand", "name": "ILVE" },
+    { "@type": "Brand", "name": "Fulgor Milano" },
+    { "@type": "Brand", "name": "Lacanche" },
+    { "@type": "Brand", "name": "Robam" },
+    { "@type": "Brand", "name": "Signature Kitchen Suite" },
+    { "@type": "Brand", "name": "True Residential" },
+    { "@type": "Brand", "name": "Hestan" },
+    { "@type": "Brand", "name": "Whirlpool Black Stainless" },
+    { "@type": "Brand", "name": "JennAir Noir" }
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://same-day-appliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+12133091924",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
+
+---
+<Layout
+	title="Local Luxury Appliance Repair – Sherman Oaks"
+	description="High-end appliances repair - Sherman Oaks by certified technicians. Same-day appointments are available. Call today!"
+	structuredData={structuredData}
+>
+<div style="margin: 50px">
+<section>
+  <h1>Luxury Appliance Repair in Sherman Oaks, CA</h1>
+  <p><strong>White-Glove Service for Gated Estates and Designer Homes</strong></p>
+  <p>In Sherman Oaks, where upscale estates, modern remodels, and tree-lined avenues create one of the Valley’s most desirable neighborhoods, luxury living is a way of life. Your high-end appliances are a crucial part of that lifestyle—blending performance, style, and everyday convenience. When they need expert care, you deserve a service that delivers the same level of precision and excellence.</p>
+  <p>At <strong>ZARICCI Luxury Appliance Repair</strong>, we proudly offer high-end appliance repair in Sherman Oaks, specializing in prestigious brands like Sub-Zero, Wolf, Thermador, Miele, Gaggenau, Viking, La Cornue, and more. We provide certified expertise, genuine OEM parts, and white-glove service trusted by Sherman Oaks' most discerning homeowners.</p>
+</section>
+
+<section>
+  <h3>🔧 Why Sherman Oaks Homeowners Trust ZARICCI</h3>
+  <ul>
+    <li><strong>✅ Factory-Certified Technicians</strong><br>Our specialists are trained by top manufacturers to repair luxury built-in refrigerators, smart ovens, steam appliances, and professional cooking ranges with factory-level precision.</li>
+    <li><strong>✅ Genuine OEM Parts for Authentic, Lasting Repairs</strong><br>We use only genuine manufacturer-approved parts to preserve your appliance’s warranty, performance, and original craftsmanship.</li>
+    <li><strong>✅ Same-Day or Next-Day Service Available</strong><br>We prioritize your schedule with fast, high-quality service throughout Sherman Oaks—without ever compromising attention to detail.</li>
+    <li><strong>✅ White-Glove In-Home Care</strong><br>We respect your home's architecture and interiors—working discreetly, protecting floors and finishes, and leaving your space pristine.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>🛠️ What We Repair in Sherman Oaks</h3>
+  <h4>❄️ Luxury Refrigerators & Freezers</h4>
+  <ul>
+    <li><strong>Brands:</strong> Sub-Zero, Thermador, Miele</li>
+    <li>Cooling inconsistencies, temperature control issues</li>
+    <li>Ice maker malfunctions, water dispenser problems</li>
+    <li>Compressor, evaporator, and built-in panel repairs</li>
+  </ul>
+  <h4>🔥 Ranges, Wall Ovens & Cooktops</h4>
+  <ul>
+    <li><strong>Brands:</strong> Wolf, La Cornue, Gaggenau, Viking</li>
+    <li>Gas ignition problems</li>
+    <li>Uneven heating, convection fan malfunctions</li>
+    <li>Smart system and control panel troubleshooting</li>
+  </ul>
+  <h4>🚿 Luxury Dishwashers</h4>
+  <ul>
+    <li><strong>Brands:</strong> Miele, Bosch, Cove</li>
+    <li>Poor cleaning or drying performance</li>
+    <li>Water drainage issues, smart cycle failures</li>
+    <li>Control board and sensor diagnostics</li>
+  </ul>
+  <h4>🧺 Luxury Washers & Dryers</h4>
+  <ul>
+    <li><strong>Brands:</strong> Miele, LG Signature, Fisher & Paykel</li>
+    <li>Washer spin, drain, and cycle problems</li>
+    <li>Dryer not heating properly or overheating</li>
+    <li>Smart app and connectivity troubleshooting</li>
+  </ul>
+  <h4>☕ Built-In Specialty Appliances</h4>
+  <ul>
+    <li><strong>Appliances:</strong> Wine Coolers, Espresso Machines, Steam Ovens, Warming Drawers</li>
+    <li>Temperature inconsistencies</li>
+    <li>Water flow, motor, and smart system malfunctions</li>
+  </ul>
+</section>
+
+<section>
+  <h3>👨‍🔧 The ZARICCI White-Glove Repair Process</h3>
+  <ol>
+    <li><strong>Simple Booking</strong><br>Schedule your appointment online or by phone—our concierge team tailors everything to your schedule.</li>
+    <li><strong>On-Time Diagnosis</strong><br>Our certified technician arrives on time, diagnoses your appliance issue precisely, and explains everything with complete transparency.</li>
+    <li><strong>Transparent, Detailed Quote</strong><br>We provide a detailed, upfront quote—no hidden fees, no surprises.</li>
+    <li><strong>Precision Repairs with Genuine Parts</strong><br>All repairs are completed to exact factory specifications using genuine OEM parts to ensure long-term performance.</li>
+    <li><strong>Final Testing and Spotless Clean-Up</strong><br>We thoroughly test your appliance and leave your home pristine—backed by our satisfaction guarantee.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>🏡 Proudly Serving All of Sherman Oaks</h3>
+  <p><strong>ZARICCI</strong> provides discreet, elite appliance repair service across all premier Sherman Oaks neighborhoods, including:</p>
+  <ul>
+    <li>Longridge Estates</li>
+    <li>Royal Woods</li>
+    <li>Chandler Estates</li>
+    <li>Magnolia Woods</li>
+    <li>Sherman Village</li>
+    <li>Hidden Woods</li>
+    <li>Beverly Glen Area</li>
+  </ul>
+  <p>Whether your home is a classic estate, a modern masterpiece, or a gated retreat, <strong>ZARICCI</strong> delivers service worthy of your investment.</p>
+</section>
+
+<section>
+  <h3>When Only Flawless Matters, Trust ZARICCI</h3>
+  <p>Your luxury appliances are a statement of your commitment to quality. At <strong>ZARICCI</strong>, we honor that commitment with factory-certified repairs, meticulous attention to detail, and an unwavering dedication to white-glove service.</p>
+</section>
+
+<section>
+  <h3>📞 Schedule Your Luxury Appliance Repair in Sherman Oaks Today</h3>
+  <p>Experience elite, precision repair service designed for Sherman Oaks’ most sophisticated homes.<br>Call <strong>ZARICCI Luxury Appliance Repair</strong> or book your appointment online today.</p>
+  <p><strong>👉 ZARICCI — Precision Repairs for Sherman Oaks’ Most Prestigious Homes.</strong></p>
+</section>
+</div>
+</Layout>

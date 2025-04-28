@@ -1,0 +1,221 @@
+---
+import Layout from '../layouts/Layout.astro';
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://luxuryappliance.repair/playa-del-rey/",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "url": "https://luxuryappliance.repair/playa-del-rey/",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "description": "ZARICCI Luxury Appliance Repair offers elite, white-glove in-home appliance repair services for coastal homes and hidden gems in Playa del Rey. We specialize in premium brands like Sub-Zero, Wolf, Thermador, Miele, La Cornue, and more—providing discreet, certified repairs with same-day service available.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Playa del Rey",
+    "addressRegion": "CA",
+    "postalCode": "90293",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 33.9617,
+    "longitude": -118.4484
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "areaServed": {
+    "@type": "City",
+    "name": "Playa del Rey",
+    "sameAs": "https://en.wikipedia.org/wiki/Playa_del_Rey,_Los_Angeles"
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Luxury Appliance Repair Services",
+      "description": "In-home repair services for high-end appliances including refrigerators, ovens, cooktops, dishwashers, wine coolers, built-in coffee machines, and laundry units. Brands serviced include Sub-Zero, Wolf, Thermador, Miele, Viking, La Cornue, and more. Serving Playa del Rey with precision and discretion.",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Playa del Rey Metropolitan Area"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "ZARICCI Luxury Appliance Repair"
+      }
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Appliance Repair Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair", "description": "Precision oven repair services for luxury brands, including convection, steam, and wall-mounted ovens." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair", "description": "High-end stove repair, including gas and electric models from premium manufacturers like Wolf and Viking." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair", "description": "Expert range repair for dual-fuel, gas, and induction units from top-tier brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair", "description": "Professional repair for gas, electric, and induction cooktops by Bosch, Miele, and KitchenAid." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair", "description": "Servicing designer and built-in range hoods with motor, lighting, and venting repairs." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair", "description": "Luxury washer repair for front-load, top-load, and smart models, including Miele and LG Signature." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair", "description": "In-home dryer repair for gas and electric units with vent or heating issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair", "description": "Built-in and panel-ready dishwasher repair services for premium brands like Miele, Bosch, and Cove." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair", "description": "Luxury microwave repair including drawer, built-in, and convection microwave models." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair", "description": "Certified refrigerator repair for built-in and integrated models including Sub-Zero and Thermador." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair", "description": "Freezer repair services for upright, drawer, and column units from top brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair", "description": "Luxury fireplace repair for gas and electric units, including ignition, remote control, and burner issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair", "description": "Outdoor luxury BBQ and built-in grill repair for burners, ignition systems, and controls." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair", "description": "Luxury wine cooler repair services for dual-zone and built-in models by Sub-Zero, Liebherr, and others." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair", "description": "Climate control, humidity regulation, and cooling repairs for custom luxury wine cellars." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair", "description": "Built-in coffee system repair for Miele, Gaggenau, and Wolf brands including grinders and steam units." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair", "description": "Steam oven repair including tank, sensor, and steam generation unit repairs." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair", "description": "Repair services for luxury warming drawers including heating elements and thermostats." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair", "description": "Luxury combi-oven repair for microwave-convection systems from premium brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair", "description": "Built-in ice maker repair for brands like Sub-Zero, True, and Scotsman." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair", "description": "High-end trash compactor repairs for mechanical and compression issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair", "description": "Repair for built-in beverage centers from True Residential, Perlick, and others." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair", "description": "Luxury kegerator repair services for residential and commercial units." }}
+    ]
+  },
+  "brand": [
+    { "@type": "Brand", "name": "AGA" },
+    { "@type": "Brand", "name": "Big Chill" },
+    { "@type": "Brand", "name": "BlueStar" },
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "Dacor" },
+    { "@type": "Brand", "name": "Fisher & Paykel" },
+    { "@type": "Brand", "name": "Gaggenau" },
+    { "@type": "Brand", "name": "Jenn-Air" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "La Cornue" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Smeg" },
+    { "@type": "Brand", "name": "Sub-Zero" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Elmira Stove Works" },
+    { "@type": "Brand", "name": "Monogram" },
+    { "@type": "Brand", "name": "Cove" },
+    { "@type": "Brand", "name": "Bertazzoni" },
+    { "@type": "Brand", "name": "ZLINE" },
+    { "@type": "Brand", "name": "ILVE" },
+    { "@type": "Brand", "name": "Fulgor Milano" },
+    { "@type": "Brand", "name": "Lacanche" },
+    { "@type": "Brand", "name": "Robam" },
+    { "@type": "Brand", "name": "Signature Kitchen Suite" },
+    { "@type": "Brand", "name": "True Residential" },
+    { "@type": "Brand", "name": "Hestan" },
+    { "@type": "Brand", "name": "Whirlpool Black Stainless" },
+    { "@type": "Brand", "nam
+
+---
+<Layout
+	title="Local Luxury Appliance Repair – Playa Del Rey"
+	description="High-end appliances repair - Playa Del Rey by certified technicians. Same-day appointments are available. Call today!"
+	structuredData={structuredData}
+>
+<div style="margin: 50px">
+<section>
+  <h1>Luxury Appliance Repair in Playa del Rey, CA</h1>
+  <p><strong>White-Glove Service for Coastal Homes and Hidden Gems</strong></p>
+  <p>In Playa del Rey, understated elegance meets the beauty of the Pacific. From beachfront residences to secluded hillside homes, luxury living here is all about comfort, refinement, and effortless style. Your high-end appliances are a part of that lifestyle—and when they need expert care, you deserve a service that meets your high standards.</p>
+  <p>At <strong>ZARICCI Luxury Appliance Repair</strong>, we proudly offer high-end appliance repair in Playa del Rey, specializing in prestigious brands like Sub-Zero, Wolf, Thermador, Miele, Gaggenau, Viking, La Cornue, and more. We deliver factory-certified expertise, genuine OEM parts, and white-glove service tailored for Playa del Rey’s most refined homes.</p>
+</section>
+
+<section>
+  <h3>🔧 Why Playa del Rey Homeowners Trust ZARICCI</h3>
+  <ul>
+    <li><strong>✅ Certified Technicians for Elite Brands</strong><br>From smart refrigeration systems to professional-grade cooking appliances, we are trained and certified by the world’s top manufacturers.</li>
+    <li><strong>✅ Genuine OEM Parts for True Performance</strong><br>We only use manufacturer-certified parts to protect your appliance’s warranty, maintain peak performance, and ensure long-term reliability.</li>
+    <li><strong>✅ Same-Day or Next-Day Service Across Playa del Rey</strong><br>We offer priority scheduling and discreet, on-time appointments—because your time and privacy are important.</li>
+    <li><strong>✅ White-Glove In-Home Service</strong><br>We protect your floors and surfaces, work quietly and cleanly, and leave your home immaculate after every repair.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>🛠️ What We Repair in Playa del Rey</h3>
+  <h4>❄️ Luxury Refrigerators & Freezers</h4>
+  <ul>
+    <li>Sub-Zero, Thermador, Miele</li>
+    <li>Cooling inconsistencies, no cooling, or frost buildup</li>
+    <li>Ice maker failures, water dispenser issues</li>
+    <li>Integrated panel and compressor repairs</li>
+  </ul>
+  <h4>🔥 Ranges, Wall Ovens & Cooktops</h4>
+  <ul>
+    <li>Wolf, La Cornue, Gaggenau, Viking</li>
+    <li>Gas burners not igniting</li>
+    <li>Uneven heating, slow preheating, convection failures</li>
+    <li>Smart oven or touch panel malfunctions</li>
+  </ul>
+  <h4>🚿 Luxury Dishwashers</h4>
+  <ul>
+    <li>Miele, Bosch, Cove</li>
+    <li>Leaks, poor cleaning, drainage issues</li>
+    <li>Control board, cycle, and drying failures</li>
+  </ul>
+  <h4>🧺 Luxury Washers & Dryers</h4>
+  <ul>
+    <li>Miele, LG Signature, Fisher & Paykel</li>
+    <li>Washer not spinning, draining, or displaying errors</li>
+    <li>Dryer not heating or overheating</li>
+    <li>Smart integration and app syncing issues</li>
+  </ul>
+  <h4>☕ Built-In Specialty Appliances</h4>
+  <ul>
+    <li>Wine coolers, espresso machines, warming drawers, steam ovens</li>
+    <li>Temperature inconsistencies</li>
+    <li>Motor, pump, and water flow problems</li>
+    <li>Wi-Fi and smart home connectivity troubleshooting</li>
+  </ul>
+</section>
+
+<section>
+  <h3>👨‍🔧 The ZARICCI Service Experience</h3>
+  <ol>
+    <li><strong>Easy Scheduling</strong><br>Book online or call—our concierge team arranges appointments quickly and discreetly.</li>
+    <li><strong>On-Time, White-Glove Diagnosis</strong><br>Our certified technician arrives professionally dressed, on time, and fully prepared to diagnose the problem accurately.</li>
+    <li><strong>Clear, Upfront Estimate</strong><br>We offer a transparent, detailed quote before starting any repair—no surprises, ever.</li>
+    <li><strong>OEM-Grade Precision Repairs</strong><br>Every repair uses authentic parts, restoring your appliance to factory specifications.</li>
+    <li><strong>Final Testing & Clean Exit</strong><br>After thorough testing, we leave your home immaculate—and your appliance working flawlessly.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>🏡 Proudly Serving All of Playa del Rey</h3>
+  <p><strong>ZARICCI</strong> services homes throughout:</p>
+  <ul>
+    <li>The Bluffs</li>
+    <li>Silicon Beach area</li>
+    <li>Westchester Bluffs</li>
+    <li>Pacific Avenue residences</li>
+    <li>Beachfront homes along Vista del Mar</li>
+    <li>Custom estates in the hills overlooking the ocean</li>
+  </ul>
+  <p>Whether you're steps from the beach or tucked into a quiet, elevated neighborhood, <strong>ZARICCI</strong> brings elite appliance care directly to you.</p>
+</section>
+
+<section>
+  <h3>Service That Matches the Lifestyle You’ve Built</h3>
+  <p>Your appliances are more than functional—they're a seamless part of your home's design, comfort, and performance. At <strong>ZARICCI</strong>, we deliver precision craftsmanship, genuine care, and a luxury service experience from start to finish.</p>
+</section>
+
+<section>
+  <h3>📞 Schedule Your Luxury Appliance Repair in Playa del Rey Today</h3>
+  <p>Protect your investment with the service it deserves.<br>Call <strong>ZARICCI Luxury Appliance Repair</strong> or book online now for expert, white-glove service in Playa del Rey.</p>
+  <p><strong>👉 ZARICCI — Precision Repairs for Playa del Rey’s Most Elegant Homes.</strong></p>
+</section>
+
+</div>
+</Layout>

@@ -1,0 +1,248 @@
+---
+import Layout from '../layouts/Layout.astro';
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://luxuryappliance.repair/palos-verdes-estates/",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "url": "https://luxuryappliance.repair/palos-verdes-estates/",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "description": "ZARICCI Luxury Appliance Repair offers elite, white-glove in-home appliance repair services for coastal estates, hillside residences, and luxury homes in Palos Verdes Estates. We specialize in premium brands like Sub-Zero, Wolf, Thermador, Miele, La Cornue, and more—providing discreet, certified repairs with same-day service available.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Palos Verdes Estates",
+    "addressRegion": "CA",
+    "postalCode": "90274",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 33.8006,
+    "longitude": -118.3917
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "areaServed": {
+    "@type": "City",
+    "name": "Palos Verdes Estates",
+    "sameAs": "https://en.wikipedia.org/wiki/Palos_Verdes_Estates,_California"
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Luxury Appliance Repair Services",
+      "description": "In-home repair services for high-end appliances including refrigerators, ovens, cooktops, dishwashers, wine coolers, built-in coffee machines, and laundry units. Brands serviced include Sub-Zero, Wolf, Thermador, Miele, Viking, La Cornue, and more. Serving Palos Verdes Estates with precision and discretion.",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Palos Verdes Estates Metropolitan Area"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "ZARICCI Luxury Appliance Repair"
+      }
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Appliance Repair Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair", "description": "Precision oven repair services for luxury brands, including convection, steam, and wall-mounted ovens." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair", "description": "High-end stove repair, including gas and electric models from premium manufacturers like Wolf and Viking." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair", "description": "Expert range repair for dual-fuel, gas, and induction units from top-tier brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair", "description": "Professional repair for gas, electric, and induction cooktops by Bosch, Miele, and KitchenAid." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair", "description": "Servicing designer and built-in range hoods with motor, lighting, and venting repairs." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair", "description": "Luxury washer repair for front-load, top-load, and smart models, including Miele and LG Signature." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair", "description": "In-home dryer repair for gas and electric units with vent or heating issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair", "description": "Built-in and panel-ready dishwasher repair services for premium brands like Miele, Bosch, and Cove." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair", "description": "Luxury microwave repair including drawer, built-in, and convection microwave models." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair", "description": "Certified refrigerator repair for built-in and integrated models including Sub-Zero and Thermador." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair", "description": "Freezer repair services for upright, drawer, and column units from top brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair", "description": "Luxury fireplace repair for gas and electric units, including ignition, remote control, and burner issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair", "description": "Outdoor luxury BBQ and built-in grill repair for burners, ignition systems, and controls." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair", "description": "Luxury wine cooler repair services for dual-zone and built-in models by Sub-Zero, Liebherr, and others." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair", "description": "Climate control, humidity regulation, and cooling repairs for custom luxury wine cellars." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair", "description": "Built-in coffee system repair for Miele, Gaggenau, and Wolf brands including grinders and steam units." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair", "description": "Steam oven repair including tank, sensor, and steam generation unit repairs." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair", "description": "Repair services for luxury warming drawers including heating elements and thermostats." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair", "description": "Luxury combi-oven repair for microwave-convection systems from premium brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair", "description": "Built-in ice maker repair for brands like Sub-Zero, True, and Scotsman." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair", "description": "High-end trash compactor repairs for mechanical and compression issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair", "description": "Repair for built-in beverage centers from True Residential, Perlick, and others." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair", "description": "Luxury kegerator repair services for residential and commercial units." }}
+    ]
+  },
+  "brand": [
+    { "@type": "Brand", "name": "AGA" },
+    { "@type": "Brand", "name": "Big Chill" },
+    { "@type": "Brand", "name": "BlueStar" },
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "Dacor" },
+    { "@type": "Brand", "name": "Fisher & Paykel" },
+    { "@type": "Brand", "name": "Gaggenau" },
+    { "@type": "Brand", "name": "Jenn-Air" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "La Cornue" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Smeg" },
+    { "@type": "Brand", "name": "Sub-Zero" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Elmira Stove Works" },
+    { "@type": "Brand", "name": "Monogram" },
+    { "@type": "Brand", "name": "Cove" },
+    { "@type": "Brand", "name": "Bertazzoni" },
+    { "@type": "Brand", "name": "ZLINE" },
+    { "@type": "Brand", "name": "ILVE" },
+    { "@type": "Brand", "name": "Fulgor Milano" },
+    { "@type": "Brand", "name": "Lacanche" },
+    { "@type": "Brand", "name": "Robam" },
+    { "@type": "Brand", "name": "Signature Kitchen Suite" },
+    { "@type": "Brand", "name": "True Residential" },
+    { "@type": "Brand", "name": "Hestan" },
+    { "@type": "Brand", "name": "Whirlpool Black Stainless" },
+    { "@type": "Brand", "name": "JennAir Noir" }
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://same-day-appliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+12133091924",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
+---
+<Layout
+	title="Local Luxury Appliance Repair – Palos Verdes Estates"
+	description="High-end appliances repair - Palos Verdes Estates by certified technicians. Same-day appointments are available. Call today!"
+	structuredData={structuredData}
+>
+<div style="margin: 50px">
+<section>
+  <h1>Luxury Appliance Repair in Palos Verdes Estates, CA</h1>
+  <p><strong>White-Glove Service for Coastal Elegance and Hilltop Estates</strong></p>
+  <p>In Palos Verdes Estates, where the Pacific Ocean meets rolling hills and breathtaking architecture, every home is a masterpiece. From Spanish Revival villas to modern cliffside estates, luxury appliances are a seamless part of the refined living experience. When your premium appliances need expert attention, you deserve service that honors their craftsmanship—and yours.</p>
+  <p>At <strong>ZARICCI Luxury Appliance Repair</strong>, we specialize in high-end appliance repair in Palos Verdes Estates, working with prestigious brands like Sub-Zero, Wolf, Thermador, Miele, Gaggenau, Viking, La Cornue, and more. We deliver certified expertise, authentic OEM parts, and white-glove service trusted by those who expect excellence at every level.</p>
+</section>
+
+<section>
+  <h3>🔧 Why Palos Verdes Estates Homeowners Trust ZARICCI</h3>
+  <ul>
+    <li><strong>✅ Brand-Certified Technicians</strong><br>Our team is factory-trained to service today’s most sophisticated appliances—from custom built-in refrigeration to professional-grade cooking systems and smart home integrations.</li>
+    <li><strong>✅ Genuine OEM Parts for Authentic Results</strong><br>We use only manufacturer-certified parts, preserving your appliance’s original quality, protecting warranties, and ensuring lasting performance.</li>
+    <li><strong>✅ Same-Day or Next-Day Service</strong><br>We know that your time is valuable. We offer priority scheduling in Palos Verdes Estates to deliver prompt, professional service.</li>
+    <li><strong>✅ White-Glove In-Home Service</strong><br>Our technicians wear protective gear, maintain immaculate workspaces, and treat your home and appliances with the respect they deserve—ensuring a seamless, discreet repair experience.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>🛠️ What We Repair in Palos Verdes Estates</h3>
+  <h4>❄️ Luxury Refrigerators & Freezers</h4>
+  <ul>
+    <li>Sub-Zero, Thermador, Miele</li>
+    <li>Cooling failures, ice maker issues</li>
+    <li>Water dispenser malfunctions</li>
+    <li>Compressor, door seal, and integrated panel repairs</li>
+  </ul>
+  <h4>🔥 Ranges, Wall Ovens & Cooktops</h4>
+  <ul>
+    <li>Wolf, La Cornue, Gaggenau, Viking</li>
+    <li>Burner ignition problems</li>
+    <li>Uneven oven heating or convection failures</li>
+    <li>Smart system or touchscreen malfunctions</li>
+  </ul>
+  <h4>🚿 Luxury Dishwashers</h4>
+  <ul>
+    <li>Miele, Bosch, Cove</li>
+    <li>Leaks, drainage failures, poor cleaning or drying</li>
+    <li>Control board, cycle, and sensor diagnostics</li>
+  </ul>
+  <h4>🧺 Luxury Washers & Dryers</h4>
+  <ul>
+    <li>Miele, Fisher & Paykel, LG Signature</li>
+    <li>Drum not spinning, draining, or smart error codes</li>
+    <li>Dryer overheating, not heating, or smart connectivity issues</li>
+  </ul>
+  <h4>☕ Built-In Specialty Appliances</h4>
+  <ul>
+    <li>Wine coolers, espresso machines, warming drawers, and steam ovens</li>
+    <li>Temperature inconsistencies</li>
+    <li>Water pump, motor, or internal system repairs</li>
+    <li>Smart integration and app troubleshooting</li>
+  </ul>
+</section>
+
+<section>
+  <h3>👨‍🔧 The ZARICCI White-Glove Repair Process</h3>
+  <ol>
+    <li><strong>Simple, Fast Scheduling</strong><br>Book your appointment online or by phone—our concierge service ensures a seamless experience.</li>
+    <li><strong>On-Time, Discreet Diagnosis</strong><br>Our certified technician arrives promptly, respects your space, and performs a precise diagnostic inspection.</li>
+    <li><strong>Transparent, Detailed Estimate</strong><br>You receive a clear, upfront quote—no hidden fees, no surprises.</li>
+    <li><strong>Precision Repairs Using OEM Parts</strong><br>We restore your appliance to factory specifications using authentic parts and refined techniques.</li>
+    <li><strong>Final Testing & Pristine Clean-Up</strong><br>After thorough testing, we leave your home as spotless as we found it—backed by our service warranty for peace of mind.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>🏡 Proudly Serving Palos Verdes Estates’ Most Prestigious Areas</h3>
+  <p><strong>ZARICCI</strong> services homes throughout:</p>
+  <ul>
+    <li>Lunada Bay</li>
+    <li>Malaga Cove</li>
+    <li>Monte Malaga</li>
+    <li>Valmonte</li>
+    <li>The Bluffs and Oceanfront Estates</li>
+  </ul>
+  <p>Whether you’re perched high above the cliffs or steps away from lush fairways, <strong>ZARICCI</strong> brings precision and professionalism directly to your doorstep.</p>
+</section>
+
+<section>
+  <h3>Your Appliances Were Chosen for a Reason—Trust Them to the Best</h3>
+  <p>At <strong>ZARICCI</strong>, we respect the craftsmanship, innovation, and elegance that went into every detail of your home—and we bring that same level of care and expertise to every appliance we touch.</p>
+</section>
+
+<section>
+  <h3>📞 Schedule Your Luxury Appliance Repair in Palos Verdes Estates Today</h3>
+  <p>Restore your appliances to their peak performance with service as refined as your home.<br>Call <strong>ZARICCI Luxury Appliance Repair</strong> or book online now for elite service you can trust.</p>
+  <p><strong>👉 ZARICCI — Precision Repairs for Palos Verdes Estates’ Most Distinguished Homes.</strong></p>
+</section>
+
+</div>
+</Layout>
