@@ -1,21 +1,110 @@
 ---
 import Layout from '../layouts/Layout.astro';
 const structuredData = {
-	"@context": "https://schema.org",
-	"@type": "WebPage",
-	"name": "Welcome to Luxury Appliance Repair by Zaricci",
-	"description": "High-End Appliance Repair services",
-	"publisher": {
-		"@type": "Organization",
-		"name": "Zaricci",
-	},
-	"datePublished": new Date().toISOString(),
-	"dateModified": new Date().toISOString()
-};
-// Example breadcrumbs for the home page
-const breadcrumbs = [
-	{ text: 'Welcome' }
-];
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://luxuryappliance.repair/aga-appliance-repair/",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "url": "https://luxuryappliance.repair/aga-appliance-repair/",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "description": "ZARICCI Luxury Appliance Repair specializes in AGA appliance repair, installation, and maintenance for classic cast-iron ranges, Total Control series ovens, and Companion units. Our certified technicians offer white-glove service using genuine parts and precision diagnostics throughout Los Angeles and surrounding areas.",
+  "brand": {
+    "@type": "Brand",
+    "name": "AGA",
+    "url": "https://www.agaliving.com/"
+  },
+  "serviceType": "AGA Appliance Repair, Installation, and Maintenance",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Southern California"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "AGA Appliance Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AGA Appliance Repair",
+          "description": "Expert repair services for AGA appliances including radiant heat issues, burner malfunctions, thermostat failures, and digital control system errors."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AGA Appliance Installation",
+          "description": "Professional installation services for AGA ranges including Classic, Total Control, Dual Control, eR3, eR7, and Companion models."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AGA Appliance Maintenance",
+          "description": "Preventive maintenance services for AGA cookers and ovens, including inspection, calibration, and performance optimization."
+        }
+      }
+    ]
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Product",
+      "name": "AGA Ranges and Cookers",
+      "brand": "AGA",
+      "description": "Service for AGA Classic Cast Iron Ranges, Total Control Series, Dual Control, City60, eR3, eR7, Companion, and Module units."
+    }
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "ZARICCI Luxury Appliance Repair",
+    "url": "https://luxuryappliance.repair/"
+  },
+  "knowsAbout": [
+    "AGA Appliance Repair",
+    "AGA Installation Services",
+    "AGA Appliance Maintenance",
+    "AGA Classic Cast Iron Ranges",
+    "AGA Total Control Series",
+    "AGA eR3 and eR7 Electric Series",
+    "AGA Dual Control and City60 Models",
+    "AGA Companion and Module Units",
+    "Luxury Cast-Iron Range Restoration",
+    "Premium Appliance Repair Southern California"
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://luxuryappliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Schedule AGA Appliance Service"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+12133091924",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
 ---
 <Layout
 	title="AGA Appliance Repair – Expert Restoration for the Heart of Your Home"

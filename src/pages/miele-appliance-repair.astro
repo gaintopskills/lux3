@@ -1,21 +1,110 @@
 ---
 import Layout from '../layouts/Layout.astro';
 const structuredData = {
-	"@context": "https://schema.org",
-	"@type": "WebPage",
-	"name": "Welcome to Luxury Appliance Repair by Zaricci",
-	"description": "High-End Appliance Repair services",
-	"publisher": {
-		"@type": "Organization",
-		"name": "Zaricci",
-	},
-	"datePublished": new Date().toISOString(),
-	"dateModified": new Date().toISOString()
-};
-// Example breadcrumbs for the home page
-const breadcrumbs = [
-	{ text: 'Welcome' }
-];
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://luxuryappliance.repair/miele-appliance-repair/",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "url": "https://luxuryappliance.repair/miele-appliance-repair/",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "description": "ZARICCI Luxury Appliance Repair specializes in Miele appliance repair, installation, and maintenance for premium German-engineered appliances. Our certified technicians deliver white-glove service using authentic Miele parts, preserving the innovative technology, performance, and sleek design of your appliances across Los Angeles and surrounding areas.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Miele",
+    "url": "https://www.mieleusa.com/"
+  },
+  "serviceType": "Miele Appliance Repair, Installation, and Maintenance",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Southern California"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Miele Appliance Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Miele Appliance Repair",
+          "description": "Expert repair services for Miele dishwashers, ovens, cooktops, coffee systems, refrigerators, washers, and dryers, restoring performance and efficiency to German-engineered perfection."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Miele Appliance Installation",
+          "description": "Professional installation of Miele integrated kitchen appliances, laundry systems, coffee machines, and smart home appliances with precision setup and calibration."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Miele Appliance Maintenance",
+          "description": "Preventive maintenance for Miele appliances to maximize energy efficiency, operational excellence, and longevity."
+        }
+      }
+    ]
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Product",
+      "name": "Miele Appliances",
+      "brand": "Miele",
+      "description": "Service for all Miele appliances including dishwashers, ovens, ranges, cooktops, coffee systems, vacuum drawers, washers, dryers, and MasterCool refrigeration products."
+    }
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "ZARICCI Luxury Appliance Repair",
+    "url": "https://luxuryappliance.repair/"
+  },
+  "knowsAbout": [
+    "Miele Appliance Repair",
+    "Miele Dishwasher Repairs",
+    "Miele Built-In Coffee Machine Repair",
+    "Miele Cooktop and Oven Service",
+    "Miele Washer and Dryer Repairs",
+    "Miele Refrigerator and MasterCool Service",
+    "Miele Smart Home Appliance Service",
+    "Miele Vacuum Drawer Repairs",
+    "Luxury Miele Appliance Maintenance",
+    "Premium Appliance Repair Southern California"
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://luxuryappliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Schedule Miele Appliance Service"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+12133091924",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
 ---
 <Layout
 	title="Miele Repair – Precision Service for Your German-Engineered Luxury Appliances"

@@ -1,21 +1,110 @@
 ---
 import Layout from '../layouts/Layout.astro';
 const structuredData = {
-	"@context": "https://schema.org",
-	"@type": "WebPage",
-	"name": "Welcome to Luxury Appliance Repair by Zaricci",
-	"description": "High-End Appliance Repair services",
-	"publisher": {
-		"@type": "Organization",
-		"name": "Zaricci",
-	},
-	"datePublished": new Date().toISOString(),
-	"dateModified": new Date().toISOString()
-};
-// Example breadcrumbs for the home page
-const breadcrumbs = [
-	{ text: 'Welcome' }
-];
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://luxuryappliance.repair/viking-appliance-repair/",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "url": "https://luxuryappliance.repair/viking-appliance-repair/",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "description": "ZARICCI Luxury Appliance Repair specializes in Viking appliance repair, installation, and maintenance for professional-grade kitchen and refrigeration appliances. Our certified technicians deliver expert, white-glove service using genuine Viking parts, restoring the powerful performance, style, and innovation of your appliances across Los Angeles and surrounding areas.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Viking",
+    "url": "https://www.vikingrange.com/"
+  },
+  "serviceType": "Viking Appliance Repair, Installation, and Maintenance",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Southern California"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Viking Appliance Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Viking Appliance Repair",
+          "description": "Expert repair services for Viking ranges, ovens, cooktops, refrigerators, dishwashers, and ventilation systems, restoring power, precision, and efficiency to professional-grade standards."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Viking Appliance Installation",
+          "description": "Professional installation of Viking appliances including ranges, built-in refrigerators, cooktops, ovens, and dishwashers with factory-accurate setup and calibration."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Viking Appliance Maintenance",
+          "description": "Preventive maintenance services for Viking appliances to ensure professional-grade performance, energy efficiency, and maximum product lifespan."
+        }
+      }
+    ]
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Product",
+      "name": "Viking Appliances",
+      "brand": "Viking",
+      "description": "Service for all Viking appliances including Professional 5 Series ranges, 7 Series ranges, Virtuoso built-in refrigerators, cooktops, ventilation systems, and dishwashers."
+    }
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "ZARICCI Luxury Appliance Repair",
+    "url": "https://luxuryappliance.repair/"
+  },
+  "knowsAbout": [
+    "Viking Appliance Repair",
+    "Viking Range Service",
+    "Viking Cooktop and Oven Repairs",
+    "Viking Professional Refrigerator Service",
+    "Viking Ventilation Hood Repairs",
+    "Viking Dishwasher Service",
+    "Viking 5 Series and 7 Series Range Repairs",
+    "Luxury Viking Appliance Maintenance",
+    "Premium Appliance Repair Southern California",
+    "Built-in Viking Appliance Installation"
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://luxuryappliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Schedule Viking Appliance Service"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+12133091924",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
 ---
 <Layout
 	title="Viking Repair – Specialized Service for Your Premium Viking Appliances"

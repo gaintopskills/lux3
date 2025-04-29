@@ -1,21 +1,110 @@
 ---
 import Layout from '../layouts/Layout.astro';
 const structuredData = {
-	"@context": "https://schema.org",
-	"@type": "WebPage",
-	"name": "Welcome to Luxury Appliance Repair by Zaricci",
-	"description": "High-End Appliance Repair services",
-	"publisher": {
-		"@type": "Organization",
-		"name": "Zaricci",
-	},
-	"datePublished": new Date().toISOString(),
-	"dateModified": new Date().toISOString()
-};
-// Example breadcrumbs for the home page
-const breadcrumbs = [
-	{ text: 'Welcome' }
-];
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://luxuryappliance.repair/smeg-appliance-repair/",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "url": "https://luxuryappliance.repair/smeg-appliance-repair/",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "description": "ZARICCI Luxury Appliance Repair specializes in Smeg appliance repair, installation, and maintenance for premium retro-inspired and modern Italian-designed appliances. Our certified technicians deliver expert, white-glove service using genuine Smeg parts, preserving the performance, aesthetics, and innovation of your kitchen across Los Angeles and surrounding areas.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Smeg",
+    "url": "https://www.smeg.com/"
+  },
+  "serviceType": "Smeg Appliance Repair, Installation, and Maintenance",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Southern California"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Smeg Appliance Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Smeg Appliance Repair",
+          "description": "Expert repair services for Smeg refrigerators, ovens, cooktops, dishwashers, and ranges, restoring their vibrant style and high-end performance."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Smeg Appliance Installation",
+          "description": "Professional installation services for Smeg appliances, including retro refrigerators, gas ranges, cooktops, wall ovens, and built-in dishwashers with factory precision."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Smeg Appliance Maintenance",
+          "description": "Preventive maintenance for Smeg appliances to preserve functionality, appearance, and the iconic Italian design elements."
+        }
+      }
+    ]
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Product",
+      "name": "Smeg Appliances",
+      "brand": "Smeg",
+      "description": "Service for all Smeg appliances including retro-style refrigerators, gas and electric ranges, wall ovens, microwaves, coffee machines, and kitchen ventilation systems."
+    }
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "ZARICCI Luxury Appliance Repair",
+    "url": "https://luxuryappliance.repair/"
+  },
+  "knowsAbout": [
+    "Smeg Appliance Repair",
+    "Smeg Refrigerator Service",
+    "Smeg Range and Cooktop Repair",
+    "Smeg Wall Oven Repairs",
+    "Smeg Dishwasher Service",
+    "Smeg Microwave and Coffee Machine Repair",
+    "Smeg Retro Series Appliance Repairs",
+    "Smeg Victoria Range Service",
+    "Luxury Italian Appliance Maintenance",
+    "Premium Appliance Repair Southern California"
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://luxuryappliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Schedule Smeg Appliance Service"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+12133091924",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
 ---
 <Layout
 	title="Smeg Appliance Repair – Premium Care for Iconic Italian Design"

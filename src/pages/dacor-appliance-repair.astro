@@ -1,21 +1,110 @@
 ---
 import Layout from '../layouts/Layout.astro';
 const structuredData = {
-	"@context": "https://schema.org",
-	"@type": "WebPage",
-	"name": "Welcome to Luxury Appliance Repair by Zaricci",
-	"description": "High-End Appliance Repair services",
-	"publisher": {
-		"@type": "Organization",
-		"name": "Zaricci",
-	},
-	"datePublished": new Date().toISOString(),
-	"dateModified": new Date().toISOString()
-};
-// Example breadcrumbs for the home page
-const breadcrumbs = [
-	{ text: 'Welcome' }
-];
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://luxuryappliance.repair/dacor-appliance-repair/",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "url": "https://luxuryappliance.repair/dacor-appliance-repair/",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "description": "ZARICCI Luxury Appliance Repair specializes in Dacor appliance repair, installation, and maintenance for ultra-premium kitchen appliances. Our certified technicians provide expert, white-glove service using genuine Dacor parts to restore the performance, style, and innovation your luxury appliances were built for throughout Los Angeles and surrounding areas.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Dacor",
+    "url": "https://www.dacor.com/"
+  },
+  "serviceType": "Dacor Appliance Repair, Installation, and Maintenance",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Southern California"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Dacor Appliance Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Dacor Appliance Repair",
+          "description": "Expert repair services for Dacor refrigerators, ovens, ranges, cooktops, dishwashers, and ventilation systems to restore advanced functionality and sleek performance."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Dacor Appliance Installation",
+          "description": "Professional installation services for Dacor appliances including integrated refrigerators, wall ovens, cooktops, and pro ranges with precision setup and calibration."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Dacor Appliance Maintenance",
+          "description": "Preventive maintenance services for Dacor appliances to ensure peak energy efficiency, performance, and long-term reliability."
+        }
+      }
+    ]
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Product",
+      "name": "Dacor Appliances",
+      "brand": "Dacor",
+      "description": "Service for all Dacor appliances including integrated refrigerators, modernist series ovens, pro ranges, wine columns, induction cooktops, and ventilation hoods."
+    }
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "ZARICCI Luxury Appliance Repair",
+    "url": "https://luxuryappliance.repair/"
+  },
+  "knowsAbout": [
+    "Dacor Appliance Repair",
+    "Dacor Range Installation",
+    "Dacor Wall Oven Repair",
+    "Dacor Induction Cooktop Service",
+    "Dacor Wine Column Repairs",
+    "Dacor Refrigerator Service",
+    "Dacor Dishwasher Repairs",
+    "Luxury Dacor Appliance Maintenance",
+    "Premium Dacor Appliance Service Southern California",
+    "Modernist Series and Heritage Series Appliance Repairs"
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://luxuryappliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Schedule Dacor Appliance Service"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+12133091924",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
 ---
 <Layout
 	title="Dacor Appliance Repair – Expert Care for a Brand That Embodies Innovation and Luxury"

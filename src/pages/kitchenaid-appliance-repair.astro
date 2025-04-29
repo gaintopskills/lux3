@@ -1,21 +1,110 @@
 ---
 import Layout from '../layouts/Layout.astro';
 const structuredData = {
-	"@context": "https://schema.org",
-	"@type": "WebPage",
-	"name": "Welcome to Luxury Appliance Repair by Zaricci",
-	"description": "High-End Appliance Repair services",
-	"publisher": {
-		"@type": "Organization",
-		"name": "Zaricci",
-	},
-	"datePublished": new Date().toISOString(),
-	"dateModified": new Date().toISOString()
-};
-// Example breadcrumbs for the home page
-const breadcrumbs = [
-	{ text: 'Welcome' }
-];
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://luxuryappliance.repair/kitchenaid-appliance-repair/",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "url": "https://luxuryappliance.repair/kitchenaid-appliance-repair/",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "description": "ZARICCI Luxury Appliance Repair specializes in KitchenAid appliance repair, installation, and maintenance for premium kitchen appliances. Our certified technicians deliver precise, white-glove service using genuine KitchenAid parts, ensuring the performance, design integrity, and longevity of your luxury appliances across Los Angeles and surrounding areas.",
+  "brand": {
+    "@type": "Brand",
+    "name": "KitchenAid",
+    "url": "https://www.kitchenaid.com/"
+  },
+  "serviceType": "KitchenAid Appliance Repair, Installation, and Maintenance",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Southern California"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "KitchenAid Appliance Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "KitchenAid Appliance Repair",
+          "description": "Expert repair services for KitchenAid refrigerators, ovens, cooktops, dishwashers, and ventilation appliances, restoring luxury performance and aesthetic precision."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "KitchenAid Appliance Installation",
+          "description": "Professional installation of KitchenAid built-in refrigerators, wall ovens, dishwashers, ranges, and cooktops, ensuring precision fit and factory-calibrated performance."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "KitchenAid Appliance Maintenance",
+          "description": "Preventive maintenance services for KitchenAid appliances to preserve energy efficiency, operational excellence, and modern design longevity."
+        }
+      }
+    ]
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Product",
+      "name": "KitchenAid Appliances",
+      "brand": "KitchenAid",
+      "description": "Service for all KitchenAid premium kitchen appliances including refrigerators, wall ovens, ranges, dishwashers, cooktops, built-in microwaves, and ventilation systems."
+    }
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "ZARICCI Luxury Appliance Repair",
+    "url": "https://luxuryappliance.repair/"
+  },
+  "knowsAbout": [
+    "KitchenAid Appliance Repair",
+    "KitchenAid Refrigerator Repairs",
+    "KitchenAid Wall Oven Service",
+    "KitchenAid Range and Cooktop Repair",
+    "KitchenAid Dishwasher Service",
+    "KitchenAid Built-in Microwave Repair",
+    "KitchenAid Ventilation System Repairs",
+    "Luxury KitchenAid Appliance Maintenance",
+    "KitchenAid Built-in Appliance Installation",
+    "Premium Appliance Repair Southern California"
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://luxuryappliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Schedule KitchenAid Appliance Service"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+12133091924",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
 ---
 <Layout
 	title="KitchenAid Repair – Expert Care for Your Innovative, Trusted Appliances"
