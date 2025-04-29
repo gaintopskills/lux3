@@ -1,0 +1,251 @@
+---
+import Layout from '../layouts/Layout.astro';
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://luxuryappliance.repair/venice/",
+  "name": "ZARICCI Luxury Appliance Repair",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "url": "https://luxuryappliance.repair/venice/",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "description": "ZARICCI Luxury Appliance Repair offers elite, white-glove in-home appliance repair services for beachfront homes, contemporary estates, and luxury residences in Venice. We specialize in premium brands like Sub-Zero, Wolf, Thermador, Miele, La Cornue, and more—providing discreet, certified repairs with same-day service available.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Venice",
+    "addressRegion": "CA",
+    "postalCode": "90291",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 33.9850,
+    "longitude": -118.4695
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "areaServed": {
+    "@type": "City",
+    "name": "Venice",
+    "sameAs": "https://en.wikipedia.org/wiki/Venice,_Los_Angeles"
+  },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Luxury Appliance Repair Services",
+      "description": "In-home repair services for high-end appliances including refrigerators, ovens, cooktops, dishwashers, wine coolers, built-in coffee machines, and laundry units. Brands serviced include Sub-Zero, Wolf, Thermador, Miele, Viking, La Cornue, and more. Serving Venice with precision and discretion.",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Venice Metropolitan Area"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "ZARICCI Luxury Appliance Repair"
+      }
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Appliance Repair Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair", "description": "Precision oven repair services for luxury brands, including convection, steam, and wall-mounted ovens." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair", "description": "High-end stove repair, including gas and electric models from premium manufacturers like Wolf and Viking." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair", "description": "Expert range repair for dual-fuel, gas, and induction units from top-tier brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair", "description": "Professional repair for gas, electric, and induction cooktops by Bosch, Miele, and KitchenAid." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair", "description": "Servicing designer and built-in range hoods with motor, lighting, and venting repairs." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair", "description": "Luxury washer repair for front-load, top-load, and smart models, including Miele and LG Signature." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair", "description": "In-home dryer repair for gas and electric units with vent or heating issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair", "description": "Built-in and panel-ready dishwasher repair services for premium brands like Miele, Bosch, and Cove." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair", "description": "Luxury microwave repair including drawer, built-in, and convection microwave models." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair", "description": "Certified refrigerator repair for built-in and integrated models including Sub-Zero and Thermador." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair", "description": "Freezer repair services for upright, drawer, and column units from top brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair", "description": "Luxury fireplace repair for gas and electric units, including ignition, remote control, and burner issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair", "description": "Outdoor luxury BBQ and built-in grill repair for burners, ignition systems, and controls." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair", "description": "Luxury wine cooler repair services for dual-zone and built-in models by Sub-Zero, Liebherr, and others." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair", "description": "Climate control, humidity regulation, and cooling repairs for custom luxury wine cellars." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair", "description": "Built-in coffee system repair for Miele, Gaggenau, and Wolf brands including grinders and steam units." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair", "description": "Steam oven repair including tank, sensor, and steam generation unit repairs." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair", "description": "Repair services for luxury warming drawers including heating elements and thermostats." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair", "description": "Luxury combi-oven repair for microwave-convection systems from premium brands." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair", "description": "Built-in ice maker repair for brands like Sub-Zero, True, and Scotsman." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair", "description": "High-end trash compactor repairs for mechanical and compression issues." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair", "description": "Repair for built-in beverage centers from True Residential, Perlick, and others." }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair", "description": "Luxury kegerator repair services for residential and commercial units." }}
+    ]
+  },
+  "brand": [
+    { "@type": "Brand", "name": "AGA" },
+    { "@type": "Brand", "name": "Big Chill" },
+    { "@type": "Brand", "name": "BlueStar" },
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "Dacor" },
+    { "@type": "Brand", "name": "Fisher & Paykel" },
+    { "@type": "Brand", "name": "Gaggenau" },
+    { "@type": "Brand", "name": "Jenn-Air" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "La Cornue" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Smeg" },
+    { "@type": "Brand", "name": "Sub-Zero" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Elmira Stove Works" },
+    { "@type": "Brand", "name": "Monogram" },
+    { "@type": "Brand", "name": "Cove" },
+    { "@type": "Brand", "name": "Bertazzoni" },
+    { "@type": "Brand", "name": "ZLINE" },
+    { "@type": "Brand", "name": "ILVE" },
+    { "@type": "Brand", "name": "Fulgor Milano" },
+    { "@type": "Brand", "name": "Lacanche" },
+    { "@type": "Brand", "name": "Robam" },
+    { "@type": "Brand", "name": "Signature Kitchen Suite" },
+    { "@type": "Brand", "name": "True Residential" },
+    { "@type": "Brand", "name": "Hestan" },
+    { "@type": "Brand", "name": "Whirlpool Black Stainless" },
+    { "@type": "Brand", "name": "JennAir Noir" }
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://same-day-appliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+12133091924",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
+
+---
+<Layout
+	title="Local Luxury Appliance Repair – Venice"
+	description="High-end appliances repair - Venice by certified technicians. Same-day appointments are available. Call today!"
+	structuredData={structuredData}
+>
+<div style="margin: 50px">
+<section>
+  <h1>Luxury Appliance Repair in Venice, CA</h1>
+  <p><strong>White-Glove Service for Architectural Homes, Coastal Retreats, and Designer Residences</strong></p>
+  <p>In Venice, where contemporary architecture, artistic energy, and coastal luxury converge, your home is more than a space—it’s an expression of lifestyle and creativity. Your high-end appliances are central to that experience, combining innovation, style, and everyday performance. When they require expert care, you deserve a repair service that matches the spirit and sophistication of your surroundings.</p>
+  <p>At <strong>ZARICCI Luxury Appliance Repair</strong>, we proudly offer high-end appliance repair in Venice, specializing in prestigious brands like Sub-Zero, Wolf, Thermador, Miele, Gaggenau, Viking, La Cornue, and more. We bring factory-certified expertise, genuine OEM parts, and discreet, white-glove service trusted by Venice’s most discerning homeowners.</p>
+</section>
+
+<section>
+  <h3>🔧 Why Venice Homeowners Trust ZARICCI</h3>
+  <ul>
+    <li><strong>✅ Factory-Certified Technicians</strong><br>Our specialists are trained by leading manufacturers to service luxury built-in refrigeration systems, professional-grade ranges, steam ovens, and smart appliances with factory precision.</li>
+    <li><strong>✅ Genuine OEM Parts for Lasting Performance</strong><br>We exclusively use genuine manufacturer-approved parts to protect your appliance’s performance, warranty, and aesthetic integrity.</li>
+    <li><strong>✅ Same-Day or Next-Day Service Available</strong><br>We offer fast, flexible scheduling throughout Venice to deliver immediate, high-quality service without compromising craftsmanship.</li>
+    <li><strong>✅ White-Glove In-Home Care</strong><br>We respect your home’s architecture and design—working discreetly, protecting finishes, and leaving your space immaculate after every visit.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>🛠️ What We Repair in Venice</h3>
+  <h4>❄️ Luxury Refrigerators & Freezers</h4>
+  <ul>
+    <li><strong>Brands:</strong> Sub-Zero, Thermador, Miele</li>
+    <li>Temperature inconsistencies and cooling issues</li>
+    <li>Ice maker malfunctions and water dispenser problems</li>
+    <li>Compressor, evaporator, and built-in panel repairs</li>
+  </ul>
+  <h4>🔥 Ranges, Wall Ovens & Cooktops</h4>
+  <ul>
+    <li><strong>Brands:</strong> Wolf, La Cornue, Gaggenau, Viking</li>
+    <li>Gas ignition failures</li>
+    <li>Uneven heating, convection fan malfunctions, slow preheating</li>
+    <li>Smart system troubleshooting and touch panel repairs</li>
+  </ul>
+  <h4>🚿 Luxury Dishwashers</h4>
+  <ul>
+    <li><strong>Brands:</strong> Miele, Bosch, Cove</li>
+    <li>Poor cleaning or drying performance</li>
+    <li>Drainage problems, leaks, and smart cycle errors</li>
+    <li>Control board and sensor diagnostics</li>
+  </ul>
+  <h4>🧺 Luxury Washers & Dryers</h4>
+  <ul>
+    <li><strong>Brands:</strong> Miele, LG Signature, Fisher & Paykel</li>
+    <li>Washer not spinning, draining, or cycling correctly</li>
+    <li>Dryer not heating or overheating</li>
+    <li>Smart app diagnostics and connectivity repairs</li>
+  </ul>
+  <h4>☕ Built-In Specialty Appliances</h4>
+  <ul>
+    <li><strong>Appliances:</strong> Wine Coolers, Espresso Machines, Steam Ovens, Warming Drawers</li>
+    <li>Temperature inconsistencies</li>
+    <li>Water pump, motor, and smart board repairs</li>
+  </ul>
+</section>
+
+<section>
+  <h3>👨‍🔧 The ZARICCI White-Glove Repair Process</h3>
+  <ol>
+    <li><strong>Simple Booking</strong><br>Call or book online—our concierge team accommodates your lifestyle with flexible, convenient scheduling.</li>
+    <li><strong>On-Time Diagnosis</strong><br>Our brand-certified technician arrives promptly, fully prepared to diagnose and explain the appliance issue clearly and professionally.</li>
+    <li><strong>Transparent, Detailed Quote</strong><br>We provide a written, upfront estimate before any repairs begin—no surprises, no hidden fees.</li>
+    <li><strong>Precision Repairs with Genuine Parts</strong><br>All repairs are completed to exact factory specifications using authentic OEM parts for unmatched reliability and performance.</li>
+    <li><strong>Final Testing and Immaculate Clean-Up</strong><br>We rigorously test your appliance post-repair and leave your home spotless—backed by our satisfaction guarantee.</li>
+  </ol>
+</section>
+
+<section>
+  <h3>🏡 Proudly Serving All of Venice</h3>
+  <p><strong>ZARICCI</strong> proudly serves the entire Venice community, including:</p>
+  <ul>
+    <li>Venice Canals</li>
+    <li>Silver Triangle</li>
+    <li>Oxford Triangle</li>
+    <li>Presidents Row</li>
+    <li>Abbot Kinney Area</li>
+    <li>Milwood and Nowita Place neighborhoods</li>
+  </ul>
+  <p>Whether your home is an architectural masterpiece along the canals, a sleek coastal retreat, or a historic bungalow reimagined for modern living, <strong>ZARICCI</strong> provides precision service tailored to your investment.</p>
+</section>
+
+<section>
+  <h3>When Only Flawless Matters, Trust ZARICCI</h3>
+  <p>Your luxury appliances were chosen for their innovation, craftsmanship, and performance. At <strong>ZARICCI</strong>, we protect that investment with white-glove professionalism, factory-certified expertise, and an unwavering commitment to excellence.</p>
+</section>
+
+<section>
+  <h3>📞 Schedule Your Luxury Appliance Repair in Venice Today</h3>
+  <p>Experience elite, discreet appliance repair service designed for Venice’s most sophisticated homes.<br>Call <strong>ZARICCI Luxury Appliance Repair</strong> or schedule your appointment online today.</p>
+  <p><strong>👉 ZARICCI — Precision Repairs for Venice’s Most Distinctive Homes.</strong></p>
+</section>
+
+</div>
+</Layout>
