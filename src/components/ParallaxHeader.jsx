@@ -21,7 +21,7 @@ const ParallaxHeader = () => {
       </video>
 
       <div className="maintext">
-        <h1>ZARICCI Luxury Appliance Repair</h1>
+        <h1>Luxury Appliance Repair by ZARICCI</h1>
         <p>
           At Luxury Appliance Repair, we specialize in repairing high-end appliances with
           precision, ensuring your kitchen and home run seamlessly. With certified
