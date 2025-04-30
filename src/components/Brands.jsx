@@ -18,6 +18,20 @@ const brands = [
   "Viking",
   "Wolf",
   "Elmira Stove Works",
+  "Monogram",
+  "Cove",
+  "Bertazzoni",
+  "ZLINE",
+  "ILVE",
+  "Fulgor Milano",
+  "Lacanche",
+  "Robam",
+  "Signature Kitchen Suite",
+  "True Residential",
+  "Hestan",
+  "Whirlpool Black Stainless",
+  "JennAir Noir"
+
 ];
 
 export const Brands = () => {
