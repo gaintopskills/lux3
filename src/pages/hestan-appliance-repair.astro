@@ -1,0 +1,135 @@
+---
+import Layout from '../layouts/Layout.astro';
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://luxuryappliance.repair/hestan-appliance-repair/",
+  "name": "Luxury Appliance Repair by Zaricci",
+  "url": "https://luxuryappliance.repair/hestan-appliance-repair/",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "telephone": "+1-213-309-1924",
+  "priceRange": "$$$",
+  "description": "Luxury Appliance Repair by Zaricci offers expert repair, installation, and maintenance for Hestan appliances, including ultra-premium indoor and outdoor ranges, grills, refrigerators, and wine storage systems. Our certified technicians deliver precision service and white-glove care throughout Los Angeles and Southern California.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Los Angeles",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "brand": {
+    "@type": "Brand",
+    "name": "Hestan",
+    "url": "https://home.hestan.com/"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Southern California"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Hestan Appliance Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Hestan Appliance Repair",
+          "description": "Expert diagnostics and repair for Hestan ranges, grills, refrigerators, and wine storage units. We resolve ignition failures, cooling issues, sensor malfunctions, and smart system errors."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Hestan Appliance Installation",
+          "description": "Professional installation of Hestan cooking and refrigeration appliances, including outdoor built-ins, island grills, wine storage, and smart kitchen setups."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Hestan Appliance Maintenance",
+          "description": "Preventive maintenance for Hestan indoor and outdoor appliances to ensure peak performance, longevity, and safety."
+        }
+      }
+    ]
+  },
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Product",
+        "name": "Hestan Ranges, Grills, and Refrigeration",
+        "brand": {
+          "@type": "Brand",
+          "name": "Hestan"
+        },
+        "description": "Full service for Hestan pro-style ranges, smart grills, refrigeration systems, and outdoor cooking suites including built-in and freestanding units."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Hestan Appliance Repair, Installation, and Maintenance"
+      }
+    }
+  ],
+  "provider": {
+    "@type": "Organization",
+    "name": "Luxury Appliance Repair by Zaricci",
+    "url": "https://luxuryappliance.repair/"
+  },
+  "knowsAbout": [
+    "Hestan Appliance Repair",
+    "Hestan Installation Services",
+    "Hestan Appliance Maintenance",
+    "Hestan Ranges and Cooktops",
+    "Hestan Outdoor Grills and Kitchens",
+    "Hestan Smart Appliances",
+    "Hestan Wine Storage and Refrigeration",
+    "Luxury Outdoor Kitchen Services",
+    "Premium Appliance Repair Los Angeles",
+    "White-Glove Hestan Support Southern California"
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://luxuryappliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Schedule Hestan Appliance Service"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+12133091924",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
+---
+<Layout
+	title="Hestan Appliance Repair – Expert Service"
+	description="Bosch is renowned for blending cutting-edge technology, quiet operation, and energy efficiency—delivering dependable performance in kitchens and laundry rooms worldwide. When your Bosch appliance faces a glitch, you can rely on <strong>Luxury Appliance Repair by Zaricci</strong> for prompt, professional repair. Our brand-certified technicians are trained to handle even the most advanced Bosch models, ensuring you continue to enjoy the high-quality results this leading brand is known for."
+	structuredData={structuredData}
+>
+<div style="margin: 50px">
+
+</div>
+</Layout>
+
