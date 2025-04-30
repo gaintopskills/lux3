@@ -133,6 +133,20 @@ export const MegaMenu = () => {
       { label: "Thermador", href: "/thermador-appliance-repair/" },
       { label: "Viking", href: "/viking-appliance-repair/" },
       { label: "Wolf", href: "/wolf-appliance-repair/" },
+
+      { label: "Monogram", href: "/monogram-appliance-repair/" },
+      { label: "Cove", href: "/cove-appliance-repair/" },
+      { label: "Bertazzoni", href: "/bertazzoni-appliance-repair/" },
+      { label: "ZLINE", href: "/zline-appliance-repair/" },
+      { label: "ILVE", href: "/ilive-appliance-repair/" },
+      { label: "Fulgor Milano", href: "/fulgor-milano-appliance-repair/" },
+      { label: "Lacanche", href: "/lacanche-appliance-repair/" },
+      { label: "Robam", href: "/robam-appliance-repair/" },
+      { label: "Signature Kitchen Suite", href: "/signature-kitchen-suite-appliance-repair/" },
+      { label: "True Residential", href: "/true-residential-appliance-repair/" },
+      { label: "Hestan", href: "/hestan-appliance-repair/" },
+      { label: "Whirlpool Black Stainless", href: "/whirlpool-appliance-repair/" },
+      { label: "JennAir Noir", href: "/jennair-noir-appliance-repair/" }
     ],
   ].map((col, idx) => (
     <div className="column" key={idx}>
