@@ -92,9 +92,10 @@ export const MegaMenu = () => {
                   { label: "Refrigerator Repair", href: "/refrigerator-repair/" },
                   { label: "Freezer Repair", href: "/freezer-repair/" },
              ],
-                  ["Fireplace repair", "BBQ Repair", 
+                  [{ label: "Fireplace repair", href: "/fireplace-repair/" },
+                  { label: "BBQ Repair", href: "/bbq-repair/" },
                   { label: "Wine Cooler", href: "/wine-cooler-repair/" },
-                   "Wine Cellar Repair",  ],
+                  { label: "Wine Cellar Repair", href: "/wine-cellar-repair/" },  ],
                 ].map((col, idx) => (
                   <div className="column" key={idx}>
                     {col.map((item) =>
