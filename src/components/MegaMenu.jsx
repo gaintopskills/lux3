@@ -195,13 +195,13 @@ export const MegaMenu = () => {
     { label: "Glendale", href: "/glendale/" },
     { label: "Hermosa Beach", href: "/hermosa-beach/" },
     { label: "Hollywood", href: "/hollywood/" },
-    { label: "Holmby Hills", href: "/holmby-hills/" },
-    { label: "La Cañada Flintridge", href: "/la-canada-flintridge/" },
+    
   ],
 
   // Column 2
   [
-   
+    { label: "Holmby Hills", href: "/holmby-hills/" },
+    { label: "La Cañada Flintridge", href: "/la-canada-flintridge/" },
     { label: "Los Angeles", href: "/los-angeles/" },
     { label: "Los Feliz", href: "/los-feliz/" },
     { label: "Malibu", href: "/malibu/" },
@@ -212,12 +212,12 @@ export const MegaMenu = () => {
     { label: "Pasadena", href: "/pasadena/" },
     { label: "Playa Del Rey", href: "/playa-del-rey/" },
     { label: "Rancho Palos Verdes", href: "/rancho-palos-verdes/" },
-    { label: "Rolling Hills Estates", href: "/rolling-hills-estates/" },
+  
   ],
 
   // Column 3
   [
-    
+    { label: "Rolling Hills Estates", href: "/rolling-hills-estates/" },
     { label: "San Marino", href: "/san-marino/" },
     { label: "Santa Monica", href: "/santa-monica/" },
     { label: "Sherman Oaks", href: "/sherman-oaks/" },
