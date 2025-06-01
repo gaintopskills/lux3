@@ -79,9 +79,7 @@ export const MegaMenu = () => {
             </a></button>
             <div className={`dropdown-content ${openDropdown === "Household" ? "show" : ""}`}>
               <h3>High-End Appliances We Repair</h3>
-              <div className="row">
-
-                
+              <div className="row">       
                 {[
                   [{ label: "Oven Repair", href: "/oven-repair/" },
                   { label: "Stove Repair", href: "/stove-repair/" },
@@ -215,9 +213,7 @@ export const MegaMenu = () => {
     { label: "Pasadena", href: "/pasadena/" },
     { label: "Playa Del Rey", href: "/playa-del-rey/" },
     { label: "Rancho Palos Verdes", href: "/rancho-palos-verdes/" },
-  
   ],
-
   // Column 3
   [
     { label: "Rolling Hills Estates", href: "/rolling-hills-estates/" },
