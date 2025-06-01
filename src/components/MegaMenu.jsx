@@ -80,11 +80,14 @@ export const MegaMenu = () => {
             <div className={`dropdown-content ${openDropdown === "Household" ? "show" : ""}`}>
               <h3>High-End Appliances We Repair</h3>
               <div className="row">
+
+                
                 {[
                   [{ label: "Oven Repair", href: "/oven-repair/" },
                   { label: "Stove Repair", href: "/stove-repair/" },
                   { label: "Range Repair", href: "/range-repair/" },
                   { label: "Cooktop Repair", href: "/cooktop-repair/" },
+                ],
                   [{ label: "Wachine Machine Repair", href: "/washing-machine-repair/" }, 
                   { label: "Dryer Repair", href: "/dryer-repair/" }, 
                   { label: "Dishwasher Repair", href: "/dishwasher-repair/" },
