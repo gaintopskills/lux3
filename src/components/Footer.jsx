@@ -15,7 +15,7 @@ export const Footer = () => {
           <h3>Company</h3>
           <ul>
             <li><a href="/about/">About Us</a></li>
-            <li>Address: 814 S. Westgate Ave, Los Angeles, CA 90049</li>
+            <li>Address: 814 S. Westgate Ave #119, Los Angeles, CA 90049</li>
             <li>Email: info@luxuryappliance.repair</li>
             <li>Call: (424)499-7788</li>
             <li><a href="/sitemap-0.xml" className="sitemap-link">Sitemap</a></li>
