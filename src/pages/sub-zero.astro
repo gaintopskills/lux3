@@ -1,0 +1,112 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ParallaxHeader from '../components/Header/Sub-Zero.jsx'
+import { TabsAccordion } from '../components/TabsAccordion.jsx'
+import '../styles/global.css';
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://luxuryappliance.repair/sub-zero-repair/",
+  "name": "Luxury Appliance Repair by Zaricci",
+  "url": "https://luxuryappliance.repair/sub-zero-repair/",
+  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "telephone": "+1-424-499-7788",
+  "priceRange": "$$$",
+  "description": "Luxury Appliance Repair by Zaricci specializes in Sub-Zero appliance repair, installation, and maintenance for built-in and integrated refrigeration systems. Our certified technicians deliver discreet, white-glove service using genuine Sub-Zero parts to ensure lasting performance, luxury aesthetics, and optimal food preservation across Los Angeles and surrounding areas.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Sub-Zero",
+    "url": "https://subzero-wolf.com/"
+  },
+  "serviceType": "Sub-Zero Appliance Repair, Installation, and Maintenance",
+  "areaServed": {
+    "@type": "Place",
+    "name": "Southern California"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Sub-Zero Appliance Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Sub-Zero Appliance Repair",
+          "description": "Certified repair services for Sub-Zero refrigerators, wine coolers, freezers, and undercounter units—resolving cooling issues, compressor failures, and sensor malfunctions with precision."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Sub-Zero Appliance Installation",
+          "description": "Professional installation of Sub-Zero integrated and column refrigerators, wine storage, and drawer units with factory-level calibration and panel alignment."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Sub-Zero Appliance Maintenance",
+          "description": "Preventive maintenance for Sub-Zero appliances to ensure quiet operation, optimal cooling performance, and long-term preservation of food and wine."
+        }
+      }
+    ]
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "Luxury Appliance Repair by Zaricci",
+    "url": "https://luxuryappliance.repair/"
+  },
+  "knowsAbout": [
+    "Sub-Zero Appliance Repair",
+    "Sub-Zero Refrigerator Service",
+    "Sub-Zero Freezer Column Repairs",
+    "Sub-Zero Wine Cooler Repair",
+    "Sub-Zero PRO Series Repairs",
+    "Sub-Zero Integrated Drawer Repair",
+    "Built-in and Panel-Ready Refrigeration Installation",
+    "Luxury Appliance Maintenance for Sub-Zero",
+    "Sub-Zero Compressor Replacement",
+    "Premium Appliance Repair Southern California"
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://luxuryappliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Schedule Sub-Zero Appliance Service"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+14244997788",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
+---
+<Layout
+	title="Sub-Zero Repair – Expert Care for Your Premium Refrigerator"
+	description="we specialize in Sub-Zero repair, bringing together trained technicians, authentic parts, and a commitment to unmatched service quality. Whether your unit is experiencing temperature inconsistencies, making unusual noises, or simply not performing up to par, trust us to restore it to peak efficiency"
+	structuredData={structuredData}
+>
+<ParallaxHeader client:idle/>
+<TabsAccordion />
+</Layout>
+
