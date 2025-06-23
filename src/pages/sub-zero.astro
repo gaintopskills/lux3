@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ParallaxHeader from '../components/Header/Sub-Zero.jsx'
-import { TabsAccordion } from '../components/Tabs/Oven.jsx'
+import Tabs from '../components/Tabs/Oven.jsx'
 import '../styles/global.css';
 
 const structuredData = {
@@ -107,6 +107,6 @@ const structuredData = {
 	structuredData={structuredData}
 >
 <ParallaxHeader client:idle/>
-<TabsAccordion />
+<Tabs client:load/> />
 </Layout>
 
