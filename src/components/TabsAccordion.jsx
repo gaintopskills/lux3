@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./Tabs.css";
+
 
 export const Tabs = () => {
   const [isMobile, setIsMobile] = useState(false);
