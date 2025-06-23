@@ -184,17 +184,13 @@ export const MegaMenu = () => {
                 {[
                    // Column 1
   [
-    { label: "Alhambra", href: "/alhambra/" },
     { label: "Bel Air", href: "/bel-air/" },
     { label: "Beverly Hills", href: "/beverly-hills/" },
     { label: "Brentwood", href: "/brentwood/" },
-    { label: "Burbank", href: "/burbank/" },
     { label: "Calabasas", href: "/calabasas/" },
     { label: "Century City", href: "/century-city/" },
-    { label: "Culver City", href: "/culver-city/" },
     { label: "Encino", href: "/encino/" },
     { label: "Glendale", href: "/glendale/" },
-    { label: "Hermosa Beach", href: "/hermosa-beach/" },
     { label: "Hollywood", href: "/hollywood/" },
     
   ],
@@ -219,15 +215,9 @@ export const MegaMenu = () => {
     { label: "Rolling Hills Estates", href: "/rolling-hills-estates/" },
     { label: "San Marino", href: "/san-marino/" },
     { label: "Santa Monica", href: "/santa-monica/" },
-    { label: "Sherman Oaks", href: "/sherman-oaks/" },
-    { label: "South Pasadena", href: "/south-pasadena/" },
-    { label: "Studio City", href: "/studio-city/" },
-    { label: "Tarzana", href: "/tarzana/" },
     { label: "Thousand Oaks", href: "/thousand-oaks/" },
-    { label: "Venice", href: "/venice/" },
     { label: "West Hollywood", href: "/west-hollywood/" },
     { label: "Westwood", href: "/westwood/" },
-    { label: "Woodland Hills", href: "/woodland-hills/" }
   ],
                 ].map((col, idx) => (
                   <div className="column" key={idx}>
