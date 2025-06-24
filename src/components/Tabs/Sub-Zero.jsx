@@ -15,7 +15,7 @@ export const Tabs = () => {
       description: (
         <><p>Our factory-trained <strong>Sub-Zero technicians</strong> worked on just about every issue these <strong>luxury refrigerators</strong> can throw at us. Whether it’s the <strong>Sub-Zero PRO series</strong>, a <strong>panel-ready built-in fridge</strong>, or a sleek <strong>integrated column refrigerator</strong>, we approach every repair with the same level of care, precision, and respect for your home.</p>
       
-        <h3>Common Sub-Zero Refrigerator Problems:</h3>
+        <h3>Common Problems:</h3>
         <ul>
           <li><strong>Refrigerator not cooling</strong></li>
           <li><strong>Fridge warm but freezer cold</strong></li>
@@ -27,7 +27,7 @@ export const Tabs = () => {
           <li><strong>Fridge making noise</strong></li>
         </ul>
       
-        <h2>How We Perform Sub-Zero Refrigerator Repair</h2>
+        <h2>How We Fix It</h2>
        <p>✅ We start with a full inspection of the sealed system, compressor function, and evaporator coil performance. If needed, we handle sealed system repairs — including compressor, condenser, and evaporator replacement.</p>
         <p>✅ If you’re dealing with a <strong>Sub-Zero fridge</strong> that’s cooling unevenly, we check airflow fans, dampers, and defrost cycles. For panel lights flashing or unresponsive controls, we replace or reprogram the <strong>digital control board</strong> using certified <strong>Sub-Zero components</strong>. Whether it's a <strong>panel-ready model</strong>, <strong>integrated column</strong>, or <strong>PRO series unit</strong>, you’ll get fast, discreet, and professional <strong>Sub-Zero repair</strong> with a perfect finish.</p>
       
@@ -42,7 +42,7 @@ export const Tabs = () => {
       description: (
         <><p>The most common call we get for <strong>Sub-Zero freezers</strong>? “It’s not cold enough.” That could be more than just a bad thermostat — it might be a condenser fan failure, evaporator frost issue, or even a control board malfunction.</p>
 
-        <h3>Frequent Freezer Problems:</h3>
+        <h3>Common Problems:</h3>
         <ul>
           <li><strong>Freezer too warm</strong></li>
           <li><strong>Excessive frost or ice buildup</strong></li>
@@ -51,7 +51,7 @@ export const Tabs = () => {
           <li><strong>Ice maker not making ice</strong></li>
         </ul>
       
-        <h3>How We Perform Freezer Repairs</h3>
+        <h3>How We Fix It</h3>
         <ul>
           <li>✅ We inspect the defrost cycle, gaskets, fan motors, and thermistors. If your <strong>Sub-Zero ice maker</strong> isn’t working, we check the inlet valve, filters, and water lines for blockage or damage.</li>
           <li>✅ Older units often benefit from sensor recalibration and control board upgrades — we handle all of it with OEM parts. You'll get a fast, factory-certified repair that protects your appliance’s performance and lifespan.</li>
@@ -66,7 +66,7 @@ export const Tabs = () => {
       description: (
         <><p>We get a lot of calls from clients with <strong>Sub-Zero wine coolers</strong> that aren’t holding temperature. These systems are more than just fancy fridges — they’re finely tuned environments for preserving flavor, aroma, and the long-term quality of your wine.</p>
 
-        <h3>Common Sub-Zero Wine Cooler Issues:</h3>
+        <h3>Common Problems:</h3>
         <ul>
           <li><strong>Wine cooler not cooling properly</strong></li>
           <li><strong>Temperature imbalance between zones</strong></li>
@@ -75,7 +75,7 @@ export const Tabs = () => {
           <li><strong>Flashing lights or control board issues</strong></li>
         </ul>
       
-        <h3>How We Repair Wine Coolers</h3>
+        <h3>How We Fix It</h3>
         <ul>
           <li>✅ We check each cooling zone, calibrate thermistors, inspect door seals, and replace faulty fans or sensors.</li>
           <li>✅ For digital issues, we’re trained to update or replace <strong>Sub-Zero control boards</strong> and reset system firmware. We handle these repairs discreetly, preserving both the function and design of your unit.</li>
@@ -90,7 +90,7 @@ export const Tabs = () => {
       description: (
         <><p>Unlike wine coolers, <strong>Sub-Zero beverage centers</strong> are built for everyday use — cooling water, soda, beer, and juice. But when they go warm or loud, they still demand expert service.</p>
 
-        <h3>Most Common Beverage Cooler Issues:</h3>
+        <h3>Common Problems</h3>
         <ul>
           <li><strong>Beverage center not cooling evenly</strong></li>
           <li><strong>Interior light not turning on</strong></li>
@@ -99,7 +99,7 @@ export const Tabs = () => {
           <li><strong>Door seal loose or warped</strong></li>
         </ul>
       
-        <h3>How We Fix Sub-Zero Beverage Centers</h3>
+        <h3>How We Fix It</h3>
         <ul>
           <li>✅ We check cooling systems, electronic controls, and door alignment.</li>
           <li>✅ If the compressor’s humming or your display won’t respond, we repair or replace key components using genuine <strong>Sub-Zero parts</strong>.</li>
@@ -117,8 +117,8 @@ export const Tabs = () => {
 
         <h3>What You Can Expect:</h3>
         <ul>
-          <li>✅ Same-day <strong>Sub-Zero repair</strong> appointments</li>
-          <li>✅ Emergency <strong>Sub-Zero appliance service</strong></li>
+          <li>✅ Same-day appointments</li>
+          <li>✅ Emergency service</li>
           <li>✅ White-glove, in-home professionalism</li>
           <li>✅ Upfront pricing with no surprises</li>
           <li>✅ 3 month warranty on parts and labor</li>
