@@ -17,14 +17,14 @@ export const Tabs = () => {
       
         <h3>Common Sub-Zero Refrigerator Problems:</h3>
         <ul>
-          <li><strong>Sub-Zero refrigerator not cooling</strong></li>
+          <li><strong>Refrigerator not cooling</strong></li>
           <li><strong>Fridge warm but freezer cold</strong></li>
-          <li><strong>Sub-Zero compressor failure</strong></li>
-          <li><strong>Sub-Zero fridge leaking water</strong></li>
-          <li><strong>Sub-Zero control board issue</strong></li>
+          <li><strong>Compressor failure</strong></li>
+          <li><strong>Fridge leaking water</strong></li>
+          <li><strong>Control board issue</strong></li>
           <li><strong>Vacuum condenser warning</strong></li>
-          <li><strong>Sub-Zero door won’t seal</strong></li>
-          <li><strong>Sub-Zero fridge making noise</strong></li>
+          <li><strong>Door won’t seal</strong></li>
+          <li><strong>Fridge making noise</strong></li>
         </ul>
       
         <h2>How We Perform Sub-Zero Refrigerator Repair</h2>
@@ -44,11 +44,11 @@ export const Tabs = () => {
 
         <h3>Frequent Freezer Problems:</h3>
         <ul>
-          <li><strong>Sub-Zero freezer too warm</strong></li>
+          <li><strong>Freezer too warm</strong></li>
           <li><strong>Excessive frost or ice buildup</strong></li>
           <li><strong>Condenser fan motor failure</strong></li>
           <li><strong>Defrost sensor or thermostat failure</strong></li>
-          <li><strong>Sub-Zero ice maker not making ice</strong></li>
+          <li><strong>Ice maker not making ice</strong></li>
         </ul>
       
         <h3>How We Perform Freezer Repairs</h3>
