@@ -15,7 +15,7 @@ export const Tabs = () => {
       description: (
         <><p>Our factory-trained <strong>Sub-Zero technicians</strong> worked on just about every issue these <strong>luxury refrigerators</strong> can throw at us. Whether it’s the <strong>Sub-Zero PRO series</strong>, a <strong>panel-ready built-in fridge</strong>, or a sleek <strong>integrated column refrigerator</strong>, we approach every repair with the same level of care, precision, and respect for your home.</p>
       
-        <h2>Common Sub-Zero Refrigerator Problems:</h2>
+        <h3>Common Sub-Zero Refrigerator Problems:</h3>
         <ul>
           <li><strong>Sub-Zero refrigerator not cooling</strong></li>
           <li><strong>Fridge warm but freezer cold</strong></li>
