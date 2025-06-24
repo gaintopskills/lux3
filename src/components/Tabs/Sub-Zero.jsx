@@ -139,8 +139,6 @@ export const Tabs = () => {
       ),
     },
   ];
-  
-
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
