@@ -14,9 +14,8 @@ export const Tabs = () => {
       img: "/sub-zero/sub-zero-appliance-repair.webp",
       description: (
         <><p>Our factory-trained <strong>Sub-Zero technicians</strong> worked on just about every issue these <strong>luxury refrigerators</strong> can throw at us. Whether it’s the <strong>Sub-Zero PRO series</strong>, a <strong>panel-ready built-in fridge</strong>, or a sleek <strong>integrated column refrigerator</strong>, we approach every repair with the same level of care, precision, and respect for your home.</p>
-        <p>When your <strong>Sub-Zero fridge</strong> isn’t getting cold, starts leaking water, or throws a <strong>vacuum condenser warning</strong>, we never assume the cause. We begin with full professional diagnostics using <strong>Sub-Zero-specific tools</strong> and test every key component: the <strong>compressor</strong>, <strong>evaporator</strong>, airflow systems, control board, and sensors. A single issue could stem from a <strong>failed fan motor</strong>, <strong>dirty condenser coils</strong>, or a <strong>faulty thermistor</strong> — and we know how to find the root fast.</p>
       
-        <h2>Common Sub-Zero Refrigerator Problems We Fix:</h2>
+        <h2>Common Sub-Zero Refrigerator Problems:</h2>
         <ul>
           <li><strong>Sub-Zero refrigerator not cooling</strong></li>
           <li><strong>Fridge warm but freezer cold</strong></li>
@@ -29,10 +28,9 @@ export const Tabs = () => {
         </ul>
       
         <h2>How We Perform Sub-Zero Refrigerator Repair</h2>
-        <ul>
-          <li>✅ We start with a full inspection of the sealed system, compressor function, and evaporator coil performance. If needed, we handle sealed system repairs — including compressor, condenser, and evaporator replacement.</li>
-          <li>✅ If you’re dealing with a <strong>Sub-Zero fridge</strong> that’s cooling unevenly, we check airflow fans, dampers, and defrost cycles. For panel lights flashing or unresponsive controls, we replace or reprogram the <strong>digital control board</strong> using certified <strong>Sub-Zero components</strong>. Whether it's a <strong>panel-ready model</strong>, <strong>integrated column</strong>, or <strong>PRO series unit</strong>, you’ll get fast, discreet, and professional <strong>Sub-Zero repair</strong> with a perfect finish.</li>
-        </ul>
+       <p>✅ We start with a full inspection of the sealed system, compressor function, and evaporator coil performance. If needed, we handle sealed system repairs — including compressor, condenser, and evaporator replacement.</p>
+        <p>✅ If you’re dealing with a <strong>Sub-Zero fridge</strong> that’s cooling unevenly, we check airflow fans, dampers, and defrost cycles. For panel lights flashing or unresponsive controls, we replace or reprogram the <strong>digital control board</strong> using certified <strong>Sub-Zero components</strong>. Whether it's a <strong>panel-ready model</strong>, <strong>integrated column</strong>, or <strong>PRO series unit</strong>, you’ll get fast, discreet, and professional <strong>Sub-Zero repair</strong> with a perfect finish.</p>
+      
         </>
       ),
     },
@@ -40,7 +38,7 @@ export const Tabs = () => {
       id: "content2",
       title: "Freezer Repair",
   heading: "Sub-Zero Freezer Repair",
-      img: "/oven-repair/2-oven.webp",
+      img: "/sub-zero/sub-zero-freezer-repair.webp",
       description: (
         <><p>The most common call we get for <strong>Sub-Zero freezers</strong>? “It’s not cold enough.” That could be more than just a bad thermostat — it might be a condenser fan failure, evaporator frost issue, or even a control board malfunction.</p>
 
@@ -64,7 +62,7 @@ export const Tabs = () => {
       id: "content3",
       title: "Wine Cooler Repair",
   heading: "Sub-Zero Wine Cooler Repair",
-      img: "/oven-repair/3-oven.webp",
+      img: "/sub-zero/sub-zero-wine-cooler-repair.webp",
       description: (
         <><p>We get a lot of calls from clients with <strong>Sub-Zero wine coolers</strong> that aren’t holding temperature. These systems are more than just fancy fridges — they’re finely tuned environments for preserving flavor, aroma, and the long-term quality of your wine.</p>
 
@@ -88,7 +86,7 @@ export const Tabs = () => {
       id: "content4",
       title: "Beverage Center Repair",
   heading: "Sub-Zero Beverage Center Repair",
-      img: "/oven-repair/5-oven.webp",
+      img: "/sub-zero/sub-zero-beverage-center-repair.webp",
       description: (
         <><p>Unlike wine coolers, <strong>Sub-Zero beverage centers</strong> are built for everyday use — cooling water, soda, beer, and juice. But when they go warm or loud, they still demand expert service.</p>
 
@@ -113,6 +111,7 @@ export const Tabs = () => {
       id: "content5",
       title: "Why Choose Us?",
   heading: "Why Homeowners Choose Zaricci for Sub-Zero Repair",
+  img: "/sub-zero/best-sub-zero-repair.webp",
       description: (
         <><p>We’ve seen too many homeowners burned by generic techs who don’t understand <strong>luxury appliances</strong>. Every <strong>Sub-Zero appliance technician</strong> on our team is <strong>factory-trained and licensed</strong>. We repair <strong>Sub-Zero refrigerators</strong>, <strong>freezers</strong>, <strong>wine coolers</strong>, and <strong>beverage centers</strong>.</p>
 
@@ -180,7 +179,7 @@ export const Tabs = () => {
   <button className="tabs-button">Book</button>
 </a>
 <a href="tel:3238704790">
-  <button className="tabs-button">Call: (323) 870-4790</button>
+  <button className="tabs-button">Call: (424) 499-7788</button>
 </a>
            </div>
             ))}
@@ -212,7 +211,7 @@ export const Tabs = () => {
   <button className="tabs-button">Book</button>
 </a>
 <a href="tel:3238704790">
-  <button className="tabs-button">Call: (323) 870-4790</button>
+  <button className="tabs-button">Call: (424) 499-7788</button>
 </a>
              </div>
               )}

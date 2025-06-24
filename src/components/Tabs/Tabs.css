@@ -138,8 +138,8 @@
   }
   
   .image-float {
-    float: left;
-    width: 500px;
+    float: right;
+    width: 300px;
     height: auto;
     margin: 0 20px 20px 0;
     border-radius: 5px;
