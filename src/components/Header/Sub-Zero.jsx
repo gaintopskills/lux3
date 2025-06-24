@@ -21,7 +21,7 @@ const ParallaxHeader = () => {
       </video>
 
       <div className="maintext">
-        <h1>Sub-Zero Appliance Repair by ZARICCI</h1>
+        <h1>Sub-Zero Appliance Repair</h1>
         <p>
         As a factory-trained Sub-Zero repair technicians. We specialize in luxury appliance repair including Sub-Zero repair, offering same-day, in-home service you can count on.
 

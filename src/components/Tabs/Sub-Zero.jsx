@@ -111,20 +111,32 @@ export const Tabs = () => {
     },
     {
       id: "content5",
-      title: "Oven Maintenance Services",
-  heading: "Professional Oven Maintenance Services – Why Regular Care is Essential",
+      title: "Why Choose Us?",
+  heading: "Why Homeowners Choose Zaricci for Sub-Zero Repair",
       description: (
-        <><p><strong>Burner and Element Cleaning</strong>: Cleaning <strong>surface burners</strong> and <strong>elements</strong> improves <strong>heat distribution</strong> and <strong>cooking performance</strong>.</p>
-        <p><strong>Gas Line Inspection</strong>: For <strong>gas ovens</strong>, we inspect connections to avoid leaks and ensure safe operation.</p>
-        <p><strong>Electrical Component Check</strong>: We inspect <strong>thermostats</strong>, <strong>control boards</strong>, and heating elements for <strong>electric ovens</strong> to keep them functioning smoothly.</p> </>
+        <><p>We’ve seen too many homeowners burned by generic techs who don’t understand <strong>luxury appliances</strong>. Every <strong>Sub-Zero appliance technician</strong> on our team is <strong>factory-trained and licensed</strong>. We repair <strong>Sub-Zero refrigerators</strong>, <strong>freezers</strong>, <strong>wine coolers</strong>, and <strong>beverage centers</strong>.</p>
+
+        <h3>What You Can Expect:</h3>
+        <ul>
+          <li>✅ Same-day <strong>Sub-Zero repair</strong> appointments</li>
+          <li>✅ Emergency <strong>Sub-Zero appliance service</strong></li>
+          <li>✅ White-glove, in-home professionalism</li>
+          <li>✅ Upfront pricing with no surprises</li>
+          <li>✅ 3 month warranty on parts and labor</li>
+        </ul> </>
       ),
     },
     {
       id: "content6",
-      title: "Contact Us",
-  heading: "Contact Us for Oven Repair Services in Los Angeles",
+      title: "Book an Appointment",
+  heading: "Book Sub-Zero Repair Near You",
       description: (
-        <><p>If you're experiencing <strong>oven issues</strong>, don't delay. Contact <strong>Same Day Appliance Repair</strong> for prompt, reliable service. We proudly serve <strong>Los Angeles</strong> and surrounding areas, offering <strong>same-day oven repair services</strong> for all oven models. For trusted and affordable oven repair, <strong>call us today</strong> to bring functionality back to your kitchen.</p></>
+        <><p>If you searched for <strong>“Sub-Zero appliance repair near me”</strong> or <strong>“who can fix a Sub-Zero refrigerator near me?”</strong> — you found the best. Call now to book your <strong>Sub-Zero fridge repair</strong> appointment, or schedule a same-day <strong>Sub-Zero service</strong> visit with one of our elite <strong>Sub-Zero technicians</strong>.</p>
+
+        <p>📍 Proudly serving <strong>luxury homes</strong> in Brentwood, Bel Air, Beverly Hills, Calabasas, West Hollywood, Santa Monica, Pasadena, San Marino, Pacific Palisades, Malibu, Thousand Oaks and nearby areas</p>
+      
+        <p>Call Zaricci today for fast and reliable <strong>Sub-Zero repair</strong></p>
+        </>
       ),
     },
   ];
