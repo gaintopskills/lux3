@@ -217,3 +217,25 @@ color:#ffffff;
     }
 }
   /*End Parallax Header*/
+
+  .subzero-image {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 215, 0, 0.5); /* soft gold glow */
+    box-shadow:
+      0 4px 10px rgba(0, 0, 0, 0.6),
+      0 0 15px rgba(255, 215, 0, 0.3); /* outer gold glow */
+  
+    margin: 20px auto;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .subzero-image:hover {
+    transform: scale(1.02);
+    box-shadow:
+      0 6px 16px rgba(0, 0, 0, 0.7),
+      0 0 20px rgba(255, 215, 0, 0.5); /* more intense glow on hover */
+  }
+  
