@@ -74,9 +74,9 @@ export const MegaMenu = () => {
           )}
           {/* Home Dropdown */}
           <div className="dropdown">
-           <button className="dropbtn" ><a href="/services/" onClick={() => handleDropdownToggle("Household")}>
+           <button className="dropbtn" >
               Services <ArrowIcon isOpen={openDropdown === "Household"} />
-            </a></button>
+            </button>
             <div className={`dropdown-content ${openDropdown === "Household" ? "show" : ""}`}>
               <h3>High-End Appliances We Repair</h3>
               <div className="row">       
@@ -137,7 +137,7 @@ export const MegaMenu = () => {
   ],
     [
     { label: "Smeg", href: "/smeg-appliance-repair/" },
-    { label: "Sub-Zero", href: "/sub-zero-repair/" },
+    { label: "Sub-Zero", href: "/sub-zero/" },
     { label: "Thermador", href: "/thermador-appliance-repair/" },
     { label: "Viking", href: "/viking-appliance-repair/" },
     { label: "Wolf", href: "/wolf-appliance-repair/" },
