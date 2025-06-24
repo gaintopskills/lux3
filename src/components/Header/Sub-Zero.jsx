@@ -21,7 +21,7 @@ const ParallaxHeader = () => {
       </video>
 
       <div className="maintext">
-        <h1>Sub-Zero Repair</h1>
+        <h1 class="gold-embossed" data-text="SUB-ZERO">Sub-Zero Repair</h1>
         <img width="400" src="/sub-zero/sub-zero-repair-services.webp" alt="Sub-Zero Repair Services"/>
         <p>
         As a factory-trained Sub-Zero repair technicians. We specialize in luxury appliance repair including Sub-Zero repair, offering same-day, in-home service you can count on.
