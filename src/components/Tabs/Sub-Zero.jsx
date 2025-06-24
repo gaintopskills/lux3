@@ -11,7 +11,7 @@ export const Tabs = () => {
       id: "content1",
       title: "Refrigerator Repair",
   heading: "Sub-Zero Refrigerator Repair",
-      img: "/oven-repair/1-oven.webp",
+      img: "/sub-zero/sub-zero-appliance-repair.webp",
       description: (
         <><p>Our factory-trained <strong>Sub-Zero technicians</strong> worked on just about every issue these <strong>luxury refrigerators</strong> can throw at us. Whether it’s the <strong>Sub-Zero PRO series</strong>, a <strong>panel-ready built-in fridge</strong>, or a sleek <strong>integrated column refrigerator</strong>, we approach every repair with the same level of care, precision, and respect for your home.</p>
         <p>When your <strong>Sub-Zero fridge</strong> isn’t getting cold, starts leaking water, or throws a <strong>vacuum condenser warning</strong>, we never assume the cause. We begin with full professional diagnostics using <strong>Sub-Zero-specific tools</strong> and test every key component: the <strong>compressor</strong>, <strong>evaporator</strong>, airflow systems, control board, and sensors. A single issue could stem from a <strong>failed fan motor</strong>, <strong>dirty condenser coils</strong>, or a <strong>faulty thermistor</strong> — and we know how to find the root fast.</p>
