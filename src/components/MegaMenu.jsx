@@ -74,9 +74,9 @@ export const MegaMenu = () => {
           )}
           {/* Home Dropdown */}
           <div className="dropdown">
-           <button className="dropbtn" >
+           <button className="dropbtn" ><a>
               Services <ArrowIcon isOpen={openDropdown === "Household"} />
-            </button>
+            </a></button>
             <div className={`dropdown-content ${openDropdown === "Household" ? "show" : ""}`}>
               <h3>High-End Appliances We Repair</h3>
               <div className="row">       
@@ -118,7 +118,7 @@ export const MegaMenu = () => {
           </div>
           {/* Commercial Dropdown */}
           <div className="dropdown">
-          <button className="dropbtn"><a href="/brands/" onClick={() => handleDropdownToggle("commercial")}>
+          <button className="dropbtn"><a>
               Brands <ArrowIcon isOpen={openDropdown === "commercial"} />
             </a></button>
             <div className={`dropdown-content ${openDropdown === "Household" ? "show" : ""}`}>
