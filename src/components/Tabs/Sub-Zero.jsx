@@ -86,18 +86,27 @@ export const Tabs = () => {
     },
     {
       id: "content4",
-      title: "Signs Your Oven Needs Repair",
-  heading: "Signs Your Oven Needs Repair Services – When to Call Us",
+      title: "Beverage Center Repair",
+  heading: "Sub-Zero Beverage Center Repair",
       img: "/oven-repair/5-oven.webp",
       description: (
-        <><h3><strong>Inconsistent Heating</strong></h3>
-        <p>Uneven heating may indicate an issue with <strong>oven racks</strong>, <strong>burners</strong>, or <strong>thermostats</strong>, which can affect <strong>cooking performance</strong>. Call us to fix these issues promptly.</p>
-        <h3><strong>Oven Door Won't Stay Locked or Unlock</strong></h3>
-        <p>Problems with the <strong>oven door</strong>, <strong>door handle</strong>, or <strong>lock motor</strong> can be frustrating. If your oven <strong>stays locked</strong> after the <strong>self-clean cycle</strong> or won't unlock, our technicians can repair it.</p>
-        <h3><strong>Frequent Shutdowns or Power Issues</strong></h3>
-        <p>Ovens that shut down unexpectedly may have issues with the <strong>power cord</strong>, <strong>oven's circuit breaker</strong>, or control settings. Schedule a repair to resolve electrical and <strong>off-position</strong> issues.</p>
-        <h3><strong>Failure to Heat or Preheat</strong></h3>
-        <p>If your oven fails to reach <strong>preheat temperature</strong>, there may be an issue with the <strong>igniter</strong>, <strong>heating elements</strong>, or control board. We provide solutions to ensure reliable <strong>preheating time</strong>.</p></>
+        <><p>Unlike wine coolers, <strong>Sub-Zero beverage centers</strong> are built for everyday use — cooling water, soda, beer, and juice. But when they go warm or loud, they still demand expert service.</p>
+
+        <h3>Most Common Beverage Cooler Issues:</h3>
+        <ul>
+          <li><strong>Beverage center not cooling evenly</strong></li>
+          <li><strong>Interior light not turning on</strong></li>
+          <li><strong>Loud compressor or fan noise</strong></li>
+          <li><strong>Control panel unresponsive</strong></li>
+          <li><strong>Door seal loose or warped</strong></li>
+        </ul>
+      
+        <h3>How We Fix Sub-Zero Beverage Centers</h3>
+        <ul>
+          <li>✅ We check cooling systems, electronic controls, and door alignment.</li>
+          <li>✅ If the compressor’s humming or your display won’t respond, we repair or replace key components using genuine <strong>Sub-Zero parts</strong>.</li>
+          <li>✅ Whether it’s in a kitchen, entertainment area, or bar setup — we’ll get your unit back to chill.</li>
+        </ul></>
       ),
     },
     {
