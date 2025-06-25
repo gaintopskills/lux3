@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Footer.css";
+
 export const Footer = () => {
   return (
     <footer>
@@ -30,9 +31,20 @@ export const Footer = () => {
 
         <div className="footer-section footer-contact">
           <h3>Connect</h3>
-          <p>Coming soon</p>
           <div className="footer-social">
-            {/* Future social SVG icons go here */}
+            <a
+              href="https://www.yelp.com/biz/luxury-appliance-repair-by-zaricci-los-angeles"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="yelp-link"
+            >
+              <img
+                src="/svg/yelp.svg"
+                alt="Yelp"
+                className="yelp-icon"
+              />
+             
+            </a>
           </div>
         </div>
       </div>
