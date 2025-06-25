@@ -238,7 +238,7 @@ export const MegaMenu = () => {
             </div>
           </div>
           
-             {/* Areas Dropdown */}
+             {/* Areas Dropdown 
              <div className="dropdown">
             <button className="dropbtn" onClick={() => handleDropdownToggle("Areas")}>
              <a> VIP<ArrowIcon isOpen={openDropdown === "Areas"} />
@@ -253,14 +253,16 @@ export const MegaMenu = () => {
                   <div className="column" key={idx}>
                     {col.map((item) => (
                        <a key={item} href="#">
-                     {/*  <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> */}{item}
-                     </a>
+                     {/*  <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> */}
+                     
+                     {/*{item}
+                   </a>
                     ))}
                   </div>
                 ))}
               </div>
             </div>
-          </div>
+          </div>*/}
 
           {/* Prices Dropdown */}
           <div className="dropdown">
