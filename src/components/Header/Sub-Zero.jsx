@@ -27,7 +27,7 @@ const ParallaxHeader = () => {
         Local, factory-trained Sub-Zero repair technicians specializing in luxury appliance repair including Sub-Zero repair.</p>
         <p>✅ Lisenced & Insured<br />
         ✅ 3-month warranty on parts and labor<br />
-        ✅ Extented 1 year warranty on sealded system repair<br />
+        ✅ 1 year warranty on sealded system repair<br />
           ✅ Same-day or next day service<br />
         </p>
         <p>When your Sub-Zero fridge isn’t cooling, your freezer’s too warm, or your wine cooler stops working—it’s not just inconvenient. It puts your food, wine, and peace of mind at risk. You can count on us to fix it.</p>
