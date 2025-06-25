@@ -24,10 +24,13 @@ const ParallaxHeader = () => {
         <h1 class="gold-embossed" data-text="SUB-ZERO">Sub-Zero Repair</h1>
         <img className="subzero-image" width="400" src="/sub-zero/sub-zero-repair-services.webp" alt="Sub-Zero Repair Services"/>
         <p>
-        As a factory-trained Sub-Zero repair technicians. We specialize in luxury appliance repair including Sub-Zero repair, offering same-day, in-home service you can count on.
-
-When your Sub-Zero fridge isn’t cooling, your freezer’s too warm, or your wine cooler stops working—it’s not just inconvenient. It puts your food, wine, and peace of mind at risk. Our licensed, local Sub-Zero repair expert are here for you.
+        Local, factory-trained Sub-Zero repair technicians specializing in luxury appliance repair including Sub-Zero repair.</p>
+        <p>✅ Lisenced & Insured<br />
+        ✅ 3-month warranty on parts and labor<br />
+        ✅ Extented 1 year warranty on sealded system repair<br />
+          ✅ Same-day or next day service<br />
         </p>
+        <p>When your Sub-Zero fridge isn’t cooling, your freezer’s too warm, or your wine cooler stops working—it’s not just inconvenient. It puts your food, wine, and peace of mind at risk. We are in-home service you can count on.</p>
       </div>
     </div>
   );
