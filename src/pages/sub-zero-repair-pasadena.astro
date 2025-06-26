@@ -1,0 +1,171 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ParallaxHeader from '../components/Header/Sub-Zero-Pasadena.jsx';
+import Tabs from '../components/Tabs/Sub-Zero.jsx';
+import '../styles/global.css';
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://luxuryappliance.repair/sub-zero-repair-pasadena/",
+  "name": "Luxury Appliance Repair by Zaricci",
+  "url": "https://luxuryappliance.repair/sub-zero-repair-pasadena/",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://luxuryappliance.repair/sub-zero/sub-zero-repair-services-pasadena.webp",
+    "width": 1200,
+    "height": 630
+  },
+  "telephone": "+1-424-499-7788",
+  "priceRange": "$$$",
+  "description": "Luxury Appliance Repair by Zaricci offers expert Sub-Zero repair in Pasadena, CA. We repair Sub-Zero refrigerators, freezers, wine coolers, and more. Factory-trained technicians. Same-day service available.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Sub-Zero",
+    "url": "https://subzero-wolf.com/"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pasadena",
+    "addressRegion": "CA",
+    "postalCode": "91101",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.1478,
+    "longitude": -118.1445
+  },
+  "sameAs": [
+    "https://www.yelp.com/biz/zaricci-luxury-appliance-repair-los-angeles"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Sub-Zero Appliance Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Sub-Zero Appliance Repair in Pasadena",
+          "description": "Expert repair for Sub-Zero refrigerators, freezers, and wine coolers in Pasadena—resolving temperature issues, sealed system faults, and more."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Sub-Zero Appliance Installation in Pasadena",
+          "description": "Professional installation of Sub-Zero built-in refrigerators, columns, and undercounter units in Pasadena homes."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Sub-Zero Appliance Maintenance in Pasadena",
+          "description": "Preventative maintenance for Sub-Zero systems to extend lifespan, improve cooling efficiency, and preserve food/wine in Pasadena."
+        }
+      }
+    ]
+  },
+  "knowsAbout": [
+    "Sub-Zero Refrigerator Repair Pasadena",
+    "Sub-Zero Freezer Repair Pasadena",
+    "Sub-Zero Wine Cooler Repair Pasadena",
+    "Built-In Sub-Zero Fridge Repairs Pasadena",
+    "Sub-Zero Installation Services Pasadena",
+    "Sub-Zero Maintenance Plans Pasadena",
+    "Luxury Appliance Repair Pasadena CA"
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://luxuryappliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Schedule Sub-Zero Repair in Pasadena"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+14244997788",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+};
+---
+
+<Layout
+  title="Sub-Zero Repair Pasadena"
+  description="Sub-Zero appliance repair in Pasadena. Same-day service for Sub-Zero refrigerators, freezers & wine coolers. Factory-trained technicians. (424) 499-7788"
+  structuredData={structuredData}
+  ogImage="https://luxuryappliance.repair/sub-zero/sub-zero-repair-og.jpg"
+>
+<ParallaxHeader client:idle/>
+<div class="wrapper">
+<section id="sub-zero-repair-pasadena">
+  <h2>Sub-Zero Appliance Repair by Zaricci in Pasadena</h2>
+  <img loading="lazy" class="image-left" src="/sub-zero/sub-zero-repair-services-pasadena.webp" alt="Sub-Zero Freezer Repair Services Pasadena"/>
+  <p>
+    At <strong>Zaricci</strong>, we bring white-glove precision to <strong>Sub-Zero appliance repair</strong> in Pasadena. From the historic estates of <strong>Oak Knoll</strong> to the modern kitchens of <strong>Linda Vista</strong>, our <strong>factory-trained technicians</strong> understand the elegance and engineering behind every Sub-Zero unit.
+  </p>
+  <h3>We Repair All Sub-Zero Appliance Types</h3>
+  <ul>
+    <li><strong>PRO Series Refrigerators & Freezers</strong></li>
+    <li><strong>Integrated Column Fridge & Freezer Systems</strong></li>
+    <li><strong>Undercounter Beverage Centers</strong></li>
+    <li><strong>Sub-Zero Wine Storage Units</strong></li>
+    <li><strong>Built-In Refrigerators and Freezers</strong></li>
+  </ul>
+  <h3>Common Sub-Zero Issues We Fix in Pasadena</h3>
+  <img loading="lazy" class="image-right" src="/sub-zero/sub-zero-wine-cooler-repair.webp" alt="Sub-Zero Wine Cooler Repair Pasadena"/>
+  <ul>
+    <li><strong>Not cooling properly or overcooling</strong></li>
+    <li><strong>Ice maker malfunctions or leaks</strong></li>
+    <li><strong>Compressor running loud or cycling constantly</strong></li>
+    <li><strong>“Vacuum Condenser” light staying on</strong></li>
+    <li><strong>Fluctuating temperatures inside fridge or freezer</strong></li>
+    <li><strong>Control board and sensor faults</strong></li>
+  </ul>
+  <p>
+    We begin every service with a full <strong>diagnostic using Sub-Zero-specific tools</strong>, so we never guess — we diagnose and restore your unit with <strong>OEM parts</strong> and <strong>careful calibration</strong>.
+  </p>
+  <h3>Why Pasadena Chooses Zaricci</h3>
+  <img loading="lazy" class="image-left" src="/sub-zero/sub-zero-repair-pasadena-expert.webp" alt="Sub-Zero Repair Pasadena CA"/>
+  <ul>
+    <li>✅ <strong>Certified Sub-Zero repair specialists</strong> with luxury appliance expertise</li>
+    <li>✅ <strong>Same-day repair</strong> availability in most of Pasadena</li>
+    <li>✅ <strong>Respectful of your home and cabinetry</strong> — we leave no trace</li>
+    <li>✅ <strong>Only genuine Sub-Zero parts</strong> are used in our repairs</li>
+  </ul>
+  <h3>📍 Pasadena Coverage Areas</h3>
+  <p>We proudly serve <strong>Madison Heights</strong>, <strong>Bungalow Heaven</strong>, <strong>Hastings Ranch</strong>, and surrounding neighborhoods of 91101, 91103, and 91105.</p>
+  <h3>Book Your Sub-Zero Repair Today</h3>
+  <ul>
+    <li>📞 Call or text <strong>(424) 499-7788</strong></li>
+    <li>📅 <a href="https://luxuryappliance.repair/book/">Book Online</a></li>
+    <li>📍 Local Pasadena Repair Experts</li>
+  </ul>
+  <h3>FAQ</h3>
+  <h4>Do you service Sub-Zero under warranty?</h4>
+  <p>No, we are not affiliated with Sub-Zero’s warranty division, but we provide out-of-warranty support using genuine parts and diagnostics.</p>
+  <h4>How fast can I schedule a repair?</h4>
+  <p>Same-day service is often available in most Pasadena zip codes. Call or book online to confirm availability.</p>
+</section>
+</div>
+<iframe loading="lazy" src="https://www.google.com/maps/d/u/1/embed?mid=18lJ1t-XcrZ1uKdXTj-dLiOcDDax9qmo&ehbc=2E312F" width="100%" height="480"></iframe>
+</Layout>
