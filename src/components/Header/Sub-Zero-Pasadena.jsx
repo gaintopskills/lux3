@@ -21,11 +21,16 @@ const ParallaxHeader = () => {
       </video>
 
       <div className="maintext">
-        <h1 class="gold-embossed" data-text="SUB-ZERO">Sub-Zero Appliance Repair Brentwood, CA</h1>
+        <h1 class="gold-embossed" data-text="SUB-ZERO">Sub-Zero Repair Pasadena</h1>
         <img className="header-image" width="400" src="/sub-zero/sub-zero-repair-services-pasadena.webp" alt="Sub-Zero Repair Services"/>
-       <h2>Expert Sub-Zero Service for Brentwood’s Homes</h2>
-
-<p>If your Sub-Zero refrigerator isn’t cooling, your wine cooler is flashing a vacuum condenser warning, or your freezer isn’t holding temp, we’re the team Brentwood trusts for fast and reliable service. At Zaricci, we specialize in luxury appliance repair, with factory-trained technicians who understand the precision and performance Sub-Zero demands. </p>
+        <p>
+        Local Pasadena factory-trained Sub-Zero repair technicians specializing in luxury appliance repair including Sub-Zero repair.</p>
+        <p>✅ Lisenced & Insured<br />
+        ✅ 3-month warranty on parts and labor<br />
+        ✅ 1 year warranty on sealded system repair<br />
+          ✅ Same-day or next day service<br />
+        </p>
+        <p>If your Sub-Zero fridge not cooling, freezer’s too warm, or wine cooler stops working, you can count on us to fix it.</p>
       </div>
     </div>
   );

@@ -136,8 +136,8 @@ export const Tabs = () => {
   heading: "Book Sub-Zero Repair Near You",
       description: (
         <><p>If you searched for <strong>“Sub-Zero appliance repair near me”</strong> or <strong>“who can fix a Sub-Zero refrigerator near me?”</strong> — you found the best. Call now to book your <strong>Sub-Zero fridge repair</strong> appointment, or schedule a same-day <strong>Sub-Zero service</strong> visit with one of our elite <strong>Sub-Zero technicians</strong>.</p>
-
-        <p>📍 Proudly serving <strong>luxury homes</strong> in <a href="/sub-zero-repair-brentwood" title="Sub-Zero Repair Brentwood, CA">Brentwood</a>, 
+        <p>📍 Proudly serving <strong>luxury homes</strong> in 
+        <a href="/sub-zero-repair-brentwood" title="Sub-Zero Repair Brentwood, CA">Brentwood</a>, 
         <a href="/sub-zero-repair-bel-air/" title="Sub-Zero Repair Bel Air, CA">Bel Air</a>, 
         <a href="/sub-zero-repair-beverly-hills/" title="Sub-Zero Repair Beverly Hills, CA">Beverly Hills</a>, 
         <a href="/sub-zero-repair-calabasas/" title="Sub-Zero Repair Calabasas, CA">Calabasas</a>, 
