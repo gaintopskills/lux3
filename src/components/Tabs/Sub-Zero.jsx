@@ -132,7 +132,7 @@ export const Tabs = () => {
       description: (
         <><p>If you searched for <strong>“Sub-Zero appliance repair near me”</strong> or <strong>“who can fix a Sub-Zero refrigerator near me?”</strong> — you found the best. Call now to book your <strong>Sub-Zero fridge repair</strong> appointment, or schedule a same-day <strong>Sub-Zero service</strong> visit with one of our elite <strong>Sub-Zero technicians</strong>.</p>
 
-        <p>📍 Proudly serving <strong>luxury homes</strong> in <a ahref="/sub-zero-repair-brentwood/>Brentwood" title="Sub-Zero Repair Brentwood, CA"></a>, Bel Air, Beverly Hills, Calabasas, West Hollywood, Santa Monica, Pasadena, San Marino, Pacific Palisades, Malibu, Thousand Oaks and nearby areas</p>
+        <p>📍 Proudly serving <strong>luxury homes</strong> in <a ahref="/sub-zero-repair-brentwood/>Brentwood" title="Sub-Zero Repair Brentwood, CA">Brentwood</a>, Bel Air, Beverly Hills, Calabasas, West Hollywood, Santa Monica, Pasadena, San Marino, Pacific Palisades, Malibu, Thousand Oaks and nearby areas</p>
       
         <p>Call Zaricci today for fast and reliable <strong>Sub-Zero repair</strong></p>
         </>
