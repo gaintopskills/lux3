@@ -12,6 +12,7 @@ export const Tabs = () => {
       title: "Refrigerator Repair",
   heading: "Sub-Zero Refrigerator Repair",
       img: "/sub-zero/sub-zero-appliance-repair.webp",
+      alt: "Sub-Zero Refrigerator Repair",
       description: (
         <><p>Our factory-trained <strong>Sub-Zero technicians</strong> worked on just about every issue these <strong>luxury refrigerators</strong> can throw at us. Whether it’s the <strong>Sub-Zero PRO series</strong>, a <strong>panel-ready built-in fridge</strong>, or a sleek <strong>integrated column refrigerator</strong>, we approach every repair with the same level of care, precision, and respect for your home.</p>
       
@@ -39,6 +40,7 @@ export const Tabs = () => {
       title: "Freezer Repair",
   heading: "Sub-Zero Freezer Repair",
       img: "/sub-zero/sub-zero-freezer-repair.webp",
+      alt: "Sub-Zero Freezer Repair",
       description: (
         <><p>The most common call we get for <strong>Sub-Zero freezers</strong>? “It’s not cold enough.” That could be more than just a bad thermostat — it might be a condenser fan failure, evaporator frost issue, or even a control board malfunction.</p>
 
@@ -63,6 +65,7 @@ export const Tabs = () => {
       title: "Wine Cooler Repair",
   heading: "Sub-Zero Wine Cooler Repair",
       img: "/sub-zero/sub-zero-wine-cooler-repair.webp",
+      alt: "Sub-Zero Whine Cooler Repair",
       description: (
         <><p>We get a lot of calls from clients with <strong>Sub-Zero wine coolers</strong> that aren’t holding temperature. These systems are more than just fancy fridges — they’re finely tuned environments for preserving flavor, aroma, and the long-term quality of your wine.</p>
 
@@ -87,6 +90,7 @@ export const Tabs = () => {
       title: "Beverage Center Repair",
   heading: "Sub-Zero Beverage Center Repair",
       img: "/sub-zero/sub-zero-beverage-center-repair.webp",
+      alt: "Sub-Zero Beverage Center Repair",
       description: (
         <><p>Unlike wine coolers, <strong>Sub-Zero beverage centers</strong> are built for everyday use — cooling water, soda, beer, and juice. But when they go warm or loud, they still demand expert service.</p>
 
@@ -112,6 +116,7 @@ export const Tabs = () => {
       title: "Why Choose Us?",
   heading: "Why Homeowners Choose Zaricci for Sub-Zero Repair",
   img: "/sub-zero/best-sub-zero-repair.webp",
+  alt: "Sub-Zero Expert Technicians",
       description: (
         <><p>We’ve seen too many homeowners burned by generic techs who don’t understand <strong>luxury appliances</strong>. Every <strong>Sub-Zero appliance technician</strong> on our team is <strong>factory-trained and licensed</strong>. We repair <strong>Sub-Zero refrigerators</strong>, <strong>freezers</strong>, <strong>wine coolers</strong>, and <strong>beverage centers</strong>.</p>
 
