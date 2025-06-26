@@ -1,43 +1,43 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ParallaxHeader from '../components/Header/Sub-Zero-Brentwood.jsx'
+import ParallaxHeader from '../components/Header/Sub-Zero-BelAir.jsx'
 import Tabs from '../components/Tabs/Sub-Zero.jsx'
 import '../styles/global.css';
 
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://luxuryappliance.repair/sub-zero-repair-brentwood/",
+  "@id": "https://luxuryappliance.repair/sub-zero-repair-bel-air/",
   "name": "Luxury Appliance Repair by Zaricci",
-  "url": "https://luxuryappliance.repair/sub-zero-repair-brentwood/",
+  "url": "https://luxuryappliance.repair/sub-zero-repair-bel-air/",
   "image": {
     "@type": "ImageObject",
-    "url": "https://luxuryappliance.repair/sub-zero/sub-zero-repair-services-brentwood.webp",
+    "url": "https://luxuryappliance.repair/sub-zero/sub-zero-repair-services-bel-air.webp",
     "width": 1200,
     "height": 630
   },
   "telephone": "+1-424-499-7788",
   "priceRange": "$$$",
-  "description": "Luxury Appliance Repair by Zaricci provides expert Sub-Zero repair in Brentwood, CA. We repair Sub-Zero refrigerators, freezers, wine coolers, beverage centers, and refrigerator drawers. Licensed and insured company you can trust",
+  "description": "Luxury Appliance Repair by Zaricci provides expert Sub-Zero repair in Bel Air, CA. We repair Sub-Zero refrigerators, freezers, wine coolers, beverage centers, and refrigerator drawers. Licensed and insured company you can trust.",
   "brand": {
     "@type": "Brand",
     "name": "Sub-Zero",
     "url": "https://subzero-wolf.com/"
   },
   "address": {
-  "@type": "PostalAddress",
-  "addressLocality": "Brentwood",
-  "addressRegion": "CA",
-  "addressCountry": "US"
-},
-"geo": {
-  "@type": "GeoCoordinates",
-  "latitude": 34.066907,
-  "longitude": -118.485422
-},
-"sameAs": [
-  "https://www.yelp.com/biz/zaricci-luxury-appliance-repair-los-angeles",
-],
+    "@type": "PostalAddress",
+    "addressLocality": "Bel Air",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.1003,
+    "longitude": -118.4595
+  },
+  "sameAs": [
+    "https://www.yelp.com/biz/zaricci-luxury-appliance-repair-los-angeles"
+  ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Sub-Zero Appliance Services",
@@ -46,39 +46,39 @@ const structuredData = {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Sub-Zero Appliance Repair in Brentwood",
-          "description": "Expert repair for Sub-Zero refrigerators, freezers, wine coolers, and beverage centers in Brentwood homes—resolving cooling issues, compressor faults, and sealed system problems."
+          "name": "Sub-Zero Appliance Repair in Bel Air",
+          "description": "Expert repair for Sub-Zero refrigerators, freezers, wine coolers, and beverage centers in Bel Air homes—resolving cooling issues, compressor faults, and sealed system problems."
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Sub-Zero Appliance Installation in Brentwood",
-          "description": "Precision installation of Sub-Zero column refrigerators, wine storage units, and built-in drawer systems in Brentwood estates."
+          "name": "Sub-Zero Appliance Installation in Bel Air",
+          "description": "Precision installation of Sub-Zero column refrigerators, wine storage units, and built-in drawer systems in Bel Air estates."
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Sub-Zero Appliance Maintenance in Brentwood",
-          "description": "Seasonal preventative maintenance for Sub-Zero systems, ensuring optimal performance, longevity, and food/wine preservation in Brentwood properties."
+          "name": "Sub-Zero Appliance Maintenance in Bel Air",
+          "description": "Seasonal preventative maintenance for Sub-Zero systems, ensuring optimal performance, longevity, and food/wine preservation in Bel Air properties."
         }
       }
     ]
   },
   "knowsAbout": [
-    "Sub-Zero Refrigerator Repair Brentwood",
-    "Sub-Zero Freezer Repair Brentwood",
-    "Sub-Zero Wine Cooler Repair Brentwood",
-    "Sub-Zero Appliance Installation Brentwood",
-    "Luxury Appliance Service Brentwood",
+    "Sub-Zero Refrigerator Repair Bel Air",
+    "Sub-Zero Freezer Repair Bel Air",
+    "Sub-Zero Wine Cooler Repair Bel Air",
+    "Sub-Zero Appliance Installation Bel Air",
+    "Luxury Appliance Service Bel Air",
     "Sub-Zero PRO Series Repairs",
     "Integrated Column Refrigerator Repairs",
-    "Built-In Fridge and Freezer Service Brentwood",
-    "Sub-Zero Maintenance Brentwood",
-    "High-End Appliance Repair Brentwood CA"
+    "Built-In Fridge and Freezer Service Bel Air",
+    "Sub-Zero Maintenance Bel Air",
+    "High-End Appliance Repair Bel Air CA"
   ],
   "potentialAction": [
     {
@@ -94,7 +94,7 @@ const structuredData = {
       },
       "result": {
         "@type": "Reservation",
-        "name": "Schedule Sub-Zero Repair in Brentwood"
+        "name": "Schedule Sub-Zero Repair in Bel Air"
       }
     },
     {
@@ -112,34 +112,34 @@ const structuredData = {
 
 ---
 <Layout
-	title="Sub-Zero Repair Brentwood"
-	description="Local Sub-Zero repair - Factory-trained technicians with fast, reliable Sub-Zero service for refrigerators, freezers, wine coolers & more. (424) 499-7788"
+	title="Sub-Zero Repair Bel Air"
+	description="Local Sub-Zero repair – Factory-trained technicians with fast, reliable Sub-Zero service for refrigerators, freezers, wine coolers & more. (424) 499-7788"
 	structuredData={structuredData}
     ogImage="https://luxuryappliance.repair/sub-zero/sub-zero-repair-og.jpg"
 >
 <ParallaxHeader client:idle/>
 <div class="wrapper">
-<section id="sub-zero-repair-brentwood">
-<div><h2>Luxury Appliance Repair services by ZARICCI in Brentwood</h2>
-<img loading="lazy" class="image-left" src="/sub-zero/sub-zero-freezer-repair-services-brentwood.webp" alt="Sub-Zero Freezer Repair Services Brentwood"/>
+<section id="sub-zero-repair-bel-air">
+<div><h2>Luxury Appliance Repair services by ZARICCI in Bel Air</h2>
+<img loading="lazy" class="image-left" src="/sub-zero/sub-zero-freezer-repair-services-bel-air.webp" alt="Sub-Zero Freezer Repair Services Bel Air"/>
   <p>
     At <strong>Zaricci</strong>, we specialize in <strong>luxury appliance repair</strong>, with <strong>factory-trained technicians</strong> who understand the precision and performance Sub-Zero demands.
   </p>
   <p>
-    From the quiet estates of <strong>Brentwood Park</strong> to the scenic views of <strong>Mandeville Canyon</strong>, we approach every service call with deep respect for your home, your schedule, and your standards.
+    From the gated estates of <strong>Bel Air</strong> to the modern homes near <strong>Sunset Blvd</strong>, we approach every service call with deep respect for your home, your schedule, and your standards.
   </p>
 
   <h3>We Repair All Sub-Zero Appliances:</h3>
   <ul>
-    <li><strong>Built-In Refrigerators</strong><sub-zero-refrigerator-repair-brentwood-ca/li>
+    <li><strong>Built-In Refrigerators</strong></li>
     <li><strong>PRO 48 & PRO 36 Series</strong></li>
     <li><strong>Integrated Column Fridges & Freezers</strong></li>
     <li><strong>Undercounter Refrigeration</strong></li>
     <li><strong>Sub-Zero Wine Coolers</strong></li>
   </ul>
 </div>
-  <h3>Common Sub-Zero Problems We Fix in Brentwood:</h3>
-  <img loading="lazy" class="image-right" src="/sub-zero/best-sub-zero-repair-brentwood.webp" alt="Best"/>
+  <h3>Common Sub-Zero Problems We Fix in Bel Air:</h3>
+  <img loading="lazy" class="image-right" src="/sub-zero/best-sub-zero-repair-bel-air.webp" alt="Best Sub-Zero Repair Bel Air"/>
   <ul>
     <li><strong>Sub-Zero fridge not cooling</strong></li>
     <li><strong>Freezer warm, leaking, or iced over</strong></li>
@@ -155,12 +155,12 @@ const structuredData = {
     We don’t guess—we diagnose. Every service begins with <strong>Sub-Zero-specific testing equipment</strong> to evaluate the <strong>sealed system</strong>, <strong>compressor</strong>, <strong>fan motors</strong>, <strong>sensors</strong>, and <strong>control board</strong>. No shortcuts. No surprises.
   </p>
 <div>
-  <h3>Why Brentwood Chooses Us for Sub-Zero Repairs</h3>
-  <img loading="lazy" class="image-left" src="/sub-zero/sub-zero-refrigerator-repair-brentwood-ca.webp" alt="Sub-Zero Repair Brentwood, CA"/>
-  <p>Brentwood homes deserve more than basic repair service. Here’s what sets us apart:</p>
+  <h3>Why Bel Air Chooses Us for Sub-Zero Repairs</h3>
+  <img loading="lazy" class="image-left" src="/sub-zero/sub-zero-refrigerator-repair-bel-air-ca.webp" alt="Sub-Zero Repair Bel Air, CA"/>
+  <p>Bel Air homes deserve more than basic repair service. Here’s what sets us apart:</p>
   <ul>
     <li>✅ <strong>Factory-trained technicians</strong> who specialize in Sub-Zero specifically</li>
-    <li>✅ <strong>Same-day service</strong> in Brentwood, often within hours</li>
+    <li>✅ <strong>Same-day service</strong> in Bel Air, often within hours</li>
     <li>✅ <strong>We protect</strong> your floors, counters, and cabinetry</li>
     <li>✅ <strong>We use genuine Sub-Zero parts</strong>—not generics</li>
   </ul>
@@ -168,20 +168,19 @@ const structuredData = {
     We’re not just fixing a fridge—we’re preserving a <strong>high-performance appliance</strong> you’ve invested in.
   </p>
 </div>
-  <h3>📍 Local Brentwood Service, Right When You Need It</h3>
-  <img loading="lazy" class="image-right" src="/sub-zero/sub-zero-refrigerator-repair-brentwood-ca.webp" alt="Sub-Zero Repair Brentwood, CA"/>
+  <h3>📍 Local Bel Air Service, Right When You Need It</h3>
   <p>
-    We’ve served homes in <strong>Brentwood Park</strong>, <strong>Crestwood Hills</strong>, and along <strong>Sunset Blvd</strong> for years. We know the local floorplans, appliance configurations, and expectations of Brentwood clients—and we deliver service that matches your lifestyle.
+    We’ve served homes near <strong>Stradella Road</strong>, <strong>Stone Canyon</strong>, and the <strong>Upper Casiano</strong> area for years. We know the layouts, appliance preferences, and service expectations of Bel Air clients—and we deliver white-glove solutions that match your lifestyle.
   </p>
 
-  <h3>Get Same-Day Sub-Zero Repair in Brentwood</h3>
+  <h3>Get Same-Day Sub-Zero Repair in Bel Air</h3>
   <p>
     Your <strong>Sub-Zero</strong> isn’t just an appliance—it’s a statement. When it malfunctions, you need expert care fast. Let us take it from here.
   </p>
   <ul>
     <li>📞 Call or text <strong>(424) 499-7788</strong></li>
     <li>📅 <a href="https://luxuryappliance.repair/book/">Book online at luxuryappliance.repair/book/</a></li>
-    <li>📍 Serving all of <strong>Brentwood CA, 90049</strong></li>
+    <li>📍 Serving all of <strong>Bel Air CA, 90077</strong></li>
   </ul>
 
   <h3>FAQ</h3>
@@ -190,7 +189,7 @@ const structuredData = {
     We’re an independent service provider and not affiliated with Sub-Zero’s warranty program, but we offer out-of-warranty service using <strong>genuine Sub-Zero parts</strong>.
   </p>
 
-  <h4>How fast can you get here in Brentwood?</h4>
+  <h4>How fast can you get here in Bel Air?</h4>
   <p>
     <strong>Same-day service</strong> is usually available.
   </p>
@@ -198,4 +197,3 @@ const structuredData = {
 </div>
 <iframe loading="lazy" src="https://www.google.com/maps/d/u/1/embed?mid=18lJ1t-XcrZ1uKdXTj-dLiOcDDax9qmo&ehbc=2E312F" width="100%" height="480"></iframe>
 </Layout>
-
