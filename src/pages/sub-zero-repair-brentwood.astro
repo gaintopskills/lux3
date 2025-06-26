@@ -7,28 +7,27 @@ import '../styles/global.css';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://luxuryappliance.repair/sub-zero-repair/",
+  "@id": "https://luxuryappliance.repair/sub-zero/brentwood/",
   "name": "Luxury Appliance Repair by Zaricci",
-  "url": "https://luxuryappliance.repair/sub-zero-repair/",
-  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
+  "url": "https://luxuryappliance.repair/sub-zero/brentwood/",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://luxuryappliance.repair/sub-zero/sub-zero-repair-services.webp",
+    "width": 1200,
+    "height": 630
+  },
   "telephone": "+1-424-499-7788",
   "priceRange": "$$$",
-  "description": "Luxury Appliance Repair by Zaricci specializes in Sub-Zero appliance repair, installation, and maintenance for built-in and integrated refrigeration systems. Our certified technicians deliver discreet, white-glove service using genuine Sub-Zero parts to ensure lasting performance, luxury aesthetics, and optimal food preservation across Los Angeles and surrounding areas.",
+  "description": "Luxury Appliance Repair by Zaricci provides expert Sub-Zero appliance repair in Brentwood, CA. From PRO series refrigerators to undercounter wine coolers, our factory-trained technicians deliver white-glove service using genuine Sub-Zero parts to ensure flawless operation and preservation.",
   "brand": {
     "@type": "Brand",
     "name": "Sub-Zero",
     "url": "https://subzero-wolf.com/"
   },
-  "image": {
-  "@type": "ImageObject",
-  "url": "https://luxuryappliance.repair/sub-zero/sub-zero-repair-services.webp",
-  "width": 1200,
-  "height": 630
-},
   "serviceType": "Sub-Zero Appliance Repair, Installation, and Maintenance",
   "areaServed": {
     "@type": "Place",
-    "name": "Southern California"
+    "name": "Brentwood, CA"
   },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -38,24 +37,24 @@ const structuredData = {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Sub-Zero Appliance Repair",
-          "description": "Certified repair services for Sub-Zero refrigerators, wine coolers, freezers, and undercounter units—resolving cooling issues, compressor failures, and sensor malfunctions with precision."
+          "name": "Sub-Zero Appliance Repair in Brentwood",
+          "description": "Expert repair for Sub-Zero refrigerators, freezers, wine coolers, and beverage centers in Brentwood homes—resolving cooling issues, compressor faults, and sealed system problems."
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Sub-Zero Appliance Installation",
-          "description": "Professional installation of Sub-Zero integrated and column refrigerators, wine storage, and drawer units with factory-level calibration and panel alignment."
+          "name": "Sub-Zero Appliance Installation in Brentwood",
+          "description": "Precision installation of Sub-Zero column refrigerators, wine storage units, and built-in drawer systems in Brentwood estates."
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Sub-Zero Appliance Maintenance",
-          "description": "Preventive maintenance for Sub-Zero appliances to ensure quiet operation, optimal cooling performance, and long-term preservation of food and wine."
+          "name": "Sub-Zero Appliance Maintenance in Brentwood",
+          "description": "Seasonal preventative maintenance for Sub-Zero systems, ensuring optimal performance, longevity, and food/wine preservation in Brentwood properties."
         }
       }
     ]
@@ -66,16 +65,16 @@ const structuredData = {
     "url": "https://luxuryappliance.repair/"
   },
   "knowsAbout": [
-    "Sub-Zero Appliance Repair",
-    "Sub-Zero Refrigerator Service",
-    "Sub-Zero Freezer Column Repairs",
-    "Sub-Zero Wine Cooler Repair",
+    "Sub-Zero Refrigerator Repair Brentwood",
+    "Sub-Zero Freezer Repair Brentwood",
+    "Sub-Zero Wine Cooler Repair Brentwood",
+    "Sub-Zero Appliance Installation Brentwood",
+    "Luxury Appliance Service Brentwood",
     "Sub-Zero PRO Series Repairs",
-    "Sub-Zero Integrated Drawer Repair",
-    "Built-in and Panel-Ready Refrigeration Installation",
-    "Luxury Appliance Maintenance for Sub-Zero",
-    "Sub-Zero Compressor Replacement",
-    "Premium Appliance Repair Southern California"
+    "Integrated Column Refrigerator Repairs",
+    "Built-In Fridge and Freezer Service Brentwood",
+    "Sub-Zero Maintenance Brentwood",
+    "High-End Appliance Repair Brentwood CA"
   ],
   "potentialAction": [
     {
@@ -91,7 +90,7 @@ const structuredData = {
       },
       "result": {
         "@type": "Reservation",
-        "name": "Schedule Sub-Zero Appliance Service"
+        "name": "Schedule Sub-Zero Repair in Brentwood"
       }
     },
     {
@@ -105,7 +104,8 @@ const structuredData = {
       }
     }
   ]
-}
+};
+
 ---
 <Layout
 	title="Sub-Zero Repair Brentwood"
