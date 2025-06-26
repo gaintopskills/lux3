@@ -148,7 +148,6 @@ export const Tabs = () => {
         <a href="/sub-zero-repair-pacific-palisades" title="Sub-Zero Repair Pasific palisades, CA">Pacific Palisades</a>, 
         <a href="/sub-zero-repair-malibu" title="Sub-Zero Repair Malibu, CA">Malibu</a>, 
         <a href="/sub-zero-repair-thousand-oaks" title="Sub-Zero Repair Thousand Oaks, CA">Thousand Oaks</a> and nearby areas</p>
-      
         <p>Call Zaricci today for fast and reliable <strong>Sub-Zero repair</strong></p>
         </>
       ),
