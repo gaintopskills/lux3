@@ -137,7 +137,17 @@ export const Tabs = () => {
       description: (
         <><p>If you searched for <strong>“Sub-Zero appliance repair near me”</strong> or <strong>“who can fix a Sub-Zero refrigerator near me?”</strong> — you found the best. Call now to book your <strong>Sub-Zero fridge repair</strong> appointment, or schedule a same-day <strong>Sub-Zero service</strong> visit with one of our elite <strong>Sub-Zero technicians</strong>.</p>
 
-        <p>📍 Proudly serving <strong>luxury homes</strong> in <a href="/sub-zero-repair-brentwood" title="Sub-Zero Repair Brentwood, CA">Brentwood</a>, Bel Air, Beverly Hills, Calabasas, West Hollywood, Santa Monica, Pasadena, San Marino, Pacific Palisades, Malibu, Thousand Oaks and nearby areas</p>
+        <p>📍 Proudly serving <strong>luxury homes</strong> in <a href="/sub-zero-repair-brentwood" title="Sub-Zero Repair Brentwood, CA">Brentwood</a>, 
+        <a href="/sub-zero-repair-bel-air" title="Sub-Zero Repair Bel Air, CA">Bel Air</a>, 
+        <a href="/sub-zero-repair-beverly-hills" title="Sub-Zero Repair Beverly Hills, CA">Beverly Hills</a>, 
+        <a href="/sub-zero-repair-calabasas" title="Sub-Zero Repair Calabasas, CA">Calabasas</a>, 
+        <a href="/sub-zero-repair-west-hollywood" title="Sub-Zero Repair West Hollywood, CA">West Hollywood</a>, 
+        <a href="/sub-zero-repair-santa-monica" title="Sub-Zero Repair Santa Monica, CA">Santa Monica</a>,
+        <a href="/sub-zero-repair-Pasadena" title="Sub-Zero Repair Pasadena, CA"> Pasadena</a>, 
+        <a href="/sub-zero-repair-san-marino" title="Sub-Zero Repair San Marino, CA">San Marino</a>, 
+        <a href="/sub-zero-repair-pacific-palisades" title="Sub-Zero Repair Pasific palisades, CA">Pacific Palisades</a>, 
+        <a href="/sub-zero-repair-malibu" title="Sub-Zero Repair Malibu, CA">Malibu</a>, 
+        <a href="/sub-zero-repair-thousand-oaks" title="Sub-Zero Repair Thousand Oaks, CA">Thousand Oaks</a> and nearby areas</p>
       
         <p>Call Zaricci today for fast and reliable <strong>Sub-Zero repair</strong></p>
         </>
