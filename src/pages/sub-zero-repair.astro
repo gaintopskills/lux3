@@ -1,0 +1,5 @@
+import { redirect } from 'astro/runtime/server';
+
+export async function GET() {
+  return redirect('/sub-zero-repair/', 301); // Permanent redirect
+}
