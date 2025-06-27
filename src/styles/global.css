@@ -6,7 +6,7 @@ h2 {
   padding: 20px 0 10px 0;
 }
   .wrapper {
-    padding: 20px;
+    padding: 20px 50px;
   }
   .cols {
     display: flex;
