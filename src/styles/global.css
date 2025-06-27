@@ -45,13 +45,13 @@ h3 {
 
 }
 .wrapper {
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
   padding: 20px 10px;
   width: 100%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .wrapper {
     padding: 10px;
   }
