@@ -27,6 +27,7 @@ h2 {
 
 h3 { 
   font-size: 1.3rem;
+  text-align: center;
   font-family: 'Arial Black', sans-serif;
   text-transform: uppercase;
   background: linear-gradient(
@@ -43,9 +44,18 @@ h3 {
   -webkit-text-fill-color: transparent;
 
 }
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
   .wrapper {
-    padding: 20px 50px;
+    padding: 10px;
   }
+}
   .cols {
     display: flex;
     flex-wrap: wrap;
