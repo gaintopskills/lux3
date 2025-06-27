@@ -192,13 +192,14 @@ export const MegaMenu = () => {
     { label: "Encino", href: "/encino/" },
     { label: "Glendale", href: "/glendale/" },
     { label: "Hollywood", href: "/hollywood/" },
-    
+    { label: "Holmby Hills", href: "/holmby-hills/" },
+    { label: "La Cañada Flintridge", href: "/la-canada-flintridge/" },
   ],
 
   // Column 2
   [
-    { label: "Holmby Hills", href: "/holmby-hills/" },
-    { label: "La Cañada Flintridge", href: "/la-canada-flintridge/" },
+    
+   
     { label: "Los Angeles", href: "/los-angeles/" },
     { label: "Los Feliz", href: "/los-feliz/" },
     { label: "Malibu", href: "/malibu/" },
@@ -207,11 +208,12 @@ export const MegaMenu = () => {
     { label: "Pacific Palisades", href: "/pacific-palisades/" },
     { label: "Palos Verdes Estates", href: "/palos-verdes-estates/" },
     { label: "Pasadena", href: "/pasadena/" },
-    { label: "Playa Del Rey", href: "/playa-del-rey/" },
-    { label: "Rancho Palos Verdes", href: "/rancho-palos-verdes/" },
+    
   ],
   // Column 3
   [
+    { label: "Playa Del Rey", href: "/playa-del-rey/" },
+    { label: "Rancho Palos Verdes", href: "/rancho-palos-verdes/" },
     { label: "Rolling Hills Estates", href: "/rolling-hills-estates/" },
     { label: "San Marino", href: "/san-marino/" },
     { label: "Santa Monica", href: "/santa-monica/" },
@@ -267,7 +269,7 @@ export const MegaMenu = () => {
           {/* Prices Dropdown */}
           <div className="dropdown">
             <button className="dropbtn" onClick={() => handleDropdownToggle("prices")}>
-           <a> Charity Program
+           <a> Charity
   <ArrowIcon isOpen={openDropdown === "prices"} />
             </a></button>
             <div className={`dropdown-content ${openDropdown === "prices" ? "show" : ""}`}>
