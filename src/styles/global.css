@@ -282,3 +282,14 @@ h3 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
+  /* Center on mobile */
+@media (max-width: 768px) {
+  .image-left,
+  .image-right {
+    float: none;
+    display: block;
+    margin: auto;
+    max-width: 360px;
+    max-height: 360px;
+  }
+}
