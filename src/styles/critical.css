@@ -16,6 +16,24 @@ html {
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
   }
+  h1 { 
+    font-size: 2.5rem;
+    font-family: 'Arial Black', sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(
+      to right,
+      #967c44 0%,
+      #e6cca3 10%,
+      #e6c99e 30%,
+      #f4ebdd 50%,
+      #e6c99e 70%,
+      #e6cca3 80%,
+      #967c44 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ 
+  }
   a{color:#ffffff;}
   #page-content{
     margin: 50px!important;

@@ -5,6 +5,44 @@ h2 {
   text-align: center;
   padding: 20px 0 10px 0;
 }
+
+h2 { 
+  font-size: 2rem;
+  font-family: 'Arial Black', sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    #967c44 0%,
+    #e6cca3 10%,
+    #e6c99e 30%,
+    #f4ebdd 50%,
+    #e6c99e 70%,
+    #e6cca3 80%,
+    #967c44 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+h3 { 
+  font-size: 1.3rem;
+  font-family: 'Arial Black', sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    #967c44 0%,
+    #e6cca3 10%,
+    #e6c99e 30%,
+    #f4ebdd 50%,
+    #e6c99e 70%,
+    #e6cca3 80%,
+    #967c44 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
   .wrapper {
     padding: 20px 50px;
   }
@@ -122,32 +160,6 @@ h2 {
   /*End Ofers*/
 
   /*Parallax Header*/
-  h1 { 
-    font-family: 'Arial Black', sans-serif;
-    text-transform: uppercase;
-    background: linear-gradient(
-      to right,
-      #967c44 0%,
-      #e6cca3 10%,
-      #e6c99e 30%,
-      #f4ebdd 50%,
-      #e6c99e 70%,
-      #e6cca3 80%,
-      #967c44 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
- 
-  }
-
-h1{
-  font-size: 2.5rem;
-color:#ffffff;
-
-  text-shadow:
-
-
-}
 
 
 /* 🔹 Video Container with Parallax */
