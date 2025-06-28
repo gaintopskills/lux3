@@ -120,6 +120,7 @@ a{color:#ffffff;}
         color: white;
         background-color: inherit;
         font: inherit;
+        padding:10px;
       }
       .navbar a:hover,
       .dropdown:hover .dropbtn {
@@ -244,7 +245,7 @@ a{color:#ffffff;}
           }
           .dropdown .dropbtn {
             font-size: 15px!Important;
-            padding: 5px 2px;;
+            padding: 10px;;
           }
           .navbar a {
             padding: 5px 5px;
