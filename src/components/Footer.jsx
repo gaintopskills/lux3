@@ -43,7 +43,6 @@ export const Footer = () => {
                 alt="Yelp"
                 className="yelp-icon"
               />
-             
             </a>
           </div>
         </div>
