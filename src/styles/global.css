@@ -36,6 +36,7 @@ h3 {
   -webkit-text-fill-color: transparent;
 
 }
+a{color:#ffffff;}
   .cols {
     display: flex;
     flex-wrap: wrap;
