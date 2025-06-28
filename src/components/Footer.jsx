@@ -38,7 +38,7 @@ export const Footer = () => {
               rel="noopener noreferrer"
               className="yelp-link"
             >
-              <img
+              <img width="64" height="64" loading="lazy"
                 src="/svg/yelp.svg"
                 alt="Yelp"
                 className="yelp-icon"
