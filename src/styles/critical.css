@@ -359,7 +359,7 @@ button, .btn {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
-  /*Offers
+  /*Offers*/
   .cols {
     display: flex;
     flex-wrap: wrap;
@@ -470,4 +470,4 @@ button, .btn {
     z-index: 2;
   }
   
-  End Ofers*/
+ /* End Ofers*/
