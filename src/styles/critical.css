@@ -38,17 +38,23 @@ h2 {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
-
 a{color:#ffffff;}
-#page-content{
-  margin: 50px!important;
-}
 /* Buttons */
 button, .btn {
   font-weight: 600;
   text-transform: uppercase;
+}
+.wrapper {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  width: 100%;
+}
+@media (max-width: 1050px) {
+  .wrapper {
+    padding: 10px;
+  }
 }
 #maincontent{margin: 50px}
 /* End Global font settings */

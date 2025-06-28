@@ -36,18 +36,6 @@ h3 {
   -webkit-text-fill-color: transparent;
 
 }
-.wrapper {
-  max-width: 1050px;
-  margin: 0 auto;
-  padding: 20px 10px;
-  width: 100%;
-}
-
-@media (max-width: 1050px) {
-  .wrapper {
-    padding: 10px;
-  }
-}
   .cols {
     display: flex;
     flex-wrap: wrap;
