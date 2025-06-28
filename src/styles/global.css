@@ -17,31 +17,6 @@ h1 {
   -webkit-text-fill-color: transparent;
 
 }
-h2 {
-  font-size: 1.8rem;
-  text-align: center;
-  padding: 20px 0 10px 0;
-}
-
-h2 { 
-  font-size: 2rem;
-  font-family: 'Arial Black', sans-serif;
-  text-transform: uppercase;
-  background: linear-gradient(
-    to right,
-    #967c44 0%,
-    #e6cca3 10%,
-    #e6c99e 30%,
-    #f4ebdd 50%,
-    #e6c99e 70%,
-    #e6cca3 80%,
-    #967c44 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
 h3 { 
   font-size: 1.3rem;
   text-align: center;
