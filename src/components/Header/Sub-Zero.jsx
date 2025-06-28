@@ -35,4 +35,5 @@ const ParallaxHeader = () => {
     </div>
   );
 };
+
 export default ParallaxHeader;
