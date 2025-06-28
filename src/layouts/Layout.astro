@@ -11,13 +11,15 @@ interface Props {
 	type?: 'website' | 'article';
 	structuredData?: object;
 	breadcrumbs?: BreadcrumbItem[];
+	canonical?: string;
 }
 const { 
-	title = "Astro Basics",
-	description = "Welcome to Astro Basics - A starter template for building fast websites with Astro",
+	title = "Luxury Appliance Repair by ZARICCI",
+	description = "Welcome to Luxury Appliance Repair by ZARICCI, your go to high-end apploiance repair company you can trust",
 	type = "website",
 	structuredData,
-	breadcrumbs = []
+	breadcrumbs = [],
+	canonical
 } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'http://localhost:4321');
 
@@ -52,7 +54,9 @@ const finalStructuredData = structuredData || defaultStructuredData;
 		<meta property="twitter:url" content={canonicalURL} />
 		<meta property="twitter:title" content={title} />
 		<meta property="twitter:description" content={description} />
+		<link rel="canonical" href={canonicalURL} />
 		<script type="application/ld+json" set:html={JSON.stringify(finalStructuredData)} />	
+		
 		</head>
 	<body>
 	<MegaMenu client:load />
