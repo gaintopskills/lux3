@@ -188,7 +188,7 @@ export const Tabs = () => {
              <h2>{item.heading}</h2>
              <div className="tab-body-float">
              {item.img && (
-  <img src={item.img} alt={item.title} className="image-float" loading="lazy" />
+  <img src={item.img} alt={item.title} className="image-float" loading="lazy" width="360" height="360" />
 )}
                <div>{item.description}</div>
              </div>

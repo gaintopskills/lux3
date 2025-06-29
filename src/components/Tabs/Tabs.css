@@ -137,10 +137,35 @@
     overflow: hidden; /* Clear float properly */
   }
   
-  .image-float {
+  /*.image-float {
     float: right;
     width: 400px;
     height: auto;
     margin: 0 20px 20px 0;
     border-radius: 5px;
+  }*/
+
+  .image-float {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 215, 0, 0.5); /* soft gold glow */
+    box-shadow:
+      0 4px 10px rgba(0, 0, 0, 0.6),
+      0 0 15px rgba(255, 215, 0, 0.3); /* outer gold glow */
+  
+    margin: 20px;
+    float: right;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Center on mobile */
+  @media (max-width: 768px) {
+  .image-float {
+    float: none;
+    display: block;
+    margin: auto;
+    max-width: 360px;
+    max-height: 360px;
+  }
   }
