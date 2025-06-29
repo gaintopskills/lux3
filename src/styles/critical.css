@@ -46,25 +46,6 @@
    height: 100vh; /* Extra scrolling space for strong parallax effect */
    padding: 100px;
 }
-/* 🔹 Mobile Optimization: Disable Video */
-@media (max-width: 768px) {
-   .parallax-header {
-       background-attachment: scroll; /* No parallax on mobile */
-   }
-    .maintext {
-       backdrop-filter: none !important;
-       background: none;
-       padding: 5px;
-   }
-    .menu {
-       display: none;
-       position: fixed;
-       bottom: 10px;
-   }
-   .bg-video {
-       display: none; /* Disable video for mobile */
-   }
-}
  /*End Parallax Header*/
 h2 {
   font-size: 1.8rem;

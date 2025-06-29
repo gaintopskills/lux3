@@ -272,7 +272,7 @@ a{color:#ffffff;}
   }
   /*MegaMenu*/
 
-    /* Parallax Header Image*/
+    /* Parallax Header for mobile speed*/
 
     .header-image {
       width: 100%;
@@ -287,4 +287,23 @@ a{color:#ffffff;}
       display: block;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-     /* End Parallax Header Image*/
+    /* 🔹 Mobile Optimization: Disable Video */
+@media (max-width: 768px) {
+  .parallax-header {
+      background-attachment: scroll; /* No parallax on mobile */
+  }
+   .maintext {
+      backdrop-filter: none !important;
+      background: none;
+      padding: 5px;
+  }
+   .menu {
+      display: none;
+      position: fixed;
+      bottom: 10px;
+  }
+  .bg-video {
+      display: none; /* Disable video for mobile */
+  }
+}
+     /* End Parallax Header for mobile speed*/
