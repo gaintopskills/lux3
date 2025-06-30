@@ -134,18 +134,19 @@ button, .btn {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 25px;
+    margin: 0 5px;
   
   }
   .col {
     width: calc(20% - 2rem);
+    aspect-ratio: 1 / 1;
     margin: 1rem;
     cursor: pointer;
     perspective: 1000px;
-    
   }
   .container {
     transform-style: preserve-3d;
+    height: 100%;
   }
   .front,
   .back {
@@ -156,8 +157,7 @@ button, .btn {
     transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
     backface-visibility: hidden;
     text-align: center;
-    min-height: 280px;
-    height: auto;
+    height: 100%;
     color: #fff;
     font-size: 1.3rem;
     display: flex;
@@ -200,19 +200,24 @@ button, .btn {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
   }
-  @media screen and (max-width: 64rem) {
+  @media screen and (max-width: 80rem) {
     .col {
-      width: calc(33.333% - 2rem);
+      width: calc(30% - 2rem);
     }
   }
-  
-  @media screen and (max-width: 48rem) {
+  @media screen and (max-width: 57rem) {
     .col {
       width: calc(50% - 2rem);
     }
   }
   
-  @media screen and (max-width: 32rem) {
+  @media screen and (max-width: 44rem) {
+    .col {
+      width: calc(80% - 2rem);
+    }
+  }
+  
+  @media screen and (max-width: 25rem) {
     .col {
       width: 100%;
       margin: 0 0 2rem 0;
