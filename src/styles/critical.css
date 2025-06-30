@@ -138,7 +138,7 @@ button, .btn {
   
   }
   .col {
-    width: calc(20% - 2rem);
+    width: calc(30% - 2rem);
     aspect-ratio: 1 / 1;
     margin: 1rem;
     cursor: pointer;
