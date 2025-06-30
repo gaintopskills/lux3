@@ -142,7 +142,7 @@ button, .btn {
     aspect-ratio: 1 / 1;
     margin: 1rem;
     cursor: pointer;
-    perspective: 1300px;
+    perspective: 1000px;
   }
   .container {
     transform-style: preserve-3d;
@@ -199,11 +199,6 @@ button, .btn {
   .front .inner span {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-  }
-  @media screen and (max-width: 80rem) {
-    .col {
-      width: calc(30% - 2rem);
-    }
   }
   @media screen and (max-width: 57rem) {
     .col {
