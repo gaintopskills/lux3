@@ -3,34 +3,34 @@ import React, { useState } from "react";
 const offers = [
   {
     id: 1,
-    title: "Home Appliance Services",
+    title: "",
     subtitle: "",
-    description: "",
-    image: "appliance-repair-services.webp",
+    description: "We repair Sub-zero refrigerators, freezers, wine coolers, warming drawers",
+    image: "/sub-zero/sub-zero-appliance-repair.webp",
   },
   {
     id: 2,
-    title: "Coomercial Appliance Services",
+    title: "",
     subtitle: "",
     description:
       "We offer 10% off comprehensive household appliance maintenance for return customers.",
-    image: "commercial-appliance-repair.webp",
+    image: "/wolf/wolf-appliance-repair.webp",
   },
   {
     id: 3,
-    title: "HVAC Services",
+    title: "",
     subtitle: "",
     description:
       "We offer a discount for a written invoice from another company providing competitive pricing.",
-    image: "hvac-services.webp",
+    image: "/miele/miele-appliance-repair.webp",
   },
   {
     id: 4,
-    title: "Duct Cleaning Services",
+    title: "",
     subtitle: "",
     description:
       "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
-    image: "duct-cleaning-servises.webp",
+    image: "/viking/viking-appliance-repair.webp",
   },
 ];
 const Services = () => {
