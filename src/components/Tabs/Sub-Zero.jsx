@@ -112,6 +112,46 @@ export const Tabs = () => {
       ),
     },
     {
+      id: "content7",
+      title: "Maintenance Services",
+      heading: "Sub-Zero Maintenance Services",
+      img: "/sub-zero/sub-zero-maintenance-services.webp", // replace with your image
+      alt: "Sub-Zero Maintenance Services",
+      description: (
+        <>
+          <p>Keep your Sub-Zero appliances in peak condition with our routine <strong>maintenance services</strong>. Prevent breakdowns and extend the life of your refrigerator, freezer, or wine cooler with scheduled tune-ups and inspections.</p>
+          <h3>What’s Included:</h3>
+          <ul>
+            <li>✅ Full system diagnostics</li>
+            <li>✅ Vacuum condenser cleaning</li>
+            <li>✅ Gasket inspection and sealing</li>
+            <li>✅ Thermostat & sensor calibration</li>
+            <li>✅ Filter replacements</li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      id: "content8",
+      title: "Installation Services",
+      heading: "Sub-Zero Installation Services",
+      img: "/sub-zero/sub-zero-installation-services.webp", // replace with your image
+      alt: "Sub-Zero Installation Services",
+      description: (
+        <>
+          <p>Upgrading your kitchen? We provide <strong>white-glove installation</strong> of all Sub-Zero appliances, including <strong>built-in refrigerators</strong>, <strong>column freezers</strong>, and <strong>wine preservation units</strong>.</p>
+          <h3>Installation Options:</h3>
+          <ul>
+            <li>✅ Panel-ready Sub-Zero installation</li>
+            <li>✅ Integrated fridge/freezer setup</li>
+            <li>✅ Water line and electrical integration</li>
+            <li>✅ Haul-away of old units (optional)</li>
+            <li>✅ Post-installation performance testing</li>
+          </ul>
+        </>
+      ),
+    },
+    {
       id: "content5",
       title: "Why Choose Us?",
   heading: "Why Homeowners Choose Zaricci for Sub-Zero Repair",
