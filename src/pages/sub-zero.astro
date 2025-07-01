@@ -25,42 +25,31 @@ const structuredData = {
   "width": 1200,
   "height": 630
 },
- 
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Sub-Zero Appliance Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Sub-Zero Appliance Repair",
-          "description": "Certified repair services for Sub-Zero refrigerators, wine coolers, freezers, and undercounter units—resolving cooling issues, compressor failures, and sensor malfunctions with precision."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Sub-Zero Appliance Installation",
-          "description": "Professional installation of Sub-Zero integrated and column refrigerators, wine storage, and drawer units with factory-level calibration and panel alignment."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Sub-Zero Appliance Maintenance",
-          "description": "Preventive maintenance for Sub-Zero appliances to ensure quiet operation, optimal cooling performance, and long-term preservation of food and wine."
-        }
-      }
-    ]
-  },
-"brand": {
-  "@type": "Brand",
-  "name": "Zaricci",
-  "url": "https://luxuryappliance.repair/"
+"address": {
+  "@type": "PostalAddress",
+  "addressLocality": "Los Angeles",
+  "addressRegion": "CA",
+  "addressCountry": "US"
 },
+ "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.0522715,
+    "longitude": -118.4697833
+  },
+ "areaServed": [
+   { "@type": "City", "name": "Los Angeles", "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles" },
+   { "@type": "City", "name": "Brentwood", "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles" },
+    { "@type": "City", "name": "Pasadena", "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California" },
+    { "@type": "City", "name": "Bel Air", "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles" },
+    { "@type": "City", "name": "Pacific Palisades", "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades" },
+    { "@type": "City", "name": "Santa Monica", "sameAs": "https://en.wikipedia.org/wiki/Santa_Monica,_California" },
+    { "@type": "City", "name": "Beverly Hills", "sameAs": "https://en.wikipedia.org/wiki/Beverly_Hills,_California" },
+    { "@type": "City", "name": "Calabasas", "sameAs": "https://en.wikipedia.org/wiki/Calabasas,_California" },
+    { "@type": "City", "name": "Thousand Oaks", "sameAs": "https://en.wikipedia.org/wiki/Thousand_Oaks,_California" },
+    { "@type": "City", "name": "West Hollywood", "sameAs": "https://en.wikipedia.org/wiki/West_Hollywood,_California" },
+    { "@type": "City", "name": "San Marino", "sameAs": "https://en.wikipedia.org/wiki/San_Marino,_California" },
+    { "@type": "City", "name": "Malibu", "sameAs": "https://en.wikipedia.org/wiki/Malibu,_California" }
+  ],
   "knowsAbout": [
     "Sub-Zero Appliance Repair",
     "Sub-Zero Refrigerator Service",
@@ -73,6 +62,84 @@ const structuredData = {
     "Sub-Zero Compressor Replacement",
     "Premium Appliance Repair Southern California"
   ],
+  "makesOffer": {
+  "@type": "Offer",
+  "itemOffered": {
+    "@type": "Service",
+    "name": "Sub-Zero Appliance Services",
+    "description": "Certified in-home repair, installation, and maintenance for Sub-Zero refrigerators, freezers, wine coolers, and undercounter units. Services available across the Los Angeles metropolitan area.",
+    "areaServed": {
+      "@type": "Place",
+      "name": "Los Angeles Metropolitan Area"
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "Luxury Appliance Repair by Zaricci"
+    }
+  }
+},
+"hasOfferCatalog": {
+  "@type": "OfferCatalog",
+  "name": "Sub-Zero Appliance Services",
+  "itemListElement": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Sub-Zero Refrigerator Repair",
+        "description": "Repair for Sub-Zero built-in, integrated, and PRO series refrigerators experiencing cooling, temperature control, or compressor issues."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Sub-Zero Freezer Repair",
+        "description": "Expert service for upright, drawer, and column freezers with defrost, seal, or evaporator system issues."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Sub-Zero Wine Cooler Repair",
+        "description": "Repair and calibration of Sub-Zero wine preservation units, addressing temperature fluctuations, lighting, and fan malfunctions."
+      }
+    },
+{
+  "@type": "Offer",
+  "itemOffered": {
+    "@type": "Service",
+    "name": "Sub-Zero Undercounter & Beverage Center Repair",
+    "description": "Service for Sub-Zero undercounter units, including beverage centers, compact refrigerators, and drawer freezers. We resolve cooling, seal, and control issues."
+  }
+},
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Sub-Zero Appliance Installation",
+        "description": "Factory-level installation of Sub-Zero column refrigerators, wine storage, and integrated units with precision panel alignment."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Sub-Zero Appliance Maintenance",
+        "description": "Preventive maintenance for Sub-Zero appliances to ensure optimal performance, extended lifespan, and food preservation."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Sub-Zero Compressor Replacement",
+        "description": "Certified compressor replacement for Sub-Zero models experiencing cooling loss or sealed system issues."
+      }
+    }
+  ]
+},
   "potentialAction": [
     {
       "@type": "ReserveAction",
