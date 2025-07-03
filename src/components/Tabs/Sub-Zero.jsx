@@ -214,9 +214,11 @@ export const Tabs = () => {
     if (isMobile && activeTab) {
       const index = items.findIndex((item) => item.id === activeTab);
       if (itemRefs.current[index]) {
-        itemRefs.current[index].scrollIntoView({
+        const topOffset = 150; // offset to avoid header obstruction
+        const elementTop = itemRefs.current[index].getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({
+          top: elementTop - topOffset,
           behavior: "smooth",
-          block: "start",
         });
       }
     }
