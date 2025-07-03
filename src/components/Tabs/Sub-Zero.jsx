@@ -233,7 +233,7 @@ export const Tabs = () => {
 )}
                <div>{item.description}</div>
              </div>
-             <a href="#form">
+             <a href="/book/">
   <button className="tabs-button">Book</button>
 </a>
 <a href="tel:3238704790">
@@ -265,7 +265,7 @@ export const Tabs = () => {
   <img src={item.img} alt={item.title} className="image-float" loading="lazy" />
 )}
                <div>{item.description}</div>
-               <a href="#form">
+               <a href="/book/">
   <button className="tabs-button">Book</button>
 </a>
 <a href="tel:3238704790">
