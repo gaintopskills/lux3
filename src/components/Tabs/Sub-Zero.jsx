@@ -3,8 +3,9 @@ import "./Tabs.css";
 
 export const Tabs = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [activeTab, setActiveTab] = useState("null");
+  const [activeTab, setActiveTab] = useState(null);
   const containerRef = useRef(null);
+  const itemRefs = useRef([]);
 
   const items = [
     {
@@ -199,6 +200,7 @@ export const Tabs = () => {
       ),
     },
   ];
+
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -207,6 +209,18 @@ export const Tabs = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  useEffect(() => {
+    if (isMobile && activeTab) {
+      const index = items.findIndex((item) => item.id === activeTab);
+      if (itemRefs.current[index]) {
+        itemRefs.current[index].scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }
+  }, [activeTab, isMobile]);
 
   return (
     <div className="tabs-container" ref={containerRef}>
@@ -225,28 +239,42 @@ export const Tabs = () => {
           </div>
           <div className="tabs-content">
             {items.map((item) => (
-             <div className={`tab-panel ${activeTab === item.id ? "active-tab" : ""}`}>
-             <h2>{item.heading}</h2>
-             <div className="tab-body-float">
-             {item.img && (
-  <img width="360" height="360" src={item.img} alt={item.title} className="image-float" loading="lazy"/>
-)}
-               <div>{item.description}</div>
-             </div>
-             <a href="/book/">
-  <button className="tabs-button">Book</button>
-</a>
-<a href="tel:3238704790">
-  <button className="tabs-button">Call: (424) 499-7788</button>
-</a>
-           </div>
+              <div
+                key={item.id}
+                className={`tab-panel ${activeTab === item.id ? "active-tab" : ""}`}
+              >
+                <h2>{item.heading}</h2>
+                <div className="tab-body-float">
+                  {item.img && (
+                    <img
+                      width="360"
+                      height="360"
+                      src={item.img}
+                      alt={item.title}
+                      className="image-float"
+                      loading="lazy"
+                    />
+                  )}
+                  <div>{item.description}</div>
+                </div>
+                <a href="/book/">
+                  <button className="tabs-button">Book</button>
+                </a>
+                <a href="tel:3238704790">
+                  <button className="tabs-button">Call: (424) 499-7788</button>
+                </a>
+              </div>
             ))}
           </div>
         </div>
       ) : (
         <div className="accordion-mobile">
-          {items.map((item) => (
-            <div key={item.id} className="accordion-item">
+          {items.map((item, index) => (
+            <div
+              key={item.id}
+              className="accordion-item"
+              ref={(el) => (itemRefs.current[index] = el)}
+            >
               <div
                 onClick={() =>
                   setActiveTab((prev) => (prev === item.id ? null : item.id))
@@ -259,19 +287,24 @@ export const Tabs = () => {
                 </span>
               </div>
               {activeTab === item.id && (
-  <div className="accordion-content">
-               <h2>{item.title}</h2>
-               {item.img && (
-  <img src={item.img} alt={item.title} className="image-float" loading="lazy" />
-)}
-               <div>{item.description}</div>
-               <a href="/book/">
-  <button className="tabs-button">Book</button>
-</a>
-<a href="tel:3238704790">
-  <button className="tabs-button">Call: (424) 499-7788</button>
-</a>
-             </div>
+                <div className="accordion-content">
+                  <h2>{item.title}</h2>
+                  {item.img && (
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      className="image-float"
+                      loading="lazy"
+                    />
+                  )}
+                  <div>{item.description}</div>
+                  <a href="/book/">
+                    <button className="tabs-button">Book</button>
+                  </a>
+                  <a href="tel:3238704790">
+                    <button className="tabs-button">Call: (424) 499-7788</button>
+                  </a>
+                </div>
               )}
             </div>
           ))}
@@ -280,4 +313,5 @@ export const Tabs = () => {
     </div>
   );
 };
+
 export default Tabs;
