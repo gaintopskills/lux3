@@ -22,7 +22,8 @@ const ParallaxHeader = () => {
 
       <div className="maintext">
         <h1 class="gold-embossed" data-text="SUB-ZERO">Sub-Zero Repair West Hollywood</h1>
-        <img className="header-image" width="400" height="189" src="/sub-zero/sub-zero-repair-services-west-hollywood.webp" alt="Sub-Zero Repair Services"/>
+        <img className="header-image" width="400" height="189" src="/sub-zero/sub-zero-repair-services-west-hollywood.webp" alt="Sub-Zero Repair Services" fetchpriority="high"
+  decoding="async"/>
         <p>
         Local West Hollywood factory-trained Sub-Zero repair technicians specializing in luxury appliance repair including Sub-Zero repair.</p>
         <p>✅ Lisenced & Insured<br />
