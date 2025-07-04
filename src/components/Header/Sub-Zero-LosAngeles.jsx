@@ -28,6 +28,8 @@ const ParallaxHeader = () => {
           height="189"
           src="/sub-zero/sub-zero-repair-los-angeles.webp"
           alt="Sub-Zero Repair Services Los Angeles"
+          fetchpriority="high"
+  decoding="async"
         />
         <p>
           Serving Los Angeles with <strong>factory-trained Sub-Zero repair experts</strong> for luxury appliance service across LA.
