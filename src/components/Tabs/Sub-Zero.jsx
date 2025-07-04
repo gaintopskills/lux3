@@ -3,9 +3,7 @@ import "./Tabs.css";
 
 export const Tabs = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [activeTab, setActiveTab] = useState(() =>
-    typeof window !== "undefined" && window.innerWidth > 768 ? "content1" : null
-  );
+  const [activeTab, setActiveTab] = useState(null);
   const containerRef = useRef(null);
   const itemRefs = useRef([]);
 
@@ -205,8 +203,11 @@ export const Tabs = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      const mobile = window.innerWidth <= 768;
+      setIsMobile(mobile);
+      setActiveTab(mobile ? null : "content1");
     };
+
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
