@@ -19,7 +19,6 @@ const ParallaxHeader = () => {
         />
         Your browser does not support the video tag.
       </video>
-
       <div className="maintext">
         <h1 class="gold-embossed" data-text="SUB-ZERO">Sub-Zero Repair</h1>
         <img className="header-image" width="400" height="189" src="/sub-zero/sub-zero-repair-services.webp" alt="Sub-Zero Repair Services"  fetchpriority="high"
