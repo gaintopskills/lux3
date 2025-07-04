@@ -3,7 +3,9 @@ import "./Tabs.css";
 
 export const Tabs = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [activeTab, setActiveTab] = useState(null);
+  const [activeTab, setActiveTab] = useState(() =>
+    typeof window !== "undefined" && window.innerWidth > 768 ? "content1" : null
+  );
   const containerRef = useRef(null);
   const itemRefs = useRef([]);
 
@@ -214,7 +216,7 @@ export const Tabs = () => {
     if (isMobile && activeTab) {
       const index = items.findIndex((item) => item.id === activeTab);
       if (itemRefs.current[index]) {
-        const topOffset = 150; // offset to avoid header obstruction
+        const topOffset = 150;
         const elementTop = itemRefs.current[index].getBoundingClientRect().top + window.pageYOffset;
         window.scrollTo({
           top: elementTop - topOffset,
