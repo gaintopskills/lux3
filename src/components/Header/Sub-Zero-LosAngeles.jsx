@@ -26,7 +26,7 @@ const ParallaxHeader = () => {
           className="header-image"
           width="400"
           height="189"
-          src="/sub-zero/sub-zero-repair-los-angeles.webp"
+          src="/sub-zero/sub-zero-repair-los-angeles-1200-630.webp"
           alt="Sub-Zero Repair Services Los Angeles"
           fetchpriority="high"
   decoding="async"
