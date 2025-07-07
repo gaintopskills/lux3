@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./Offers.css";
 const offers = [
   {
     id: 1,
