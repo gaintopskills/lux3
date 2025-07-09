@@ -11,11 +11,6 @@
  justify-content: center;
  flex-direction: column; /* Make stacking work */
 }
-.header-image {
-  width: 100%;
-  max-width: 346px;
-  max-height: 189px;}
-
 /* 🔹 Background Video */
 .bg-video {
    position: absolute; 
