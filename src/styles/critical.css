@@ -11,6 +11,10 @@
  justify-content: center;
  flex-direction: column; /* Make stacking work */
 }
+.header-image {
+  width: 100%;
+  max-width: 360px;
+  max-height: 181px;}
 
 /* 🔹 Background Video */
 .bg-video {
