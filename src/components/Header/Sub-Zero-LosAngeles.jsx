@@ -24,9 +24,9 @@ const ParallaxHeader = () => {
         <h1 className="gold-embossed" data-text="SUB-ZERO">Sub-Zero Repair Los Angeles</h1>
         <img
           className="header-image"
-          width="400"
-          height="182"
-          src="/sub-zero/sub-zero-repair-los-angeles-346x182.webp"
+          width="519"
+          height="272"
+          src="/sub-zero/sub-zero-repair-los-angeles-519x272.webp"
           alt="Sub-Zero Repair Services Los Angeles"
           fetchpriority="high"
   decoding="async"
