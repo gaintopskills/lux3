@@ -71,6 +71,54 @@ const offers = [
     description:
       "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
     image: "/monogram/monogram-appliance-repair.webp",
+  },
+  {
+    id: 10,
+    title: "",
+    subtitle: "",
+    description:
+      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+    image: "/dacor/dacor-appliance-repair.webp",
+  },
+  {
+    id: 11,
+    title: "",
+    subtitle: "",
+    description:
+      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+    image: "/fisherpaykel/fisher-and-paykel-appliance-repair.webp",
+  },
+  {
+    id: 12,
+    title: "",
+    subtitle: "",
+    description:
+      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+    image: "/aga/aga-appliance-repair-services.webp",
+  },
+  {
+    id: 13,
+    title: "",
+    subtitle: "",
+    description:
+      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+    image: "/bertazzoni/bertazzoni-appliance-repair.webp",
+  },
+  {
+    id: 14,
+    title: "",
+    subtitle: "",
+    description:
+      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+    image: "/bluestar/bluestar-appliance-repair.webp",
+  },
+  {
+    id: 15,
+    title: "",
+    subtitle: "",
+    description:
+      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+    image: "/kitchenaid/kitchenaid-appliance-repair.webp",
   }
 ];
 const Services = () => {
