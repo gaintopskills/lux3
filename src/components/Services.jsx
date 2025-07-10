@@ -48,6 +48,30 @@ const offers = [
       "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
     image: "/bosch/bosch-appliance-repair.webp",
   },
+  {
+    id: 7,
+    title: "",
+    subtitle: "",
+    description:
+      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+    image: "/cove/cove-appliance-repair.webp",
+  },
+  {
+    id: 8,
+    title: "",
+    subtitle: "",
+    description:
+      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+    image: "/jennair/jennair-appliance-repair.webp",
+  },
+  {
+    id: 9,
+    title: "",
+    subtitle: "",
+    description:
+      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+    image: "/monogram/monogram-appliance-repair.webp",
+  }
 ];
 const Services = () => {
   const [flipped, setFlipped] = useState(Array(offers.length).fill(false));
