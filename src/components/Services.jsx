@@ -3,15 +3,15 @@ import "./Offers.css";
 const offers = [
   {
     id: 1,
-    title: "Sub-Zero Repair",
-    subtitle: "",
+    title: "",
+    subtitle: "Sub-Zero Repair",
     description: "We repair Sub-zero refrigerators, freezers, wine coolers, warming drawers",
     image: "/sub-zero/sub-zero-appliance-repair.webp",
   },
   {
     id: 2,
     title: "",
-    subtitle: "",
+    subtitle: "Wolf Reapair",
     description:
       "We offer 10% off comprehensive household appliance maintenance for return customers.",
     image: "/wolf/wolf-appliance-repair.webp",
@@ -19,7 +19,7 @@ const offers = [
   {
     id: 3,
     title: "",
-    subtitle: "",
+    subtitle: "Miele Repair",
     description:
       "We offer a discount for a written invoice from another company providing competitive pricing.",
     image: "/miele/miele-appliance-repair.webp",
@@ -150,11 +150,12 @@ const Services = () => {
   <div className="overlay"></div> {/* New overlay div */}
   <div className="inner">
     <p>{offer.title}</p>
-    <span>{offer.subtitle}</span>
+    
   </div>
 </div>
 <div className="back">
                 <div className="inner">
+                <h2>{offer.subtitle}</h2>
                   <p>{offer.description}</p>
                 </div>
               </div>
