@@ -27,7 +27,7 @@ const offers = [
   {
     id: 4,
     title: "",
-    subtitle: "",
+    subtitle: "Viking Repair",
     description:
       "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
     image: "/viking/viking-appliance-repair.webp",
@@ -35,7 +35,7 @@ const offers = [
   {
     id: 5,
     title: "",
-    subtitle: "",
+    subtitle: "Thermador Repair",
     description:
       "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
     image: "/thermador/thermador-appliance-repair.webp",
@@ -43,7 +43,7 @@ const offers = [
   {
     id: 6,
     title: "",
-    subtitle: "",
+    subtitle: "Bosch Repair",
     description:
       "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
     image: "/bosch/bosch-appliance-repair.webp",
@@ -51,7 +51,7 @@ const offers = [
   {
     id: 7,
     title: "",
-    subtitle: "",
+    subtitle: "Cove Repair",
     description:
       "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
     image: "/cove/cove-appliance-repair.webp",
@@ -133,7 +133,7 @@ const Services = () => {
   };
   return (
     <div className="wrapper">
-      <h2>Services</h2>
+      <h2>Main Brands We Repair</h2>
       <div className="cols">
         {offers.map((offer, index) => (
           <div
@@ -155,7 +155,7 @@ const Services = () => {
 </div>
 <div className="back">
                 <div className="inner">
-                <h2>{offer.subtitle}</h2>
+                <h3>{offer.subtitle}</h3>
                   <p>{offer.description}</p>
                 </div>
               </div>
