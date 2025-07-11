@@ -3,7 +3,7 @@ import "./Offers.css";
 const offers = [
   {
     id: 1,
-    title: "",
+    title: "Sub-Zero Repair",
     subtitle: "",
     description: "We repair Sub-zero refrigerators, freezers, wine coolers, warming drawers",
     image: "/sub-zero/sub-zero-appliance-repair.webp",
