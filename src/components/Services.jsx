@@ -45,7 +45,7 @@ const offers = [
     title: "",
     subtitle: "Bosch Repair",
     description:
-      "We repair Bosch ovens, cooktops, dishwashers, refrigerators, and washers and dryers",
+      "We repair Bosch ovens, ranges, cooktops, warming drawers, refrigerators, freezers, wine coolers, beverage centers, dishwashers, washing machines, dryers, & coffee machines",
     image: "/bosch/bosch-appliance-repair.webp",
   },
   {
@@ -61,7 +61,7 @@ const offers = [
     title: "",
     subtitle: "JennAir Repair",
     description:
-      "We repair JennAir ovens, cooktops, ranges, refrigerators, dishwashers, and ventilation hoods.",
+      "We repair JennAir ranges, ovens, cooktops, warming drawers, hoods, refrigerators, freezers, wine cellars, beverage centers, ice makers, dishwashers, & coffee machines",
     image: "/jennair/jennair-appliance-repair.webp",
   },
   {
@@ -69,7 +69,7 @@ const offers = [
     title: "",
     subtitle: "Monogram Repair",
     description:
-      "We repair Monogram refrigerators, ovens, cooktops, ranges, dishwashers, and ventilation hoods",
+      "We repair Monogram ranges, ovens, cooktops, range tops, warming drawers, hoods, refrigerators, freezers, wine coolers, beverage centers, ice makers, dishwashers, coffee machines",
     image: "/monogram/monogram-appliance-repair.webp",
   },
   {
