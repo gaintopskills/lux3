@@ -69,7 +69,7 @@ const offers = [
     title: "",
     subtitle: "Monogram Repair",
     description:
-      "We repair Monogram ranges, ovens, cooktops, range tops, warming drawers, hoods, refrigerators, freezers, wine coolers, beverage centers, ice makers, dishwashers, coffee machines",
+      "We repair Monogram ranges, ovens, cooktops, range tops, warming drawers, hoods, refrigerators, freezers, wine coolers, beverage centers, ice makers, dishwashers, & coffee machines",
     image: "/monogram/monogram-appliance-repair.webp",
   },
   {
@@ -77,7 +77,7 @@ const offers = [
     title: "",
     subtitle: "Dacor Repair",
     description:
-      "We repair Dacor ovens, ranges, cooktops, refrigerators, dishwashers, and ventilation hoods",
+      "We repair Dacor ranges, ovens, cooktops, range tops, warming drawers, hoods, refrigerators, freezers, wine coolers, beverage centers, ice makers, dishwashers, & coffee machines",
     image: "/dacor/dacor-appliance-repair.webp",
   },
   {
@@ -85,7 +85,7 @@ const offers = [
     title: "",
     subtitle: "Fisher & Paykel Repair",
     description:
-      "We repair Fisher & Paykel refrigerators, ovens, cooktops, dishwashers, washer-dryer combos, ventilation hoods, and built-in BBQ grills",
+      "We repair Fisher & Paykel ranges, ovens, cooktops, hoods, warming drawers, refrigerators, freezers, wine cabinets, dishwashers, & coffee machines",
     image: "/fisherpaykel/fisher-and-paykel-appliance-repair.webp",
   },
   {
@@ -93,13 +93,13 @@ const offers = [
     title: "",
     subtitle: "AGA Repair",
     description:
-      "We repair AGA ranges, cookers, ovens, refrigerators, and dishwashers",
+      "We repair AGA ranges, ovens, cooktops, refrigerators, freezers, wine coolers, beverage centers, & dishwashers",
     image: "/aga/aga-appliance-repair-services.webp",
   },
   {
     id: 13,
     title: "",
-    subtitle: "",
+    subtitle: "Bertazzoni Repair",
     description:
       "We repair Bertazzoni ranges, ovens, cooktops, refrigerators, dishwashers, and ventilation hoods",
     image: "/bertazzoni/bertazzoni-appliance-repair.webp",
@@ -107,9 +107,9 @@ const offers = [
   {
     id: 14,
     title: "",
-    subtitle: "",
+    subtitle: "BlueStar Repair",
     description:
-      "We repair BlueStar ranges, ovens, cooktops, refrigerators, and ventilation hoods",
+      "We repair BlueStar ranges, ovens, cooktops, refrigerators, freezers, ventilation hoods, wine coolers, beverage centers, dishwashers, & coffee machnes",
     image: "/bluestar/bluestar-appliance-repair.webp",
   },
   {
@@ -117,7 +117,7 @@ const offers = [
     title: "",
     subtitle: "KitchenAid",
     description:
-      "We repair KitchenAid ovens, ranges, cooktops, refrigerators, dishwashers, and ventilation hoods",
+      "We repair KitchenAid ovens, ranges, cooktops, refrigerators, warming drawers, dishwashers, and ventilation hoods, refrigerators, freezers, wine coolers, & beverage centers",
     image: "/kitchenaid/kitchenaid-appliance-repair.webp",
   }
 ];
