@@ -5,7 +5,7 @@ const offers = [
     id: 1,
     title: "",
     subtitle: "Sub-Zero Repair",
-    description: "We repair Sub-zero refrigerators, freezers, wine coolers, warming drawers",
+    description: "We repair Sub-zero refrigerators, freezers, wine coolers, beverage centers, ice makers.",
     image: "/sub-zero/sub-zero-appliance-repair.webp",
   },
   {
