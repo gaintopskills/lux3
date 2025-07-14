@@ -13,7 +13,7 @@ const offers = [
     title: "",
     subtitle: "Wolf Reapair",
     description:
-      "We repair Wolf ranges, ovens, cooktops, rangetops, and warming drawers",
+      "We repair Wolf ranges, ovens, cooktops, and warming drawers, ventelation hoods, coffee systems, griddles & grills",
     image: "/wolf/wolf-appliance-repair.webp",
   },
   {
@@ -21,7 +21,7 @@ const offers = [
     title: "",
     subtitle: "Miele Repair",
     description:
-      "We repair Miele ovens, cooktops, ranges, dishwashers, coffee systems, and warming drawers.",
+      "We repair Miele ovens, cooktops, ranges, warming drawers, coffee systems, refrigerators, dishwashers, washers & dryers, range hoods",
     image: "/miele/miele-appliance-repair.webp",
   },
   {
@@ -29,7 +29,7 @@ const offers = [
     title: "",
     subtitle: "Viking Repair",
     description:
-      "We repair Viking ranges, ovens, cooktops, refrigerators, dishwashers, and ventilation hoods",
+      "We repair Viking ranges, ovens, cooktops, refrigerators, warming drawers, hoods, wine cellars, beverage centers, ice makers, freezers",
     image: "/viking/viking-appliance-repair.webp",
   },
   {
@@ -37,7 +37,7 @@ const offers = [
     title: "",
     subtitle: "Thermador Repair",
     description:
-      "We repair Thermador ovens, ranges, cooktops, refrigerators, dishwashers, and ventilation hoods",
+      "We repair Thermador ranges, ovens, cooktops, range tops, hoods, refrigerators, freezers, wine coolers, beverage centers",
     image: "/thermador/thermador-appliance-repair.webp",
   },
   {
