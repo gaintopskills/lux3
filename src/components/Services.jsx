@@ -13,7 +13,7 @@ const offers = [
     title: "",
     subtitle: "Wolf Reapair",
     description:
-      "We offer 10% off comprehensive household appliance maintenance for return customers.",
+      "We repair Wolf ranges, ovens, cooktops, rangetops, and warming drawers",
     image: "/wolf/wolf-appliance-repair.webp",
   },
   {
@@ -21,7 +21,7 @@ const offers = [
     title: "",
     subtitle: "Miele Repair",
     description:
-      "We offer a discount for a written invoice from another company providing competitive pricing.",
+      "We repair Miele ovens, cooktops, ranges, dishwashers, coffee systems, and warming drawers.",
     image: "/miele/miele-appliance-repair.webp",
   },
   {
@@ -29,7 +29,7 @@ const offers = [
     title: "",
     subtitle: "Viking Repair",
     description:
-      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+      "We repair Viking ranges, ovens, cooktops, refrigerators, dishwashers, and ventilation hoods",
     image: "/viking/viking-appliance-repair.webp",
   },
   {
@@ -37,7 +37,7 @@ const offers = [
     title: "",
     subtitle: "Thermador Repair",
     description:
-      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+      "We repair Thermador ovens, ranges, cooktops, refrigerators, dishwashers, and ventilation hoods",
     image: "/thermador/thermador-appliance-repair.webp",
   },
   {
@@ -45,7 +45,7 @@ const offers = [
     title: "",
     subtitle: "Bosch Repair",
     description:
-      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+      "We repair Bosch ovens, cooktops, dishwashers, refrigerators, and washers and dryers",
     image: "/bosch/bosch-appliance-repair.webp",
   },
   {
@@ -53,47 +53,47 @@ const offers = [
     title: "",
     subtitle: "Cove Repair",
     description:
-      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+      "We repair Cove dishwashers and handle all Cove appliance service needs with expert care",
     image: "/cove/cove-appliance-repair.webp",
   },
   {
     id: 8,
     title: "",
-    subtitle: "",
+    subtitle: "JennAir Repair",
     description:
-      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+      "We repair JennAir ovens, cooktops, ranges, refrigerators, dishwashers, and ventilation hoods.",
     image: "/jennair/jennair-appliance-repair.webp",
   },
   {
     id: 9,
     title: "",
-    subtitle: "",
+    subtitle: "Monogram Repair",
     description:
-      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+      "We repair Monogram refrigerators, ovens, cooktops, ranges, dishwashers, and ventilation hoods",
     image: "/monogram/monogram-appliance-repair.webp",
   },
   {
     id: 10,
     title: "",
-    subtitle: "",
+    subtitle: "Dacor Repair",
     description:
-      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+      "We repair Dacor ovens, ranges, cooktops, refrigerators, dishwashers, and ventilation hoods",
     image: "/dacor/dacor-appliance-repair.webp",
   },
   {
     id: 11,
     title: "",
-    subtitle: "",
+    subtitle: "Fisher & Paykel Repair",
     description:
-      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+      "We repair Fisher & Paykel refrigerators, ovens, cooktops, dishwashers, washer-dryer combos, ventilation hoods, and built-in BBQ grills",
     image: "/fisherpaykel/fisher-and-paykel-appliance-repair.webp",
   },
   {
     id: 12,
     title: "",
-    subtitle: "",
+    subtitle: "AGA Repair",
     description:
-      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+      "We repair AGA ranges, cookers, ovens, refrigerators, and dishwashers",
     image: "/aga/aga-appliance-repair-services.webp",
   },
   {
@@ -101,7 +101,7 @@ const offers = [
     title: "",
     subtitle: "",
     description:
-      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+      "We repair Bertazzoni ranges, ovens, cooktops, refrigerators, dishwashers, and ventilation hoods",
     image: "/bertazzoni/bertazzoni-appliance-repair.webp",
   },
   {
@@ -109,15 +109,15 @@ const offers = [
     title: "",
     subtitle: "",
     description:
-      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+      "We repair BlueStar ranges, ovens, cooktops, refrigerators, and ventilation hoods",
     image: "/bluestar/bluestar-appliance-repair.webp",
   },
   {
     id: 15,
     title: "",
-    subtitle: "",
+    subtitle: "KitchenAid",
     description:
-      "We offer an extended 1-year warranty for High-End appliances assuring you in our expert repair.",
+      "We repair KitchenAid ovens, ranges, cooktops, refrigerators, dishwashers, and ventilation hoods",
     image: "/kitchenaid/kitchenaid-appliance-repair.webp",
   }
 ];
