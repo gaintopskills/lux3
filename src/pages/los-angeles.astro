@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ParallaxHeader from '../components/Header/Los-Angeles.jsx';
 import '../styles/global.css';
 const structuredData = {
   "@context": "https://schema.org",
@@ -158,6 +159,7 @@ const structuredData = {
    ogImage="https://luxuryappliance.repair/cities/luxury-appliance-repair-los-angeles-1200x630.jpg"
    canonical="https://luxuryappliance.repair/los-angeles/"
 >
+<ParallaxHeader client:idle/>
 <div style="margin: 50px">
 <section>
   <h1>Luxury Appliance Repair in Los Angeles, CA</h1>
