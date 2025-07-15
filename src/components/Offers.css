@@ -7,7 +7,7 @@
   
   }
   .col {
-    width: calc(30% - 2rem);
+    width: calc(25% - 2rem); /* ⬅️ Change from 30% to 25% */
     aspect-ratio: 1 / 1;
     margin: 1rem;
     cursor: pointer;
