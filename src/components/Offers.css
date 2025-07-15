@@ -1,7 +1,7 @@
 /*Offers*/
 .wrapper {
-  max-width: 100%;
-  padding: 0 2vw; /* smaller horizontal padding */
+  max-width: 90%;
+  padding: 0; /* smaller horizontal padding */
   margin: 0 auto;
 }
 .wrapper h3{
