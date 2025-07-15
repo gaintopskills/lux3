@@ -1,4 +1,9 @@
 /*Offers*/
+.wrapper {
+  max-width: 100%;
+  padding: 0 2vw; /* smaller horizontal padding */
+  margin: 0 auto;
+}
 .wrapper h3{
   font-size: 1rem;
   text-align: center;
