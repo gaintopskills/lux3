@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ParallaxHeader from '../components/Header/Los-Angeles.jsx';
+import Services from '../components/Services.jsx'
 import '../styles/global.css';
 const structuredData = {
   "@context": "https://schema.org",
@@ -160,6 +161,7 @@ const structuredData = {
    canonical="https://luxuryappliance.repair/los-angeles/"
 >
 <ParallaxHeader client:idle/>
+<Services client:visible/>
 <div style="margin: 50px">
 <section>
   <h1>Luxury Appliance Repair in Los Angeles, CA</h1>
