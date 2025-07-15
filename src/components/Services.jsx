@@ -115,7 +115,7 @@ const offers = [
   {
     id: 15,
     title: "",
-    subtitle: "KitchenAid",
+    subtitle: "KitchenAid Repair",
     description:
       "We repair KitchenAid ovens, ranges, cooktops, refrigerators, warming drawers, dishwashers, and ventilation hoods, refrigerators, freezers, wine coolers, & beverage centers",
     image: "/kitchenaid/kitchenaid-appliance-repair.webp",
