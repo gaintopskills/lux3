@@ -25,13 +25,12 @@ const ParallaxHeader = () => {
         <img className="header-image" width="400" height="189" src="/cities/luxury-appliance-repair-los-angeles-519x272.webp" alt="High-end appliance repair Los Angeles" fetchpriority="high"
   decoding="async"/>
         <p>
-        Local Los ANgeles factory-trained high-end repair technicians specializing in luxury appliance repair including Sub-Zero, Wolf, Viking, Thermador, Cove, Miele, Bosch and more.</p>
+        Local Los Angeles factory-trained high-end appliance repair technicians specializing in luxury appliance repair including Sub-Zero, Wolf, Viking, Thermador, Cove, Miele, Bosch and more. We repair all major appliances such as fridges, freezers, ranges, ovens, washers, dryers, grills, and more.</p>
         <p>✅ Lisenced & Insured<br />
         ✅ 3-month warranty on parts and labor<br />
         ✅ 1 year warranty on sealded system repair<br />
           ✅ Same-day or next day service<br />
         </p>
-        <p>If your Sub-Zero fridge not cooling, freezer’s too warm, or wine cooler stops working, you can count on us to fix it.</p>
       </div>
     </div>
   );
