@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ParallaxHeader from '../components/Header/Los-Angeles.jsx';
+import Tabs from '../components/Tabs/LosAngeles.jsx'
 import Services from '../components/Services.jsx'
 import '../styles/global.css';
 const structuredData = {
@@ -162,6 +163,7 @@ const structuredData = {
 >
 <ParallaxHeader client:idle/>
 <Services client:visible/>
+<Tabs client:visible />
 <div style="margin: 50px">
 <section>
   <h1>Luxury Appliance Repair in Los Angeles, CA</h1>
