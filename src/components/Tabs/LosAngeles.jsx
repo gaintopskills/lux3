@@ -9,6 +9,53 @@ export const Tabs = () => {
 
   const items = [
     {
+        id: "hood",
+        title: "Ventilation Hood Repair",
+        heading: "High-End Range Hood & Ventilation Repair",
+        img: "/sub-zero/sub-zero-vent-hood-repair.webp",
+        alt: "Luxury Ventilation Hood Repair",
+        description: (
+          <>
+            <p>Whether it’s a <strong>custom Miele hood insert</strong> or a <strong>Zephyr island unit</strong>, I’ve repaired hundreds of ventilation systems across high-end homes in Los Angeles.</p>
+            <h3>Common Problems:</h3>
+            <ul>
+              <li>✅ Fan not working</li>
+              <li>✅ Lights out or flickering</li>
+              <li>✅ Control buttons unresponsive</li>
+              <li>✅ Noise or vibration issues</li>
+            </ul>
+            <h3>Brands We Repair:</h3>
+            <p><strong>Miele, Zephyr, Wolf, Thermador, Monogram, BlueStar, Bertazzoni</strong></p>
+            <h3>How We Fix It:</h3>
+            <p>We replace fan motors, switches, control boards, and restore filtration for quiet, efficient air circulation.</p>
+          </>
+        ),
+      },
+      
+      {
+        id: "dryer",
+        title: "Dryer Repair",
+        heading: "Luxury Dryer Repair in Los Angeles",
+        img: "/sub-zero/sub-zero-dryer-repair.webp",
+        alt: "High-End Dryer Repair",
+        description: (
+          <>
+            <p>Our team handles <strong>vented and ventless dryers</strong> from <strong>Miele</strong>, <strong>Bosch</strong>, and <strong>LG Signature</strong>. Performance and quiet operation are our top priorities.</p>
+            <h3>Common Problems:</h3>
+            <ul>
+              <li>✅ Not heating</li>
+              <li>✅ Overheating</li>
+              <li>✅ Drum not spinning</li>
+              <li>✅ Digital controls failing</li>
+            </ul>
+            <h3>Brands We Repair:</h3>
+            <p><strong>Miele, Bosch, LG, Electrolux, Monogram, Fisher & Paykel</strong></p>
+            <h3>How We Fix It:</h3>
+            <p>We test heating elements, sensors, motors, and replace drive belts with precision and care.</p>
+          </>
+        ),
+      },
+    {
       id: "refrigerator",
       title: "Refrigerator Repair",
       heading: "Luxury Refrigerator Repair in Los Angeles",
@@ -32,6 +79,75 @@ export const Tabs = () => {
         </>
       ),
     },
+    {
+        id: "freezer",
+        title: "Freezer Repair",
+        heading: "Luxury Freezer Repair in Los Angeles",
+        img: "/sub-zero/sub-zero-freezer-repair.webp",
+        alt: "High-End Freezer Repair",
+        description: (
+          <>
+            <p>From <strong>built-in Sub-Zero freezer drawers</strong> to <strong>standalone Viking models</strong>, we handle all types of freezer repairs with unmatched attention to detail.</p>
+            <h3>Common Problems:</h3>
+            <ul>
+              <li>✅ Ice build-up or frost issues</li>
+              <li>✅ Freezer not cooling</li>
+              <li>✅ Noise or compressor failures</li>
+              <li>✅ Digital control errors</li>
+            </ul>
+            <h3>Brands We Repair:</h3>
+            <p><strong>Sub-Zero, Viking, Miele, Monogram, JennAir, Bosch, Thermador</strong></p>
+            <h3>How We Fix It:</h3>
+            <p>We diagnose evaporator coils, defrost timers, fans, and control boards. Our high-end repair process ensures reliability and quiet operation.</p>
+          </>
+        ),
+      },
+      {
+        id: "icemaker",
+        title: "Ice Maker Repair",
+        heading: "Premium Ice Maker Repair",
+        img: "/sub-zero/sub-zero-ice-maker-repair.webp",
+        alt: "Luxury Ice Maker Repair",
+        description: (
+          <>
+            <p>I’ve worked on <strong>panel-ready Sub-Zero ice machines</strong> and <strong>GE Monogram undercounter units</strong>. We fix residential and built-in ice makers for elite homes across LA.</p>
+            <h3>Common Problems:</h3>
+            <ul>
+              <li>✅ No ice production</li>
+              <li>✅ Ice melting or clumping</li>
+              <li>✅ Water leaks</li>
+              <li>✅ Loud operation or fan issues</li>
+            </ul>
+            <h3>Brands We Repair:</h3>
+            <p><strong>Sub-Zero, Scotsman, Monogram, Viking, True Residential</strong></p>
+            <h3>How We Fix It:</h3>
+            <p>We inspect inlet valves, fill systems, evaporator plates, and ensure water lines are filtered and secured for optimal performance.</p>
+          </>
+        ),
+      },
+      {
+        id: "dishwasher",
+        title: "Dishwasher Repair",
+        heading: "High-End Dishwasher Repair",
+        img: "/sub-zero/sub-zero-dishwasher-repair.webp",
+        alt: "Luxury Dishwasher Repair",
+        description: (
+          <>
+            <p>I’ve serviced integrated dishwashers hidden behind <strong>custom cabinetry</strong>. We ensure performance without disturbing your design aesthetic.</p>
+            <h3>Common Problems:</h3>
+            <ul>
+              <li>✅ Not draining</li>
+              <li>✅ Dishes not clean or dry</li>
+              <li>✅ Leaks or foul smells</li>
+              <li>✅ Error codes or no power</li>
+            </ul>
+            <h3>Brands We Repair:</h3>
+            <p><strong>Cove, Miele, Bosch, Thermador, Fisher & Paykel, JennAir, Monogram</strong></p>
+            <h3>How We Fix It:</h3>
+            <p>We clean filters, replace pumps, recalibrate sensors, and restore full luxury performance with quiet operation.</p>
+          </>
+        ),
+      },
     {
       id: "oven",
       title: "Oven Repair",
@@ -126,6 +242,98 @@ export const Tabs = () => {
         </>
       ),
     },
+    {
+        id: "warming",
+        title: "Warming Drawer Repair",
+        heading: "Luxury Warming Drawer Repair",
+        img: "/sub-zero/sub-zero-warming-drawer-repair.webp",
+        alt: "Warming Drawer Repair",
+        description: (
+          <>
+            <p>From <strong>Wolf stainless steel drawers</strong> to <strong>panel-matched Miele units</strong>, we service warming drawers that are both functional and elegant.</p>
+            <h3>Common Problems:</h3>
+            <ul>
+              <li>✅ Not warming</li>
+              <li>✅ Overheating</li>
+              <li>✅ Drawer stuck or won’t close</li>
+              <li>✅ Electronic control issues</li>
+            </ul>
+            <h3>Brands We Repair:</h3>
+            <p><strong>Wolf, Miele, Thermador, Monogram, JennAir, Dacor</strong></p>
+            <h3>How We Fix It:</h3>
+            <p>We calibrate thermostats, test heating elements, and restore drawer glide systems for smooth operation.</p>
+          </>
+        ),
+      },
+    {
+        id: "winecellar",
+        title: "Wine Cellar Repair",
+        heading: "Wine Cellar Climate System Repair",
+        img: "/sub-zero/sub-zero-wine-cellar-repair.webp",
+        alt: "Wine Cellar Repair",
+        description: (
+          <>
+            <p>We maintain <strong>climate-controlled wine cellars</strong> from <strong>WhisperKOOL</strong> and <strong>Wine Guardian</strong> in some of LA’s most exclusive residences.</p>
+            <h3>Common Problems:</h3>
+            <ul>
+              <li>✅ Climate system failure</li>
+              <li>✅ Humidity fluctuation</li>
+              <li>✅ Refrigerant or fan issues</li>
+              <li>✅ Temperature inconsistencies</li>
+            </ul>
+            <h3>Brands We Service:</h3>
+            <p><strong>WhisperKOOL, CellarPro, Breezaire, Wine Guardian, KoolR</strong></p>
+            <h3>How We Fix It:</h3>
+            <p>We calibrate sensors, check compressor lines, and service filters for optimal long-term wine preservation.</p>
+          </>
+        ),
+      },
+      {
+        id: "grill",
+        title: "Grill Repair",
+        heading: "Outdoor Grill & BBQ Repair",
+        img: "/sub-zero/sub-zero-bbq-repair.webp",
+        alt: "High-End BBQ Grill Repair",
+        description: (
+          <>
+            <p>From <strong>built-in Lynx grills</strong> to <strong>standalone Viking BBQs</strong>, we bring precision diagnostics and weatherproof expertise to your outdoor kitchen.</p>
+            <h3>Common Problems:</h3>
+            <ul>
+              <li>✅ Burners won’t ignite</li>
+              <li>✅ Flame irregularities</li>
+              <li>✅ Grill not heating evenly</li>
+              <li>✅ Ignition systems failing</li>
+            </ul>
+            <h3>Brands We Repair:</h3>
+            <p><strong>Viking, Lynx, Wolf, DCS, Alfresco, Kalamazoo</strong></p>
+            <h3>How We Fix It:</h3>
+            <p>We test gas flow, igniters, valves, and sensors. Your backyard entertaining deserves top-tier performance.</p>
+          </>
+        ),
+      },
+      {
+        id: "coffee",
+        title: "Coffee Machine Repair",
+        heading: "Built-In Coffee System Repair",
+        img: "/sub-zero/sub-zero-coffee-machine-repair.webp",
+        alt: "Built-In Coffee System Repair",
+        description: (
+          <>
+            <p>I personally love repairing these machines. From <strong>Miele plumbed coffee makers</strong> to <strong>Thermador built-ins</strong>, these systems require a trained hand.</p>
+            <h3>Common Problems:</h3>
+            <ul>
+              <li>✅ Not brewing properly</li>
+              <li>✅ Grinder malfunction</li>
+              <li>✅ Leaking or pressure loss</li>
+              <li>✅ Milk frother failure</li>
+            </ul>
+            <h3>Brands We Repair:</h3>
+            <p><strong>Miele, Thermador, Bosch, JennAir, Monogram, Gaggenau</strong></p>
+            <h3>How We Fix It:</h3>
+            <p>We descale, replace pumps and O-rings, test brewing temperatures, and fine-tune every setting to perfection.</p>
+          </>
+        ),
+      },
   ];
 
   useEffect(() => {
