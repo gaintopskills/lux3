@@ -11,12 +11,12 @@ export const Tabs = () => {
     {
         id: "range",
         title: "Range Repair",
-        heading: "Luxury Range Repair",
+        heading: "High-End Range Repair Los Angeles",
         img: "/sub-zero/sub-zero-range-repair.webp",
         alt: "Luxury Range Repair",
         description: (
           <>
-            <p>Your range is the heart of the kitchen. I’ve repaired everything from <strong>dual-fuel SKS ranges</strong> to <strong>BlueStar professional cookers</strong>. No matter the issue, we restore performance without sacrificing design.</p>
+            <p>Your range is the heart of the kitchen. Our technicians repaired everything from <strong>dual-fuel SKS ranges</strong> to <strong>BlueStar professional cookers</strong>. No matter the issue, we restore performance without sacrificing design.</p>
             <h3>Common Problems:</h3>
             <ul>
               <li>✅ Burners not igniting</li>
@@ -25,7 +25,7 @@ export const Tabs = () => {
               <li>✅ Overheating or error codes</li>
             </ul>
             <h3>Brands We Repair:</h3>
-            <p><strong>Wolf, Viking, SKS, Thermador, La Cornue, Aga, Dacor, Bertazzoni, BlueStar</strong></p>
+            <p><strong>Wolf, Viking, SKS, Thermador, La Cornue, Aga, Dacor, Bertazzoni, BlueStar, Elmira Stove Works.</strong></p>
             <h3>How We Fix It:</h3>
             <p>We test spark modules, gas valves, relays, and thermostats. Safety, performance, and elegance — we repair with all three in mind.</p>
           </>
@@ -49,7 +49,7 @@ export const Tabs = () => {
               <li>✅ Door not sealing</li>
             </ul>
             <h3>Brands We Repair:</h3>
-            <p><strong>Wolf, Miele, Viking, Thermador, Monogram, JennAir (Noir), Aga, La Cornue, Dacor, Bosch</strong></p>
+            <p><strong>Wolf, Miele, Viking, Thermador, Monogram, JennAir (Noir), Aga, La Cornue, Dacor, Bosch, Gaggenau, Elmira Stove Works.</strong></p>
             <h3>How We Fix It:</h3>
             <p>We test temperature calibration, inspect igniters, and replace convection fans. Luxury ovens require luxury service — and that’s exactly what we provide in Los Angeles.</p>
           </>
@@ -72,7 +72,7 @@ export const Tabs = () => {
               <li>✅ Clicking or buzzing noises</li>
             </ul>
             <h3>Brands We Repair:</h3>
-            <p><strong>Wolf, Miele, Bosch, Thermador, KitchenAid, Aga, Bertazzoni, La Cornue, JennAir, Monogram</strong></p>
+            <p><strong>Wolf, Miele, Bosch, Thermador, KitchenAid, Aga, Bertazzoni, La Cornue, JennAir, Monogram, Gaggenau, Elmira Stove Works.</strong></p>
             <h3>How We Fix It:</h3>
             <p>We inspect spark modules, relays, temperature sensors, and user interfaces. If needed, we calibrate or replace touch controls for flawless cooking performance.</p>
           </>
@@ -95,7 +95,7 @@ export const Tabs = () => {
               <li>✅ Noise or vibration issues</li>
             </ul>
             <h3>Brands We Repair:</h3>
-            <p><strong>Miele, Zephyr, Wolf, Thermador, Monogram, BlueStar, Bertazzoni</strong></p>
+            <p><strong>Miele, Zephyr, Wolf, Thermador, Monogram, BlueStar, Bertazzoni, Gaggenau, Elmira Stove Works.</strong></p>
             <h3>How We Fix It:</h3>
             <p>We replace fan motors, switches, control boards, and restore filtration for quiet, efficient air circulation.</p>
           </>
@@ -119,7 +119,7 @@ export const Tabs = () => {
             <li>✅ Digital control board malfunctions</li>
           </ul>
           <h3>Brands We Repair:</h3>
-          <p><strong>Sub-Zero, Miele, Thermador, Bosch, KitchenAid, JennAir, Monogram, SKS, True Residential, Fisher & Paykel</strong></p>
+          <p><strong>Sub-Zero, Miele, Thermador, Bosch, KitchenAid, JennAir, Monogram, SKS, True Residential, Fisher & Paykel, Gaggenau, Elmira Stove Works.</strong></p>
           <h3>How We Fix It:</h3>
           <p>We start with sealed system diagnostics, then move to sensors, airflow fans, and digital controls. Every part we use is factory-authorized to protect your investment.</p>
         </>
@@ -142,7 +142,7 @@ export const Tabs = () => {
               <li>✅ Digital control errors</li>
             </ul>
             <h3>Brands We Repair:</h3>
-            <p><strong>Sub-Zero, Viking, Miele, Monogram, JennAir, Bosch, Thermador</strong></p>
+            <p><strong>Sub-Zero, Viking, Miele, Monogram, JennAir, Bosch, Thermador, Gaggenau.</strong></p>
             <h3>How We Fix It:</h3>
             <p>We diagnose evaporator coils, defrost timers, fans, and control boards. Our high-end repair process ensures reliability and quiet operation.</p>
           </>
@@ -234,7 +234,7 @@ export const Tabs = () => {
               <li>✅ Error codes or no power</li>
             </ul>
             <h3>Brands We Repair:</h3>
-            <p><strong>Cove, Miele, Bosch, Thermador, Fisher & Paykel, JennAir, Monogram</strong></p>
+            <p><strong>Cove, Miele, Bosch, Thermador, Fisher & Paykel, JennAir, Monogram, Gaggenau, Elmira Stove Works.</strong></p>
             <h3>How We Fix It:</h3>
             <p>We clean filters, replace pumps, recalibrate sensors, and restore full luxury performance with quiet operation.</p>
           </>
@@ -257,7 +257,7 @@ export const Tabs = () => {
               <li>✅ Electronic control issues</li>
             </ul>
             <h3>Brands We Repair:</h3>
-            <p><strong>Wolf, Miele, Thermador, Monogram, JennAir, Dacor</strong></p>
+            <p><strong>Wolf, Miele, Thermador, Monogram, JennAir, Dacor, Gaggenau.</strong></p>
             <h3>How We Fix It:</h3>
             <p>We calibrate thermostats, test heating elements, and restore drawer glide systems for smooth operation.</p>
           </>
@@ -281,7 +281,7 @@ export const Tabs = () => {
             <li>✅ Digital controls failing</li>
           </ul>
           <h3>Brands We Repair:</h3>
-          <p><strong>Sub-Zero, True Residential, Fisher & Paykel, JennAir, COVE</strong></p>
+          <p><strong>Sub-Zero, True Residential, Fisher & Paykel, JennAir, COVE, Gaggenau.</strong></p>
           <h3>How We Fix It:</h3>
           <p>We check fan operation, sensor accuracy, seal integrity, and recalibrate control boards. When aesthetics matter, we work clean and quiet.</p>
         </>
