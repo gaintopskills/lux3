@@ -34,7 +34,7 @@ export const Tabs = () => {
       {
         id: "oven",
         title: "Oven Repair",
-        heading: "High-End Oven Repair Services",
+        heading: "High-End Oven Repair Services Los Angeles",
         img: "/sub-zero/sub-zero-oven-repair.webp",
         alt: "Luxury Oven Repair",
         description: (
@@ -58,7 +58,7 @@ export const Tabs = () => {
       {
         id: "cooktop",
         title: "Cooktop Repair",
-        heading: "Luxury Cooktop Repair Experts",
+        heading: "High-End Cooktop Repair Experts Los Angeles",
         img: "/sub-zero/sub-zero-cooktop-repair.webp",
         alt: "Luxury Cooktop Repair",
         description: (
@@ -81,7 +81,7 @@ export const Tabs = () => {
     {
         id: "hood",
         title: "Ventilation Hood Repair",
-        heading: "High-End Range Hood & Ventilation Repair",
+        heading: "High-End Range Hood & Ventilation Repair Los Angeles",
         img: "/sub-zero/sub-zero-vent-hood-repair.webp",
         alt: "Luxury Ventilation Hood Repair",
         description: (
@@ -104,7 +104,7 @@ export const Tabs = () => {
     {
       id: "refrigerator",
       title: "Refrigerator Repair",
-      heading: "Luxury Refrigerator Repair in Los Angeles",
+      heading: "High-End Refrigerator Repair Los Angeles",
       img: "/sub-zero/sub-zero-appliance-repair.webp",
       alt: "High-End Refrigerator Repair",
       description: (
@@ -128,7 +128,7 @@ export const Tabs = () => {
     {
         id: "freezer",
         title: "Freezer Repair",
-        heading: "Luxury Freezer Repair in Los Angeles",
+        heading: "High-End Freezer Repair Los Angeles",
         img: "/sub-zero/sub-zero-freezer-repair.webp",
         alt: "High-End Freezer Repair",
         description: (
@@ -151,7 +151,7 @@ export const Tabs = () => {
       {
         id: "icemaker",
         title: "Ice Maker Repair",
-        heading: "Premium Ice Maker Repair",
+        heading: "High-End Ice Maker Repair Los Angeles",
         img: "/sub-zero/sub-zero-ice-maker-repair.webp",
         alt: "Luxury Ice Maker Repair",
         description: (
@@ -174,7 +174,7 @@ export const Tabs = () => {
       {
         id: "dryer",
         title: "Dryer Repair",
-        heading: "Luxury Dryer Repair in Los Angeles",
+        heading: "High-End Dryer Repair Los Angeles",
         img: "/sub-zero/sub-zero-dryer-repair.webp",
         alt: "High-End Dryer Repair",
         description: (
@@ -197,7 +197,7 @@ export const Tabs = () => {
       {
         id: "washing",
         title: "Washing Machine Repair",
-        heading: "Luxury Washing Machine Repair in Los Angeles",
+        heading: "High-End Washing Machine Repair Los Angeles",
         img: "/sub-zero/sub-zero-washing-machine-repair.webp",
         alt: "High-End Washing Machine Repair",
         description: (
@@ -220,7 +220,7 @@ export const Tabs = () => {
       {
         id: "dishwasher",
         title: "Dishwasher Repair",
-        heading: "High-End Dishwasher Repair",
+        heading: "High-End Dishwasher Repair Los Angeles",
         img: "/sub-zero/sub-zero-dishwasher-repair.webp",
         alt: "Luxury Dishwasher Repair",
         description: (
@@ -243,7 +243,7 @@ export const Tabs = () => {
       {
         id: "warming",
         title: "Warming Drawer Repair",
-        heading: "Luxury Warming Drawer Repair",
+        heading: "High-End Warming Drawer Repair Los Angeles",
         img: "/sub-zero/sub-zero-warming-drawer-repair.webp",
         alt: "Warming Drawer Repair",
         description: (
@@ -266,7 +266,7 @@ export const Tabs = () => {
     {
       id: "winecooler",
       title: "Wine Cooler Repair",
-      heading: "Wine Preservation Unit Repair",
+      heading: "Wine Preservation Unit Repair Los Angeles",
       img: "/sub-zero/sub-zero-wine-cooler-repair.webp",
       alt: "Wine Cooler Repair",
       description: (
@@ -290,7 +290,7 @@ export const Tabs = () => {
     {
         id: "winecellar",
         title: "Wine Cellar Repair",
-        heading: "Wine Cellar Climate System Repair",
+        heading: "Wine Cellar Climate System Repair Los Angeles",
         img: "/sub-zero/sub-zero-wine-cellar-repair.webp",
         alt: "Wine Cellar Repair",
         description: (
@@ -313,7 +313,7 @@ export const Tabs = () => {
       {
         id: "grill",
         title: "BBQ Grill Repair",
-        heading: "Outdoor Grill & BBQ Repair",
+        heading: "High-End BBQ Grill Repair Los Angeles",
         img: "/sub-zero/sub-zero-bbq-repair.webp",
         alt: "High-End BBQ Grill Repair",
         description: (
@@ -336,7 +336,7 @@ export const Tabs = () => {
       {
         id: "pizzaoven",
         title: "Pizza Oven Repair",
-        heading: "High-End Pizza Oven Repair",
+        heading: "High-End Pizza Oven Repair Los Angeles",
         img: "/sub-zero/sub-zero-pizza-oven-repair.webp",
         alt: "Luxury Pizza Oven Repair",
         description: (
@@ -359,7 +359,7 @@ export const Tabs = () => {
       {
         id: "coffee",
         title: "Coffee Machine Repair",
-        heading: "Built-In Coffee System Repair",
+        heading: "Built-In Coffee System Repair Los Angeles",
         img: "/sub-zero/sub-zero-coffee-machine-repair.webp",
         alt: "Built-In Coffee System Repair",
         description: (
