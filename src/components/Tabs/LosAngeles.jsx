@@ -9,6 +9,76 @@ export const Tabs = () => {
 
   const items = [
     {
+        id: "range",
+        title: "Range Repair",
+        heading: "Luxury Range Repair",
+        img: "/sub-zero/sub-zero-range-repair.webp",
+        alt: "Luxury Range Repair",
+        description: (
+          <>
+            <p>Your range is the heart of the kitchen. I’ve repaired everything from <strong>dual-fuel SKS ranges</strong> to <strong>BlueStar professional cookers</strong>. No matter the issue, we restore performance without sacrificing design.</p>
+            <h3>Common Problems:</h3>
+            <ul>
+              <li>✅ Burners not igniting</li>
+              <li>✅ Oven not heating</li>
+              <li>✅ Electrical panel issues</li>
+              <li>✅ Overheating or error codes</li>
+            </ul>
+            <h3>Brands We Repair:</h3>
+            <p><strong>Wolf, Viking, SKS, Thermador, La Cornue, Aga, Dacor, Bertazzoni, BlueStar</strong></p>
+            <h3>How We Fix It:</h3>
+            <p>We test spark modules, gas valves, relays, and thermostats. Safety, performance, and elegance — we repair with all three in mind.</p>
+          </>
+        ),
+      },
+      {
+        id: "oven",
+        title: "Oven Repair",
+        heading: "High-End Oven Repair Services",
+        img: "/sub-zero/sub-zero-oven-repair.webp",
+        alt: "Luxury Oven Repair",
+        description: (
+          <>
+            <p>I’ve repaired everything from <strong>Wolf wall ovens</strong> to <strong>La Cornue chateau ranges</strong>. Precision is key, especially when your appliance is part of your kitchen’s aesthetic.</p>
+            <h3>Common Problems:</h3>
+            <ul>
+              <li>✅ Oven not heating properly</li>
+              <li>✅ Uneven baking</li>
+              <li>✅ Faulty igniters or heating elements</li>
+              <li>✅ Touchpad/display issues</li>
+              <li>✅ Door not sealing</li>
+            </ul>
+            <h3>Brands We Repair:</h3>
+            <p><strong>Wolf, Miele, Viking, Thermador, Monogram, JennAir (Noir), Aga, La Cornue, Dacor, Bosch</strong></p>
+            <h3>How We Fix It:</h3>
+            <p>We test temperature calibration, inspect igniters, and replace convection fans. Luxury ovens require luxury service — and that’s exactly what we provide in Los Angeles.</p>
+          </>
+        ),
+      },
+      {
+        id: "cooktop",
+        title: "Cooktop Repair",
+        heading: "Luxury Cooktop Repair Experts",
+        img: "/sub-zero/sub-zero-cooktop-repair.webp",
+        alt: "Luxury Cooktop Repair",
+        description: (
+          <>
+            <p>Induction, gas, or electric — we’ve seen it all. From <strong>Bertazzoni gas burners</strong> to <strong>Miele induction surfaces</strong>, we repair them with unmatched care.</p>
+            <h3>Common Problems:</h3>
+            <ul>
+              <li>✅ Burner won’t ignite or heat</li>
+              <li>✅ Flickering indicators</li>
+              <li>✅ Temperature control issues</li>
+              <li>✅ Clicking or buzzing noises</li>
+            </ul>
+            <h3>Brands We Repair:</h3>
+            <p><strong>Wolf, Miele, Bosch, Thermador, KitchenAid, Aga, Bertazzoni, La Cornue, JennAir, Monogram</strong></p>
+            <h3>How We Fix It:</h3>
+            <p>We inspect spark modules, relays, temperature sensors, and user interfaces. If needed, we calibrate or replace touch controls for flawless cooking performance.</p>
+          </>
+        ),
+      },
+    {
         id: "hood",
         title: "Ventilation Hood Repair",
         heading: "High-End Range Hood & Ventilation Repair",
@@ -30,31 +100,7 @@ export const Tabs = () => {
             <p>We replace fan motors, switches, control boards, and restore filtration for quiet, efficient air circulation.</p>
           </>
         ),
-      },
-      
-      {
-        id: "dryer",
-        title: "Dryer Repair",
-        heading: "Luxury Dryer Repair in Los Angeles",
-        img: "/sub-zero/sub-zero-dryer-repair.webp",
-        alt: "High-End Dryer Repair",
-        description: (
-          <>
-            <p>Our team handles <strong>vented and ventless dryers</strong> from <strong>Miele</strong>, <strong>Bosch</strong>, and <strong>LG Signature</strong>. Performance and quiet operation are our top priorities.</p>
-            <h3>Common Problems:</h3>
-            <ul>
-              <li>✅ Not heating</li>
-              <li>✅ Overheating</li>
-              <li>✅ Drum not spinning</li>
-              <li>✅ Digital controls failing</li>
-            </ul>
-            <h3>Brands We Repair:</h3>
-            <p><strong>Miele, Bosch, LG, Electrolux, Monogram, Fisher & Paykel</strong></p>
-            <h3>How We Fix It:</h3>
-            <p>We test heating elements, sensors, motors, and replace drive belts with precision and care.</p>
-          </>
-        ),
-      },
+      },     
     {
       id: "refrigerator",
       title: "Refrigerator Repair",
@@ -126,6 +172,52 @@ export const Tabs = () => {
         ),
       },
       {
+        id: "dryer",
+        title: "Dryer Repair",
+        heading: "Luxury Dryer Repair in Los Angeles",
+        img: "/sub-zero/sub-zero-dryer-repair.webp",
+        alt: "High-End Dryer Repair",
+        description: (
+          <>
+            <p>Our team handles <strong>vented and ventless dryers</strong> from <strong>Miele</strong>, <strong>Bosch</strong>, and <strong>LG Signature</strong>. Performance and quiet operation are our top priorities.</p>
+            <h3>Common Problems:</h3>
+            <ul>
+              <li>✅ Not heating</li>
+              <li>✅ Overheating</li>
+              <li>✅ Drum not spinning</li>
+              <li>✅ Digital controls failing</li>
+            </ul>
+            <h3>Brands We Repair:</h3>
+            <p><strong>Miele, Bosch, LG, Electrolux, Monogram, Fisher & Paykel</strong></p>
+            <h3>How We Fix It:</h3>
+            <p>We test heating elements, sensors, motors, and replace drive belts with precision and care.</p>
+          </>
+        ),
+      },
+      {
+        id: "washing",
+        title: "Washing Machine Repair",
+        heading: "Luxury Washing Machine Repair in Los Angeles",
+        img: "/sub-zero/sub-zero-washing-machine-repair.webp",
+        alt: "High-End Washing Machine Repair",
+        description: (
+          <>
+            <p>Whether it’s a <strong>Miele front-loader</strong> or a <strong>Smart LG Signature washer</strong>, I’ve repaired units across luxury homes throughout Los Angeles.</p>
+            <h3>Common Problems:</h3>
+            <ul>
+              <li>✅ Not draining or spinning</li>
+              <li>✅ Leaks or shaking during spin cycle</li>
+              <li>✅ Error codes or electronic failure</li>
+              <li>✅ Door not locking or unlocking</li>
+            </ul>
+            <h3>Brands We Repair:</h3>
+            <p><strong>Miele, LG Signature, Bosch, Electrolux, Fisher & Paykel, Monogram, Samsung</strong></p>
+            <h3>How We Fix It:</h3>
+            <p>We inspect drain pumps, pressure sensors, shock absorbers, and electronic control units for fast, reliable resolution.</p>
+          </>
+        ),
+      },
+      {
         id: "dishwasher",
         title: "Dishwasher Repair",
         heading: "High-End Dishwasher Repair",
@@ -148,53 +240,29 @@ export const Tabs = () => {
           </>
         ),
       },
-    {
-      id: "oven",
-      title: "Oven Repair",
-      heading: "High-End Oven Repair Services",
-      img: "/sub-zero/sub-zero-oven-repair.webp",
-      alt: "Luxury Oven Repair",
-      description: (
-        <>
-          <p>I’ve repaired everything from <strong>Wolf wall ovens</strong> to <strong>La Cornue chateau ranges</strong>. Precision is key, especially when your appliance is part of your kitchen’s aesthetic.</p>
-          <h3>Common Problems:</h3>
-          <ul>
-            <li>✅ Oven not heating properly</li>
-            <li>✅ Uneven baking</li>
-            <li>✅ Faulty igniters or heating elements</li>
-            <li>✅ Touchpad/display issues</li>
-            <li>✅ Door not sealing</li>
-          </ul>
-          <h3>Brands We Repair:</h3>
-          <p><strong>Wolf, Miele, Viking, Thermador, Monogram, JennAir (Noir), Aga, La Cornue, Dacor, Bosch</strong></p>
-          <h3>How We Fix It:</h3>
-          <p>We test temperature calibration, inspect igniters, and replace convection fans. Luxury ovens require luxury service — and that’s exactly what we provide in Los Angeles.</p>
-        </>
-      ),
-    },
-    {
-      id: "cooktop",
-      title: "Cooktop Repair",
-      heading: "Luxury Cooktop Repair Experts",
-      img: "/sub-zero/sub-zero-cooktop-repair.webp",
-      alt: "Luxury Cooktop Repair",
-      description: (
-        <>
-          <p>Induction, gas, or electric — we’ve seen it all. From <strong>Bertazzoni gas burners</strong> to <strong>Miele induction surfaces</strong>, we repair them with unmatched care.</p>
-          <h3>Common Problems:</h3>
-          <ul>
-            <li>✅ Burner won’t ignite or heat</li>
-            <li>✅ Flickering indicators</li>
-            <li>✅ Temperature control issues</li>
-            <li>✅ Clicking or buzzing noises</li>
-          </ul>
-          <h3>Brands We Repair:</h3>
-          <p><strong>Wolf, Miele, Bosch, Thermador, KitchenAid, Aga, Bertazzoni, La Cornue, JennAir, Monogram</strong></p>
-          <h3>How We Fix It:</h3>
-          <p>We inspect spark modules, relays, temperature sensors, and user interfaces. If needed, we calibrate or replace touch controls for flawless cooking performance.</p>
-        </>
-      ),
-    },
+      {
+        id: "warming",
+        title: "Warming Drawer Repair",
+        heading: "Luxury Warming Drawer Repair",
+        img: "/sub-zero/sub-zero-warming-drawer-repair.webp",
+        alt: "Warming Drawer Repair",
+        description: (
+          <>
+            <p>From <strong>Wolf stainless steel drawers</strong> to <strong>panel-matched Miele units</strong>, we service warming drawers that are both functional and elegant.</p>
+            <h3>Common Problems:</h3>
+            <ul>
+              <li>✅ Not warming</li>
+              <li>✅ Overheating</li>
+              <li>✅ Drawer stuck or won’t close</li>
+              <li>✅ Electronic control issues</li>
+            </ul>
+            <h3>Brands We Repair:</h3>
+            <p><strong>Wolf, Miele, Thermador, Monogram, JennAir, Dacor</strong></p>
+            <h3>How We Fix It:</h3>
+            <p>We calibrate thermostats, test heating elements, and restore drawer glide systems for smooth operation.</p>
+          </>
+        ),
+      },
     {
       id: "winecooler",
       title: "Wine Cooler Repair",
@@ -220,52 +288,6 @@ export const Tabs = () => {
       ),
     },
     {
-      id: "range",
-      title: "Range Repair",
-      heading: "Luxury Range Repair",
-      img: "/sub-zero/sub-zero-range-repair.webp",
-      alt: "Luxury Range Repair",
-      description: (
-        <>
-          <p>Your range is the heart of the kitchen. I’ve repaired everything from <strong>dual-fuel SKS ranges</strong> to <strong>BlueStar professional cookers</strong>. No matter the issue, we restore performance without sacrificing design.</p>
-          <h3>Common Problems:</h3>
-          <ul>
-            <li>✅ Burners not igniting</li>
-            <li>✅ Oven not heating</li>
-            <li>✅ Electrical panel issues</li>
-            <li>✅ Overheating or error codes</li>
-          </ul>
-          <h3>Brands We Repair:</h3>
-          <p><strong>Wolf, Viking, SKS, Thermador, La Cornue, Aga, Dacor, Bertazzoni, BlueStar</strong></p>
-          <h3>How We Fix It:</h3>
-          <p>We test spark modules, gas valves, relays, and thermostats. Safety, performance, and elegance — we repair with all three in mind.</p>
-        </>
-      ),
-    },
-    {
-        id: "warming",
-        title: "Warming Drawer Repair",
-        heading: "Luxury Warming Drawer Repair",
-        img: "/sub-zero/sub-zero-warming-drawer-repair.webp",
-        alt: "Warming Drawer Repair",
-        description: (
-          <>
-            <p>From <strong>Wolf stainless steel drawers</strong> to <strong>panel-matched Miele units</strong>, we service warming drawers that are both functional and elegant.</p>
-            <h3>Common Problems:</h3>
-            <ul>
-              <li>✅ Not warming</li>
-              <li>✅ Overheating</li>
-              <li>✅ Drawer stuck or won’t close</li>
-              <li>✅ Electronic control issues</li>
-            </ul>
-            <h3>Brands We Repair:</h3>
-            <p><strong>Wolf, Miele, Thermador, Monogram, JennAir, Dacor</strong></p>
-            <h3>How We Fix It:</h3>
-            <p>We calibrate thermostats, test heating elements, and restore drawer glide systems for smooth operation.</p>
-          </>
-        ),
-      },
-    {
         id: "winecellar",
         title: "Wine Cellar Repair",
         heading: "Wine Cellar Climate System Repair",
@@ -290,7 +312,7 @@ export const Tabs = () => {
       },
       {
         id: "grill",
-        title: "Grill Repair",
+        title: "BBQ Grill Repair",
         heading: "Outdoor Grill & BBQ Repair",
         img: "/sub-zero/sub-zero-bbq-repair.webp",
         alt: "High-End BBQ Grill Repair",
@@ -308,6 +330,29 @@ export const Tabs = () => {
             <p><strong>Viking, Lynx, Wolf, DCS, Alfresco, Kalamazoo</strong></p>
             <h3>How We Fix It:</h3>
             <p>We test gas flow, igniters, valves, and sensors. Your backyard entertaining deserves top-tier performance.</p>
+          </>
+        ),
+      },
+      {
+        id: "pizzaoven",
+        title: "Pizza Oven Repair",
+        heading: "High-End Pizza Oven Repair",
+        img: "/sub-zero/sub-zero-pizza-oven-repair.webp",
+        alt: "Luxury Pizza Oven Repair",
+        description: (
+          <>
+            <p>Our clients enjoy <strong>Wolf built-in pizza ovens</strong> and <strong>Alfa outdoor units</strong>. We’ve serviced the finest ovens for gourmet kitchens across LA.</p>
+            <h3>Common Problems:</h3>
+            <ul>
+              <li>✅ Uneven heating or stone damage</li>
+              <li>✅ Digital display or thermostat failures</li>
+              <li>✅ Igniter not working</li>
+              <li>✅ Excess smoke or ventilation issues</li>
+            </ul>
+            <h3>Brands We Repair:</h3>
+            <p><strong>Wolf, Alfa, Kalamazoo, Lynx, Fontana Forni, Gozney</strong></p>
+            <h3>How We Fix It:</h3>
+            <p>We test burners, elements, and sensors while calibrating to artisan-level precision. Whether indoor or outdoor, we make sure it performs flawlessly.</p>
           </>
         ),
       },
