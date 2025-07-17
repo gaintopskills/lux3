@@ -13,11 +13,11 @@ export const Tabs = () => {
         title: "Range Repair",
         heading: "High-End Range Repair Los Angeles",
         img: "/sub-zero/sub-zero-range-repair.webp",
-        alt: "Luxury Range Repair",
+        alt: "Luxury Range Repair Los Angeles",
         description: (
           <>
-            <p>Your range is the heart of the kitchen. Our technicians repaired everything from <strong>dual-fuel SKS ranges</strong> to <strong>BlueStar professional cookers</strong>. No matter the issue, we restore performance without sacrificing design.</p>
-            <h3>Common Problems:</h3>
+            <p>Your range is the heart of the kitchen. Our technicians have extensive expirience repairing everything from <strong>dual-fuel SKS ranges</strong> to <strong>BlueStar professional cookers</strong>. No matter the issue, we restore performance without sacrificing design.</p>
+            <h3>Common Problems We Fix:</h3>
             <ul>
               <li>✅ Burners not igniting</li>
               <li>✅ Oven not heating</li>
@@ -34,13 +34,13 @@ export const Tabs = () => {
       {
         id: "oven",
         title: "Oven Repair",
-        heading: "High-End Oven Repair Services Los Angeles",
+        heading: "High-End Oven Repair Los Angeles",
         img: "/sub-zero/sub-zero-oven-repair.webp",
-        alt: "Luxury Oven Repair",
+        alt: "Luxury Oven Repair Los Angeles",
         description: (
           <>
-            <p>I’ve repaired everything from <strong>Wolf wall ovens</strong> to <strong>La Cornue chateau ranges</strong>. Precision is key, especially when your appliance is part of your kitchen’s aesthetic.</p>
-            <h3>Common Problems:</h3>
+            <p>We’ve repaired everything from <strong>Wolf wall ovens</strong> to <strong>La Cornue chateau ranges</strong>. Precision is key, especially when your appliance is part of your kitchen’s aesthetic.</p>
+            <h3>Common Problems We Fix:</h3>
             <ul>
               <li>✅ Oven not heating properly</li>
               <li>✅ Uneven baking</li>
@@ -51,16 +51,16 @@ export const Tabs = () => {
             <h3>Brands We Repair:</h3>
             <p><strong>Wolf, Miele, Viking, Thermador, Monogram, JennAir (Noir), Aga, La Cornue, Dacor, Bosch, Gaggenau, Elmira Stove Works, Fulgor Milano, La Canche.</strong></p>
             <h3>How We Fix It:</h3>
-            <p>We test temperature calibration, inspect igniters, and replace convection fans. Luxury ovens require luxury service — and that’s exactly what we provide in Los Angeles.</p>
+            <p>We test temperature calibration, inspect igniters, and replace convection fans. Luxury ovens require luxury service — and that’s exactly what we provide in Los Angeles and nearby areas.</p>
           </>
         ),
       },
       {
         id: "cooktop",
         title: "Cooktop Repair",
-        heading: "High-End Cooktop Repair Experts Los Angeles",
+        heading: "High-End Cooktop Repair Los Angeles",
         img: "/sub-zero/sub-zero-cooktop-repair.webp",
-        alt: "Luxury Cooktop Repair",
+        alt: "Luxury Cooktop Repair Los Angeles",
         description: (
           <>
             <p>Induction, gas, or electric — we’ve seen it all. From <strong>Bertazzoni gas burners</strong> to <strong>Miele induction surfaces</strong>, we repair them with unmatched care.</p>
@@ -81,13 +81,13 @@ export const Tabs = () => {
     {
         id: "hood",
         title: "Ventilation Hood Repair",
-        heading: "High-End Range Hood & Ventilation Repair Los Angeles",
+        heading: "High-End Ventilation & Range Hood Repair Los Angeles",
         img: "/sub-zero/sub-zero-vent-hood-repair.webp",
-        alt: "Luxury Ventilation Hood Repair",
+        alt: "Luxury Ventilation & Range Hood Repair Los Angeles",
         description: (
           <>
-            <p>Whether it’s a <strong>custom Miele hood insert</strong> or a <strong>Zephyr island unit</strong>, I’ve repaired hundreds of ventilation systems across high-end homes in Los Angeles.</p>
-            <h3>Common Problems:</h3>
+            <p>Whether it’s a <strong>custom Miele hood insert</strong> or a <strong>Zephyr island unit</strong>, We've repaired hundreds of ventilation systems across high-end homes in Los Angeles and nearby areas.</p>
+            <h3>Common Problems We Fix:</h3>
             <ul>
               <li>✅ Fan not working</li>
               <li>✅ Lights out or flickering</li>
@@ -109,8 +109,8 @@ export const Tabs = () => {
       alt: "High-End Refrigerator Repair",
       description: (
         <>
-          <p>As a lead technician at Zaricci, I’ve worked on hundreds of luxury refrigerators. Whether you own a <strong>Sub-Zero PRO series</strong> or an <strong>SKS built-in</strong>, we know how to handle every issue with precision.</p>
-          <h3>Common Problems:</h3>
+          <p>At Zaricci, we've worked on hundreds of luxury refrigerators. Whether you own a <strong>Sub-Zero PRO series</strong> or an <strong>SKS built-in</strong>, we know how to handle every issue with precision.</p>
+          <h3>Common Problems We Fix:</h3>
           <ul>
             <li>✅ Fridge not cooling</li>
             <li>✅ Uneven temperature zones</li>
@@ -130,11 +130,11 @@ export const Tabs = () => {
         title: "Freezer Repair",
         heading: "High-End Freezer Repair Los Angeles",
         img: "/sub-zero/sub-zero-freezer-repair.webp",
-        alt: "High-End Freezer Repair",
+        alt: "High-End Freezer Repair Los Angeles",
         description: (
           <>
             <p>From <strong>built-in Sub-Zero freezer drawers</strong> to <strong>standalone Viking models</strong>, we handle all types of freezer repairs with unmatched attention to detail.</p>
-            <h3>Common Problems:</h3>
+            <h3>Common Problems We Fix:</h3>
             <ul>
               <li>✅ Ice build-up or frost issues</li>
               <li>✅ Freezer not cooling</li>
@@ -156,8 +156,8 @@ export const Tabs = () => {
         alt: "Luxury Ice Maker Repair",
         description: (
           <>
-            <p>I’ve worked on <strong>panel-ready Sub-Zero ice machines</strong> and <strong>GE Monogram undercounter units</strong>. We fix residential and built-in ice makers for elite homes across LA.</p>
-            <h3>Common Problems:</h3>
+            <p>We’ve worked on <strong>panel-ready Sub-Zero ice machines</strong> and <strong>GE Monogram undercounter units</strong>. We fix residential and built-in ice makers for elite homes across LA.</p>
+            <h3>Common Problems We Fix:</h3>
             <ul>
               <li>✅ No ice production</li>
               <li>✅ Ice melting or clumping</li>
@@ -176,11 +176,11 @@ export const Tabs = () => {
         title: "Dryer Repair",
         heading: "High-End Dryer Repair Los Angeles",
         img: "/sub-zero/sub-zero-dryer-repair.webp",
-        alt: "High-End Dryer Repair",
+        alt: "High-End Dryer Repair Los Angeles",
         description: (
           <>
             <p>Our team handles <strong>vented and ventless dryers</strong> from <strong>Miele</strong>, <strong>Bosch</strong>, and <strong>LG Signature</strong>. Performance and quiet operation are our top priorities.</p>
-            <h3>Common Problems:</h3>
+            <h3>Common Problems We Fix:</h3>
             <ul>
               <li>✅ Not heating</li>
               <li>✅ Overheating</li>
@@ -188,7 +188,7 @@ export const Tabs = () => {
               <li>✅ Digital controls failing</li>
             </ul>
             <h3>Brands We Repair:</h3>
-            <p><strong>Miele, Bosch, LG, Electrolux, Monogram, Fisher & Paykel</strong></p>
+            <p><strong>Miele, Bosch, Monogram, Fisher & Paykel, ASKO, Speed Queen.</strong></p>
             <h3>How We Fix It:</h3>
             <p>We test heating elements, sensors, motors, and replace drive belts with precision and care.</p>
           </>
@@ -199,10 +199,10 @@ export const Tabs = () => {
         title: "Washing Machine Repair",
         heading: "High-End Washing Machine Repair Los Angeles",
         img: "/sub-zero/sub-zero-washing-machine-repair.webp",
-        alt: "High-End Washing Machine Repair",
+        alt: "High-End Washing Machine Repair Los Angeles",
         description: (
           <>
-            <p>Whether it’s a <strong>Miele front-loader</strong> or a <strong>Smart LG Signature washer</strong>, I’ve repaired units across luxury homes throughout Los Angeles.</p>
+            <p>Whether it’s a <strong>Miele front-loader</strong> or a <strong>Bosch washer</strong>, we’ve repaired units across luxury homes throughout Los Angeles and nearby areas.</p>
             <h3>Common Problems:</h3>
             <ul>
               <li>✅ Not draining or spinning</li>
@@ -211,7 +211,7 @@ export const Tabs = () => {
               <li>✅ Door not locking or unlocking</li>
             </ul>
             <h3>Brands We Repair:</h3>
-            <p><strong>Miele, LG Signature, Bosch, Electrolux, Fisher & Paykel, Monogram, Samsung</strong></p>
+            <p><strong>Miele, LG Signature, Bosch, Electrolux, Fisher & Paykel, Monogram, ASKO, Speed Queen.</strong></p>
             <h3>How We Fix It:</h3>
             <p>We inspect drain pumps, pressure sensors, shock absorbers, and electronic control units for fast, reliable resolution.</p>
           </>
@@ -226,7 +226,7 @@ export const Tabs = () => {
         description: (
           <>
             <p>I’ve serviced integrated dishwashers hidden behind <strong>custom cabinetry</strong>. We ensure performance without disturbing your design aesthetic.</p>
-            <h3>Common Problems:</h3>
+            <h3>Common Problems We Fix:</h3>
             <ul>
               <li>✅ Not draining</li>
               <li>✅ Dishes not clean or dry</li>
@@ -234,7 +234,7 @@ export const Tabs = () => {
               <li>✅ Error codes or no power</li>
             </ul>
             <h3>Brands We Repair:</h3>
-            <p><strong>Cove, Miele, Bosch, Thermador, Fisher & Paykel, JennAir, Monogram, Gaggenau, Elmira Stove Works, Fulgor Milano.</strong></p>
+            <p><strong>Cove, Miele, Bosch, Thermador, Fisher & Paykel, JennAir, Monogram, Gaggenau, Elmira Stove Works, Fulgor Milano, KitchenAid.</strong></p>
             <h3>How We Fix It:</h3>
             <p>We clean filters, replace pumps, recalibrate sensors, and restore full luxury performance with quiet operation.</p>
           </>
@@ -245,11 +245,11 @@ export const Tabs = () => {
         title: "Warming Drawer Repair",
         heading: "High-End Warming Drawer Repair Los Angeles",
         img: "/sub-zero/sub-zero-warming-drawer-repair.webp",
-        alt: "Warming Drawer Repair",
+        alt: "Warming Drawer Repair Los Angeles",
         description: (
           <>
             <p>From <strong>Wolf stainless steel drawers</strong> to <strong>panel-matched Miele units</strong>, we service warming drawers that are both functional and elegant.</p>
-            <h3>Common Problems:</h3>
+            <h3>Common Problems We Fix:</h3>
             <ul>
               <li>✅ Not warming</li>
               <li>✅ Overheating</li>
@@ -268,20 +268,23 @@ export const Tabs = () => {
       title: "Wine Cooler Repair",
       heading: "Wine Preservation Unit Repair Los Angeles",
       img: "/sub-zero/sub-zero-wine-cooler-repair.webp",
-      alt: "Wine Cooler Repair",
+      alt: "Wine Cooler Repair Los Angeles",
       description: (
         <>
-          <p>Wine coolers are delicate. They’re not just about temperature — they’re about humidity, vibration, and design. We’ve worked on <strong>Sub-Zero</strong> and <strong>COVE</strong> wine units across LA's most exclusive homes.</p>
-          <h3>Common Problems:</h3>
-          <ul>
-            <li>✅ Unit not cooling properly</li>
-            <li>✅ Temperature zones unbalanced</li>
-            <li>✅ Excess vibration</li>
-            <li>✅ Condensation issues</li>
-            <li>✅ Digital controls failing</li>
-          </ul>
-          <h3>Brands We Repair:</h3>
-          <p><strong>Sub-Zero, True Residential, Fisher & Paykel, JennAir, COVE, Gaggenau.</strong></p>
+         <p>Wine coolers are delicate. They’re not just about temperature — they’re about humidity, vibration, and design. We’ve worked on <strong>Sub-Zero</strong> and <strong>True Residential</strong> wine units across LA's most exclusive homes.</p>
+
+<h3>Common Problems:</h3>
+<ul>
+  <li>✅ Unit not cooling properly</li>
+  <li>✅ Temperature zones unbalanced</li>
+  <li>✅ Excess vibration</li>
+  <li>✅ Condensation issues</li>
+  <li>✅ Digital controls failing</li>
+</ul>
+
+<h3>Brands We Repair:</h3>
+<p><strong>Sub-Zero, True Residential, Fisher & Paykel, JennAir, Gaggenau, Miele, Thermador, Dacor.</strong></p>
+
           <h3>How We Fix It:</h3>
           <p>We check fan operation, sensor accuracy, seal integrity, and recalibrate control boards. When aesthetics matter, we work clean and quiet.</p>
         </>
@@ -290,9 +293,9 @@ export const Tabs = () => {
     {
         id: "winecellar",
         title: "Wine Cellar Repair",
-        heading: "Wine Cellar Climate System Repair Los Angeles",
+        heading: "Climate System & Wine Cellar Repair Los Angeles",
         img: "/sub-zero/sub-zero-wine-cellar-repair.webp",
-        alt: "Wine Cellar Repair",
+        alt: "Wine Cellar Repair Los Angeles",
         description: (
           <>
             <p>We maintain <strong>climate-controlled wine cellars</strong> from <strong>WhisperKOOL</strong> and <strong>Wine Guardian</strong> in some of LA’s most exclusive residences.</p>
@@ -304,7 +307,7 @@ export const Tabs = () => {
               <li>✅ Temperature inconsistencies</li>
             </ul>
             <h3>Brands We Service:</h3>
-            <p><strong>WhisperKOOL, CellarPro, Breezaire, Wine Guardian, KoolR</strong></p>
+            <p><strong>WhisperKOOL, CellarPro, Breezaire, Wine Guardian, KoolR, Sub-Zero, True Residential, Perlick</strong></p>
             <h3>How We Fix It:</h3>
             <p>We calibrate sensors, check compressor lines, and service filters for optimal long-term wine preservation.</p>
           </>
@@ -315,7 +318,7 @@ export const Tabs = () => {
         title: "BBQ Grill Repair",
         heading: "High-End BBQ Grill Repair Los Angeles",
         img: "/sub-zero/sub-zero-bbq-repair.webp",
-        alt: "High-End BBQ Grill Repair",
+        alt: "High-End BBQ Grill Repai Los Angeles",
         description: (
           <>
             <p>From <strong>built-in Lynx grills</strong> to <strong>standalone Viking BBQs</strong>, we bring precision diagnostics and weatherproof expertise to your outdoor kitchen.</p>
