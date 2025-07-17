@@ -330,7 +330,7 @@ export const Tabs = () => {
               <li>✅ Ignition systems failing</li>
             </ul>
             <h3>Brands We Repair:</h3>
-            <p><strong>Viking, Lynx, Wolf, DCS, Alfresco, Kalamazoo</strong></p>
+            <p><strong>Viking, Hestan, Weber, Big Chill, Lynx, Wolf, DCS, Alfresco, Kalamazoo, Fisher & Paykel.</strong></p>
             <h3>How We Fix It:</h3>
             <p>We test gas flow, igniters, valves, and sensors. Your backyard entertaining deserves top-tier performance.</p>
           </>
@@ -364,11 +364,11 @@ export const Tabs = () => {
         title: "Coffee Machine Repair",
         heading: "Built-In Coffee System Repair Los Angeles",
         img: "/sub-zero/sub-zero-coffee-machine-repair.webp",
-        alt: "Built-In Coffee System Repair",
+        alt: "Built-In Coffee System Repair Los Angeles",
         description: (
           <>
-            <p>I personally love repairing these machines. From <strong>Miele plumbed coffee makers</strong> to <strong>Thermador built-ins</strong>, these systems require a trained hand.</p>
-            <h3>Common Problems:</h3>
+            <p>We love repairing these machines. From <strong>Miele plumbed coffee makers</strong> to <strong>Thermador built-ins</strong>, these systems require a trained hand.</p>
+            <h3>Common Problems We Fix:</h3>
             <ul>
               <li>✅ Not brewing properly</li>
               <li>✅ Grinder malfunction</li>
