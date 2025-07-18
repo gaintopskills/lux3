@@ -35,7 +35,7 @@ export const Tabs = () => {
         id: "oven",
         title: "Oven Repair",
         heading: "High-End Oven Repair Los Angeles",
-        img: "/sub-zero/sub-zero-oven-repair.webp",
+        img: "/los-angeles/oven-repair-los-angeles.webp",
         alt: "Luxury Oven Repair Los Angeles",
         description: (
           <>
@@ -59,7 +59,7 @@ export const Tabs = () => {
         id: "cooktop",
         title: "Cooktop Repair",
         heading: "High-End Cooktop Repair Los Angeles",
-        img: "/sub-zero/sub-zero-cooktop-repair.webp",
+        img: "/los-angeles/freezer-repair-los-angeles.webp",
         alt: "Luxury Cooktop Repair Los Angeles",
         description: (
           <>
