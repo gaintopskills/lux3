@@ -317,7 +317,7 @@ export const Tabs = () => {
         id: "grill",
         title: "BBQ Grill Repair",
         heading: "High-End BBQ Grill Repair Los Angeles",
-        img: "/sub-zero/sub-zero-bbq-repair.webp",
+        img: "/los-angeles/bbq-grill-repair-los-angeles.webp",
         alt: "High-End BBQ Grill Repai Los Angeles",
         description: (
           <>
