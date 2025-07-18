@@ -12,7 +12,7 @@ export const Tabs = () => {
         id: "range",
         title: "Range Repair",
         heading: "High-End Range Repair Los Angeles",
-        img: "/sub-zero/sub-zero-range-repair.webp",
+        img: "/los-angeles/range-repair-los-angeles.webp",
         alt: "Luxury Range Repair Los Angeles",
         description: (
           <>
