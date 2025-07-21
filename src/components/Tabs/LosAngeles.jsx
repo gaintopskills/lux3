@@ -82,7 +82,7 @@ export const Tabs = () => {
         id: "hood",
         title: "Ventilation Hood Repair",
         heading: "High-End Ventilation & Range Hood Repair Los Angeles",
-        img: "/los-angeles/sub-zero-vent-hood-repair.webp",
+        img: "/los-angeles/range-hood-repair-los-angeles.webp",
         alt: "Luxury Ventilation & Range Hood Repair Los Angeles",
         description: (
           <>
@@ -105,7 +105,7 @@ export const Tabs = () => {
       id: "refrigerator",
       title: "Refrigerator Repair",
       heading: "High-End Refrigerator Repair Los Angeles",
-      img: "/los-angeles/sub-zero-appliance-repair.webp",
+      img: "/los-angeles/refrigerator-repair.webp",
       alt: "High-End Refrigerator Repair",
       description: (
         <>
@@ -198,7 +198,7 @@ export const Tabs = () => {
         id: "washing",
         title: "Washing Machine Repair",
         heading: "High-End Washing Machine Repair Los Angeles",
-        img: "/los-angeles/sub-zero-washing-machine-repair.webp",
+        img: "/los-angeles/washing-machine-repair.webp",
         alt: "High-End Washing Machine Repair Los Angeles",
         description: (
           <>
@@ -244,7 +244,7 @@ export const Tabs = () => {
         id: "warming",
         title: "Warming Drawer Repair",
         heading: "High-End Warming Drawer Repair Los Angeles",
-        img: "/los-angeles/sub-zero-warming-drawer-repair.webp",
+        img: "/los-angeles/warming-drawer-repair.webp",
         alt: "Warming Drawer Repair Los Angeles",
         description: (
           <>
@@ -267,7 +267,7 @@ export const Tabs = () => {
       id: "winecooler",
       title: "Wine Cooler Repair",
       heading: "Wine Preservation Unit Repair Los Angeles",
-      img: "/los-angeles/sub-zero-wine-cooler-repair.webp",
+      img: "/los-angeles/wine-cooler-repair.webp",
       alt: "Wine Cooler Repair Los Angeles",
       description: (
         <>
@@ -294,7 +294,7 @@ export const Tabs = () => {
         id: "winecellar",
         title: "Wine Cellar Repair",
         heading: "Climate System & Wine Cellar Repair Los Angeles",
-        img: "/los-angeles/sub-zero-wine-cellar-repair.webp",
+        img: "/los-angeles/wine-cellar-repair.webp",
         alt: "Wine Cellar Repair Los Angeles",
         description: (
           <>
