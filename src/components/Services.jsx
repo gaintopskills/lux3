@@ -141,7 +141,6 @@ const Services = () => {
   };
   return (
     <div className="wrapper">
-      <h2>Main Brands We Repair</h2>
       <div className="cols">
         {offers.map((offer, index) => (
           <div
