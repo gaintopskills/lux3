@@ -12,7 +12,7 @@ export const Tabs = () => {
         id: "range",
         title: "Range Repair",
         heading: "High-End Range Repair Los Angeles",
-        img: "/los-angeles/range-repair-los-angeles.webp",
+        img: "/cities/los-angeles/range-repair-los-angeles.webp",
         alt: "Luxury Range Repair Los Angeles",
         description: (
           <>
@@ -35,7 +35,7 @@ export const Tabs = () => {
         id: "oven",
         title: "Oven Repair",
         heading: "High-End Oven Repair Los Angeles",
-        img: "/los-angeles/oven-repair-los-angeles.webp",
+        img: "/cities/los-angeles/oven-repair-los-angeles.webp",
         alt: "Luxury Oven Repair Los Angeles",
         description: (
           <>
@@ -59,7 +59,7 @@ export const Tabs = () => {
         id: "cooktop",
         title: "Cooktop Repair",
         heading: "High-End Cooktop Repair Los Angeles",
-        img: "/los-angeles/cooktop-repair-los-angeles.webp",
+        img: "/cities/los-angeles/cooktop-repair-los-angeles.webp",
         alt: "Luxury Cooktop Repair Los Angeles",
         description: (
           <>
@@ -82,7 +82,7 @@ export const Tabs = () => {
         id: "hood",
         title: "Ventilation Hood Repair",
         heading: "High-End Ventilation & Range Hood Repair Los Angeles",
-        img: "/los-angeles/range-hood-repair-los-angeles.webp",
+        img: "/cities/los-angeles/range-hood-repair-los-angeles.webp",
         alt: "Luxury Ventilation & Range Hood Repair Los Angeles",
         description: (
           <>
@@ -105,7 +105,7 @@ export const Tabs = () => {
       id: "refrigerator",
       title: "Refrigerator Repair",
       heading: "High-End Refrigerator Repair Los Angeles",
-      img: "/los-angeles/refrigerator-repair.webp",
+      img: "/cities/los-angeles/refrigerator-repair.webp",
       alt: "High-End Refrigerator Repair",
       description: (
         <>
@@ -129,7 +129,7 @@ export const Tabs = () => {
         id: "freezer",
         title: "Freezer Repair",
         heading: "High-End Freezer Repair Los Angeles",
-        img: "/los-angeles/freezer-repair-los-angeles.webp",
+        img: "/cities/los-angeles/freezer-repair-los-angeles.webp",
         alt: "High-End Freezer Repair Los Angeles",
         description: (
           <>
@@ -152,7 +152,7 @@ export const Tabs = () => {
         id: "beverage",
         title: "Beverage Center Repair",
         heading: "High-End Beverage Center Repair Los Angeles",
-        img: "/cities/los-angeles/beverage-center-repair-los-angeles.webp",
+        img: "/cities/cities/los-angeles/beverage-center-repair-los-angeles.webp",
         alt: "Luxury Beverage Center Repair Los Angeles",
         description: (
           <>
@@ -180,7 +180,7 @@ export const Tabs = () => {
         id: "icemaker",
         title: "Ice Maker Repair",
         heading: "High-End Ice Maker Repair Los Angeles",
-        img: "/los-angeles/ice-maker-repair-los-angeles.webp",
+        img: "/cities/los-angeles/ice-maker-repair-los-angeles.webp",
         alt: "Luxury Ice Maker Repair",
         description: (
           <>
@@ -203,7 +203,7 @@ export const Tabs = () => {
         id: "dryer",
         title: "Dryer Repair",
         heading: "High-End Dryer Repair Los Angeles",
-        img: "/los-angeles/dryer-repair-los-angeles.webp",
+        img: "/cities/los-angeles/dryer-repair-los-angeles.webp",
         alt: "High-End Dryer Repair Los Angeles",
         description: (
           <>
@@ -226,7 +226,7 @@ export const Tabs = () => {
         id: "washing",
         title: "Washing Machine Repair",
         heading: "High-End Washing Machine Repair Los Angeles",
-        img: "/los-angeles/washing-machine-repair.webp",
+        img: "/cities/los-angeles/washing-machine-repair.webp",
         alt: "High-End Washing Machine Repair Los Angeles",
         description: (
           <>
@@ -249,7 +249,7 @@ export const Tabs = () => {
         id: "dishwasher",
         title: "Dishwasher Repair",
         heading: "High-End Dishwasher Repair Los Angeles",
-        img: "/los-angeles/dishwasher-repair-los-angeles.webp",
+        img: "/cities/los-angeles/dishwasher-repair-los-angeles.webp",
         alt: "Luxury Dishwasher Repair",
         description: (
           <>
@@ -272,7 +272,7 @@ export const Tabs = () => {
         id: "warming",
         title: "Warming Drawer Repair",
         heading: "High-End Warming Drawer Repair Los Angeles",
-        img: "/los-angeles/warming-drawer-repair.webp",
+        img: "/cities/los-angeles/warming-drawer-repair-los-angeles.webp",
         alt: "Warming Drawer Repair Los Angeles",
         description: (
           <>
@@ -295,7 +295,7 @@ export const Tabs = () => {
       id: "winecooler",
       title: "Wine Cooler Repair",
       heading: "Wine Preservation Unit Repair Los Angeles",
-      img: "/los-angeles/wine-cooler-repair.webp",
+      img: "/cities/los-angeles/wine-cooler-repair-los-angeles.webp",
       alt: "Wine Cooler Repair Los Angeles",
       description: (
         <>
@@ -322,7 +322,7 @@ export const Tabs = () => {
         id: "winecellar",
         title: "Wine Cellar Repair",
         heading: "Climate System & Wine Cellar Repair Los Angeles",
-        img: "/los-angeles/wine-cellar-repair.webp",
+        img: "/cities/los-angeles/wine-cellar-repair-los-angeles.webp",
         alt: "Wine Cellar Repair Los Angeles",
         description: (
           <>
@@ -345,7 +345,7 @@ export const Tabs = () => {
         id: "grill",
         title: "BBQ Grill Repair",
         heading: "High-End BBQ Grill Repair Los Angeles",
-        img: "/los-angeles/bbq-grill-repair-los-angeles.webp",
+        img: "/cities/los-angeles/bbq-grill-repair-los-angeles.webp",
         alt: "High-End BBQ Grill Repai Los Angeles",
         description: (
           <>
@@ -368,7 +368,7 @@ export const Tabs = () => {
         id: "pizzaoven",
         title: "Pizza Oven Repair",
         heading: "High-End Pizza Oven Repair Los Angeles",
-        img: "/los-angeles/pizza-oven-repair-los-angeles.webp",
+        img: "/cities/los-angeles/pizza-oven-repair-los-angeles.webp",
         alt: "Luxury Pizza Oven Repair",
         description: (
           <>
@@ -391,7 +391,7 @@ export const Tabs = () => {
         id: "coffee",
         title: "Coffee Machine Repair",
         heading: "Built-In Coffee System Repair Los Angeles",
-        img: "/los-angeles/coffee-machine-repair-los-angeles.webp",
+        img: "/cities/los-angeles/coffee-machine-repair-los-angeles.webp",
         alt: "Built-In Coffee System Repair Los Angeles",
         description: (
           <>
