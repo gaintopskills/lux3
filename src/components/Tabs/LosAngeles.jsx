@@ -149,6 +149,34 @@ export const Tabs = () => {
         ),
       },
       {
+        id: "beverage",
+        title: "Beverage Center Repair",
+        heading: "High-End Beverage Center Repair Los Angeles",
+        img: "/cities/los-angeles/beverage-center-repair-los-angeles.webp",
+        alt: "Luxury Beverage Center Repair Los Angeles",
+        description: (
+          <>
+            <p>We’ve serviced <strong>built-in beverage centers</strong> from <strong>U-Line</strong>, <strong>Perlick</strong>, and <strong>True Residential</strong> across modern kitchens and home bars throughout Los Angeles. These appliances are more than fridges — they’re temperature-controlled showpieces.</p>
+      
+            <h3>Common Problems We Fix:</h3>
+            <ul>
+              <li>✅ Inconsistent cooling or warm zones</li>
+              <li>✅ Excess condensation or moisture</li>
+              <li>✅ Loud compressor or fan noise</li>
+              <li>✅ Lighting or digital display issues</li>
+              <li>✅ Leaks or water pooling</li>
+            </ul>
+      
+            <h3>Brands We Repair:</h3>
+            <p><strong>U-Line, Perlick, True Residential, Monogram, JennAir, Miele, KitchenAid, Sub-Zero, Fisher & Paykel.</strong></p>
+      
+            <h3>How We Fix It:</h3>
+            <p>We inspect and recalibrate thermostats, fans, compressors, and control boards. Whether under-counter or fully integrated, your beverage center deserves flawless performance and quiet reliability — and that’s exactly what we deliver in LA.</p>
+          </>
+        ),
+      },
+      
+      {
         id: "icemaker",
         title: "Ice Maker Repair",
         heading: "High-End Ice Maker Repair Los Angeles",
