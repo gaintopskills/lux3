@@ -105,7 +105,7 @@ export const Tabs = () => {
       id: "refrigerator",
       title: "Refrigerator Repair",
       heading: "High-End Refrigerator Repair Los Angeles",
-      img: "/cities/los-angeles/refrigerator-repair.webp",
+      img: "/cities/los-angeles/refrigerator-repair-los-angeles.webp",
       alt: "High-End Refrigerator Repair",
       description: (
         <>
@@ -152,7 +152,7 @@ export const Tabs = () => {
         id: "beverage",
         title: "Beverage Center Repair",
         heading: "High-End Beverage Center Repair Los Angeles",
-        img: "/cities/cities/los-angeles/beverage-center-repair-los-angeles.webp",
+        img: "/cities/los-angeles/beverage-center-repair-los-angeles.webp",
         alt: "Luxury Beverage Center Repair Los Angeles",
         description: (
           <>
@@ -226,7 +226,7 @@ export const Tabs = () => {
         id: "washing",
         title: "Washing Machine Repair",
         heading: "High-End Washing Machine Repair Los Angeles",
-        img: "/cities/los-angeles/washing-machine-repair.webp",
+        img: "/cities/los-angeles/washing-machine-repair-los-angeles.webp",
         alt: "High-End Washing Machine Repair Los Angeles",
         description: (
           <>
