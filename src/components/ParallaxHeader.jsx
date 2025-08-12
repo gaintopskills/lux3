@@ -24,15 +24,15 @@ const ParallaxHeader = () => {
         <h1>Luxury Appliance Repair by ZARICCI</h1>
         <p>
           At Luxury Appliance Repair, we specialize in repairing high-end appliances with
-          precision, ensuring your kitchen and home run seamlessly. With certified
+          precision, ensuring your kitchen and home run seamlessly. With certified and highly expirienced 
           technicians, premium-quality parts, and exceptional customer care, we deliver
           reliable service tailored to your needs.
         </p>
         <p>
-          We’re trusted by customers throughout Los Angeles to repair luxury and high-end
+          We’re trusted by our customers to repair luxury and high-end
           brands like Viking, Wolf, Thermador, Gaggenau, Miele, Bosch, Jenn-Air,
           KitchenAid, Dacor, La Cornue, Smeg, Big Chill, Elmira Stove Works, BlueStar,
-          Fisher & Paykel, and AGA.
+          Fisher & Paykel, AGA, and more.
         </p>
       </div>
     </div>
