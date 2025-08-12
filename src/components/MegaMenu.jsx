@@ -126,36 +126,36 @@ export const MegaMenu = () => {
               <div className="row">
   {[
     [{ label: "AGA", href: "/aga-appliance-repair/" },
+    { label: "Bertazzoni", href: "/bertazzoni-appliance-repair/" },
     { label: "Big Chill", href: "/bill-chill-appliance-repair/" },
     { label: "BlueStar", href: "/bluestar-appliance-repair/" },
     { label: "Bosch", href: "/bosch-appliance-repair/" },
+    { label: "Cove", href: "/cove-appliance-repair/" },
     { label: "Dacor", href: "/dacor-appliance-repair/" },
     { label: "Elmira Stove Works", href: "/elmira-stove-works-appliance-repair/" },
-    { label: "KitchenAid", href: "/kitchenaid-appliance-repair/" },
-    { label: "La Cornue", href: "/la-cornue-appliance-repair/" },
-    { label: "Miele", href: "/miele-appliance-repair/" },
+    { label: "Fulgor Milano", href: "/fulgor-milano-appliance-repair/" },
   ],
-    [
-    { label: "Smeg", href: "/smeg-appliance-repair/" },
-    { label: "Sub-Zero", href: "/sub-zero/" },
-    { label: "Thermador", href: "/thermador-appliance-repair/" },
-    { label: "Viking", href: "/viking-appliance-repair/" },
-    { label: "Wolf", href: "/wolf-appliance-repair/" },
-    { label: "Monogram", href: "/monogram-appliance-repair/" },
-    { label: "Cove", href: "/cove-appliance-repair/" },
-    { label: "Bertazzoni", href: "/bertazzoni-appliance-repair/" },
-    { label: "ZLINE", href: "/zline-appliance-repair/" },],
-    [ 
-      
-      { label: "ILVE", href: "/ilive-appliance-repair/" },
-      { label: "Fulgor Milano", href: "/fulgor-milano-appliance-repair/" },
+    [ { label: "Hestan", href: "/hestan-appliance-repair/" },
+    { label: "ILVE", href: "/ilive-appliance-repair/" },
+    { label: "JennAir Noir", href: "/jennair-noir-appliance-repair/" },
+      { label: "KitchenAid", href: "/kitchenaid-appliance-repair/" },
       { label: "Lacanche", href: "/lacanche-appliance-repair/" },
+      { label: "La Cornue", href: "/la-cornue-appliance-repair/" },
+      { label: "Miele", href: "/miele-appliance-repair/" },
+      { label: "Monogram", href: "/monogram-appliance-repair/" },
       { label: "Robam", href: "/robam-appliance-repair/" },
+      ],
+    [ 
       { label: "Signature Kitchen Suite", href: "/signature-kitchen-suite-appliance-repair/" },
+      { label: "Smeg", href: "/smeg-appliance-repair/" },
+      { label: "Sub-Zero", href: "/sub-zero/" },
+      { label: "Thermador", href: "/thermador-appliance-repair/" },
       { label: "True Residential", href: "/true-residential-appliance-repair/" },
-      { label: "Hestan", href: "/hestan-appliance-repair/" },
+      { label: "Viking", href: "/viking-appliance-repair/" },
       { label: "Whirlpool Black Stainless", href: "/whirlpool-appliance-repair/" },
-      { label: "JennAir Noir", href: "/jennair-noir-appliance-repair/" }
+      { label: "Wolf", href: "/wolf-appliance-repair/" },
+      
+      { label: "ZLINE", href: "/zline-appliance-repair/" },  
     ],
   ].map((col, idx) => (
     <div className="column" key={idx}>
