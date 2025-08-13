@@ -111,7 +111,7 @@ export const Tabs = () => {
       id: "content6",
       title: "Maintenance Services",
       heading: "Wolf Maintenance Services",
-      img: "/wolf/wolf-maintenance.webp",
+      img: "/wolf/wolf-maintenance-services.webp",
       alt: "Wolf Appliance Maintenance",
       description: (
         <>
@@ -130,7 +130,7 @@ export const Tabs = () => {
       id: "content7",
       title: "Installation Services",
       heading: "Wolf Installation Services",
-      img: "/wolf/wolf-installation.webp",
+      img: "/wolf/wolf-installation-services.webp",
       alt: "Wolf Appliance Installation",
       description: (
         <>
