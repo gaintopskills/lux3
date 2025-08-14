@@ -165,6 +165,7 @@ export const Tabs = () => {
       description: (
         <>
           <p>Protect your investment with scheduled <strong>Wolf appliance maintenance</strong>. Our service includes performance tuning, part inspections, and cleaning to keep your cooking appliances in peak condition.</p>
+          <p><strong>Why it matters:</strong> Even high-end appliances like Wolf can lose efficiency or develop hidden faults over time. Routine maintenance ensures optimal performance, extends appliance lifespan, prevents unexpected and costly breakdowns, and helps preserve warranty coverage.</p>
           <h3>What’s Included:</h3>
           <ul>
             <li>✅ Burner and element testing</li>
