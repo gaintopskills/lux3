@@ -33,7 +33,7 @@ export const Tabs = () => {
         <li>✅ We start by inspecting the ignition system — from spark modules and electrodes to gas flow regulators — and replace faulty components using <strong>Wolf OEM parts</strong>.</li>
         <li>✅ For uneven cooking or inaccurate temperatures, we calibrate oven sensors, replace worn bake or broil elements, and verify airflow with convection systems.</li>
         <li>✅ If your <strong>Wolf range</strong> is showing error codes or the control panel is unresponsive, we diagnose the relay board, touchpad, and internal fuses — resolving software or hardware faults at the source.</li>
-        <li>✅ Our repairs are done with respect for your cabinetry and home — no mess, no guesswork, just precision <strong>Wolf range service</strong>.</li>
+        <li>✅ Our repairs are done with respect for your cabinetry and home — no mess, no guesswork, just precision <strong>Wolf range service</strong>. </li>
       </ul>
         </>
       )
