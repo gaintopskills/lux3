@@ -28,6 +28,13 @@ export const Tabs = () => {
             <li>✅ Display or control panel not responding</li>
             <li>✅ Error codes or ignition lockouts</li>
           </ul>
+          <h3>How We Fix It</h3>
+      <ul>
+        <li>✅ We start by inspecting the ignition system — from spark modules and electrodes to gas flow regulators — and replace faulty components using <strong>Wolf OEM parts</strong>.</li>
+        <li>✅ For uneven cooking or inaccurate temperatures, we calibrate oven sensors, replace worn bake or broil elements, and verify airflow with convection systems.</li>
+        <li>✅ If your <strong>Wolf range</strong> is showing error codes or the control panel is unresponsive, we diagnose the relay board, touchpad, and internal fuses — resolving software or hardware faults at the source.</li>
+        <li>✅ Our repairs are done with respect for your cabinetry and home — no mess, no guesswork, just precision <strong>Wolf range service</strong>.</li>
+      </ul>
         </>
       )
     },
@@ -48,6 +55,14 @@ export const Tabs = () => {
             <li>✅ Door won’t close or lock</li>
             <li>✅ Bake/Broil elements failing</li>
           </ul>
+          <h3>How We Fix It</h3>
+      <ul>
+        <li>✅ We inspect and replace faulty <strong>bake or broil elements</strong> and calibrate internal thermostats for accurate temperature control.</li>
+        <li>✅ For <strong>convection issues</strong>, we test the fan motor, clean internal air pathways, and ensure even airflow for consistent cooking.</li>
+        <li>✅ When digital controls fail, we diagnose the <strong>touchpad, display panel, and main control board</strong> — repairing or replacing components with Wolf-certified parts.</li>
+        <li>✅ If the oven door won’t close or lock, we realign hinges, replace door sensors, or service the lock motor for proper function.</li>
+        <li>✅ Every repair is handled with care — no scratches, no damage, just seamless <strong>Wolf oven restoration</strong>.</li>
+      </ul>
         </>
       )
     },
@@ -67,6 +82,14 @@ export const Tabs = () => {
             <li>✅ Cracked glass top</li>
             <li>✅ Power or control board issues</li>
           </ul>
+          <h3>How We Fix It</h3>
+      <ul>
+        <li>✅ We clean and realign <strong>igniters and burner caps</strong>, replace faulty spark modules, and ensure safe gas flow on <strong>Wolf gas cooktops</strong>.</li>
+        <li>✅ For <strong>induction and electric models</strong>, we test and replace damaged coils, sensors, and surface elements to restore full heating performance.</li>
+        <li>✅ Cracked or shattered glass tops are safely removed and replaced with exact-match <strong>Wolf OEM panels</strong>.</li>
+        <li>✅ If you're dealing with <strong>power loss</strong> or unresponsive controls, we diagnose the transformer, power board, and user interface to pinpoint the failure.</li>
+        <li>✅ Every repair is performed cleanly and precisely, preserving the look and functionality of your luxury cooktop.</li>
+      </ul>
         </>
       )
     },
@@ -85,6 +108,14 @@ export const Tabs = () => {
             <li>✅ Flame too high or low</li>
             <li>✅ Broken knobs or igniters</li>
           </ul>
+          <h3>How We Fix It</h3>
+      <ul>
+        <li>✅ We clean and adjust the <strong>burner ports</strong> and replace worn-out igniters to restore reliable ignition.</li>
+        <li>✅ If the flame is erratic, we calibrate the <strong>gas valves and regulator</strong> to ensure proper fuel pressure and flame height.</li>
+        <li>✅ We replace <strong>damaged knobs, spark modules, and ignition switches</strong> using genuine Wolf parts to maintain both function and luxury aesthetics.</li>
+        <li>✅ Our team checks for <strong>loose wiring, moisture intrusion, and gas line leaks</strong> to prevent recurring issues and ensure safe operation.</li>
+        <li>✅ You’ll receive a precision repair experience that matches the quality and design of your Wolf rangetop.</li>
+      </ul>
         </>
       )
     },
@@ -104,6 +135,14 @@ export const Tabs = () => {
             <li>✅ Excessive noise or vibration</li>
             <li>✅ Control panel or speed settings not responding</li>
           </ul>
+          <h3>How We Fix It</h3>
+      <ul>
+        <li>✅ We inspect the <strong>fan motor, capacitor, and control board</strong> to diagnose power and speed issues.</li>
+        <li>✅ Noisy operation? We secure or replace <strong>vibration mounts, filters, or worn-out blowers</strong> to restore quiet performance.</li>
+        <li>✅ For lighting problems, we test and replace <strong>LED drivers, wiring, or bulb sockets</strong> using Wolf-compatible parts.</li>
+        <li>✅ If controls are unresponsive, we reset or replace the <strong>touch panel, speed controller, or circuit board</strong>.</li>
+        <li>✅ Whether it's a chimney-style hood or integrated downdraft, our repair keeps your kitchen ventilated and refined.</li>
+      </ul>
         </>
       )
     },
@@ -123,6 +162,7 @@ export const Tabs = () => {
             <li>✅ Filter and vent cleaning</li>
             <li>✅ Early detection of wear or failure</li>
           </ul>
+          
         </>
       )
     },
