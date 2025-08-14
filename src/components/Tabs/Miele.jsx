@@ -95,7 +95,7 @@ export const Tabs = () => {
       id: "content4",
       title: "Ventilation Repair",
       heading: "Miele Hood & Ventilation Repair",
-      img: "/miele/miele-ventilation-repair.webp",
+      img: "/miele/miele-hood-repair.webp",
       alt: "Miele Hood Repair",
       description: (
         <>
@@ -120,6 +120,87 @@ export const Tabs = () => {
             <li>✅ We test <strong>motors, capacitors, fan blades, and PCB controls</strong>.</li>
             <li>✅ We replace <strong>faded LEDs, broken switches, and non-functional sensors</strong>.</li>
             <li>✅ Our work restores optimal extraction without disturbing your kitchen's sleek design.</li>
+          </ul>
+        </>
+      )
+    },
+    {
+      id: "content1",
+      title: "Washer Repair",
+      heading: "Miele Washer Repair",
+      img: "/miele/miele-washing-machine-repair.webp",
+      alt: "Miele Washer Repair",
+      description: (
+        <>
+          <p>From compact models to high-capacity smart washers, our technicians provide <strong>Miele washer repair</strong> with exceptional precision. Whether it's a <strong>drainage issue</strong> or a <strong>drum imbalance</strong>, we get your laundry routine back on track fast.</p>
+          <h3>Common Problems:</h3>
+          <ul>
+            <li>✅ Washer not draining</li>
+            <li>✅ Unusual noise or vibration</li>
+            <li>✅ Error codes on display</li>
+            <li>✅ Leaking water</li>
+            <li>✅ Door won’t lock or open</li>
+          </ul>
+          <h3>How We Fix It</h3>
+          <ul>
+            <li>✅ We inspect <strong>drain pumps, hoses, and filters</strong> to restore proper drainage.</li>
+            <li>✅ For balance issues, we check <strong>shock absorbers, suspension springs, and bearings</strong>.</li>
+            <li>✅ Digital errors are resolved through <strong>diagnostic tools, firmware updates, or control board replacement</strong>.</li>
+            <li>✅ We seal leaks at <strong>door gaskets or water inlets</strong>, ensuring Miele-level performance with every repair.</li>
+          </ul>
+        </>
+      )
+    },
+    {
+      id: "content2",
+      title: "Dryer Repair",
+      heading: "Miele Dryer Repair",
+      img: "/miele/miele-dryer-repair.webp",
+      alt: "Miele Dryer Repair",
+      description: (
+        <>
+          <p>We handle both <strong>Miele heat-pump and condenser dryers</strong>. Whether it's <strong>poor drying results</strong> or <strong>long cycle times</strong>, our experts restore optimal drying power while preserving energy efficiency.</p>
+          <h3>Common Problems:</h3>
+          <ul>
+            <li>✅ Dryer not heating</li>
+            <li>✅ Clothes take too long to dry</li>
+            <li>✅ Drum not spinning</li>
+            <li>✅ Unusual noise or overheating</li>
+            <li>✅ Moisture sensor malfunction</li>
+          </ul>
+          <h3>How We Fix It</h3>
+          <ul>
+            <li>✅ We test <strong>heating elements, thermostats, and sensors</strong> for accurate function.</li>
+            <li>✅ Drum issues are solved by inspecting the <strong>belt, motor, and drum rollers</strong>.</li>
+            <li>✅ Noise and heat issues are handled by cleaning and adjusting <strong>vent systems and internal components</strong>.</li>
+            <li>✅ We restore the intelligent features of your Miele dryer to peak operation — every cycle, every time.</li>
+          </ul>
+        </>
+      )
+    },
+    {
+      id: "content3",
+      title: "Dishwasher Repair",
+      heading: "Miele Dishwasher Repair",
+      img: "/miele/miele-dishwasher-repair.webp",
+      alt: "Miele Dishwasher Repair",
+      description: (
+        <>
+          <p>From built-in to fully integrated units, our team provides expert <strong>Miele dishwasher repair</strong> for ultra-quiet, spotless results. We handle leaks, cycles not starting, or dishes not drying — all with factory-level insight.</p>
+          <h3>Common Problems:</h3>
+          <ul>
+            <li>✅ Dishwasher not starting</li>
+            <li>✅ Leaking from door or underneath</li>
+            <li>✅ Dishes not clean or dry</li>
+            <li>✅ Error codes or flashing lights</li>
+            <li>✅ Unusual sounds or cycle interruption</li>
+          </ul>
+          <h3>How We Fix It</h3>
+          <ul>
+            <li>✅ We service <strong>water inlet valves, float switches, and drain pumps</strong> to restore performance.</li>
+            <li>✅ Leaks are corrected by replacing <strong>door gaskets or worn hoses</strong>.</li>
+            <li>✅ We test <strong>heating elements, fans, and rinse cycles</strong> to ensure spotless drying.</li>
+            <li>✅ Miele’s intelligent systems are carefully recalibrated to restore quiet, energy-efficient operation.</li>
           </ul>
         </>
       )
