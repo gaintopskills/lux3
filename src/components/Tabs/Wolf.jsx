@@ -19,7 +19,7 @@ export const Tabs = () => {
       alt: "Wolf Range Repair",
       description: (
         <>
-          <p>Our experienced technicians specialize in <strong>Wolf range repair</strong> — from dual-fuel and gas models to induction and steam combinations. Whether it’s a <strong>burner ignition issue</strong> or temperature inconsistency, we restore full performance while respecting the integrity of your luxury kitchen.</p>
+          <p>Our experienced technicians specialize in <strong>Wolf range repair</strong> — from dual-fuel and gas models to induction and steam combinations. Whether it’s a <strong>burner ignition issue</strong> or temperature inconsistency, we restore full performance while respecting the integrity of your kitchen.</p>
           <h3>Common Problems:</h3>
           <ul>
             <li>✅ Burner not igniting or clicking</li>
@@ -88,7 +88,7 @@ export const Tabs = () => {
         <li>✅ For <strong>induction and electric models</strong>, we test and replace damaged coils, sensors, and surface elements to restore full heating performance.</li>
         <li>✅ Cracked or shattered glass tops are safely removed and replaced with exact-match <strong>Wolf OEM panels</strong>.</li>
         <li>✅ If you're dealing with <strong>power loss</strong> or unresponsive controls, we diagnose the transformer, power board, and user interface to pinpoint the failure.</li>
-        <li>✅ Every repair is performed cleanly and precisely, preserving the look and functionality of your luxury cooktop.</li>
+        <li>✅ Every repair is performed cleanly and precisely, preserving the look and functionality of your Wolf cooktop.</li>
       </ul>
         </>
       )
@@ -127,7 +127,17 @@ export const Tabs = () => {
       alt: "Wolf Vent Hood Repair",
       description: (
         <>
-          <p>Proper ventilation is essential in a luxury kitchen. Our team services <strong>Wolf vent hoods</strong> and downdraft systems to ensure quiet, powerful performance and seamless design integration.</p>
+          <p>Proper ventilation is essential in any kitchen. Our team services <strong>Wolf vent hoods</strong> and downdraft systems to ensure quiet, powerful performance and seamless design integration.</p>
+          <h3>Types of Wolf Ventilation We Repair:</h3>
+      <ul>
+        <li>✅ Wall-mounted chimney hoods</li>
+        <li>✅ Island hoods</li>
+        <li>✅ Downdraft ventilation systems</li>
+        <li>✅ Under-cabinet hoods</li>
+        <li>✅ Pro wall hoods with liners</li>
+        <li>✅ Ceiling-mounted ventilation</li>
+        <li>✅ Custom insert hoods</li>
+      </ul>
           <h3>Common Problems:</h3>
           <ul>
             <li>✅ Fan not turning on</li>
