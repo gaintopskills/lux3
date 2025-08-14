@@ -141,7 +141,7 @@ export const MegaMenu = () => {
       { label: "KitchenAid", href: "/kitchenaid-appliance-repair/" },
       { label: "Lacanche", href: "/lacanche-appliance-repair/" },
       { label: "La Cornue", href: "/la-cornue-appliance-repair/" },
-      { label: "Miele", href: "/miele-appliance-repair/" },
+      { label: "Miele", href: "/miele/" },
       { label: "Monogram", href: "/monogram-appliance-repair/" },
       { label: "Robam", href: "/robam-appliance-repair/" },
       ],
