@@ -95,7 +95,7 @@ export const Tabs = () => {
       id: "content4",
       title: "Ventilation Repair",
       heading: "Miele Hood & Ventilation Repair",
-      img: "/miele/miele-hood-repair.webp",
+       img: "/miele/miele-dryer-repair.webp",
       alt: "Miele Hood Repair",
       description: (
         <>
@@ -125,10 +125,10 @@ export const Tabs = () => {
       )
     },
     {
-      id: "content1",
-      title: "Washer Repair X",
+      id: "content5",
+      title: "Washer Repair",
       heading: "Miele Washer Repair",
-     
+      img: "/miele/miele-washing-machine-repair.webp",
       alt: "Miele Washer Repair",
       description: (
         <>
@@ -152,7 +152,7 @@ export const Tabs = () => {
       )
     },
     {
-      id: "content2",
+      id: "content6",
       title: "Dryer Repair",
       heading: "Miele Dryer Repair",
       img: "/miele/miele-dryer-repair.webp",
@@ -179,7 +179,7 @@ export const Tabs = () => {
       )
     },
     {
-      id: "content3",
+      id: "content7",
       title: "Dishwasher Repair",
       heading: "Miele Dishwasher Repair",
       img: "/miele/miele-dishwasher-repair.webp",
@@ -206,10 +206,10 @@ export const Tabs = () => {
       )
     },
     {
-      id: "content5",
+      id: "content8",
       title: "Maintenance Services",
       heading: "Miele Maintenance Services",
-      img: "/miele/miele-maintenance.webp",
+      img: "/miele/miele-maintenance-services.webp",
       alt: "Miele Appliance Maintenance",
       description: (
         <>
@@ -227,10 +227,10 @@ export const Tabs = () => {
       )
     },
     {
-      id: "content6",
+      id: "content9",
       title: "Installation Services",
       heading: "Miele Installation Services",
-      img: "/miele/miele-installation.webp",
+      img: "/miele/miele-appliances-installation-services.webp",
       alt: "Miele Appliance Installation",
       description: (
         <>
