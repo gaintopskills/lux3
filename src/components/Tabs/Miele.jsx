@@ -126,7 +126,7 @@ export const Tabs = () => {
     },
     {
       id: "content1",
-      title: "Washer Repair",
+      title: "Washer Repair X",
       heading: "Miele Washer Repair",
      
       alt: "Miele Washer Repair",
