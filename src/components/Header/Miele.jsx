@@ -21,7 +21,7 @@ const ParallaxHeader = () => {
       </video>
       <div className="maintext">
         <h1 class="gold-embossed" data-text="Miele">Miele Repair</h1>
-        <img className="header-image" width="1200" height="630" src="/miele/miele-repair-services.webp" alt="Miele Repair Services"  fetchpriority="high"
+        <img className="header-image" width="1200" height="630" src="/miele/miele-appliance-repair-services.webp" alt="Miele Repair Services"  fetchpriority="high"
   decoding="async"/>
         <p>
         Local, factory-trained Miele repair technicians specializing in luxury appliance repair including Miele appliances.</p>
