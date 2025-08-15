@@ -128,7 +128,7 @@ export const Tabs = () => {
       id: "content1",
       title: "Washer Repair",
       heading: "Miele Washer Repair",
-      img: "/miele/miele-washing-machine-repair.webp",
+     
       alt: "Miele Washer Repair",
       description: (
         <>
