@@ -192,7 +192,7 @@ export const Tabs = () => {
         &nbsp;<a href="/sub-zero-repair-santa-monica/" title="Sub-Zero Repair Santa Monica, CA">Santa Monica</a>,
         &nbsp;<a href="/sub-zero-repair-pasadena/" title="Sub-Zero Repair Pasadena, CA"> Pasadena</a>, 
         &nbsp;<a href="/sub-zero-repair-san-marino/" title="Sub-Zero Repair San Marino, CA">San Marino</a>, 
-        &nbsp;<a href="/sub-zero-repair-pacific-palisades/" title="Sub-Zero Repair Pasific palisades, CA">Pacific Palisades</a>, 
+        &nbsp;<a href="/sub-zero-repair-pacific-palisades/" title="Sub-Zero Repair Pacific Palisades, CA">Pacific Palisades</a>, 
         &nbsp;<a href="/sub-zero-repair-malibu/" title="Sub-Zero Repair Malibu, CA">Malibu</a>, 
         &nbsp;<a href="/sub-zero-repair-thousand-oaks/" title="Sub-Zero Repair Thousand Oaks, CA">Thousand Oaks</a> and nearby areas</p>
         <p>Call Zaricci today for fast and reliable <strong>Sub-Zero repair</strong></p>
