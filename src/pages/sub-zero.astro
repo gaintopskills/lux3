@@ -15,23 +15,32 @@ const structuredData = {
   "telephone": "+1-424-499-7788",
   "priceRange": "$$$",
   "description": "Sub-Zero repair in Los Angeles & nearby area for built-in refrigerators, freezers, wine coolers, beverage centers, and integrated refrigeration systems.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Sub-Zero",
-    "url": "https://subzero-wolf.com/"
-  },
+
+
   "image": {
   "@type": "ImageObject",
   "url": "https://luxuryappliance.repair/sub-zero/sub-zero-repair-services.webp",
   "width": 1200,
   "height": 630
 },
-"address": {
-  "@type": "PostalAddress",
-  "addressLocality": "Los Angeles",
-  "addressRegion": "CA",
-  "addressCountry": "US"
-},
+
+"provider": { "@type": "LocalBusiness", 
+"@id": "https://luxuryappliance.repair/#business", 
+"name": "Luxury Appliance Repair by Zaricci", 
+"url": "https://luxuryappliance.repair/", 
+"telephone": "+1-424-499-7788", 
+"address": { "@type": "PostalAddress", "streetAddress": "814 S. Westgate Ave #119", 
+"addressLocality": "Los Angeles", 
+"addressRegion": "CA", 
+"postalCode": "90049", 
+"addressCountry": "US" } }, 
+
+ "brand": {
+    "@type": "Brand",
+    "name": "Sub-Zero",
+    "url": "https://subzero-wolf.com/"
+  },
+
  "geo": {
     "@type": "GeoCoordinates",
     "latitude": 34.0522715,
@@ -73,10 +82,7 @@ const structuredData = {
       "@type": "Place",
       "name": "Los Angeles Metropolitan Area"
     },
-    "provider": {
-      "@type": "Organization",
-      "name": "Luxury Appliance Repair by Zaricci"
-    }
+   
   }
 },
 "hasOfferCatalog": {
