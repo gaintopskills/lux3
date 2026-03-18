@@ -118,7 +118,7 @@ export const Tabs = () => {
              <a href="#form">
   <button className="tabs-button">Book</button>
 </a>
-<a href="tel:3238704790">
+<a href="tel:4244997788">
   <button className="tabs-button">Call: (424) 499-7788</button>
 </a>
            </div>
@@ -150,7 +150,7 @@ export const Tabs = () => {
                <a href="#form">
   <button className="tabs-button">Book</button>
 </a>
-<a href="tel:3238704790">
+<a href="tel:4244997788">
   <button className="tabs-button">Call: (424) 499-7788</button>
 </a>
              </div>
