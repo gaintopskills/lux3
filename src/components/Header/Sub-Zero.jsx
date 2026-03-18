@@ -25,7 +25,7 @@ const ParallaxHeader = () => {
   decoding="async"/>
         <p>
         Local, factory-trained Sub-Zero repair technicians specializing in luxury appliance repair including Sub-Zero appliances.</p>
-        <p>✅ Lisenced & Insured<br />
+        <p>✅ Licensed & Insured<br />
         ✅ 3-month warranty on parts and labor<br />
         ✅ 1 year warranty on sealded system repair<br />
           ✅ Same-day or next day service<br />
