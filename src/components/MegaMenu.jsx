@@ -86,7 +86,7 @@ export const MegaMenu = () => {
                   { label: "Range Repair", href: "/range-repair/" },
                   { label: "Cooktop Repair", href: "/cooktop-repair/" },
                 ],
-                  [{ label: "Wachine Machine Repair", href: "/washing-machine-repair/" }, 
+                  [{ label: "Washing Machine Repair", href: "/washing-machine-repair/" }, 
                   { label: "Dryer Repair", href: "/dryer-repair/" }, 
                   { label: "Dishwasher Repair", href: "/dishwasher-repair/" },
                   { label: "Microwave Repair", href: "/microwave-repair/" },
