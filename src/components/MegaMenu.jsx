@@ -272,7 +272,7 @@ export const MegaMenu = () => {
   Charity <ArrowIcon isOpen={openDropdown === "Charity"} />
 </button>
             <div className={`dropdown-content ${openDropdown === "prices" ? "show" : ""}`}>
-            <h3>10% of the revenues goes towards helping law income families fix their appliances!</h3>
+            <h3>10% of the revenues goes towards helping low-income families fix their appliances!</h3>
               <div className="row">
                 {[
                   [],
