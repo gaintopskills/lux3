@@ -20,17 +20,17 @@ const ParallaxHeader = () => {
         Your browser does not support the video tag.
       </video>
       <div className="maintext">
-        <h1 class="gold-embossed" data-text="SUB-ZERO">Sub-Zero Repair</h1>
+        <h1 class="gold-embossed" data-text="SUB-ZERO">Sub-Zero Repair Los Angeles & Nearby Areas</h1>
         <img className="header-image" width="1200" height="630" src="/sub-zero/sub-zero-repair-services.webp" alt="Sub-Zero Repair Services"  fetchpriority="high"
   decoding="async"/>
         <p>
-        Local, factory-trained Sub-Zero repair technicians specializing in luxury appliance repair including Sub-Zero appliances.</p>
+        Factory-trained technicians for Sub-Zero refrigerators, freezers, wine storage, and beverage centers across Los Angeles and nearby service areas.</p>
         <p>✅ Licensed & Insured<br />
         ✅ 3-month warranty on parts and labor<br />
         ✅ 1 year warranty on sealed system repair<br />
           ✅ Same-day or next day service<br />
         </p>
-        <p>If your Sub-Zero fridge not cooling, freezer’s too warm, or wine cooler stops working, you can count on us to fix it.</p>
+        <p>If your Sub-Zero fridge not cooling, freezer’s too warm, or wine cooler stops working, you can count on us to diagnose and repair it.</p>
       </div>
     </div>
   );
