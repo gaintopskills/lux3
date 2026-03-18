@@ -167,7 +167,7 @@ export const Tabs = () => {
           <li>✅ Emergency service</li>
           <li>✅ White-glove, in-home professionalism</li>
           <li>✅ Upfront pricing with no surprises</li>
-          <li>✅ 3 month warranty on parts and labor</li>
+          <li>✅ 3-month warranty on parts and labor</li>
         </ul>
         <p>Learn more about Sub-Zero’s product line on the&nbsp;
 <a href="https://www.subzero-wolf.com/" target="_blank" rel="noopener" title="Visit the official Sub-Zero website for product details and specifications">
