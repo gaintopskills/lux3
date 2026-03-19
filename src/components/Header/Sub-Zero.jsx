@@ -20,7 +20,7 @@ const ParallaxHeader = () => {
         Your browser does not support the video tag.
       </video>
       <div className="maintext">
-        <h1 class="gold-embossed" data-text="SUB-ZERO">Sub-Zero Repair Los Angeles & Nearby Areas</h1>
+        <h1 class="gold-embossed" data-text="SUB-ZERO">Sub-Zero Repair in Los Angeles & Nearby Areas</h1>
         <img className="header-image" width="1200" height="630" src="/sub-zero/sub-zero-repair-services.webp" alt="Sub-Zero Repair Services"  fetchpriority="high"
   decoding="async"/>
         <p>
