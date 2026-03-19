@@ -26,7 +26,7 @@ export const Footer = () => {
         <div className="footer-section">
           <h4>Services</h4>
           <p>We provide high-end appliance repair, installation, and maintenance services.</p>
-          <p>10% of revenues goes towards helping low income families fix their appliances.</p>
+          <p>10% of revenue goes toward helping low-income families repair essential appliances.</p>
         </div>
 
         <div className="footer-section footer-contact">
