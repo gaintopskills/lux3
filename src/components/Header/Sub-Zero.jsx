@@ -27,8 +27,8 @@ const ParallaxHeader = () => {
         Factory-trained technicians for Sub-Zero refrigerators, freezers, wine storage, and beverage centers across Los Angeles and nearby service areas.</p>
         <p>✅ Licensed & Insured<br />
         ✅ 3-month warranty on parts and labor<br />
-        ✅ 1 year warranty on sealed system repair<br />
-          ✅ Same-day or next day service<br />
+        ✅ 1-year warranty on sealed system repair<br />
+          ✅ Same-day or next-day service<br />
         </p>
         <p>If your Sub-Zero fridge not cooling, freezer’s too warm, or wine cooler stops working, you can count on us to diagnose and repair it.</p>
       </div>
