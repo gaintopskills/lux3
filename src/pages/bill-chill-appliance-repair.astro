@@ -3,101 +3,188 @@ import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://luxuryappliance.repair/big-chill-appliance-repair/",
-  "name": "Luxury Appliance Repair by Zaricci",
-  "url": "https://luxuryappliance.repair/big-chill-appliance-repair/",
-  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
-  "telephone": "+1-424-499-7788",
-  "priceRange": "$$$",
-  "description": "Luxury Appliance Repair by Zaricci specializes in Big Chill appliance repair, installation, and maintenance for retro-inspired refrigerators, ranges, dishwashers, and hoods. Our certified technicians offer expert white-glove service using genuine parts, preserving the style and performance of your premium appliances across Los Angeles and surrounding areas.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Big Chill",
-    "url": "https://bigchill.com/"
-  },
-  "serviceType": "Big Chill Appliance Repair, Installation, and Maintenance",
-  "areaServed": {
-    "@type": "Place",
-    "name": "Southern California"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Big Chill Appliance Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Big Chill Appliance Repair",
-          "description": "Expert repair services for Big Chill refrigerators, stoves, ovens, dishwashers, and hoods, preserving retro design and modern performance."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Big Chill Appliance Installation",
-          "description": "Professional installation of Big Chill appliances, ensuring perfect fit, finish, and operation for retro and Pro-style models."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Big Chill Appliance Maintenance",
-          "description": "Preventive maintenance for Big Chill appliances including cleaning, calibration, and performance optimization to protect their longevity and style."
-        }
-      }
-    ]
-  },
-  "provider": {
-    "@type": "Organization",
-    "name": "Luxury Appliance Repair by Zaricci",
-    "url": "https://luxuryappliance.repair/"
-  },
-  "knowsAbout": [
-    "Big Chill Appliance Repair",
-    "Big Chill Installation Services",
-    ""Big Chill Appliance Maintenance",
-    "Big Chill Retro Refrigerators",
-    "Big Chill Pro-Style Ranges","
-    "Big Chill Dishwashers",
-    "Big Chill Wall Ovens",
-    "Big Chill Microwave Repairs",
-    "Luxury Retro Appliance Restoration",
-    "Premium Appliance Repair Southern California"
-  ],
-  "potentialAction": [
+  "@graph": [
     {
-      "@type": "ReserveAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://luxuryappliance.repair/book/",
-        "inLanguage": "en",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/big-chill-appliance-repair/#webpage",
+      "url": "https://luxuryappliance.repair/big-chill-appliance-repair/",
+      "name": "Big Chill Appliance Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Expert Big Chill appliance repair, installation, and maintenance in Los Angeles for retro refrigerators, stoves, ranges, wall ovens, dishwashers, and hoods.",
+      "about": {
+        "@id": "https://luxuryappliance.repair/big-chill-appliance-repair/#service"
       },
-      "result": {
-        "@type": "Reservation",
-        "name": "Schedule Big Chill Appliance Service"
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/images/big-chill-appliance-repair-los-angeles.webp"
       }
     },
     {
-      "@type": "CommunicateAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "tel:+14244997788",
-        "actionPlatform": [
-          "http://schema.org/MobileWebPlatform"
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/big-chill-appliance-repair/#service",
+      "name": "Big Chill Appliance Repair",
+      "url": "https://luxuryappliance.repair/big-chill-appliance-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/big-chill-appliance-repair/#webpage"
+      },
+      "serviceType": "Big Chill appliance repair, installation, and maintenance",
+      "description": "Luxury Appliance Repair by Zaricci specializes in Big Chill appliance repair, installation, and maintenance for retro-inspired refrigerators, stoves, ranges, wall ovens, dishwashers, and hoods. Our technicians provide white-glove service designed to preserve the style and performance of premium Big Chill appliances across Los Angeles and surrounding communities.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Big Chill",
+        "sameAs": "https://bigchill.com/"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Los Angeles" },
+        { "@type": "Place", "name": "Brentwood" },
+        { "@type": "City", "name": "Pasadena" },
+        { "@type": "Place", "name": "Bel Air" },
+        { "@type": "Place", "name": "Pacific Palisades" },
+        { "@type": "City", "name": "Santa Monica" },
+        { "@type": "City", "name": "Beverly Hills" },
+        { "@type": "City", "name": "Calabasas" },
+        { "@type": "City", "name": "Thousand Oaks" },
+        { "@type": "City", "name": "West Hollywood" },
+        { "@type": "City", "name": "San Marino" },
+        { "@type": "City", "name": "Malibu" },
+        { "@type": "Place", "name": "Manhattan Beach" },
+        { "@type": "Place", "name": "Encino" },
+        { "@type": "Place", "name": "Rancho Palos Verdes" },
+        { "@type": "Place", "name": "Palos Verdes Estates" },
+        { "@type": "Place", "name": "Rolling Hills Estates" },
+        { "@type": "Place", "name": "Westwood" },
+        { "@type": "Place", "name": "Century City" },
+        { "@type": "Place", "name": "La Canada Flintridge" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Big Chill Appliance Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Big Chill Refrigerator Repair",
+              "description": "Repair for Big Chill refrigerators with cooling problems, temperature fluctuations, ice maker issues, leaks, door seal failures, and noisy fans or compressors."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Big Chill Stove Repair",
+              "description": "Repair for Big Chill stoves with burner, ignition, temperature control, and gas or electrical issues."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Big Chill Range Repair",
+              "description": "Repair for Big Chill gas and electric ranges with heating, ignition, broiler, and control problems."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Big Chill Wall Oven Repair",
+              "description": "Repair for Big Chill wall ovens with baking, broiling, heating, sensor, and temperature regulation issues."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Big Chill Hood Repair",
+              "description": "Repair for Big Chill ventilation hoods with fan, lighting, switch, and airflow issues."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Big Chill Dishwasher Repair",
+              "description": "Repair for Big Chill dishwashers with draining problems, weak cleaning performance, cycle issues, unusual noise, and door problems."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Big Chill Appliance Installation",
+              "description": "Professional installation of Big Chill appliances for proper fit, finish, setup, and performance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Big Chill Appliance Maintenance",
+              "description": "Preventive maintenance for Big Chill appliances including inspection, cleaning, calibration, and performance optimization."
+            }
+          }
         ]
-      }
+      },
+      "keywords": [
+        "Big Chill appliance repair",
+        "Big Chill refrigerator repair",
+        "Big Chill stove repair",
+        "Big Chill hood repair",
+        "Big Chill gas stove repair",
+        "Big Chill induction cooktop repair",
+        "Big Chill wall oven repair",
+        "Big Chill range repair",
+        "Big Chill gas range repair",
+        "Big Chill dishwasher repair",
+        "Big Chill appliance installation",
+        "Big Chill appliance maintenance",
+        "Los Angeles Big Chill repair"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": "https://luxuryappliance.repair/zaricci-logo.webp",
+      "image": "https://luxuryappliance.repair/images/big-chill-appliance-repair-los-angeles.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "areaServed": [
+        { "@type": "City", "name": "Los Angeles" },
+        { "@type": "Place", "name": "Brentwood" },
+        { "@type": "City", "name": "Pasadena" },
+        { "@type": "Place", "name": "Bel Air" },
+        { "@type": "Place", "name": "Pacific Palisades" },
+        { "@type": "City", "name": "Santa Monica" },
+        { "@type": "City", "name": "Beverly Hills" },
+        { "@type": "City", "name": "Calabasas" },
+        { "@type": "City", "name": "Thousand Oaks" },
+        { "@type": "City", "name": "West Hollywood" },
+        { "@type": "City", "name": "San Marino" },
+        { "@type": "City", "name": "Malibu" },
+        { "@type": "Place", "name": "Manhattan Beach" },
+        { "@type": "Place", "name": "Encino" },
+        { "@type": "Place", "name": "Rancho Palos Verdes" },
+        { "@type": "Place", "name": "Palos Verdes Estates" },
+        { "@type": "Place", "name": "Rolling Hills Estates" },
+        { "@type": "Place", "name": "Westwood" },
+        { "@type": "Place", "name": "Century City" },
+        { "@type": "Place", "name": "La Canada Flintridge" }
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      ]
     }
   ]
 }
-
 ---
 <Layout
 	title="Big Chill Appliance Repair – Retro Style. Modern Performance. Expert Repair."
