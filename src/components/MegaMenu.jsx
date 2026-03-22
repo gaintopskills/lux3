@@ -127,7 +127,7 @@ export const MegaMenu = () => {
   {[
     [{ label: "AGA", href: "/aga-appliance-repair/" },
     { label: "Bertazzoni", href: "/bertazzoni-appliance-repair/" },
-    { label: "Big Chill", href: "/bill-chill-appliance-repair/" },
+    { label: "Big Chill", href: "/big-chill-appliance-repair/" },
     { label: "BlueStar", href: "/bluestar-appliance-repair/" },
     { label: "Bosch", href: "/bosch-appliance-repair/" },
     { label: "Cove", href: "/cove-appliance-repair/" },
