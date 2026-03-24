@@ -46,8 +46,6 @@ const finalStructuredData = structuredData || defaultStructuredData;
 		<title>{title}</title>
 		<meta name="title" content={title} />
 		<meta name="robots" content="max-image-preview:large">
-		
-<meta property="og:image:alt" content={ogTitle} />
 		<link rel="canonical" href={canonicalURL} />
 		<script type="application/ld+json" set:html={JSON.stringify(finalStructuredData)} />
 		</head>
