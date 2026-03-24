@@ -49,8 +49,7 @@ const finalStructuredData = structuredData || defaultStructuredData;
 		{ogImage && <meta property="og:image" content={ogImage} />}
 {ogImage && <meta property="og:image:alt" content={title} />}
 		<link rel="canonical" href={canonicalURL} />
-		<script type="application/ld+json" set:html={JSON.stringify(finalStructuredData)} />	
-		
+		<script type="application/ld+json" set:html={JSON.stringify(finalStructuredData)} />
 		</head>
 	<body>
 	<MegaMenu client:idle />
