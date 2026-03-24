@@ -3,99 +3,120 @@ import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://luxuryappliance.repair/aga-appliance-repair/",
-  "name": "Luxury Appliance Repair by Zaricci",
-  "url": "https://luxuryappliance.repair/aga-appliance-repair/",
-  "telephone": "+1-424-499-7788",
-  "priceRange": "$$$",
-  "description": "Luxury Appliance Repair by Zaricci specializes in AGA appliance repair, installation, and maintenance for classic cast-iron ranges, Total Control series ovens, and Companion units. Our certified technicians offer white-glove service using genuine parts and precision diagnostics throughout Los Angeles and surrounding areas.",
-  "brand": {
-    "@type": "Brand",
-    "name": "AGA",
-    "url": "https://www.agaliving.com/"
-  },
-  "serviceType": "AGA Appliance Repair, Installation, and Maintenance",
-  "areaServed": {
-    "@type": "Place",
-    "name": "Southern California"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "AGA Appliance Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "AGA Appliance Repair",
-          "description": "Expert repair services for AGA appliances including radiant heat issues, burner malfunctions, thermostat failures, and digital control system errors."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "AGA Appliance Installation",
-          "description": "Professional installation services for AGA ranges including Classic, Total Control, Dual Control, eR3, eR7, and Companion models."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "AGA Appliance Maintenance",
-          "description": "Preventive maintenance services for AGA cookers and ovens, including inspection, calibration, and performance optimization."
-        }
-      }
-    ]
-  },
-  "provider": {
-    "@type": "Organization",
-    "name": "Luxury Appliance Repair by Zaricci",
-    "url": "https://luxuryappliance.repair/"
-  },
-  "knowsAbout": [
-    "AGA Appliance Repair",
-    "AGA Installation Services",
-    "AGA Appliance Maintenance",
-    "AGA Classic Cast Iron Ranges",
-    "AGA Total Control Series",
-    "AGA eR3 and eR7 Electric Series",
-    "AGA Dual Control and City60 Models",
-    "AGA Companion and Module Units",
-    "Luxury Cast-Iron Range Restoration",
-    "Premium Appliance Repair Southern California"
-  ],
-  "potentialAction": [
+  "@graph": [
     {
-      "@type": "ReserveAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://luxuryappliance.repair/book/",
-        "inLanguage": "en",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
-      },
-      "result": {
-        "@type": "Reservation",
-        "name": "Schedule AGA Appliance Service"
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/aga-appliance-repair/#webpage",
+      "url": "https://luxuryappliance.repair/aga-appliance-repair/",
+      "name": "AGA Appliance Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Expert AGA appliance repair, installation, and maintenance in Los Angeles for classic cast-iron ranges, Total Control series ovens, Companion units, and other premium AGA cooking appliances.",
+      "about": {
+        "@id": "https://luxuryappliance.repair/aga-appliance-repair/#service"
       }
     },
     {
-      "@type": "CommunicateAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "tel:+14244997788",
-        "actionPlatform": [
-          "http://schema.org/MobileWebPlatform"
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/aga-appliance-repair/#service",
+      "name": "AGA Appliance Repair",
+      "url": "https://luxuryappliance.repair/aga-appliance-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/aga-appliance-repair/#webpage"
+      },
+      "serviceType": "AGA appliance repair, installation, and maintenance",
+      "description": "Luxury Appliance Repair by Zaricci specializes in AGA appliance repair, installation, and maintenance for classic cast-iron ranges, Total Control series ovens, Dual Control models, eR3 and eR7 electric series, City60 units, and Companion appliances. Our technicians provide white-glove service using precision diagnostics and premium parts for AGA appliances across Los Angeles and surrounding communities.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "AGA",
+        "sameAs": "https://www.agaliving.com/"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Los Angeles", "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles" },
+        { "@type": "Place", "name": "Brentwood", "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles" },
+        { "@type": "City", "name": "Pasadena", "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California" },
+        { "@type": "Place", "name": "Bel Air", "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles" },
+        { "@type": "Place", "name": "Pacific Palisades", "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles" },
+        { "@type": "City", "name": "Santa Monica" },
+        { "@type": "City", "name": "Beverly Hills" },
+        { "@type": "City", "name": "Calabasas" },
+        { "@type": "City", "name": "Thousand Oaks" },
+        { "@type": "City", "name": "West Hollywood" },
+        { "@type": "City", "name": "San Marino" },
+        { "@type": "City", "name": "Malibu" },
+        { "@type": "City", "name": "Manhattan Beach" },
+        { "@type": "Place", "name": "Encino", "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles" },
+        { "@type": "City", "name": "Rancho Palos Verdes" },
+        { "@type": "City", "name": "Palos Verdes Estates" },
+        { "@type": "City", "name": "Rolling Hills Estates" },
+        { "@type": "Place", "name": "Westwood", "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles" },
+        { "@type": "Place", "name": "Century City", "sameAs": "https://en.wikipedia.org/wiki/Century_City" },
+        { "@type": "City", "name": "La Cañada Flintridge" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "AGA Appliance Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AGA Appliance Repair",
+              "description": "Repair for AGA appliances with radiant heat problems, burner malfunctions, thermostat failures, temperature inconsistency, control errors, and performance issues."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AGA Appliance Installation",
+              "description": "Professional installation for AGA Classic, Total Control, Dual Control, eR3, eR7, City60, and Companion appliances for proper setup, integration, and performance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AGA Appliance Maintenance",
+              "description": "Preventive maintenance for AGA appliances including inspection, calibration, cleaning, and performance optimization."
+            }
+          }
         ]
-      }
+      },
+      "keywords": [
+        "AGA appliance repair",
+        "AGA range repair",
+        "AGA oven repair",
+        "AGA cooker repair",
+        "AGA appliance installation",
+        "AGA appliance maintenance",
+        "AGA Total Control repair",
+        "AGA Dual Control repair",
+        "AGA eR3 repair",
+        "AGA eR7 repair",
+        "AGA City60 repair",
+        "Los Angeles AGA repair"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": "https://luxuryappliance.repair/zaricci-logo.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      ]
     }
   ]
-}
+};
 ---
 <Layout
 	title="AGA Appliance Repair – Expert Restoration for the Heart of Your Home"
