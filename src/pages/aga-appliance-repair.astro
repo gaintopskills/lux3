@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ParallaxHeader from '../components/Header/Aga.jsx'
 import '../styles/global.css';
 const structuredData = {
   "@context": "https://schema.org",
@@ -129,6 +130,7 @@ const structuredData = {
 	description="Your AGA appliance is more than a cooking tool—it's a symbol of tradition, craftsmanship, and timeless elegance. Whether it’s a classic cast-iron range, a Total Control series oven, or a Companion cooker, this British icon deserves nothing less than white-glove care."
 	structuredData={structuredData}
 >
+<ParallaxHeader client:idle/>
 <div style="margin: 50px">
 
 <section id="webpage">
