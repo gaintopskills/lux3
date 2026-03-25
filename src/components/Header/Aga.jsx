@@ -33,6 +33,7 @@ const ParallaxHeader = () => {
         </p>
         <p>  If your AGA range is not heating properly, your burners are not igniting as they should, or your oven is no longer performing the way it should, you can count on us for expert diagnosis and repair.</p>
     </div>
+    </div>
   );
 };
 export default ParallaxHeader;
