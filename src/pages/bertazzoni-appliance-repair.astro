@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ParallaxHeader from '../components/Header/Bertazzoni.jsx'
 import '../styles/global.css';
 const structuredData = {
   "@context": "https://schema.org",
@@ -128,6 +129,7 @@ const structuredData = {
 	description="Bertazzoni appliances are a fusion of form and function—Italian engineering wrapped in timeless design. Known for their bold aesthetics, professional cooking precision, and heritage craftsmanship, Bertazzoni ranges and ovens are centerpieces in luxury kitchens across the world. When performance falters or maintenance is due, you need an expert service that respects the beauty, engineering, and value of your investment."
 	structuredData={structuredData}
 >
+<ParallaxHeader client:idle/>
 <div class="wrapper" id="webpage">
 <section>
   <h1>Bertazzoni Appliance Repair – Precision Service for Italian Craftsmanship</h1>
