@@ -3,117 +3,128 @@ import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://luxuryappliance.repair/bertazzoni-appliance-repair/",
-  "name": "Luxury Appliance Repair by Zaricci",
-  "url": "https://luxuryappliance.repair/bertazzoni-appliance-repair/",
-  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
-  "telephone": "+1-424-499-7788",
-  "priceRange": "$$$",
-  "description": "Luxury Appliance Repair by Zaricci offers expert repair, installation, and maintenance for Bertazzoni appliances. From Italian-designed ranges and cooktops to built-in ovens and ventilation systems, our certified technicians deliver white-glove service across Los Angeles and surrounding areas with genuine parts and precision tools.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Los Angeles",
-    "addressRegion": "CA",
-    "addressCountry": "US"
-  },
-  "brand": {
-    "@type": "Brand",
-    "name": "Bertazzoni",
-    "url": "https://us.bertazzoni.com/"
-  },
-  "areaServed": {
-    "@type": "Place",
-    "name": "Southern California"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Bertazzoni Appliance Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Bertazzoni Appliance Repair",
-          "description": "Specialized repair services for Bertazzoni ranges, cooktops, ovens, and ventilation units. We resolve ignition issues, temperature irregularities, and fan malfunctions."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Bertazzoni Appliance Installation",
-          "description": "Professional installation of Bertazzoni kitchen appliances including freestanding ranges, wall ovens, and built-in cooktops with precise alignment and calibration."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Bertazzoni Appliance Maintenance",
-          "description": "Preventive maintenance services for Bertazzoni appliances to ensure optimal performance, longevity, and safety, including inspections and tune-ups."
-        }
-      }
-    ]
-  },
-  "makesOffer": [
+  "@graph": [
     {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "Bertazzoni Appliance Repair, Installation, and Maintenance"
-      }
-    }
-  ],
-  "provider": {
-    "@type": "Organization",
-    "name": "Luxury Appliance Repair by Zaricci",
-    "url": "https://luxuryappliance.repair/"
-  },
-  "knowsAbout": [
-    "Bertazzoni Appliance Repair",
-    "Bertazzoni Installation Services",
-    "Bertazzoni Appliance Maintenance",
-    "Bertazzoni Master Series",
-    "Bertazzoni Heritage Series",
-    "Bertazzoni Professional Series",
-    "Italian Kitchen Appliances",
-    "Luxury Range and Oven Support",
-    "Premium Appliance Repair in Los Angeles",
-    "European Appliance Specialists Southern California"
-  ],
-  "potentialAction": [
-    {
-      "@type": "ReserveAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://luxuryappliance.repair/book/",
-        "inLanguage": "en",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/bertazzoni-appliance-repair/#webpage",
+      "url": "https://luxuryappliance.repair/bertazzoni-appliance-repair/",
+      "name": "Bertazzoni Appliance Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Expert Bertazzoni appliance repair, installation, and maintenance in Los Angeles for premium Italian ranges, ovens, cooktops, rangetops, refrigerators, dishwashers, and other luxury Bertazzoni appliances.",
+      "about": {
+        "@id": "https://luxuryappliance.repair/bertazzoni-appliance-repair/#service"
       },
-      "result": {
-        "@type": "Reservation",
-        "name": "Schedule Bertazzoni Appliance Service"
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/images/bertazzoni/bertazzoni-appliance-repair-los-angeles-and-nearby-areas.webp"
       }
     },
     {
-      "@type": "CommunicateAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "tel:+14244997788",
-        "actionPlatform": [
-          "http://schema.org/MobileWebPlatform"
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/bertazzoni-appliance-repair/#service",
+      "name": "Bertazzoni Appliance Repair",
+      "url": "https://luxuryappliance.repair/bertazzoni-appliance-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/bertazzoni-appliance-repair/#webpage"
+      },
+      "serviceType": "Bertazzoni appliance repair, installation, and maintenance",
+      "description": "Luxury Appliance Repair by Zaricci specializes in Bertazzoni appliance repair, installation, and maintenance for professional ranges, wall ovens, cooktops, rangetops, refrigerators, dishwashers, ventilation systems, and wine storage appliances. Our technicians use precision diagnostics and premium parts for Bertazzoni appliances across Los Angeles and surrounding communities.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Bertazzoni",
+        "sameAs": "https://us.bertazzoni.com/"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Los Angeles", "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles" },
+        { "@type": "Place", "name": "Brentwood", "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles" },
+        { "@type": "City", "name": "Pasadena", "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California" },
+        { "@type": "Place", "name": "Bel Air", "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles" },
+        { "@type": "Place", "name": "Pacific Palisades", "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles" },
+        { "@type": "City", "name": "Santa Monica" },
+        { "@type": "City", "name": "Beverly Hills" },
+        { "@type": "City", "name": "Calabasas" },
+        { "@type": "City", "name": "Thousand Oaks" },
+        { "@type": "City", "name": "West Hollywood" },
+        { "@type": "City", "name": "San Marino" },
+        { "@type": "City", "name": "Malibu" },
+        { "@type": "City", "name": "Manhattan Beach" },
+        { "@type": "Place", "name": "Encino", "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles" },
+        { "@type": "City", "name": "Rancho Palos Verdes" },
+        { "@type": "City", "name": "Palos Verdes Estates" },
+        { "@type": "City", "name": "Rolling Hills Estates" },
+        { "@type": "Place", "name": "Westwood", "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles" },
+        { "@type": "Place", "name": "Century City", "sameAs": "https://en.wikipedia.org/wiki/Century_City" },
+        { "@type": "City", "name": "La Cañada Flintridge" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Bertazzoni Appliance Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Bertazzoni Appliance Repair",
+              "description": "Repair for Bertazzoni appliances with ignition problems, burner malfunctions, temperature inconsistency, control failures, cooling issues, drainage issues, ventilation problems, and performance concerns."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Bertazzoni Appliance Installation",
+              "description": "Professional installation for Bertazzoni ranges, wall ovens, cooktops, rangetops, refrigerators, dishwashers, ventilation systems, and wine storage appliances for proper setup, integration, and performance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Bertazzoni Appliance Maintenance",
+              "description": "Preventive maintenance for Bertazzoni appliances including inspection, calibration, cleaning, and performance optimization."
+            }
+          }
         ]
-      }
+      },
+      "keywords": [
+        "Bertazzoni appliance repair",
+        "Bertazzoni range repair",
+        "Bertazzoni oven repair",
+        "Bertazzoni wall oven repair",
+        "Bertazzoni cooktop repair",
+        "Bertazzoni rangetop repair",
+        "Bertazzoni dishwasher repair",
+        "Bertazzoni wine cooler repair",
+        "Bertazzoni range hood repair",
+        "Bertazzoni refrigerator repair",
+        "Bertazzoni appliance installation",
+        "Bertazzoni appliance maintenance",
+        "Los Angeles Bertazzoni repair"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": "https://luxuryappliance.repair/zaricci-logo.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      ]
     }
   ]
-}
+};
 ---
 <Layout
-	title="Bertazzoni Appliance Repair – Expert Service"
+	title="Bertazzoni Appliance Repair | Factory-Trained Experts Near You"
 	description="Bertazzoni appliances are a fusion of form and function—Italian engineering wrapped in timeless design. Known for their bold aesthetics, professional cooking precision, and heritage craftsmanship, Bertazzoni ranges and ovens are centerpieces in luxury kitchens across the world. When performance falters or maintenance is due, you need an expert service that respects the beauty, engineering, and value of your investment."
 	structuredData={structuredData}
 >
