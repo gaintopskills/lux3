@@ -130,7 +130,7 @@ export const MegaMenu = () => {
     { label: "Big Chill", href: "/big-chill-appliance-repair/" },
     { label: "BlueStar", href: "/bluestar-appliance-repair/" },
     { label: "Bosch", href: "/bosch-appliance-repair/" },
-    { label: "Cove", href: "/cove-appliance-repair/" },
+    { label: "Cove", href: "/cove-dishwasher-repair/" },
     { label: "Dacor", href: "/dacor-appliance-repair/" },
     { label: "Elmira Stove Works", href: "/elmira-stove-works-appliance-repair/" },
     { label: "Fulgor Milano", href: "/fulgor-milano-appliance-repair/" },
