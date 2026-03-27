@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import ParallaxHeader from '../components/Header/Lacornue.jsx'
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -99,11 +100,13 @@ const structuredData = {
 }
 ---
 <Layout
-	title="La Cornue Appliance Repair – Expert Care for a Culinary Masterpiece"
-	description="Owning a La Cornue appliance is more than a statement—it's a celebration of timeless craftsmanship and culinary passion. Whether you’ve invested in the iconic Château Series or the elegant CornuFé, your range or oven is a handcrafted work of art, designed to blend heritage with haute cuisine."
+	title="La Cornue Appliance Repair – Expert Service"
+	description="La Cornue appliance repair in Los Angeles & nearby areas by factory-trained technicians. Expert service for ranges, ovens, cooktops, and ventilation systems.
+"
 	structuredData={structuredData}
 >
-<div style="margin: 50px">
+<ParallaxHeader client:idle/>
+<div class="wrapper" id="webpage">
 <section>
   <h2>La Cornue Appliance Repair – Expert Care for a Culinary Masterpiece</h2>
   <p>Owning a La Cornue appliance is more than a statement—it's a celebration of timeless craftsmanship and culinary passion. Whether you’ve invested in the iconic Château Series or the elegant CornuFé, your range or oven is a handcrafted work of art, designed to blend heritage with haute cuisine.</p>
@@ -120,7 +123,7 @@ const structuredData = {
   </ul>
 </section>
 
-<section>
+<section id="service">
   <h3>🛠️ La Cornue Appliances We Service</h3>
 
   <h4>🔥 Château Series Ranges</h4>
