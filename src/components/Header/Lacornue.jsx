@@ -21,7 +21,7 @@ const ParallaxHeader = () => {
       </video>
       <div className="maintext">
         <h1 class="gold-embossed" data-text="La Cornue Appliance Repair">La Cornue  Appliance Repair in Los Angeles & Nearby Areas</h1>
-        <img className="header-image" width="1200" height="630" src="/la-cornue/aga-appliance-repair-services-trained-technicians.webp" alt="La Cornue Appliance Repair Services Los Angeles and Nearby Areas"  fetchpriority="high"
+        <img className="header-image" width="1200" height="630" src="/la-cornue/la-cornue-appliance-repair-los-angeles-and-nearby-areas.webp" alt="La Cornue Appliance Repair Services Los Angeles and Nearby Areas"  fetchpriority="high"
   decoding="async"/>
     <p>
   Factory-trained technicians providing expert La Cornue appliance repair for ranges, ovens, cooktops, and range hoods throughout Los Angeles and surrounding service areas.
