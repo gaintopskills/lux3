@@ -4,114 +4,122 @@ import ParallaxHeader from '../components/Header/Cove.jsx'
 import '../styles/global.css';
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://luxuryappliance.repair/cove-appliance-repair/",
-  "name": "Luxury Appliance Repair by Zaricci",
-  "url": "https://luxuryappliance.repair/cove-appliance-repair/",
-  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
-  "telephone": "+1-424-499-7788",
-  "priceRange": "$$$",
-  "description": "Luxury Appliance Repair by Zaricci provides expert Cove dishwasher repair, installation, and maintenance services. Known for precision cleaning and seamless kitchen design, Cove dishwashers are supported with white-glove service by certified technicians throughout Los Angeles and Southern California.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Los Angeles",
-    "addressRegion": "CA",
-    "addressCountry": "US"
-  },
-  "brand": {
-    "@type": "Brand",
-    "name": "Cove",
-    "url": "https://www.coveappliances.com/"
-  },
-  "areaServed": {
-    "@type": "Place",
-    "name": "Southern California"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Cove Appliance Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Cove Dishwasher Repair",
-          "description": "Certified repair for Cove dishwashers, including issues with spray arms, sensors, leaks, drainage, and drying performance."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Cove Dishwasher Installation",
-          "description": "Professional installation services for Cove dishwashers, including panel-ready and built-in models with seamless integration into luxury kitchens."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Cove Dishwasher Maintenance",
-          "description": "Preventive maintenance to extend the life of Cove dishwashers, including filter checks, water softener calibration, and performance optimization."
-        }
-      }
-    ]
-  },
-  "makesOffer": [
+  "@graph": [
     {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "Cove Dishwasher Repair, Installation, and Maintenance"
-      }
-    }
-  ],
-  "provider": {
-    "@type": "Organization",
-    "name": "Luxury Appliance Repair by Zaricci",
-    "url": "https://luxuryappliance.repair/"
-  },
-  "knowsAbout": [
-    "Cove Dishwasher Repair",
-    "Cove Installation Services",
-    "Cove Dishwasher Maintenance",
-    "Cove Panel-Ready Dishwashers",
-    "Cove Built-in and Integrated Models",
-    "Luxury Dishwasher Solutions",
-    "High-End Kitchen Appliance Support",
-    "Premium Dishwasher Repair in Los Angeles",
-    "Cove Smart Appliance Diagnostics",
-    "White-Glove Dishwasher Installation Southern California"
-  ],
-  "potentialAction": [
-    {
-      "@type": "ReserveAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://luxuryappliance.repair/book/",
-        "inLanguage": "en",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/cove-dishwasher-repair/#webpage",
+      "url": "https://luxuryappliance.repair/cove-dishwasher-repair/",
+      "name": "Cove Dishwasher Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Expert Cove dishwasher repair, installation, and maintenance in Los Angeles for premium built-in and panel-ready Cove dishwashers.",
+      "about": {
+        "@id": "https://luxuryappliance.repair/cove-dishwasher-repair/#service"
       },
-      "result": {
-        "@type": "Reservation",
-        "name": "Schedule Cove Appliance Service"
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/images/cove/cove-dishwasher-repair-services-trained-technicians.webp"
       }
     },
     {
-      "@type": "CommunicateAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "tel:+14244997788",
-        "actionPlatform": [
-          "http://schema.org/MobileWebPlatform"
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/cove-dishwasher-repair/#service",
+      "name": "Cove Dishwasher Repair",
+      "url": "https://luxuryappliance.repair/cove-dishwasher-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/cove-dishwasher-repair/#webpage"
+      },
+      "serviceType": "Cove dishwasher repair, installation, and maintenance",
+      "description": "Luxury Appliance Repair by Zaricci specializes in Cove dishwasher repair, installation, and maintenance for premium built-in and panel-ready Cove dishwashers. Our technicians use precision diagnostics and premium parts for Cove dishwashers across Los Angeles and surrounding communities.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Cove",
+        "sameAs": "https://www.coveappliance.com/"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Los Angeles", "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles" },
+        { "@type": "Place", "name": "Brentwood", "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles" },
+        { "@type": "City", "name": "Pasadena", "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California" },
+        { "@type": "Place", "name": "Bel Air", "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles" },
+        { "@type": "Place", "name": "Pacific Palisades", "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles" },
+        { "@type": "City", "name": "Santa Monica" },
+        { "@type": "City", "name": "Beverly Hills" },
+        { "@type": "City", "name": "Calabasas" },
+        { "@type": "City", "name": "Thousand Oaks" },
+        { "@type": "City", "name": "West Hollywood" },
+        { "@type": "City", "name": "San Marino" },
+        { "@type": "City", "name": "Malibu" },
+        { "@type": "City", "name": "Manhattan Beach" },
+        { "@type": "Place", "name": "Encino", "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles" },
+        { "@type": "City", "name": "Rancho Palos Verdes" },
+        { "@type": "City", "name": "Palos Verdes Estates" },
+        { "@type": "City", "name": "Rolling Hills Estates" },
+        { "@type": "Place", "name": "Westwood", "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles" },
+        { "@type": "Place", "name": "Century City", "sameAs": "https://en.wikipedia.org/wiki/Century_City" },
+        { "@type": "City", "name": "La Cañada Flintridge" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Cove Dishwasher Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cove Dishwasher Repair",
+              "description": "Repair for Cove dishwashers with drainage problems, leaks, wash cycle failures, drying issues, spray arm malfunctions, control errors, and performance issues."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cove Dishwasher Installation",
+              "description": "Professional installation for Cove built-in and panel-ready dishwashers for proper setup, integration, and performance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cove Dishwasher Maintenance",
+              "description": "Preventive maintenance for Cove dishwashers including inspection, cleaning, calibration, and performance optimization."
+            }
+          }
         ]
-      }
+      },
+      "keywords": [
+        "Cove dishwasher repair",
+        "Cove built-in dishwasher repair",
+        "Cove panel-ready dishwasher repair",
+        "Cove dishwasher not draining",
+        "Cove dishwasher leaking",
+        "Cove dishwasher not drying",
+        "Cove dishwasher repair Los Angeles",
+        "Cove dishwasher installation",
+        "Cove dishwasher maintenance",
+        "Los Angeles Cove dishwasher repair"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": "https://luxuryappliance.repair/zaricci-logo.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      ]
     }
   ]
-}
+};
 ---
 <Layout
 	title="Cove Dishwasher Repair – Expert Service"
