@@ -20,8 +20,8 @@ const ParallaxHeader = () => {
         Your browser does not support the video tag.
       </video>
       <div className="maintext">
-        <h1 class="gold-embossed" data-text="Aga Appliance Repair">Aga Appliance Repair in Los Angeles & Nearby Areas</h1>
-        <img className="header-image" width="1200" height="630" src="/aga/aga-appliance-repair-services-trained-technicians.webp" alt="Aga Appliance Repair Services Los Angeles and Nearby Areas"  fetchpriority="high"
+        <h1 class="gold-embossed" data-text="AGA Appliance Repair">AGA Appliance Repair in Los Angeles & Nearby Areas</h1>
+        <img className="header-image" width="1200" height="630" src="/aga/aga-appliance-repair-services-trained-technicians.webp" alt="AGA Appliance Repair Services Los Angeles and Nearby Areas"  fetchpriority="high"
   decoding="async"/>
     <p>
   Factory-trained technicians providing expert AGA appliance repair for refrigerators, ranges, dishwashers, ovens, stoves, and range hoods throughout Los Angeles and surrounding service areas.
