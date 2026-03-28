@@ -3,114 +3,122 @@ import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://luxuryappliance.repair/lacanche-appliance-repair/",
-  "name": "Luxury Appliance Repair by Zaricci",
-  "url": "https://luxuryappliance.repair/lacanche-appliance-repair/",
-  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
-  "telephone": "+1-424-499-7788",
-  "priceRange": "$$$",
-  "description": "Luxury Appliance Repair by Zaricci offers expert Lacanche appliance repair, installation, and maintenance services. From heritage French ranges to bespoke cooking suites, we provide certified white-glove care using original parts throughout Los Angeles and Southern California.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Los Angeles",
-    "addressRegion": "CA",
-    "addressCountry": "US"
-  },
-  "brand": {
-    "@type": "Brand",
-    "name": "Lacanche",
-    "url": "https://www.frenchranges.com/"
-  },
-  "areaServed": {
-    "@type": "Place",
-    "name": "Southern California"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Lacanche Appliance Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Lacanche Range Repair",
-          "description": "Professional repair services for Lacanche French ranges, including burner issues, temperature imbalances, gas leaks, and control malfunctions."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Lacanche Range Installation",
-          "description": "Expert installation of Lacanche ranges with precision setup for dual-fuel, gas, and electric configurations, ensuring optimal performance and ventilation."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Lacanche Range Maintenance",
-          "description": "Preventive maintenance services for Lacanche appliances including calibration, cleaning, and inspection to preserve performance and safety."
-        }
-      }
-    ]
-  },
-  "makesOffer": [
+  "@graph": [
     {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "Lacanche Appliance Repair, Installation, and Maintenance"
-      }
-    }
-  ],
-  "provider": {
-    "@type": "Organization",
-    "name": "Luxury Appliance Repair by Zaricci",
-    "url": "https://luxuryappliance.repair/"
-  },
-  "knowsAbout": [
-    "Lacanche Appliance Repair",
-    "Lacanche Installation Services",
-    "Lacanche Maintenance",
-    "Lacanche French Ranges",
-    "Lacanche Dual-Fuel Models",
-    "Heritage Cooking Appliances",
-    "Luxury Custom Range Installation",
-    "Premium Appliance Repair Los Angeles",
-    "French Culinary Appliance Experts",
-    "White-Glove Range Service Southern California"
-  ],
-  "potentialAction": [
-    {
-      "@type": "ReserveAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://luxuryappliance.repair/book/",
-        "inLanguage": "en",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/lacanche-appliance-repair/#webpage",
+      "url": "https://luxuryappliance.repair/lacanche-appliance-repair/",
+      "name": "Lacanche Appliance Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Expert Lacanche appliance repair, installation, and maintenance in Los Angeles for luxury range cookers, ovens, hoods, range tops, and specialty Lacanche appliances.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/lacanche-appliance-repair/#service"
       },
-      "result": {
-        "@type": "Reservation",
-        "name": "Schedule Lacanche Appliance Service"
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/lacanche/lacanche-appliance-repair-los-angeles-and-nearby-areas.webp"
       }
     },
     {
-      "@type": "CommunicateAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "tel:+14244997788",
-        "actionPlatform": [
-          "http://schema.org/MobileWebPlatform"
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/lacanche-appliance-repair/#service",
+      "name": "Lacanche Appliance Repair",
+      "url": "https://luxuryappliance.repair/lacanche-appliance-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/lacanche-appliance-repair/#webpage"
+      },
+      "serviceType": "Lacanche appliance repair, installation, and maintenance",
+      "description": "Luxury Appliance Repair by Zaricci specializes in Lacanche appliance repair, installation, and maintenance for premium French range cookers, ovens, hoods, range tops, and specialty Lacanche appliances. Our technicians use precision diagnostics and premium parts for Lacanche appliances across Los Angeles and surrounding communities.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Lacanche",
+        "sameAs": "https://www.lacanche.com/"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Los Angeles", "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles" },
+        { "@type": "Place", "name": "Brentwood", "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles" },
+        { "@type": "City", "name": "Pasadena", "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California" },
+        { "@type": "Place", "name": "Bel Air", "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles" },
+        { "@type": "Place", "name": "Pacific Palisades", "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles" },
+        { "@type": "City", "name": "Santa Monica" },
+        { "@type": "City", "name": "Beverly Hills" },
+        { "@type": "City", "name": "Calabasas" },
+        { "@type": "City", "name": "Thousand Oaks" },
+        { "@type": "City", "name": "West Hollywood" },
+        { "@type": "City", "name": "San Marino" },
+        { "@type": "City", "name": "Malibu" },
+        { "@type": "City", "name": "Manhattan Beach" },
+        { "@type": "Place", "name": "Encino", "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles" },
+        { "@type": "City", "name": "Rancho Palos Verdes" },
+        { "@type": "City", "name": "Palos Verdes Estates" },
+        { "@type": "City", "name": "Rolling Hills Estates" },
+        { "@type": "Place", "name": "Westwood", "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles" },
+        { "@type": "Place", "name": "Century City", "sameAs": "https://en.wikipedia.org/wiki/Century_City" },
+        { "@type": "City", "name": "La Cañada Flintridge" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Lacanche Appliance Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Lacanche Appliance Repair",
+              "description": "Repair for Lacanche appliances with heating problems, burner malfunctions, ignition issues, temperature inconsistency, oven performance issues, control problems, and hood ventilation concerns."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Lacanche Appliance Installation",
+              "description": "Professional installation for Lacanche range cookers, ovens, hoods, range tops, and specialty appliances for proper setup, integration, and performance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Lacanche Appliance Maintenance",
+              "description": "Preventive maintenance for Lacanche appliances including inspection, calibration, cleaning, and performance optimization."
+            }
+          }
         ]
-      }
+      },
+      "keywords": [
+        "Lacanche appliance repair",
+        "Lacanche range repair",
+        "Lacanche range cooker repair",
+        "Lacanche oven repair",
+        "Lacanche hood repair",
+        "Lacanche rangetop repair",
+        "Lacanche induction range repair",
+        "Lacanche appliance installation",
+        "Lacanche appliance maintenance",
+        "Los Angeles Lacanche repair"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": "https://luxuryappliance.repair/zaricci-logo.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      ]
     }
   ]
-}
+};
 ---
 <Layout
 	title="Lecanche Appliance Repair – Expert Service"
