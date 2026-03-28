@@ -30,7 +30,6 @@ const ParallaxHeader = () => {
         ✅ 3-month warranty on parts and labor<br />
           ✅ Same-day or next-day service ae available<br />
         </p>
-        <p>  If your AGA range is not heating properly, your burners are not igniting as they should, or your oven is no longer performing the way it should, you can count on us for expert diagnosis and repair.</p>
     </div>
     </div>
   );
