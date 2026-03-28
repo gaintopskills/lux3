@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import ParallaxHeader from '../components/Header/Zline.jsx'
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -117,7 +118,8 @@ const structuredData = {
 	description="Bosch is renowned for blending cutting-edge technology, quiet operation, and energy efficiency—delivering dependable performance in kitchens and laundry rooms worldwide. When your Bosch appliance faces a glitch, you can rely on <strong>Luxury Appliance Repair by Zaricci</strong> for prompt, professional repair. Our brand-certified technicians are trained to handle even the most advanced Bosch models, ensuring you continue to enjoy the high-quality results this leading brand is known for."
 	structuredData={structuredData}
 >
-<div style="margin: 50px">
+<ParallaxHeader client:idle/>
+<div class="wrapper" id="webpage">
 <section>
   <h1>ZLINE Appliance Repair – Certified Service for Professional-Grade Design</h1>
   <p><strong>White-Glove Repairs for ZLINE Ranges, Cooktops, Wall Ovens & Range Hoods</strong></p>
@@ -135,7 +137,7 @@ const structuredData = {
   </ul>
 </section>
 
-<section>
+<section id="services">
   <h3>🛠️ We Repair All ZLINE Appliances</h3>
   <h4>🔥 ZLINE Ranges (Gas, Dual-Fuel, Induction)</h4>
   <ul>
