@@ -4,118 +4,129 @@ import '../styles/global.css';
 import ParallaxHeader from '../components/Header/Zline.jsx'
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://luxuryappliance.repair/zline-appliance-repair/",
-  "name": "Luxury Appliance Repair by Zaricci",
-  "url": "https://luxuryappliance.repair/zline-appliance-repair/",
-  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
-  "telephone": "+1-424-499-7788",
-  "priceRange": "$$$",
-  "description": "Luxury Appliance Repair by Zaricci provides expert repair, installation, and maintenance for ZLINE appliances. We service professional-grade ranges, wall ovens, range hoods, and dishwashers with precision and white-glove care throughout Los Angeles and Southern California.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Los Angeles",
-    "addressRegion": "CA",
-    "addressCountry": "US"
-  },
-  "brand": {
-    "@type": "Brand",
-    "name": "ZLINE",
-    "url": "https://www.zlinekitchen.com/"
-  },
-  "areaServed": {
-    "@type": "Place",
-    "name": "Southern California"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "ZLINE Appliance Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "ZLINE Appliance Repair",
-          "description": "Professional repair for ZLINE appliances including dual-fuel and gas ranges, wall ovens, range hoods, and dishwashers. We resolve ignition issues, fan malfunctions, water leaks, and control panel failures."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "ZLINE Appliance Installation",
-          "description": "Certified installation for ZLINE kitchen appliances with careful alignment, ventilation setup, and safety compliance across custom kitchen layouts."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "ZLINE Appliance Maintenance",
-          "description": "Preventive maintenance to optimize the performance of ZLINE appliances including filter changes, calibration, internal diagnostics, and cleaning."
-        }
-      }
-    ]
-  },
-  "makesOffer": [
+  "@graph": [
     {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "ZLINE Appliance Repair, Installation, and Maintenance"
-      }
-    }
-  ],
-  "provider": {
-    "@type": "Organization",
-    "name": "Luxury Appliance Repair by Zaricci",
-    "url": "https://luxuryappliance.repair/"
-  },
-  "knowsAbout": [
-    "ZLINE Appliance Repair",
-    "ZLINE Installation Services",
-    "ZLINE Maintenance",
-    "ZLINE Dual-Fuel Ranges",
-    "ZLINE Wall Ovens and Cooktops",
-    "ZLINE Range Hood Ventilation",
-    "High-End Dishwasher Repair",
-    "Premium Kitchen Appliance Support",
-    "Custom Appliance Installation Los Angeles",
-    "White-Glove ZLINE Appliance Services"
-  ],
-  "potentialAction": [
-    {
-      "@type": "ReserveAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://luxuryappliance.repair/book/",
-        "inLanguage": "en",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/zline-appliance-repair/#webpage",
+      "url": "https://luxuryappliance.repair/zline-appliance-repair/",
+      "name": "ZLINE Appliance Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Expert ZLINE appliance repair, installation, and maintenance in Los Angeles for luxury ranges, ovens, cooktops, rangetops, refrigerators, dishwashers, microwaves, range hoods, and other premium ZLINE appliances.",
+      "about": {
+        "@id": "https://luxuryappliance.repair/zline-appliance-repair/#service"
       },
-      "result": {
-        "@type": "Reservation",
-        "name": "Schedule ZLINE Appliance Service"
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/images/zline/zline-appliance-repair-los-angeles-and-nearby-areas.webp"
       }
     },
     {
-      "@type": "CommunicateAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "tel:+14244997788",
-        "actionPlatform": [
-          "http://schema.org/MobileWebPlatform"
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/zline-appliance-repair/#service",
+      "name": "ZLINE Appliance Repair",
+      "url": "https://luxuryappliance.repair/zline-appliance-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/zline-appliance-repair/#webpage"
+      },
+      "serviceType": "ZLINE appliance repair, installation, and maintenance",
+      "description": "Luxury Appliance Repair by Zaricci specializes in ZLINE appliance repair, installation, and maintenance for professional ranges, wall ovens, cooktops, rangetops, refrigerators, dishwashers, microwaves, range hoods, and undercounter refrigeration. Our technicians use precision diagnostics and premium parts for ZLINE appliances across Los Angeles and surrounding communities.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "ZLINE",
+        "sameAs": "https://zlinekitchen.com/"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Los Angeles", "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles" },
+        { "@type": "Place", "name": "Brentwood", "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles" },
+        { "@type": "City", "name": "Pasadena", "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California" },
+        { "@type": "Place", "name": "Bel Air", "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles" },
+        { "@type": "Place", "name": "Pacific Palisades", "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles" },
+        { "@type": "City", "name": "Santa Monica" },
+        { "@type": "City", "name": "Beverly Hills" },
+        { "@type": "City", "name": "Calabasas" },
+        { "@type": "City", "name": "Thousand Oaks" },
+        { "@type": "City", "name": "West Hollywood" },
+        { "@type": "City", "name": "San Marino" },
+        { "@type": "City", "name": "Malibu" },
+        { "@type": "City", "name": "Manhattan Beach" },
+        { "@type": "Place", "name": "Encino", "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles" },
+        { "@type": "City", "name": "Rancho Palos Verdes" },
+        { "@type": "City", "name": "Palos Verdes Estates" },
+        { "@type": "City", "name": "Rolling Hills Estates" },
+        { "@type": "Place", "name": "Westwood", "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles" },
+        { "@type": "Place", "name": "Century City", "sameAs": "https://en.wikipedia.org/wiki/Century_City" },
+        { "@type": "City", "name": "La Cañada Flintridge" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "ZLINE Appliance Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "ZLINE Appliance Repair",
+              "description": "Repair for ZLINE appliances with ignition problems, burner malfunctions, temperature inconsistency, control failures, cooling issues, drainage issues, ventilation problems, microwave issues, and performance concerns."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "ZLINE Appliance Installation",
+              "description": "Professional installation for ZLINE ranges, wall ovens, cooktops, rangetops, refrigerators, dishwashers, microwaves, range hoods, and undercounter refrigeration for proper setup, integration, and performance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "ZLINE Appliance Maintenance",
+              "description": "Preventive maintenance for ZLINE appliances including inspection, calibration, cleaning, and performance optimization."
+            }
+          }
         ]
-      }
+      },
+      "keywords": [
+        "ZLINE appliance repair",
+        "ZLINE range repair",
+        "ZLINE oven repair",
+        "ZLINE wall oven repair",
+        "ZLINE cooktop repair",
+        "ZLINE rangetop repair",
+        "ZLINE dishwasher repair",
+        "ZLINE refrigerator repair",
+        "ZLINE microwave repair",
+        "ZLINE range hood repair",
+        "ZLINE appliance installation",
+        "ZLINE appliance maintenance",
+        "Los Angeles ZLINE repair"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": "https://luxuryappliance.repair/zaricci-logo.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      ]
     }
   ]
-}
+};
 ---
 <Layout
 	title="ZLINE Appliance Repair – Expert Service"
-	description="Bosch is renowned for blending cutting-edge technology, quiet operation, and energy efficiency—delivering dependable performance in kitchens and laundry rooms worldwide. When your Bosch appliance faces a glitch, you can rely on <strong>Luxury Appliance Repair by Zaricci</strong> for prompt, professional repair. Our brand-certified technicians are trained to handle even the most advanced Bosch models, ensuring you continue to enjoy the high-quality results this leading brand is known for."
+	description="ZLINE appliance repair in Los Angeles & nearby areas by factory-trained technicians. Expert service for ranges, ovens, cooktops, dishwashers, refrigerators, and range hoods."
 	structuredData={structuredData}
 >
 <ParallaxHeader client:idle/>
