@@ -50,11 +50,6 @@ const ParallaxHeader = () => {
           ✅ Same-day or next-day service available
         </p>
 
-        <p>
-          If your Lacanche range is not heating properly, the burners are not
-          igniting correctly, or the oven is no longer performing the way it
-          should, you can count on us for expert diagnosis and repair.
-        </p>
       </div>
     </div>
   );
