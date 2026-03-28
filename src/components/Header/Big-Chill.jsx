@@ -30,7 +30,6 @@ const ParallaxHeader = () => {
         ✅ 1-year warranty on sealed system repair<br />
           ✅ Same-day or next-day service ae available<br />
         </p>
-        <p>If your Big Chill refrigerator is not cooling, your freezer is running too warm, or your appliance is no longer performing the way it should, you can count on us for expert diagnosis and repair.</p>
       </div>
     </div>
   );

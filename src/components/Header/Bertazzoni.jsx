@@ -31,7 +31,6 @@ const ParallaxHeader = () => {
         ✅ 1-year warranty on sealed system repair<br />
           ✅ Same-day or next-day service ae available<br />
         </p>
-        <p>If your Bertazzoni range is not heating properly, your cooktop burners are not igniting as they should, or your Bertazzoni oven is no longer performing the way it should, you can count on us for expert diagnosis and repair.</p>
     </div>
     </div>
   );
