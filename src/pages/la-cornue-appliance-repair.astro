@@ -4,97 +4,119 @@ import '../styles/global.css';
 import ParallaxHeader from '../components/Header/Lacornue.jsx'
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://luxuryappliance.repair/la-cornue-appliance-repair/",
-  "name": "Luxury Appliance Repair by Zaricci",
-  "url": "https://luxuryappliance.repair/la-cornue-appliance-repair/",
-  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
-  "telephone": "+1-424-499-7788",
-  "priceRange": "$$$",
-  "description": "Luxury Appliance Repair by Zaricci specializes in La Cornue appliance repair, installation, and maintenance for legendary French ranges and kitchen masterpieces. Our certified technicians deliver white-glove service with artisan care, using genuine La Cornue parts to preserve the craftsmanship, elegance, and performance of your Château, CornuFé, and CornuChef ranges across Los Angeles and surrounding areas.",
-  "brand": {
-    "@type": "Brand",
-    "name": "La Cornue",
-    "url": "https://lacornueusa.com/"
-  },
-  "serviceType": "La Cornue Appliance Repair, Installation, and Maintenance",
-  "areaServed": {
-    "@type": "Place",
-    "name": "Southern California"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "La Cornue Appliance Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "La Cornue Range Repair",
-          "description": "Expert repair services for La Cornue Château Series, CornuFé, and CornuChef ranges, preserving the performance, aesthetics, and artisan craftsmanship."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "La Cornue Range Installation",
-          "description": "Professional installation of La Cornue luxury ranges and cooktops, ensuring flawless setup, calibration, and artisan-level fit."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "La Cornue Range Maintenance",
-          "description": "Preventive maintenance services for La Cornue appliances to ensure optimal performance, pristine appearance, and preservation of hand-crafted quality."
-        }
-      }
-    ]
-  },
-  "provider": {
-    "@type": "Organization",
-    "name": "Luxury Appliance Repair by Zaricci",
-    "url": "https://luxuryappliance.repair/"
-  },
-  "knowsAbout": [
-    "La Cornue Appliance Repair",
-    "La Cornue Château Series Service",
-    "La Cornue CornuFé 90 Repair",
-    "La Cornue CornuFé 110 Range Service",
-    "La Cornue CornuChef Custom Repair",
-    "Luxury French Range Restoration",
-    "La Cornue Range Installation",
-    "Bespoke Appliance Maintenance",
-    "Luxury Appliance Repair Southern California",
-    "Artisan Range Service and Preservation"
-  ],
-  "potentialAction": [
+  "@graph": [
     {
-      "@type": "ReserveAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://luxuryappliance.repair/book/",
-        "inLanguage": "en",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/la-cornue-appliance-repair/#webpage",
+      "url": "https://luxuryappliance.repair/la-cornue-appliance-repair/",
+      "name": "La Cornue Appliance Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Expert La Cornue appliance repair, installation, and maintenance in Los Angeles for luxury Château ranges, CornuFé ranges, ovens, cookers, hoods, and specialty La Cornue appliances.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/la-cornue-appliance-repair/#service"
       },
-      "result": {
-        "@type": "Reservation",
-        "name": "Schedule La Cornue Appliance Service"
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/la-cornue/la-cornue-appliance-repair-los-angeles-and-nearby-areas.webp"
       }
     },
     {
-      "@type": "CommunicateAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "tel:+14244997788",
-        "actionPlatform": [
-          "http://schema.org/MobileWebPlatform"
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/la-cornue-appliance-repair/#service",
+      "name": "La Cornue Appliance Repair",
+      "url": "https://luxuryappliance.repair/la-cornue-appliance-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/la-cornue-appliance-repair/#webpage"
+      },
+      "serviceType": "La Cornue appliance repair, installation, and maintenance",
+      "description": "Luxury Appliance Repair by Zaricci specializes in La Cornue appliance repair, installation, and maintenance for Château ranges, CornuFé ranges, ovens, range cookers, hoods, and specialty La Cornue appliances. Our technicians use precision diagnostics and premium parts for La Cornue appliances across Los Angeles and surrounding communities.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "La Cornue",
+        "sameAs": "https://www.lacornueusa.com/"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Los Angeles", "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles" },
+        { "@type": "Place", "name": "Brentwood", "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles" },
+        { "@type": "City", "name": "Pasadena", "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California" },
+        { "@type": "Place", "name": "Bel Air", "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles" },
+        { "@type": "Place", "name": "Pacific Palisades", "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles" },
+        { "@type": "City", "name": "Santa Monica" },
+        { "@type": "City", "name": "Beverly Hills" },
+        { "@type": "City", "name": "Calabasas" },
+        { "@type": "City", "name": "Thousand Oaks" },
+        { "@type": "City", "name": "West Hollywood" },
+        { "@type": "City", "name": "San Marino" },
+        { "@type": "City", "name": "Malibu" },
+        { "@type": "City", "name": "Manhattan Beach" },
+        { "@type": "Place", "name": "Encino", "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles" },
+        { "@type": "City", "name": "Rancho Palos Verdes" },
+        { "@type": "City", "name": "Palos Verdes Estates" },
+        { "@type": "City", "name": "Rolling Hills Estates" },
+        { "@type": "Place", "name": "Westwood", "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles" },
+        { "@type": "Place", "name": "Century City", "sameAs": "https://en.wikipedia.org/wiki/Century_City" },
+        { "@type": "City", "name": "La Cañada Flintridge" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "La Cornue Appliance Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "La Cornue Appliance Repair",
+              "description": "Repair for La Cornue appliances with heating problems, burner malfunctions, temperature inconsistency, oven performance issues, ignition failures, control problems, and hood ventilation concerns."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "La Cornue Appliance Installation",
+              "description": "Professional installation for La Cornue Château ranges, CornuFé ranges, ovens, cookers, hoods, and specialty appliances for proper setup, integration, and performance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "La Cornue Appliance Maintenance",
+              "description": "Preventive maintenance for La Cornue appliances including inspection, calibration, cleaning, and performance optimization."
+            }
+          }
         ]
-      }
+      },
+      "keywords": [
+        "La Cornue appliance repair",
+        "La Cornue range repair",
+        "La Cornue oven repair",
+        "La Cornue cooker repair",
+        "La Cornue hood repair",
+        "La Cornue Chateau repair",
+        "La Cornue CornuFe repair",
+        "La Cornue appliance installation",
+        "La Cornue appliance maintenance",
+        "Los Angeles La Cornue repair"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": "https://luxuryappliance.repair/zaricci-logo.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      ]
     }
   ]
 };
@@ -102,7 +124,8 @@ const structuredData = {
 <Layout
 	title="La Cornue Appliance Repair – Expert Service"
 	description="La Cornue appliance repair in Los Angeles & nearby areas by factory-trained technicians. Expert service for ranges, ovens, cooktops, and ventilation systems."
-	structuredData={structuredData}
+	ogImage="/la-cornue/la-cornue-appliance-repair-los-angeles-and-nearby-areas.webp"
+  structuredData={structuredData}
 >
 <ParallaxHeader client:idle/>
 <div class="wrapper" id="webpage">
