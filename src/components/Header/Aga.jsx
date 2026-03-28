@@ -23,12 +23,13 @@ const ParallaxHeader = () => {
         <h1 class="gold-embossed" data-text="AGA Appliance Repair">AGA Appliance Repair in Los Angeles & Nearby Areas</h1>
         <img className="header-image" width="1200" height="630" src="/aga/aga-appliance-repair-services-trained-technicians.webp" alt="AGA Appliance Repair Services Los Angeles and Nearby Areas"  fetchpriority="high"
   decoding="async"/>
-<p>Expirience technicians specialing in luxury AGA appliance repair. We are experts in fixing ranges, range cookers, rangetops, ovens, and hoods throughout Los Angeles and nearby areas.</p>        <p>✅ Licensed & Insured<br />
+<p>Experienced technicians specializing in luxury AGA appliance repair. We are experts in fixing ranges, range cookers, rangetops, ovens, and hoods throughout Los Angeles and nearby areas.</p>        
+<p>✅ Licensed & Insured<br />
         ✅ 3-month warranty on parts and labor<br />
         ✅ 1-year warranty on sealed system repair<br />
           ✅ Same-day or next-day service ae available<br />
         </p>
-        <p>  If your AGA range is not heating properly, your burners are not igniting as they should, or your oven is no longer performing the way it should, you can count on us for expert diagnosis and repair.</p>
+        <p>If your AGA range is not heating properly, the burners are not igniting correctly, or the oven is no longer performing the way it should, you can count on us for expert diagnosis and repair.</p>
     </div>
     </div>
   );
