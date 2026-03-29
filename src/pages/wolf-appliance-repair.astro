@@ -6,158 +6,194 @@ import '../styles/global.css';
 
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://luxuryappliance.repair/wolf/",
-  "name": "Luxury Appliance Repair by Zaricci",
-  "url": "https://luxuryappliance.repair/wolf/",
-  "image": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricciI-logo.webp",
-  "telephone": "+1-424-499-7788",
-  "priceRange": "$$$",
-  "description": "Luxury Appliance Repair by Zaricci specializes in Wolf appliance repair, installation, and maintenance for professional-grade ranges, ovens, cooktops, and ventilation systems. Our expert technicians deliver discreet, white-glove service using genuine Wolf parts to restore performance and preserve your luxury kitchen’s integrity throughout Los Angeles and surrounding areas.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Wolf",
-    "url": "https://subzero-wolf.com/"
-  },
-  "image": {
-    "@type": "ImageObject",
-    "url": "https://luxuryappliance.repair/wolf/wolf-appliance-repair-services.webp",
-    "width": 1200,
-    "height": 630
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Los Angeles",
-    "addressRegion": "CA",
-    "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 34.0522715,
-    "longitude": -118.4697833
-  },
-  "areaServed": [
-    { "@type": "City", "name": "Los Angeles", "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles" },
-    { "@type": "City", "name": "Brentwood", "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles" },
-    { "@type": "City", "name": "Pasadena", "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California" },
-    { "@type": "City", "name": "Bel Air", "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles" },
-    { "@type": "City", "name": "Pacific Palisades", "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades" },
-    { "@type": "City", "name": "Santa Monica", "sameAs": "https://en.wikipedia.org/wiki/Santa_Monica,_California" },
-    { "@type": "City", "name": "Beverly Hills", "sameAs": "https://en.wikipedia.org/wiki/Beverly_Hills,_California" },
-    { "@type": "City", "name": "Calabasas", "sameAs": "https://en.wikipedia.org/wiki/Calabasas,_California" },
-    { "@type": "City", "name": "Thousand Oaks", "sameAs": "https://en.wikipedia.org/wiki/Thousand_Oaks,_California" },
-    { "@type": "City", "name": "West Hollywood", "sameAs": "https://en.wikipedia.org/wiki/West_Hollywood,_California" },
-    { "@type": "City", "name": "San Marino", "sameAs": "https://en.wikipedia.org/wiki/San_Marino,_California" },
-    { "@type": "City", "name": "Malibu", "sameAs": "https://en.wikipedia.org/wiki/Malibu,_California" }
-  ],
-  "knowsAbout": [
-    "Wolf Appliance Repair",
-    "Wolf Range Service",
-    "Wolf Oven Repair",
-    "Wolf Cooktop Repair",
-    "Wolf Rangetop Repairs",
-    "Wolf Induction Repair",
-    "Built-in Oven Installation",
-    "Luxury Appliance Maintenance for Wolf",
-    "Wolf Igniter Replacement",
-    "High-End Appliance Repair"
-  ],
-  "makesOffer": {
-    "@type": "Offer",
-    "itemOffered": {
-      "@type": "Service",
-      "name": "Wolf Appliance Services",
-      "description": "Expert in-home repair, installation, and maintenance for Wolf ranges, ovens, cooktops, and ventilation hoods. Service available throughout Los Angeles and surrounding cities.",
-      "areaServed": {
-        "@type": "Place",
-        "name": "Los Angeles Metropolitan Area"
-      },
-      "provider": {
-        "@type": "Organization",
-        "name": "Luxury Appliance Repair by Zaricci"
-      }
-    }
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Wolf Appliance Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Wolf Range Repair",
-          "description": "Service for dual fuel, gas, and induction Wolf ranges experiencing ignition, heating, or control panel issues."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Wolf Oven Repair",
-          "description": "Repair for built-in single or double Wolf ovens with convection, broiling, or sensor malfunctions."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Wolf Cooktop & Rangetop Repair",
-          "description": "Troubleshooting and repairs for gas and induction Wolf cooktops and rangetops with ignition, heating, or wiring issues."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Wolf Appliance Installation",
-          "description": "Professional installation of Wolf ovens, cooktops, and ranges with precision alignment and gas/electric setup."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Wolf Appliance Maintenance",
-          "description": "Preventive maintenance to ensure optimal performance and longevity of Wolf cooking appliances."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Wolf Igniter Replacement",
-          "description": "Fast igniter replacement for Wolf ranges and cooktops with burner ignition issues."
-        }
-      }
-    ]
-  },
-  "potentialAction": [
+  "@graph": [
     {
-      "@type": "ReserveAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://luxuryappliance.repair/book/",
-        "inLanguage": "en",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/wolf-appliance-repair/#webpage",
+      "url": "https://luxuryappliance.repair/wolf-appliance-repair/",
+      "name": "Wolf Appliance Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Expert Wolf appliance repair, installation, and maintenance in Los Angeles for luxury Wolf ranges, ovens, cooktops, rangetops, ventilation, microwaves, warming drawers, coffee systems, and outdoor cooking appliances.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/wolf-appliance-repair/#service"
       },
-      "result": {
-        "@type": "Reservation",
-        "name": "Schedule Wolf Appliance Service"
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/wolf/wolf-appliance-repair-los-angeles-and-nearby-areas.webp"
       }
     },
     {
-      "@type": "CommunicateAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "tel:+14244997788",
-        "actionPlatform": [
-          "http://schema.org/MobileWebPlatform"
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/wolf-appliance-repair/#service",
+      "name": "Wolf Appliance Repair",
+      "url": "https://luxuryappliance.repair/wolf-appliance-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/wolf-appliance-repair/#webpage"
+      },
+      "serviceType": "Wolf appliance repair, installation, and maintenance",
+      "description": "Luxury Appliance Repair by Zaricci specializes in Wolf appliance repair, installation, and maintenance for Wolf ranges, dual fuel ranges, gas ranges, induction ranges, built-in ovens, convection ovens, steam ovens, speed ovens, cooktops, rangetops, ventilation systems, microwaves, warming drawers, coffee systems, and outdoor cooking appliances. Our technicians use precision diagnostics and premium parts for Wolf appliances across Los Angeles and surrounding communities.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Wolf",
+        "sameAs": "https://www.subzero-wolf.com/wolf"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Los Angeles",
+          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Brentwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Pasadena",
+          "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California"
+        },
+        {
+          "@type": "Place",
+          "name": "Bel Air",
+          "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Pacific Palisades",
+          "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Santa Monica"
+        },
+        {
+          "@type": "City",
+          "name": "Beverly Hills"
+        },
+        {
+          "@type": "City",
+          "name": "Calabasas"
+        },
+        {
+          "@type": "City",
+          "name": "Thousand Oaks"
+        },
+        {
+          "@type": "City",
+          "name": "West Hollywood"
+        },
+        {
+          "@type": "City",
+          "name": "San Marino"
+        },
+        {
+          "@type": "City",
+          "name": "Malibu"
+        },
+        {
+          "@type": "City",
+          "name": "Manhattan Beach"
+        },
+        {
+          "@type": "Place",
+          "name": "Encino",
+          "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Rancho Palos Verdes"
+        },
+        {
+          "@type": "City",
+          "name": "Palos Verdes Estates"
+        },
+        {
+          "@type": "City",
+          "name": "Rolling Hills Estates"
+        },
+        {
+          "@type": "Place",
+          "name": "Westwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Century City",
+          "sameAs": "https://en.wikipedia.org/wiki/Century_City"
+        },
+        {
+          "@type": "City",
+          "name": "La Cañada Flintridge"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Wolf Appliance Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wolf Appliance Repair",
+              "description": "Repair for Wolf appliances with burner ignition problems, uneven heating, temperature inconsistency, oven performance issues, control failures, cooktop and rangetop issues, ventilation malfunctions, microwave issues, warming drawer problems, coffee system issues, and outdoor grill performance concerns."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wolf Appliance Installation",
+              "description": "Professional installation for Wolf ranges, ovens, cooktops, rangetops, ventilation systems, microwaves, warming drawers, coffee systems, and outdoor cooking appliances for proper setup, integration, and performance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wolf Appliance Maintenance",
+              "description": "Preventive maintenance for Wolf appliances including inspection, calibration, cleaning, burner and ignition checks, ventilation assessment, and performance optimization."
+            }
+          }
         ]
-      }
+      },
+      "keywords": [
+        "Wolf appliance repair",
+        "Wolf range repair",
+        "Wolf oven repair",
+        "Wolf built-in oven repair",
+        "Wolf steam oven repair",
+        "Wolf speed oven repair",
+        "Wolf cooktop repair",
+        "Wolf rangetop repair",
+        "Wolf microwave repair",
+        "Wolf warming drawer repair",
+        "Wolf coffee system repair",
+        "Wolf ventilation repair",
+        "Wolf hood repair",
+        "Wolf outdoor grill repair",
+        "Wolf appliance installation",
+        "Wolf appliance maintenance",
+        "Los Angeles Wolf repair"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricciI-logo.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      ]
     }
   ]
 };
@@ -165,8 +201,8 @@ const structuredData = {
 <Layout
 	title="Wolf Appliance Repair | Expert Wolf Service Near You"
 	description="Local Wolf appliance repair experts with fast, reliable service for refrigerators, freezers, wine coolers & more. (424) 499-7788"
-	structuredData={structuredData}
-    ogImage="https://luxuryappliance.repair/sub-zero/sub-zero-repair-og.jpg"
+	ogImage="/wolf/wolf-appliance-repair-los-angeles-and-nearby-areas.webp"
+  structuredData={structuredData}
 >
 <ParallaxHeader client:idle/>
 <Tabs client:visible/>
