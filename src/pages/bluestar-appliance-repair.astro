@@ -4,100 +4,123 @@ import '../styles/global.css';
 import ParallaxHeader from '../components/Header/Bluestar.jsx'
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://luxuryappliance.repair/bluestar-appliance-repair/",
-  "name": "Luxury Appliance Repair by Zaricci",
-  "url": "https://luxuryappliance.repair/bluestar-appliance-repair/",
-  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
-  "telephone": "+1-424-499-7788",
-  "priceRange": "$$$",
-  "description": "Luxury Appliance Repair by Zaricci specializes in BlueStar appliance repair, installation, and maintenance for professional-grade ranges, ovens, and refrigeration systems. Our certified technicians deliver expert, white-glove service using genuine BlueStar parts to preserve the precision and performance of your luxury appliances throughout Los Angeles and surrounding areas.",
-  "brand": {
-    "@type": "Brand",
-    "name": "BlueStar",
-    "url": "https://www.bluestarcooking.com/"
-  },
-  "serviceType": "BlueStar Appliance Repair, Installation, and Maintenance",
-  "areaServed": {
-    "@type": "Place",
-    "name": "Southern California"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "BlueStar Appliance Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "BlueStar Appliance Repair",
-          "description": "Expert repair services for BlueStar ranges, wall ovens, cooktops, refrigerators, and ventilation products, restoring peak performance and precision."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "BlueStar Appliance Installation",
-          "description": "Professional installation of BlueStar appliances including gas ranges, electric wall ovens, and high-performance refrigerators with expert calibration."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "BlueStar Appliance Maintenance",
-          "description": "Preventive maintenance for BlueStar appliances to ensure long-term durability, safety, and optimal cooking or refrigeration performance."
-        }
-      }
-    ]
-  },
-  "provider": {
-    "@type": "Organization",
-    "name": "Luxury Appliance Repair by Zaricci",
-    "url": "https://luxuryappliance.repair/"
-  },
-  "knowsAbout": [
-    "BlueStar Appliance Repair",
-    "BlueStar Range Installation",
-    "BlueStar Appliance Maintenance",
-    "BlueStar Platinum Series Ranges",
-    "BlueStar Nova Series",
-    "BlueStar RNB Series",
-    "BlueStar Wall Oven Repairs",
-    "BlueStar Gas Cooktop Repairs",
-    "BlueStar Built-in Refrigerator Repairs",
-    "Luxury Appliance Repair Southern California"
-  ],
-  "potentialAction": [
+  "@graph": [
     {
-      "@type": "ReserveAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://luxuryappliance.repair/book/",
-        "inLanguage": "en",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/bluestar-appliance-repair/#webpage",
+      "url": "https://luxuryappliance.repair/bluestar-appliance-repair/",
+      "name": "BlueStar Appliance Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Expert BlueStar appliance repair, installation, and maintenance in Los Angeles for luxury ranges, cooktops, wall ovens, refrigerators, freezers, and ventilation hoods.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/bluestar-appliance-repair/#service"
       },
-      "result": {
-        "@type": "Reservation",
-        "name": "Schedule BlueStar Appliance Service"
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/bluestar/bluestar-appliance-repair-los-angeles-and-nearby-area.webp"
       }
     },
     {
-      "@type": "CommunicateAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "tel:+14244997788",
-        "actionPlatform": [
-          "http://schema.org/MobileWebPlatform"
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/bluestar-appliance-repair/#service",
+      "name": "BlueStar Appliance Repair",
+      "url": "https://luxuryappliance.repair/bluestar-appliance-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/bluestar-appliance-repair/#webpage"
+      },
+      "serviceType": "BlueStar appliance repair, installation, and maintenance",
+      "description": "Luxury Appliance Repair by Zaricci specializes in BlueStar appliance repair, installation, and maintenance for professional ranges, cooktops, wall ovens, refrigerators, freezers, and ventilation hoods. Our technicians use precision diagnostics and premium parts for BlueStar appliances across Los Angeles and surrounding communities.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "BlueStar",
+        "sameAs": "https://www.bluestarcooking.com/"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Los Angeles", "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles" },
+        { "@type": "Place", "name": "Brentwood", "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles" },
+        { "@type": "City", "name": "Pasadena", "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California" },
+        { "@type": "Place", "name": "Bel Air", "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles" },
+        { "@type": "Place", "name": "Pacific Palisades", "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles" },
+        { "@type": "City", "name": "Santa Monica" },
+        { "@type": "City", "name": "Beverly Hills" },
+        { "@type": "City", "name": "Calabasas" },
+        { "@type": "City", "name": "Thousand Oaks" },
+        { "@type": "City", "name": "West Hollywood" },
+        { "@type": "City", "name": "San Marino" },
+        { "@type": "City", "name": "Malibu" },
+        { "@type": "City", "name": "Manhattan Beach" },
+        { "@type": "Place", "name": "Encino", "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles" },
+        { "@type": "City", "name": "Rancho Palos Verdes" },
+        { "@type": "City", "name": "Palos Verdes Estates" },
+        { "@type": "City", "name": "Rolling Hills Estates" },
+        { "@type": "Place", "name": "Westwood", "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles" },
+        { "@type": "Place", "name": "Century City", "sameAs": "https://en.wikipedia.org/wiki/Century_City" },
+        { "@type": "City", "name": "La Cañada Flintridge" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "BlueStar Appliance Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "BlueStar Appliance Repair",
+              "description": "Repair for BlueStar appliances with burner problems, ignition failures, temperature inconsistency, heating issues, cooling issues, control malfunctions, and ventilation concerns."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "BlueStar Appliance Installation",
+              "description": "Professional installation for BlueStar ranges, cooktops, wall ovens, refrigerators, freezers, and ventilation hoods for proper setup, integration, and performance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "BlueStar Appliance Maintenance",
+              "description": "Preventive maintenance for BlueStar appliances including inspection, calibration, cleaning, and performance optimization."
+            }
+          }
         ]
-      }
+      },
+      "keywords": [
+        "BlueStar appliance repair",
+        "BlueStar range repair",
+        "BlueStar cooktop repair",
+        "BlueStar wall oven repair",
+        "BlueStar refrigerator repair",
+        "BlueStar freezer repair",
+        "BlueStar hood repair",
+        "BlueStar dishwasher repair",
+        "BlueStar appliance installation",
+        "BlueStar appliance maintenance",
+        "Los Angeles BlueStar repair"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": "https://luxuryappliance.repair/zaricci-logo.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      ]
     }
   ]
-}
+};
 ---
 <Layout
 	title="BlueStar Appliance Repair – Expert Service"
