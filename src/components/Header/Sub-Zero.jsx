@@ -21,7 +21,7 @@ const ParallaxHeader = () => {
       </video>
       <div className="maintext">
         <h1 class="gold-embossed" data-text="SUB-ZERO">Sub-Zero Repair in Los Angeles & Nearby Areas</h1>
-        <img className="header-image" width="1200" height="630" src="/sub-zero/sub-zero-repair-services.webp" alt="Sub-Zero Repair Services"  fetchpriority="high"
+        <img className="header-image" width="1200" height="630" src="/sub-zero/sub-zero-repair-los-angeles-and-nearby-areas.webp" alt="Sub-Zero Repair Services"  fetchpriority="high"
   decoding="async"/>
         <p>
         Factory-trained technicians for Sub-Zero refrigerators, freezers, wine storage, and beverage centers across Los Angeles and nearby service areas.</p>
