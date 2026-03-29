@@ -23,8 +23,7 @@ const ParallaxHeader = () => {
         <h1 class="gold-embossed" data-text="Wolf">Wolf Appliance Repair in Los Angeles and Nearby Areas</h1>
         <img className="header-image" width="1200" height="630" src="/wolf/wolf-appliance-repair-los-angeles-and-nearby-areas.webp" alt="Wolf Appliance Repair in Los Angeles and Nearby Areas"  fetchpriority="high"
   decoding="async"/>
-        <p>
-        Local, expert Wolf repair technicians specializing in luxury appliance repair including Wolf appliances.</p>
+       <p>Local, expert technicians specializing in high-end Wolf appliance repair in Los Angeles and nearby areas.</p>
         <p>✅ Licensed & Insured<br />
         ✅ 3-month warranty on parts and labor<br />
           ✅ Same-day or next day service<br />
