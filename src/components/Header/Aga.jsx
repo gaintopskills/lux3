@@ -26,7 +26,6 @@ const ParallaxHeader = () => {
 <p>Experienced technicians specializing in luxury AGA appliance repair. We are experts in fixing ranges, range cookers, rangetops, ovens, and hoods throughout Los Angeles and nearby areas.</p>        
 <p>✅ Licensed & Insured<br />
         ✅ 3-month warranty on parts and labor<br />
-        ✅ 1-year warranty on sealed system repair<br />
           ✅ Same-day or next-day service ae available<br />
         </p>
     </div>
