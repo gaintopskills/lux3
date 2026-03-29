@@ -32,7 +32,7 @@ const ParallaxHeader = () => {
           className="header-image"
           width="1200"
           height="630"
-          src="/dacor/dacor-appliance-repair-los-angeles-and-nearby-areas"
+          src="/dacor/dacor-appliance-repair-los-angeles-and-nearby-areas.webp"
           alt="Dacor Appliance Repair Services Los Angeles and Nearby Areas"
           fetchpriority="high"
           decoding="async"
