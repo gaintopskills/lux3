@@ -4,114 +4,193 @@ import '../styles/global.css';
 import ParallaxHeader from '../components/Header/Ilive.jsx'
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://luxuryappliance.repair/ilive-appliance-repair/",
-  "name": "Luxury Appliance Repair by Zaricci",
-  "url": "https://luxuryappliance.repair/ilive-appliance-repair/",
-  "image": "https://luxuryappliance.repair/zaricci-logo.webp",
-  "telephone": "+1-424-499-7788",
-  "priceRange": "$$$",
-  "description": "Luxury Appliance Repair by Zaricci specializes in iLive appliance repair, installation, and maintenance. From European-designed ranges and ovens to cooktops and ventilation, our certified technicians provide expert service with white-glove care throughout Los Angeles and Southern California.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Los Angeles",
-    "addressRegion": "CA",
-    "addressCountry": "US"
-  },
-  "brand": {
-    "@type": "Brand",
-    "name": "iLive",
-    "url": "https://www.iliveappliances.com/"
-  },
-  "areaServed": {
-    "@type": "Place",
-    "name": "Southern California"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "iLive Appliance Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "iLive Appliance Repair",
-          "description": "Professional repair services for iLive kitchen appliances, including ignition failures, electrical malfunctions, temperature issues, and control board errors."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "iLive Appliance Installation",
-          "description": "Expert installation of iLive ranges, ovens, cooktops, and ventilation systems with precise alignment and system integration."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "iLive Appliance Maintenance",
-          "description": "Preventive maintenance services for iLive appliances, including diagnostic checks, cleaning, and performance calibration to extend longevity."
-        }
-      }
-    ]
-  },
-  "makesOffer": [
+  "@graph": [
     {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "iLive Appliance Repair, Installation, and Maintenance"
-      }
-    }
-  ],
-  "provider": {
-    "@type": "Organization",
-    "name": "Luxury Appliance Repair by Zaricci",
-    "url": "https://luxuryappliance.repair/"
-  },
-  "knowsAbout": [
-    "iLive Appliance Repair",
-    "iLive Installation Services",
-    "iLive Appliance Maintenance",
-    "iLive European Ranges",
-    "iLive Wall Ovens and Cooktops",
-    "Luxury Kitchen Appliance Service",
-    "Premium Gas and Electric Range Repair",
-    "High-End Appliance Support Los Angeles",
-    "Designer Ventilation Systems",
-    "White-Glove Appliance Repair Southern California"
-  ],
-  "potentialAction": [
-    {
-      "@type": "ReserveAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://luxuryappliance.repair/book/",
-        "inLanguage": "en",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/miele-appliance-repair/#webpage",
+      "url": "https://luxuryappliance.repair/miele-appliance-repair/",
+      "name": "Miele Appliance Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Expert Miele appliance repair, installation, and maintenance in Los Angeles for luxury ranges, ovens, cooktops, refrigerators, freezers, dishwashers, washers, dryers, and coffee systems.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/miele-appliance-repair/#service"
       },
-      "result": {
-        "@type": "Reservation",
-        "name": "Schedule iLive Appliance Service"
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/ilive/ilive-appliance-repair-los-angeles-and-nearby-areas.webp"
       }
     },
     {
-      "@type": "CommunicateAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "tel:+14244997788",
-        "actionPlatform": [
-          "http://schema.org/MobileWebPlatform"
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/miele-appliance-repair/#service",
+      "name": "Miele Appliance Repair",
+      "url": "https://luxuryappliance.repair/miele-appliance-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/miele-appliance-repair/#webpage"
+      },
+      "serviceType": "Miele appliance repair, installation, and maintenance",
+      "description": "Luxury Appliance Repair by Zaricci specializes in Miele appliance repair, installation, and maintenance for premium ranges, ovens, cooktops, refrigerators, freezers, dishwashers, washers, dryers, and coffee systems. Our technicians use precision diagnostics and premium parts for Miele appliances across Los Angeles and surrounding communities.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Miele",
+        "sameAs": "https://www.mieleusa.com/"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Los Angeles",
+          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Brentwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Pasadena",
+          "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California"
+        },
+        {
+          "@type": "Place",
+          "name": "Bel Air",
+          "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Pacific Palisades",
+          "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Santa Monica"
+        },
+        {
+          "@type": "City",
+          "name": "Beverly Hills"
+        },
+        {
+          "@type": "City",
+          "name": "Calabasas"
+        },
+        {
+          "@type": "City",
+          "name": "Thousand Oaks"
+        },
+        {
+          "@type": "City",
+          "name": "West Hollywood"
+        },
+        {
+          "@type": "City",
+          "name": "San Marino"
+        },
+        {
+          "@type": "City",
+          "name": "Malibu"
+        },
+        {
+          "@type": "City",
+          "name": "Manhattan Beach"
+        },
+        {
+          "@type": "Place",
+          "name": "Encino",
+          "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Rancho Palos Verdes"
+        },
+        {
+          "@type": "City",
+          "name": "Palos Verdes Estates"
+        },
+        {
+          "@type": "City",
+          "name": "Rolling Hills Estates"
+        },
+        {
+          "@type": "Place",
+          "name": "Westwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Century City",
+          "sameAs": "https://en.wikipedia.org/wiki/Century_City"
+        },
+        {
+          "@type": "City",
+          "name": "La Cañada Flintridge"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Miele Appliance Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Miele Appliance Repair",
+              "description": "Repair for Miele appliances with heating problems, cooling issues, drainage issues, control malfunctions, ignition failures, wash performance issues, dryer performance issues, and coffee system problems."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Miele Appliance Installation",
+              "description": "Professional installation for Miele ranges, ovens, cooktops, refrigerators, freezers, dishwashers, washers, dryers, and coffee systems for proper setup, integration, and performance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Miele Appliance Maintenance",
+              "description": "Preventive maintenance for Miele appliances including inspection, calibration, cleaning, and performance optimization."
+            }
+          }
         ]
-      }
+      },
+      "keywords": [
+        "Miele appliance repair",
+        "Miele refrigerator repair",
+        "Miele freezer repair",
+        "Miele dishwasher repair",
+        "Miele range repair",
+        "Miele oven repair",
+        "Miele cooktop repair",
+        "Miele washer repair",
+        "Miele dryer repair",
+        "Miele coffee system repair",
+        "Miele appliance installation",
+        "Miele appliance maintenance",
+        "Los Angeles Miele repair"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": "https://luxuryappliance.repair/zaricci-logo.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      ]
     }
   ]
-}
+};
 ---
 <Layout
 	title="ILIVE Appliance Repair – Expert Service"
