@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import ParallaxHeader from '../components/Header/Bluestar.jsx'
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -99,10 +100,13 @@ const structuredData = {
 }
 ---
 <Layout
-	title="BlueStar Appliance Repair – Unleash the Full Power of Your Professional-Grade Kitchen"
-	description="BlueStar appliances are designed for serious home chefs who demand restaurant-quality performance with the freedom to customize. Whether you’ve chosen one of their iconic custom-colored ranges, high-powered cooktops, or innovative wall ovens, your BlueStar appliance is a true culinary centerpiece. When it needs attention, it deserves expert care."
-	structuredData={structuredData}
+	title="BlueStar Appliance Repair – Expert Service"
+	description="BlueStar appliance repair in Los Angeles & nearby areas by trained technicians. Expert service for BlueStar ranges, ovens, cooktops, refrigerators, and range hoods."
+	ogImage="/bluestar/bluestar-appliance-repair-los-angeles-and-nearby-area.webp"
+  structuredData={structuredData}
 >
+<ParallaxHeader client:idle/>
+<div class="wrapper" id="webpage">
 <div style="margin: 50px">
 <section>
   <h1>BlueStar Appliance Repair – Unleash the Full Power of Your Professional-Grade Kitchen</h1>
