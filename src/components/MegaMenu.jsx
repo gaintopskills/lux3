@@ -148,7 +148,7 @@ export const MegaMenu = () => {
     [ 
       { label: "Signature Kitchen Suite", href: "/signature-kitchen-suite-appliance-repair/" },
       { label: "Smeg", href: "/smeg-appliance-repair/" },
-      { label: "Sub-Zero", href: "/sub-zero/" },
+      { label: "Sub-Zero", href: "/sub-zero-repair/" },
       { label: "Thermador", href: "/thermador-appliance-repair/" },
       { label: "True Residential", href: "/true-residential-appliance-repair/" },
       { label: "Viking", href: "/viking-appliance-repair/" },
