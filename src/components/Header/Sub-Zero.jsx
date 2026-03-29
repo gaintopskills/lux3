@@ -30,7 +30,6 @@ const ParallaxHeader = () => {
         ✅ 1-year warranty on sealed system repair<br />
           ✅ Same-day or next-day service<br />
         </p>
-        <p>If your Sub-Zero fridge not cooling, freezer’s too warm, or wine cooler stops working, you can count on us to diagnose and repair it.</p>
       </div>
     </div>
   );
