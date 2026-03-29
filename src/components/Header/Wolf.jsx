@@ -20,7 +20,7 @@ const ParallaxHeader = () => {
         Your browser does not support the video tag.
       </video>
       <div className="maintext">
-        <h1 class="gold-embossed" data-text="Wolf">Wolf Appliance Repair</h1>
+        <h1 class="gold-embossed" data-text="Wolf">Wolf Appliance Repair in Los Angeles and Nearby Areas</h1>
         <img className="header-image" width="1200" height="630" src="/wolf/wolf-appliance-repair-services.webp" alt="Wolf Applaince Repair Services"  fetchpriority="high"
   decoding="async"/>
         <p>
