@@ -138,12 +138,10 @@ export const MegaMenu = () => {
     [ { label: "Hestan", href: "/hestan-appliance-repair/" },
     { label: "ILVE", href: "/ilive-appliance-repair/" },
     { label: "JennAir Noir", href: "/jennair-noir-appliance-repair/" },
-      { label: "KitchenAid", href: "/kitchenaid-appliance-repair/" },
       { label: "Lacanche", href: "/lacanche-appliance-repair/" },
       { label: "La Cornue", href: "/la-cornue-appliance-repair/" },
       { label: "Miele", href: "/miele-appliance-repair/" },
       { label: "Monogram", href: "/monogram-appliance-repair/" },
-      { label: "Robam", href: "/robam-appliance-repair/" },
       ],
     [ 
       { label: "Signature Kitchen Suite", href: "/signature-kitchen-suite-appliance-repair/" },
