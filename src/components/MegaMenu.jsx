@@ -134,9 +134,10 @@ export const MegaMenu = () => {
     { label: "Dacor", href: "/dacor-appliance-repair/" },
     { label: "Elmira Stove Works", href: "/elmira-stove-works-appliance-repair/" },
     { label: "FiveStar", href: "/fivestar-appliance-repair/" },
-    { label: "Fulgor Milano", href: "/fulgor-milano-appliance-repair/" },
+    
   ],
-    [ { label: "Hestan", href: "/hestan-appliance-repair/" },
+    [ { label: "Fulgor Milano", href: "/fulgor-milano-appliance-repair/" },
+      { label: "Hestan", href: "/hestan-appliance-repair/" },
     { label: "ILVE", href: "/ilive-appliance-repair/" },
     { label: "JennAir Noir", href: "/jennair-noir-appliance-repair/" },
       { label: "Lacanche", href: "/lacanche-appliance-repair/" },
