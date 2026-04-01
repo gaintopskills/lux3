@@ -28,7 +28,7 @@ const ParallaxHeader = () => {
 </p>
         <p>✅ Licensed & Insured<br />
         ✅ 3-month warranty on parts and labor<br />
-          ✅ Same-day or next-day service ae available<br />
+          ✅ Same-day or next-day service are available<br />
         </p>
         <p>If your Cove dishwasher is not cleaning properly, not draining as it should, or no longer performing the way it should, you can count on us for expert diagnosis and repair.</p>
     </div>

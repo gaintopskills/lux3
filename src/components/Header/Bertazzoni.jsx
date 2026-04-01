@@ -29,7 +29,7 @@ const ParallaxHeader = () => {
         <p>✅ Licensed & Insured<br />
         ✅ 3-month warranty on parts and labor<br />
         ✅ 1-year warranty on sealed system repair<br />
-          ✅ Same-day or next-day service ae available<br />
+          ✅ Same-day or next-day service are available<br />
         </p>
     </div>
     </div>
