@@ -154,7 +154,6 @@ export const MegaMenu = () => {
       { label: "True Residential", href: "/true-residential-appliance-repair/" },
       { label: "Viking", href: "/viking-appliance-repair/" },
       { label: "Wolf", href: "/wolf-appliance-repair/" },
-      
       { label: "ZLINE", href: "/zline-appliance-repair/" },  
     ],
   ].map((col, idx) => (
