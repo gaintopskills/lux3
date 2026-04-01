@@ -153,7 +153,6 @@ export const MegaMenu = () => {
       { label: "Thermador", href: "/thermador-appliance-repair/" },
       { label: "True Residential", href: "/true-residential-appliance-repair/" },
       { label: "Viking", href: "/viking-appliance-repair/" },
-      { label: "Whirlpool Black Stainless", href: "/whirlpool-appliance-repair/" },
       { label: "Wolf", href: "/wolf-appliance-repair/" },
       
       { label: "ZLINE", href: "/zline-appliance-repair/" },  
