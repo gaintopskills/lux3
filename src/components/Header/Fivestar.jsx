@@ -32,7 +32,7 @@ const ParallaxHeader = () => {
           className="header-image"
           width="1200"
           height="630"
-          src="/fivestar/fivestar-appliance-repair-los-angeles-and-nearby-areas-Recovered.webp"
+          src="/fivestar/fivestar-appliance-repair-los-angeles-and-nearby-areas.webp"
           alt="FiveStar Appliance Repair Services Los Angeles and Nearby Areas"
           fetchpriority="high"
           decoding="async"
