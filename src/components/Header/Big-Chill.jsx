@@ -20,7 +20,7 @@ const ParallaxHeader = () => {
         Your browser does not support the video tag.
       </video>
       <div className="maintext">
-        <h1 class="gold-embossed" data-text="Big Chill Repair">Big Chill Repair in Los Angeles & Nearby Areas</h1>
+        <h1 class="gold-embossed" data-text="Big Chill Appliance Repair">Big Chill Appliance Repair in Los Angeles & Nearby Areas</h1>
         <img className="header-image" width="1200" height="630" src="/big-chill/big-chill-appliance-repair-services.webp" alt="Big Chill Appliance Repair Services"  fetchpriority="high"
   decoding="async"/>
         <p>
