@@ -33,6 +33,12 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+}
 h3 { 
   font-size: 1.3rem;
   text-align: center;
