@@ -24,7 +24,7 @@ const ParallaxHeader = () => {
         <img className="header-image" width="1200" height="630" src="/sub-zero/sub-zero-repair-los-angeles-and-nearby-areas.webp" alt="Sub-Zero Repair Services"  fetchpriority="high"
   decoding="async"/>
         <p>
-        Factory-trained technicians for Sub-Zero refrigerators, freezers, wine storage, and beverage centers across Los Angeles and nearby service areas.</p>
+        Trained technicians for Sub-Zero refrigerators, freezers, wine storage, and beverage centers across Los Angeles and nearby service areas.</p>
         <p>✅ Licensed & Insured<br />
         ✅ 3-month warranty on parts and labor<br />
         ✅ 1-year warranty on sealed system repair<br />

@@ -25,7 +25,7 @@ const ParallaxHeader = () => {
         <img className="header-image" width="400" height="189" src="/sub-zero/sub-zero-repair-services-bel-air.webp" alt="Sub-Zero Repair Services" fetchpriority="high"
   decoding="async"/>
         <p>
-        Local Bel Air factory-trained Sub-Zero repair technicians specializing in luxury appliance repair including Sub-Zero repair.</p>
+        Local Bel Air trained Sub-Zero repair technicians specializing in luxury appliance repair including Sub-Zero repair.</p>
         <p>✅ Licensed & Insured<br />
         ✅ 3-month warranty on parts and labor<br />
         ✅ 1 year warranty on sealed system repair<br />

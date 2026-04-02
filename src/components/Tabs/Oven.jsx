@@ -14,7 +14,7 @@ export const Tabs = () => {
       img: "/oven-repair/1-oven.webp",
       description: (
         <><p><strong>Same-Day Appointments</strong>: We recognize the importance of a working oven and offer <strong>same-day service</strong> to resolve <strong>oven issues</strong> quickly, ensuring you can return to cooking as usual.</p>
-        <p><strong>Certified Technicians</strong>: Our skilled, <strong>factory-trained</strong> technicians are experienced with <strong>oven brands</strong> and models across the board. Whether it's a <strong>gas oven</strong> that won't ignite or an <strong>electric oven</strong> with <strong>heating issues</strong>, we diagnose and provide lasting solutions.</p>
+        <p><strong>Certified Technicians</strong>: Our skilled, <strong>trained</strong> technicians are experienced with <strong>oven brands</strong> and models across the board. Whether it's a <strong>gas oven</strong> that won't ignite or an <strong>electric oven</strong> with <strong>heating issues</strong>, we diagnose and provide lasting solutions.</p>
         <p><strong>Use of Original Parts</strong>: We only use <strong>genuine replacement parts</strong> from trusted suppliers. Each part comes with a <strong>warranty</strong>, which helps keep your oven running smoothly and ensures reliability in the long run.</p>
         <p><strong>Transparent Repair Costs</strong>: Before beginning any work, we offer clear <strong>repair cost</strong> estimates so that you know exactly what to expect. We believe in transparent pricing with no hidden fees.</p></>
       ),

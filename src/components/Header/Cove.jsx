@@ -24,7 +24,7 @@ const ParallaxHeader = () => {
         <img className="header-image" width="1200" height="630" src="/cove/cove-dishwasher-repair-los-angeles-and-nearby-areas.webp" alt="Cove Dishwasher Repair Services Los Angeles and Nearby Areas"  fetchpriority="high"
   decoding="async"/>
     <p>
-    Factory-trained technicians providing expert Cove dishwasher repair throughout Los Angeles and surrounding service areas.
+    Trained technicians providing expert Cove dishwasher repair throughout Los Angeles and surrounding service areas.
 </p>
         <p>✅ Licensed & Insured<br />
         ✅ 3-month warranty on parts and labor<br />

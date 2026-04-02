@@ -28,7 +28,7 @@ const ParallaxHeader = () => {
         We provide Los Angeles local high-end appliance repair services specializing in luxury appliance repair including Sub-Zero, Wolf, Viking, Thermador, Cove, Miele, Bosch and more. We repair all major appliances such as refrigerators, freezers, ranges, ovens, washers, dryers, grills, and more.</p>
         <p>✅ Licensed & Insured<br />
         ✅ 3-month warranty on parts and labor<br />
-        ✅ Factory-trained<br />
+        ✅ Trained<br />
           ✅ Same-day or next day service<br />
         </p>
       </div>

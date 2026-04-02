@@ -24,7 +24,7 @@ const ParallaxHeader = () => {
         <img className="header-image" width="1200" height="630" src="/big-chill/big-chill-appliance-repair-services.webp" alt="Big Chill Appliance Repair Services"  fetchpriority="high"
   decoding="async"/>
         <p>
-        Factory-trained technicians for Big Chill refrigerators, ranges, dishwashers, ovens, stoves and range hoods across Los Angeles and nearby service areas.</p>
+        Trained technicians for Big Chill refrigerators, ranges, dishwashers, ovens, stoves and range hoods across Los Angeles and nearby service areas.</p>
         <p>✅ Licensed & Insured<br />
         ✅ 3-month warranty on parts and labor<br />
         ✅ 1-year warranty on sealed system repair<br />
