@@ -35,7 +35,7 @@ h1 {
 }
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     line-height: 1.2;
   }
 }
