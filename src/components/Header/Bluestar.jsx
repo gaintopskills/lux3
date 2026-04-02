@@ -38,7 +38,7 @@ const ParallaxHeader = () => {
         />
 
         <p>
-          Experienced technicians specializing in luxury BlueStar appliance
+          Experienced technicians specializing in BlueStar appliance
           repair. We are experts in fixing BlueStar ranges, rangetops, ovens,
           cooktops, refrigerators, dishwashers, and ventilation hoods throughout Los Angeles
           and nearby areas.
