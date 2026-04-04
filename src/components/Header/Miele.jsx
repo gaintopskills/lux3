@@ -20,14 +20,11 @@ const ParallaxHeader = () => {
         Your browser does not support the video tag.
       </video>
       <div className="maintext">
-        <h1 class="gold-embossed" data-text="Miele">Miele Appliance Repair in Los Angeles and Nearby Areas</h1>
-        <img className="header-image" width="1200" height="630" src="/miele/miele-appliance-repair-los-angeles-and-nearby-areas.webp" alt="Miele Appliance Repair in los Angeles and Nearby Areas"  fetchpriority="high"
+        <h1 class="gold-embossed" data-text="Miele">Miele Appliance Repair Los Angeles and Nearby Areas</h1>
+        <img className="header-image" width="1200" height="630" src="/miele/miele-appliance-repair-los-angeles-and-nearby-areas.webp" alt="Miele Appliance Repair Los Angeles and Nearby Areas"  fetchpriority="high"
   decoding="async"/>
        <p>
-  Expert Miele appliance repair in Los Angeles and nearby areas. We diagnose
-  and repair Miele dishwashers, washers, dryers, ovens, speed ovens,
-  combi-steam ovens, cooktops, ranges, ventilation systems, refrigerators,
-  freezers, and wine units with careful, professional service.
+       Expert Miele appliance repair in Los Angeles and nearby areas. We diagnose and repair Miele dishwashers, washers, dryers, ovens, speed ovens, combi-steam ovens, cooktops, ranges, ventilation systems, refrigerators, freezers, wine units, and warming drawers with careful, professional service.
 </p>
         <p>✅ Licensed & Insured<br />
         ✅ 3-month warranty on parts and labor<br />
