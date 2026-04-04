@@ -13,10 +13,10 @@ export const Tabs = () => {
   const items = [
     {
       id: "content1",
-      title: "Miele Range Repair Los Angeles and nearby areas",
-      heading: "Miele Range Repair",
+      title: "Range Repair",
+      heading: "Miele Range Repair Los Angeles and nearby areas",
       img: "/miele/miele-range-repair.webp",
-      alt: "Miele Range Repair",
+      alt: "Miele Range Repair Los Angeles and nearby areas",
       description: (
         <>
           <p>We specialize in <strong>Miele range repair</strong>, from dual-fuel and induction models to steam-combination units. Whether it’s a <strong>burner ignition failure</strong> or <strong>inconsistent oven temperatures</strong>, our trained technicians restore performance with manufacturer-level care.</p>
