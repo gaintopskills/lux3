@@ -13,7 +13,7 @@ export const Tabs = () => {
   const items = [
     {
       id: "content1",
-      title: "Range Repair",
+      title: "Miele Range Repair",
       heading: "Miele Range Repair Los Angeles and nearby areas",
       img: "/miele/miele-range-repair.webp",
       alt: "Miele Range Repair Los Angeles and nearby areas",
@@ -40,7 +40,7 @@ export const Tabs = () => {
     },
     {
       id: "content2",
-      title: "Oven Repair",
+      title: "Miele Oven Repair",
       heading: "Miele Oven Repair Los Angeles and nearby areas",
       img: "/miele/miele-oven-repair.webp",
       alt: "Miele Oven Repair Los Angeles and nearby areas",
@@ -67,7 +67,7 @@ export const Tabs = () => {
     },
     {
       id: "content3",
-      title: "Cooktop Repair",
+      title: "Miele Cooktop Repair",
       heading: "Miele Cooktop Repair Los Angeles and nearby areas",
       img: "/miele/miele-cooktop-repair.webp",
       alt: "Miele Cooktop Repair Los Angeles and nearby areas",
@@ -93,7 +93,7 @@ export const Tabs = () => {
     },
     {
       id: "content4",
-      title: "Ventilation Repair",
+      title: "Miele Ventilation Repair",
       heading: "Miele Ventilation Repair Los Angeles and nearby areas",
        img: "/miele/miele-hood-repair.webp",
       alt: "Miele Ventilation Repair Los Angeles and nearby areas",
@@ -126,7 +126,7 @@ export const Tabs = () => {
     },
     {
       id: "content5",
-      title: "Washer Repair",
+      title: "Miele Washer Repair",
       heading: "Miele Washer Repair Los Angeles and nearby areas",
       img: "/miele/miele-washing-machine-repair.webp",
       alt: "Miele Washer Repair Los Angeles and nearby areas",
@@ -153,7 +153,7 @@ export const Tabs = () => {
     },
     {
       id: "content6",
-      title: "Dryer Repair",
+      title: "Miele Dryer Repair",
       heading: "Miele Dryer Repair Los Angeles and nearby areas",
       img: "/miele/miele-dryer-repair.webp",
       alt: "Miele Dryer Repair Los Angeles and nearby areas",
@@ -180,7 +180,7 @@ export const Tabs = () => {
     },
     {
       id: "content7",
-      title: "Dishwasher Repair",
+      title: "Miele Dishwasher Repair",
       heading: "Miele Dishwasher Repair Los Angeles and nearby areas",
       img: "/miele/miele-dishwasher-repair.webp",
       alt: "Miele Dishwasher Repair Los Angeles and nearby areas",
@@ -207,7 +207,7 @@ export const Tabs = () => {
     },
     {
       id: "content8",
-      title: "Maintenance Services",
+      title: "Miele Maintenance Services",
       heading: "Miele Maintenance Services Los Angeles and nearby areas",
       img: "/miele/miele-maintenance-services.webp",
       alt: "Miele Maintenance Services Los Angeles and nearby areas",
@@ -228,7 +228,7 @@ export const Tabs = () => {
     },
     {
       id: "content9",
-      title: "Installation Services",
+      title: "Miele Installation Services",
       heading: "Miele Installation Services Los Angeles and nearby areas",
       img: "/miele/miele-appliances-installation-services.webp",
       alt: "Miele Installation Services Los Angeles and nearby areas",
