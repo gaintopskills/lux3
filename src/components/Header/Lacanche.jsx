@@ -37,9 +37,9 @@ const ParallaxHeader = () => {
         />
 
         <p>
-          Experienced technicians specializing in Lacanche appliance
-          repair in Los Angeles and nearby areas. We are experts in fixing Lacanche ranges, range cookers,
-          ovens, cooktops, and hoods.
+        Expert Lacanche appliance repair in Los Angeles and nearby areas. Our technicians
+  diagnose and repair Lacanche ranges, range cookers, ovens, rangetops, burners,
+  and hoods with careful, professional service.
         </p>
 
         <p>
