@@ -40,10 +40,10 @@ export const Tabs = () => {
     },
     {
       id: "content2",
-      title: "Miele Oven Repair Los Angeles and nearby areas",
-      heading: "Miele Oven Repair",
+      title: "Oven Repair",
+      heading: "Miele Oven Repair Los Angeles and nearby areas",
       img: "/miele/miele-oven-repair.webp",
-      alt: "Miele Oven Repair",
+      alt: "Miele Oven Repair Los Angeles and nearby areas",
       description: (
         <>
           <p>From <strong>Miele speed ovens</strong> to <strong>steam ovens and convection models</strong>, we handle repairs with precision. Whether it’s <strong>slow preheating</strong> or a <strong>control panel issue</strong>, our team ensures seamless restoration.</p>
@@ -67,10 +67,10 @@ export const Tabs = () => {
     },
     {
       id: "content3",
-      title: "Miele Cooktop Repair Los Angeles and nearby areas",
-      heading: "Miele Cooktop Repair",
+      title: "Cooktop Repair",
+      heading: "Miele Cooktop Repair Los Angeles and nearby areas",
       img: "/miele/miele-cooktop-repair.webp",
-      alt: "Miele Cooktop Repair",
+      alt: "Miele Cooktop Repair Los Angeles and nearby areas",
       description: (
         <>
           <p>We repair all <strong>Miele cooktops</strong> — including gas, electric, and induction models. From <strong>burner failure</strong> to <strong>cracked glass</strong>, our team brings factory-level expertise to every job.</p>
@@ -93,10 +93,10 @@ export const Tabs = () => {
     },
     {
       id: "content4",
-      title: "Miele Ventilation Repair Los Angeles and nearby areas",
-      heading: "Miele Hood & Ventilation Repair",
+      title: "Ventilation Repair",
+      heading: "Miele Ventilation Repair Los Angeles and nearby areas",
        img: "/miele/miele-dryer-repair.webp",
-      alt: "Miele Hood Repair",
+      alt: "Miele Ventilation Repair Los Angeles and nearby areas",
       description: (
         <>
           <p>Our team services <strong>Miele ventilation systems</strong> — including wall hoods, ceiling units, and downdrafts. Whether it’s <strong>noise issues</strong> or <strong>fan malfunctions</strong>, we bring airflow back under control.</p>
@@ -129,7 +129,7 @@ export const Tabs = () => {
       title: "Washer Repair",
       heading: "Miele Washer Repair Los Angeles and nearby areas",
       img: "/miele/miele-washing-machine-repair.webp",
-      alt: "Miele Washer Repair",
+      alt: "Miele Washer Repair Los Angeles and nearby areas",
       description: (
         <>
           <p>From compact models to high-capacity smart washers, our technicians provide <strong>Miele washer repair</strong> with exceptional precision. Whether it's a <strong>drainage issue</strong> or a <strong>drum imbalance</strong>, we get your laundry routine back on track fast.</p>
@@ -153,10 +153,10 @@ export const Tabs = () => {
     },
     {
       id: "content6",
-      title: "Miele Dryer Repair Los Angeles and nearby areas",
-      heading: "Miele Dryer Repair",
+      title: "Dryer Repair",
+      heading: "Miele Dryer Repair Los Angeles and nearby areas",
       img: "/miele/miele-dryer-repair.webp",
-      alt: "Miele Dryer Repair",
+      alt: "Miele Dryer Repair Los Angeles and nearby areas",
       description: (
         <>
           <p>We handle both <strong>Miele heat-pump and condenser dryers</strong>. Whether it's <strong>poor drying results</strong> or <strong>long cycle times</strong>, our experts restore optimal drying power while preserving energy efficiency.</p>
@@ -180,10 +180,10 @@ export const Tabs = () => {
     },
     {
       id: "content7",
-      title: "Miele Dishwasher Repair Los Angeles and nearby areas",
-      heading: "Miele Dishwasher Repair",
+      title: "Dishwasher Repair",
+      heading: "Miele Dishwasher Repair Los Angeles and nearby areas",
       img: "/miele/miele-dishwasher-repair.webp",
-      alt: "Miele Dishwasher Repair",
+      alt: "Miele Dishwasher Repair Los Angeles and nearby areas",
       description: (
         <>
           <p>From built-in to fully integrated units, our team provides expert <strong>Miele dishwasher repair</strong> for ultra-quiet, spotless results. We handle leaks, cycles not starting, or dishes not drying — all with factory-level insight.</p>
@@ -207,10 +207,10 @@ export const Tabs = () => {
     },
     {
       id: "content8",
-      title: "Miele Maintenance Services Los Angeles and nearby areas",
-      heading: "Miele Maintenance Services",
+      title: "Maintenance Services",
+      heading: "Miele Maintenance Services Los Angeles and nearby areas",
       img: "/miele/miele-maintenance-services.webp",
-      alt: "Miele Appliance Maintenance",
+      alt: "Miele Maintenance Services Los Angeles and nearby areas",
       description: (
         <>
           <p>Extend the life of your Miele appliances with regular <strong>professional maintenance</strong>. We provide annual inspections, precision cleaning, and calibration to prevent costly breakdowns and performance decline.</p>
@@ -228,10 +228,10 @@ export const Tabs = () => {
     },
     {
       id: "content9",
-      title: "Miele Installation Services Los Angeles and nearby areas",
-      heading: "Miele Installation Services",
+      title: "Installation Services",
+      heading: "Miele Installation Services Los Angeles and nearby areas",
       img: "/miele/miele-appliances-installation-services.webp",
-      alt: "Miele Appliance Installation",
+      alt: "Miele Installation Services Los Angeles and nearby areas",
       description: (
         <>
           <p>Our team handles precise <strong>Miele appliance installations</strong>, including flush mount ovens, cooktops, steam units, and hoods. We ensure code compliance, perfect leveling, and a flawless built-in finish.</p>
