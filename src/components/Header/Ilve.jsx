@@ -21,23 +21,19 @@ const ParallaxHeader = () => {
       </video>
 
       <div className="maintext">
-        <h1
-          className="gold-embossed"
-          data-text="iLve Appliance Repair"
-        >
-          iLve Appliance Repair in Los Angeles & Nearby Areas
-        </h1>
+      <h1 class="gold-embossed" data-text="ILVE Appliance Repair">
+  ILVE Appliance Repair in Los Angeles & Nearby Areas
+</h1>
 
-        <img
-          className="header-image"
-          width="1200"
-          height="630"
-          src="/ilve/ilve-appliance-repair-los-angeles-and-nearby-areas.webp"
-          alt="iLve Appliance Repair in Los Angeles and Nearby Areas"
-          fetchpriority="high"
-          decoding="async"
-        />
-
+<img
+  class="header-image"
+  width="1200"
+  height="630"
+  src="/ilve/ilve-appliance-repair-los-angeles-and-nearby-areas.webp"
+  alt="ILVE Appliance Repair in Los Angeles and Nearby Areas"
+  fetchpriority="high"
+  decoding="async"
+/>
         <p>
         Experienced technicians specializing in ILVE appliance repair. We diagnose and repair ILVE ranges, ovens, cooktops, hoods, refrigerators, freezers, and dishwashers throughout Los Angeles and nearby areas.
         </p>
@@ -49,10 +45,8 @@ const ParallaxHeader = () => {
           <br />
           ✅ Same-day or next-day service available
         </p>
-
       </div>
     </div>
   );
 };
-
 export default ParallaxHeader;
