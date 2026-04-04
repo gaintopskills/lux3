@@ -95,7 +95,7 @@ export const Tabs = () => {
       id: "content4",
       title: "Ventilation Repair",
       heading: "Miele Ventilation Repair Los Angeles and nearby areas",
-       img: "/miele/miele-dryer-repair.webp",
+       img: "/miele/miele-hood-repair.webp",
       alt: "Miele Ventilation Repair Los Angeles and nearby areas",
       description: (
         <>
