@@ -139,7 +139,7 @@ export const MegaMenu = () => {
   ],
     [ { label: "Fulgor Milano", href: "/fulgor-milano-appliance-repair/" },
       { label: "Hestan", href: "/hestan-appliance-repair/" },
-    { label: "ILVE", href: "/ilive-appliance-repair/" },
+    { label: "ILVE", href: "/ilve-appliance-repair/" },
     { label: "JennAir Noir", href: "/jennair-noir-appliance-repair/" },
       { label: "Lacanche", href: "/lacanche-appliance-repair/" },
       { label: "La Cornue", href: "/la-cornue-appliance-repair/" },
