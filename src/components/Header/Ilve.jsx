@@ -23,7 +23,7 @@ const ParallaxHeader = () => {
       <div className="maintext">
         <h1
           className="gold-embossed"
-          data-text="iLive Appliance Repair"
+          data-text="iLve Appliance Repair"
         >
           iLve Appliance Repair in Los Angeles & Nearby Areas
         </h1>
@@ -33,7 +33,7 @@ const ParallaxHeader = () => {
           width="1200"
           height="630"
           src="/ilve/ilve-appliance-repair-los-angeles-and-nearby-areas.webp"
-          alt="iLive Appliance Repair in Los Angeles and Nearby Areas"
+          alt="iLve Appliance Repair in Los Angeles and Nearby Areas"
           fetchpriority="high"
           decoding="async"
         />
