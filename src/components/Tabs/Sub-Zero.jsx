@@ -239,12 +239,8 @@ export const Tabs = () => {
                   )}
                   <div>{item.description}</div>
                 </div>
-                <a href="/book/">
-                  <button className="tabs-button">Book</button>
-                </a>
-                <a href="tel:4244997788">
-                  <button className="tabs-button">Call: (424) 499-7788</button>
-                </a>
+                <a href="/book/" class="tabs-button">Book</a>
+                <a href="tel:4244997788" class="tabs-button">Call: (424) 499-7788</a>
               </div>
             ))}
           </div>
@@ -280,12 +276,8 @@ export const Tabs = () => {
                     />
                   )}
                   <div>{item.description}</div>
-                  <a href="/book/">
-                    <button className="tabs-button">Book</button>
-                  </a>
-                  <a href="tel:4244997788">
-                    <button className="tabs-button">Call: (424) 499-7788</button>
-                  </a>
+                  <a href="/book/" class="tabs-button">Book</a>
+                  <a href="tel:4244997788" class="tabs-button">Call: (424) 499-7788</a>
                 </div>
               )}
             </div>
