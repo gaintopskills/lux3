@@ -29,7 +29,7 @@ export const Tabs = () => {
           <li><strong>Fridge making noise</strong></li>
         </ul>
       
-        <h2>How We Fix It</h2>
+        <h3>How We Fix It</h3>
        <p>✅ We start with a full inspection of the sealed system, compressor function, and evaporator coil performance. If needed, we handle sealed system repairs — including compressor, condenser, and evaporator replacement.</p>
         <p>✅ If you’re dealing with a <strong>Sub-Zero fridge</strong> that’s cooling unevenly, we check airflow fans, dampers, and defrost cycles. For panel lights flashing or unresponsive controls, we replace or reprogram the <strong>digital control board</strong> using certified <strong>Sub-Zero components</strong>. Whether it's a <strong>panel-ready model</strong>, <strong>integrated column</strong>, or <strong>PRO series unit</strong>, you’ll get fast, discreet, and professional <strong>Sub-Zero repair</strong> with a perfect finish.</p>
       
