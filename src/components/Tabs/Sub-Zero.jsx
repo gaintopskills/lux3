@@ -175,38 +175,7 @@ export const Tabs = () => {
 </a>.</p> </>
         
       ),
-    },
-    {
-      id: "content6",
-      title: "Sub-Zero Repair Service Areas",
-  heading: "Sub-Zero Repair Service Areas",
-      description: (
-        <><p>Call now to book your <strong>Sub-Zero fridge repair</strong> appointment, or schedule a same-day <strong>Sub-Zero service</strong> visit with one of our elite <strong>Sub-Zero technicians</strong>.</p>
-        <p>📍 Proudly serving <strong>luxury homes</strong> in 
-        &nbsp;<a href="/los-angeles/">Los Angeles</a>,
-        &nbsp;<a href="/brentwood/">Brentwood</a>,
-        &nbsp; <a href="/pasadena/">Pasadena</a>,
-        &nbsp; <a href="/bel-air/">Bel Air</a>,
-        &nbsp; <a href="/pacific-palisades/">Pacific Palisades</a>,
-        &nbsp;<a href="/santa-monica/">Santa Monica</a>,
-        &nbsp;<a href="/beverly-hills/">Beverly Hills</a>,
-        &nbsp; <a href="/calabasas/">Calabasas</a>,
-        &nbsp; <a href="/thousand-oaks/">Thousand Oaks</a>,
-        &nbsp;<a href="/west-hollywood/">West Hollywood</a>,
-        &nbsp;<a href="/san-marino/">San Marino</a>,
-        &nbsp; <a href="/malibu/">Malibu</a>,
-        &nbsp; <a href="/manhattan-beach/">Manhattan Beach</a>,
-        &nbsp; <a href="/encino/">Encino</a>,
-        &nbsp; <a href="/rancho-palos-verdes/">Rancho Palos Verdes</a>,
-        &nbsp;<a href="/palos-verdes-estates/">Palos Verdes Estates</a>,
-        &nbsp;<a href="/rolling-hills-estates/">Rolling Hills Estates</a>,
-        &nbsp;<a href="/westwood/">Westwood</a>,
-        &nbsp; <a href="/century-city/">Century City</a>,
-    and <a href="/la-canada-flintridge/">La Cañada Flintridge</a> and nearby areas</p>
-        <p>Call Zaricci today for fast and reliable <strong>Sub-Zero repair</strong></p>
-        </>
-      ),
-    },
+    }
   ];
 
   useEffect(() => {
