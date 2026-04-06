@@ -213,7 +213,7 @@ export const Tabs = () => {
     const handleResize = () => {
       const mobile = window.innerWidth <= 768;
       setIsMobile(mobile);
-      setActiveTab(mobile ? null : "content1");
+      setActiveTab("content1");
     };
 
     handleResize();
