@@ -3,7 +3,7 @@ import "./Tabs.css";
 
 export const Tabs = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [activeTab, setActiveTab] = useState(null);
+  const [activeTab, setActiveTab] = useState("content1");
   const containerRef = useRef(null);
   const itemRefs = useRef([]);
 
