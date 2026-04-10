@@ -1,0 +1,241 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ParallaxHeader from '../components/Header/Aga.jsx'
+import '../styles/global.css';
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/aga-appliance-repair/#webpage",
+      "url": "https://luxuryappliance.repair/aga-appliance-repair/",
+      "name": "AGA Appliance Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Expert AGA appliance repair, installation, and maintenance in Los Angeles for luxury AGA Classic ranges, Mercury ranges, Elise ranges, ovens, hotplates, and hoods.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/aga-appliance-repair/#service"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/aga/aga-appliance-repair-services-trained-technicians.webp"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/aga-appliance-repair/#service",
+      "name": "AGA Appliance Repair",
+      "url": "https://luxuryappliance.repair/aga-appliance-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/aga-appliance-repair/#webpage"
+      },
+      "serviceType": "AGA appliance repair, installation, and maintenance",
+      "description": "Luxury Appliance Repair by Zaricci specializes in AGA appliance repair, installation, and maintenance for AGA Classic cast-iron ranges, AGA Mercury ranges, AGA Elise ranges, ovens, hotplates, and AGA hoods. Our technicians use precision diagnostics and premium parts for AGA appliances across Los Angeles and surrounding communities.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "AGA",
+        "sameAs": "https://www.agarangeusa.com/"
+      },
+           "areaServed": [
+        { "@type": "City", "name": "Los Angeles", "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles" },
+        { "@type": "Place", "name": "Brentwood", "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles" },
+        { "@type": "City", "name": "Pasadena", "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California" },
+        { "@type": "Place", "name": "Bel Air", "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles" },
+        { "@type": "Place", "name": "Pacific Palisades", "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles" },
+        { "@type": "City", "name": "Santa Monica" },
+        { "@type": "City", "name": "Beverly Hills" },
+        { "@type": "City", "name": "Calabasas" },
+        { "@type": "City", "name": "Thousand Oaks" },
+        { "@type": "City", "name": "West Hollywood" },
+        { "@type": "City", "name": "San Marino" },
+        { "@type": "City", "name": "Malibu" },
+        { "@type": "City", "name": "Manhattan Beach" },
+        { "@type": "Place", "name": "Encino", "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles" },
+        { "@type": "City", "name": "Rancho Palos Verdes" },
+        { "@type": "City", "name": "Palos Verdes Estates" },
+        { "@type": "City", "name": "Rolling Hills Estates" },
+        { "@type": "Place", "name": "Westwood", "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles" },
+        { "@type": "Place", "name": "Century City", "sameAs": "https://en.wikipedia.org/wiki/Century_City" },
+        { "@type": "City", "name": "La Cañada Flintridge" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "AGA Appliance Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AGA Appliance Repair",
+              "description": "Repair for AGA appliances with heating problems, hotplate issues, oven temperature inconsistency, control failures, ignition-related issues on supported models, and hood ventilation concerns."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AGA Appliance Installation",
+              "description": "Professional installation for AGA Classic ranges, Mercury ranges, Elise ranges, ovens, and hoods for proper setup, integration, leveling, and performance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AGA Appliance Maintenance",
+              "description": "Preventive maintenance for AGA appliances including inspection, calibration, cleaning, hotplate and oven performance checks, and ventilation assessment."
+            }
+          }
+        ]
+      },
+      "keywords": [
+        "AGA appliance repair",
+        "AGA range repair",
+        "AGA cast iron range repair",
+        "AGA Classic repair",
+        "AGA Mercury repair",
+        "AGA Elise repair",
+        "AGA oven repair",
+        "AGA hotplate repair",
+        "AGA hood repair",
+        "AGA appliance installation",
+        "AGA appliance maintenance",
+        "Los Angeles AGA repair"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      ]
+    }
+  ]
+};
+---
+<Layout
+	title="AGA Appliance Repair in Los Angeles & Nearby Areas | Expert Service"
+	description="Expert AGA appliance repair in Los Angeles and nearby areas for luxury ranges, range cookers, ovens, rangetops, and hoods. Professional service for AGA repair, installation, and maintenance."
+	ogImage="/aga/aga-appliance-repair-services-trained-technicians.webp"
+  structuredData={structuredData}
+>
+<ParallaxHeader client:idle/>
+<div class="wrapper" id="webpage">
+<section>
+  <h2>AGA Appliance Repair in Los Angeles for Luxury Ranges, Ovens & Cookers</h2>
+  <img width="500" height="500" loading="lazy" class="image-left" src="/aga/aga-appliance-repair-technician.webp" alt="AGA appliance repair technician servicing a luxury AGA range in Los Angeles">
+  <p>Luxury Appliance Repair by Zaricci provides professional <strong>AGA appliance repair in Los Angeles and nearby areas</strong> for homeowners who rely on premium British cooking appliances every day. We service luxury <strong>AGA ranges, cast iron ranges, range cookers, ovens, hotplates, companion units, modules, and hoods</strong>, with careful diagnostics and detail-focused workmanship.</p>
+  <p>If your <strong>AGA range is not heating properly</strong>, your oven temperature is inconsistent, your controls are malfunctioning, or your appliance needs expert maintenance, our technicians work to restore reliable performance while protecting the fit, finish, and function of your appliance. We understand that AGA systems are different from standard cooking appliances and require a more specialized approach to repair, installation, and ongoing care.</p>
+</section>
+
+<section>
+  <h2>Why Homeowners Choose Zaricci for AGA Appliance Repair</h2>
+  <ul>
+    <li><strong>Experienced with Luxury AGA Appliances:</strong> We work on premium cooking appliances and understand the unique construction, heat retention, controls, and performance expectations that come with AGA ownership.</li>
+    <li><strong>Focused Diagnostic Approach:</strong> We do not treat an AGA like a standard range. Our service is centered on identifying the actual cause of heating problems, control issues, ignition faults, and performance irregularities before recommending repair.</li>
+    <li><strong>Repair, Installation & Maintenance:</strong> In addition to <strong>AGA repair</strong>, we also provide <strong>AGA appliance installation</strong> and <strong>AGA appliance maintenance</strong> to help protect long-term performance.</li>
+    <li><strong>Clear Communication:</strong> You receive straightforward recommendations, transparent pricing, and a defined repair plan before work begins.</li>
+    <li><strong>Luxury Home Service Experience:</strong> We provide careful service designed for premium kitchens, custom cabinetry, and high-end homes throughout Los Angeles and surrounding communities.</li>
+  </ul>
+</section>
+
+<section id="service">
+  <h2 id="service">Common AGA Appliance Problems We Repair</h2>
+  <p>We repair many of the issues luxury homeowners commonly experience with <strong>AGA appliances</strong>, from classic cast iron systems to modern electric and control-based models. Our service is tailored to the specific appliance type, model series, and symptoms involved.</p>
+  <ul>
+    <li><strong>AGA oven not heating or overheating:</strong> We diagnose heating performance issues, thermostat problems, temperature regulation faults, and components affecting cooking consistency.</li>
+    <li><strong>AGA range cooker performance issues:</strong> If your AGA range is heating unevenly, taking too long to reach temperature, or no longer operating as expected, we inspect the relevant controls, heating systems, and related components.</li>
+    <li><strong>Hotplate and burner problems:</strong> We address hotplates that are not heating correctly, burners that are not igniting properly, and gas-related issues on supported models.</li>
+    <li><strong>AGA control and electrical faults:</strong> We service digital control issues, programming problems, temperature fluctuation concerns, and other electrical malfunctions affecting modern AGA units.</li>
+    <li><strong>AGA Total Control, Dual Control, eR3, and eR7 issues:</strong> We diagnose model-specific performance problems, including delayed heat-up, inconsistent oven behavior, and control-related faults.</li>
+    <li><strong>Ventilation and hood issues:</strong> We also service supported <strong>AGA hoods</strong> and related ventilation concerns that affect performance, airflow, and kitchen usability.</li>
+    <li><strong>Maintenance-related performance decline:</strong> If your AGA is operating less efficiently over time, we inspect the appliance for buildup, wear, calibration concerns, and other maintenance-related issues.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>AGA Models We Service</h2>
+  <p>We service a wide range of <strong>AGA appliances</strong> and model lines, including:</p>
+  <ul>
+    <li>AGA Classic Cast Iron Ranges</li>
+    <li>AGA Total Control Series</li>
+    <li>AGA Dual Control</li>
+    <li>AGA City60</li>
+    <li>AGA eR3 and eR7 Electric Series</li>
+    <li>AGA Mercury Ranges</li>
+    <li>AGA Elise Ranges</li>
+    <li>AGA Companion Units</li>
+    <li>AGA Module Units</li>
+    <li>AGA ovens, hotplates, and supported hoods</li>
+  </ul>
+</section>
+
+<section>
+  <h2>AGA Appliance Installation and Maintenance</h2>
+  <p>In addition to <strong>AGA appliance repair</strong>, we provide <strong>AGA installation</strong> and <strong>AGA maintenance services</strong> for homeowners who want to protect the performance and longevity of their appliance. Proper setup, integration, inspection, and routine service are especially important for luxury cooking appliances that are expected to perform consistently for years.</p>
+  <p>Our maintenance service may include visual inspection, performance testing, calibration checks, and evaluation of components affecting heat output, control response, and overall operation. For homeowners investing in a premium British appliance, preventive service can help reduce breakdowns and support more reliable day-to-day use.</p>
+</section>
+
+<section>
+  <h2>Our AGA Repair Process</h2>
+  <ul>
+    <li><strong>Schedule Service:</strong> Contact us by phone or online and tell us the model, issue, and location.</li>
+    <li><strong>In-Home Diagnosis:</strong> A technician inspects the appliance and identifies the source of the problem.</li>
+    <li><strong>Repair Recommendation:</strong> We explain the issue, the recommended solution, and the expected repair scope.</li>
+    <li><strong>Professional Service:</strong> We complete the repair with care and test the appliance for proper operation.</li>
+    <li><strong>Support for Ongoing Performance:</strong> When appropriate, we also advise on maintenance and long-term care for your AGA appliance.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Areas We Serve for AGA Appliance Repair</h2>
+<p>
+  We provide <strong>Aga appliance repair in Los Angeles and nearby communities</strong>,
+  including
+  <strong>
+  <a href="/los-angeles/">Los Angeles</a>,
+    <a href="/brentwood/">Brentwood</a>,
+    <a href="/pasadena/">Pasadena</a>,
+    <a href="/bel-air/">Bel Air</a>,
+    <a href="/pacific-palisades/">Pacific Palisades</a>,
+    <a href="/santa-monica/">Santa Monica</a>,
+    <a href="/beverly-hills/">Beverly Hills</a>,
+    <a href="/calabasas/">Calabasas</a>,
+    <a href="/thousand-oaks/">Thousand Oaks</a>,
+    <a href="/west-hollywood/">West Hollywood</a>,
+    <a href="/san-marino/">San Marino</a>,
+    <a href="/malibu/">Malibu</a>,
+    <a href="/manhattan-beach/">Manhattan Beach</a>,
+    <a href="/encino/">Encino</a>,
+    <a href="/rancho-palos-verdes/">Rancho Palos Verdes</a>,
+    <a href="/palos-verdes-estates/">Palos Verdes Estates</a>,
+    <a href="/rolling-hills-estates/">Rolling Hills Estates</a>,
+    <a href="/westwood/">Westwood</a>,
+    <a href="/century-city/">Century City</a>,
+    and <a href="/la-canada-flintridge/">La Cañada Flintridge</a></strong>.</p> 
+</section>
+
+<section>
+  <h2>Luxury Service for a Distinctive Appliance</h2>
+  <p>AGA appliances are known for their distinctive design, heat performance, and long-standing reputation in luxury kitchens. They are not serviced the same way as standard residential appliances. Whether you own a traditional cast iron AGA or a more modern control-based model, choosing a company familiar with premium appliance service can make a meaningful difference in diagnosis, repair quality, and long-term performance.</p>
+  <p>At <strong>Luxury Appliance Repair by Zaricci</strong>, we provide service designed for homeowners who expect careful workmanship, clear communication, and respect for their kitchen and home.</p>
+</section>
+
+<section>
+  <h2>Schedule AGA Appliance Repair in Los Angeles & Nearby Areas</h2>
+  <p>If your <strong>AGA range, oven, hotplate, cooker, or hood</strong> is not performing the way it should, do not wait for the issue to worsen. Prompt service can help restore performance and reduce the risk of more expensive repairs later.</p>
+  <p><strong>Call Luxury Appliance Repair by Zaricci</strong> to schedule professional <strong>AGA appliance repair in Los Angeles and nearby areas</strong>, or book service online for expert help with repair, installation, and maintenance.</p>
+</section>
+</div>
+</Layout>
+
