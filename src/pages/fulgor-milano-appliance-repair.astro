@@ -3,114 +3,127 @@ import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://luxuryappliance.repair/fulgor-milano-appliance-repair/",
-  "name": "Luxury Appliance Repair by Zaricci",
-  "url": "https://luxuryappliance.repair/fulgor-milano-appliance-repair/",
-  "image": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
-  "telephone": "+1-424-499-7788",
-  "priceRange": "$$$",
-  "description": "Luxury Appliance Repair by Zaricci provides expert repair, installation, and maintenance for Fulgor Milano appliances. From precision-engineered Italian ranges to wall ovens and cooktops, we offer certified service with genuine parts and a white-glove experience throughout Los Angeles and surrounding areas.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Los Angeles",
-    "addressRegion": "CA",
-    "addressCountry": "US"
-  },
-  "brand": {
-    "@type": "Brand",
-    "name": "Fulgor Milano",
-    "url": "https://www.fulgor-milano.com/"
-  },
-  "areaServed": {
-    "@type": "Place",
-    "name": "Southern California"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Fulgor Milano Appliance Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Fulgor Milano Appliance Repair",
-          "description": "Expert diagnostics and repairs for Fulgor Milano ranges, ovens, and cooktops. We address ignition issues, electrical faults, temperature inconsistencies, and interface errors."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Fulgor Milano Appliance Installation",
-          "description": "Precision installation of Fulgor Milano products, including dual-fuel ranges, electric ovens, gas cooktops, and integrated kitchen systems."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Fulgor Milano Appliance Maintenance",
-          "description": "Scheduled maintenance services for Fulgor Milano appliances, including inspections, cleaning, calibrations, and software checks."
-        }
-      }
-    ]
-  },
-  "makesOffer": [
+  "@graph": [
     {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "Fulgor Milano Appliance Repair, Installation, and Maintenance"
-      }
-    }
-  ],
-  "provider": {
-    "@type": "Organization",
-    "name": "Luxury Appliance Repair by Zaricci",
-    "url": "https://luxuryappliance.repair/"
-  },
-  "knowsAbout": [
-    "Fulgor Milano Appliance Repair",
-    "Fulgor Milano Installation Services",
-    "Fulgor Milano Appliance Maintenance",
-    "Fulgor Milano Dual-Fuel Ranges",
-    "Fulgor Milano Induction Cooktops",
-    "Fulgor Milano Built-In Wall Ovens",
-    "Luxury European Kitchen Appliances",
-    "White-Glove Installation Services",
-    "Italian Appliance Repair Experts Los Angeles",
-    "Premium Appliance Services Southern California"
-  ],
-  "potentialAction": [
-    {
-      "@type": "ReserveAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://luxuryappliance.repair/book/",
-        "inLanguage": "en",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/fulgor-milano-appliance-repair/#webpage",
+      "url": "https://luxuryappliance.repair/fulgor-milano-appliance-repair/",
+      "name": "Fulgor Milano Appliance Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Expert Fulgor Milano appliance repair, installation, and maintenance in Los Angeles for Fulgor Milano ranges, rangetops, cooktops, ovens, specialty ovens, ventilation, refrigeration, dishwashers, drawers, and built-in coffee systems.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/fulgor-milano-appliance-repair/#service"
       },
-      "result": {
-        "@type": "Reservation",
-        "name": "Schedule Fulgor Milano Appliance Service"
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/fulgor-milano/fulgor-milano-appliance-repair-services-trained-technicians.webp"
       }
     },
     {
-      "@type": "CommunicateAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "tel:+14244997788",
-        "actionPlatform": [
-          "http://schema.org/MobileWebPlatform"
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/fulgor-milano-appliance-repair/#service",
+      "name": "Fulgor Milano Appliance Repair",
+      "url": "https://luxuryappliance.repair/fulgor-milano-appliance-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/fulgor-milano-appliance-repair/#webpage"
+      },
+      "serviceType": "Fulgor Milano appliance repair, installation, and maintenance",
+      "description": "Luxury Appliance Repair by Zaricci specializes in Fulgor Milano appliance repair, installation, and maintenance for Fulgor Milano ranges, rangetops, cooktops, wall ovens, specialty ovens, ventilation systems, refrigerators, dishwashers, warming drawers, and built-in coffee systems. Our technicians use precision diagnostics and premium parts for Fulgor Milano appliances across Los Angeles and surrounding communities.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Fulgor Milano",
+        "sameAs": "https://www.fulgor-milano.com/us/en"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Los Angeles", "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles" },
+        { "@type": "Place", "name": "Brentwood", "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles" },
+        { "@type": "City", "name": "Pasadena", "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California" },
+        { "@type": "Place", "name": "Bel Air", "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles" },
+        { "@type": "Place", "name": "Pacific Palisades", "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles" },
+        { "@type": "City", "name": "Santa Monica" },
+        { "@type": "City", "name": "Beverly Hills" },
+        { "@type": "City", "name": "Calabasas" },
+        { "@type": "City", "name": "Thousand Oaks" },
+        { "@type": "City", "name": "West Hollywood" },
+        { "@type": "City", "name": "San Marino" },
+        { "@type": "City", "name": "Malibu" },
+        { "@type": "City", "name": "Manhattan Beach" },
+        { "@type": "Place", "name": "Encino", "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles" },
+        { "@type": "City", "name": "Rancho Palos Verdes" },
+        { "@type": "City", "name": "Palos Verdes Estates" },
+        { "@type": "City", "name": "Rolling Hills Estates" },
+        { "@type": "Place", "name": "Westwood", "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles" },
+        { "@type": "Place", "name": "Century City", "sameAs": "https://en.wikipedia.org/wiki/Century_City" },
+        { "@type": "City", "name": "La Cañada Flintridge" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Fulgor Milano Appliance Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fulgor Milano Appliance Repair",
+              "description": "Repair for Fulgor Milano appliances with burner ignition problems, oven heating inconsistencies, rangetop performance issues, cooktop element failures, refrigerator cooling problems, dishwasher drainage and cleaning issues, ventilation malfunctions, warming drawer problems, and built-in coffee system performance issues."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fulgor Milano Appliance Installation",
+              "description": "Professional installation for Fulgor Milano ranges, rangetops, cooktops, ovens, specialty ovens, ventilation systems, refrigerators, dishwashers, drawers, and built-in coffee systems for proper setup, integration, and performance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fulgor Milano Appliance Maintenance",
+              "description": "Preventive maintenance for Fulgor Milano appliances including inspection, calibration, cleaning, temperature checks, drainage checks, ventilation assessment, and performance optimization."
+            }
+          }
         ]
-      }
+      },
+      "keywords": [
+        "Fulgor Milano appliance repair",
+        "Fulgor Milano range repair",
+        "Fulgor Milano rangetop repair",
+        "Fulgor Milano cooktop repair",
+        "Fulgor Milano oven repair",
+        "Fulgor Milano specialty oven repair",
+        "Fulgor Milano refrigerator repair",
+        "Fulgor Milano dishwasher repair",
+        "Fulgor Milano hood repair",
+        "Fulgor Milano ventilation repair",
+        "Fulgor Milano warming drawer repair",
+        "Fulgor Milano coffee system repair",
+        "Fulgor Milano appliance installation",
+        "Fulgor Milano appliance maintenance",
+        "Los Angeles Fulgor Milano repair"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      ]
     }
   ]
-}
+};
 ---
 <Layout
 	title="Fulgor Milano Appliance Repair – Expert Service"
