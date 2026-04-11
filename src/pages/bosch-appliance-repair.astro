@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ParallaxHeader from '../components/Header/Bosch.jsx'
 import '../styles/global.css';
 const structuredData = {
   "@context": "https://schema.org",
@@ -137,6 +138,7 @@ const structuredData = {
 	ogImage="/bosch/bosch-appliance-repair-services.webp"
   structuredData={structuredData}
 >
+<ParallaxHeader client:idle/>
 <div style="margin: 50px">
 <section>
   <h2>Bosch Repair – Expert Service for Your Innovative German-Engineered Appliances</h2>
