@@ -32,7 +32,7 @@ const ParallaxHeader = () => {
           className="header-image"
           width="1200"
           height="630"
-          src="/elmira-stove-works/elmira-stove-works-repair-services.webp"
+          src="/elmira/elmira-stove-works-repair-services.webp"
           alt="Elmira Stove Works Repair Services Los Angeles and Nearby Areas"
           fetchpriority="high"
           decoding="async"
@@ -53,5 +53,4 @@ const ParallaxHeader = () => {
     </div>
   );
 };
-
 export default ParallaxHeader;
