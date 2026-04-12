@@ -32,7 +32,7 @@ const ParallaxHeader = () => {
           className="header-image"
           width="1200"
           height="630"
-          src="/fulgormilano/fulgor-milano-repair-services.webp"
+          src="/fulgormilano/fulgor-milano-appliance-repair-services.webp"
           alt="Fulgor Milano Repair Services Los Angeles and Nearby Areas"
           fetchpriority="high"
           decoding="async"
