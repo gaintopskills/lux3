@@ -37,11 +37,9 @@ const ParallaxHeader = () => {
           fetchpriority="high"
           decoding="async"
         />
-
         <p>
         Expert Bosch appliance repair for dishwashers, refrigerators, wall ovens, ranges, cooktops, washers, dryers, warming drawers, and ventilation systems in Los Angeles and nearby areas.
         </p>
-
         <p>
           ✅ Licensed &amp; Insured
           <br />
