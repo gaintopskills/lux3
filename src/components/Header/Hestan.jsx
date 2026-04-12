@@ -32,7 +32,7 @@ const ParallaxHeader = () => {
           className="header-image"
           width="1200"
           height="630"
-          src="/hestan/hestan-appliance-repair-services.webp"
+          src="/hestan/hestan-appliance-repair-expert-services.webp"
           alt="Hestan Appliance Repair Services Los Angeles and Nearby Areas"
           fetchpriority="high"
           decoding="async"
