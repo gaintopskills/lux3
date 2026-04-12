@@ -39,10 +39,7 @@ const ParallaxHeader = () => {
         />
 
         <p>
-          Experienced technicians specializing in Bosch appliance repair. We are
-          experts in fixing Bosch dishwashers, refrigerators, wall ovens,
-          ranges, cooktops, and ventilation systems throughout Los Angeles and
-          nearby areas.
+        Expert Bosch appliance repair for dishwashers, refrigerators, wall ovens, ranges, cooktops, washers, dryers, warming drawers, and ventilation systems in Los Angeles and nearby areas.
         </p>
 
         <p>
