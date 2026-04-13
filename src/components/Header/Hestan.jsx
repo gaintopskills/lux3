@@ -37,11 +37,7 @@ const ParallaxHeader = () => {
           fetchpriority="high"
           decoding="async"
         />
-        <p>
-          Expert Hestan appliance repair for ranges, ovens, cooktops, rangetops,
-          refrigerators, dishwashers, ventilation systems, and other specialty kitchen
-          appliances in Los Angeles and nearby areas.
-        </p>
+       <p>Expert Hestan appliance repair for ranges, ovens, cooktops, rangetops, refrigerators, ventilation systems, and other premium kitchen appliances in Los Angeles and nearby areas.</p>
         <p>
           ✅ Licensed &amp; Insured
           <br />
