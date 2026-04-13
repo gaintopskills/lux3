@@ -22,6 +22,8 @@ const ParallaxHeader = () => {
 
       <div className="maintext">
         <h1>Luxury Appliance Repair by ZARICCI</h1>
+        <img className="header-image" width="1200" height="630" src="/high-end-and-luxury-appliance-repair-by-zaricci.webp" alt="High-End and Luxury Appliance Repair Los Angeles and Nearby Areas"  fetchpriority="high"
+  decoding="async"/>
         <p>
           At Luxury Appliance Repair, we specialize in repairing high-end appliances with
           precision, ensuring your kitchen and home run seamlessly. With certified and highly expirienced 
