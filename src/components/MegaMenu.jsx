@@ -134,17 +134,20 @@ export const MegaMenu = () => {
     { label: "Cove", href: "/cove-dishwasher-repair/" },
     { label: "Dacor", href: "/dacor-appliance-repair/" },
     { label: "Elmira Stove Works", href: "/elmira-stove-works-appliance-repair/" },
-    { label: "FiveStar", href: "/fivestar-appliance-repair/" },
+    
     
   ],
-    [ { label: "Fulgor Milano", href: "/fulgor-milano-appliance-repair/" },
+    [ 
+    { label: "FiveStar", href: "/fivestar-appliance-repair/" },
+      { label: "Fulgor Milano", href: "/fulgor-milano-appliance-repair/" },
+    { label: "Gaggenau", href: "/gaggenau-repair/" },
       { label: "Hestan", href: "/hestan-appliance-repair/" },
     { label: "ILVE", href: "/ilve-appliance-repair/" },
     { label: "JennAir Noir", href: "/jennair-noir-appliance-repair/" },
       { label: "Lacanche", href: "/lacanche-appliance-repair/" },
       { label: "La Cornue", href: "/la-cornue-appliance-repair/" },
       { label: "Miele", href: "/miele-appliance-repair/" },
-      { label: "Monogram", href: "/monogram-appliance-repair/" },
+      
       ],
     [ 
       { label: "Signature Kitchen Suite", href: "/signature-kitchen-suite-appliance-repair/" },
@@ -155,6 +158,7 @@ export const MegaMenu = () => {
       { label: "Viking", href: "/viking-appliance-repair/" },
       { label: "Wolf", href: "/wolf-appliance-repair/" },
       { label: "ZLINE", href: "/zline-appliance-repair/" },  
+      { label: "Monogram", href: "/monogram-appliance-repair/" },
     ],
   ].map((col, idx) => (
     <div className="column" key={idx}>
