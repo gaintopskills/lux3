@@ -32,7 +32,7 @@ const ParallaxHeader = () => {
           className="header-image"
           width="1200"
           height="630"
-          src="/gaggenau/gaggenau-appliance-repair-services.webp"
+          src="/gaggenau/gaggenau-appliance-repair-expert-service.webp"
           alt="Gaggenau Appliance Repair Services Los Angeles and Nearby Areas"
           fetchpriority="high"
           decoding="async"
