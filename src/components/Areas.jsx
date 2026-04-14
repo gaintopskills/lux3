@@ -40,7 +40,7 @@ const cards = [
 
 export default function CardsGallery() {
   return (
-    <section className="cards-section">
+    <section className="cards-section" aria-label="Image cards gallery">
       <div className="cards-shell">
         <div className="cards">
         {cards.slice(0, 3).map((card) => (
