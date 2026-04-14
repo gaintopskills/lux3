@@ -9,12 +9,10 @@
   color: #111;
   overflow-x: hidden;
 }
-
 .cards-shell {
   width: 100%;
   max-width: 1200px;
 }
-
 .cards {
   display: flex;
   flex-wrap: nowrap;
