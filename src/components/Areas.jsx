@@ -3,21 +3,21 @@ import React from 'react';
 const cards = [
   {
     title: 'Orange County',
-    desc: 'Rocky shoreline with blue water and a wide sky.',
+    desc: 'Appliance Repair Orange County',
     href: 'https://picsum.photos/id/1015/800/600',
     img: '/areas/appliance-repair-orange-county.webp',
     alt: 'Appliance Repair Orange County',
   },
   {
     title: 'Los Angeles County',
-    desc: 'A vivid display of the aurora borealis.',
+    desc: 'Appliance Repair Los Angeles County',
     href: 'https://picsum.photos/id/1022/800/600',
     img: '/areas/appliance-repair-los-angeles-county.webp',
     alt: 'Appliance Repair Los Angeles County',
   },
   {
     title: 'Ventura County',
-    desc: 'Explore the beauty of nature through peaceful trails.',
+    desc: 'Appliance Repair Ventura County',
     href: 'https://picsum.photos/id/1035/800/600',
     img: '/areas/appliance-repair-ventura-county.webp',
     alt: 'Appliance Repair Ventura County',
