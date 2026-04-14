@@ -43,17 +43,21 @@ export default function CardsGallery() {
     <section className="cards-section" aria-label="Image cards gallery">
       <div className="cards-shell">
         <div className="cards">
-        {cards.slice(0, 3).map((card) => (
+          {cards.slice(0, 3).map((card) => (
             <div className="card" key={card.title}>
               <a
                 href={card.href}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={card.title}
               >
                 <img
                   src={card.img}
                   alt={card.alt}
                   loading="lazy"
+                  width="800"
+                  height="600"
+                  decoding="async"
                 />
                 <div className="card-title">{card.title}</div>
                 <p className="card-desc">{card.desc}</p>
@@ -61,7 +65,6 @@ export default function CardsGallery() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

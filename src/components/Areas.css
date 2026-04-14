@@ -9,10 +9,12 @@
   color: #111;
   overflow-x: hidden;
 }
+
 .cards-shell {
   width: 100%;
   max-width: 1200px;
 }
+
 .cards {
   display: flex;
   flex-wrap: nowrap;
@@ -32,6 +34,7 @@
   flex: 1 1 0;
   min-width: 0;
   height: 100%;
+  aspect-ratio: 4 / 3;
   cursor: pointer;
   transition: flex 0.5s ease;
   overflow: hidden;
@@ -53,10 +56,10 @@
 }
 
 .card img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
   transition: transform 0.5s ease, filter 0.5s ease;
   filter: grayscale(100%);
   will-change: transform, filter;
@@ -147,46 +150,6 @@
   filter: grayscale(0%);
 }
 
-.copyright {
-  margin: 0 auto;
-  font-size: 0.85rem;
-  color: rgba(0, 0, 0, 0.6);
-  background: gray;
-  max-width: fit-content;
-  letter-spacing: 0.02em;
-  padding: 0.35rem 0.75rem;
-  border-radius: 6px;
-}
-
-.author-name {
-  font-weight: 600;
-  color: rgba(0, 0, 0, 0.75);
-  transition: color 0.3s ease;
-}
-
-.author-link {
-  color: rgba(0, 0, 0, 0.6);
-  text-decoration: none;
-  padding: 0.2em 0.5em;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.3);
-  transition: all 0.3s ease;
-  font-weight: 500;
-}
-
-.author-link:hover {
-  color: #000;
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-.author-link:focus-visible {
-  outline: 2px solid rgba(0, 0, 0, 0.5);
-  outline-offset: 2px;
-  color: #000;
-  background: rgba(255, 255, 255, 0.8);
-}
-
 /* Tablet */
 @media (max-width: 900px) {
   .cards-section {
@@ -232,6 +195,7 @@
     flex: none;
     width: 100%;
     height: 240px;
+    aspect-ratio: 4 / 3;
   }
 
   .card:hover {
@@ -275,14 +239,6 @@
     font-size: 0.9rem;
     padding: 0.65rem 1rem 1rem;
   }
-
-
-  .copyright {
-    font-size: 0.78rem;
-    max-width: 100%;
-    text-align: center;
-    line-height: 1.4;
-  }
 }
 
 /* Very small phones */
@@ -298,11 +254,6 @@
 
   .card-desc {
     font-size: 0.82rem;
-  }
-
-  .copyright {
-    font-size: 0.74rem;
-    padding: 0.35rem 0.6rem;
   }
 }
 
@@ -325,9 +276,7 @@
   .card img,
   .card-title,
   .card-desc,
-  .card::after,
-  .author-name,
-  .author-link {
+  .card::after {
     transition: none;
   }
 
