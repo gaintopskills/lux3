@@ -43,7 +43,7 @@ export default function CardsGallery() {
     <section className="cards-section">
       <div className="cards-shell">
         <div className="cards">
-          {cards.map((card) => (
+        {cards.slice(0, 3).map((card) => (
             <div className="card" key={card.title}>
               <a
                 href={card.href}
