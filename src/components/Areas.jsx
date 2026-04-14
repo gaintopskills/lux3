@@ -6,21 +6,21 @@ const cards = [
     desc: 'Rocky shoreline with blue water and a wide sky.',
     href: 'https://picsum.photos/id/1015/800/600',
     img: '/areas/appliance-repair-orange-county.webp',
-    alt: 'Mountain landscape with river',
+    alt: 'Appliance Repair Orange County',
   },
   {
     title: 'Los Angeles County',
     desc: 'A vivid display of the aurora borealis.',
     href: 'https://picsum.photos/id/1022/800/600',
     img: '/areas/appliance-repair-los-angeles-county.webp',
-    alt: 'A vivid display of the aurora borealis.',
+    alt: 'Appliance Repair Los Angeles County',
   },
   {
     title: 'Ventura County',
     desc: 'Explore the beauty of nature through peaceful trails.',
     href: 'https://picsum.photos/id/1035/800/600',
     img: '/areas/appliance-repair-ventura-county.webp',
-    alt: 'Person walking in nature',
+    alt: 'Appliance Repair Ventura County',
   },
 ];
 
