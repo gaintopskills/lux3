@@ -5,7 +5,7 @@ const cards = [
     title: 'Orange County',
     desc: 'Rocky shoreline with blue water and a wide sky.',
     href: 'https://picsum.photos/id/1015/800/600',
-    img: '/appliance-repair-orange-county.webp',
+    img: '/areas/appliance-repair-orange-county.webp',
     alt: 'Mountain landscape with river',
   },
   {
