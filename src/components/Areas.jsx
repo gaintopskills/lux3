@@ -12,7 +12,7 @@ const cards = [
     title: 'Los Angeles County',
     desc: 'A vivid display of the aurora borealis.',
     href: 'https://picsum.photos/id/1022/800/600',
-    img: 'https://picsum.photos/id/1022/800/600',
+    img: '/areas/appliance-repair-los-angeles-county.webp',
     alt: 'A vivid display of the aurora borealis.',
   },
   {
