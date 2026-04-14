@@ -62,19 +62,6 @@ export default function CardsGallery() {
           ))}
         </div>
 
-        <footer className="site-footer">
-          <p className="copyright">
-            © 2026 <span className="author-name">Fatih YILDIZ</span> ·{' '}
-            <a
-              href="https://fthyldz.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="author-link"
-            >
-              fthyldz.com
-            </a>
-          </p>
-        </footer>
       </div>
     </section>
   );

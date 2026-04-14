@@ -147,13 +147,6 @@
   filter: grayscale(0%);
 }
 
-.site-footer {
-  margin-top: 1.5rem;
-  padding: 1rem 2rem;
-  text-align: center;
-  z-index: 10;
-}
-
 .copyright {
   margin: 0 auto;
   font-size: 0.85rem;
@@ -283,10 +276,6 @@
     padding: 0.65rem 1rem 1rem;
   }
 
-  .site-footer {
-    margin-top: 1rem;
-    padding: 1rem 0.5rem 0;
-  }
 
   .copyright {
     font-size: 0.78rem;
