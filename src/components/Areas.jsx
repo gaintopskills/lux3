@@ -2,21 +2,21 @@ import React from 'react';
 
 const cards = [
   {
-    title: 'Cliff Coast',
+    title: 'Orange County',
     desc: 'Rocky shoreline with blue water and a wide sky.',
     href: 'https://picsum.photos/id/1015/800/600',
     img: 'https://picsum.photos/id/1015/800/600',
     alt: 'Mountain landscape with river',
   },
   {
-    title: 'Forest Lights',
+    title: 'Los Angeles County',
     desc: 'A vivid display of the aurora borealis.',
     href: 'https://picsum.photos/id/1022/800/600',
     img: 'https://picsum.photos/id/1022/800/600',
     alt: 'A vivid display of the aurora borealis.',
   },
   {
-    title: 'Nature Walk',
+    title: 'Ventura County',
     desc: 'Explore the beauty of nature through peaceful trails.',
     href: 'https://picsum.photos/id/1035/800/600',
     img: 'https://picsum.photos/id/1035/800/600',
