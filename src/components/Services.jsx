@@ -45,7 +45,7 @@ const offers = [
     title: "",
     subtitle: "Bosch Repair",
     description:
-      "We repair Monogram refrigerators, freezers, wine reserves, ovens, wall ovens, ranges, rangetops, cooktops, ventilation hoods, & dishwashers.",
+      "We repair Bosch refrigerators, freezers, dishwashers, wall ovens, cooktops, ranges, ventilation hoods, washers, & dryers.",
     image: "/bosch/bosch-appliance-repair.webp",
   },
   {
