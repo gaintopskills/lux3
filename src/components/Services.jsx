@@ -109,7 +109,7 @@ const offers = [
     title: "",
     subtitle: "BlueStar Repair",
     description:
-      "We repair BlueStar ranges, ovens, cooktops, refrigerators, freezers, ventilation hoods, wine coolers, beverage centers, dishwashers, & coffee machnes",
+      "We repair BlueStar ranges, rangetops, cooktops, wall ovens, ventilation hoods, & refrigerators.",
     image: "/bluestar/bluestar-appliance-repair.webp",
   },
   {
@@ -117,7 +117,7 @@ const offers = [
     title: "",
     subtitle: "La Cornue Repair",
     description:
-      "We repair La Cornue ranges, cooktops, ventilation hoods, Rotisseries",
+      "We repair La Cornue ranges, cooktops, ventilation hoods, rotisseries",
     image: "/la-cornue/la-cornue-appliance-repair.webp",
   },
   {
