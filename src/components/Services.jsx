@@ -144,6 +144,14 @@ const offers = [
       "We repair Hestan ranges, rangetops, cooktops, ovens, ventilation hoods, refrigeration, & outdoor grills.",
     image: "/hestan/hestan-appliance-repair-services.webp",
   },
+  {
+    id: 17,
+    title: "",
+    subtitle: "Gaggenau",
+    description:
+      "We repair Gaggenau ovens, combi-steam ovens, steam ovens, cooktops, rangetops, ventilation systems, refrigerators, freezers, wine climate cabinets, dishwashers, warming drawers.",
+    image: "/gaggenau/gaggenau-appliance-repair-services.webp",
+  }
   
 ];
 const Services = () => {
