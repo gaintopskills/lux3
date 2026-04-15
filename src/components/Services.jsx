@@ -123,11 +123,12 @@ const offers = [
   {
     id: 16,
     title: "",
-    subtitle: "KitchenAid Repair",
+    subtitle: "Elmira Stove Works",
     description:
-      "We repair KitchenAid ovens, ranges, cooktops, refrigerators, warming drawers, dishwashers, and ventilation hoods, refrigerators, freezers, wine coolers, & beverage centers",
-    image: "/kitchenaid/kitchenaid-appliance-repair.webp",
-  }
+      "We repair Elmira Stove Works ranges, ovens, cooktops, refrigerators, dishwashers, ventilation hoods, & warming drawers.",
+    image: "/elmira/elmira-stove-works-repair.webp",
+  },
+  
 ];
 const Services = () => {
   const [flipped, setFlipped] = useState(Array(offers.length).fill(false));
