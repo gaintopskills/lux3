@@ -85,7 +85,7 @@ const offers = [
     title: "",
     subtitle: "Fisher & Paykel Repair",
     description:
-      "We repair Fisher & Paykel ranges, ovens, cooktops, hoods, warming drawers, refrigerators, freezers, wine cabinets, dishwashers, & coffee machines",
+      "We repair Fisher & Paykel refrigerators, freezers, wine cabinets, dishwashers, ovens, ranges, cooktops, ventilation hoods, washers, & dryers.",
     image: "/fisherpaykel/fisher-and-paykel-appliance-repair.webp",
   },
   {
