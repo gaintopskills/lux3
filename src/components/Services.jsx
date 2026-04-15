@@ -128,6 +128,14 @@ const offers = [
       "We repair Elmira Stove Works ranges, ovens, cooktops, refrigerators, dishwashers, ventilation hoods, & warming drawers.",
     image: "/elmira/elmira-stove-works-repair.webp",
   },
+  {
+    id: 17,
+    title: "",
+    subtitle: "Fulgor Milano",
+    description:
+      "We repair Fulgor Milano ovens, ranges, cooktops, rangetops, refrigerators, dishwashers, & ventilation hoods.",
+    image: "/fulgormilano/fulgor-milano-appliance-repair-service.webp",
+  }
   
 ];
 const Services = () => {
