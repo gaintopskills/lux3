@@ -135,7 +135,15 @@ const offers = [
     description:
       "We repair Fulgor Milano ovens, ranges, cooktops, rangetops, refrigerators, dishwashers, & ventilation hoods.",
     image: "/fulgormilano/fulgor-milano-appliance-repair-service.webp",
-  }
+  },
+  {
+    id: 17,
+    title: "",
+    subtitle: "Hestan",
+    description:
+      "We repair Hestan ranges, rangetops, cooktops, ovens, ventilation hoods, refrigeration, & outdoor grills.",
+    image: "/hestan/hestan-appliance-repair-services.webp",
+  },
   
 ];
 const Services = () => {
