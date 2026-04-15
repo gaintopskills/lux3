@@ -61,7 +61,7 @@ const offers = [
     title: "",
     subtitle: "JennAir Repair",
     description:
-      "We repair JennAir ranges, ovens, cooktops, warming drawers, hoods, refrigerators, freezers, wine cellars, beverage centers, ice makers, dishwashers, & coffee machines",
+      "We repair JennAir ranges, ovens, cooktops, warming drawers, hoods, refrigerators, freezers, wine cellars, beverage centers, ice makers, dishwashers",
     image: "/jennair/jennair-appliance-repair.webp",
   },
   {
