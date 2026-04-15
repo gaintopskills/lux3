@@ -69,7 +69,7 @@ const offers = [
     title: "",
     subtitle: "Monogram Repair",
     description:
-      "We repair Monogram ranges, ovens, cooktops, range tops, warming drawers, hoods, refrigerators, freezers, wine coolers, beverage centers, ice makers, dishwashers, & coffee machines",
+      "We repair Monogram refrigerators, freezers, wine reserves, ovens, wall ovens, ranges, rangetops, cooktops, ventilation hoods, & dishwashers.",
     image: "/monogram/monogram-appliance-repair.webp",
   },
   {
