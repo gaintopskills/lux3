@@ -149,7 +149,7 @@ const offers = [
     title: "",
     subtitle: "Gaggenau",
     description:
-      "We repair Gaggenau ovens, combi-steam ovens, steam ovens, cooktops, rangetops, ventilation systems, refrigerators, freezers, wine climate cabinets, dishwashers, warming drawers.",
+      "We repair Gaggenau ovens, cooktops, rangetops, ventilation systems, refrigerators, freezers, wine climate cabinets, dishwashers, warming drawers.",
     image: "/gaggenau/gaggenau-appliance-repair-services.webp",
   }
   
