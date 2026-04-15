@@ -77,7 +77,7 @@ const offers = [
     title: "",
     subtitle: "Dacor Repair",
     description:
-      "We repair Dacor ranges, ovens, cooktops, range tops, warming drawers, hoods, refrigerators, freezers, wine coolers, beverage centers, ice makers, dishwashers, & coffee machines",
+      "We repair Dacor refrigerators, freezers, wine preservation systems, wall ovens, ranges, rangetops, cooktops, ventilation hoods, dishwashers, & warming drawers.",
     image: "/dacor/dacor-appliance-repair.webp",
   },
   {
