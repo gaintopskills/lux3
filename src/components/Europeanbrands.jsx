@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './EuropeanLuxuryLanding.css';
 
 const EuropeanLuxuryLanding = () => {
+  const [offsetY, setOffsetY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setOffsetY(window.scrollY * 0.28);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const brands = [
     'La Cornue',
     'Lacanche',
@@ -32,7 +46,14 @@ const EuropeanLuxuryLanding = () => {
   return (
     <section className="european-luxury-landing">
       <div className="european-luxury-hero">
-        <div className="european-luxury-overlay"></div>
+        <div
+          className="european-luxury-parallax-bg"
+          style={{
+            transform: `translate3d(0, ${offsetY}px, 0) scale(1.08)`,
+          }}
+        />
+
+        <div className="european-luxury-overlay" />
 
         <div className="european-luxury-inner">
           <div className="european-luxury-copy">
@@ -45,12 +66,12 @@ const EuropeanLuxuryLanding = () => {
             </div>
 
             <p className="european-luxury-subtext">
-              Service for La Cornue, Lacanche, Officine Gullo, Bertazzoni,
-              Fulgor Milano, ILVE &amp; Gaggenau
+              Expert service for La Cornue, Lacanche, Officine Gullo,
+              Bertazzoni, Fulgor Milano, ILVE &amp; Gaggenau
             </p>
 
             <div className="european-luxury-hero-actions mobile-only">
-              <a href="#request-service" className="hero-btn hero-btn-primary">
+              <a href="#mobile-request-service" className="hero-btn hero-btn-primary">
                 Request Service
               </a>
 
@@ -62,6 +83,7 @@ const EuropeanLuxuryLanding = () => {
 
           <div className="european-luxury-form-card desktop-form" id="request-service">
             <h2>Request Service Now</h2>
+
             <p className="form-intro">
               Get Fast Response - We Will Contact You Shortly
             </p>
@@ -90,7 +112,7 @@ const EuropeanLuxuryLanding = () => {
                 name="issue"
                 rows="4"
                 placeholder="Describe the Issue"
-              ></textarea>
+              />
 
               <button type="submit">Submit Request</button>
             </form>
@@ -127,7 +149,7 @@ const EuropeanLuxuryLanding = () => {
                 name="issue"
                 rows="4"
                 placeholder="Describe the Issue"
-              ></textarea>
+              />
 
               <button type="submit">Submit Request</button>
             </form>
@@ -183,6 +205,7 @@ const EuropeanLuxuryLanding = () => {
         <a href="#mobile-request-service" className="sticky-btn sticky-btn-primary">
           Request Service
         </a>
+
         <a href="tel:+13235555555" className="sticky-btn sticky-btn-secondary">
           Call Now
         </a>
