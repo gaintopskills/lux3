@@ -6,7 +6,7 @@ const EuropeanLuxuryLanding = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setOffsetY(window.scrollY * 0.28);
+      setOffsetY(window.scrollY * 0.45);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -49,7 +49,7 @@ const EuropeanLuxuryLanding = () => {
         <div
           className="european-luxury-parallax-bg"
           style={{
-            transform: `translate3d(0, ${offsetY}px, 0) scale(1.08)`,
+            transform: `translate3d(0, ${offsetY}px, 0) scale(1.14)`,
           }}
         />
 
