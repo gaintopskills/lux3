@@ -440,11 +440,9 @@
     .desktop-form {
       display: block;
     }
-  
     .mobile-form-wrap {
       display: none;
     }
-  
     .mobile-only {
       display: none;
     }
