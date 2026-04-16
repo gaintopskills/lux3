@@ -57,7 +57,7 @@ const EuropeanLuxuryLanding = () => {
 
         <div className="european-luxury-inner">
           <div className="european-luxury-copy">
-            <h1>European Luxury Appliance Repair in Los Angeles</h1>
+            <h1>European Luxury Appliance Repair</h1>
 
             <div className="european-luxury-divider">
               <span></span>
