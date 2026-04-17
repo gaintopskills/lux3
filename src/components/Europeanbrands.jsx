@@ -69,7 +69,7 @@ const EuropeanLuxuryLanding = () => {
 
   const features = [
     {
-      icon: '🔧',
+        icon: '/icons/tools.png',
       title: 'Specialized Technicians',
       text: 'Experienced with European luxury appliances',
     },
