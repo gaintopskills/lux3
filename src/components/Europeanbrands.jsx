@@ -31,7 +31,7 @@ const EuropeanLuxuryLanding = () => {
     },
     {
       name: 'Officine Gullo',
-      image: '/logos/officine-gullo.jpg',
+      image: '/logo/fulgor-milano-logo.jpg',
       width: 200,
       height: 70,
     },
