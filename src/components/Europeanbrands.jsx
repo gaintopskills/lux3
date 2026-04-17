@@ -17,12 +17,48 @@ const EuropeanLuxuryLanding = () => {
   }, []);
 
   const brands = [
-    'La Cornue',
-    'Lacanche',
-    'Officine Gullo',
-    'Bertazzoni',
-    'Fulgor Milano',
-    'ILVE',
+    {
+      name: 'La Cornue',
+      image: '/logos/la-cornue.jpg',
+      width: 180,
+      height: 70,
+    },
+    {
+      name: 'Lacanche',
+      image: '/logos/lacanche.jpg',
+      width: 180,
+      height: 70,
+    },
+    {
+      name: 'Officine Gullo',
+      image: '/logos/officine-gullo.jpg',
+      width: 200,
+      height: 70,
+    },
+    {
+      name: 'Bertazzoni',
+      image: '/logos/bertazzoni.jpg',
+      width: 180,
+      height: 70,
+    },
+    {
+      name: 'Fulgor Milano',
+      image: '/logos/fulgor-milano.jpg',
+      width: 190,
+      height: 70,
+    },
+    {
+      name: 'ILVE',
+      image: '/logos/ilve.jpg',
+      width: 150,
+      height: 70,
+    },
+    {
+      name: 'Gaggenau',
+      image: '/logos/gaggenau.jpg',
+      width: 220,
+      height: 70,
+    },
   ];
 
   const features = [
