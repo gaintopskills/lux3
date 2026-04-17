@@ -37,7 +37,7 @@ const EuropeanLuxuryLanding = () => {
     },
     {
       name: 'Bertazzoni',
-      image: '/logos/bertazzoni.jpg',
+      image: '/logo/gaggenau-logo.jpg',
       width: 180,
       height: 70,
     },
