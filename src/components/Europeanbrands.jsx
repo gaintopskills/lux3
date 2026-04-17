@@ -43,7 +43,7 @@ const EuropeanLuxuryLanding = () => {
     },
     {
       name: 'Fulgor Milano',
-      image: '/logos/fulgor-milano.jpg',
+      image: '/logo/la-cornue-logo.jpg',
       width: 190,
       height: 70,
     },
