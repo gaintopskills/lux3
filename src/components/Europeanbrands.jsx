@@ -25,7 +25,7 @@ const EuropeanLuxuryLanding = () => {
     },
     {
       name: 'Lacanche',
-      image: '/logos/lacanche.jpg',
+      image: '/logo/bertazzoni-logo.jpg',
       width: 180,
       height: 70,
     },
