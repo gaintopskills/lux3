@@ -49,7 +49,7 @@ const EuropeanLuxuryLanding = () => {
     },
     {
       name: 'ILVE',
-      image: '/logos/ilve.jpg',
+      image: '/logo/lacanche-logo.jpg',
       width: 150,
       height: 70,
     },
