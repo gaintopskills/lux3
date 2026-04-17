@@ -182,12 +182,18 @@ const EuropeanLuxuryLanding = () => {
           </div>
 
           <div className="brands-grid">
-            {brands.map((brand) => (
-              <div className="brand-item" key={brand}>
-                {brand}
-              </div>
-            ))}
-          </div>
+  {brands.map((brand) => (
+    <div className="brand-item" key={brand.name}>
+      <img
+        src={brand.image}
+        alt={brand.name}
+        width={brand.width}
+        height={brand.height}
+        loading="lazy"
+      />
+    </div>
+  ))}
+</div>
         </div>
 
         <div className="luxury-features-section">
