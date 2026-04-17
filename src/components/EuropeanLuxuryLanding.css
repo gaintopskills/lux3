@@ -12,15 +12,17 @@
   
   .european-luxury-parallax-bg {
     position: absolute;
-    inset: -120px 0 -120px 0;
+    inset: -80px 0 -80px 0;
     background-image: url('/bg1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transform: translateY(0) scale(1.08);
+    transform-origin: center center;
     will-change: transform;
-    transform: translate3d(0, 0, 0) scale(1.08);
-    z-index: 0;
+    backface-visibility: hidden;
     pointer-events: none;
+    z-index: 0;
   }
   
   .european-luxury-overlay {
@@ -300,7 +302,7 @@
   }
   
   .brand-item {
-    background: ;
+    background: #ffffff;
     border: 1px solid #e5ddd3;
     padding: 16px 10px;
     min-height: 68px;
@@ -335,6 +337,13 @@
   .feature-icon {
     font-size: 2rem;
     margin-bottom: 12px;
+  }
+  
+  .feature-icon img {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
   }
   
   .feature-card h3 {
@@ -401,7 +410,9 @@
     }
   
     .european-luxury-parallax-bg {
-      inset: -40px 0 -40px 0;
+      inset: -30px 0 -30px 0;
+      transform: none !important;
+      will-change: auto;
     }
   }
   
@@ -442,9 +453,11 @@
     .desktop-form {
       display: block;
     }
+  
     .mobile-form-wrap {
       display: none;
     }
+  
     .mobile-only {
       display: none;
     }
@@ -461,6 +474,7 @@
     .sticky-mobile-cta {
       display: none;
     }
+  
     .european-luxury-content {
       padding: 0 32px 80px;
     }

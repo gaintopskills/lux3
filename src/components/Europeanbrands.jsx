@@ -1,14 +1,30 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './EuropeanLuxuryLanding.css';
 
 const EuropeanLuxuryLanding = () => {
-  const [offsetY, setOffsetY] = useState(0);
+  const bgRef = useRef(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setOffsetY(window.scrollY * 0.45);
+    let ticking = false;
+
+    const updateParallax = () => {
+      const y = window.scrollY * 0.25;
+
+      if (bgRef.current) {
+        bgRef.current.style.transform = `translateY(${y}px) scale(1.08)`;
+      }
+
+      ticking = false;
     };
 
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateParallax);
+        ticking = true;
+      }
+    };
+
+    updateParallax();
     window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
@@ -60,16 +76,16 @@ const EuropeanLuxuryLanding = () => {
       height: 70,
     },
     {
-        name: 'Gaggenau',
-        image: '/logo/ilve-logo.png',
-        width: 220,
-        height: 70,
-      },
+      name: 'Gaggenau Alt',
+      image: '/logo/ilve-logo.png',
+      width: 220,
+      height: 70,
+    },
   ];
 
   const features = [
     {
-        icon: '/icons/tools.png',
+      icon: '/icons/tools.png',
       title: 'Specialized Technicians',
       text: 'Experienced with European luxury appliances',
     },
@@ -89,10 +105,8 @@ const EuropeanLuxuryLanding = () => {
     <section className="european-luxury-landing">
       <div className="european-luxury-hero">
         <div
+          ref={bgRef}
           className="european-luxury-parallax-bg"
-          style={{
-            transform: `translate3d(0, ${offsetY}px, 0) scale(1.14)`,
-          }}
         />
 
         <div className="european-luxury-overlay" />
@@ -224,24 +238,28 @@ const EuropeanLuxuryLanding = () => {
           </div>
 
           <div className="brands-grid">
-  {brands.map((brand) => (
-    <div className="brand-item" key={brand.name}>
-      <img
-        src={brand.image}
-        alt={brand.name}
-        width={brand.width}
-        height={brand.height}
-        loading="lazy"
-      />
-    </div>
-  ))}
-</div>
+            {brands.map((brand) => (
+              <div className="brand-item" key={brand.name}>
+                <img
+                  src={brand.image}
+                  alt={brand.name}
+                  width={brand.width}
+                  height={brand.height}
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="luxury-features-section">
           {features.map((feature) => (
             <div className="feature-card" key={feature.title}>
-              <div className="feature-icon">{feature.icon}</div>
+              <div className="feature-icon">
+                {typeof feature.icon === 'string' && feature.icon.startsWith('/')
+                  ? <img src={feature.icon} alt="" width="32" height="32" />
+                  : feature.icon}
+              </div>
               <h3>{feature.title}</h3>
               <p>{feature.text}</p>
             </div>
