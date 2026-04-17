@@ -8,7 +8,7 @@ const EuropeanLuxuryLanding = () => {
     let ticking = false;
 
     const updateParallax = () => {
-      const y = window.scrollY * 0.25;
+      const y = window.scrollY * 0.5;
 
       if (bgRef.current) {
         bgRef.current.style.transform = `translateY(${y}px) scale(1.08)`;
