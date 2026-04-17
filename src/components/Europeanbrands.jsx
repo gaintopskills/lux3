@@ -61,7 +61,7 @@ const EuropeanLuxuryLanding = () => {
     },
     {
         name: 'Gaggenau',
-        image: '/logo/officine-gullo-logo.jpg',
+        image: '/logo/ilve-logo.jpg',
         width: 220,
         height: 70,
       },
