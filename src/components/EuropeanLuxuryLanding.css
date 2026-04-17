@@ -308,11 +308,13 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 1.05rem;
-    line-height: 1.3;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    color: #2d241d;
+  }
+  
+  .brand-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
   }
   
   .luxury-features-section {
