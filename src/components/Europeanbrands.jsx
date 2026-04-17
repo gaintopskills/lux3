@@ -19,7 +19,7 @@ const EuropeanLuxuryLanding = () => {
   const brands = [
     {
       name: 'La Cornue',
-      image: '/logos/la-cornue.jpg',
+      image: '/logos/aga-logo.jpg',
       width: 180,
       height: 70,
     },
