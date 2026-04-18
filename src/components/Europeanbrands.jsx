@@ -298,12 +298,7 @@ const EuropeanLuxuryLanding = () => {
               </div>
             </section>
 
-            <footer ref={footerRef}>
-              <div className="european-luxury-footer-overlay" />
-              <div className="european-luxury-footer-inner">
-                <h2>Luxury Service. Fast Response. Expert Care.</h2>
-              </div>
-            </footer>
+
           </div>
         </div>
       </div>
