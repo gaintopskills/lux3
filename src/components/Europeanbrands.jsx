@@ -54,115 +54,72 @@ const ServiceForm = ({
 };
 
 const EuropeanLuxuryLanding = () => {
+  const heroSectionRef = useRef(null);
+  const secondSectionRef = useRef(null);
   const heroBgRef = useRef(null);
   const secondBgRef = useRef(null);
-  const secondSectionRef = useRef(null);
 
   useEffect(() => {
     let rafId = 0;
-  
-    let currentHeroY = 0;
-    let targetHeroY = 0;
-  
-    let currentSecondY = 0;
-    let targetSecondY = 0;
-  
-    const heroEase = 0.06;
-    const secondEase = 0.08;
-  
-    const updateTargets = () => {
-      const scrollY = window.scrollY;
-  
-      targetHeroY = scrollY * 0.1;
-  
-      if (secondSectionRef.current) {
-        const rect = secondSectionRef.current.getBoundingClientRect();
-        const localScroll = Math.max(0, window.innerHeight - rect.top);
-        targetSecondY = localScroll * 0.12;
+    let latestScrollY = window.pageYOffset || document.documentElement.scrollTop;
+    let ticking = false;
+
+    const updateParallax = () => {
+      latestScrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (heroSectionRef.current && heroBgRef.current) {
+        const offsetTop = heroSectionRef.current.offsetTop;
+        const speed = 5;
+        const yPos = -((latestScrollY - offsetTop) / speed);
+        heroBgRef.current.style.backgroundPosition = `50% ${yPos}px`;
+      }
+
+      if (secondSectionRef.current && secondBgRef.current) {
+        const offsetTop = secondSectionRef.current.offsetTop;
+        const speed = 7;
+        const yPos = -((latestScrollY - offsetTop) / speed);
+        secondBgRef.current.style.backgroundPosition = `50% ${yPos}px`;
+      }
+
+      ticking = false;
+    };
+
+    const requestTick = () => {
+      if (!ticking) {
+        rafId = window.requestAnimationFrame(updateParallax);
+        ticking = true;
       }
     };
-  
-    const animate = () => {
-      currentHeroY += (targetHeroY - currentHeroY) * heroEase;
-      currentSecondY += (targetSecondY - currentSecondY) * secondEase;
-  
-      if (heroBgRef.current) {
-        heroBgRef.current.style.transform = `translate3d(0, -${currentHeroY}px, 0) scale(1.035)`;
-      }
-  
-      if (secondBgRef.current) {
-        secondBgRef.current.style.transform = `translate3d(0, -${currentSecondY}px, 0) scale(1.02)`;
-      }
-  
-      rafId = window.requestAnimationFrame(animate);
-    };
-  
+
     const handleScroll = () => {
-      updateTargets();
+      requestTick();
     };
-  
-    updateTargets();
-    animate();
-  
+
+    const handleResize = () => {
+      requestTick();
+    };
+
+    requestTick();
+
     window.addEventListener('scroll', handleScroll, { passive: true });
-    window.addEventListener('resize', handleScroll);
-  
+    window.addEventListener('resize', handleResize);
+
     return () => {
       window.cancelAnimationFrame(rafId);
       window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleScroll);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
   const brands = [
-    {
-      name: 'La Cornue',
-      image: '/logo/aga-logo.png',
-      width: 180,
-      height: 70,
-    },
-    {
-      name: 'Lacanche',
-      image: '/logo/bertazzoni-logo.png',
-      width: 180,
-      height: 70,
-    },
-    {
-      name: 'Officine Gullo',
-      image: '/logo/fulgor-milano-logo.png',
-      width: 200,
-      height: 70,
-    },
-    {
-      name: 'Bertazzoni',
-      image: '/logo/gaggenau-logo.png',
-      width: 180,
-      height: 70,
-    },
-    {
-      name: 'Fulgor Milano',
-      image: '/logo/la-cornue-logo.png',
-      width: 190,
-      height: 70,
-    },
-    {
-      name: 'ILVE',
-      image: '/logo/lacanche-logo.png',
-      width: 150,
-      height: 70,
-    },
-    {
-      name: 'Gaggenau',
-      image: '/logo/officine-gullo-logo.png',
-      width: 220,
-      height: 70,
-    },
-    {
-      name: 'Gaggenau Alt',
-      image: '/logo/ilve-logo.png',
-      width: 220,
-      height: 70,
-    },
+    { name: 'La Cornue', image: '/logo/aga-logo.png', width: 180, height: 70 },
+    { name: 'Lacanche', image: '/logo/bertazzoni-logo.png', width: 180, height: 70 },
+    { name: 'Officine Gullo', image: '/logo/fulgor-milano-logo.png', width: 200, height: 70 },
+    { name: 'Bertazzoni', image: '/logo/gaggenau-logo.png', width: 180, height: 70 },
+    { name: 'Fulgor Milano', image: '/logo/la-cornue-logo.png', width: 190, height: 70 },
+    { name: 'ILVE', image: '/logo/lacanche-logo.png', width: 150, height: 70 },
+    { name: 'Gaggenau', image: '/logo/officine-gullo-logo.png', width: 220, height: 70 },
+    { name: 'Gaggenau Alt', image: '/logo/ilve-logo.png', width: 220, height: 70 },
   ];
 
   const features = [
@@ -194,10 +151,13 @@ const EuropeanLuxuryLanding = () => {
         />
       </aside>
 
-      <section className="european-luxury-hero">
+      <section
+        ref={heroSectionRef}
+        className="european-luxury-hero"
+      >
         <div
           ref={heroBgRef}
-          className="european-luxury-parallax-bg european-luxury-parallax-bg--hero"
+          className="european-luxury-bg european-luxury-bg--hero"
         />
 
         <div className="european-luxury-overlay european-luxury-overlay--hero" />
@@ -219,17 +179,11 @@ const EuropeanLuxuryLanding = () => {
               </p>
 
               <div className="european-luxury-hero-actions mobile-only">
-                <a
-                  href="#mobile-request-service"
-                  className="hero-btn hero-btn-primary"
-                >
+                <a href="#mobile-request-service" className="hero-btn hero-btn-primary">
                   Request Service
                 </a>
 
-                <a
-                  href="tel:+13235555555"
-                  className="hero-btn hero-btn-secondary"
-                >
+                <a href="tel:+13235555555" className="hero-btn hero-btn-secondary">
                   Call Now
                 </a>
               </div>
@@ -246,17 +200,14 @@ const EuropeanLuxuryLanding = () => {
       >
         <div
           ref={secondBgRef}
-          className="european-luxury-parallax-bg european-luxury-parallax-bg--second"
+          className="european-luxury-bg european-luxury-bg--second"
         />
 
         <div className="european-luxury-overlay european-luxury-overlay--second" />
 
         <div className="european-luxury-shell">
           <div className="european-luxury-main-column">
-            <div
-              className="mobile-form-wrap"
-              id="mobile-request-service"
-            >
+            <div className="mobile-form-wrap" id="mobile-request-service">
               <ServiceForm
                 className="mobile-form"
                 showIntro={false}
@@ -289,10 +240,7 @@ const EuropeanLuxuryLanding = () => {
 
               <div className="brands-grid">
                 {brands.map((brand, index) => (
-                  <div
-                    className="brand-item"
-                    key={`${brand.name}-${index}`}
-                  >
+                  <div className="brand-item" key={`${brand.name}-${index}`}>
                     <img
                       src={brand.image}
                       alt={brand.name}
@@ -307,20 +255,10 @@ const EuropeanLuxuryLanding = () => {
 
             <div className="luxury-features-section">
               {features.map((feature) => (
-                <div
-                  className="feature-card"
-                  key={feature.title}
-                >
+                <div className="feature-card" key={feature.title}>
                   <div className="feature-icon">
                     {typeof feature.icon === 'string' && feature.icon.startsWith('/')
-                      ? (
-                        <img
-                          src={feature.icon}
-                          alt=""
-                          width="32"
-                          height="32"
-                        />
-                      )
+                      ? <img src={feature.icon} alt="" width="32" height="32" />
                       : feature.icon}
                   </div>
 
@@ -336,17 +274,11 @@ const EuropeanLuxuryLanding = () => {
       </section>
 
       <div className="sticky-mobile-cta">
-        <a
-          href="#mobile-request-service"
-          className="sticky-btn sticky-btn-primary"
-        >
+        <a href="#mobile-request-service" className="sticky-btn sticky-btn-primary">
           Request Service
         </a>
 
-        <a
-          href="tel:+13235555555"
-          className="sticky-btn sticky-btn-secondary"
-        >
+        <a href="tel:+13235555555" className="sticky-btn sticky-btn-secondary">
           Call Now
         </a>
       </div>
