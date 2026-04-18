@@ -65,16 +65,17 @@ const EuropeanLuxuryLanding = () => {
       const scrollY = window.scrollY;
 
       if (heroBgRef.current) {
-        const heroY = scrollY * 0.58;
-        heroBgRef.current.style.transform = `translate3d(0, ${heroY}px, 0) scale(1.14)`;
+        const heroY = scrollY * 0.68;
+        heroBgRef.current.style.transform = `translate3d(0, ${heroY}px, 0) scale(1.18)`;
       }
 
       if (secondBgRef.current && secondSectionRef.current) {
         const rect = secondSectionRef.current.getBoundingClientRect();
-        const localScroll = Math.max(0, -rect.top);
-        const secondY = localScroll * 0.34;
+        const sectionProgress = window.innerHeight - rect.top;
+        const localScroll = Math.max(0, sectionProgress);
+        const secondY = localScroll * 0.42;
 
-        secondBgRef.current.style.transform = `translate3d(0, ${secondY}px, 0) scale(1.14)`;
+        secondBgRef.current.style.transform = `translate3d(0, ${secondY}px, 0) scale(1.18)`;
       }
 
       ticking = false;
@@ -166,153 +167,155 @@ const EuropeanLuxuryLanding = () => {
 
   return (
     <section className="european-luxury-landing">
-      <div className="european-luxury-page">
-        <main className="european-luxury-main">
-          <section className="european-luxury-hero european-luxury-fullbleed">
-            <div
-              ref={heroBgRef}
-              className="european-luxury-parallax-bg european-luxury-parallax-bg--hero"
-            />
+      <aside className="european-luxury-fixed-sidebar">
+        <ServiceForm
+          className="desktop-form"
+          showIntro={true}
+          showResponseNote={false}
+          id="request-service"
+        />
+      </aside>
 
-            <div className="european-luxury-overlay european-luxury-overlay--hero" />
+      <section className="european-luxury-hero">
+        <div
+          ref={heroBgRef}
+          className="european-luxury-parallax-bg european-luxury-parallax-bg--hero"
+        />
 
-            <div className="european-luxury-hero-shell">
-              <div className="european-luxury-copy">
-                <h1>European Luxury Appliance Repair</h1>
+        <div className="european-luxury-overlay european-luxury-overlay--hero" />
 
-                <div className="european-luxury-divider">
-                  <span></span>
-                  <span className="divider-mark">✦</span>
-                  <span></span>
-                </div>
+        <div className="european-luxury-shell">
+          <div className="european-luxury-main-column">
+            <div className="european-luxury-copy">
+              <h1>European Luxury Appliance Repair</h1>
 
-                <p className="european-luxury-subtext">
-                  Expert service for La Cornue, Lacanche, Officine Gullo,
-                  Bertazzoni, Fulgor Milano, ILVE &amp; Gaggenau
-                </p>
+              <div className="european-luxury-divider">
+                <span></span>
+                <span className="divider-mark">✦</span>
+                <span></span>
+              </div>
 
-                <div className="european-luxury-hero-actions mobile-only">
-                  <a
-                    href="#mobile-request-service"
-                    className="hero-btn hero-btn-primary"
-                  >
-                    Request Service
-                  </a>
+              <p className="european-luxury-subtext">
+                Expert service for La Cornue, Lacanche, Officine Gullo,
+                Bertazzoni, Fulgor Milano, ILVE &amp; Gaggenau
+              </p>
 
-                  <a
-                    href="tel:+13235555555"
-                    className="hero-btn hero-btn-secondary"
-                  >
-                    Call Now
-                  </a>
-                </div>
+              <div className="european-luxury-hero-actions mobile-only">
+                <a
+                  href="#mobile-request-service"
+                  className="hero-btn hero-btn-primary"
+                >
+                  Request Service
+                </a>
+
+                <a
+                  href="tel:+13235555555"
+                  className="hero-btn hero-btn-secondary"
+                >
+                  Call Now
+                </a>
               </div>
             </div>
-          </section>
+          </div>
 
-          <section
-            ref={secondSectionRef}
-            className="european-luxury-content-section european-luxury-fullbleed"
-          >
+          <div className="desktop-sidebar-spacer" aria-hidden="true" />
+        </div>
+      </section>
+
+      <section
+        ref={secondSectionRef}
+        className="european-luxury-content-section"
+      >
+        <div
+          ref={secondBgRef}
+          className="european-luxury-parallax-bg european-luxury-parallax-bg--second"
+        />
+
+        <div className="european-luxury-overlay european-luxury-overlay--second" />
+
+        <div className="european-luxury-shell">
+          <div className="european-luxury-main-column">
             <div
-              ref={secondBgRef}
-              className="european-luxury-parallax-bg european-luxury-parallax-bg--second"
-            />
+              className="mobile-form-wrap"
+              id="mobile-request-service"
+            >
+              <ServiceForm
+                className="mobile-form"
+                showIntro={false}
+                showResponseNote={true}
+              />
+            </div>
 
-            <div className="european-luxury-overlay european-luxury-overlay--second" />
+            <div className="luxury-info-section">
+              <h2>Specialized Repair for High-End European Appliances</h2>
 
-            <div className="european-luxury-content-shell">
-              <div
-                className="mobile-form-wrap"
-                id="mobile-request-service"
-              >
-                <ServiceForm
-                  className="mobile-form"
-                  showIntro={false}
-                  showResponseNote={true}
-                />
+              <p className="luxury-description">
+                We provide expert diagnostics and repair for premium brands like
+                <strong> La Cornue</strong>, <strong> Lacanche</strong>,
+                <strong> Officine Gullo</strong>, <strong> Bertazzoni</strong>,
+                <strong> Fulgor Milano</strong>, <strong> ILVE</strong>, and
+                <strong> Gaggenau</strong>.
+              </p>
+
+              <p className="luxury-service-areas">
+                Serving Brentwood, Beverly Hills, Malibu, and surrounding areas.
+              </p>
+            </div>
+
+            <div className="luxury-brands-section">
+              <div className="brands-heading-wrap">
+                <span className="brands-line"></span>
+                <h3>Specialized in European Brands</h3>
+                <span className="brands-line"></span>
               </div>
 
-              <div className="luxury-info-section">
-                <h2>Specialized Repair for High-End European Appliances</h2>
-
-                <p className="luxury-description">
-                  We provide expert diagnostics and repair for premium brands like
-                  <strong> La Cornue</strong>, <strong> Lacanche</strong>,
-                  <strong> Officine Gullo</strong>, <strong> Bertazzoni</strong>,
-                  <strong> Fulgor Milano</strong>, <strong> ILVE</strong>, and
-                  <strong> Gaggenau</strong>.
-                </p>
-
-                <p className="luxury-service-areas">
-                  Serving Brentwood, Beverly Hills, Malibu, and surrounding areas.
-                </p>
-              </div>
-
-              <div className="luxury-brands-section">
-                <div className="brands-heading-wrap">
-                  <span className="brands-line"></span>
-                  <h3>Specialized in European Brands</h3>
-                  <span className="brands-line"></span>
-                </div>
-
-                <div className="brands-grid">
-                  {brands.map((brand, index) => (
-                    <div
-                      className="brand-item"
-                      key={`${brand.name}-${index}`}
-                    >
-                      <img
-                        src={brand.image}
-                        alt={brand.name}
-                        width={brand.width}
-                        height={brand.height}
-                        loading="lazy"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="luxury-features-section">
-                {features.map((feature) => (
+              <div className="brands-grid">
+                {brands.map((brand, index) => (
                   <div
-                    className="feature-card"
-                    key={feature.title}
+                    className="brand-item"
+                    key={`${brand.name}-${index}`}
                   >
-                    <div className="feature-icon">
-                      {typeof feature.icon === 'string' && feature.icon.startsWith('/')
-                        ? (
-                          <img
-                            src={feature.icon}
-                            alt=""
-                            width="32"
-                            height="32"
-                          />
-                        )
-                        : feature.icon}
-                    </div>
-
-                    <h3>{feature.title}</h3>
-                    <p>{feature.text}</p>
+                    <img
+                      src={brand.image}
+                      alt={brand.name}
+                      width={brand.width}
+                      height={brand.height}
+                      loading="lazy"
+                    />
                   </div>
                 ))}
               </div>
             </div>
-          </section>
-        </main>
 
-        <aside className="european-luxury-sidebar">
-          <div className="sticky-form-wrap">
-            <ServiceForm
-              className="desktop-form sticky-form"
-              showIntro={true}
-              showResponseNote={false}
-              id="request-service"
-            />
+            <div className="luxury-features-section">
+              {features.map((feature) => (
+                <div
+                  className="feature-card"
+                  key={feature.title}
+                >
+                  <div className="feature-icon">
+                    {typeof feature.icon === 'string' && feature.icon.startsWith('/')
+                      ? (
+                        <img
+                          src={feature.icon}
+                          alt=""
+                          width="32"
+                          height="32"
+                        />
+                      )
+                      : feature.icon}
+                  </div>
+
+                  <h3>{feature.title}</h3>
+                  <p>{feature.text}</p>
+                </div>
+              ))}
+            </div>
           </div>
-        </aside>
-      </div>
+
+          <div className="desktop-sidebar-spacer" aria-hidden="true" />
+        </div>
+      </section>
 
       <div className="sticky-mobile-cta">
         <a
