@@ -2,6 +2,9 @@
 footer {
     padding: 4rem 1.5rem;
     font-family: 'Inter', 'Helvetica Neue', sans-serif;
+    position: fixed;
+  left: 0;
+  z-index: 0;
   }
   
   .footer-grid {
