@@ -63,7 +63,15 @@
 }
 
 .european-luxury-parallax-bg--second {
-  background-image: url('/bg.png');
+  background-image:
+    radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0) 30%),
+    radial-gradient(circle at 82% 18%, rgba(214, 185, 126, 0.18) 0%, rgba(214, 185, 126, 0) 34%),
+    radial-gradient(circle at 50% 78%, rgba(186, 150, 92, 0.12) 0%, rgba(186, 150, 92, 0) 38%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0) 32%),
+    linear-gradient(180deg, #f8f2e8 0%, #efe3d2 42%, #e4d2bb 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .european-luxury-overlay {
