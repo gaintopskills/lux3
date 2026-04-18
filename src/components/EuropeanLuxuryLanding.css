@@ -499,7 +499,7 @@
   }
   .sticky-form {
     position: fixed;
-    top: 20px;
+    top: 60px;
     right: 32px;
     width: 390px;
   }
