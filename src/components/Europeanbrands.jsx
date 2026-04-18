@@ -58,7 +58,6 @@ const EuropeanLuxuryLanding = () => {
   const scrollAnimateMainRef = useRef(null);
   const heroRef = useRef(null);
   const contentRef = useRef(null);
-  const footerRef = useRef(null);
   const wrapperRef = useRef(null);
 
   useEffect(() => {
@@ -68,16 +67,14 @@ const EuropeanLuxuryLanding = () => {
         !scrollAnimateMainRef.current ||
         !heroRef.current ||
         !contentRef.current ||
-        !footerRef.current ||
         !wrapperRef.current
       ) {
         return;
       }
 
       const windowHeight = window.innerHeight;
-      const footerHeight = footerRef.current.offsetHeight;
       const contentHeight = contentRef.current.offsetHeight;
-      const heightDocument = windowHeight + contentHeight + footerHeight - 20;
+      const heightDocument = windowHeight + contentHeight;
 
       scrollAnimateRef.current.style.height = `${heightDocument}px`;
       scrollAnimateMainRef.current.style.height = `${heightDocument}px`;
@@ -92,7 +89,6 @@ const EuropeanLuxuryLanding = () => {
       if (
         !scrollAnimateMainRef.current ||
         !heroRef.current ||
-        !footerRef.current ||
         !contentRef.current
       ) {
         return;
@@ -100,20 +96,13 @@ const EuropeanLuxuryLanding = () => {
 
       const scroll = window.scrollY;
       const windowHeight = window.innerHeight;
-      const footerHeight = footerRef.current.offsetHeight;
       const contentHeight = contentRef.current.offsetHeight;
-      const heightDocument = windowHeight + contentHeight + footerHeight - 20;
+      const heightDocument = windowHeight + contentHeight;
 
       scrollAnimateMainRef.current.style.top = `-${scroll}px`;
 
       const bgPosY = 50 - (scroll * 100) / heightDocument;
       heroRef.current.style.backgroundPosition = `50% ${bgPosY}%`;
-
-      if (scroll >= footerHeight) {
-        footerRef.current.style.bottom = '0px';
-      } else {
-        footerRef.current.style.bottom = `-${footerHeight}px`;
-      }
     };
 
     setLayout();
@@ -297,13 +286,6 @@ const EuropeanLuxuryLanding = () => {
                 <div className="desktop-sidebar-spacer" aria-hidden="true" />
               </div>
             </section>
-
-            <footer ref={footerRef}>
-              <div className="european-luxury-footer-overlay" />
-              <div className="european-luxury-footer-inner">
-                <h2>Luxury Service. Fast Response. Expert Care.</h2>
-              </div>
-            </footer>
           </div>
         </div>
       </div>
