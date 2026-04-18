@@ -46,11 +46,11 @@
 
 .european-luxury-parallax-bg {
   position: absolute;
-  inset: -280px 0 -280px 0;
+  inset: -120px 0 -120px 0;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  transform: translate3d(0, 0, 0) scale(1.18);
+  transform: translate3d(0, 0, 0) scale(1.06);
   transform-origin: center center;
   will-change: transform;
   backface-visibility: hidden;
@@ -67,8 +67,8 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  inset: -300px 0 -40px 0;
-  transform: translate3d(0, 0, 0) scale(1.03);
+  inset: -140px 0 -40px 0;
+  transform: translate3d(0, 0, 0) scale(1.02);
 }
 
 .european-luxury-overlay {
