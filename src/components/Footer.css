@@ -2,8 +2,8 @@
 footer {
     padding: 4rem 1.5rem;
     font-family: 'Inter', 'Helvetica Neue', sans-serif;
-    position: fixed;
   left: 0;
+  position: relative;
   z-index: 30;
   }
   
