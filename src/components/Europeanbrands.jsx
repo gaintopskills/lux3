@@ -75,7 +75,7 @@ const EuropeanLuxuryLanding = () => {
         const localScroll = Math.max(0, sectionProgress);
         const secondY = localScroll * 0.42;
 
-        secondBgRef.current.style.transform = `translate3d(0, ${secondY}px, 0) scale(1.18)`;
+        secondBgRef.current.style.transform = `translate3d(0, ${secondY}px, 0) scale(1.03)`;
       }
 
       ticking = false;
