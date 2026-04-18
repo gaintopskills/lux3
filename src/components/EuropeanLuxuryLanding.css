@@ -62,22 +62,14 @@
   background-image: url('/bg1.png');
 }
 
-.european-luxury-parallax-bg--second {
-  background-image:
-    radial-gradient(circle at 20% 18%, rgba(255, 246, 229, 0.72) 0%, rgba(255, 246, 229, 0) 26%),
-    radial-gradient(circle at 84% 16%, rgba(176, 134, 78, 0.24) 0%, rgba(176, 134, 78, 0) 30%),
-    radial-gradient(circle at 50% 84%, rgba(102, 68, 38, 0.14) 0%, rgba(102, 68, 38, 0) 35%),
-    repeating-linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.014) 0px,
-      rgba(255, 255, 255, 0.014) 2px,
-      rgba(60, 38, 18, 0.016) 3px,
-      rgba(60, 38, 18, 0.016) 4px
-    ),
-    linear-gradient(180deg, #efe2cc 0%, #dfc5a0 46%, #c8a073 100%);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.european-luxury-overlay--second {
+  background: linear-gradient(
+    to bottom,
+    rgba(244, 234, 217, 0.10) 0%,
+    rgba(244, 234, 217, 0.34) 16%,
+    rgba(244, 234, 217, 0.68) 38%,
+    rgba(244, 234, 217, 0.90) 100%
+  );
 }
 
 .european-luxury-overlay {
