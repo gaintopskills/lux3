@@ -5,6 +5,7 @@ footer {
   left: 0;
   position: relative;
   z-index: 2;
+  background-color: black;
   }
   
   .footer-grid {
