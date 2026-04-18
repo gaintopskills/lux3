@@ -516,7 +516,7 @@
     display: block;
     position: fixed;
     top: 100px;
-    right: 12px;
+    right: max(28px, calc((100vw - 1320px) / 2 + 28px));
     width: 390px;
     z-index: 20;
     max-height: calc(100vh - 56px);
