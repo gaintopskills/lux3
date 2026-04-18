@@ -64,7 +64,11 @@
 
 .european-luxury-parallax-bg--second {
   background-image: url('/bg2.png');
-  width: 100%;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  inset: 0;
+  transform: translate3d(0, 0, 0) scale(1);
 }
 
 .european-luxury-overlay {
