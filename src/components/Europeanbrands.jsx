@@ -60,54 +60,33 @@ const EuropeanLuxuryLanding = () => {
   const secondBgRef = useRef(null);
 
   useEffect(() => {
-    let rafId = 0;
-    let latestScrollY = window.pageYOffset || document.documentElement.scrollTop;
-    let ticking = false;
-
     const updateParallax = () => {
-      latestScrollY = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
 
       if (heroSectionRef.current && heroBgRef.current) {
-        const offsetTop = heroSectionRef.current.offsetTop;
-        const speed = 5;
-        const yPos = -((latestScrollY - offsetTop) / speed);
-        heroBgRef.current.style.backgroundPosition = `50% ${yPos}px`;
+        const heroOffset = heroSectionRef.current.offsetTop;
+        const heroSpeed = 5;
+        const heroY = -((scrollTop - heroOffset) / heroSpeed);
+        heroBgRef.current.style.backgroundPosition = `50% ${heroY}px`;
       }
 
       if (secondSectionRef.current && secondBgRef.current) {
-        const offsetTop = secondSectionRef.current.offsetTop;
-        const speed = 7;
-        const yPos = -((latestScrollY - offsetTop) / speed);
-        secondBgRef.current.style.backgroundPosition = `50% ${yPos}px`;
-      }
-
-      ticking = false;
-    };
-
-    const requestTick = () => {
-      if (!ticking) {
-        rafId = window.requestAnimationFrame(updateParallax);
-        ticking = true;
+        const secondOffset = secondSectionRef.current.offsetTop;
+        const secondSpeed = 7;
+        const secondY = -((scrollTop - secondOffset) / secondSpeed);
+        secondBgRef.current.style.backgroundPosition = `50% ${secondY}px`;
       }
     };
 
-    const handleScroll = () => {
-      requestTick();
-    };
+    window.addEventListener('scroll', updateParallax, { passive: true });
+    window.addEventListener('resize', updateParallax);
 
-    const handleResize = () => {
-      requestTick();
-    };
-
-    requestTick();
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    window.addEventListener('resize', handleResize);
+    updateParallax();
 
     return () => {
-      window.cancelAnimationFrame(rafId);
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', updateParallax);
+      window.removeEventListener('resize', updateParallax);
     };
   }, []);
 
@@ -179,11 +158,17 @@ const EuropeanLuxuryLanding = () => {
               </p>
 
               <div className="european-luxury-hero-actions mobile-only">
-                <a href="#mobile-request-service" className="hero-btn hero-btn-primary">
+                <a
+                  href="#mobile-request-service"
+                  className="hero-btn hero-btn-primary"
+                >
                   Request Service
                 </a>
 
-                <a href="tel:+13235555555" className="hero-btn hero-btn-secondary">
+                <a
+                  href="tel:+13235555555"
+                  className="hero-btn hero-btn-secondary"
+                >
                   Call Now
                 </a>
               </div>
@@ -207,7 +192,10 @@ const EuropeanLuxuryLanding = () => {
 
         <div className="european-luxury-shell">
           <div className="european-luxury-main-column">
-            <div className="mobile-form-wrap" id="mobile-request-service">
+            <div
+              className="mobile-form-wrap"
+              id="mobile-request-service"
+            >
               <ServiceForm
                 className="mobile-form"
                 showIntro={false}
@@ -240,7 +228,10 @@ const EuropeanLuxuryLanding = () => {
 
               <div className="brands-grid">
                 {brands.map((brand, index) => (
-                  <div className="brand-item" key={`${brand.name}-${index}`}>
+                  <div
+                    className="brand-item"
+                    key={`${brand.name}-${index}`}
+                  >
                     <img
                       src={brand.image}
                       alt={brand.name}
@@ -255,10 +246,20 @@ const EuropeanLuxuryLanding = () => {
 
             <div className="luxury-features-section">
               {features.map((feature) => (
-                <div className="feature-card" key={feature.title}>
+                <div
+                  className="feature-card"
+                  key={feature.title}
+                >
                   <div className="feature-icon">
                     {typeof feature.icon === 'string' && feature.icon.startsWith('/')
-                      ? <img src={feature.icon} alt="" width="32" height="32" />
+                      ? (
+                        <img
+                          src={feature.icon}
+                          alt=""
+                          width="32"
+                          height="32"
+                        />
+                      )
                       : feature.icon}
                   </div>
 
@@ -274,11 +275,17 @@ const EuropeanLuxuryLanding = () => {
       </section>
 
       <div className="sticky-mobile-cta">
-        <a href="#mobile-request-service" className="sticky-btn sticky-btn-primary">
+        <a
+          href="#mobile-request-service"
+          className="sticky-btn sticky-btn-primary"
+        >
           Request Service
         </a>
 
-        <a href="tel:+13235555555" className="sticky-btn sticky-btn-secondary">
+        <a
+          href="tel:+13235555555"
+          className="sticky-btn sticky-btn-secondary"
+        >
           Call Now
         </a>
       </div>
