@@ -67,7 +67,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  inset: -180px 0 -40px 0;
+  inset: -300px 0 -40px 0;
   transform: translate3d(0, 0, 0) scale(1.03);
 }
 
