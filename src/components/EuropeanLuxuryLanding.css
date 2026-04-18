@@ -64,11 +64,17 @@
 
 .european-luxury-parallax-bg--second {
   background-image:
-    radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0) 30%),
-    radial-gradient(circle at 82% 18%, rgba(214, 185, 126, 0.18) 0%, rgba(214, 185, 126, 0) 34%),
-    radial-gradient(circle at 50% 78%, rgba(186, 150, 92, 0.12) 0%, rgba(186, 150, 92, 0) 38%),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0) 32%),
-    linear-gradient(180deg, #f8f2e8 0%, #efe3d2 42%, #e4d2bb 100%);
+    radial-gradient(circle at 16% 18%, rgba(255, 255, 255, 0.76) 0%, rgba(255, 255, 255, 0) 28%),
+    radial-gradient(circle at 84% 16%, rgba(212, 180, 120, 0.20) 0%, rgba(212, 180, 120, 0) 32%),
+    radial-gradient(circle at 50% 84%, rgba(163, 129, 76, 0.13) 0%, rgba(163, 129, 76, 0) 36%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.018) 0px,
+      rgba(255, 255, 255, 0.018) 2px,
+      rgba(0, 0, 0, 0.012) 3px,
+      rgba(0, 0, 0, 0.012) 4px
+    ),
+    linear-gradient(180deg, #fbf6ee 0%, #f1e5d5 45%, #e6d4bc 100%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
