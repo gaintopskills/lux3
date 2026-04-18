@@ -73,7 +73,7 @@ const EuropeanLuxuryLanding = () => {
     const updateTargets = () => {
       const scrollY = window.scrollY;
   
-      targetHeroY = scrollY * 0.08;
+      targetHeroY = scrollY * 0.1;
   
       if (secondSectionRef.current) {
         const rect = secondSectionRef.current.getBoundingClientRect();
