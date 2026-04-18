@@ -36,6 +36,7 @@
 .european-luxury-hero {
   min-height: 980px;
   z-index: 1;
+  transform: translateZ(0);
 }
 
 .european-luxury-content-section {
@@ -46,11 +47,9 @@
 
 .european-luxury-parallax-bg {
   position: absolute;
-  inset: -120px 0 -120px 0;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  transform: translate3d(0, 0, 0) scale(1.06);
   transform-origin: center center;
   will-change: transform;
   backface-visibility: hidden;
@@ -59,15 +58,14 @@
 }
 
 .european-luxury-parallax-bg--hero {
+  inset: -90px 0 -90px 0;
   background-image: url('/bg1.png');
+  transform: translate3d(0, 0, 0) scale(1.035);
 }
 
 .european-luxury-parallax-bg--second {
-  background-image: url('/bg2.png');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
   inset: -140px 0 -40px 0;
+  background-image: url('/bg2.png');
   transform: translate3d(0, 0, 0) scale(1.02);
 }
 
@@ -484,10 +482,18 @@
     padding-bottom: 110px;
   }
 
-  .european-luxury-parallax-bg {
-    inset: -60px 0 -60px 0;
+  .european-luxury-parallax-bg--hero,
+  .european-luxury-parallax-bg--second {
     transform: none !important;
     will-change: auto;
+  }
+
+  .european-luxury-parallax-bg--hero {
+    inset: -40px 0 -40px 0;
+  }
+
+  .european-luxury-parallax-bg--second {
+    inset: -60px 0 -20px 0;
   }
 }
 

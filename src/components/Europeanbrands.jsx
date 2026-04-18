@@ -59,40 +59,58 @@ const EuropeanLuxuryLanding = () => {
   const secondSectionRef = useRef(null);
 
   useEffect(() => {
-    let ticking = false;
+    let rafId = 0;
 
-    const updateParallax = () => {
+    let currentHeroY = 0;
+    let targetHeroY = 0;
+
+    let currentSecondY = 0;
+    let targetSecondY = 0;
+
+    const heroEase = 0.055;
+    const secondEase = 0.08;
+
+    const updateTargets = () => {
       const scrollY = window.scrollY;
 
-      if (heroBgRef.current) {
-        const heroY = scrollY * 0.68;
-        heroBgRef.current.style.transform = `translate3d(0, ${heroY}px, 0) scale(1.18)`;
-      }
+      targetHeroY = scrollY * 0.12;
 
-      if (secondBgRef.current && secondSectionRef.current) {
+      if (secondSectionRef.current) {
         const rect = secondSectionRef.current.getBoundingClientRect();
-        const sectionProgress = window.innerHeight - rect.top;
-        const localScroll = Math.max(0, sectionProgress);
-        const secondY = localScroll * 0.22;
+        const localScroll = Math.max(0, window.innerHeight - rect.top);
+        targetSecondY = localScroll * 0.12;
+      }
+    };
 
-        secondBgRef.current.style.transform = `translate3d(0, ${secondY}px, 0) scale(1.03)`;
+    const animate = () => {
+      currentHeroY += (targetHeroY - currentHeroY) * heroEase;
+      currentSecondY += (targetSecondY - currentSecondY) * secondEase;
+
+      if (heroBgRef.current) {
+        heroBgRef.current.style.transform = `translate3d(0, ${currentHeroY}px, 0) scale(1.035)`;
       }
 
-      ticking = false;
+      if (secondBgRef.current) {
+        secondBgRef.current.style.transform = `translate3d(0, -${currentSecondY}px, 0) scale(1.02)`;
+      }
+
+      rafId = window.requestAnimationFrame(animate);
     };
 
     const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(updateParallax);
-        ticking = true;
-      }
+      updateTargets();
     };
 
-    updateParallax();
+    updateTargets();
+    animate();
+
     window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', handleScroll);
 
     return () => {
+      window.cancelAnimationFrame(rafId);
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
     };
   }, []);
 
