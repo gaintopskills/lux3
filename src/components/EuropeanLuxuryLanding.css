@@ -441,6 +441,11 @@
   display: flex;
 }
 
+footer {
+  position: relative;
+  z-index: 50;
+}
+
 @media (max-width: 767px) {
   .wrapper-parallax {
     margin-top: 100vh;
