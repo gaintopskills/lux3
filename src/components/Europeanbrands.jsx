@@ -60,53 +60,53 @@ const EuropeanLuxuryLanding = () => {
 
   useEffect(() => {
     let rafId = 0;
-
+  
     let currentHeroY = 0;
     let targetHeroY = 0;
-
+  
     let currentSecondY = 0;
     let targetSecondY = 0;
-
-    const heroEase = 0.055;
+  
+    const heroEase = 0.06;
     const secondEase = 0.08;
-
+  
     const updateTargets = () => {
       const scrollY = window.scrollY;
-
-      targetHeroY = scrollY * 0.12;
-
+  
+      targetHeroY = scrollY * 0.08;
+  
       if (secondSectionRef.current) {
         const rect = secondSectionRef.current.getBoundingClientRect();
         const localScroll = Math.max(0, window.innerHeight - rect.top);
         targetSecondY = localScroll * 0.12;
       }
     };
-
+  
     const animate = () => {
       currentHeroY += (targetHeroY - currentHeroY) * heroEase;
       currentSecondY += (targetSecondY - currentSecondY) * secondEase;
-
+  
       if (heroBgRef.current) {
-        heroBgRef.current.style.transform = `translate3d(0, ${currentHeroY}px, 0) scale(1.035)`;
+        heroBgRef.current.style.transform = `translate3d(0, -${currentHeroY}px, 0) scale(1.035)`;
       }
-
+  
       if (secondBgRef.current) {
         secondBgRef.current.style.transform = `translate3d(0, -${currentSecondY}px, 0) scale(1.02)`;
       }
-
+  
       rafId = window.requestAnimationFrame(animate);
     };
-
+  
     const handleScroll = () => {
       updateTargets();
     };
-
+  
     updateTargets();
     animate();
-
+  
     window.addEventListener('scroll', handleScroll, { passive: true });
     window.addEventListener('resize', handleScroll);
-
+  
     return () => {
       window.cancelAnimationFrame(rafId);
       window.removeEventListener('scroll', handleScroll);
