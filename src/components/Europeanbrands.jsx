@@ -73,7 +73,7 @@ const EuropeanLuxuryLanding = () => {
         const rect = secondSectionRef.current.getBoundingClientRect();
         const sectionProgress = window.innerHeight - rect.top;
         const localScroll = Math.max(0, sectionProgress);
-        const secondY = localScroll * 0.42;
+        const secondY = localScroll * 0.22;
 
         secondBgRef.current.style.transform = `translate3d(0, ${secondY}px, 0) scale(1.03)`;
       }
