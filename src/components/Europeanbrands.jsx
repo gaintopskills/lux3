@@ -1,7 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import './EuropeanLuxuryLanding.css';
 
-const ServiceForm = ({ className = '', showIntro = true, showResponseNote = false, id }) => {
+const ServiceForm = ({
+  className = '',
+  showIntro = true,
+  showResponseNote = false,
+  id,
+}) => {
   return (
     <div className={`european-luxury-form-card ${className}`.trim()} id={id}>
       <h2>Request Service Now</h2>
@@ -13,17 +18,8 @@ const ServiceForm = ({ className = '', showIntro = true, showResponseNote = fals
       )}
 
       <form className="luxury-service-form">
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-        />
-
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Phone Number"
-        />
+        <input type="text" name="name" placeholder="Your Name" />
+        <input type="tel" name="phone" placeholder="Phone Number" />
 
         <select name="appliance" defaultValue="">
           <option value="" disabled>
@@ -58,16 +54,27 @@ const ServiceForm = ({ className = '', showIntro = true, showResponseNote = fals
 };
 
 const EuropeanLuxuryLanding = () => {
-  const bgRef = useRef(null);
+  const heroBgRef = useRef(null);
+  const secondBgRef = useRef(null);
+  const secondSectionRef = useRef(null);
 
   useEffect(() => {
     let ticking = false;
 
     const updateParallax = () => {
-      const y = window.scrollY * 0.42;
+      const scrollY = window.scrollY;
 
-      if (bgRef.current) {
-        bgRef.current.style.transform = `translateY(${y}px) scale(1.1)`;
+      if (heroBgRef.current) {
+        const heroY = scrollY * 0.58;
+        heroBgRef.current.style.transform = `translate3d(0, ${heroY}px, 0) scale(1.14)`;
+      }
+
+      if (secondBgRef.current && secondSectionRef.current) {
+        const rect = secondSectionRef.current.getBoundingClientRect();
+        const localScroll = Math.max(0, -rect.top);
+        const secondY = localScroll * 0.34;
+
+        secondBgRef.current.style.transform = `translate3d(0, ${secondY}px, 0) scale(1.14)`;
       }
 
       ticking = false;
@@ -161,15 +168,15 @@ const EuropeanLuxuryLanding = () => {
     <section className="european-luxury-landing">
       <div className="european-luxury-page">
         <main className="european-luxury-main">
-          <section className="european-luxury-hero">
+          <section className="european-luxury-hero european-luxury-fullbleed">
             <div
-              ref={bgRef}
-              className="european-luxury-parallax-bg"
+              ref={heroBgRef}
+              className="european-luxury-parallax-bg european-luxury-parallax-bg--hero"
             />
 
-            <div className="european-luxury-overlay" />
+            <div className="european-luxury-overlay european-luxury-overlay--hero" />
 
-            <div className="european-luxury-inner">
+            <div className="european-luxury-hero-shell">
               <div className="european-luxury-copy">
                 <h1>European Luxury Appliance Repair</h1>
 
@@ -203,82 +210,94 @@ const EuropeanLuxuryLanding = () => {
             </div>
           </section>
 
-          <section className="european-luxury-content">
+          <section
+            ref={secondSectionRef}
+            className="european-luxury-content-section european-luxury-fullbleed"
+          >
             <div
-              className="mobile-form-wrap"
-              id="mobile-request-service"
-            >
-              <ServiceForm
-                className="mobile-form"
-                showIntro={false}
-                showResponseNote={true}
-              />
-            </div>
+              ref={secondBgRef}
+              className="european-luxury-parallax-bg european-luxury-parallax-bg--second"
+            />
 
-            <div className="luxury-info-section">
-              <h2>Specialized Repair for High-End European Appliances</h2>
+            <div className="european-luxury-overlay european-luxury-overlay--second" />
 
-              <p className="luxury-description">
-                We provide expert diagnostics and repair for premium brands like
-                <strong> La Cornue</strong>, <strong> Lacanche</strong>,
-                <strong> Officine Gullo</strong>, <strong> Bertazzoni</strong>,
-                <strong> Fulgor Milano</strong>, <strong> ILVE</strong>, and
-                <strong> Gaggenau</strong>.
-              </p>
-
-              <p className="luxury-service-areas">
-                Serving Brentwood, Beverly Hills, Malibu, and surrounding areas.
-              </p>
-            </div>
-
-            <div className="luxury-brands-section">
-              <div className="brands-heading-wrap">
-                <span className="brands-line"></span>
-                <h3>Specialized in European Brands</h3>
-                <span className="brands-line"></span>
+            <div className="european-luxury-content-shell">
+              <div
+                className="mobile-form-wrap"
+                id="mobile-request-service"
+              >
+                <ServiceForm
+                  className="mobile-form"
+                  showIntro={false}
+                  showResponseNote={true}
+                />
               </div>
 
-              <div className="brands-grid">
-                {brands.map((brand, index) => (
+              <div className="luxury-info-section">
+                <h2>Specialized Repair for High-End European Appliances</h2>
+
+                <p className="luxury-description">
+                  We provide expert diagnostics and repair for premium brands like
+                  <strong> La Cornue</strong>, <strong> Lacanche</strong>,
+                  <strong> Officine Gullo</strong>, <strong> Bertazzoni</strong>,
+                  <strong> Fulgor Milano</strong>, <strong> ILVE</strong>, and
+                  <strong> Gaggenau</strong>.
+                </p>
+
+                <p className="luxury-service-areas">
+                  Serving Brentwood, Beverly Hills, Malibu, and surrounding areas.
+                </p>
+              </div>
+
+              <div className="luxury-brands-section">
+                <div className="brands-heading-wrap">
+                  <span className="brands-line"></span>
+                  <h3>Specialized in European Brands</h3>
+                  <span className="brands-line"></span>
+                </div>
+
+                <div className="brands-grid">
+                  {brands.map((brand, index) => (
+                    <div
+                      className="brand-item"
+                      key={`${brand.name}-${index}`}
+                    >
+                      <img
+                        src={brand.image}
+                        alt={brand.name}
+                        width={brand.width}
+                        height={brand.height}
+                        loading="lazy"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="luxury-features-section">
+                {features.map((feature) => (
                   <div
-                    className="brand-item"
-                    key={`${brand.name}-${index}`}
+                    className="feature-card"
+                    key={feature.title}
                   >
-                    <img
-                      src={brand.image}
-                      alt={brand.name}
-                      width={brand.width}
-                      height={brand.height}
-                      loading="lazy"
-                    />
+                    <div className="feature-icon">
+                      {typeof feature.icon === 'string' && feature.icon.startsWith('/')
+                        ? (
+                          <img
+                            src={feature.icon}
+                            alt=""
+                            width="32"
+                            height="32"
+                          />
+                        )
+                        : feature.icon}
+                    </div>
+
+                    <h3>{feature.title}</h3>
+                    <p>{feature.text}</p>
                   </div>
                 ))}
               </div>
-            </div>
-
-            <div className="luxury-features-section">
-              {features.map((feature) => (
-                <div
-                  className="feature-card"
-                  key={feature.title}
-                >
-                  <div className="feature-icon">
-                    {typeof feature.icon === 'string' && feature.icon.startsWith('/')
-                      ? (
-                        <img
-                          src={feature.icon}
-                          alt=""
-                          width="32"
-                          height="32"
-                        />
-                      )
-                      : feature.icon}
-                  </div>
-
-                  <h3>{feature.title}</h3>
-                  <p>{feature.text}</p>
-                </div>
-              ))}
             </div>
           </section>
         </main>

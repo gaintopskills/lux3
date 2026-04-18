@@ -2,6 +2,7 @@
   background: #f5f3ef;
   color: #2d241d;
   font-family: Georgia, "Times New Roman", serif;
+  overflow-x: clip;
 }
 
 .european-luxury-page {
@@ -16,20 +17,31 @@
   display: none;
 }
 
-.european-luxury-hero {
+.european-luxury-fullbleed {
   position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
   overflow: hidden;
-  min-height: 880px;
+}
+
+.european-luxury-hero {
+  min-height: 920px;
+  z-index: 1;
+}
+
+.european-luxury-content-section {
+  min-height: 900px;
+  margin-top: -72px;
+  z-index: 2;
 }
 
 .european-luxury-parallax-bg {
   position: absolute;
-  inset: -160px 0 -160px 0;
-  background-image: url('/bg1.png');
+  inset: -220px 0 -220px 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transform: translateY(0) scale(1.1);
+  transform: translate3d(0, 0, 0) scale(1.14);
   transform-origin: center center;
   will-change: transform;
   backface-visibility: hidden;
@@ -37,27 +49,61 @@
   z-index: 0;
 }
 
+.european-luxury-parallax-bg--hero {
+  background-image: url('/bg1.png');
+}
+
+.european-luxury-parallax-bg--second {
+  background-image: url('/bg.png');
+}
+
 .european-luxury-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(20, 14, 10, 0.5),
-    rgba(20, 14, 10, 0.26)
-  );
   z-index: 1;
 }
 
-.european-luxury-inner {
+.european-luxury-overlay--hero {
+  background: linear-gradient(
+    to bottom,
+    rgba(17, 12, 8, 0.42) 0%,
+    rgba(17, 12, 8, 0.22) 55%,
+    rgba(17, 12, 8, 0.08) 100%
+  );
+}
+
+.european-luxury-overlay--second {
+  background: linear-gradient(
+    to bottom,
+    rgba(245, 243, 239, 0.18) 0%,
+    rgba(245, 243, 239, 0.74) 18%,
+    rgba(245, 243, 239, 0.92) 42%,
+    rgba(245, 243, 239, 0.98) 100%
+  );
+}
+
+.european-luxury-hero-shell,
+.european-luxury-content-shell {
   position: relative;
   z-index: 2;
-  max-width: 980px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: 56px 20px 48px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.european-luxury-hero-shell {
+  padding-top: 72px;
+  padding-bottom: 150px;
+}
+
+.european-luxury-content-shell {
+  padding-top: 120px;
+  padding-bottom: 110px;
 }
 
 .european-luxury-copy {
-  max-width: 760px;
+  max-width: 780px;
   margin: 0 auto;
   text-align: center;
   color: #ffffff;
@@ -65,8 +111,8 @@
 
 .european-luxury-copy h1 {
   margin: 0;
-  font-size: clamp(2.3rem, 5vw, 4.6rem);
-  line-height: 1.05;
+  font-size: clamp(2.3rem, 5vw, 4.8rem);
+  line-height: 1.04;
   font-weight: 500;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
 }
@@ -139,11 +185,6 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.european-luxury-content {
-  background: #f5f3ef;
-  padding: 0 20px 110px;
-}
-
 .mobile-form-wrap {
   margin-top: 0;
 }
@@ -153,12 +194,12 @@
 }
 
 .european-luxury-form-card {
-  background: rgba(25, 20, 17, 0.88);
+  background: rgba(25, 20, 17, 0.9);
   color: #ffffff;
   padding: 24px 20px;
   border: 1px solid rgba(255, 255, 255, 0.16);
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.28);
-  border-radius: 8px;
+  box-shadow: 0 12px 38px rgba(0, 0, 0, 0.28);
+  border-radius: 10px;
 }
 
 .european-luxury-form-card h2 {
@@ -217,7 +258,7 @@
 }
 
 .mobile-form {
-  background: #f8f5f1;
+  background: rgba(248, 245, 241, 0.96);
   color: #2d241d;
   padding: 28px 18px 22px;
   border: 1px solid #e1d9cf;
@@ -315,7 +356,7 @@
 }
 
 .brand-item {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.92);
   border: 1px solid #e5ddd3;
   padding: 16px 10px;
   min-height: 68px;
@@ -323,6 +364,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  border-radius: 6px;
 }
 
 .brand-item img {
@@ -341,10 +383,11 @@
 }
 
 .feature-card {
-  background: #f8f5f1;
+  background: rgba(248, 245, 241, 0.95);
   border: 1px solid #e3dbd1;
   padding: 28px 18px;
   text-align: center;
+  border-radius: 8px;
 }
 
 .feature-icon {
@@ -380,7 +423,9 @@
 
 .sticky-form {
   position: sticky;
-  top: 24px;
+  top: 32px;
+  max-height: calc(100vh - 64px);
+  overflow-y: auto;
 }
 
 .sticky-mobile-cta {
@@ -428,23 +473,45 @@
 
 @media (max-width: 767px) {
   .european-luxury-hero {
-    min-height: 620px;
+    min-height: 640px;
   }
 
-  .european-luxury-inner {
-    padding: 44px 18px 36px;
+  .european-luxury-content-section {
+    margin-top: -28px;
+  }
+
+  .european-luxury-hero-shell {
+    padding-top: 44px;
+    padding-bottom: 70px;
+  }
+
+  .european-luxury-content-shell {
+    padding-top: 60px;
+    padding-bottom: 110px;
   }
 
   .european-luxury-parallax-bg {
-    inset: -40px 0 -40px 0;
+    inset: -60px 0 -60px 0;
     transform: none !important;
     will-change: auto;
   }
 }
 
 @media (min-width: 768px) {
-  .european-luxury-inner {
-    padding: 72px 28px 52px;
+  .european-luxury-hero-shell,
+  .european-luxury-content-shell {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .european-luxury-hero-shell {
+    padding-top: 82px;
+    padding-bottom: 170px;
+  }
+
+  .european-luxury-content-shell {
+    padding-top: 132px;
+    padding-bottom: 120px;
   }
 
   .brands-grid {
@@ -453,10 +520,6 @@
 
   .luxury-features-section {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .european-luxury-content {
-    padding: 0 28px 120px;
   }
 }
 
@@ -474,35 +537,15 @@
   .european-luxury-sidebar {
     display: block;
     align-self: start;
-    padding-top: 24px;
+    padding-top: 32px;
+    position: relative;
+    z-index: 5;
   }
-  .european-luxury-page {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 390px;
-    gap: 40px;
-    align-items: start;
-  }
-  
-  .european-luxury-sidebar {
-    display: block;
-    align-self: start;
-  }
-  
-  .sticky-form {
-    position: sticky;
-    top: 60px;
-    max-height: calc(100vh - 40px);
-    overflow-y: auto;
-  }
+
   .desktop-form {
     display: block;
   }
-  .sticky-form {
-    position: fixed;
-    top: 60px;
-    right: 32px;
-    width: 390px;
-  }
+
   .mobile-form-wrap {
     display: none;
   }
@@ -515,8 +558,14 @@
     display: none;
   }
 
-  .european-luxury-content {
-    padding: 0 0 80px;
+  .european-luxury-hero-shell,
+  .european-luxury-content-shell {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .european-luxury-content-section {
+    margin-top: -110px;
   }
 
   .brands-grid {
