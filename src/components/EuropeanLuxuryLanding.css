@@ -2,10 +2,18 @@
   background: #f5f3ef;
   color: #2d241d;
   font-family: Georgia, "Times New Roman", serif;
+  position: relative;
+  min-height: calc(100vh + 1400px);
+  opacity: 0;
+}
+
+.european-luxury-landing.is-ready {
+  opacity: 1;
 }
 
 #scroll-animate {
   overflow: hidden;
+  min-height: calc(100vh + 1400px);
 }
 
 #scroll-animate-main {

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef, useState } from 'react';
 import './EuropeanLuxuryLanding.css';
 
 const ServiceForm = ({
@@ -54,13 +54,35 @@ const ServiceForm = ({
 };
 
 const EuropeanLuxuryLanding = () => {
+  const [isReady, setIsReady] = useState(false);
+
   const scrollAnimateRef = useRef(null);
   const scrollAnimateMainRef = useRef(null);
   const heroRef = useRef(null);
   const contentRef = useRef(null);
   const wrapperRef = useRef(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
+    const updateParallax = () => {
+      if (
+        !scrollAnimateMainRef.current ||
+        !heroRef.current ||
+        !contentRef.current
+      ) {
+        return;
+      }
+
+      const scroll = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const contentHeight = contentRef.current.offsetHeight;
+      const heightDocument = windowHeight + contentHeight;
+
+      scrollAnimateMainRef.current.style.top = `-${scroll}px`;
+
+      const bgPosY = 50 - (scroll * 100) / heightDocument;
+      heroRef.current.style.backgroundPosition = `50% ${bgPosY}%`;
+    };
+
     const setLayout = () => {
       if (
         !scrollAnimateRef.current ||
@@ -83,29 +105,14 @@ const EuropeanLuxuryLanding = () => {
       wrapperRef.current.style.marginTop = `${windowHeight}px`;
 
       updateParallax();
-    };
 
-    const updateParallax = () => {
-      if (
-        !scrollAnimateMainRef.current ||
-        !heroRef.current ||
-        !contentRef.current
-      ) {
-        return;
+      if (!isReady) {
+        setIsReady(true);
       }
-
-      const scroll = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const contentHeight = contentRef.current.offsetHeight;
-      const heightDocument = windowHeight + contentHeight;
-
-      scrollAnimateMainRef.current.style.top = `-${scroll}px`;
-
-      const bgPosY = 50 - (scroll * 100) / heightDocument;
-      heroRef.current.style.backgroundPosition = `50% ${bgPosY}%`;
     };
 
     setLayout();
+
     window.addEventListener('resize', setLayout);
     window.addEventListener('scroll', updateParallax, { passive: true });
 
@@ -113,7 +120,7 @@ const EuropeanLuxuryLanding = () => {
       window.removeEventListener('resize', setLayout);
       window.removeEventListener('scroll', updateParallax);
     };
-  }, []);
+  }, [isReady]);
 
   const brands = [
     { name: 'La Cornue', image: '/logo/aga-logo.png', width: 180, height: 70 },
@@ -145,7 +152,7 @@ const EuropeanLuxuryLanding = () => {
   ];
 
   return (
-    <section className="european-luxury-landing">
+    <section className={`european-luxury-landing ${isReady ? 'is-ready' : ''}`}>
       <aside className="european-luxury-fixed-sidebar">
         <ServiceForm
           className="desktop-form"
