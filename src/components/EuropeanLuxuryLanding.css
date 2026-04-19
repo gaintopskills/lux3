@@ -311,7 +311,7 @@
 .brands-line {
   flex: 1;
   height: 1px;
-  background:;
+  background: #d8cec1;
 }
 
 .luxury-brands-section h3 {
@@ -328,7 +328,7 @@
 }
 
 .brand-item {
-  background: rgba(255, 255, 255, 0.93);
+  background: ;
   border: 1px solid #e5ddd3;
   padding: 16px 10px;
   min-height: 68px;
