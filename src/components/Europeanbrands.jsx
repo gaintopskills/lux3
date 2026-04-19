@@ -110,9 +110,9 @@ const EuropeanLuxuryLanding = () => {
                 </div>
 
                 <p className="european-luxury-subtext">
-                  Expert service for La Cornue, Lacanche, Officine Gullo,
-                  Bertazzoni, Fulgor Milano, ILVE &amp; Gaggenau
-                </p>
+  Sertified level expert repair, for La Cornue,
+  Lacanche, Officine Gullo, Bertazzoni, Fulgor Milano, ILVE, and Gaggenau.
+</p>
 
                 <div className="european-luxury-hero-actions mobile-only">
                   <a
@@ -151,10 +151,12 @@ const EuropeanLuxuryLanding = () => {
               </div>
 
               <div className="luxury-info-section">
-                <h2>Specialized Repair for High-End European Appliances</h2>
+                <h2><p className="european-luxury-subtext">
+                Specialized Repair for High-End & Luxury European Appliances
+</p></h2>
 
                 <p className="luxury-description">
-                  We provide expert diagnostics and repair for premium brands like
+                  Expert diagnostics and repair for premium brands like
                   <strong> La Cornue</strong>, <strong> Lacanche</strong>,
                   <strong> Officine Gullo</strong>, <strong> Bertazzoni</strong>,
                   <strong> Fulgor Milano</strong>, <strong> ILVE</strong>, and
