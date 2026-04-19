@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef, useState } from 'react';
 import './EuropeanLuxuryLanding.css';
 
 const ServiceForm = ({
@@ -54,6 +54,8 @@ const ServiceForm = ({
 };
 
 const EuropeanLuxuryLanding = () => {
+  const [isReady, setIsReady] = useState(false);
+
   const scrollAnimateRef = useRef(null);
   const scrollAnimateMainRef = useRef(null);
   const heroRef = useRef(null);
@@ -61,8 +63,6 @@ const EuropeanLuxuryLanding = () => {
   const wrapperRef = useRef(null);
 
   useLayoutEffect(() => {
-    let rafId = null;
-
     const updateParallax = () => {
       if (
         !scrollAnimateMainRef.current ||
@@ -74,8 +74,8 @@ const EuropeanLuxuryLanding = () => {
 
       const scroll = window.scrollY;
       const windowHeight = window.innerHeight;
-      const contentHeight = contentRef.current.scrollHeight;
-      const heightDocument = windowHeight + contentHeight + 4;
+      const contentHeight = contentRef.current.offsetHeight;
+      const heightDocument = windowHeight + contentHeight;
 
       scrollAnimateMainRef.current.style.top = `-${scroll}px`;
 
@@ -95,8 +95,8 @@ const EuropeanLuxuryLanding = () => {
       }
 
       const windowHeight = window.innerHeight;
-      const contentHeight = contentRef.current.scrollHeight;
-      const heightDocument = windowHeight + contentHeight + 4;
+      const contentHeight = contentRef.current.offsetHeight;
+      const heightDocument = windowHeight + contentHeight;
 
       scrollAnimateRef.current.style.height = `${heightDocument}px`;
       scrollAnimateMainRef.current.style.height = `${heightDocument}px`;
@@ -105,34 +105,22 @@ const EuropeanLuxuryLanding = () => {
       wrapperRef.current.style.marginTop = `${windowHeight}px`;
 
       updateParallax();
-    };
 
-    const runLayout = () => {
-      if (rafId) {
-        cancelAnimationFrame(rafId);
+      if (!isReady) {
+        setIsReady(true);
       }
-
-      rafId = requestAnimationFrame(() => {
-        setLayout();
-      });
     };
 
-    runLayout();
+    setLayout();
 
-    window.addEventListener('resize', runLayout);
-    window.addEventListener('load', runLayout);
+    window.addEventListener('resize', setLayout);
     window.addEventListener('scroll', updateParallax, { passive: true });
 
     return () => {
-      if (rafId) {
-        cancelAnimationFrame(rafId);
-      }
-
-      window.removeEventListener('resize', runLayout);
-      window.removeEventListener('load', runLayout);
+      window.removeEventListener('resize', setLayout);
       window.removeEventListener('scroll', updateParallax);
     };
-  }, []);
+  }, [isReady]);
 
   const brands = [
     { name: 'La Cornue', image: '/logo/aga-logo.png', width: 180, height: 70 },
@@ -164,7 +152,7 @@ const EuropeanLuxuryLanding = () => {
   ];
 
   return (
-    <section className="european-luxury-landing">
+    <section className={`european-luxury-landing ${isReady ? 'is-ready' : ''}`}>
       <aside className="european-luxury-fixed-sidebar">
         <ServiceForm
           className="desktop-form"
@@ -177,7 +165,10 @@ const EuropeanLuxuryLanding = () => {
       <div id="scroll-animate" ref={scrollAnimateRef}>
         <div id="scroll-animate-main" ref={scrollAnimateMainRef}>
           <div className="wrapper-parallax" ref={wrapperRef}>
-            <header className="european-luxury-hero" ref={heroRef}>
+            <header
+              className="european-luxury-hero"
+              ref={heroRef}
+            >
               <div className="european-luxury-hero-overlay" />
 
               <div className="european-luxury-shell">
