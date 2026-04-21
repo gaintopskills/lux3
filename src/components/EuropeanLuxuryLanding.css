@@ -26,9 +26,7 @@ h2, h3, h4 {font-family: "Cormorant Garamond", serif;}
 
 .european-luxury-main-column {
   min-width: 0;
-  display: flex;
-  justify-content: center;
-  width: 100%;
+  
 }
 
 .desktop-sidebar-spacer {
@@ -83,6 +81,13 @@ h2, h3, h4 {font-family: "Cormorant Garamond", serif;}
   margin: 0 auto;
   text-align: center;
   color: #ffffff;
+  padding:40px;
+  background: rgba(20, 14, 10, 0.42);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(176, 138, 87, 0.32);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
 }
 
 .european-luxury-copy h1 {
