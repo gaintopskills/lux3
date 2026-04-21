@@ -90,6 +90,8 @@ color:#120c08}
   border: 1px solid rgba(176, 138, 87, 0.32);
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.24);
   border-radius: 10px;
+  position: relative;
+  transform: translateY(-90px);
 }
 
 .european-luxury-copy h1 {
