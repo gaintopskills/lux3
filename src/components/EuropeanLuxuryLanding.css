@@ -129,7 +129,7 @@ h2, h3, h4 {font-family: "Cormorant Garamond", serif;}
 .european-luxury-subtext {
   margin: 0 auto;
   max-width: 920px;
-  font-size: clamp(1rem, 2vw, 1.55rem);
+  font-size: clamp(1.3rem, 2vw, 1.55rem);
   line-height: 1.45;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
