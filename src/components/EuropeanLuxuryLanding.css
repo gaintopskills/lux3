@@ -92,12 +92,10 @@ h2, h3, h4 {font-family: "Cormorant Garamond", serif;}
 
 .european-luxury-copy h1 {
   font-family: "Cormorant Garamond", serif;
-  color:#ffffff;
   margin: 0;
   font-size: clamp(2.4rem, 5vw, 4.9rem);
   line-height: 1.03;
   font-weight: 500;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.28);
 }
 
 .european-luxury-divider {
