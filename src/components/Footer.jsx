@@ -15,6 +15,8 @@ export const Footer = () => {
         <div className="footer-section">
           <h4>Company</h4>
           <ul>
+          
+          <li><a href="/european-appliance-repair/">European Appliance Repair</a></li>
             <li><a href="/about/">About Us</a></li>
             <li>Address: 814 S. Westgate Ave #119, Los Angeles, CA 90049</li>
             <li>Email: info@luxuryappliance.repair</li>
