@@ -110,7 +110,7 @@ const EuropeanLuxuryLanding = () => {
                 </div>
 
                 <p className="european-luxury-subtext">
-  Certified level expert repair, for La Cornue,
+  Certified level repair, for La Cornue,
   Lacanche, Officine Gullo, Bertazzoni, Fulgor Milano, ILVE, and Gaggenau.
 </p>
 
