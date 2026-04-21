@@ -295,7 +295,7 @@ color:#120c08}
 
 .luxury-info-section {
   max-width: 980px;
-  margin: 42px auto 0;
+  margin: -100px auto 0;
   text-align: center;
 }
 
@@ -467,6 +467,11 @@ footer {
   .european-luxury-hero {
     background-position: 50% 50% !important;
   }
+  .luxury-info-section {
+
+    margin: 20px auto 0;
+  
+  }
 }
 
 @media (min-width: 768px) {
@@ -481,6 +486,11 @@ footer {
 
   .luxury-features-section {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .luxury-info-section {
+
+    margin: 20px auto 0;
+  
   }
 }
 
