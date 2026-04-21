@@ -1,7 +1,9 @@
-h2, h3, h4 {font-family: "Cormorant Garamond", serif;}
+h2, h3, h4 {font-family: "Cormorant Garamond", serif; 
+color:#120c08}
+
 .european-luxury-landing {
   background: #f5f3ef;
-  color: #2d241d;
+
   font-family: Georgia, "Times New Roman", serif;
   position: relative;
 }
@@ -131,7 +133,7 @@ h2, h3, h4 {font-family: "Cormorant Garamond", serif;}
   line-height: 1.45;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+ 
 }
 
 .european-luxury-hero-actions {
@@ -247,7 +249,6 @@ h2, h3, h4 {font-family: "Cormorant Garamond", serif;}
 }
 
 .mobile-form h2 {
-  color: #5a4636;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 18px;
@@ -291,7 +292,7 @@ h2, h3, h4 {font-family: "Cormorant Garamond", serif;}
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.12;
   font-weight: 500;
-  color: #3c2f25;
+
 }
 
 .luxury-description,
