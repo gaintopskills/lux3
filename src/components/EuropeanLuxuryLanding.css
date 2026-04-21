@@ -1,3 +1,4 @@
+h2, h3, h4 {font-family: "Cormorant Garamond", serif;}
 .european-luxury-landing {
   background: #f5f3ef;
   color: #2d241d;
@@ -82,6 +83,8 @@
 }
 
 .european-luxury-copy h1 {
+  font-family: "Cormorant Garamond", serif;
+  color:#ffffff;
   margin: 0;
   font-size: clamp(2.4rem, 5vw, 4.9rem);
   line-height: 1.03;
