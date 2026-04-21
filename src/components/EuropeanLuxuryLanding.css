@@ -93,7 +93,17 @@ color:#120c08}
   position: relative;
   transform: translateY(-90px);
 }
+@media (min-width: 1024px) {
+  .european-luxury-copy {
+    transform: translateY(-110px);
+  }
+}
 
+@media (max-width: 767px) {
+  .european-luxury-copy {
+    transform: translateY(-30px);
+  }
+}
 .european-luxury-copy h1 {
   font-family: "Cormorant Garamond", serif;
   margin: 0;
