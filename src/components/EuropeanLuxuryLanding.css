@@ -171,14 +171,20 @@
 .desktop-form {
   display: none;
 }
-
+.mobile-form,
+.desktop-form {
+  width: 100%;
+  max-width: 100%;
+}
 .european-luxury-form-card {
   background: rgba(25, 20, 17, 0.92);
   color: #ffffff;
-  padding: 0;
+  padding: 24px 20px;
   border: 1px solid rgba(255, 255, 255, 0.16);
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.30);
   border-radius: 10px;
+  box-sizing: border-box;
+  width:320px;
 }
 
 .european-luxury-form-card h2 {
