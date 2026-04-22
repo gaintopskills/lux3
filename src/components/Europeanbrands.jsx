@@ -110,9 +110,9 @@ const EuropeanLuxuryLanding = () => {
                 </div>
 
                 <p className="european-luxury-subtext">
-  Certified level repair, for La Cornue,
-  Lacanche, Officine Gullo, Bertazzoni, Fulgor Milano, ILVE, and Gaggenau.
-</p>
+                  Certified level repair for La Cornue, Lacanche, Officine Gullo,
+                  Bertazzoni, Fulgor Milano, ILVE, and Gaggenau.
+                </p>
 
                 <div className="european-luxury-hero-actions mobile-only">
                   <a
@@ -151,24 +151,22 @@ const EuropeanLuxuryLanding = () => {
               </div>
 
               <div className="luxury-info-section">
-                <h2><p className="european-luxury-subtext">
-                Specialized Repair for High-End & Luxury European Appliances
-</p></h2>
+                <h2>Specialized Repair for High-End & Luxury European Appliances</h2>
 
-<p className="luxury-description">
-    European luxury appliances require a different level of care. We work on
-    premium cooking and refrigeration systems with an approach centered on
-    accurate diagnostics, careful handling, and respect for high-end finishes,
-    panels, and surrounding cabinetry.
-  </p>
+                <p className="luxury-description">
+                  European luxury appliances require a different level of care. We work on
+                  premium cooking and refrigeration systems with an approach centered on
+                  accurate diagnostics, careful handling, and respect for high-end finishes,
+                  panels, and surrounding cabinetry.
+                </p>
 
-  <p className="luxury-description">
-    Our technicians service brands such as <strong>La Cornue</strong>,
-    <strong> Lacanche</strong>, <strong> Officine Gullo</strong>,
-    <strong> Bertazzoni</strong>, <strong> Fulgor Milano</strong>,
-    <strong> ILVE</strong>, and <strong>Gaggenau</strong> throughout Los Angeles
-    and nearby luxury neighborhoods.
-  </p>
+                <p className="luxury-description">
+                  Our technicians service brands such as <strong>La Cornue</strong>,
+                  <strong> Lacanche</strong>, <strong> Officine Gullo</strong>,
+                  <strong> Bertazzoni</strong>, <strong> Fulgor Milano</strong>,
+                  <strong> ILVE</strong>, and <strong>Gaggenau</strong> throughout Los Angeles
+                  and nearby luxury neighborhoods.
+                </p>
               </div>
 
               <div className="luxury-brands-section">
