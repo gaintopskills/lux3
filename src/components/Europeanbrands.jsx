@@ -137,9 +137,9 @@ const EuropeanLuxuryLanding = () => {
               </div>
 
               <div className="luxury-info-section">
-                <h2><p className="european-luxury-subtext">
+                <h2>
                 Specialized Repair for High-End & Luxury European Appliances
-</p></h2>
+</h2>
 
 <p className="luxury-description">
     European luxury appliances require a different level of care. We work on
