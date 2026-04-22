@@ -5,11 +5,7 @@
   color: #120c08;
   -webkit-text-fill-color: #120c08;
 }
-@media (max-width: 767px) {
-  .mobile-form-wrap  {
-    background: red !important;
-  }
-}
+
 .european-luxury-landing {
   background: #f5f3ef;
 
@@ -660,5 +656,77 @@ footer {
 
   .brand-item {
     min-height: 92px;
+  }
+}
+
+@media (max-width: 767px) {
+  .european-luxury-shell {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .european-luxury-main-column {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .european-luxury-hero {
+    position: relative !important;
+    top: auto !important;
+    min-height: 520px !important;
+  }
+
+  .european-luxury-hero .european-luxury-shell {
+    min-height: 520px !important;
+    display: flex !important;
+    align-items: flex-end !important;
+    padding-top: 88px !important;
+    padding-bottom: 28px !important;
+  }
+
+  .european-luxury-copy {
+    transform: none !important;
+    max-width: 100% !important;
+    padding: 22px 16px !important;
+  }
+
+  .content {
+    min-height: auto !important;
+  }
+
+  .content .european-luxury-shell {
+    padding-top: 0 !important;
+    padding-bottom: 110px !important;
+  }
+
+  .mobile-form-wrap {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 0 28px 0 !important;
+  }
+
+  .mobile-form {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 24px 20px !important;
+  }
+
+  .luxury-info-section {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    text-align: left !important;
+  }
+
+  .luxury-info-section h2,
+  .luxury-description,
+  .luxury-service-areas {
+    max-width: none !important;
+    width: 100% !important;
+    text-align: left !important;
   }
 }
