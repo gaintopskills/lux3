@@ -256,13 +256,6 @@
   border-radius: 2px;
 }
 
-.mobile-form {
-  background: rgba(248, 245, 241, 0.97);
-  color: #2d241d;
-  padding: 28px 18px 22px;
-  border: 1px solid #e1d9cf;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-}
 
 .mobile-form h2 {
   text-align: center;
