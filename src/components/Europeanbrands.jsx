@@ -148,16 +148,6 @@ const EuropeanLuxuryLanding = () => {
     accurate diagnostics, careful handling, and respect for high-end finishes,
     panels, and surrounding cabinetry.
   </p>
-
-  <p className="luxury-description">
-    Our technicians service brands such as:
-    <div className="hero-brand-list">
-      <span><strong>La Cornue</strong></span>,
-    <span><strong> Lacanche</strong></span>, <span><strong> Officine Gullo</strong></span>,
-    <span><strong> Bertazzoni</strong></span>, <span><strong> Fulgor Milano</strong></span>,
-    <span><strong> ILVE</strong></span>, and <span><strong>Gaggenau</strong></span></div> throughout Los Angeles
-    and nearby luxury neighborhoods.
-  </p>
               </div>
 
               <div className="luxury-brands-section">
