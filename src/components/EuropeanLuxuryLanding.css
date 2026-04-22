@@ -477,6 +477,9 @@ footer {
     .mobile-form-wrap {
       width: calc(100vw - 100px);
       max-width: calc(100vw - 100px);
+      left: auto;
+      right: auto;
+      transform: none;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 28px;
