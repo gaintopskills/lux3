@@ -101,7 +101,7 @@ const EuropeanLuxuryLanding = () => {
           <div className="european-luxury-shell">
             <div className="european-luxury-main-column">
               <div className="european-luxury-copy">
-                <h1>European Luxury Appliance Repair</h1>
+                <h1>European Luxury & High-End Appliance Repair</h1>
 
                 <div className="european-luxury-divider">
                   <span></span>
@@ -110,8 +110,8 @@ const EuropeanLuxuryLanding = () => {
                 </div>
 
                 <p className="european-luxury-subtext">
-  Certified level repair, for La Cornue,
-  Lacanche, Officine Gullo, Bertazzoni, Fulgor Milano, ILVE, and Gaggenau.
+  Certified level repair for La&nbsp;Cornue,
+  Lacanche, Officine&nbsp;Gullo, Bertazzoni, Fulgor&nbsp;Milano, ILVE, and Gaggenau.
 </p>
 
                
