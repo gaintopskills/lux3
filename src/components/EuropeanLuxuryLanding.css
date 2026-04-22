@@ -256,7 +256,10 @@
   border-radius: 2px;
 }
 
-
+.mobile-form {
+  width: 100%;
+  max-width: 100%;
+}
 
 .mobile-form h2 {
   text-align: center;
