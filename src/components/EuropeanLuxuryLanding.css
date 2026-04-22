@@ -78,7 +78,7 @@
 }
 
 .content .european-luxury-shell {
-  padding-top: 90px;
+  padding-top: 0;
   padding-bottom: 110px;
 }
 
@@ -299,7 +299,7 @@
 
 .luxury-info-section {
   max-width: 980px;
-  margin: -100px auto 0;
+  margin: 0 auto;
   text-align: center;
 }
 
