@@ -453,3 +453,24 @@ footer {
   position: relative;
   z-index: 2;
 }
+
+@media (max-width: 767px) {
+  .european-luxury-hero {
+    position: relative;
+    top: auto;
+    min-height: 520px;
+  }
+ 
+ 
+  .european-luxury-hero .european-luxury-shell {
+    min-height: 520px;
+    display: flex;
+    align-items: flex-end;
+  }
+ 
+ 
+  .european-luxury-copy {
+    transform: none;
+  }
+ }
+ 
