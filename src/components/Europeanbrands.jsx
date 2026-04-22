@@ -110,7 +110,7 @@ const EuropeanLuxuryLanding = () => {
                 </div>
 
                 <p className="european-luxury-subtext">
-  Certified level repair for:</p>
+  CERTIFIED LEVEL REPAIR FOR:</p>
   <p className="hero-brand-list">
   La Cornue <span>·</span> Lacanche <span>·</span> Officine Gullo <span>·</span> Bertazzoni <span>·</span> Fulgor Milano <span>·</span> ILVE <span>·</span> Gaggenau
 </p>

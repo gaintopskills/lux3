@@ -78,21 +78,6 @@
   line-height: 1.65;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  font-style: italic;
-  color: rgba(255, 248, 240, 0.96);
-  text-align: center;
-}
-
-
-
-.european-luxury-subtext {
-  margin: 0 auto 10px;
-  max-width: 900px;
-  font-size: clamp(1.05rem, 2vw, 1.28rem);
-  line-height: 1.55;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  font-style: italic;
   color: rgba(255, 248, 240, 0.96);
   text-align: center;
 }
@@ -183,15 +168,6 @@
   line-height: 1;
 }
 
-.european-luxury-subtext {
-  margin: 0 auto;
-  max-width: 920px;
-  font-size: clamp(1.3rem, 2vw, 1.55rem);
-  line-height: 1.45;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
 
 .european-luxury-hero-actions {
   margin-top: 28px;
