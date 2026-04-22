@@ -5,7 +5,11 @@
   color: #120c08;
   -webkit-text-fill-color: #120c08;
 }
-
+@media (max-width: 767px) {
+  body {
+    background: red !important;
+  }
+}
 .european-luxury-landing {
   background: #f5f3ef;
 
