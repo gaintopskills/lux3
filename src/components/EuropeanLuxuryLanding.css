@@ -473,4 +473,136 @@ footer {
     transform: none;
   }
  }
+ /*----------------------*/
+ @media (min-width: 1024px) {
+  .european-luxury-copy {
+    transform: translateY(-110px);
+  }
+ }
  
+ 
+ @media (max-width: 767px) {
+  .european-luxury-copy {
+    transform: translateY(-30px);
+  }
+ }
+ 
+ 
+ @media (max-width: 767px) {
+  .european-luxury-shell {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+ 
+ 
+  .content {
+    min-height: 0;
+  }
+ 
+ 
+  .mobile-form {
+    width: 100%;
+    margin: 0 auto;
+  }
+ 
+ 
+  .mobile-form h2::before,
+  .mobile-form h2::after {
+    display: none;
+  }
+ }
+ 
+ 
+ @media (max-width: 767px) {
+  .european-luxury-hero {
+    background-position: 50% 50% !important;
+  }
+  .luxury-info-section {
+   width: 100%;
+    max-width: none;
+    margin: 0;
+   }
+ }
+ 
+ 
+ @media (min-width: 768px) {
+  .european-luxury-shell {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+ 
+ 
+  .brands-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+ 
+ 
+  .luxury-features-section {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .luxury-info-section {
+ 
+ 
+    margin: 20px auto 0;
+   }
+ }
+ 
+ 
+ @media (min-width: 1024px) {
+  .european-luxury-fixed-sidebar {
+    display: block;
+    position: fixed;
+    top: 100px;
+    right: max(1px, calc((100vw - 1700px) / 2 + 1px));
+    width: 390px;
+    z-index: 20;
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
+  }
+ 
+ 
+  .desktop-form {
+    display: block;
+  }
+ 
+ 
+  .european-luxury-shell {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 390px;
+    gap: 40px;
+    align-items: start;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+ 
+ 
+  .desktop-sidebar-spacer {
+    display: block;
+  }
+ 
+ 
+  .mobile-form-wrap {
+    display: none;
+  }
+ 
+ 
+  .mobile-only {
+    display: none;
+  }
+ 
+ 
+  .sticky-mobile-cta {
+    display: none;
+  }
+ 
+ 
+  .brands-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+ 
+ 
+  .brand-item {
+    min-height: 84px;
+  }
+ }
+/*------------*/ 
