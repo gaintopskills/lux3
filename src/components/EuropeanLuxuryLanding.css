@@ -6,7 +6,7 @@
   -webkit-text-fill-color: #120c08;
 }
 @media (max-width: 767px) {
-  body {
+  .mobile-form-wrap  {
     background: red !important;
   }
 }
