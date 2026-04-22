@@ -460,11 +460,48 @@ footer {
   z-index: 2;
 }
 
+
+
+
 @media (max-width: 767px) {
-  .content {
-    min-height: 1200px;
+  .european-luxury-shell {
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
+  .content {
+    min-height: 0;
+  }
+
+  .mobile-form-wrap {
+    width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
+    margin-left: calc(50% - 50vw + 12px);
+    margin-right: calc(50% - 50vw + 12px);
+    margin-bottom: 28px;
+  }
+
+  .mobile-form {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 24px 20px;
+    border-radius: 10px;
+  }
+
+  .mobile-form h2::before,
+  .mobile-form h2::after {
+    display: none;
+  }
+}
+
+
+
+
+@media (max-width: 767px) {
+  .content {
+    min-height: 1600px;
+  }
   .european-luxury-hero {
     background-position: 50% 50% !important;
   }
@@ -479,6 +516,16 @@ footer {
   .european-luxury-shell {
     padding-left: 28px;
     padding-right: 28px;
+  }
+
+  @media (max-width: 767px) {
+    .mobile-form-wrap {
+      width: calc(100vw - 24px);
+      max-width: calc(100vw - 24px);
+      margin-left: calc(50% - 50vw + 12px);
+      margin-right: calc(50% - 50vw + 12px);
+      margin-bottom: 28px;
+    }
   }
 
   .brands-grid {
