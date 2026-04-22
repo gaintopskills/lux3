@@ -147,6 +147,10 @@ const EuropeanLuxuryLanding = () => {
     premium cooking and refrigeration systems with an approach centered on
     accurate diagnostics, careful handling, and respect for high-end finishes,
     panels, and surrounding cabinetry.
+    <br></br> <br></br>
+    <h3>Appliances We repair:</h3>
+    <p></p>
+    Ranges &bull; Rangetops/Cooktops &bull; Hoods &bull; Ovens &bull; Refrigerator &bull;  Freezers &bull; Dishwashers &bull; Warming Drawers  
   </p>
               </div>
 
