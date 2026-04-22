@@ -110,9 +110,10 @@ const EuropeanLuxuryLanding = () => {
                 </div>
 
                 <p className="european-luxury-subtext">
-  Certified level repair for La&nbsp;Cornue,
-  Lacanche, Officine&nbsp;Gullo, Bertazzoni, Fulgor&nbsp;Milano, ILVE, and Gaggenau.
-</p>
+  Certified level repair for:</p>
+  <div className="hero-brand-list"> <span>La&nbsp;Cornue</span>
+  <span>Lacanche</span> <span>Officine&nbsp;Gullo</span> <span>Bertazzoni</span> <span>Fulgor&nbsp;Milano</span> <span>ILVE</span> <span>Gaggenau</span>
+</div>
 
                
               </div>
@@ -149,10 +150,12 @@ const EuropeanLuxuryLanding = () => {
   </p>
 
   <p className="luxury-description">
-    Our technicians service brands such as <strong>La Cornue</strong>,
-    <strong> Lacanche</strong>, <strong> Officine Gullo</strong>,
-    <strong> Bertazzoni</strong>, <strong> Fulgor Milano</strong>,
-    <strong> ILVE</strong>, and <strong>Gaggenau</strong> throughout Los Angeles
+    Our technicians service brands such as:
+    <div className="hero-brand-list">
+      <span><strong>La Cornue</strong></span>,
+    <span><strong> Lacanche</strong></span>, <span><strong> Officine Gullo</strong></span>,
+    <span><strong> Bertazzoni</strong></span>, <span><strong> Fulgor Milano</strong></span>,
+    <span><strong> ILVE</strong></span>, and <span><strong>Gaggenau</strong></span></div> throughout Los Angeles
     and nearby luxury neighborhoods.
   </p>
               </div>
