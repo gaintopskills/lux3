@@ -85,6 +85,35 @@
 
 
 
+.european-luxury-subtext {
+  margin: 0 auto 10px;
+  max-width: 900px;
+  font-size: clamp(1.05rem, 2vw, 1.28rem);
+  line-height: 1.55;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  color: rgba(255, 248, 240, 0.96);
+  text-align: center;
+}
+
+.hero-brand-list {
+  margin: 0 auto;
+  max-width: 900px;
+  font-size: clamp(1rem, 1.9vw, 1.22rem);
+  line-height: 1.8;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  color: rgba(255, 248, 240, 0.96);
+  text-align: center;
+}
+
+.hero-brand-list span {
+  color: #d8b26a;
+  margin: 0 8px;
+}
+
+
 
 
 
