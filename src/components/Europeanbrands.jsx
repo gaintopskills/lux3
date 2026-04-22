@@ -213,21 +213,7 @@ const EuropeanLuxuryLanding = () => {
         </section>
       </div>
 
-      <div className="sticky-mobile-cta">
-        <a
-          href="#mobile-request-service"
-          className="sticky-btn sticky-btn-primary"
-        >
-          Request Service
-        </a>
-
-        <a
-          href="tel:+13235555555"
-          className="sticky-btn sticky-btn-secondary"
-        >
-          Call Now
-        </a>
-      </div>
+     
     </section>
   );
 };
