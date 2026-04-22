@@ -71,35 +71,23 @@
   align-items: center;
 }
 /*Brand Diamond*/
-.hero-brand-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px 18px;
-  margin-top: 12px;
+.european-luxury-subtext {
+  margin: 0 auto;
+  max-width: 900px;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  line-height: 1.65;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(1.15rem, 2vw, 1.4rem);
   font-weight: 600;
   font-style: italic;
-  line-height: 1.6;
-  color: #ffffff;
+  color: rgba(255, 248, 240, 0.96);
+  text-align: center;
 }
 
-.hero-brand-list span {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-}
 
-.hero-brand-list span:not(:last-child)::after {
-  content: "✦";
-  margin-left: 18px;
-  color: #d8b26a;
-  font-size: 0.8em;
-  opacity: 0.95;
-}
-/*Brand Diamond*/
+
+
+
+
 .content {
   position: relative;
   z-index: 2;
