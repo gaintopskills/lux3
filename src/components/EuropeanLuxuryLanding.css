@@ -606,3 +606,22 @@ footer {
   }
  }
 /*------------*/ 
+
+@media (max-width: 767px) {
+  .mobile-form-wrap {
+    
+    max-width: none;
+    margin: 28px 0 28px 0;
+  }
+  .mobile-form {
+    width: 100%;
+    max-width: 220px;
+    margin: 0;
+    padding: 24px 10px;
+    border-radius: 10px;
+  }
+  
+ 
+  
+ }
+ 
