@@ -616,12 +616,22 @@ footer {
   .mobile-form {
     width: 100%;
     max-width: 280px;
-    margin: 0;
+    margin: 0 auro;
     padding: 24px 10px;
     border-radius: 10px;
   }
-  
- 
+  .luxury-brands-section,
+ .luxury-features-section {
+   width: 100%;
+   max-width: none;
+ }
+ .brands-grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.brand-item {
+  min-height: 92px;
+}
   
  }
  
