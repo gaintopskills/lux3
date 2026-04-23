@@ -176,15 +176,105 @@
   width: 100%;
   max-width: 100%;
 }
+
 .european-luxury-form-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
   background: rgba(25, 20, 17, 0.92);
   color: #ffffff;
   padding: 24px 20px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.30);
   border-radius: 10px;
   box-sizing: border-box;
-  width:320px;
+  width: 320px;
+  border: none;
+  box-shadow:
+    0 14px 40px rgba(0, 0, 0, 0.30),
+    0 0 18px rgba(202, 169, 77, 0.18);
+}
+
+.european-luxury-form-card::before {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  z-index: 0;
+  background: conic-gradient(
+    from 0deg,
+    #caa94d,
+    #eeb516,
+    #a97a3b,
+    #fcfabc,
+    #a97a3b,
+    #eeb516,
+    #caa94d
+  );
+  animation:
+    formBorderRotate 3.8s linear infinite,
+    formBorderPulse 8s ease-in-out infinite,
+    formBorderGlow 8s ease-in-out infinite;
+  filter: blur(2px);
+  opacity: 0.9;
+}
+.european-luxury-form-card {
+  box-shadow:
+    0 14px 40px rgba(0, 0, 0, 0.30),
+    0 0 18px rgba(202, 169, 77, 0.14);
+}
+
+.european-luxury-form-card::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  z-index: 1;
+  background: rgba(25, 20, 17, 0.92);
+  border-radius: 5px;
+}
+
+.european-luxury-form-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes formBorderRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes formBorderPulse {
+  0%,
+  18%,
+  100% {
+    opacity: 0;
+  }
+
+  28%,
+  62% {
+    opacity: 0.95;
+  }
+
+  78% {
+    opacity: 0.15;
+  }
+}
+@keyframes formBorderGlow {
+  0%,
+  18%,
+  100% {
+    filter: blur(1px);
+  }
+
+  28%,
+  62% {
+    filter: blur(4px);
+  }
+
+  78% {
+    filter: blur(1.5px);
+  }
 }
 
 .european-luxury-form-card h2 {
@@ -243,8 +333,9 @@
 }
 
 .mobile-form {
-  width: 100%;
+  width:50%;
   max-width: 100%;
+  margin:50px auto;
 }
 
 .mobile-form h2 {
