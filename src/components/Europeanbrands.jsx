@@ -9,11 +9,11 @@ const ServiceForm = ({
 }) => {
   return (
     <div className={`european-luxury-form-card ${className}`.trim()} id={id}>
-      <h2>Request Service Now</h2>
+      <h2>Request Service</h2>
 
       {showIntro && (
         <p className="form-intro">
-          Get Fast Response - We Will Contact You Shortly
+          Fast Response - We Will Contact You Shortly
         </p>
       )}
 
@@ -179,6 +179,8 @@ const EuropeanLuxuryLanding = () => {
                 </div>
               </div>
 
+              
+
               <div className="luxury-features-section">
                 {features.map((feature) => (
                   <div
@@ -209,9 +211,60 @@ const EuropeanLuxuryLanding = () => {
           </div>
         </section>
       </div>
+      <div className="luxury-reviews-section">
+  <div className="reviews-heading-wrap">
+    <span className="reviews-line"></span>
+    <h3>Client Reviews</h3>
+    <span className="reviews-line"></span>
+  </div>
 
+  <div className="reviews-summary">
+    <span className="reviews-score">4.9</span>
+    <span className="reviews-stars">★★★★★</span>
+    <span className="reviews-meta">
+      average rating <span className="reviews-dot">•</span> Trusted by Los Angeles homeowners
+    </span>
+  </div>
+
+  <div className="reviews-grid">
+    <article className="review-card">
+      <div className="review-stars">★★★★★</div>
+      <h4>Elena R.</h4>
+      <p>
+        Zaricci repaired our La Cornue range flawlessly. The technician was
+        professional, knowledgeable, and treated our kitchen with great care.
+        Highly recommend.
+      </p>
+      <span className="review-source">Verified review</span>
+    </article>
+
+    <article className="review-card">
+      <div className="review-stars">★★★★★</div>
+      <h4>Michael T.</h4>
+      <p>
+        Quick response and excellent service on our Gaggenau oven. They
+        diagnosed the issue accurately and had it working the same day. True
+        experts in luxury appliances.
+      </p>
+      <span className="review-source">Verified review</span>
+    </article>
+
+    <article className="review-card">
+      <div className="review-stars">★★★★★</div>
+      <h4>Sophia L.</h4>
+      <p>
+        Outstanding experience from start to finish. Polite, on time, and
+        incredibly thorough. Our Bertazzoni cooktop works beautifully now.
+        Thank you.
+      </p>
+      <span className="review-source">Verified review</span>
+    </article>
+  </div>
+</div>
      
     </section>
+
+    
   );
 };
 
