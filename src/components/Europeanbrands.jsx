@@ -72,14 +72,14 @@ const EuropeanLuxuryLanding = () => {
       text: 'Experienced with European luxury appliances',
     },
     {
-      icon: '⏱',
-      title: 'Fast Response',
+      icon: '/icons/clock.png',
+      title: 'Fast & Reliable SErvice',
       text: 'Same-day availability in most cases',
     },
     {
-      icon: '🛡',
-      title: 'High-End Service',
-      text: 'Careful diagnostics for premium kitchens',
+      icon: '/icons/services.png',
+      title: 'Satisfaction Guaranteed',
+      text: 'Quality Work for Discerning Clients',
     },
   ];
 
