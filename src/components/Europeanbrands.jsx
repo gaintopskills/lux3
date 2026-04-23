@@ -204,14 +204,9 @@ const EuropeanLuxuryLanding = () => {
                     <p>{feature.text}</p>
                   </div>
                 ))}
+                
               </div>
-            </div>
-
-            <div className="desktop-sidebar-spacer" aria-hidden="true" />
-          </div>
-        </section>
-      </div>
-      <div className="luxury-reviews-section">
+              <div className="luxury-reviews-section">
   <div className="reviews-heading-wrap">
     <span className="reviews-line"></span>
     <h3>Client Reviews</h3>
@@ -219,48 +214,70 @@ const EuropeanLuxuryLanding = () => {
   </div>
 
   <div className="reviews-summary">
-    <span className="reviews-score">4.9</span>
+    <span className="reviews-score">5</span>
     <span className="reviews-stars">★★★★★</span>
     <span className="reviews-meta">
-      average rating <span className="reviews-dot">•</span> Trusted by Los Angeles homeowners
+      average rating <span className="reviews-dot">•</span> Trusted in homeowners Los Angeles & Orange County
     </span>
   </div>
-
   <div className="reviews-grid">
     <article className="review-card">
       <div className="review-stars">★★★★★</div>
-      <h4>Elena R.</h4>
+      <h4>Xan Subeday</h4>
       <p>
-        Zaricci repaired our La Cornue range flawlessly. The technician was
-        professional, knowledgeable, and treated our kitchen with great care.
-        Highly recommend.
+      Had a hard time finding someone who actually know Fulgor Milano appliances, but these guys did - fixed my cook top without any issues and everything's been working great since, really impressed!
       </p>
-      <span className="review-source">Verified review</span>
+      <a
+    href="https://maps.app.goo.gl/YiLLEyim5HCCFqJ19"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="review-source"
+  >
+    Verified - Read on Google
+  </a>
     </article>
 
     <article className="review-card">
       <div className="review-stars">★★★★★</div>
-      <h4>Michael T.</h4>
+      <h4>Inna Barabash</h4>
       <p>
-        Quick response and excellent service on our Gaggenau oven. They
-        diagnosed the issue accurately and had it working the same day. True
-        experts in luxury appliances.
+      Had an issue with my Officine Gullo range not igniting properly, and they fixed it quickly and professionally. Super easy experience!
       </p>
-      <span className="review-source">Verified review</span>
+      <a
+    href="https://maps.app.goo.gl/DQwbrZrLvKuEneQP6"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="review-source"
+  >
+    Verified - Read on Google
+  </a>
     </article>
 
     <article className="review-card">
       <div className="review-stars">★★★★★</div>
-      <h4>Sophia L.</h4>
+      <h4>VN Khasanov's</h4>
       <p>
-        Outstanding experience from start to finish. Polite, on time, and
-        incredibly thorough. Our Bertazzoni cooktop works beautifully now.
-        Thank you.
+      After my La Cornue range broke, I had to get a closer look at the repair service market. After a few unsuccessful calls and attempts to schedule a technician, a coworker pointed me to this company. Everything was handled quickly and efficiently—no unnecessary questions or extra fees. The technician diagnosed the issue right away, ordered the needed parts, and fixed it on the follow-up visit. It’s been a week and everything is still working perfectly. Very happy with the service.
       </p>
-      <span className="review-source">Verified review</span>
+      <a
+    href="https://maps.app.goo.gl/TMxjWZBQobqVMCbK7"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="review-source"
+  >
+    Verified - Read on Google
+  </a>
     </article>
   </div>
+  
 </div>
+            </div>
+
+            <div className="desktop-sidebar-spacer" aria-hidden="true" />
+          </div>
+        </section>
+        
+      </div>
      
     </section>
 
