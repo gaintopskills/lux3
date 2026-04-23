@@ -186,11 +186,14 @@
   padding: 24px 20px;
   border-radius: 10px;
   box-sizing: border-box;
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
+  margin: 50px auto;
   border: none;
   box-shadow:
     0 14px 40px rgba(0, 0, 0, 0.30),
-    0 0 18px rgba(202, 169, 77, 0.18);
+    0 0 0 rgba(202, 169, 77, 0);
+  animation: formOuterGlow 8s ease-in-out infinite;
 }
 
 .european-luxury-form-card::before {
@@ -210,15 +213,9 @@
   );
   animation:
     formBorderRotate 3.8s linear infinite,
-    formBorderPulse 8s ease-in-out infinite,
-    formBorderGlow 8s ease-in-out infinite;
+    formBorderPulse 8s ease-in-out infinite;
   filter: blur(2px);
   opacity: 0.9;
-}
-.european-luxury-form-card {
-  box-shadow:
-    0 14px 40px rgba(0, 0, 0, 0.30),
-    0 0 18px rgba(202, 169, 77, 0.14);
 }
 
 .european-luxury-form-card::after {
@@ -260,21 +257,32 @@
     opacity: 0.15;
   }
 }
-@keyframes formBorderGlow {
+
+@keyframes formOuterGlow {
   0%,
   18%,
   100% {
-    filter: blur(1px);
+    box-shadow:
+      0 14px 40px rgba(0, 0, 0, 0.30),
+      0 0 0 rgba(202, 169, 77, 0);
   }
 
   28%,
   62% {
-    filter: blur(4px);
+    box-shadow:
+      0 14px 40px rgba(0, 0, 0, 0.30),
+      0 0 20px rgba(202, 169, 77, 0.55),
+      0 0 35px rgba(238, 181, 22, 0.35),
+      0 0 55px rgba(252, 250, 188, 0.18);
   }
 
   78% {
-    filter: blur(1.5px);
+    box-shadow:
+      0 14px 40px rgba(0, 0, 0, 0.30),
+      0 0 10px rgba(202, 169, 77, 0.18);
   }
+
+
 }
 
 .european-luxury-form-card h2 {
