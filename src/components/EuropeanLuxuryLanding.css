@@ -133,7 +133,7 @@
 .european-luxury-copy h1 {
   font-family: "Cormorant Garamond", serif;
   margin: 0;
-  font-size: clamp(2.4rem, 5vw, 4.9rem);
+  font-size: clamp(2.1rem, 4.3vw, 4.3rem);
   line-height: 1.03;
   font-weight: 500;
 }
@@ -192,7 +192,7 @@
   border: none;
   box-shadow:
     0 14px 40px rgba(0, 0, 0, 0.30),
-    0 0 0 rgba(202, 169, 77, 0);
+    0 0 0 rgba(150, 124, 68, 0);
   animation: formOuterGlow 8s ease-in-out infinite;
 }
 
@@ -203,13 +203,19 @@
   z-index: 0;
   background: conic-gradient(
     from 0deg,
-    #caa94d,
-    #eeb516,
-    #a97a3b,
-    #fcfabc,
-    #a97a3b,
-    #eeb516,
-    #caa94d
+    #967c44,
+    #e6cca3,
+    #e6c99e,
+    #f4ebdd,
+    #e6c99e,
+    #e6cca3,
+    #967c44,
+    #e6cca3,
+    #e6c99e,
+    #f4ebdd,
+    #e6c99e,
+    #e6cca3,
+    #967c44
   );
   animation:
     formBorderRotate 3.8s linear infinite,
@@ -264,27 +270,24 @@
   100% {
     box-shadow:
       0 14px 40px rgba(0, 0, 0, 0.30),
-      0 0 0 rgba(202, 169, 77, 0);
+      0 0 0 rgba(150, 124, 68, 0);
   }
 
   28%,
   62% {
     box-shadow:
       0 14px 40px rgba(0, 0, 0, 0.30),
-      0 0 20px rgba(202, 169, 77, 0.55),
-      0 0 35px rgba(238, 181, 22, 0.35),
-      0 0 55px rgba(252, 250, 188, 0.18);
+      0 0 20px rgba(150, 124, 68, 0.55),
+      0 0 35px rgba(230, 204, 163, 0.35),
+      0 0 55px rgba(244, 235, 221, 0.22);
   }
 
   78% {
     box-shadow:
       0 14px 40px rgba(0, 0, 0, 0.30),
-      0 0 10px rgba(202, 169, 77, 0.18);
+      0 0 10px rgba(150, 124, 68, 0.18);
   }
-
-
 }
-
 .european-luxury-form-card h2 {
   margin: 0 0 10px;
   font-size: 2rem;
