@@ -257,7 +257,7 @@ const EuropeanLuxuryLanding = () => {
       <div className="review-stars">★★★★★</div>
       <h4>VN Khasanov's</h4>
       <p>
-      After my La Cornue range broke, I had to get a closer look at the repair service market. After a few unsuccessful calls and attempts to schedule a technician, a coworker pointed me to this company. Everything was handled quickly and efficiently—no unnecessary questions or extra fees. The technician diagnosed the issue right away, ordered the needed parts, and fixed it on the follow-up visit. It’s been a week and everything is still working perfectly. Very happy with the service.
+      After my La Cornue range broke, I had to get a closer look at the repair service market. After a few unsuccessful calls and attempts to schedule a technician, a coworker pointed me to this company. Everything was handled quickly and efficiently - no unnecessary questions or extra fees. The technician diagnosed the issue right away, ordered the needed parts, and fixed it on the follow-up visit. It’s been a week and everything is still working perfectly. Very happy with the service.
       </p>
       <a
     href="https://maps.app.goo.gl/TMxjWZBQobqVMCbK7"
