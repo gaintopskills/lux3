@@ -18,12 +18,12 @@ const ServiceForm = ({
       )}
 
       <form className="luxury-service-form">
-        <input type="text" name="name" placeholder="Your Name" />
-        <input type="tel" name="phone" placeholder="Phone Number" />
+        <input type="text" name="name" placeholder="Name" />
+        <input type="tel" name="phone" placeholder="Phone" />
 
         <select name="appliance" defaultValue="">
           <option value="" disabled>
-            Type of Appliance
+            Appliance Type
           </option>
           <option value="range">Range</option>
           <option value="oven">Oven</option>
