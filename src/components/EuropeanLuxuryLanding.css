@@ -800,27 +800,3 @@ footer {
  
 /*-------
 */
-@media (max-width: 768px) {
-  .european-luxury-hero {
-    position: relative !important;
-    top: auto !important;
-    min-height: auto !important;
-    padding-top: 0 !important;
-  }
-
-  .european-luxury-hero .european-luxury-shell {
-    min-height: auto !important;
-    align-items: flex-start !important;
-    padding-top: 0 !important;
-  }
-
-  .wrapper-parallax {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-  }
-
-  .european-luxury-copy {
-    transform: none !important;
-    margin-top: 0 !important;
-  }
-}
