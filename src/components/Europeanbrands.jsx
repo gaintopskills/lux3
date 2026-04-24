@@ -136,23 +136,23 @@ const EuropeanLuxuryLanding = () => {
                   showResponseNote={true}
                 />
               </div>
-
               <div className="luxury-info-section">
-                <h2>
-                Specialized Repair for High-End & Luxury European Appliances
-</h2>
+  <h2>Specialized Repair for High-End & Luxury European Appliances</h2>
 
-<p className="luxury-description">
+  <p className="luxury-description">
     European luxury appliances require a different level of care. We work on
     premium cooking and refrigeration systems with an approach centered on
     accurate diagnostics, careful handling, and respect for high-end finishes,
     panels, and surrounding cabinetry.
-    <br></br> <br></br>
-    <h3>Appliances We repair:</h3>
-    <p></p>
-    Ranges &bull; Rangetops/Cooktops &bull; Hoods &bull; Ovens &bull; Refrigerator &bull;  Freezers &bull; Dishwashers &bull; Warming Drawers  
   </p>
-              </div>
+
+  <h3>Appliances We Repair:</h3>
+
+  <p className="luxury-description">
+    Ranges &bull; Rangetops/Cooktops &bull; Hoods &bull; Ovens &bull;
+    Refrigerators &bull; Freezers &bull; Dishwashers &bull; Warming Drawers
+  </p>
+</div>
 
               <div className="luxury-brands-section">
                 <div className="brands-heading-wrap">
