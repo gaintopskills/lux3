@@ -48,11 +48,12 @@ const finalStructuredData = structuredData || defaultStructuredData;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/png" href="/favicon.png" sizes="512x512">
+        <!--no video preload in this layout, image preload instead-->
 		<style is:global>
 			@import '../styles/critical.css';
 		</style>
 		<meta name="generator" content={Astro.generator} />
-
+   <link rel="preload" as="image" href="/high-end-and-luxury-european-appliance-repair.webp">
 		<title>{title}</title>
 		<meta name="title" content={title} />
 		<meta name="description" content={description} />
