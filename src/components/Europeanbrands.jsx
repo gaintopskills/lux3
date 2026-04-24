@@ -55,14 +55,13 @@ const ServiceForm = ({
 
 const EuropeanLuxuryLanding = () => {
   const brands = [
-    { name: 'La Cornue', image: '/logo/aga-logo.png', width: 180, height: 70 },
-    { name: 'Lacanche', image: '/logo/bertazzoni-logo.png', width: 180, height: 70 },
-    { name: 'Officine Gullo', image: '/logo/fulgor-milano-logo.png', width: 200, height: 70 },
-    { name: 'Bertazzoni', image: '/logo/gaggenau-logo.png', width: 180, height: 70 },
-    { name: 'Fulgor Milano', image: '/logo/la-cornue-logo.png', width: 190, height: 70 },
-    { name: 'ILVE', image: '/logo/lacanche-logo.png', width: 150, height: 70 },
-    { name: 'Gaggenau', image: '/logo/officine-gullo-logo.png', width: 220, height: 70 },
-    { name: 'Gaggenau Alt', image: '/logo/ilve-logo.png', width: 220, height: 70 },
+    { name: 'AGA', image: '/logo/aga-logo.png', width: 180, height: 70 },
+    { name: 'Bertazzoni', image: '/logo/bertazzoni-logo.png', width: 180, height: 70 },
+    { name: 'Gaggenau', image: '/logo/gaggenau-logo.png', width: 180, height: 70 },
+    { name: 'La Cornue', image: '/logo/la-cornue-logo.png', width: 190, height: 70 },
+    { name: 'Lacanche', image: '/logo/lacanche-logo.png', width: 150, height: 70 },
+    { name: 'Officine Gullo', image: '/logo/officine-gullo-logo.png', width: 220, height: 70 },
+    { name: 'ILVE', image: '/logo/ilve-logo.png', width: 220, height: 70 },
   ];
 
   const features = [
@@ -73,7 +72,7 @@ const EuropeanLuxuryLanding = () => {
     },
     {
       icon: '/icons/clock.png',
-      title: 'Fast & Reliable SErvice',
+      title: 'Fast & Reliable Service',
       text: 'Same-day availability in most cases',
     },
     {
@@ -217,7 +216,7 @@ const EuropeanLuxuryLanding = () => {
     <span className="reviews-score">5</span>
     <span className="reviews-stars">★★★★★</span>
     <span className="reviews-meta">
-      average rating <span className="reviews-dot">•</span> Trusted in homeowners Los Angeles & Orange County
+      average rating <span className="reviews-dot">•</span> Trusted by homeowners Los Angeles & Orange County
     </span>
   </div>
   <div className="reviews-grid">
@@ -225,7 +224,7 @@ const EuropeanLuxuryLanding = () => {
       <div className="review-stars">★★★★★</div>
       <h4>Xan Subeday</h4>
       <p>
-      Had a hard time finding someone who actually know Fulgor Milano appliances, but these guys did - fixed my cook top without any issues and everything's been working great since, really impressed!
+      Had a hard time finding someone who actually knew Fulgor Milano appliances, but these guys did - fixed my cook top without any issues and everything's been working great since, really impressed!
       </p>
       <a
     href="https://maps.app.goo.gl/YiLLEyim5HCCFqJ19"
