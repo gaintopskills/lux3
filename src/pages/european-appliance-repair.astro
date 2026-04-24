@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout2.astro';
 import '../styles/global2.css';
 import Europeanbrands from '../components/Europeanbrands.jsx';
+
+import Europeanbrands2 from '../components/Europeanbrands2.jsx';
 import '../components/EuropeanLuxuryLanding.css';
 ---
 <Layout
@@ -9,5 +11,6 @@ import '../components/EuropeanLuxuryLanding.css';
 	description="High-end appliances repair - Encino by certified technicians. Same-day appointments are available. Call today!"
 >
 <Europeanbrands client:idle/>
+<Europeanbrands2 client:visible/>
 
 </Layout>
