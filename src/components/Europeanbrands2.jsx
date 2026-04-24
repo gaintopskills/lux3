@@ -54,54 +54,14 @@ const ServiceForm = ({
 
 const EuropeanLuxuryBelowFold = () => {
   const brands = [
-    {
-      name: 'La Cornue',
-      image: '/logo/la-cornue-logo.png',
-      width: 190,
-      height: 70,
-    },
-    {
-      name: 'Lacanche',
-      image: '/logo/lacanche-logo.png',
-      width: 180,
-      height: 70,
-    },
-    {
-      name: 'Officine Gullo',
-      image: '/logo/officine-gullo-logo.png',
-      width: 220,
-      height: 70,
-    },
-    {
-      name: 'Bertazzoni',
-      image: '/logo/bertazzoni-logo.png',
-      width: 180,
-      height: 70,
-    },
-    {
-      name: 'Fulgor Milano',
-      image: '/logo/fulgor-milano-logo.png',
-      width: 200,
-      height: 70,
-    },
-    {
-      name: 'ILVE',
-      image: '/logo/ilve-logo.png',
-      width: 150,
-      height: 70,
-    },
-    {
-      name: 'Gaggenau',
-      image: '/logo/gaggenau-logo.png',
-      width: 180,
-      height: 70,
-    },
-    {
-      name: 'AGA',
-      image: '/logo/aga-logo.png',
-      width: 180,
-      height: 70,
-    },
+    { name: 'La Cornue', image: '/logo/aga-logo.png', width: 180, height: 70 },
+    { name: 'Lacanche', image: '/logo/bertazzoni-logo.png', width: 180, height: 70 },
+    { name: 'Officine Gullo', image: '/logo/fulgor-milano-logo.png', width: 200, height: 70 },
+    { name: 'Bertazzoni', image: '/logo/gaggenau-logo.png', width: 180, height: 70 },
+    { name: 'Fulgor Milano', image: '/logo/la-cornue-logo.png', width: 190, height: 70 },
+    { name: 'ILVE', image: '/logo/lacanche-logo.png', width: 150, height: 70 },
+    { name: 'Gaggenau', image: '/logo/officine-gullo-logo.png', width: 220, height: 70 },
+    { name: 'Gaggenau Alt', image: '/logo/ilve-logo.png', width: 220, height: 70 },
   ];
 
   const features = [
@@ -112,7 +72,7 @@ const EuropeanLuxuryBelowFold = () => {
     },
     {
       icon: '/icons/clock.png',
-      title: 'Fast & Reliable Service',
+      title: 'Fast & Reliable SErvice',
       text: 'Same-day availability in most cases',
     },
     {
@@ -146,11 +106,11 @@ const EuropeanLuxuryBelowFold = () => {
               for high-end finishes, panels, and surrounding cabinetry.
             </p>
 
-            <h3>Appliances We Repair:</h3>
+            <h3>Appliances We repair:</h3>
 
             <p className="luxury-description">
               Ranges &bull; Rangetops/Cooktops &bull; Hoods &bull; Ovens &bull;
-              Refrigerators &bull; Freezers &bull; Dishwashers &bull; Warming
+              Refrigerator &bull; Freezers &bull; Dishwashers &bull; Warming
               Drawers
             </p>
           </div>
@@ -164,7 +124,10 @@ const EuropeanLuxuryBelowFold = () => {
 
             <div className="brands-grid">
               {brands.map((brand, index) => (
-                <div className="brand-item" key={`${brand.name}-${index}`}>
+                <div
+                  className="brand-item"
+                  key={`${brand.name}-${index}`}
+                >
                   <img
                     src={brand.image}
                     alt={brand.name}
@@ -179,7 +142,10 @@ const EuropeanLuxuryBelowFold = () => {
 
           <div className="luxury-features-section">
             {features.map((feature) => (
-              <div className="feature-card" key={feature.title}>
+              <div
+                className="feature-card"
+                key={feature.title}
+              >
                 <div className="feature-icon">
                   <img
                     src={feature.icon}
@@ -207,21 +173,24 @@ const EuropeanLuxuryBelowFold = () => {
               <span className="reviews-score">5</span>
               <span className="reviews-stars">★★★★★</span>
               <span className="reviews-meta">
-                average rating <span className="reviews-dot">•</span> Trusted
-                by homeowners in Los Angeles & Orange County
+                average rating <span className="reviews-dot">•</span> Trusted in
+                homeowners Los Angeles & Orange County
               </span>
             </div>
 
             <div className="reviews-grid">
               <article className="review-card">
                 <div className="review-stars">★★★★★</div>
+
                 <h4>Xan Subeday</h4>
+
                 <p>
-                  Had a hard time finding someone who actually knew Fulgor
-                  Milano appliances, but these guys did — fixed my cooktop
-                  without any issues and everything's been working great since.
-                  Really impressed!
+                  Had a hard time finding someone who actually know Fulgor
+                  Milano appliances, but these guys did - fixed my cook top
+                  without any issues and everything's been working great since,
+                  really impressed!
                 </p>
+
                 <a
                   href="https://maps.app.goo.gl/YiLLEyim5HCCFqJ19"
                   target="_blank"
@@ -234,12 +203,15 @@ const EuropeanLuxuryBelowFold = () => {
 
               <article className="review-card">
                 <div className="review-stars">★★★★★</div>
+
                 <h4>Inna Barabash</h4>
+
                 <p>
                   Had an issue with my Officine Gullo range not igniting
                   properly, and they fixed it quickly and professionally. Super
                   easy experience!
                 </p>
+
                 <a
                   href="https://maps.app.goo.gl/DQwbrZrLvKuEneQP6"
                   target="_blank"
@@ -252,18 +224,21 @@ const EuropeanLuxuryBelowFold = () => {
 
               <article className="review-card">
                 <div className="review-stars">★★★★★</div>
+
                 <h4>VN Khasanov's</h4>
+
                 <p>
                   After my La Cornue range broke, I had to get a closer look at
                   the repair service market. After a few unsuccessful calls and
                   attempts to schedule a technician, a coworker pointed me to
-                  this company. Everything was handled quickly and efficiently —
+                  this company. Everything was handled quickly and efficiently -
                   no unnecessary questions or extra fees. The technician
                   diagnosed the issue right away, ordered the needed parts, and
                   fixed it on the follow-up visit. It’s been a week and
                   everything is still working perfectly. Very happy with the
                   service.
                 </p>
+
                 <a
                   href="https://maps.app.goo.gl/TMxjWZBQobqVMCbK7"
                   target="_blank"
@@ -276,6 +251,8 @@ const EuropeanLuxuryBelowFold = () => {
             </div>
           </div>
         </div>
+
+        <div className="desktop-sidebar-spacer" aria-hidden="true" />
       </div>
     </section>
   );
