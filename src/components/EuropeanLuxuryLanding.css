@@ -384,7 +384,7 @@
 
 .luxury-info-section {
   max-width: 980px;
-  margin: 0 auto;
+  margin: 50px auto 0 auto;
   text-align: center;
 }
 
@@ -598,7 +598,7 @@ footer {
   .luxury-info-section {
  
  
-    margin: 20px auto 0;
+    margin: 50px auto 0 auto;
    }
  }
  
