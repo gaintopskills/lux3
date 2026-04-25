@@ -691,3 +691,10 @@ footer {
  
 /*-------
 */
+.luxury-service-form button {
+
+  line-height: 1;
+  appearance: none;
+  -webkit-appearance: none;
+  height: 48px;
+}
