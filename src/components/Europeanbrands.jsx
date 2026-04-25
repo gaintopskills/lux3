@@ -31,13 +31,6 @@ const ServiceForm = ({
           value="luxury-service-request"
         />
 
-        <div className="netlify-honeypot">
-          <label>
-            Do not fill this out if you are human:
-            <input name="bot-field" />
-          </label>
-        </div>
-
         <input type="text" name="name" placeholder="Name" />
         <input type="tel" name="phone" placeholder="Phone" />
 
