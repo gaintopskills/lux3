@@ -18,31 +18,53 @@ const ServiceForm = ({
       )}
 
 <form
-  name="luxury-service-request"
-  method="POST"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  action="/thank-you/"
-  hidden
->
-  <input type="hidden" name="form-name" value="luxury-service-request" />
-  <input type="text" name="bot-field" />
-  <input type="text" name="name" />
-  <input type="tel" name="phone" />
-  <select name="appliance">
-    <option value="range">Range</option>
-    <option value="oven">Oven</option>
-    <option value="cooktop">Cooktop</option>
-    <option value="rangetop">Rangetop</option>
-    <option value="stove">Stove</option>
-    <option value="ventilation">Ventilation Hood</option>
-    <option value="refrigerator">Refrigerator</option>
-    <option value="freezer">Freezer</option>
-    <option value="dishwasher">Dishwasher</option>
-    <option value="other">Other</option>
-  </select>
-  <textarea name="issue"></textarea>
-</form>
+        className="luxury-service-form"
+        name="luxury-service-request"
+        method="POST"
+        action="/thank-you/"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+      >
+        <input
+          type="hidden"
+          name="form-name"
+          value="luxury-service-request"
+        />
+
+        <div className="netlify-honeypot">
+          <label>
+            Do not fill this out if you are human:
+            <input name="bot-field" />
+          </label>
+        </div>
+
+        <input type="text" name="name" placeholder="Name" />
+        <input type="tel" name="phone" placeholder="Phone" />
+
+        <select name="appliance" defaultValue="">
+          <option value="" disabled>
+            Appliance Type
+          </option>
+          <option value="range">Range</option>
+          <option value="oven">Oven</option>
+          <option value="cooktop">Cooktop</option>
+          <option value="rangetop">Rangetop</option>
+          <option value="stove">Stove</option>
+          <option value="ventilation">Ventilation Hood</option>
+          <option value="refrigerator">Refrigerator</option>
+          <option value="freezer">Freezer</option>
+          <option value="dishwasher">Dishwasher</option>
+          <option value="other">Other</option>
+        </select>
+
+        <textarea
+          name="issue"
+          rows="4"
+          placeholder="Describe the Issue"
+        />
+
+        <button type="submit">Submit Request</button>
+      </form>
 
       {showResponseNote && (
         <p className="response-note">We respond within minutes</p>
