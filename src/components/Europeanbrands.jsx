@@ -75,6 +75,7 @@ const EuropeanLuxuryLanding = () => {
     { name: 'Lacanche', image: '/logo/lacanche-logo.png', width: 150, height: 70 },
     { name: 'Officine Gullo', image: '/logo/officine-gullo-logo.png', width: 220, height: 70 },
     { name: 'ILVE', image: '/logo/ilve-logo.png', width: 220, height: 70 },
+    { name: 'Fulgor Milano', image: '/logo/fulgor-milano-logo.png', width: 220, height: 70 },
   ];
 
   const features = [
