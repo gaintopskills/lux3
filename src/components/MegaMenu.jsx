@@ -46,7 +46,11 @@ export const MegaMenu = () => {
     <button
       type="button"
       className="dropdown-close-bar"
-      onClick={handleCloseDropdown}
+      onClick={(e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        handleCloseDropdown();
+      }}
       aria-label="Close menu"
     >
       Close <span>✕</span>
