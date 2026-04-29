@@ -124,7 +124,7 @@ export const MegaMenu = () => {
             <div className={`dropdown-content ${openDropdown === "Household" ? "show" : ""}`}>
               <div className="row">
   {[
-    [{ type: "heading", label: "Luxury Brands We Repair" },
+    [{ type: "heading", label: "Luxury Brands Repair", href: "/european-appliance-repair/" },
     { label: "AGA", href: "/aga-appliance-repair/" },
     { label: "American Range", href: "/american-range-repair/" },
     { label: "Bertazzoni", href: "/bertazzoni-appliance-repair/" },
@@ -164,9 +164,9 @@ export const MegaMenu = () => {
     <div className="column" key={idx}>
   {col.map((item) =>
     item.type === "heading" ? (
-      <h4 className="column-header" key={item.label}>
+      <a className="column-header-link" href={item.href} key={item.label}><h4 className="column-header" key={item.label}>
         {item.label}
-      </h4>
+      </h4></a>
     ) : (
       <a key={item.label} href={item.href}>
         {/* <img src={`/svg/${item.label.split(" ")[0].toLowerCase()}.svg`} alt={item.label} /> */} {item.label}
