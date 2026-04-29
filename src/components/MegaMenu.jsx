@@ -124,7 +124,7 @@ export const MegaMenu = () => {
             <div className={`dropdown-content ${openDropdown === "Household" ? "show" : ""}`}>
               <div className="row">
   {[
-    [{ type: "heading", label: "Luxury Brands Repair", href: "/european-appliance-repair/" },
+    [{ type: "heading", label: "Luxury Brand Repair", href: "/european-appliance-repair/" },
     { label: "AGA", href: "/aga-appliance-repair/" },
     { label: "Bertazzoni", href: "/bertazzoni-appliance-repair/" },
     { label: "Fulgor Milano", href: "/fulgor-milano-appliance-repair/" },
@@ -132,9 +132,8 @@ export const MegaMenu = () => {
     { label: "ILVE", href: "/ilve-appliance-repair/" },
     { label: "Lacanche", href: "/lacanche-appliance-repair/" },
     { label: "La Cornue", href: "/la-cornue-appliance-repair/" },
-    { label: "American Range", href: "/american-range-repair/" },
   ],
-    [ 
+    [     { label: "American Range", href: "/american-range-repair/" },
       { label: "Big Chill", href: "/big-chill-appliance-repair/" },
       { label: "BlueStar", href: "/bluestar-appliance-repair/" },
       { label: "Bosch", href: "/bosch-appliance-repair/" },
