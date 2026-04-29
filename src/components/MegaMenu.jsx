@@ -132,8 +132,9 @@ export const MegaMenu = () => {
     { label: "ILVE", href: "/ilve-appliance-repair/" },
     { label: "Lacanche", href: "/lacanche-appliance-repair/" },
     { label: "La Cornue", href: "/la-cornue-appliance-repair/" },
+   
   ],
-    [     { label: "American Range", href: "/american-range-repair/" },
+    [  { label: "American Range", href: "/american-range-repair/" },
       { label: "Big Chill", href: "/big-chill-appliance-repair/" },
       { label: "BlueStar", href: "/bluestar-appliance-repair/" },
       { label: "Bosch", href: "/bosch-appliance-repair/" },
