@@ -347,35 +347,43 @@ a{color:#ffffff;}
   }
 }
      /* End Parallax Header for mobile speed*/
-     .dropdown-content.show {
-      visibility: visible;
-    }
     
-    .dropdown-close-bar {
-      display: none;
-    }
-    
-    @media screen and (max-width: 768px) {
+
+     @media screen and (max-width: 768px) {
       .dropdown-close-bar {
         display: flex;
-        width: calc(100% - 20px);
-        margin: 10px auto 5px;
-        padding: 12px 16px;
+        width: calc(100% - 32px);
+        margin: 12px auto 18px;
+        padding: 10px 16px;
         justify-content: center;
         align-items: center;
-        gap: 10px;
-        background: #990000;
-        color: #ffffff;
-        border: 1px solid rgba(255, 255, 255, 0.35);
-        border-radius: 6px;
-        font-size: 16px;
-        font-weight: 700;
+        gap: 8px;
+    
+        background: rgba(0, 0, 0, 0.45);
+        color: #e6cca3;
+        border: 1px solid rgba(230, 204, 163, 0.45);
+        border-radius: 999px;
+    
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 1.6px;
         text-transform: uppercase;
+    
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+    
         cursor: pointer;
       }
     
       .dropdown-close-bar span {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 1;
+        color: #f4ebdd;
+      }
+    
+      .dropdown-close-bar:hover,
+      .dropdown-close-bar:focus {
+        background: rgba(153, 0, 0, 0.22);
+        border-color: rgba(230, 204, 163, 0.75);
       }
     }

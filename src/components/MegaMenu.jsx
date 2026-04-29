@@ -49,7 +49,7 @@ export const MegaMenu = () => {
       onClick={handleCloseDropdown}
       aria-label="Close menu"
     >
-      Close Menu <span>✕</span>
+      Close <span>✕</span>
     </button>
   );
 
