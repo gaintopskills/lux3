@@ -184,10 +184,23 @@ a{color:#ffffff;}
         display: inline-block; /* Ensure inline layout */
         margin:0 10px -6px;
       }
-     .dropdown:hover .dropdown-content {
+      .dropdown-content {
+        display: none;
+        visibility: hidden;
+      }
+      
+      .dropdown-content.show {
+        display: block;
         visibility: visible;
-        transition: opacity 0.5s ease, visibility 0.5s ease;
-    }
+      }
+      
+      @media screen and (min-width: 769px) {
+        .dropdown:hover .dropdown-content {
+          display: block;
+          visibility: visible;
+          transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+      }
       @media screen and (max-width: 768px) {
         .dropdown-content {
             padding: 0; /* Remove padding for mobile */
@@ -197,9 +210,7 @@ a{color:#ffffff;}
         padding: 16px;
         color: white;
       }
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
+
       /* Create three equal columns */
       .column {
         float: left;
