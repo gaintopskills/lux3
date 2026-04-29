@@ -122,10 +122,10 @@ export const MegaMenu = () => {
   Brands <ArrowIcon isOpen={openDropdown === "Brands"} />
 </button>
             <div className={`dropdown-content ${openDropdown === "Household" ? "show" : ""}`}>
-              <h3>High-End  Brands We Repair</h3>
               <div className="row">
   {[
-    [{ label: "AGA", href: "/aga-appliance-repair/" },
+    [{ type: "heading", label: "Luxury Brands We Repair" },
+    { label: "AGA", href: "/aga-appliance-repair/" },
     { label: "American Range", href: "/american-range-repair/" },
     { label: "Bertazzoni", href: "/bertazzoni-appliance-repair/" },
     { label: "Big Chill", href: "/big-chill-appliance-repair/" },
@@ -162,18 +162,18 @@ export const MegaMenu = () => {
     ],
   ].map((col, idx) => (
     <div className="column" key={idx}>
-      {col.map((item) =>
-        typeof item === "string" ? (
-          <a key={item} href="#">
-            {/* <img src={`/svg/${item.split(" ")[0].toLowerCase()}.svg`} alt={item} /> */} {item}
-          </a>
-        ) : (
-          <a key={item.label} href={item.href}>
-            {/* <img src={`/svg/${item.label.split(" ")[0].toLowerCase()}.svg`} alt={item.label} /> */} {item.label}
-          </a>
-        )
-      )}
-    </div>
+  {col.map((item) =>
+    item.type === "heading" ? (
+      <h4 className="column-header" key={item.label}>
+        {item.label}
+      </h4>
+    ) : (
+      <a key={item.label} href={item.href}>
+        {/* <img src={`/svg/${item.label.split(" ")[0].toLowerCase()}.svg`} alt={item.label} /> */} {item.label}
+      </a>
+    )
+  )}
+</div>
   ))}
 </div>
             </div>
