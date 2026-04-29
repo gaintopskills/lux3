@@ -134,8 +134,6 @@ export const MegaMenu = () => {
     { label: "Cove", href: "/cove-dishwasher-repair/" },
     { label: "Dacor", href: "/dacor-appliance-repair/" },
     { label: "Elmira Stove Works", href: "/elmira-stove-works-appliance-repair/" },
-    
-    
   ],
     [ 
     { label: "FiveStar", href: "/fivestar-appliance-repair/" },
