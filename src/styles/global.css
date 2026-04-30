@@ -194,13 +194,7 @@ a{color:#ffffff;}
         visibility: visible;
       }
       
-      @media screen and (min-width: 769px) {
-        .dropdown:hover .dropdown-content {
-          display: block;
-          visibility: visible;
-          transition: opacity 0.5s ease, visibility 0.5s ease;
-        }
-      }
+
       @media screen and (max-width: 768px) {
         .dropdown-content {
             padding: 0; /* Remove padding for mobile */
@@ -350,40 +344,49 @@ a{color:#ffffff;}
     
 
  
-      .dropdown-close-bar {
-        display: flex;
-        width: calc(100% - 32px);
-        margin: 12px auto 18px;
-        padding: 10px 16px;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
+     .dropdown-content {
+      display: none;
+      visibility: hidden;
+    }
     
-        background: rgba(0, 0, 0, 0.45);
-        color: #e6cca3;
-        border: 1px solid rgba(230, 204, 163, 0.45);
-        border-radius: 999px;
+    .dropdown-content.show {
+      display: block;
+      visibility: visible;
+    }
     
-        font-size: 13px;
-        font-weight: 600;
-        letter-spacing: 1.6px;
-        text-transform: uppercase;
+    .dropdown-close-bar {
+      display: flex;
+      width: calc(100% - 32px);
+      margin: 12px auto 18px;
+      padding: 10px 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
     
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
+      background: rgba(0, 0, 0, 0.45);
+      color: #e6cca3;
+      border: 1px solid rgba(230, 204, 163, 0.45);
+      border-radius: 999px;
     
-        cursor: pointer;
-      }
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
     
-      .dropdown-close-bar span {
-        font-size: 16px;
-        line-height: 1;
-        color: #f4ebdd;
-      }
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
     
-      .dropdown-close-bar:hover,
-      .dropdown-close-bar:focus {
-        background: rgba(153, 0, 0, 0.22);
-        border-color: rgba(230, 204, 163, 0.75);
-      }
+      cursor: pointer;
+    }
     
+    .dropdown-close-bar span {
+      font-size: 16px;
+      line-height: 1;
+      color: #f4ebdd;
+    }
+    
+    .dropdown-close-bar:hover,
+    .dropdown-close-bar:focus {
+      background: rgba(153, 0, 0, 0.22);
+      border-color: rgba(230, 204, 163, 0.75);
+    }

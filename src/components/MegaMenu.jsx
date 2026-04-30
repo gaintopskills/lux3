@@ -38,19 +38,21 @@ export const MegaMenu = () => {
     setOpenDropdown((currentMenu) => (currentMenu === menuId ? null : menuId));
   };
 
-  const handleCloseDropdown = () => {
+  const handleCloseDropdown = (e) => {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  
     setOpenDropdown(null);
   };
-
+  
   const CloseMenuBar = () => (
     <button
       type="button"
       className="dropdown-close-bar"
-      onClick={(e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        handleCloseDropdown();
-      }}
+      onClick={handleCloseDropdown}
+      onMouseDown={handleCloseDropdown}
       aria-label="Close menu"
     >
       Close <span>✕</span>
