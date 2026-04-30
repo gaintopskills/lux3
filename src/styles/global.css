@@ -82,6 +82,9 @@ h3 {
 }
 a{color:#ffffff;}
 
+
+
+
 /*MegaMenu*/
    /* Default Logo Size */
    .logo img {
@@ -128,9 +131,11 @@ a{color:#ffffff;}
     }
       /*-- end sticky header*/
       .navbar {
-        overflow: hidden;
+        overflow: visible !important;
         background-color: #000000;
+      
       }
+      
       .navbar a {
         float: left;
         color: white;
@@ -305,6 +310,10 @@ a{color:#ffffff;}
   }
   /*MegaMenu*/
 
+
+
+
+
     /* Parallax Header for mobile speed*/
 
     .header-image {
@@ -341,8 +350,6 @@ a{color:#ffffff;}
   }
 }
      /* End Parallax Header for mobile speed*/
-    
-
  
      .dropdown-content {
       display: none;
