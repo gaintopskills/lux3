@@ -47,6 +47,10 @@ export const MegaMenu = () => {
     setOpenDropdown(null);
   };
   
+  const handleLinkClick = () => {
+    setOpenDropdown(null);
+  };
+  
   const CloseMenuBar = () => (
     <button
       type="button"
@@ -69,16 +73,27 @@ export const MegaMenu = () => {
                 className="column-header-link"
                 href={item.href}
                 key={item.label}
-                onClick={handleCloseDropdown}
+                onClick={handleLinkClick}
               >
                 <h4 className="column-header">{item.label}</h4>
               </a>
             ) : typeof item === "string" ? (
-              <a key={item} href="#" onClick={handleCloseDropdown}>
+              <a
+                key={item}
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleLinkClick();
+                }}
+              >
                 {item}
               </a>
             ) : (
-              <a key={item.label} href={item.href} onClick={handleCloseDropdown}>
+              <a
+                key={item.label}
+                href={item.href}
+                onClick={handleLinkClick}
+              >
                 {item.label}
               </a>
             )
