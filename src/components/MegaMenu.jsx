@@ -318,7 +318,7 @@ export const MegaMenu = () => {
           <a href="tel:+14244997788" className="phone-number">
             (424) 499-7788
           </a>
-          <span className="review-stars">Google Reviews ★★★★★</span>
+          <span className="review-stars">5.0 ★★★★★</span>
         </div>
       </nav>
     </header>
