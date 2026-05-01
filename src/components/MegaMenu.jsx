@@ -310,7 +310,7 @@ export const MegaMenu = () => {
               </h3>
             </div>
           </div>
-
+          
           <a href="/book/" className="phone-number">
             BOOK Online
           </a>
@@ -318,6 +318,7 @@ export const MegaMenu = () => {
           <a href="tel:+14244997788" className="phone-number">
             (424) 499-7788
           </a>
+          <span className="review-stars">Google Reviews ★★★★★</span>
         </div>
       </nav>
     </header>
