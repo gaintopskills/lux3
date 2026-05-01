@@ -7,128 +7,127 @@ const googleReviews = [
     date: "Google Review",
     rating: 5,
     categories: ["Sub-Zero", "Refrigerator"],
-    text: "Paste the real Google review text here."
+    text: "Paste the real Google review text here. Keep the wording exactly as the customer wrote it."
   },
   {
     name: "Reviewer Name",
     date: "Google Review",
     rating: 5,
     categories: ["Wolf", "Range"],
-    text: "Paste the real Google review text here."
+    text: "Paste another real Google review here. This section is designed for verified customer reviews."
   },
   {
     name: "Reviewer Name",
     date: "Google Review",
     rating: 5,
     categories: ["Miele", "Dishwasher"],
-    text: "Paste the real Google review text here."
+    text: "Paste another real Google review here."
   },
   {
     name: "Reviewer Name",
     date: "Google Review",
     rating: 5,
     categories: ["Thermador", "Oven"],
-    text: "Paste the real Google review text here."
-  },
-  {
-    name: "Reviewer Name",
-    date: "Google Review",
-    rating: 5,
-    categories: ["Sub-Zero", "Freezer"],
-    text: "Paste the real Google review text here."
-  },
-  {
-    name: "Reviewer Name",
-    date: "Google Review",
-    rating: 5,
-    categories: ["Wolf", "Cooktop"],
-    text: "Paste the real Google review text here."
-  },
-  {
-    name: "Reviewer Name",
-    date: "Google Review",
-    rating: 5,
-    categories: ["Miele", "Dishwasher"],
-    text: "Paste the real Google review text here."
-  },
-  {
-    name: "Reviewer Name",
-    date: "Google Review",
-    rating: 5,
-    categories: ["Refrigerator"],
-    text: "Paste the real Google review text here."
+    text: "Paste another real Google review here."
   },
   {
     name: "Reviewer Name",
     date: "Google Review",
     rating: 5,
     categories: ["Dishwasher"],
-    text: "Paste the real Google review text here."
+    text: "Paste another real Google review here."
+  },
+  {
+    name: "Reviewer Name",
+    date: "Google Review",
+    rating: 5,
+    categories: ["Refrigerator"],
+    text: "Paste another real Google review here."
+  },
+  {
+    name: "Reviewer Name",
+    date: "Google Review",
+    rating: 5,
+    categories: ["Sub-Zero", "Freezer"],
+    text: "Paste another real Google review here."
+  },
+  {
+    name: "Reviewer Name",
+    date: "Google Review",
+    rating: 5,
+    categories: ["Wolf", "Cooktop"],
+    text: "Paste another real Google review here."
+  },
+  {
+    name: "Reviewer Name",
+    date: "Google Review",
+    rating: 5,
+    categories: ["Miele", "Dishwasher"],
+    text: "Paste another real Google review here."
   },
   {
     name: "Reviewer Name",
     date: "Google Review",
     rating: 5,
     categories: ["Sub-Zero", "Refrigerator"],
-    text: "Paste the real Google review text here."
+    text: "Paste another real Google review here."
   },
   {
     name: "Reviewer Name",
     date: "Google Review",
     rating: 5,
     categories: ["Wolf", "Range"],
-    text: "Paste the real Google review text here."
+    text: "Paste another real Google review here."
   },
   {
     name: "Reviewer Name",
     date: "Google Review",
     rating: 5,
     categories: ["Miele", "Dishwasher"],
-    text: "Paste the real Google review text here."
+    text: "Paste another real Google review here."
   },
   {
     name: "Reviewer Name",
     date: "Google Review",
     rating: 5,
     categories: ["Thermador", "Oven"],
-    text: "Paste the real Google review text here."
+    text: "Paste another real Google review here."
   },
   {
     name: "Reviewer Name",
     date: "Google Review",
     rating: 5,
     categories: ["Sub-Zero", "Freezer"],
-    text: "Paste the real Google review text here."
+    text: "Paste another real Google review here."
   },
   {
     name: "Reviewer Name",
     date: "Google Review",
     rating: 5,
     categories: ["Wolf", "Cooktop"],
-    text: "Paste the real Google review text here."
+    text: "Paste another real Google review here."
   },
   {
     name: "Reviewer Name",
     date: "Google Review",
     rating: 5,
     categories: ["Miele", "Dishwasher"],
-    text: "Paste the real Google review text here."
+    text: "Paste another real Google review here."
   },
   {
     name: "Reviewer Name",
     date: "Google Review",
     rating: 5,
     categories: ["Refrigerator"],
-    text: "Paste the real Google review text here."
+    text: "Paste another real Google review here."
   },
   {
     name: "Reviewer Name",
     date: "Google Review",
     rating: 5,
     categories: ["Dishwasher"],
-    text: "Paste the real Google review text here."
+    text: "Paste another real Google review here."
   }
-  
 ];
 
 const reviewFilters = [
@@ -137,13 +136,15 @@ const reviewFilters = [
   "Wolf",
   "Miele",
   "Thermador",
-  "Refrigerator",
-  "Dishwasher"
+  "Dishwasher",
+  "Refrigerator"
 ];
 
 export default function GoogleReviews() {
+  const reviewsPerLoad = 6;
+
   const [activeFilter, setActiveFilter] = useState("All");
-  const [visibleCount, setVisibleCount] = useState(6);
+  const [visibleCount, setVisibleCount] = useState(reviewsPerLoad);
 
   const filteredReviews = useMemo(() => {
     if (activeFilter === "All") {
@@ -156,72 +157,55 @@ export default function GoogleReviews() {
   }, [activeFilter]);
 
   const visibleReviews = filteredReviews.slice(0, visibleCount);
+
   const hasMoreReviews = visibleCount < filteredReviews.length;
 
   const handleFilterClick = (filter) => {
     setActiveFilter(filter);
-    setVisibleCount(6);
+    setVisibleCount(reviewsPerLoad);
   };
 
   const handleShowMore = () => {
-    setVisibleCount((currentCount) => currentCount + 6);
+    setVisibleCount((currentCount) => {
+      return currentCount + reviewsPerLoad;
+    });
   };
 
   return (
-    <section className="google-reviews-section" aria-labelledby="google-reviews-title">
-      <div className="google-reviews-inner">
-        <div className="reviews-header">
-          <p className="reviews-eyebrow">Google Reviews</p>
+    <section className="zaricci-reviews-section" aria-labelledby="zaricci-reviews-title">
+      <div className="zaricci-reviews-inner">
+        <div className="zaricci-reviews-heading">
+          <p className="zaricci-reviews-eyebrow">Google Reviews</p>
 
-          <h2 id="google-reviews-title">
+          <h2 id="zaricci-reviews-title">
             Trusted by Homeowners Across Los Angeles
           </h2>
 
-          <p className="reviews-intro">
-            Rated 5 stars by customers who rely on us for luxury appliance repair,
-            clear communication, and professional in-home service.
+          <p className="zaricci-reviews-intro">
+            Real customer feedback from homeowners who rely on Luxury Appliance
+            Repair by Zaricci for professional service, clear communication, and
+            high-end appliance repair.
           </p>
 
-          <div className="reviews-summary" aria-label="Google rating summary">
-            <div className="summary-rating">
-              <span className="summary-number">5.0</span>
-              <span className="summary-stars" aria-label="5 out of 5 stars">★★★★★</span>
-            </div>
-
-            <div className="summary-text">
-              <strong>50+ Google reviews</strong>
-              <span>Verified customer feedback from local appliance repair appointments.</span>
-            </div>
-          </div>
-
-          <div className="reviews-actions">
-            <a
-              className="reviews-primary-link"
-              href="YOUR_GOOGLE_REVIEWS_LINK_HERE"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Read Reviews on Google
-            </a>
-
-            <a
-              className="reviews-secondary-link"
-              href="YOUR_GOOGLE_REVIEW_REQUEST_LINK_HERE"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Leave a Review
-            </a>
+          <div className="zaricci-reviews-summary">
+            <span className="zaricci-rating-number">5.0</span>
+            <span className="zaricci-rating-stars" aria-label="5 out of 5 stars">
+              ★★★★★
+            </span>
           </div>
         </div>
 
-        <div className="reviews-filter-bar" aria-label="Filter reviews by service type">
+        <div className="zaricci-review-filters" aria-label="Filter reviews">
           {reviewFilters.map((filter) => {
             return (
               <button
                 key={filter}
                 type="button"
-                className={activeFilter === filter ? "filter-button active" : "filter-button"}
+                className={
+                  activeFilter === filter
+                    ? "zaricci-filter-button active"
+                    : "zaricci-filter-button"
+                }
                 onClick={() => handleFilterClick(filter)}
               >
                 {filter}
@@ -230,33 +214,36 @@ export default function GoogleReviews() {
           })}
         </div>
 
-        <div className="reviews-grid">
+        <div className="zaricci-reviews-grid">
           {visibleReviews.map((review, index) => {
             return (
-              <article className="review-card" key={`${review.name}-${index}`}>
-                <div className="review-card-top">
-                  <div className="review-avatar" aria-hidden="true">
+              <article className="zaricci-review-card" key={`${review.name}-${index}`}>
+                <div className="zaricci-review-top">
+                  <div className="zaricci-review-avatar" aria-hidden="true">
                     {review.name.charAt(0)}
                   </div>
 
-                  <div>
+                  <div className="zaricci-review-name-wrap">
                     <h3>{review.name}</h3>
                     <p>{review.date}</p>
                   </div>
                 </div>
 
-                <div className="review-stars" aria-label={`${review.rating} out of 5 stars`}>
+                <div
+                  className="zaricci-review-stars"
+                  aria-label={`${review.rating} out of 5 stars`}
+                >
                   {"★".repeat(review.rating)}
                 </div>
 
-                <p className="review-text">
+                <p className="zaricci-review-text">
                   “{review.text}”
                 </p>
 
-                <div className="review-tags">
+                <div className="zaricci-review-tags">
                   {review.categories.map((category) => {
                     return (
-                      <span className="review-category" key={category}>
+                      <span className="zaricci-review-tag" key={category}>
                         {category}
                       </span>
                     );
@@ -268,19 +255,19 @@ export default function GoogleReviews() {
         </div>
 
         {filteredReviews.length === 0 && (
-          <p className="no-reviews-message">
+          <p className="zaricci-no-reviews">
             No reviews found for this category yet.
           </p>
         )}
 
         {hasMoreReviews && (
-          <div className="reviews-load-more-wrap">
+          <div className="zaricci-load-more-wrap">
             <button
               type="button"
-              className="load-more-reviews"
+              className="zaricci-load-more-button"
               onClick={handleShowMore}
             >
-              View More Reviews
+              Show More Reviews
             </button>
           </div>
         )}
