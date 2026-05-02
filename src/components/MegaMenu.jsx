@@ -125,7 +125,6 @@ export const MegaMenu = () => {
       { label: "Wine Cellar Repair", href: "/wine-cellar-repair/" },
     ],
   ];
-
   const brandsColumns = [
     [
       {
