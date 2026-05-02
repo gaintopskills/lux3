@@ -130,8 +130,7 @@ export const MegaMenu = () => {
       {
         type: "heading",
         label: "Luxury Brand Repair",
-        href: "/european-appliance-repair/",
-      },
+        href: "/european-appliance-repair/", },
       { label: "AGA", href: "/aga-appliance-repair/" },
       { label: "Bertazzoni", href: "/bertazzoni-appliance-repair/" },
       { label: "Fulgor Milano", href: "/fulgor-milano-appliance-repair/" },
@@ -323,5 +322,4 @@ export const MegaMenu = () => {
     </header>
   );
 };
-
 export default MegaMenu;
