@@ -43,6 +43,20 @@ const googleReviews = [
     rating: 5,
     category: "Refrigerator",
     text: "Paste another real Google review here."
+  },
+  {
+    name: "Reviewer Name",
+    date: "Google Review",
+    rating: 5,
+    category: "Sub-Zero",
+    text: "Paste another real Google review here."
+  },
+  {
+    name: "Reviewer Name",
+    date: "Google Review",
+    rating: 5,
+    category: "Wolf",
+    text: "Paste another real Google review here."
   }
 ];
 
@@ -57,8 +71,11 @@ const reviewFilters = [
 ];
 
 export default function GoogleReviews() {
+  const INITIAL_VISIBLE_COUNT = 6;
+  const LOAD_MORE_COUNT = 6;
+
   const [activeFilter, setActiveFilter] = useState("All");
-  const [visibleCount, setVisibleCount] = useState(6);
+  const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE_COUNT);
 
   const filteredReviews = useMemo(() => {
     if (activeFilter === "All") {
@@ -70,17 +87,26 @@ export default function GoogleReviews() {
     });
   }, [activeFilter]);
 
-  const visibleReviews = filteredReviews.slice(0, visibleCount);
+  const visibleReviews = useMemo(() => {
+    return filteredReviews.slice(0, visibleCount);
+  }, [filteredReviews, visibleCount]);
 
   const hasMoreReviews = visibleCount < filteredReviews.length;
+  const hasShownMoreReviews = visibleCount > INITIAL_VISIBLE_COUNT;
 
   const handleFilterClick = (filter) => {
     setActiveFilter(filter);
-    setVisibleCount(6);
+    setVisibleCount(INITIAL_VISIBLE_COUNT);
   };
 
   const handleShowMore = () => {
-    setVisibleCount((currentCount) => currentCount + 6);
+    setVisibleCount((currentCount) => {
+      return Math.min(currentCount + LOAD_MORE_COUNT, filteredReviews.length);
+    });
+  };
+
+  const handleShowLess = () => {
+    setVisibleCount(INITIAL_VISIBLE_COUNT);
   };
 
   return (
@@ -163,7 +189,7 @@ export default function GoogleReviews() {
         <div className="reviews-grid">
           {visibleReviews.map((review, index) => {
             return (
-              <article className="review-card" key={`${review.name}-${index}`}>
+              <article className="review-card" key={`${review.name}-${review.category}-${index}`}>
                 <div className="review-card-top">
                   <div className="review-avatar" aria-hidden="true">
                     {review.name.charAt(0)}
@@ -196,8 +222,8 @@ export default function GoogleReviews() {
           })}
         </div>
 
-        {hasMoreReviews && (
-          <div className="reviews-load-more-wrap">
+        <div className="reviews-load-more-wrap">
+          {hasMoreReviews && (
             <button
               type="button"
               className="load-more-reviews"
@@ -205,8 +231,18 @@ export default function GoogleReviews() {
             >
               Show More Reviews
             </button>
-          </div>
-        )}
+          )}
+
+          {hasShownMoreReviews && (
+            <button
+              type="button"
+              className="load-more-reviews show-less-reviews"
+              onClick={handleShowLess}
+            >
+              Show Less
+            </button>
+          )}
+        </div>
       </div>
     </section>
   );
