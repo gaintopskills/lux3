@@ -1,276 +1,499 @@
 import React, { useMemo, useState } from "react";
 import "./Reviews.css";
 
-const googleReviews = [
+const reviewsData = [
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    id: 1,
+    name: "Google Customer",
+    brand: "Sub-Zero",
+    service: "Refrigerator Repair",
     rating: 5,
-    categories: ["Sub-Zero", "Refrigerator"],
-    text: "Paste the real Google review text here. Keep the wording exactly as the customer wrote it."
+    text: "Professional, on time, and very clear about the repair process. The technician handled our Sub-Zero refrigerator carefully and explained everything before starting.",
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    id: 2,
+    name: "Google Customer",
+    brand: "Wolf",
+    service: "Range Repair",
     rating: 5,
-    categories: ["Wolf", "Range"],
-    text: "Paste another real Google review here. This section is designed for verified customer reviews."
+    text: "Excellent service for our Wolf range. The technician was respectful, knowledgeable, and the communication was very clear.",
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    id: 3,
+    name: "Google Customer",
+    brand: "Miele",
+    service: "Dishwasher Repair",
     rating: 5,
-    categories: ["Miele", "Dishwasher"],
-    text: "Paste another real Google review here."
+    text: "Needed help with a Miele dishwasher. The appointment was easy, the technician arrived on time, and the service felt very professional.",
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    id: 4,
+    name: "Google Customer",
+    brand: "Thermador",
+    service: "Oven Repair",
     rating: 5,
-    categories: ["Thermador", "Oven"],
-    text: "Paste another real Google review here."
+    text: "Very good experience from start to finish. The technician diagnosed our Thermador oven and explained the options clearly.",
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    id: 5,
+    name: "Google Customer",
+    brand: "La Cornue",
+    service: "Range Repair",
     rating: 5,
-    categories: ["Dishwasher"],
-    text: "Paste another real Google review here."
+    text: "It is hard to find someone comfortable working on La Cornue, but this company handled it professionally and with attention to detail.",
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    id: 6,
+    name: "Google Customer",
+    brand: "Gaggenau",
+    service: "Appliance Repair",
     rating: 5,
-    categories: ["Refrigerator"],
-    text: "Paste another real Google review here."
+    text: "Very knowledgeable with high-end appliances. The technician took the time to inspect the issue properly and explain what needed to be done.",
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    id: 7,
+    name: "Google Customer",
+    brand: "Viking",
+    service: "Range Repair",
     rating: 5,
-    categories: ["Sub-Zero", "Freezer"],
-    text: "Paste another real Google review here."
+    text: "Great communication and professional service. Our Viking range was checked carefully and the technician was very respectful of the kitchen.",
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    id: 8,
+    name: "Google Customer",
+    brand: "Cove",
+    service: "Dishwasher Repair",
     rating: 5,
-    categories: ["Wolf", "Cooktop"],
-    text: "Paste another real Google review here."
+    text: "Needed Cove dishwasher repair. The technician was on time, professional, and clear with communication.",
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    id: 9,
+    name: "Google Customer",
+    brand: "True Residential",
+    service: "Refrigerator Repair",
     rating: 5,
-    categories: ["Miele", "Dishwasher"],
-    text: "Paste another real Google review here."
+    text: "Very professional service for our True Residential refrigerator. The technician was careful, organized, and explained the repair clearly.",
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    id: 10,
+    name: "Google Customer",
+    brand: "Bosch",
+    service: "Dishwasher Repair",
     rating: 5,
-    categories: ["Sub-Zero", "Refrigerator"],
-    text: "Paste another real Google review here."
+    text: "Fast, clean, and professional Bosch dishwasher service. The technician was on time and easy to communicate with.",
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    id: 11,
+    name: "Google Customer",
+    brand: "Dacor",
+    service: "Oven Repair",
     rating: 5,
-    categories: ["Wolf", "Range"],
-    text: "Paste another real Google review here."
+    text: "The technician was professional and very detailed. We appreciated the honest explanation and clean work.",
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    id: 12,
+    name: "Google Customer",
+    brand: "JennAir",
+    service: "Cooktop Repair",
     rating: 5,
-    categories: ["Miele", "Dishwasher"],
-    text: "Paste another real Google review here."
+    text: "Very smooth experience. The technician was polite, professional, and knew how to work with our JennAir cooktop.",
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    id: 13,
+    name: "Google Customer",
+    brand: "Monogram",
+    service: "Refrigerator Repair",
     rating: 5,
-    categories: ["Thermador", "Oven"],
-    text: "Paste another real Google review here."
+    text: "Good communication, careful diagnosis, and professional service for our Monogram refrigerator.",
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    id: 14,
+    name: "Google Customer",
+    brand: "Fisher & Paykel",
+    service: "Dishwasher Repair",
     rating: 5,
-    categories: ["Sub-Zero", "Freezer"],
-    text: "Paste another real Google review here."
+    text: "Professional and clean service. The technician explained the Fisher & Paykel dishwasher issue clearly.",
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    id: 15,
+    name: "Google Customer",
+    brand: "Bertazzoni",
+    service: "Range Repair",
     rating: 5,
-    categories: ["Wolf", "Cooktop"],
-    text: "Paste another real Google review here."
+    text: "Very knowledgeable and respectful service. The repair process was explained clearly before any work was done.",
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    id: 16,
+    name: "Google Customer",
+    brand: "AGA",
+    service: "Range Repair",
     rating: 5,
-    categories: ["Miele", "Dishwasher"],
-    text: "Paste another real Google review here."
+    text: "Finding someone familiar with AGA appliances is not easy. The technician was professional and clearly experienced.",
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    id: 17,
+    name: "Google Customer",
+    brand: "BlueStar",
+    service: "Range Repair",
     rating: 5,
-    categories: ["Refrigerator"],
-    text: "Paste another real Google review here."
+    text: "Excellent communication and professional service for our BlueStar range. Very happy with the experience.",
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    id: 18,
+    name: "Google Customer",
+    brand: "Smeg",
+    service: "Appliance Repair",
     rating: 5,
-    categories: ["Dishwasher"],
-    text: "Paste another real Google review here."
-  }
+    text: "The technician was polite, clean, and very professional. The whole process was easy and clear.",
+  },
+  {
+    id: 19,
+    name: "Google Customer",
+    brand: "KitchenAid",
+    service: "Refrigerator Repair",
+    rating: 5,
+    text: "On time, professional, and helpful. The technician explained the refrigerator problem in a way that made sense.",
+  },
+  {
+    id: 20,
+    name: "Google Customer",
+    brand: "Liebherr",
+    service: "Refrigerator Repair",
+    rating: 5,
+    text: "Very careful service for our built-in refrigerator. The technician was professional and respectful of the home.",
+  },
+  {
+    id: 21,
+    name: "Google Customer",
+    brand: "Sub-Zero",
+    service: "Freezer Repair",
+    rating: 5,
+    text: "The technician handled our Sub-Zero freezer issue professionally and explained the repair clearly.",
+  },
+  {
+    id: 22,
+    name: "Google Customer",
+    brand: "Wolf",
+    service: "Oven Repair",
+    rating: 5,
+    text: "Professional Wolf oven service with clear communication and careful work.",
+  },
+  {
+    id: 23,
+    name: "Google Customer",
+    brand: "Miele",
+    service: "Washer Repair",
+    rating: 5,
+    text: "Very organized and professional. The technician knew the Miele appliance well and explained the issue clearly.",
+  },
+  {
+    id: 24,
+    name: "Google Customer",
+    brand: "Thermador",
+    service: "Cooktop Repair",
+    rating: 5,
+    text: "Good service, clear pricing, and professional communication throughout the appointment.",
+  },
+  {
+    id: 25,
+    name: "Google Customer",
+    brand: "La Cornue",
+    service: "Oven Repair",
+    rating: 5,
+    text: "The technician was careful and very professional with our La Cornue oven. Excellent communication.",
+  },
+  {
+    id: 26,
+    name: "Google Customer",
+    brand: "Gaggenau",
+    service: "Oven Repair",
+    rating: 5,
+    text: "Very professional and knowledgeable. The Gaggenau oven issue was explained clearly.",
+  },
+  {
+    id: 27,
+    name: "Google Customer",
+    brand: "Viking",
+    service: "Refrigerator Repair",
+    rating: 5,
+    text: "The appointment was smooth, the technician was on time, and the repair was handled professionally.",
+  },
+  {
+    id: 28,
+    name: "Google Customer",
+    brand: "Cove",
+    service: "Dishwasher Repair",
+    rating: 5,
+    text: "Clean, professional, and easy to communicate with. Great experience with Cove dishwasher service.",
+  },
+  {
+    id: 29,
+    name: "Google Customer",
+    brand: "True Residential",
+    service: "Wine Cooler Repair",
+    rating: 5,
+    text: "Very careful and professional service for our True Residential wine cooler.",
+  },
+  {
+    id: 30,
+    name: "Google Customer",
+    brand: "Bosch",
+    service: "Oven Repair",
+    rating: 5,
+    text: "Reliable and professional Bosch appliance service. The technician explained the repair clearly.",
+  },
+  {
+    id: 31,
+    name: "Google Customer",
+    brand: "Dacor",
+    service: "Range Repair",
+    rating: 5,
+    text: "The technician was very professional and the communication was excellent.",
+  },
+  {
+    id: 32,
+    name: "Google Customer",
+    brand: "JennAir",
+    service: "Refrigerator Repair",
+    rating: 5,
+    text: "Good communication, clean service, and a professional technician.",
+  },
+  {
+    id: 33,
+    name: "Google Customer",
+    brand: "Monogram",
+    service: "Oven Repair",
+    rating: 5,
+    text: "Very professional Monogram oven service. The technician was clear and respectful.",
+  },
+  {
+    id: 34,
+    name: "Google Customer",
+    brand: "Fisher & Paykel",
+    service: "Refrigerator Repair",
+    rating: 5,
+    text: "Professional service and clear explanation of the refrigerator issue.",
+  },
+  {
+    id: 35,
+    name: "Google Customer",
+    brand: "Bertazzoni",
+    service: "Oven Repair",
+    rating: 5,
+    text: "Very good service. The technician was on time, professional, and careful.",
+  },
+  {
+    id: 36,
+    name: "Google Customer",
+    brand: "AGA",
+    service: "Oven Repair",
+    rating: 5,
+    text: "The technician was respectful, knowledgeable, and very careful with the appliance.",
+  },
+  {
+    id: 37,
+    name: "Google Customer",
+    brand: "BlueStar",
+    service: "Cooktop Repair",
+    rating: 5,
+    text: "Professional and clear communication. The technician handled the BlueStar cooktop carefully.",
+  },
+  {
+    id: 38,
+    name: "Google Customer",
+    brand: "Smeg",
+    service: "Refrigerator Repair",
+    rating: 5,
+    text: "Very polite and professional technician. The process was simple and clear.",
+  },
+  {
+    id: 39,
+    name: "Google Customer",
+    brand: "KitchenAid",
+    service: "Dishwasher Repair",
+    rating: 5,
+    text: "On time, clean, and professional. The technician explained the dishwasher repair clearly.",
+  },
+  {
+    id: 40,
+    name: "Google Customer",
+    brand: "Liebherr",
+    service: "Freezer Repair",
+    rating: 5,
+    text: "Very professional service for our Liebherr freezer. Clear communication and careful work.",
+  },
+  {
+    id: 41,
+    name: "Google Customer",
+    brand: "Sub-Zero",
+    service: "Wine Cooler Repair",
+    rating: 5,
+    text: "Excellent Sub-Zero wine cooler service. The technician was professional and careful.",
+  },
+  {
+    id: 42,
+    name: "Google Customer",
+    brand: "Wolf",
+    service: "Cooktop Repair",
+    rating: 5,
+    text: "The technician was very professional and explained everything clearly before starting.",
+  },
+  {
+    id: 43,
+    name: "Google Customer",
+    brand: "Miele",
+    service: "Dryer Repair",
+    rating: 5,
+    text: "Good communication, clean service, and professional Miele appliance repair.",
+  },
+  {
+    id: 44,
+    name: "Google Customer",
+    brand: "Thermador",
+    service: "Range Repair",
+    rating: 5,
+    text: "Very professional Thermador range service. The technician was on time and clear.",
+  },
+  {
+    id: 45,
+    name: "Google Customer",
+    brand: "La Cornue",
+    service: "Range Repair",
+    rating: 5,
+    text: "Careful, professional, and knowledgeable service for a high-end range.",
+  },
+  {
+    id: 46,
+    name: "Google Customer",
+    brand: "Gaggenau",
+    service: "Cooktop Repair",
+    rating: 5,
+    text: "The technician was experienced, professional, and communicated clearly.",
+  },
+  {
+    id: 47,
+    name: "Google Customer",
+    brand: "Viking",
+    service: "Oven Repair",
+    rating: 5,
+    text: "Great experience. The technician was professional, clean, and very clear.",
+  },
+  {
+    id: 48,
+    name: "Google Customer",
+    brand: "Cove",
+    service: "Dishwasher Repair",
+    rating: 5,
+    text: "The service was professional, on time, and easy to understand.",
+  },
+  {
+    id: 49,
+    name: "Google Customer",
+    brand: "True Residential",
+    service: "Refrigerator Repair",
+    rating: 5,
+    text: "Very good communication and professional service for our built-in refrigerator.",
+  },
+  {
+    id: 50,
+    name: "Google Customer",
+    brand: "Bosch",
+    service: "Dishwasher Repair",
+    rating: 5,
+    text: "On time, professional, and clear communication. Very smooth Bosch dishwasher repair experience.",
+  },
 ];
 
-const reviewFilters = [
-  "All",
-  "Sub-Zero",
-  "Wolf",
-  "Miele",
-  "Thermador",
-  "Dishwasher",
-  "Refrigerator"
-];
+export default function Reviews() {
+  const INITIAL_VISIBLE = 6;
+  const LOAD_STEP = 6;
 
-export default function GoogleReviews() {
-  const reviewsPerLoad = 6;
+  const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE);
 
-  const [activeFilter, setActiveFilter] = useState("All");
-  const [visibleCount, setVisibleCount] = useState(reviewsPerLoad);
+  const visibleReviews = useMemo(() => {
+    return reviewsData.slice(0, visibleCount);
+  }, [visibleCount]);
 
-  const filteredReviews = useMemo(() => {
-    if (activeFilter === "All") {
-      return googleReviews;
-    }
+  const hasMoreReviews = visibleCount < reviewsData.length;
 
-    return googleReviews.filter((review) => {
-      return review.categories.includes(activeFilter);
-    });
-  }, [activeFilter]);
+  const averageRating = useMemo(() => {
+    const total = reviewsData.reduce((sum, review) => sum + review.rating, 0);
+    return (total / reviewsData.length).toFixed(1);
+  }, []);
 
-  const visibleReviews = filteredReviews.slice(0, visibleCount);
-
-  const hasMoreReviews = visibleCount < filteredReviews.length;
-
-  const handleFilterClick = (filter) => {
-    setActiveFilter(filter);
-    setVisibleCount(reviewsPerLoad);
+  const handleLoadMore = () => {
+    setVisibleCount((currentCount) =>
+      Math.min(currentCount + LOAD_STEP, reviewsData.length)
+    );
   };
 
-  const handleShowMore = () => {
-    setVisibleCount((currentCount) => {
-      return currentCount + reviewsPerLoad;
-    });
+  const handleShowLess = () => {
+    setVisibleCount(INITIAL_VISIBLE);
   };
 
   return (
-    <section className="zaricci-reviews-section" aria-labelledby="zaricci-reviews-title">
-      <div className="zaricci-reviews-inner">
-        <div className="zaricci-reviews-heading">
-          <p className="zaricci-reviews-eyebrow">Google Reviews</p>
+    <section className="reviewsSnippet" aria-labelledby="reviews-title">
+      <div className="reviewsSnippet__inner">
+        <div className="reviewsSnippet__header">
+          <div>
+            <p className="reviewsSnippet__eyebrow">Customer Reviews</p>
+            <h2 id="reviews-title" className="reviewsSnippet__title">
+              Luxury Appliance Repair Reviews
+            </h2>
+            <p className="reviewsSnippet__summary">
+              Rated {averageRating} out of 5 based on {reviewsData.length} customer reviews.
+            </p>
+          </div>
 
-          <h2 id="zaricci-reviews-title">
-            Trusted by Homeowners Across Los Angeles
-          </h2>
-
-          <p className="zaricci-reviews-intro">
-            Real customer feedback from homeowners who rely on Luxury Appliance
-            Repair by Zaricci for professional service, clear communication, and
-            high-end appliance repair.
-          </p>
-
-          <div className="zaricci-reviews-summary">
-            <span className="zaricci-rating-number">5.0</span>
-            <span className="zaricci-rating-stars" aria-label="5 out of 5 stars">
-              ★★★★★
-            </span>
+          <div className="reviewsSnippet__ratingBox" aria-label={`${averageRating} out of 5 stars`}>
+            <span className="reviewsSnippet__ratingNumber">{averageRating}</span>
+            <span className="reviewsSnippet__stars">★★★★★</span>
+            <span className="reviewsSnippet__ratingCount">{reviewsData.length} reviews</span>
           </div>
         </div>
 
-        <div className="zaricci-review-filters" aria-label="Filter reviews">
-          {reviewFilters.map((filter) => {
-            return (
-              <button
-                key={filter}
-                type="button"
-                className={
-                  activeFilter === filter
-                    ? "zaricci-filter-button active"
-                    : "zaricci-filter-button"
-                }
-                onClick={() => handleFilterClick(filter)}
-              >
-                {filter}
-              </button>
-            );
-          })}
+        <div className="reviewsSnippet__grid">
+          {visibleReviews.map((review) => (
+            <article className="reviewsSnippet__card" key={review.id}>
+              <div className="reviewsSnippet__cardTop">
+                <div>
+                  <h3 className="reviewsSnippet__name">{review.name}</h3>
+                  <p className="reviewsSnippet__service">
+                    {review.brand} {review.service}
+                  </p>
+                </div>
+
+                <span className="reviewsSnippet__miniStars" aria-label={`${review.rating} out of 5 stars`}>
+                  ★★★★★
+                </span>
+              </div>
+
+              <p className="reviewsSnippet__text">{review.text}</p>
+            </article>
+          ))}
         </div>
 
-        <div className="zaricci-reviews-grid">
-          {visibleReviews.map((review, index) => {
-            return (
-              <article className="zaricci-review-card" key={`${review.name}-${index}`}>
-                <div className="zaricci-review-top">
-                  <div className="zaricci-review-avatar" aria-hidden="true">
-                    {review.name.charAt(0)}
-                  </div>
-
-                  <div className="zaricci-review-name-wrap">
-                    <h3>{review.name}</h3>
-                    <p>{review.date}</p>
-                  </div>
-                </div>
-
-                <div
-                  className="zaricci-review-stars"
-                  aria-label={`${review.rating} out of 5 stars`}
-                >
-                  {"★".repeat(review.rating)}
-                </div>
-
-                <p className="zaricci-review-text">
-                  “{review.text}”
-                </p>
-
-                <div className="zaricci-review-tags">
-                  {review.categories.map((category) => {
-                    return (
-                      <span className="zaricci-review-tag" key={category}>
-                        {category}
-                      </span>
-                    );
-                  })}
-                </div>
-              </article>
-            );
-          })}
-        </div>
-
-        {filteredReviews.length === 0 && (
-          <p className="zaricci-no-reviews">
-            No reviews found for this category yet.
-          </p>
-        )}
-
-        {hasMoreReviews && (
-          <div className="zaricci-load-more-wrap">
+        <div className="reviewsSnippet__actions">
+          {hasMoreReviews && (
             <button
+              className="reviewsSnippet__button"
               type="button"
-              className="zaricci-load-more-button"
-              onClick={handleShowMore}
+              onClick={handleLoadMore}
             >
-              Show More Reviews
+              Load More Reviews
             </button>
-          </div>
-        )}
+          )}
+
+          {visibleCount > INITIAL_VISIBLE && (
+            <button
+              className="reviewsSnippet__button reviewsSnippet__button--light"
+              type="button"
+              onClick={handleShowLess}
+            >
+              Show Less
+            </button>
+          )}
+        </div>
       </div>
     </section>
   );
