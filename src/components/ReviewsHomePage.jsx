@@ -325,10 +325,6 @@ export default function GoogleReviews() {
     <section className="google-reviews-section" aria-labelledby="google-reviews-title">
       <div className="google-reviews-inner">
         <div className="reviews-header">
-          <p className="reviews-eyebrow">
-            Google Reviews
-          </p>
-
           <h2 id="google-reviews-title">
             Trusted by Homeowners
           </h2>
