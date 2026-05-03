@@ -4,14 +4,7 @@ import "./ReviewsWidget.css";
 const GOOGLE_REVIEWS_LINK = "https://maps.app.goo.gl/zt2UaMLkY8JFjTzP6";
 
 const googleReviews = [
-  {
-    initial: "A",
-    date: "Verified - Read on Google",
-    link: "https://maps.app.goo.gl/5tD5SYy8dmcV5FAo7",
-    rating: 5,
-    category: "Cove",
-    text: "I had a great experience with this company! The technician arrived very quickly and fixed my Cove dishwasher in no time. Everything was done efficiently and professionally. I also want to mention the customer service - the lady who answered the phone was very friendly, helpful, and explained everything clearly. It made the whole process smooth and stress-free. Highly recommend this company!"
-  },
+ 
   {
     initial: "K",
     date: "Verified - Read on Google",
@@ -243,6 +236,14 @@ const googleReviews = [
     rating: 5,
     category: "Miele",
     text: "Reliable company, fixed my Miele dishwasher."
+  },
+  {
+    initial: "A",
+    date: "Verified - Read on Google",
+    link: "https://maps.app.goo.gl/5tD5SYy8dmcV5FAo7",
+    rating: 5,
+    category: "Cove",
+    text: "I had a great experience with this company! The technician arrived very quickly and fixed my Cove dishwasher in no time. Everything was done efficiently and professionally. I also want to mention the customer service - the lady who answered the phone was very friendly, helpful, and explained everything clearly. It made the whole process smooth and stress-free. Highly recommend this company!"
   },
   {
     initial: "I",
