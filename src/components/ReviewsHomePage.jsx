@@ -213,60 +213,36 @@ const googleReviews = [
     text: "Called Zaricci for True Residential refrigerator repair. The fridge wasn’t holding temperature and I didn’t want to risk it getting worse. They handled it professionally, got it sorted out. Solid and reliable company."
   },
   {
-    initial: "H",
+    initial: "D",
     date: "Verified - Read on Google",
     link: GOOGLE_REVIEWS_LINK,
     rating: 5,
-    category: "Wolf",
-    text: "Paste another real Google review here."
+    category: "ILVE",
+    text: "I was looking everywhere for someone who actually does ILVE range repair. My oven wasn’t holding temperature and one burner kept clicking, they fixed both without dragging it out. It now cooks exactly the way it should again. Thank you!"
   },
   {
-    initial: "H",
+    initial: "A",
     date: "Verified - Read on Google",
-    link: GOOGLE_REVIEWS_LINK,
+    link: "https://maps.app.goo.gl/tAFhqTCRjmGbR4vb8",
     rating: 5,
-    category: "Wolf",
-    text: "Paste another real Google review here."
+    category: "Bosch",
+    text: "This company came and fixed my Bosch dishwasher. They are nice and fast it took them an hour to fix it. My dishwasher had draining problems and they were able to fix it that same day."
   },
   {
-    initial: "H",
+    initial: "M",
     date: "Verified - Read on Google",
-    link: GOOGLE_REVIEWS_LINK,
+    link: "https://maps.app.goo.gl/BGRFZ98vejo7fZqTA",
     rating: 5,
-    category: "Wolf",
-    text: "Paste another real Google review here."
+    category: "Cove",
+    text: "I needed Cove dishwasher repair. Technician was on time, professional, and communication was clear."
   },
   {
-    initial: "H",
+    initial: "C",
     date: "Verified - Read on Google",
-    link: GOOGLE_REVIEWS_LINK,
+    link: "https://maps.app.goo.gl/obdCTwQTrkr4kKyN6",
     rating: 5,
-    category: "Wolf",
-    text: "Paste another real Google review here."
-  },
-  {
-    initial: "H",
-    date: "Verified - Read on Google",
-    link: GOOGLE_REVIEWS_LINK,
-    rating: 5,
-    category: "Wolf",
-    text: "Paste another real Google review here."
-  },
-  {
-    initial: "H",
-    date: "Verified - Read on Google",
-    link: GOOGLE_REVIEWS_LINK,
-    rating: 5,
-    category: "Wolf",
-    text: "Paste another real Google review here."
-  },
-  {
-    initial: "H",
-    date: "Verified - Read on Google",
-    link: GOOGLE_REVIEWS_LINK,
-    rating: 5,
-    category: "Wolf",
-    text: "Paste another real Google review here."
+    category: "Miele",
+    text: "Reliable company, fixed my Miele dishwasher."
   }
 ];
 
