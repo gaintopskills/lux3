@@ -146,7 +146,9 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    margin: 0 auto 30px;
+    margin: 0 auto 30px auto;
+    width:50%;
+  
   }
   
   .filter-button {
@@ -196,6 +198,7 @@
       linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.035));
     box-shadow: 0 20px 70px rgba(0, 0, 0, 0.26);
     overflow: hidden;
+    width:50%;
   }
   
   .review-card::before {
