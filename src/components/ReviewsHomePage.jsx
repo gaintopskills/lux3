@@ -120,7 +120,7 @@ export default function GoogleReviews() {
           </p>
 
           <h2 id="google-reviews-title">
-            Trusted by Homeowners Across Los Angeles
+            Trusted by Homeowners
           </h2>
 
           <p className="reviews-intro">
