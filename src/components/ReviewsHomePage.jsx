@@ -145,72 +145,72 @@ const googleReviews = [
     date: "Verified - Read on Google",
     link: "https://maps.app.goo.gl/5Hek72J8gyfe2w229",
     rating: 5,
-    category: "WoLa Cornuelf",
+    category: "La Cornuelf",
     text: "A friend gave me Zaricci's phone number for La Cornue range repair. Technian came the next day, was very polite, diagnosed the problem, and told us what parts need to be ordered to repair. After he came back and fixed the range, we experienced no issues after  The process was very smooth and the customer service kept updating us with everything step. Very happy with the service."
   },
   {
-    initial: "H",
+    initial: "R",
     date: "Verified - Read on Google",
-    link: GOOGLE_REVIEWS_LINK,
+    link: "https://maps.app.goo.gl/vJ2a2sdgXsUM5jCi7",
     rating: 5,
-    category: "Wolf",
-    text: "Paste another real Google review here."
+    category: "Bosch",
+    text: "Fixed my bosch washer!"
+  },
+  {
+    initial: "I",
+    date: "Verified - Read on Google",
+    link: "https://maps.app.goo.gl/uXNjdko6FaQbTU2x7",
+    rating: 5,
+    category: "Bertazzoni",
+    text: "Glad I called Zaricci for my Bertazzoni range repair. I would give them 10 stars if I could."
+  },
+  {
+    initial: "X",
+    date: "Verified - Read on Google",
+    link: "https://maps.app.goo.gl/oc7AXhrZyEmpDUwa7",
+    rating: 5,
+    category: "Fulgor Milano",
+    text: "Had a hard time finding someone who actually know Fulgor Milano appliances, but these guys did - fixed my cook top without any issues and everything's been working great since, really impressed!"
+  },
+  {
+    initial: "M",
+    date: "Verified - Read on Google",
+    link: "https://maps.app.goo.gl/rzT2YxCpH9nZ6rYZA",
+    rating: 5,
+    category: "",
+    text: "Great service and very knowledgeable.  Thanks again"
+  },
+  {
+    initial: "E",
+    date: "Verified - Read on Google",
+    link: "https://maps.app.goo.gl/wKV23Tk7rg4dkv7f7",
+    rating: 5,
+    category: "Bertazzoni",
+    text: "Great Service! Fixed my Bertazzoni range the same day. Recommend!"
+  },
+  {
+    initial: "K",
+    date: "Verified - Read on Google",
+    link: "https://maps.app.goo.gl/bTD1QUuTBa7F9SGA9",
+    rating: 5,
+    category: "BlueStar",
+    text: "I called Zaricci for my BlueStar range repair. It was acting up and I was very frustrated. Burners uneven and the oven running hot. They got it sorted pretty fast and now I am back to my normal routine. I am happy that my range finally works perfectly! I will call them back without hesitation if I need another appliance repair service."
   },
   {
     initial: "H",
     date: "Verified - Read on Google",
-    link: GOOGLE_REVIEWS_LINK,
+    link: "https://maps.app.goo.gl/PufyBxQ5WcLbkqcw6",
     rating: 5,
-    category: "Wolf",
-    text: "Paste another real Google review here."
+    category: "Thermador",
+    text: "My Thermador oven wouldn’t heat up, which was stressful because and I rely on it every day. After calling Zaricci for my Thermador repair, they made the whole process feel easy. There was no confusion, no back and forth. The repair was done properly, and I really appreciated that they even followed up after to make sure everything was working fine. Truly pleased with the service."
   },
   {
-    initial: "H",
+    initial: "T",
     date: "Verified - Read on Google",
-    link: GOOGLE_REVIEWS_LINK,
+    link: "https://maps.app.goo.gl/M5VJdRGcE2BjvpVp9",
     rating: 5,
-    category: "Wolf",
-    text: "Paste another real Google review here."
-  },
-  {
-    initial: "H",
-    date: "Verified - Read on Google",
-    link: GOOGLE_REVIEWS_LINK,
-    rating: 5,
-    category: "Wolf",
-    text: "Paste another real Google review here."
-  },
-  {
-    initial: "H",
-    date: "Verified - Read on Google",
-    link: GOOGLE_REVIEWS_LINK,
-    rating: 5,
-    category: "Wolf",
-    text: "Paste another real Google review here."
-  },
-  {
-    initial: "H",
-    date: "Verified - Read on Google",
-    link: GOOGLE_REVIEWS_LINK,
-    rating: 5,
-    category: "Wolf",
-    text: "Paste another real Google review here."
-  },
-  {
-    initial: "H",
-    date: "Verified - Read on Google",
-    link: GOOGLE_REVIEWS_LINK,
-    rating: 5,
-    category: "Wolf",
-    text: "Paste another real Google review here."
-  },
-  {
-    initial: "H",
-    date: "Verified - Read on Google",
-    link: GOOGLE_REVIEWS_LINK,
-    rating: 5,
-    category: "Wolf",
-    text: "Paste another real Google review here."
+    category: "True",
+    text: "Called Zaricci for True Residential refrigerator repair. The fridge wasn’t holding temperature and I didn’t want to risk it getting worse. They handled it professionally, got it sorted out. Solid and reliable company."
   },
   {
     initial: "H",
