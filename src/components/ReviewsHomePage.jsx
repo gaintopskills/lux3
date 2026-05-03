@@ -109,7 +109,47 @@ const googleReviews = [
     text: "After my La Cornue range broke, I had to get a closer look at the repair service market. After a few unsuccessful calls and attempts to schedule a technician, a coworker pointed me to this company. Everything was handled quickly and efficiently—no unnecessary questions or extra fees. The technician diagnosed the issue right away, ordered the needed parts, and fixed it on the follow-up visit. It’s been a week and everything is still working perfectly. Very happy with the service."
   },
   {
-    initial: "T",
+    initial: "V",
+    date: "Verified - Read on Google",
+    link: "https://maps.app.goo.gl/37RmhCEEG7cX58D99",
+    rating: 5,
+    category: "La Cornue",
+    text: "We were looking for a company with a solid reputation but without the extra markup just for the name, and a friend recommended this one for our La Cornue range. So first thing- it took really not much time to set things up. The technician Dan was fast and professional—figured out what’s wrong, ordered a few parts, and came back to fix everything on the second visit. It’s been about a month now and the range is working great. Really glad we found them!"
+  },
+  {
+    initial: "L",
+    date: "Verified - Read on Google",
+    link: "https://maps.app.goo.gl/BVJ8uJ8LRpid6FVb8",
+    rating: 5,
+    category: "Bertazzoni",
+    text: "I had an issue my Bertazzoni range, it wasn’t heating evenly and one of the burners had trouble igniting. The technician clearly knew to to work with Bertazzoni range, explained what he will do to fix it and why. I loved clear communication and professionalism. The range works perfectly again!"
+  },
+  {
+    initial: "D",
+    date: "Verified - Read on Google",
+    link: "https://maps.app.goo.gl/2MnSBGWC8AmQk4629",
+    rating: 5,
+    category: "Miele",
+    text: "This company was highly recommended to me after my Miele dishwasher stopped working. All I can say, these guys are great. On time and professional. Customer service is outstanding."
+  },
+  {
+    initial: "V",
+    date: "Verified - Read on Google",
+    link: "https://maps.app.goo.gl/cqdHBKaHNs6K1UJS9",
+    rating: 5,
+    category: "Sub-Zero",
+    text: "My Sub-Zero refrigerator was not cooling, this company fixed it fairly quickly. No issues. Great service overall."
+  },
+  {
+    initial: "K",
+    date: "Verified - Read on Google",
+    link: "https://maps.app.goo.gl/5Hek72J8gyfe2w229",
+    rating: 5,
+    category: "WoLa Cornuelf",
+    text: "A friend gave me Zaricci's phone number for La Cornue range repair. Technian came the next day, was very polite, diagnosed the problem, and told us what parts need to be ordered to repair. After he came back and fixed the range, we experienced no issues after  The process was very smooth and the customer service kept updating us with everything step. Very happy with the service."
+  },
+  {
+    initial: "H",
     date: "Verified - Read on Google",
     link: GOOGLE_REVIEWS_LINK,
     rating: 5,
@@ -117,7 +157,103 @@ const googleReviews = [
     text: "Paste another real Google review here."
   },
   {
-    initial: "E",
+    initial: "H",
+    date: "Verified - Read on Google",
+    link: GOOGLE_REVIEWS_LINK,
+    rating: 5,
+    category: "Wolf",
+    text: "Paste another real Google review here."
+  },
+  {
+    initial: "H",
+    date: "Verified - Read on Google",
+    link: GOOGLE_REVIEWS_LINK,
+    rating: 5,
+    category: "Wolf",
+    text: "Paste another real Google review here."
+  },
+  {
+    initial: "H",
+    date: "Verified - Read on Google",
+    link: GOOGLE_REVIEWS_LINK,
+    rating: 5,
+    category: "Wolf",
+    text: "Paste another real Google review here."
+  },
+  {
+    initial: "H",
+    date: "Verified - Read on Google",
+    link: GOOGLE_REVIEWS_LINK,
+    rating: 5,
+    category: "Wolf",
+    text: "Paste another real Google review here."
+  },
+  {
+    initial: "H",
+    date: "Verified - Read on Google",
+    link: GOOGLE_REVIEWS_LINK,
+    rating: 5,
+    category: "Wolf",
+    text: "Paste another real Google review here."
+  },
+  {
+    initial: "H",
+    date: "Verified - Read on Google",
+    link: GOOGLE_REVIEWS_LINK,
+    rating: 5,
+    category: "Wolf",
+    text: "Paste another real Google review here."
+  },
+  {
+    initial: "H",
+    date: "Verified - Read on Google",
+    link: GOOGLE_REVIEWS_LINK,
+    rating: 5,
+    category: "Wolf",
+    text: "Paste another real Google review here."
+  },
+  {
+    initial: "H",
+    date: "Verified - Read on Google",
+    link: GOOGLE_REVIEWS_LINK,
+    rating: 5,
+    category: "Wolf",
+    text: "Paste another real Google review here."
+  },
+  {
+    initial: "H",
+    date: "Verified - Read on Google",
+    link: GOOGLE_REVIEWS_LINK,
+    rating: 5,
+    category: "Wolf",
+    text: "Paste another real Google review here."
+  },
+  {
+    initial: "H",
+    date: "Verified - Read on Google",
+    link: GOOGLE_REVIEWS_LINK,
+    rating: 5,
+    category: "Wolf",
+    text: "Paste another real Google review here."
+  },
+  {
+    initial: "H",
+    date: "Verified - Read on Google",
+    link: GOOGLE_REVIEWS_LINK,
+    rating: 5,
+    category: "Wolf",
+    text: "Paste another real Google review here."
+  },
+  {
+    initial: "H",
+    date: "Verified - Read on Google",
+    link: GOOGLE_REVIEWS_LINK,
+    rating: 5,
+    category: "Wolf",
+    text: "Paste another real Google review here."
+  },
+  {
+    initial: "H",
     date: "Verified - Read on Google",
     link: GOOGLE_REVIEWS_LINK,
     rating: 5,
