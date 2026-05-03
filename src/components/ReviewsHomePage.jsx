@@ -1,59 +1,61 @@
 import React, { useMemo, useState } from "react";
 import "./ReviewsWidget.css";
 
+const GOOGLE_REVIEWS_LINK = "YOUR_GOOGLE_REVIEWS_LINK_HERE";
+
 const googleReviews = [
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    date: "Verified - Read on Google",
+    link: GOOGLE_REVIEWS_LINK,
     rating: 5,
     category: "Sub-Zero",
     text: "Paste the real Google review text here. Keep the wording exactly as the customer wrote it."
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    date: "Verified - Read on Google",
+    link: GOOGLE_REVIEWS_LINK,
     rating: 5,
     category: "Wolf",
     text: "Paste another real Google review here. This section is designed for verified customer reviews."
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    date: "Verified - Read on Google",
+    link: GOOGLE_REVIEWS_LINK,
     rating: 5,
     category: "Miele",
     text: "Paste another real Google review here."
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    date: "Verified - Read on Google",
+    link: GOOGLE_REVIEWS_LINK,
     rating: 5,
     category: "Thermador",
     text: "Paste another real Google review here."
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    date: "Verified - Read on Google",
+    link: GOOGLE_REVIEWS_LINK,
     rating: 5,
     category: "Dishwasher",
     text: "Paste another real Google review here."
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    date: "Verified - Read on Google",
+    link: GOOGLE_REVIEWS_LINK,
     rating: 5,
     category: "Refrigerator",
     text: "Paste another real Google review here."
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    date: "Verified - Read on Google",
+    link: GOOGLE_REVIEWS_LINK,
     rating: 5,
     category: "Sub-Zero",
     text: "Paste another real Google review here."
   },
   {
-    name: "Reviewer Name",
-    date: "Google Review",
+    date: "Verified - Read on Google",
+    link: GOOGLE_REVIEWS_LINK,
     rating: 5,
     category: "Wolf",
     text: "Paste another real Google review here."
@@ -122,8 +124,8 @@ export default function GoogleReviews() {
           </h2>
 
           <p className="reviews-intro">
-            Rated 5 stars by customers who rely on us for luxury appliance repair,
-            clear communication, and professional in-home service.
+            Rated 5 stars by customers who rely on us for high-end and luxury appliance repair,
+            reliable, and professional in-home service.
           </p>
 
           <div className="reviews-summary" aria-label="Google rating summary">
@@ -139,7 +141,7 @@ export default function GoogleReviews() {
 
             <div className="summary-text">
               <strong>
-                50+ Google reviews
+                30+ Google reviews
               </strong>
 
               <span>
@@ -151,7 +153,7 @@ export default function GoogleReviews() {
           <div className="reviews-actions">
             <a
               className="reviews-primary-link"
-              href="YOUR_GOOGLE_REVIEWS_LINK_HERE"
+              href={GOOGLE_REVIEWS_LINK}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -189,20 +191,21 @@ export default function GoogleReviews() {
         <div className="reviews-grid">
           {visibleReviews.map((review, index) => {
             return (
-              <article className="review-card" key={`${review.name}-${review.category}-${index}`}>
+              <article className="review-card" key={`${review.category}-${index}`}>
                 <div className="review-card-top">
                   <div className="review-avatar" aria-hidden="true">
-                    {review.name.charAt(0)}
+                    G
                   </div>
 
                   <div>
-                    <h3>
-                      {review.name}
-                    </h3>
-
-                    <p>
+                    <a
+                      className="review-google-link"
+                      href={review.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {review.date}
-                    </p>
+                    </a>
                   </div>
                 </div>
 
