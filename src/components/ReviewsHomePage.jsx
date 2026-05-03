@@ -360,14 +360,14 @@ export default function GoogleReviews() {
           <div className="reviews-actions">
             <a
               className="reviews-primary-link"
-              href={GOOGLE_REVIEWS_LINK}
+              href="https://maps.app.goo.gl/GyunKzziGNefeEq67"
               target="_blank"
               rel="noopener noreferrer"
             >
               Read Reviews on Google
             </a>
 
-            <a
+         <a
               className="reviews-secondary-link"
               href="YOUR_GOOGLE_REVIEW_REQUEST_LINK_HERE"
               target="_blank"

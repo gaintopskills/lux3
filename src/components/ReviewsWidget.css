@@ -46,7 +46,7 @@
     justify-content: center;
     gap: 18px;
     width: fit-content;
-    max-width: 100%;
+    max-width: 80%;
     margin: 28px auto 0;
     padding: 18px 22px;
     border: 1px solid rgba(217, 181, 111, 0.35);
@@ -99,6 +99,7 @@
     justify-content: center;
     gap: 12px;
     margin-top: 26px;
+    max-width:70%;
   }
   
   .reviews-primary-link,
