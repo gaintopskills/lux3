@@ -13,10 +13,10 @@ const googleReviews = [
   },
   {
     date: "Verified - Read on Google",
-    link: GOOGLE_REVIEWS_LINK,
+    link: "https://maps.app.goo.gl/T5EDyv5z8VzQWtiM9",
     rating: 5,
-    category: "Wolf",
-    text: "Paste another real Google review here. This section is designed for verified customer reviews."
+    category: "Thermador",
+    text: "Im very thankful to Zaricci. I had a emergency when I needed to repair my range as soon as possible. They came realy soon after and fixed my Thermador range."
   },
   {
     date: "Verified - Read on Google",
