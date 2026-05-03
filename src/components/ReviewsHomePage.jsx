@@ -1,15 +1,15 @@
 import React, { useMemo, useState } from "react";
 import "./ReviewsWidget.css";
 
-const GOOGLE_REVIEWS_LINK = "YOUR_GOOGLE_REVIEWS_LINK_HERE";
+const GOOGLE_REVIEWS_LINK = "https://maps.app.goo.gl/zt2UaMLkY8JFjTzP6";
 
 const googleReviews = [
   {
     date: "Verified - Read on Google",
     link: GOOGLE_REVIEWS_LINK,
     rating: 5,
-    category: "Sub-Zero",
-    text: "Paste the real Google review text here. Keep the wording exactly as the customer wrote it."
+    category: "Cove",
+    text: "I had a great experience with this company! The technician arrived very quickly and fixed my Cove dishwasher in no time. Everything was done efficiently and professionally. I also want to mention the customer service - the lady who answered the phone was very friendly, helpful, and explained everything clearly. It made the whole process smooth and stress-free. Highly recommend this company!"
   },
   {
     date: "Verified - Read on Google",
