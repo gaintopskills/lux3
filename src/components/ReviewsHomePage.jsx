@@ -145,7 +145,7 @@ const googleReviews = [
     date: "Verified - Read on Google",
     link: "https://maps.app.goo.gl/5Hek72J8gyfe2w229",
     rating: 5,
-    category: "La Cornuelf",
+    category: "La Cornue",
     text: "A friend gave me Zaricci's phone number for La Cornue range repair. Technian came the next day, was very polite, diagnosed the problem, and told us what parts need to be ordered to repair. After he came back and fixed the range, we experienced no issues after  The process was very smooth and the customer service kept updating us with everything step. Very happy with the service."
   },
   {
@@ -243,6 +243,14 @@ const googleReviews = [
     rating: 5,
     category: "Miele",
     text: "Reliable company, fixed my Miele dishwasher."
+  },
+  {
+    initial: "I",
+    date: "Verified - Read on Google",
+    link: "https://maps.app.goo.gl/N6C8aunPsj52UCjK9",
+    rating: 5,
+    category: "Officine Gullo",
+    text: "Had an issue with my Officine Gullo range not igniting properly, and they fixed it quickly and professionally. Super easy experience!"
   }
 ];
 
@@ -254,8 +262,16 @@ const reviewFilters = [
   "Thermador",
   "Cove",
   "Viking",
-  "Dishwasher",
-  "Refrigerator"
+  "Gaggenau",
+  "La Cornue",
+  "Ilve",
+  "Bosch",
+  "True",
+  "Bertazzoni",
+  "Aga",
+  "Fulgor Milano",
+  "Officine Gullo"
+
 ];
 
 export default function GoogleReviews() {
