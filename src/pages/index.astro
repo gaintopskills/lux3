@@ -4,9 +4,10 @@ import ParallaxHeader from '../components/ParallaxHeader.jsx'
 import Services from '../components/Services.jsx'
 import { TabsAccordion } from '../components/TabsAccordion.jsx'
 import '../styles/global.css';
-
-
-
+import '../styles/index.css';
+import Reviews from "../components/ReviewsHomePage.jsx";
+import Areas from '../components/Areas.jsx';
+import '../components/Areas.css';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -181,8 +182,29 @@ const structuredData = {
 	ogImage="/high-end-and-luxury-appliance-repair-by-zaricci.webp"
   structuredData={structuredData}
 >
+<ParallaxHeader client:idle/>
+<Services client:visible/>
+<div >
+<section>
+  <h2>We Are a Leading Luxury Appliance Repair Company Specializing in High-End Brands</h2>
+  <p>From Miele and Gaggenau to La Cornue, our seasoned technicians have the know-how to diagnose and fix any issue. Whether it’s a Sub-Zero refrigerator repair or a Thermador oven malfunction, count on us to restore your appliance’s performance—and your peace of mind.</p>
+</section>
+<section>
+  <h3 id="localbusiness">Experience our Difference in Premium Appliance Repair</h3>
+  <ul>
+    <li><strong>Skilled Technicians:</strong> Our team is highly trained in the latest techniques for high-end appliance service.</li>
+    <li><strong>Genuine Parts:</strong> We use only manufacturer-approved components for Sub-Zero repair, Viking repair, Wolf repair, Thermador repair, and beyond, ensuring quality you can trust.</li>
+    <li><strong>Prompt Response:</strong> Same-day service for most luxury appliance repairs, getting you back on track in no time.</li>
+    <li><strong>Transparent Pricing:</strong> No hidden fees or surprise costs—just honest quotes tailored to your specific repair needs.</li>
+    <li><strong>Satisfaction Guarantee:</strong> Our work is backed by a 3-month warranty.</li>
+  </ul>
+</section>
 
-
-
+<section>
+  <p><strong>At Luxury Appliance Repair</strong>, we take pride in making your home a place of uncompromising comfort and convenience. Allow us to protect your investment with our exceptional premium appliance repair services in your area.</p>
+</section>
+</div>
+<Reviews client:idle />
+<Areas client:visible/>
 <!--<TabsAccordion client:visible/>-->
 </Layout>
