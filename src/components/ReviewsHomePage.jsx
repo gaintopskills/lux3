@@ -2,13 +2,9 @@ import React, { useMemo, useState } from "react";
 import "./ReviewsWidget.css";
 
 const GOOGLE_REVIEWS_LINK = "https://maps.app.goo.gl/zt2UaMLkY8JFjTzP6";
-const READ_REVIEWS_LINK = "https://maps.app.goo.gl/GyunKzziGNefeEq67";
-const LEAVE_REVIEW_LINK = "YOUR_GOOGLE_REVIEW_REQUEST_LINK_HERE";
-
-const INITIAL_VISIBLE_COUNT = 6;
-const LOAD_MORE_COUNT = 6;
 
 const googleReviews = [
+ 
   {
     initial: "K",
     date: "Verified - Read on Google",
@@ -83,7 +79,7 @@ const googleReviews = [
   },
   {
     initial: "S",
-    date: "Verified - Read on Google",
+    date: "https://maps.app.goo.gl/Da54n73VH8Wo6Haz9",
     link: GOOGLE_REVIEWS_LINK,
     rating: 5,
     category: "Thermador",
@@ -269,55 +265,20 @@ const reviewFilters = [
   "Viking",
   "Gaggenau",
   "La Cornue",
-  "ILVE",
+  "Ilve",
   "Bosch",
   "True",
   "Bertazzoni",
   "Aga",
   "Fulgor Milano",
   "Officine Gullo"
+
 ];
 
-function ReviewCard({ review }) {
-  const initial = review.initial
-    ? review.initial.trim().charAt(0).toUpperCase()
-    : "G";
-
-  return (
-    <article className="review-card">
-      <div className="review-card-top">
-        <div className="review-avatar" aria-hidden="true">
-          {initial}
-        </div>
-
-        <a
-          className="review-google-link"
-          href={review.link}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {review.date}
-        </a>
-      </div>
-
-      <div className="review-stars" aria-label={`${review.rating} out of 5 stars`}>
-        ★★★★★
-      </div>
-
-      <p className="review-text">
-        “{review.text}”
-      </p>
-
-      {review.category && (
-        <span className="review-category">
-          {review.category}
-        </span>
-      )}
-    </article>
-  );
-}
-
 export default function GoogleReviews() {
+  const INITIAL_VISIBLE_COUNT = 6;
+  const LOAD_MORE_COUNT = 6;
+
   const [activeFilter, setActiveFilter] = useState("All");
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE_COUNT);
 
@@ -326,27 +287,39 @@ export default function GoogleReviews() {
       return googleReviews;
     }
 
-    return googleReviews.filter((review) => review.category === activeFilter);
+    return googleReviews.filter((review) => {
+      return review.category === activeFilter;
+    });
   }, [activeFilter]);
 
-  const visibleReviews = filteredReviews.slice(0, visibleCount);
+  const visibleReviews = useMemo(() => {
+    return filteredReviews.slice(0, visibleCount);
+  }, [filteredReviews, visibleCount]);
 
   const hasMoreReviews = visibleCount < filteredReviews.length;
   const hasShownMoreReviews = visibleCount > INITIAL_VISIBLE_COUNT;
 
-  const changeFilter = (filter) => {
+  const handleFilterClick = (filter) => {
     setActiveFilter(filter);
     setVisibleCount(INITIAL_VISIBLE_COUNT);
   };
 
-  const showMoreReviews = () => {
+  const handleShowMore = () => {
     setVisibleCount((currentCount) => {
       return Math.min(currentCount + LOAD_MORE_COUNT, filteredReviews.length);
     });
   };
 
-  const showLessReviews = () => {
+  const handleShowLess = () => {
     setVisibleCount(INITIAL_VISIBLE_COUNT);
+  };
+
+  const getReviewInitial = (review) => {
+    if (review.initial) {
+      return review.initial.trim().charAt(0).toUpperCase();
+    }
+
+    return "G";
   };
 
   return (
@@ -387,16 +360,16 @@ export default function GoogleReviews() {
           <div className="reviews-actions">
             <a
               className="reviews-primary-link"
-              href={READ_REVIEWS_LINK}
+              href="https://maps.app.goo.gl/GyunKzziGNefeEq67"
               target="_blank"
               rel="noopener noreferrer"
             >
               Read Reviews on Google
             </a>
 
-            <a
+         <a
               className="reviews-secondary-link"
-              href={LEAVE_REVIEW_LINK}
+              href="YOUR_GOOGLE_REVIEW_REQUEST_LINK_HERE"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -406,35 +379,57 @@ export default function GoogleReviews() {
         </div>
 
         <div className="reviews-filter-bar" aria-label="Filter reviews by service type">
-          {reviewFilters.map((filter) => (
-            <button
-              key={filter}
-              type="button"
-              className={activeFilter === filter ? "filter-button active" : "filter-button"}
-              onClick={() => changeFilter(filter)}
-            >
-              {filter}
-            </button>
-          ))}
+          {reviewFilters.map((filter) => {
+            const isActive = activeFilter === filter;
+
+            return (
+              <button
+                key={filter}
+                type="button"
+                className={isActive ? "filter-button active" : "filter-button"}
+                onClick={() => handleFilterClick(filter)}
+              >
+                {filter}
+              </button>
+            );
+          })}
         </div>
 
-        <select
-          className="reviews-filter-select"
-          value={activeFilter}
-          aria-label="Filter reviews by service type"
-          onChange={(event) => changeFilter(event.target.value)}
-        >
-          {reviewFilters.map((filter) => (
-            <option key={filter} value={filter}>
-              {filter}
-            </option>
-          ))}
-        </select>
-
         <div className="reviews-grid">
-          {visibleReviews.map((review) => (
-            <ReviewCard key={review.link} review={review} />
-          ))}
+          {visibleReviews.map((review, index) => {
+            return (
+              <article className="review-card" key={`${review.category}-${index}`}>
+                <div className="review-card-top">
+                  <div className="review-avatar" aria-hidden="true">
+                    {getReviewInitial(review)}
+                  </div>
+
+                  <div>
+                    <a
+                      className="review-google-link"
+                      href={review.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {review.date}
+                    </a>
+                  </div>
+                </div>
+
+                <div className="review-stars" aria-label={`${review.rating} out of 5 stars`}>
+                  {"★".repeat(review.rating)}
+                </div>
+
+                <p className="review-text">
+                  “{review.text}”
+                </p>
+
+                <span className="review-category">
+                  {review.category}
+                </span>
+              </article>
+            );
+          })}
         </div>
 
         <div className="reviews-load-more-wrap">
@@ -442,7 +437,7 @@ export default function GoogleReviews() {
             <button
               type="button"
               className="load-more-reviews"
-              onClick={showMoreReviews}
+              onClick={handleShowMore}
             >
               Show More Reviews
             </button>
@@ -452,7 +447,7 @@ export default function GoogleReviews() {
             <button
               type="button"
               className="load-more-reviews show-less-reviews"
-              onClick={showLessReviews}
+              onClick={handleShowLess}
             >
               Show Less
             </button>
