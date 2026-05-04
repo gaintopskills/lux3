@@ -82,9 +82,68 @@ h3 {
 }
 a{color:#ffffff;}
 
+
+
+
 /*MegaMenu*/
    /* Default Logo Size */
-   
+   .logo img {
+    width: 140px; /* Default width */
+    transition: width 0.3s ease-in-out; /* Smooth shrinking */
+  }
+  /* Shrink Logo in Sticky Menu */
+  .fixed .logo img {
+    width: 100px; /* Shrinks to 50% */
+  }
+   /* Desktop Logo - Visible by default */
+  .logo-desktop {
+    display: block;
+  }
+  /* Mobile Logo - Hidden by default */
+  .logo-mobile {
+    display: none;
+  }
+  /* On mobile screens, show the mobile logo and hide the desktop logo */
+  @media screen and (max-width: 768px) {
+    .logo-desktop {
+      display: none;
+    }
+    .logo-mobile {
+      display: block;
+    }
+  }
+  .logo-desktop
+  {margin:0!Important; 
+    padding:0!Important;}
+   /*-- sticky header*/
+    .sticky-header {
+      position: relative;
+      transition: all 0.3s ease-in-out;
+        background: #000000;
+      min-height: 60px; /* Prevents layout shift */
+      z-index: 1000;
+    }
+    /* Sticky effect when scrolled */
+    .fixed {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+      /*-- end sticky header*/
+      .navbar {
+        overflow: visible !important;
+        background-color: #000000;
+      
+      }
+      
+      .navbar a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
       .dropdown {
         float: left;
         overflow: hidden;
@@ -179,7 +238,36 @@ a{color:#ffffff;}
         background-color: #990000;
       }
       /* Ensure row uses flexbox */
-  
+  .row {
+    display: flex; 
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: space-between; /* Distribute columns evenly */
+  }
+      /* Clear floats */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+     .phone-number{background-color: #990000;
+    font-size: 14px;
+   float:right!important;
+  margin: 0 30px 0 0;}
+       /* Logo Transition */
+       .logo {
+        width: 140px; /* Default Width */
+        transition: width 0.3s ease; /* Smooth resizing */
+      }
+      .fixed .logo {
+        width: 90px; /* Width when scrolled */
+      }
+      a.logo {
+      margin: 0 50px 10px 0 !important;
+      padding:10px 0 0 20px !important;
+    }
+    a.logo:hover {
+     background-color: #000000;
+    }
      /* Hide the logo image on mobile screens */
      @media screen and (max-width: 768px) {
       .dropdown-content {
@@ -407,4 +495,5 @@ footer {
     color: #9c9b9b;
   }
   /* End Footer*/
+  
     
