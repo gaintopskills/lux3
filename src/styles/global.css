@@ -83,14 +83,9 @@ h3 {
 a{color:#ffffff;}
 
 
-
-
 /*MegaMenu*/
    /* Default Logo Size */
-   .logo img {
-    width: 140px; /* Default width */
-    transition: width 0.3s ease-in-out; /* Smooth shrinking */
-  }
+
   /* Shrink Logo in Sticky Menu */
   .fixed .logo img {
     width: 100px; /* Shrinks to 50% */
@@ -254,9 +249,13 @@ a{color:#ffffff;}
    float:right!important;
   margin: 0 30px 0 0;}
        /* Logo Transition */
-       .logo {
-        width: 140px; /* Default Width */
-        transition: width 0.3s ease; /* Smooth resizing */
+       .logo img {
+        width: 140px;
+        height: auto;
+      }
+      
+      .fixed .logo img {
+        width: 100px;
       }
       .fixed .logo {
         width: 90px; /* Width when scrolled */
