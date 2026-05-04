@@ -53,10 +53,6 @@
    z-index: 0;
 }
 /* 🔹 Page Content Styling */
-.content {
-   height: 100vh; /* Extra scrolling space for strong parallax effect */
-   padding: 100px;
-}
  /*End Parallax Header*/
   /* Parallax Header for mobile speed*/
 

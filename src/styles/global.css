@@ -310,15 +310,7 @@ a{color:#ffffff;}
     }
   }
   /*MegaMenu*/
-     .dropdown-content {
-      display: none;
-      visibility: hidden;
-    }
-    
-    .dropdown-content.show {
-      display: block;
-      visibility: visible;
-    }
+ 
     
     .dropdown-close-bar {
       display: flex;
