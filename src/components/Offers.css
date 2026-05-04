@@ -1,8 +1,16 @@
 /*Offers*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 .wrapper {
   max-width: 1400px;
-  padding: 0; /* smaller horizontal padding */
+  width: 100%;
+  padding: 0 16px;
   margin: 0 auto;
+  overflow: hidden;
+}
 }
 .wrapper h3{
   font-size: 1rem;
