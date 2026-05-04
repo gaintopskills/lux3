@@ -1,5 +1,5 @@
 .google-reviews-section {
-    width: 90%;
+    width: 100%;
     justify-content: center;
     background:
       radial-gradient(circle at top left, rgba(190, 145, 70, 0.14), transparent 34%),
@@ -8,7 +8,7 @@
   }
   
   .google-reviews-inner {
-    width: 90%;
+   
     max-width: 1180px;
     margin: 0 auto;
   }
@@ -99,7 +99,7 @@
     justify-content: center;
     gap: 12px;
     margin-top: 26px;
-    max-width:70%;
+    max-width:100%;
   }
   
   .reviews-primary-link,
@@ -147,7 +147,7 @@
     justify-content: center;
     gap: 10px;
     margin: 0 auto 30px auto;
-    width:50%;
+    width:100%;
   
   }
   
@@ -198,7 +198,7 @@
       linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.035));
     box-shadow: 0 20px 70px rgba(0, 0, 0, 0.26);
     overflow: hidden;
-    width:50%;
+    width:100%;
   }
   
   .review-card::before {
