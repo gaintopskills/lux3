@@ -194,8 +194,6 @@ a{color:#ffffff;}
         display: block;
         visibility: visible;
       }
-      
-
       @media screen and (max-width: 768px) {
         .dropdown-content {
             padding: 0; /* Remove padding for mobile */
