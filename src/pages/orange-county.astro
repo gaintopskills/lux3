@@ -1,0 +1,677 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Luxury Appliance Repair by Zaricci",
+  "image": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
+  "@id": "https://luxuryappliance.repair/orange-county/",
+  "url": "https://luxuryappliance.repair/orange-county/",
+  "telephone": "+1-424-499-7788",
+  "priceRange": "$$$",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://luxuryappliance.repair/orange-county/"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "description": "Luxury Appliance Repair by Zaricci provides high-end appliance repair in Orange County for Sub-Zero, Wolf, Miele, Thermador, Viking, Gaggenau, La Cornue, AGA, and other premium appliance brands.",
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Orange County, CA"
+    },
+    {
+      "@type": "City",
+      "name": "Newport Beach, CA"
+    },
+    {
+      "@type": "City",
+      "name": "Irvine, CA"
+    },
+    {
+      "@type": "City",
+      "name": "Laguna Beach, CA"
+    },
+    {
+      "@type": "City",
+      "name": "Dana Point, CA"
+    },
+    {
+      "@type": "City",
+      "name": "San Clemente, CA"
+    },
+    {
+      "@type": "City",
+      "name": "Huntington Beach, CA"
+    },
+    {
+      "@type": "City",
+      "name": "Costa Mesa, CA"
+    },
+    {
+      "@type": "City",
+      "name": "Mission Viejo, CA"
+    },
+    {
+      "@type": "City",
+      "name": "Laguna Niguel, CA"
+    },
+    {
+      "@type": "City",
+      "name": "Yorba Linda, CA"
+    },
+    {
+      "@type": "City",
+      "name": "Anaheim Hills, CA"
+    },
+    {
+      "@type": "City",
+      "name": "San Juan Capistrano, CA"
+    },
+    {
+      "@type": "Place",
+      "name": "Coto de Caza, CA"
+    }
+  ],
+  "serviceType": "Luxury Appliance Repair in Orange County",
+  "makesOffer": {
+    "@type": "OfferCatalog",
+    "name": "Luxury Appliance Repair Services in Orange County",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Luxury Refrigerator Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Built-In Refrigerator Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Freezer Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Wine Cooler Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Wine Cellar Cooling Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Luxury Range Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Oven Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Steam Oven Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Speed Oven / Combi-Oven Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Stove Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Cooktop Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Range Hood Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Dishwasher Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Washing Machine Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Dryer Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Microwave Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Built-In Coffee Machine Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Warming Drawer Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Ice Maker Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Beverage Center Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "BBQ Grill Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Fireplace Repair"
+        }
+      }
+    ]
+  },
+  "brand": [
+    {
+      "@type": "Brand",
+      "name": "Sub-Zero"
+    },
+    {
+      "@type": "Brand",
+      "name": "Wolf"
+    },
+    {
+      "@type": "Brand",
+      "name": "Miele"
+    },
+    {
+      "@type": "Brand",
+      "name": "Thermador"
+    },
+    {
+      "@type": "Brand",
+      "name": "Viking"
+    },
+    {
+      "@type": "Brand",
+      "name": "Gaggenau"
+    },
+    {
+      "@type": "Brand",
+      "name": "La Cornue"
+    },
+    {
+      "@type": "Brand",
+      "name": "AGA"
+    },
+    {
+      "@type": "Brand",
+      "name": "Lacanche"
+    },
+    {
+      "@type": "Brand",
+      "name": "Bertazzoni"
+    },
+    {
+      "@type": "Brand",
+      "name": "Fulgor Milano"
+    },
+    {
+      "@type": "Brand",
+      "name": "ILVE"
+    },
+    {
+      "@type": "Brand",
+      "name": "Bosch"
+    },
+    {
+      "@type": "Brand",
+      "name": "Cove"
+    },
+    {
+      "@type": "Brand",
+      "name": "JennAir"
+    },
+    {
+      "@type": "Brand",
+      "name": "JennAir Noir"
+    },
+    {
+      "@type": "Brand",
+      "name": "Monogram"
+    },
+    {
+      "@type": "Brand",
+      "name": "Dacor"
+    },
+    {
+      "@type": "Brand",
+      "name": "Fisher & Paykel"
+    },
+    {
+      "@type": "Brand",
+      "name": "True Residential"
+    },
+    {
+      "@type": "Brand",
+      "name": "Signature Kitchen Suite"
+    },
+    {
+      "@type": "Brand",
+      "name": "BlueStar"
+    },
+    {
+      "@type": "Brand",
+      "name": "Smeg"
+    },
+    {
+      "@type": "Brand",
+      "name": "Big Chill"
+    },
+    {
+      "@type": "Brand",
+      "name": "Hestan"
+    },
+    {
+      "@type": "Brand",
+      "name": "ZLINE"
+    },
+    {
+      "@type": "Brand",
+      "name": "KitchenAid"
+    }
+  ],
+  "knowsAbout": [
+    "Luxury appliance repair",
+    "Orange County appliance repair",
+    "Sub-Zero refrigerator repair",
+    "Wolf range repair",
+    "Miele appliance repair",
+    "Thermador appliance repair",
+    "Viking appliance repair",
+    "Gaggenau appliance repair",
+    "La Cornue range repair",
+    "AGA range repair",
+    "Built-in refrigerator repair",
+    "Wine cooler repair",
+    "High-end kitchen appliance repair",
+    "European appliance repair"
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://luxuryappliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+14244997788",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+};
+---
+
+<Layout
+  title="Luxury Appliance Repair in Orange County | ZARICCI"
+  description="Luxury appliance repair in Orange County for Sub-Zero, Wolf, Miele, Viking, Thermador, Gaggenau, La Cornue, AGA, and premium brands."
+  structuredData={structuredData}
+>
+  <div style="margin: 50px">
+    <section>
+      <h2>Luxury Appliance Repair in Orange County, CA</h2>
+
+      <p>
+        <strong>White-glove appliance repair for high-end homes, coastal estates, and luxury kitchens across Orange County.</strong>
+      </p>
+
+      <p>
+        Orange County homes often feature some of the most advanced and beautifully integrated appliances available — from built-in Sub-Zero refrigeration and Wolf ranges to Miele dishwashers, Thermador cooking appliances, Gaggenau ovens, Viking ranges, La Cornue ranges, AGA cookers, and other premium European and luxury brands.
+      </p>
+
+      <p>
+        When one of these appliances stops working correctly, a standard repair approach is not enough. Luxury appliances require careful diagnostics, brand-specific experience, proper parts, and a technician who understands how to work inside high-value homes with cleanliness, discretion, and respect.
+      </p>
+
+      <p>
+        <strong>Luxury Appliance Repair by ZARICCI</strong> provides high-end appliance repair in Orange County for homeowners, property managers, designers, and estate managers who expect professional service from the first call to the final walkthrough.
+      </p>
+    </section>
+
+    <section>
+      <h3>Why Orange County Homeowners Choose ZARICCI</h3>
+
+      <ul>
+        <li>
+          <strong>Luxury and European Brand Experience</strong><br />
+          We focus on premium appliance brands such as Sub-Zero, Wolf, Miele, Thermador, Viking, Gaggenau, La Cornue, AGA, Bertazzoni, Bosch, Cove, JennAir, Monogram, Dacor, Fisher & Paykel, and True Residential.
+        </li>
+
+        <li>
+          <strong>Service for Built-In and Integrated Appliances</strong><br />
+          Many Orange County homes have panel-ready refrigerators, built-in wine preservation systems, concealed dishwashers, professional ranges, and custom kitchen layouts. Our technicians understand how to diagnose and service these appliances carefully.
+        </li>
+
+        <li>
+          <strong>Same-Day and Priority Scheduling When Available</strong><br />
+          We offer convenient scheduling for Orange County customers, including urgent appliance repair needs when appointments are available.
+        </li>
+
+        <li>
+          <strong>Clean, Discreet, White-Glove Service</strong><br />
+          We treat your home with care, protect surrounding surfaces, communicate clearly, and maintain a professional repair experience from start to finish.
+        </li>
+
+        <li>
+          <strong>Clear Estimates Before Repair Work Begins</strong><br />
+          After diagnosing the appliance, we explain the issue, repair options, estimated cost, and parts needs before moving forward.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>High-End Appliances We Repair in Orange County</h3>
+
+      <h4>Luxury Refrigerator and Freezer Repair</h4>
+
+      <p>
+        We repair built-in refrigerators, column refrigerators, freezer drawers, undercounter refrigeration, and integrated cooling systems from brands like Sub-Zero, Thermador, Miele, Viking, Monogram, True Residential, Fisher & Paykel, and Gaggenau.
+      </p>
+
+      <ul>
+        <li>Refrigerator not cooling properly</li>
+        <li>Freezer temperature problems</li>
+        <li>Ice maker failure</li>
+        <li>Water dispenser problems</li>
+        <li>Excess frost or moisture buildup</li>
+        <li>Compressor, fan, sensor, and control board issues</li>
+        <li>Door seal, hinge, and custom panel alignment problems</li>
+      </ul>
+
+      <h4>Luxury Range, Oven, Stove, and Cooktop Repair</h4>
+
+      <p>
+        We service professional cooking appliances including Wolf ranges, Viking ranges, Thermador ovens, Gaggenau wall ovens, La Cornue ranges, AGA cookers, Bertazzoni ranges, ILVE ranges, Fulgor Milano cooking appliances, BlueStar ranges, and other premium brands.
+      </p>
+
+      <ul>
+        <li>Burners not igniting</li>
+        <li>Oven not heating</li>
+        <li>Uneven baking or roasting</li>
+        <li>Gas smell or ignition clicking</li>
+        <li>Induction cooktop errors</li>
+        <li>Control panel, relay board, thermostat, and sensor failures</li>
+        <li>Door, hinge, gasket, and temperature calibration issues</li>
+      </ul>
+
+      <h4>Premium Dishwasher Repair</h4>
+
+      <p>
+        We repair high-end dishwashers from Miele, Bosch, Cove, Thermador, Fisher & Paykel, Viking, JennAir, and other premium brands commonly installed in luxury Orange County kitchens.
+      </p>
+
+      <ul>
+        <li>Dishwasher not draining</li>
+        <li>Poor cleaning performance</li>
+        <li>Water leaks</li>
+        <li>Cycle interruption</li>
+        <li>Error codes</li>
+        <li>Panel-ready dishwasher door issues</li>
+        <li>Pump, heater, sensor, and control board problems</li>
+      </ul>
+
+      <h4>Luxury Washer and Dryer Repair</h4>
+
+      <p>
+        We service premium laundry appliances from Miele, Bosch, LG Signature, Electrolux, Fisher & Paykel, and other high-performance laundry brands.
+      </p>
+
+      <ul>
+        <li>Washer not draining or spinning</li>
+        <li>Dryer not heating</li>
+        <li>Long drying times</li>
+        <li>Vibration or noise issues</li>
+        <li>Water leaks</li>
+        <li>Control panel and sensor problems</li>
+      </ul>
+
+      <h4>Wine Cooler, Beverage Center, and Specialty Appliance Repair</h4>
+
+      <p>
+        Orange County homes often include specialty appliances such as wine coolers, beverage centers, built-in coffee machines, warming drawers, steam ovens, speed ovens, ice makers, and outdoor kitchen appliances.
+      </p>
+
+      <ul>
+        <li>Wine cooler not holding temperature</li>
+        <li>Beverage center cooling issues</li>
+        <li>Built-in coffee machine problems</li>
+        <li>Steam oven or speed oven errors</li>
+        <li>Warming drawer not heating</li>
+        <li>Ice maker failures</li>
+        <li>Outdoor BBQ grill and outdoor kitchen appliance issues</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Orange County Cities and Communities We Serve</h3>
+
+      <p>
+        ZARICCI provides luxury appliance repair throughout Orange County, including coastal communities, gated neighborhoods, hillside estates, custom homes, and high-end residential properties.
+      </p>
+
+      <p>
+        Our Orange County service area includes:
+      </p>
+
+      <ul>
+        <li>Newport Beach</li>
+        <li>Corona del Mar</li>
+        <li>Laguna Beach</li>
+        <li>Dana Point</li>
+        <li>San Clemente</li>
+        <li>Irvine</li>
+        <li>Costa Mesa</li>
+        <li>Huntington Beach</li>
+        <li>Laguna Niguel</li>
+        <li>Mission Viejo</li>
+        <li>Yorba Linda</li>
+        <li>Anaheim Hills</li>
+        <li>San Juan Capistrano</li>
+        <li>Coto de Caza</li>
+        <li>Rancho Mission Viejo</li>
+        <li>Aliso Viejo</li>
+        <li>Lake Forest</li>
+        <li>Tustin</li>
+        <li>Orange</li>
+        <li>Villa Park</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Luxury Brands We Service in Orange County</h3>
+
+      <p>
+        Our technicians work with many of the most respected luxury, European, and high-performance appliance brands installed in Orange County homes.
+      </p>
+
+      <ul>
+        <li>Sub-Zero refrigerator repair</li>
+        <li>Wolf range, oven, and cooktop repair</li>
+        <li>Miele dishwasher, laundry, and built-in appliance repair</li>
+        <li>Thermador refrigerator, range, oven, and dishwasher repair</li>
+        <li>Viking range, refrigerator, and oven repair</li>
+        <li>Gaggenau oven, cooktop, refrigerator, and dishwasher repair</li>
+        <li>La Cornue range repair</li>
+        <li>AGA range and cooker repair</li>
+        <li>Bertazzoni range and oven repair</li>
+        <li>Fulgor Milano appliance repair</li>
+        <li>ILVE range repair</li>
+        <li>Bosch dishwasher and kitchen appliance repair</li>
+        <li>Cove dishwasher repair</li>
+        <li>JennAir and JennAir Noir appliance repair</li>
+        <li>Monogram appliance repair</li>
+        <li>Dacor appliance repair</li>
+        <li>Fisher & Paykel appliance repair</li>
+        <li>True Residential refrigeration repair</li>
+        <li>Signature Kitchen Suite appliance repair</li>
+        <li>BlueStar range repair</li>
+        <li>Smeg appliance repair</li>
+        <li>Hestan appliance repair</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Our Orange County Luxury Appliance Repair Process</h3>
+
+      <ol>
+        <li>
+          <strong>Schedule Your Appointment</strong><br />
+          Call or book online and tell us the appliance brand, appliance type, model if available, and the issue you are experiencing.
+        </li>
+
+        <li>
+          <strong>Professional In-Home Diagnosis</strong><br />
+          A ZARICCI technician arrives at your Orange County home and performs a careful diagnostic inspection.
+        </li>
+
+        <li>
+          <strong>Clear Repair Recommendation</strong><br />
+          We explain what failed, what caused the issue when identifiable, and what repair is recommended.
+        </li>
+
+        <li>
+          <strong>Precision Repair</strong><br />
+          When parts and conditions allow, we complete the repair using professional tools and brand-appropriate procedures.
+        </li>
+
+        <li>
+          <strong>Testing and Final Walkthrough</strong><br />
+          After repair, we test the appliance, review the work performed, and answer your questions before leaving.
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Luxury Appliance Repair for Coastal Homes, Estates, and Custom Kitchens</h3>
+
+      <p>
+        Orange County kitchens are often designed around premium appliances, custom cabinetry, built-in refrigeration, imported ranges, and integrated smart-home features. A careless repair can damage panels, flooring, finishes, or the appliance itself.
+      </p>
+
+      <p>
+        At <strong>Luxury Appliance Repair by ZARICCI</strong>, our service is designed for homes where quality matters. We focus on accurate diagnosis, careful handling, clear communication, and a repair experience that matches the standards of a luxury home.
+      </p>
+    </section>
+
+    <section>
+      <h3>Schedule Luxury Appliance Repair in Orange County Today</h3>
+
+      <p>
+        Whether your Sub-Zero refrigerator is not cooling, your Wolf range will not ignite, your Miele dishwasher is leaking, your Thermador oven is not heating, or your La Cornue range needs expert attention, ZARICCI is ready to help.
+      </p>
+
+      <p>
+        Call <strong>Luxury Appliance Repair by ZARICCI</strong> today or book online to schedule high-end appliance repair in Orange County, CA.
+      </p>
+
+      <p>
+        <strong>ZARICCI — Luxury appliance repair for Orange County homes that expect more than a quick fix.</strong>
+      </p>
+    </section>
+  </div>
+</Layout>

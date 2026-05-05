@@ -1,0 +1,670 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Luxury Appliance Repair by Zaricci",
+  "image": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
+  "@id": "https://luxuryappliance.repair/ventura-county/",
+  "url": "https://luxuryappliance.repair/ventura-county/",
+  "telephone": "+1-424-499-7788",
+  "priceRange": "$$$",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://luxuryappliance.repair/ventura-county/"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "description": "Luxury Appliance Repair by Zaricci provides high-end appliance repair in Ventura County for Sub-Zero, Wolf, Miele, Thermador, Viking, Gaggenau, La Cornue, AGA, and other premium brands.",
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Ventura County, CA"
+    },
+    {
+      "@type": "City",
+      "name": "Thousand Oaks, CA"
+    },
+    {
+      "@type": "Place",
+      "name": "Lake Sherwood, CA"
+    },
+    {
+      "@type": "Place",
+      "name": "Hidden Valley, CA"
+    },
+    {
+      "@type": "Place",
+      "name": "Santa Rosa Valley, CA"
+    },
+    {
+      "@type": "Place",
+      "name": "Newbury Park, CA"
+    },
+    {
+      "@type": "City",
+      "name": "Camarillo, CA"
+    },
+    {
+      "@type": "City",
+      "name": "Moorpark, CA"
+    },
+    {
+      "@type": "City",
+      "name": "Simi Valley, CA"
+    },
+    {
+      "@type": "City",
+      "name": "Ventura, CA"
+    },
+    {
+      "@type": "City",
+      "name": "Oxnard, CA"
+    },
+    {
+      "@type": "City",
+      "name": "Ojai, CA"
+    }
+  ],
+  "serviceType": "Luxury Appliance Repair in Ventura County",
+  "makesOffer": {
+    "@type": "OfferCatalog",
+    "name": "Luxury Appliance Repair Services in Ventura County",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Luxury Refrigerator Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Built-In Refrigerator Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Freezer Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Wine Cooler Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Wine Cellar Cooling Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Luxury Range Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Oven Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Steam Oven Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Speed Oven / Combi-Oven Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Stove Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Cooktop Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Range Hood Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Dishwasher Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Washing Machine Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Dryer Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Microwave Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Built-In Coffee Machine Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Warming Drawer Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Ice Maker Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Beverage Center Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "BBQ Grill Repair"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Fireplace Repair"
+        }
+      }
+    ]
+  },
+  "brand": [
+    {
+      "@type": "Brand",
+      "name": "Sub-Zero"
+    },
+    {
+      "@type": "Brand",
+      "name": "Wolf"
+    },
+    {
+      "@type": "Brand",
+      "name": "Miele"
+    },
+    {
+      "@type": "Brand",
+      "name": "Thermador"
+    },
+    {
+      "@type": "Brand",
+      "name": "Viking"
+    },
+    {
+      "@type": "Brand",
+      "name": "Gaggenau"
+    },
+    {
+      "@type": "Brand",
+      "name": "La Cornue"
+    },
+    {
+      "@type": "Brand",
+      "name": "AGA"
+    },
+    {
+      "@type": "Brand",
+      "name": "Lacanche"
+    },
+    {
+      "@type": "Brand",
+      "name": "Bertazzoni"
+    },
+    {
+      "@type": "Brand",
+      "name": "Fulgor Milano"
+    },
+    {
+      "@type": "Brand",
+      "name": "ILVE"
+    },
+    {
+      "@type": "Brand",
+      "name": "Bosch"
+    },
+    {
+      "@type": "Brand",
+      "name": "Cove"
+    },
+    {
+      "@type": "Brand",
+      "name": "JennAir"
+    },
+    {
+      "@type": "Brand",
+      "name": "JennAir Noir"
+    },
+    {
+      "@type": "Brand",
+      "name": "Monogram"
+    },
+    {
+      "@type": "Brand",
+      "name": "Dacor"
+    },
+    {
+      "@type": "Brand",
+      "name": "Fisher & Paykel"
+    },
+    {
+      "@type": "Brand",
+      "name": "True Residential"
+    },
+    {
+      "@type": "Brand",
+      "name": "Signature Kitchen Suite"
+    },
+    {
+      "@type": "Brand",
+      "name": "BlueStar"
+    },
+    {
+      "@type": "Brand",
+      "name": "Smeg"
+    },
+    {
+      "@type": "Brand",
+      "name": "Big Chill"
+    },
+    {
+      "@type": "Brand",
+      "name": "Hestan"
+    },
+    {
+      "@type": "Brand",
+      "name": "ZLINE"
+    },
+    {
+      "@type": "Brand",
+      "name": "KitchenAid"
+    }
+  ],
+  "knowsAbout": [
+    "Luxury appliance repair",
+    "Ventura County appliance repair",
+    "Thousand Oaks appliance repair",
+    "Lake Sherwood appliance repair",
+    "Sub-Zero refrigerator repair",
+    "Wolf range repair",
+    "Miele appliance repair",
+    "Thermador appliance repair",
+    "Viking appliance repair",
+    "Gaggenau appliance repair",
+    "La Cornue range repair",
+    "AGA range repair",
+    "Built-in refrigerator repair",
+    "Wine cooler repair",
+    "High-end kitchen appliance repair",
+    "European appliance repair"
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://luxuryappliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+14244997788",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+};
+---
+
+<Layout
+  title="Luxury Appliance Repair in Ventura County | ZARICCI"
+  description="Luxury appliance repair in Ventura County for Sub-Zero, Wolf, Miele, Viking, Thermador, Gaggenau, La Cornue, AGA, and premium brands."
+  structuredData={structuredData}
+>
+  <div style="margin: 50px">
+    <section>
+      <h2>Luxury Appliance Repair in Ventura County, CA</h2>
+
+      <p>
+        <strong>White-glove appliance repair for luxury homes, estates, custom kitchens, and high-end properties across Ventura County.</strong>
+      </p>
+
+      <p>
+        Ventura County is home to some of Southern California’s most beautiful residential communities, from the estates of Thousand Oaks, Lake Sherwood, Hidden Valley, and Santa Rosa Valley to custom homes in Camarillo, Moorpark, Simi Valley, Ventura, and Ojai. Many of these homes are built around premium appliances that require more than ordinary repair service.
+      </p>
+
+      <p>
+        Brands like Sub-Zero, Wolf, Miele, Thermador, Viking, Gaggenau, La Cornue, AGA, Bertazzoni, Bosch, Cove, JennAir, Monogram, Dacor, and Fisher & Paykel are designed for performance, precision, and long-term value. When these appliances fail, the repair needs to be handled with brand-specific knowledge, careful diagnostics, and respect for the home.
+      </p>
+
+      <p>
+        <strong>Luxury Appliance Repair by ZARICCI</strong> provides high-end appliance repair in Ventura County for homeowners, estate managers, property managers, and clients who expect a cleaner, more professional, and more detailed repair experience.
+      </p>
+    </section>
+
+    <section>
+      <h3>Why Ventura County Homeowners Choose ZARICCI</h3>
+
+      <ul>
+        <li>
+          <strong>Luxury Appliance Brand Experience</strong><br />
+          We focus on high-end and European appliance brands including Sub-Zero, Wolf, Miele, Thermador, Viking, Gaggenau, La Cornue, AGA, Lacanche, Bertazzoni, Fulgor Milano, ILVE, Bosch, Cove, JennAir, Monogram, Dacor, Fisher & Paykel, True Residential, and Signature Kitchen Suite.
+        </li>
+
+        <li>
+          <strong>Service for Built-In and Custom Kitchen Appliances</strong><br />
+          Many Ventura County homes feature panel-ready refrigeration, built-in wine cooling, professional ranges, double ovens, steam ovens, smart kitchen appliances, and integrated cabinetry. We understand how to service these systems carefully.
+        </li>
+
+        <li>
+          <strong>Same-Day and Priority Appointments When Available</strong><br />
+          We offer convenient scheduling for Ventura County customers, including same-day and next-day availability when the schedule allows.
+        </li>
+
+        <li>
+          <strong>White-Glove Service Inside High-Value Homes</strong><br />
+          We protect floors, cabinetry, panels, counters, and surrounding finishes while maintaining a clean and respectful work area.
+        </li>
+
+        <li>
+          <strong>Clear Communication and Upfront Repair Recommendations</strong><br />
+          After diagnosis, we explain the issue, the recommended repair, parts needs, and estimated cost before moving forward.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>High-End Appliances We Repair in Ventura County</h3>
+
+      <h4>Luxury Refrigerator and Freezer Repair</h4>
+
+      <p>
+        We repair built-in refrigerators, column refrigerators, freezer drawers, integrated refrigeration systems, undercounter units, and luxury cooling appliances from Sub-Zero, Thermador, Miele, Viking, Monogram, True Residential, Fisher & Paykel, Gaggenau, and other premium brands.
+      </p>
+
+      <ul>
+        <li>Refrigerator not cooling properly</li>
+        <li>Freezer temperature problems</li>
+        <li>Ice maker not producing ice</li>
+        <li>Water dispenser failure</li>
+        <li>Excess frost, condensation, or moisture buildup</li>
+        <li>Compressor, evaporator fan, condenser fan, sensor, and control board issues</li>
+        <li>Door seal, hinge, and custom panel alignment problems</li>
+      </ul>
+
+      <h4>Luxury Range, Oven, Stove, and Cooktop Repair</h4>
+
+      <p>
+        We service professional cooking appliances from Wolf, Viking, Thermador, Gaggenau, La Cornue, AGA, Bertazzoni, ILVE, Fulgor Milano, BlueStar, Hestan, Dacor, Monogram, and other luxury cooking brands.
+      </p>
+
+      <ul>
+        <li>Burners not igniting</li>
+        <li>Oven not heating</li>
+        <li>Uneven baking or roasting</li>
+        <li>Gas burner clicking or delayed ignition</li>
+        <li>Induction cooktop error codes</li>
+        <li>Control panel, relay board, sensor, thermostat, and ignition problems</li>
+        <li>Door, hinge, gasket, and calibration issues</li>
+      </ul>
+
+      <h4>Premium Dishwasher Repair</h4>
+
+      <p>
+        We repair high-end dishwashers from Miele, Bosch, Cove, Thermador, Fisher & Paykel, Viking, JennAir, and other premium dishwasher brands installed in luxury kitchens throughout Ventura County.
+      </p>
+
+      <ul>
+        <li>Dishwasher not draining</li>
+        <li>Dishwasher leaking</li>
+        <li>Poor cleaning or drying performance</li>
+        <li>Cycle stopping early</li>
+        <li>Error codes or electrical issues</li>
+        <li>Pump, heater, sensor, and control board failures</li>
+        <li>Panel-ready dishwasher door and alignment issues</li>
+      </ul>
+
+      <h4>Luxury Washer and Dryer Repair</h4>
+
+      <p>
+        We service premium laundry appliances from Miele, Bosch, LG Signature, Electrolux, Fisher & Paykel, and other high-performance washer and dryer brands.
+      </p>
+
+      <ul>
+        <li>Washer not draining</li>
+        <li>Washer not spinning</li>
+        <li>Dryer not heating</li>
+        <li>Long drying times</li>
+        <li>Vibration or loud noise</li>
+        <li>Water leaks</li>
+        <li>Sensor, motor, heating element, and control board issues</li>
+      </ul>
+
+      <h4>Wine Cooler, Beverage Center, and Specialty Appliance Repair</h4>
+
+      <p>
+        Ventura County homes often include specialty appliances such as wine coolers, wine cellar cooling systems, beverage centers, built-in coffee machines, warming drawers, steam ovens, speed ovens, ice makers, and outdoor kitchen appliances.
+      </p>
+
+      <ul>
+        <li>Wine cooler not holding temperature</li>
+        <li>Wine cellar cooling issues</li>
+        <li>Beverage center not cooling</li>
+        <li>Built-in coffee machine problems</li>
+        <li>Steam oven or speed oven errors</li>
+        <li>Warming drawer not heating</li>
+        <li>Ice maker failures</li>
+        <li>Outdoor BBQ grill and outdoor kitchen appliance issues</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Ventura County Cities and Communities We Serve</h3>
+
+      <p>
+        ZARICCI provides luxury appliance repair throughout Ventura County, with service for coastal homes, hillside properties, gated communities, custom estates, and high-end residential kitchens.
+      </p>
+
+      <p>
+        Our Ventura County service area includes:
+      </p>
+
+      <ul>
+        <li>Thousand Oaks</li>
+        <li>Lake Sherwood</li>
+        <li>Hidden Valley</li>
+        <li>Santa Rosa Valley</li>
+        <li>Newbury Park</li>
+        <li>North Ranch</li>
+        <li>Dos Vientos</li>
+        <li>Camarillo</li>
+        <li>Somis</li>
+        <li>Moorpark</li>
+        <li>Simi Valley</li>
+        <li>Ventura</li>
+        <li>Oxnard</li>
+        <li>Ojai</li>
+        <li>Oak Park</li>
+        <li>Westlake-area homes near the Ventura County line</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Luxury Brands We Service in Ventura County</h3>
+
+      <p>
+        Our technicians service many of the luxury and European appliance brands commonly found in high-end Ventura County homes.
+      </p>
+
+      <ul>
+        <li>Sub-Zero refrigerator repair</li>
+        <li>Wolf range, oven, and cooktop repair</li>
+        <li>Miele dishwasher, laundry, and built-in appliance repair</li>
+        <li>Thermador refrigerator, range, oven, and dishwasher repair</li>
+        <li>Viking range, refrigerator, and oven repair</li>
+        <li>Gaggenau oven, cooktop, refrigerator, and dishwasher repair</li>
+        <li>La Cornue range repair</li>
+        <li>AGA range and cooker repair</li>
+        <li>Lacanche range repair</li>
+        <li>Bertazzoni range and oven repair</li>
+        <li>Fulgor Milano appliance repair</li>
+        <li>ILVE range repair</li>
+        <li>Bosch dishwasher and kitchen appliance repair</li>
+        <li>Cove dishwasher repair</li>
+        <li>JennAir and JennAir Noir appliance repair</li>
+        <li>Monogram appliance repair</li>
+        <li>Dacor appliance repair</li>
+        <li>Fisher & Paykel appliance repair</li>
+        <li>True Residential refrigeration repair</li>
+        <li>Signature Kitchen Suite appliance repair</li>
+        <li>BlueStar range repair</li>
+        <li>Smeg appliance repair</li>
+        <li>Hestan appliance repair</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Our Ventura County Luxury Appliance Repair Process</h3>
+
+      <ol>
+        <li>
+          <strong>Schedule Your Appointment</strong><br />
+          Call or book online and provide the appliance brand, appliance type, model number if available, and a short description of the issue.
+        </li>
+
+        <li>
+          <strong>Careful In-Home Diagnosis</strong><br />
+          A ZARICCI technician arrives at your Ventura County home and performs a detailed inspection of the appliance.
+        </li>
+
+        <li>
+          <strong>Clear Repair Explanation</strong><br />
+          We explain what failed, what may have caused the issue, what repair is recommended, and whether parts are needed.
+        </li>
+
+        <li>
+          <strong>Precision Repair Service</strong><br />
+          When parts and conditions allow, we perform the repair using professional tools and brand-appropriate service procedures.
+        </li>
+
+        <li>
+          <strong>Testing and Final Walkthrough</strong><br />
+          After repair, we test the appliance, review the completed work, and make sure you understand the next steps if any are needed.
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Luxury Appliance Repair for Estates, Custom Homes, and Premium Kitchens</h3>
+
+      <p>
+        From Thousand Oaks estates and Lake Sherwood homes to coastal properties in Ventura and custom kitchens in Camarillo, Ventura County homeowners often invest in appliances that are built into the design of the home itself. A careless repair can damage cabinetry, flooring, panels, stone surfaces, or the appliance finish.
+      </p>
+
+      <p>
+        At <strong>Luxury Appliance Repair by ZARICCI</strong>, our service is designed for homes where quality matters. We focus on careful handling, accurate diagnostics, professional communication, and a clean repair experience that matches the standards of a luxury property.
+      </p>
+    </section>
+
+    <section>
+      <h3>Schedule Luxury Appliance Repair in Ventura County Today</h3>
+
+      <p>
+        Whether your Sub-Zero refrigerator is not cooling, your Wolf range will not ignite, your Miele dishwasher is leaking, your Thermador oven is not heating, or your La Cornue range needs expert service, ZARICCI is ready to help.
+      </p>
+
+      <p>
+        Call <strong>Luxury Appliance Repair by ZARICCI</strong> today or book online to schedule high-end appliance repair in Ventura County, CA.
+      </p>
+
+      <p>
+        <strong>ZARICCI — Luxury appliance repair for Ventura County homes that expect more than a quick fix.</strong>
+      </p>
+    </section>
+  </div>
+</Layout>
