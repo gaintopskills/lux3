@@ -123,7 +123,7 @@ const offers = [
   {
     id: 16,
     title: "",
-    subtitle: "Elmira Stove Works",
+    subtitle: "Elmira Stove Works Repair",
     description:
       "We repair Elmira Stove Works ranges, ovens, cooktops, refrigerators, dishwashers, ventilation hoods, & warming drawers.",
     image: "/elmira/elmira-stove-works-repair.webp",
@@ -131,7 +131,7 @@ const offers = [
   {
     id: 17,
     title: "",
-    subtitle: "Fulgor Milano",
+    subtitle: "Fulgor Milano Repair",
     description:
       "We repair Fulgor Milano ovens, ranges, cooktops, rangetops, refrigerators, dishwashers, & ventilation hoods.",
     image: "/fulgormilano/fulgor-milano-appliance-repair-service.webp",
@@ -139,7 +139,7 @@ const offers = [
   {
     id: 17,
     title: "",
-    subtitle: "Hestan",
+    subtitle: "Hestan Repair",
     description:
       "We repair Hestan ranges, rangetops, cooktops, ovens, ventilation hoods, refrigeration, & outdoor grills.",
     image: "/hestan/hestan-appliance-repair-services.webp",
@@ -147,7 +147,7 @@ const offers = [
   {
     id: 17,
     title: "",
-    subtitle: "Gaggenau",
+    subtitle: "Gaggenau Repair",
     description:
       "We repair Gaggenau ovens, cooktops, rangetops, ventilation systems, refrigerators, freezers, wine climate cabinets, dishwashers, warming drawers.",
     image: "/gaggenau/gaggenau-appliance-repair-services.webp",
