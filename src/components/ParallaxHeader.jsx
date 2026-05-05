@@ -26,10 +26,11 @@ const ParallaxHeader = () => {
   </span></h1>
         <img className="header-image" width="1200" height="630" src="/high-end-and-luxury-appliance-repair-by-zaricci.webp" alt="High-End and Luxury Appliance Repair Los Angeles, Orange county, and Ventura County"  fetchpriority="high"
   decoding="async"/>
-         <p>
-    Luxury Appliance Repair by Zaricci provides in-home repair for high-end
-    kitchen, refrigeration, and laundry appliances throughout Los Angeles, Orange County, and Ventura County.
-  </p>
+        <p>
+  Luxury Appliance Repair by Zaricci provides in-home service for high-end
+  kitchen, refrigeration, laundry, wine, and outdoor appliances across Los
+  Angeles, Orange County, Ventura County, and Thousand Oaks.
+</p>
   <p>
     Our technicians service premium brands including Sub-Zero, Wolf, Miele,
     Gaggenau, Thermador, Viking, Bosch, Dacor, La Cornue, AGA, Bertazzoni,
