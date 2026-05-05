@@ -22,18 +22,19 @@ const ParallaxHeader = () => {
 
       <div className="maintext">
         <h1>Luxury Appliance Repair by ZARICCI</h1>
-        <img className="header-image" width="1200" height="630" src="/high-end-and-luxury-appliance-repair-by-zaricci.webp" alt="High-End and Luxury Appliance Repair Los Angeles and Nearby Areas"  fetchpriority="high"
+        <img className="header-image" width="1200" height="630" src="/high-end-and-luxury-appliance-repair-by-zaricci.webp" alt="High-End and Luxury Appliance Repair Los Angeles, Orange county, and Ventura County"  fetchpriority="high"
   decoding="async"/>
-        <p>
-          At Luxury Appliance Repair by Zaricci, we specialize in repairing high-end appliances with
-          precision. We offer certified and highly expirienced 
-          technicians, premium-quality parts, and exceptional customer care.
-        </p>
-        <p>
-          We’re trusted by our customers to repair luxury and high-end
-          brands like La Cornue, Bertazzoni, Gaggenau, BlueStar, Viking, Wolf, Thermador, Miele, Bosch, Dacor, Smeg, Big Chill, Elmira Stove Works,
-          Fisher & Paykel, AGA, and more.
-        </p>
+         <p>
+    Luxury Appliance Repair by Zaricci provides in-home repair for high-end
+    kitchen, refrigeration, and laundry appliances throughout Los Angeles, Orange County, and Ventura County.
+  </p>
+  <p>
+    Our technicians service premium brands including Sub-Zero, Wolf, Miele,
+    Gaggenau, Thermador, Viking, Bosch, Dacor, La Cornue, AGA, Bertazzoni,
+    Fulgor Milano, ILVE, BlueStar, True Residential, Monogram, Fisher & Paykel,
+    Smeg, and more. 
+  </p>
+  
       </div>
     </div>
   );
