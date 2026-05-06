@@ -33,8 +33,6 @@ export default function CardsGallery() {
             <div className="card" key={card.title}>
               <a
                 href={card.href}
-                target="_blank"
-                rel="noopener noreferrer"
                 aria-label={card.title}
               >
                 <img
