@@ -5,15 +5,15 @@ const offers = [
     id: 1,
     title: "",
     subtitle: "Sub-Zero Repair",
-    description: "We repair Sub-zero refrigerators, freezers, wine coolers, beverage centers, ice makers.",
+    description: "We repair Sub-Zero refrigerators, freezers, wine coolers, beverage centers, ice makers.",
     image: "/sub-zero/sub-zero-appliance-repair.webp",
   },
   {
     id: 2,
     title: "",
-    subtitle: "Wolf Reapair",
+    subtitle: "Wolf Repair",
     description:
-      "We repair Wolf ranges, ovens, cooktops, and warming drawers, ventelation hoods, coffee systems, griddles & grills",
+      "We repair Wolf ranges, ovens, cooktops, and warming drawers, ventilation hoods, coffee systems, griddles & grills",
     image: "/wolf/wolf-appliance-repair.webp",
   },
   {

@@ -25,7 +25,7 @@ export const Tabs = () => {
               <li>✅ Overheating or error codes</li>
             </ul>
             <h3>Brands We Repair:</h3>
-            <p><strong>Wolf, Viking, SKS, Thermador, La Cornue, Aga, Dacor, Bertazzoni, BlueStar, Elmira Stove Works, Fulgor Milano, La Canche.</strong></p>
+            <p><strong>Wolf, Viking, SKS, Thermador, La Cornue, AGA, Dacor, Bertazzoni, BlueStar, Elmira Stove Works, Fulgor Milano, La Canche.</strong></p>
             <h3>How We Fix It:</h3>
             <p>We test spark modules, gas valves, relays, and thermostats. Safety, performance, and elegance — we repair with all three in mind.</p>
           </>
@@ -49,7 +49,7 @@ export const Tabs = () => {
               <li>✅ Door not sealing</li>
             </ul>
             <h3>Brands We Repair:</h3>
-            <p><strong>Wolf, Miele, Viking, Thermador, Monogram, JennAir (Noir), Aga, La Cornue, Dacor, Bosch, Gaggenau, Elmira Stove Works, Fulgor Milano, La Canche.</strong></p>
+            <p><strong>Wolf, Miele, Viking, Thermador, Monogram, JennAir (Noir), AGA, La Cornue, Dacor, Bosch, Gaggenau, Elmira Stove Works, Fulgor Milano, La Canche.</strong></p>
             <h3>How We Fix It:</h3>
             <p>We test temperature calibration, inspect igniters, and replace convection fans. Luxury ovens require luxury service — and that’s exactly what we provide in Los Angeles and nearby areas.</p>
           </>
@@ -72,7 +72,7 @@ export const Tabs = () => {
               <li>✅ Clicking or buzzing noises</li>
             </ul>
             <h3>Brands We Repair:</h3>
-            <p><strong>Wolf, Miele, Bosch, Thermador, KitchenAid, Aga, Bertazzoni, La Cornue, JennAir, Monogram, Gaggenau, Elmira Stove Works, Fulgor Milano, La Canche.</strong></p>
+            <p><strong>Wolf, Miele, Bosch, Thermador, KitchenAid, AGA, Bertazzoni, La Cornue, JennAir, Monogram, Gaggenau, Elmira Stove Works, Fulgor Milano, La Canche.</strong></p>
             <h3>How We Fix It:</h3>
             <p>We inspect spark modules, relays, temperature sensors, and user interfaces. If needed, we calibrate or replace touch controls for flawless cooking performance.</p>
           </>
