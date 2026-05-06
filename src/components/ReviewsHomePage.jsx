@@ -358,8 +358,7 @@ export default function GoogleReviews() {
           </h2>
 
           <p className="reviews-intro">
-            Rated 5 stars by customers who rely on us for high-end and luxury appliance repair,
-            reliable, and professional in-home service.
+          Rated 5 stars by customers who rely on us for high-end luxury appliance repair and professional in-home service.
           </p>
 
           <div className="reviews-summary" aria-label="Google rating summary">
