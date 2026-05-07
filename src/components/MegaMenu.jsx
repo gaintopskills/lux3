@@ -152,7 +152,7 @@ export const MegaMenu = () => {
       },
       { label: "FiveStar", href: "/fivestar-appliance-repair/" },
       { label: "Hestan", href: "/hestan-appliance-repair/" },
-      { label: "JennAir Noir", href: "/jennair-noir-appliance-repair/" },
+      { label: "JennAir", href: "/jenn-air-appliance-repair/" },
       { label: "Miele", href: "/miele-appliance-repair/" },
     ],
     [
