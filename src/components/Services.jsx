@@ -146,7 +146,8 @@ const offers = [
   },
   {
     id: 17,
-    title: "/fulgor-milano-appliance-repair/",
+    title: "",
+    href: "/fulgor-milano-appliance-repair/",
     subtitle: "Fulgor Milano Repair",
     description:
       "We repair Fulgor Milano ovens, ranges, cooktops, rangetops, refrigerators, dishwashers, & ventilation hoods.",
