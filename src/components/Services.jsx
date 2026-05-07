@@ -5,7 +5,7 @@ const offers = [
     id: 1,
     title: "",
     subtitle: "Sub-Zero Repair",
-    href: "/sub-zero/",
+    href: "/sub-zero-repair/",
     description: "We repair Sub-Zero refrigerators, freezers, wine coolers, beverage centers, ice makers.",
     image: "/sub-zero/sub-zero-appliance-repair.webp",
   },
