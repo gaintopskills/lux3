@@ -5,12 +5,14 @@ const offers = [
     id: 1,
     title: "",
     subtitle: "Sub-Zero Repair",
+    href: "/sub-zero/",
     description: "We repair Sub-Zero refrigerators, freezers, wine coolers, beverage centers, ice makers.",
     image: "/sub-zero/sub-zero-appliance-repair.webp",
   },
   {
     id: 2,
     title: "",
+    href: "/wolf-appliance-repair/",
     subtitle: "Wolf Repair",
     description:
       "We repair Wolf ranges, ovens, cooktops, and warming drawers, ventilation hoods, coffee systems, griddles & grills",
@@ -19,6 +21,7 @@ const offers = [
   {
     id: 3,
     title: "",
+    href: "/miele-appliance-repair/",
     subtitle: "Miele Repair",
     description:
       "We repair Miele ovens, cooktops, ranges, warming drawers, coffee systems, refrigerators, dishwashers, washers & dryers, range hoods",
@@ -27,6 +30,7 @@ const offers = [
   {
     id: 4,
     title: "",
+    href: "/viking-appliance-repair/",
     subtitle: "Viking Repair",
     description:
       "We repair Viking ranges, ovens, cooktops, refrigerators, warming drawers, hoods, wine cellars, beverage centers, ice makers, freezers",
@@ -35,6 +39,7 @@ const offers = [
   {
     id: 5,
     title: "",
+    href: "/thermador-appliance-repair/",
     subtitle: "Thermador Repair",
     description:
       "We repair Thermador ranges, ovens, cooktops, range tops, hoods, refrigerators, freezers, wine coolers, beverage centers",
@@ -43,6 +48,7 @@ const offers = [
   {
     id: 6,
     title: "",
+    href: "/bosch-appliance-repair/",
     subtitle: "Bosch Repair",
     description:
       "We repair Bosch refrigerators, freezers, dishwashers, wall ovens, cooktops, ranges, ventilation hoods, washers, & dryers.",
@@ -51,6 +57,7 @@ const offers = [
   {
     id: 7,
     title: "",
+    href: "/cove-dishwasher-repair/",
     subtitle: "Cove Repair",
     description:
       "We repair Cove dishwashers and handle all Cove appliance service needs with expert care",
@@ -59,6 +66,7 @@ const offers = [
   {
     id: 8,
     title: "",
+    href: "/jennair-appliance-repair/",
     subtitle: "JennAir Repair",
     description:
       "We repair JennAir ranges, ovens, cooktops, warming drawers, hoods, refrigerators, freezers, wine cellars, beverage centers, ice makers, dishwashers.",
@@ -67,6 +75,7 @@ const offers = [
   {
     id: 9,
     title: "",
+    href: "/monogram-appliance-repair/",
     subtitle: "Monogram Repair",
     description:
       "We repair Monogram refrigerators, freezers, wine reserves, ovens, wall ovens, ranges, rangetops, cooktops, ventilation hoods, & dishwashers.",
@@ -75,6 +84,7 @@ const offers = [
   {
     id: 10,
     title: "",
+    href: "/dacor-appliance-repair/",
     subtitle: "Dacor Repair",
     description:
       "We repair Dacor refrigerators, freezers, wine preservation systems, wall ovens, ranges, rangetops, cooktops, ventilation hoods, dishwashers, & warming drawers.",
@@ -83,6 +93,7 @@ const offers = [
   {
     id: 11,
     title: "",
+    href: "",
     subtitle: "Fisher & Paykel Repair",
     description:
       "We repair Fisher & Paykel refrigerators, freezers, wine cabinets, dishwashers, ovens, ranges, cooktops, ventilation hoods, washers, & dryers.",
@@ -91,6 +102,7 @@ const offers = [
   {
     id: 12,
     title: "",
+    href: "/aga-appliance-repair/",
     subtitle: "AGA Repair",
     description:
       "We repair AGA ranges, ovens, cooktops, refrigerators, freezers, wine coolers, beverage centers, & dishwashers",
@@ -99,6 +111,7 @@ const offers = [
   {
     id: 13,
     title: "",
+    href: "/bertazzoni-appliance-repair/",
     subtitle: "Bertazzoni Repair",
     description:
       "We repair Bertazzoni ranges, ovens, cooktops, refrigerators, dishwashers, and ventilation hoods",
@@ -107,6 +120,7 @@ const offers = [
   {
     id: 14,
     title: "",
+    href: "/bluestar-appliance-repair/",
     subtitle: "BlueStar Repair",
     description:
       "We repair BlueStar ranges, rangetops, cooktops, wall ovens, ventilation hoods, & refrigerators.",
@@ -115,6 +129,7 @@ const offers = [
   {
     id: 15,
     title: "",
+    href: "/la-cornue-appliance-repair/",
     subtitle: "La Cornue Repair",
     description:
       "We repair La Cornue ranges, cooktops, ventilation hoods, rotisseries",
@@ -123,6 +138,7 @@ const offers = [
   {
     id: 16,
     title: "",
+    href: "/elmira-stove-works-appliance-repair/",
     subtitle: "Elmira Stove Works Repair",
     description:
       "We repair Elmira Stove Works ranges, ovens, cooktops, refrigerators, dishwashers, ventilation hoods, & warming drawers.",
@@ -130,7 +146,7 @@ const offers = [
   },
   {
     id: 17,
-    title: "",
+    title: "/fulgor-milano-appliance-repair/",
     subtitle: "Fulgor Milano Repair",
     description:
       "We repair Fulgor Milano ovens, ranges, cooktops, rangetops, refrigerators, dishwashers, & ventilation hoods.",
@@ -139,6 +155,7 @@ const offers = [
   {
     id: 17,
     title: "",
+    href: "/hestan-appliance-repair/",
     subtitle: "Hestan Repair",
     description:
       "We repair Hestan ranges, rangetops, cooktops, ovens, ventilation hoods, refrigeration, & outdoor grills.",
@@ -147,6 +164,7 @@ const offers = [
   {
     id: 17,
     title: "",
+    href: "/gaggenau-repair/",
     subtitle: "Gaggenau Repair",
     description:
       "We repair Gaggenau ovens, cooktops, rangetops, ventilation systems, refrigerators, freezers, wine climate cabinets, dishwashers, warming drawers.",
@@ -187,8 +205,16 @@ const Services = () => {
 </div>
 <div className="back">
                 <div className="inner">
-                <h3>{offer.subtitle}</h3>
-                  <p>{offer.description}</p>
+                <a
+  href={offer.href}
+  className="offer-subtitle-link"
+  onClick={(e) => e.stopPropagation()}
+  onTouchStart={(e) => e.stopPropagation()}
+>
+  <h3>{offer.subtitle}</h3>
+</a>
+
+<p>{offer.description}</p>
                 </div>
               </div>
             </div>
