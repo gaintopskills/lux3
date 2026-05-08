@@ -296,7 +296,7 @@ const googleReviews = [
     link: "https://maps.app.goo.gl/Ltg5Bv9yzbG4L1ck7",
     rating: 5,
     category: "AGA",
-    text: "Zaricci Appliance Repair has been extremely reliable for me. I’ve used them a few times for different issues. Last time they worked on my older AGA range that I’ve had for years, and they took the time to handle it properly without rushing it. Also in the past I needed GE Monogram refrigerator repair. They handled it very professionally."
+    text: "Zaricci Appliance  Repair has been extremely reliable for me. I’ve used them a few times for different issues. Last time they worked on my older AGA range that I’ve had for years, and they took the time to handle it properly without rushing it. Also in the past I needed GE Monogram refrigerator repair. They handled it very professionally."
   }
 ];
 
