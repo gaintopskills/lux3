@@ -295,7 +295,7 @@ const googleReviews = [
     date: "Verified - Read on Google",
     link: "https://maps.app.goo.gl/Ltg5Bv9yzbG4L1ck7",
     rating: 5,
-    category: "AGA",
+    category: "Aga",
     text: "Zaricci Appliance  Repair has been extremely reliable for me. I’ve used them a few times for different issues. Last time they worked on my older AGA range that I’ve had for years, and they took the time to handle it properly without rushing it. Also in the past I needed GE Monogram refrigerator repair. They handled it very professionally."
   }
 ];
@@ -433,15 +433,6 @@ export default function GoogleReviews() {
               rel="noopener noreferrer"
             >
               Read Reviews on Google
-            </a>
-
-            <a
-              className="reviews-secondary-link"
-              href={LEAVE_REVIEW_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Leave a Review
             </a>
           </div>
         </div>
