@@ -256,6 +256,47 @@ const googleReviews = [
     rating: 5,
     category: "Officine Gullo",
     text: "Had an issue with my Officine Gullo range not igniting properly, and they fixed it quickly and professionally. Super easy experience!"
+  },
+
+  {
+    initial: "H",
+    date: "Verified - Read on Google",
+    link: "https://maps.app.goo.gl/AesNdqYvjx3Wrbas5",
+    rating: 5,
+    category: "",
+    text: "Amazing support"
+  },
+  {
+    initial: "I",
+    date: "Verified - Read on Google",
+    link: "https://maps.app.goo.gl/7p3gpUGhMRAMXgRE7",
+    rating: 5,
+    category: "La Cornue",
+    text: "Great company! Our La Cornue oven suddenly stopped heating and we were worried because we didn’t want someone unfamiliar with La Cornue appliances working on it. They reassured us right away that they have solid experience with the brand. The technician was careful, professional, and on time. Overall, it felt like a very reliable service and we’re extremely satisfied."
+  },
+  {
+    initial: "D",
+    date: "Verified - Read on Google",
+    link: "https://maps.app.goo.gl/x7EgDLmHMd6cK1j68",
+    rating: 5,
+    category: "Gaggenau",
+    text: "Needed Gaggenau cooktop repair. One burner wouldn’t ignite, the technician was fantastic and fixed it within an hour."
+  },
+  {
+    initial: "M",
+    date: "Verified - Read on Google",
+    link: "https://maps.app.goo.gl/W56Q4BHPiQHfxrQz8",
+    rating: 5,
+    category: "LaCanche",
+    text: "Called them for LaCanche range repair - my oven wouldn’t stay at temp and a burner kept clicking, they got straight to the issue, explained it in plain terms, and after the repair everything’s been running steady."
+  },
+  {
+    initial: "E",
+    date: "Verified - Read on Google",
+    link: "https://maps.app.goo.gl/Ltg5Bv9yzbG4L1ck7",
+    rating: 5,
+    category: "AGA",
+    text: "Zaricci Appliance Repair has been extremely reliable for me. I’ve used them a few times for different issues. Last time they worked on my older AGA range that I’ve had for years, and they took the time to handle it properly without rushing it. Also in the past I needed GE Monogram refrigerator repair. They handled it very professionally."
   }
 ];
 
@@ -269,6 +310,7 @@ const reviewFilters = [
   "Viking",
   "Gaggenau",
   "La Cornue",
+  "LaCanche",
   "ILVE",
   "Bosch",
   "True",
