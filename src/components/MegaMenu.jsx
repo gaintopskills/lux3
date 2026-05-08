@@ -129,7 +129,7 @@ export const MegaMenu = () => {
     [
       {
         type: "heading",
-        label: "Luxury Brand Repair",
+        label: "European Appliance Repair",
         href: "/european-appliance-repair/", },
       { label: "AGA", href: "/aga-appliance-repair/" },
       { label: "Bertazzoni", href: "/bertazzoni-appliance-repair/" },
