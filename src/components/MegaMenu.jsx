@@ -138,6 +138,7 @@ export const MegaMenu = () => {
       { label: "ILVE", href: "/ilve-appliance-repair/" },
       { label: "Lacanche", href: "/lacanche-appliance-repair/" },
       { label: "La Cornue", href: "/la-cornue-appliance-repair/" },
+      { label: "Officine Gullo", href: "/officine-gullo-appliance-repair/" },
     ],
     [
       { label: "American Range", href: "/american-range-repair/" },
