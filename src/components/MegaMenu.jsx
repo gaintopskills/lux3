@@ -127,10 +127,7 @@ export const MegaMenu = () => {
   ];
   const brandsColumns = [
     [
-      {
-        type: "heading",
-        label: "European Appliance Repair",
-        href: "/european-appliance-repair/", },
+      {type: "heading", label: "European Appliance Repair", href: "/european-appliance-repair/", },
       { label: "AGA", href: "/aga-appliance-repair/" },
       { label: "Bertazzoni", href: "/bertazzoni-appliance-repair/" },
       { label: "Fulgor Milano", href: "/fulgor-milano-appliance-repair/" },
@@ -141,34 +138,42 @@ export const MegaMenu = () => {
       { label: "Officine Gullo", href: "/officine-gullo-appliance-repair/" },
     ],
     [
+      {type: "heading", label: "Luxury Appliance Repair", href: "/luxury-appliance-repair/", },
+      { label: "Sub-Zero", href: "/sub-zero-repair/" },
+      { label: "Wolf", href: "/wolf-appliance-repair/" },
+      { label: "Thermador", href: "/thermador-appliance-repair/" },
+      { label: "True Residential", href: "/true-residential-appliance-repair/" },
+      { label: "Viking", href: "/viking-appliance-repair/" },
+      { label: "Monogram", href: "/monogram-appliance-repair/" },
+      {label: "Signature Kitchen Suite", href: "/signature-kitchen-suite-appliance-repair/"},
+      { label: "Hestan", href: "/hestan-appliance-repair/" },
+      { label: "Dacor", href: "/dacor-appliance-repair/" },
+      { label: "Cove", href: "/cove-dishwasher-repair/" },
+
+
       { label: "American Range", href: "/american-range-repair/" },
       { label: "Big Chill", href: "/big-chill-appliance-repair/" },
       { label: "BlueStar", href: "/bluestar-appliance-repair/" },
       { label: "Bosch", href: "/bosch-appliance-repair/" },
-      { label: "Cove", href: "/cove-dishwasher-repair/" },
-      { label: "Dacor", href: "/dacor-appliance-repair/" },
+      
+      
       {
         label: "Elmira Stove Works",
         href: "/elmira-stove-works-appliance-repair/",
       },
       { label: "FiveStar", href: "/fivestar-appliance-repair/" },
-      { label: "Hestan", href: "/hestan-appliance-repair/" },
+      
       { label: "JennAir", href: "/jenn-air-appliance-repair/" },
       { label: "Miele", href: "/miele-appliance-repair/" },
     ],
     [
-      {
-        label: "Signature Kitchen Suite",
-        href: "/signature-kitchen-suite-appliance-repair/",
-      },
+      
       { label: "Smeg", href: "/smeg-appliance-repair/" },
-      { label: "Sub-Zero", href: "/sub-zero-repair/" },
-      { label: "Thermador", href: "/thermador-appliance-repair/" },
-      { label: "True Residential", href: "/true-residential-appliance-repair/" },
-      { label: "Viking", href: "/viking-appliance-repair/" },
-      { label: "Wolf", href: "/wolf-appliance-repair/" },
+      
+      
+      
       { label: "ZLINE", href: "/zline-appliance-repair/" },
-      { label: "Monogram", href: "/monogram-appliance-repair/" },
+      
     ],
   ];
 
