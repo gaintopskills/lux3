@@ -149,29 +149,19 @@ export const MegaMenu = () => {
       { label: "Hestan", href: "/hestan-appliance-repair/" },
       { label: "Dacor", href: "/dacor-appliance-repair/" },
       { label: "Cove", href: "/cove-dishwasher-repair/" },
-
-
-      { label: "American Range", href: "/american-range-repair/" },
       { label: "Big Chill", href: "/big-chill-appliance-repair/" },
-      { label: "BlueStar", href: "/bluestar-appliance-repair/" },
-      { label: "Bosch", href: "/bosch-appliance-repair/" },
-      
-      
-      {
-        label: "Elmira Stove Works",
-        href: "/elmira-stove-works-appliance-repair/",
-      },
-      { label: "FiveStar", href: "/fivestar-appliance-repair/" },
-      
-      { label: "JennAir", href: "/jenn-air-appliance-repair/" },
-      { label: "Miele", href: "/miele-appliance-repair/" },
+      {  label: "Elmira Stove Works",  href: "/elmira-stove-works-appliance-repair/",},
     ],
-    [
-      
+    [{type: "heading", label: "High-End Appliance Repair", href: "/high-end-appliance-repair/", },
+    { label: "Bosch", href: "/bosch-appliance-repair/" },
+    { label: "JennAir", href: "/jenn-air-appliance-repair/" },
+    { label: "Miele", href: "/miele-appliance-repair/" },
+
+      {type: "heading", label: "Pro-Style Appliance Repair", href: "/pro-style-appliance-repair/", },
+    { label: "American Range", href: "/american-range-repair/" },
+    { label: "BlueStar", href: "/bluestar-appliance-repair/" },
+    { label: "FiveStar", href: "/fivestar-appliance-repair/" },
       { label: "Smeg", href: "/smeg-appliance-repair/" },
-      
-      
-      
       { label: "ZLINE", href: "/zline-appliance-repair/" },
       
     ],
