@@ -68,7 +68,7 @@ const ServiceForm = ({
 
 const EuropeanLuxuryLanding = () => {
   const brands = [
-    { name: 'AGA', image: '/logo/aga-logo.png', width: 180, height: 70 },
+    { name: 'AGA', image: '/logo/sub-zero.png', width: 180, height: 70 },
     { name: 'Bertazzoni', image: '/logo/bertazzoni-logo.png', width: 180, height: 70 },
     { name: 'Gaggenau', image: '/logo/gaggenau-logo.png', width: 180, height: 70 },
     { name: 'La Cornue', image: '/logo/la-cornue-logo.png', width: 190, height: 70 },
