@@ -114,7 +114,7 @@ const EuropeanLuxuryLanding = () => {
           <div className="european-luxury-shell">
             <div className="european-luxury-main-column">
               <div className="european-luxury-copy">
-                <h1>European Luxury & High-End Appliance Repair</h1>
+                <h1>Luxury Appliance Repair</h1>
 
                 <div className="european-luxury-divider">
                   <span></span>
@@ -148,7 +148,7 @@ const EuropeanLuxuryLanding = () => {
                 />
               </div>
               <div className="luxury-info-section">
-  <h2>Specialized Repair for High-End & Luxury European Appliances</h2>
+  <h2>Specialized Repair for High-End & Luxury Appliances</h2>
 
   <p className="luxury-description">
     European luxury appliances require a different level of care. We work on
@@ -168,7 +168,7 @@ const EuropeanLuxuryLanding = () => {
               <div className="luxury-brands-section">
                 <div className="brands-heading-wrap">
                   <span className="brands-line"></span>
-                  <h3>Specialized in European Brands</h3>
+                  <h3>Specialized in Luxury Brands</h3>
                   <span className="brands-line"></span>
                 </div>
 
