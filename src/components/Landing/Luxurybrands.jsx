@@ -125,7 +125,7 @@ const EuropeanLuxuryLanding = () => {
                 <p className="european-luxury-subtext">
   CERTIFIED LEVEL REPAIR FOR:</p>
   <p className="hero-brand-list">
-  La Cornue <span>·</span> Lacanche <span>·</span> Officine Gullo <span>·</span> Bertazzoni <span>·</span> Fulgor Milano <span>·</span> ILVE <span>·</span> Gaggenau <span>·</span> AGA
+  Sub-Zero <span>·</span> Wolf <span>·</span> Thermador <span>·</span> True Residential <span>·</span> Viking <span>·</span> Monogram <span>·</span> Signature Kitchen Suite <span>·</span> Hestan <span>·</span> Dacor <span>·</span> Cove
 </p>
               </div>
             </div>
@@ -160,8 +160,8 @@ const EuropeanLuxuryLanding = () => {
   <h3>Appliances We Repair:</h3>
 
   <p className="luxury-description">
-    Ranges &bull; Rangetops/Cooktops &bull; Hoods &bull; Ovens &bull;
-    Refrigerators &bull; Freezers &bull; Dishwashers &bull; Warming Drawers
+    Ranges &bull; Rangetops/Cooktops &bull; Range Hoods &bull; Ovens &bull;
+    Refrigerators &bull; Freezers &bull; Dishwashers &bull; Warming Drawers &bull; Wine coolers, columns, and storage units &bull; Ice makers &bull; Grills
   </p>
 </div>
 
