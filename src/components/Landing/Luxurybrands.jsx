@@ -68,14 +68,16 @@ const ServiceForm = ({
 
 const EuropeanLuxuryLanding = () => {
   const brands = [
-    { name: 'AGA', image: '/logo/sub-zero.png', width: 180, height: 70 },
-    { name: 'Bertazzoni', image: '/logo/bertazzoni-logo.png', width: 180, height: 70 },
-    { name: 'Gaggenau', image: '/logo/gaggenau-logo.png', width: 180, height: 70 },
-    { name: 'La Cornue', image: '/logo/la-cornue-logo.png', width: 190, height: 70 },
-    { name: 'Lacanche', image: '/logo/lacanche-logo.png', width: 150, height: 70 },
-    { name: 'Officine Gullo', image: '/logo/officine-gullo-logo.png', width: 220, height: 70 },
-    { name: 'ILVE', image: '/logo/ilve-logo.png', width: 220, height: 70 },
-    { name: 'Fulgor Milano', image: '/logo/fulgor-milano-logo.png', width: 220, height: 70 },
+    { name: 'Sub-Zero', image: '/logo/sub-zero.png', width: 180, height: 70 },
+    { name: 'Wolf', image: '/logo/wolf.png', width: 180, height: 70 },
+    { name: 'Thermador', image: '/logo/thermador.png', width: 180, height: 70 },
+    { name: 'true Residential', image: '/logo/true-residential.png', width: 190, height: 70 },
+    { name: 'Viking', image: '/logo/viking.png', width: 150, height: 70 },
+    { name: 'Monogram', image: '/logo/Monogram.png', width: 220, height: 70 },
+    { name: 'Signature Kitchen Suite', image: '/logo/signature.png', width: 220, height: 70 },
+    { name: 'Hestan', image: '/logo/hestan.png', width: 220, height: 70 },
+    { name: 'Dacor', image: '/logo/dacor.png', width: 220, height: 70 },
+    { name: 'Cove', image: '/logo/cove.png', width: 220, height: 70 },
   ];
 
   const features = [
