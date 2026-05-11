@@ -153,7 +153,7 @@ const EuropeanLuxuryLanding = () => {
   <h2>Specialized Repair for High-End & Luxury Appliances</h2>
 
   <p className="luxury-description">
-    European luxury appliances require a different level of care. We work on
+    Luxury appliances require a different level of care. We work on
     premium cooking and refrigeration systems with an approach centered on
     accurate diagnostics, careful handling, and respect for high-end finishes,
     panels, and surrounding cabinetry.
