@@ -1,0 +1,383 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ParallaxHeader from '../components/Header/Thor.jsx'
+import '../components/Areas.css';
+import Areas from '../components/Areas.jsx';
+import '../styles/global.css';
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/thor-appliance-repair/#webpage",
+      "url": "https://luxuryappliance.repair/thor-appliance-repair/",
+      "name": "Thor Appliance Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Expert Thor appliance repair, installation, and maintenance in Los Angeles for Thor ranges, rangetops, cooktops, refrigerators, dishwashers, range hoods, wine coolers, ice makers, microwaves, and outdoor kitchen appliances.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/thor-appliance-repair/#service"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/thor/thor-appliance-repair-services-trained-technicians.webp"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/thor-appliance-repair/#service",
+      "name": "Thor Appliance Repair",
+      "url": "https://luxuryappliance.repair/thor-appliance-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/thor-appliance-repair/#webpage"
+      },
+      "serviceType": "Thor appliance repair, installation, and maintenance",
+      "description": "Luxury Appliance Repair by Zaricci specializes in Thor appliance repair, maintenance, and installation support for Thor ranges, rangetops, cooktops, refrigerators, dishwashers, range hoods, wine coolers, ice makers, microwaves, undercounter appliances, and outdoor kitchen appliances. Our technicians use careful diagnostics and premium service practices for Thor appliances across Los Angeles and surrounding communities.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "THOR Kitchen",
+        "sameAs": "https://www.thorkitchen.com/"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Los Angeles",
+          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Brentwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Pasadena",
+          "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California"
+        },
+        {
+          "@type": "Place",
+          "name": "Bel Air",
+          "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Pacific Palisades",
+          "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Santa Monica"
+        },
+        {
+          "@type": "City",
+          "name": "Beverly Hills"
+        },
+        {
+          "@type": "City",
+          "name": "Calabasas"
+        },
+        {
+          "@type": "City",
+          "name": "Thousand Oaks"
+        },
+        {
+          "@type": "City",
+          "name": "West Hollywood"
+        },
+        {
+          "@type": "City",
+          "name": "San Marino"
+        },
+        {
+          "@type": "City",
+          "name": "Malibu"
+        },
+        {
+          "@type": "City",
+          "name": "Manhattan Beach"
+        },
+        {
+          "@type": "Place",
+          "name": "Encino",
+          "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Rancho Palos Verdes"
+        },
+        {
+          "@type": "City",
+          "name": "Palos Verdes Estates"
+        },
+        {
+          "@type": "City",
+          "name": "Rolling Hills Estates"
+        },
+        {
+          "@type": "Place",
+          "name": "Westwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Century City",
+          "sameAs": "https://en.wikipedia.org/wiki/Century_City"
+        },
+        {
+          "@type": "City",
+          "name": "La Cañada Flintridge"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Orange County",
+          "sameAs": "https://en.wikipedia.org/wiki/Orange_County,_California"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ventura County",
+          "sameAs": "https://en.wikipedia.org/wiki/Ventura_County,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Irvine",
+          "sameAs": "https://en.wikipedia.org/wiki/Irvine,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Newport Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Newport_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Laguna Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Laguna_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Huntington Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Huntington_Beach,_California"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Thor Appliance Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Thor Appliance Repair",
+              "description": "Repair for Thor appliances with range heating problems, burner ignition issues, oven temperature inconsistency, refrigerator cooling problems, dishwasher performance issues, range hood ventilation concerns, wine cooler temperature problems, ice maker issues, microwave faults, control failures, and maintenance-related decline."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Thor Appliance Installation",
+              "description": "Professional installation support for Thor ranges, rangetops, cooktops, refrigerators, dishwashers, range hoods, wine coolers, ice makers, microwaves, undercounter appliances, and outdoor kitchen appliances where applicable, including setup, leveling, ventilation review, connection review, integration, and performance checks."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Thor Appliance Maintenance",
+              "description": "Preventive maintenance for Thor appliances including inspection, cleaning, calibration checks, burner and oven performance testing, refrigeration temperature testing, door gasket inspection, airflow review, filter review, drain review, and appliance performance assessment."
+            }
+          }
+        ]
+      },
+      "keywords": [
+        "Thor appliance repair",
+        "THOR Kitchen repair",
+        "Thor range repair",
+        "Thor oven repair",
+        "Thor gas range repair",
+        "Thor dual fuel range repair",
+        "Thor rangetop repair",
+        "Thor cooktop repair",
+        "Thor refrigerator repair",
+        "Thor dishwasher repair",
+        "Thor range hood repair",
+        "Thor wine cooler repair",
+        "Thor ice maker repair",
+        "Thor microwave repair",
+        "Thor outdoor appliance repair",
+        "Thor appliance installation",
+        "Thor appliance maintenance",
+        "Los Angeles Thor appliance repair"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      ]
+    }
+  ]
+};
+---
+
+<Layout
+  title="Thor Appliance Repair | (424) 499-7788"
+  description="Expert Thor appliance repair for ranges, rangetops, cooktops, refrigerators, dishwashers, range hoods, wine coolers, ice makers, microwaves, and outdoor kitchen appliances. Professional Thor repair, maintenance, and installation support."
+  ogImage="/thor/thor-appliance-repair-los-angeles-orange-county-ventura-county.webp"
+  structuredData={structuredData}
+>
+  <ParallaxHeader client:idle />
+
+  <div class="maincontent" id="webpage">
+    <h2>Expert Thor Appliance Repair</h2>
+
+    <img
+      width="500"
+      height="500"
+      loading="lazy"
+      class="image-left"
+      src="/thor/thor-appliance-repair-technician.webp"
+      alt="Thor appliance repair technician servicing a pro-style Thor kitchen appliance in Los Angeles"
+    >
+
+    <p>Luxury Appliance Repair by Zaricci provides professional <strong>Thor appliance repair</strong> for homeowners who own pro-style kitchen appliances. We service <strong>Thor ranges, rangetops, cooktops, ovens, refrigerators, dishwashers, range hoods, wine coolers, ice makers, microwaves, undercounter appliances, and outdoor kitchen appliances</strong> with careful diagnostics, detail-focused workmanship, and respect for the appliance’s design and installation.</p>
+
+    <p>Thor appliances are different from standard residential appliances because they are built around professional-style kitchen performance, stainless steel design, high-output cooking, refrigeration, ventilation, and full kitchen appliance suites. If your <strong>Thor range is not heating properly</strong>, your burners are not igniting, your refrigerator is not cooling, your dishwasher is not cleaning, or your range hood is not ventilating properly, our technicians work to identify the cause and restore dependable operation while protecting the appliance’s fit, finish, and function.</p>
+
+    <h2>Why Homeowners Choose Zaricci for Thor Appliance Repair</h2>
+
+    <ul>
+      <li><strong>Experienced with Pro-Style Appliances:</strong> We understand that Thor appliances are often chosen for professional-style appearance, powerful cooking performance, stainless steel design, and full kitchen coordination.</li>
+
+      <li><strong>Focused Diagnostic Approach:</strong> We do not treat a Thor appliance like a basic household unit. Our service is centered on diagnosing the real cause of heating, ignition, cooling, airflow, draining, control, sensor, or temperature issues before recommending repair.</li>
+
+      <li><strong>Repair, Installation & Maintenance:</strong> In addition to <strong>Thor appliance repair</strong>, we also provide <strong>Thor appliance maintenance</strong> and installation-related support where applicable.</li>
+
+      <li><strong>Cooking, Cooling, Dishwashing & Ventilation Care:</strong> Thor appliances can include several major kitchen systems. We service cooking appliances, refrigeration, dishwashers, hoods, wine coolers, ice makers, and supported outdoor appliances with a complete appliance-service approach.</li>
+
+      <li><strong>Luxury Home Service Experience:</strong> We provide careful service designed for premium kitchens, custom cabinetry, pro-style cooking spaces, outdoor kitchens, and high-end homes throughout Los Angeles and surrounding communities.</li>
+    </ul>
+
+    <h2 id="service">Common Thor Appliance Problems We Repair</h2>
+
+    <p>We repair many of the issues homeowners commonly experience with <strong>Thor appliances</strong>, from range and oven problems to refrigeration, dishwashing, ventilation, wine cooling, and ice maker concerns. Our service is tailored to the appliance type, model, installation style, and symptoms involved.</p>
+
+    <ul>
+      <li><strong>Thor range not heating properly:</strong> We diagnose oven igniters, bake and broil components, heating elements, gas supply symptoms, sensors, thermostats, controls, and wiring issues that affect cooking performance.</li>
+
+      <li><strong>Thor burner ignition problems:</strong> If your burners are clicking, not lighting, producing weak flame, or heating unevenly, we inspect igniters, burner caps, valves, electrodes, switches, and related gas or electrical components.</li>
+
+      <li><strong>Thor oven temperature problems:</strong> We diagnose temperature inconsistency, overheating, underheating, sensor issues, control faults, calibration concerns, convection problems, and components that affect baking and roasting results.</li>
+
+      <li><strong>Thor rangetop and cooktop issues:</strong> We service supported gas, electric, and induction cooktops with burner issues, heating interruptions, touch control problems, power faults, and performance concerns.</li>
+
+      <li><strong>Thor refrigerator not cooling:</strong> We inspect airflow restrictions, evaporator fan issues, condenser problems, sensor faults, control issues, door sealing problems, compressor-related symptoms, and temperature regulation concerns.</li>
+
+      <li><strong>Thor freezer problems:</strong> If your freezer is too warm, frosting, leaking, or not freezing properly, we inspect door seals, airflow, defrost-related symptoms, fans, sensors, and control response.</li>
+
+      <li><strong>Thor dishwasher not cleaning or draining:</strong> We diagnose poor cleaning, water circulation issues, drain restrictions, pump concerns, spray arm problems, leaking, drying issues, and control faults.</li>
+
+      <li><strong>Thor range hood not ventilating properly:</strong> We inspect filters, blower performance, ducting concerns, airflow restrictions, fan motors, lighting, controls, and installation-related issues.</li>
+
+      <li><strong>Thor wine cooler temperature problems:</strong> We inspect sensors, fans, controls, door sealing, airflow, condenser performance, and cooling issues affecting wine storage conditions.</li>
+
+      <li><strong>Thor ice maker problems:</strong> We inspect water supply issues, inlet valves, ice maker components, freezer temperature, sensors, controls, drainage, and related parts affecting ice production.</li>
+
+      <li><strong>Thor microwave issues:</strong> We diagnose control response problems, heating concerns, turntable issues, unusual noise, door switch behavior, and electrical symptoms affecting supported Thor microwave appliances.</li>
+
+      <li><strong>Outdoor Thor appliance issues:</strong> Outdoor appliances may be affected by heat exposure, airflow restrictions, grease buildup, weather exposure, dust, sealing problems, and environmental wear. We inspect the appliance for performance, ventilation, and safety-related concerns.</li>
+
+      <li><strong>Door gasket and sealing issues:</strong> Proper sealing is important for refrigerators, freezers, wine coolers, dishwashers, and outdoor units. We inspect worn gaskets, air leaks, water leaks, door alignment, hinge behavior, and closure problems that affect performance.</li>
+
+      <li><strong>Water leaks and drain issues:</strong> We diagnose blocked drains, condensation issues, dishwasher leaks, refrigerator water line concerns, ice maker leaks, and moisture problems inside or around the appliance.</li>
+
+      <li><strong>Control and electrical faults:</strong> We service touch controls, displays, boards, switches, sensors, wiring-related issues, error codes, temperature alarms, lighting controls, and electrical malfunctions affecting supported Thor appliances.</li>
+
+      <li><strong>Maintenance-related performance decline:</strong> If your Thor appliance is operating less efficiently over time, we inspect for grease buildup, dust buildup, airflow restrictions, clogged filters, worn seals, calibration issues, drain concerns, and age-related component wear.</li>
+    </ul>
+
+    <h2>Thor Appliances We Service</h2>
+
+    <p>We service a wide range of <strong>Thor appliances</strong> and pro-style kitchen products, including:</p>
+
+    <ul>
+      <li>Thor gas ranges</li>
+      <li>Thor dual fuel ranges</li>
+      <li>Thor electric ranges</li>
+      <li>Thor ovens</li>
+      <li>Thor rangetops</li>
+      <li>Thor gas cooktops</li>
+      <li>Thor electric cooktops</li>
+      <li>Thor induction cooktops</li>
+      <li>Thor refrigerators</li>
+      <li>Thor built-in refrigerators</li>
+      <li>Thor panel-ready refrigerators</li>
+      <li>Thor freezers</li>
+      <li>Thor dishwashers</li>
+      <li>Thor range hoods</li>
+      <li>Thor under-cabinet hoods</li>
+      <li>Thor wall mount hoods</li>
+      <li>Thor wine coolers</li>
+      <li>Thor undercounter appliances</li>
+      <li>Thor ice makers</li>
+      <li>Thor microwaves</li>
+      <li>Thor outdoor kitchen appliances</li>
+      <li>Supported Thor cooking, refrigeration, ventilation, dishwashing, wine, and ice system components</li>
+    </ul>
+
+    <h2>Thor Appliance Installation and Maintenance</h2>
+
+    <p>In addition to <strong>Thor appliance repair</strong>, we provide <strong>Thor appliance maintenance</strong> and installation-related support for homeowners who want to protect the performance, safety, and appearance of their appliance. Proper setup, leveling, ventilation clearance, ducting review, gas and electrical connection review, door adjustment, and routine service are especially important for pro-style appliances installed into premium kitchens and outdoor spaces.</p>
+
+    <p>Our maintenance service may include visual inspection, burner and oven performance testing, calibration checks, ignition review, temperature testing, door gasket inspection, condenser and airflow review, filter inspection, dishwasher drain review, range hood airflow assessment, wine cooler temperature checks, ice maker review, and identification of worn components. For homeowners with Thor appliances, preventive service can help preserve cooking performance, cooling performance, ventilation efficiency, dishwashing quality, and dependable daily use.</p>
+
+    <h2>Pro-Style Thor Cooking, Refrigeration, and Kitchen Appliance Service</h2>
+
+    <p>Thor appliances have a strong place in pro-style residential kitchens. Many homeowners choose Thor for stainless steel ranges, powerful burners, professional-style refrigeration, coordinated dishwashers, range hoods, wine cooling, ice makers, and full kitchen appliance suites. When a Thor appliance develops a problem, proper diagnosis matters because cooking, refrigeration, ventilation, dishwashing, and outdoor systems each require a different repair approach.</p>
+
+    <p>Our technicians focus on identifying the appliance model, understanding the symptoms, reviewing part availability when needed, and recommending a repair path that makes sense for the age, installation style, and value of the appliance.</p>
+
+    <h2>Our Thor Repair Process</h2>
+
+    <ul>
+      <li><strong>Schedule Service:</strong> Contact us by phone or online and tell us the model, appliance type, issue, and location.</li>
+
+      <li><strong>In-Home Diagnosis:</strong> A technician inspects the appliance and identifies the source of the problem.</li>
+
+      <li><strong>Repair Recommendation:</strong> We explain the issue, the recommended solution, and the expected repair scope.</li>
+
+      <li><strong>Parts Review:</strong> When replacement parts are needed, we help identify the correct compatible components for your Thor appliance.</li>
+
+      <li><strong>Professional Service:</strong> We complete the repair with care and test the appliance for proper operation.</li>
+
+      <li><strong>Support for Ongoing Performance:</strong> When appropriate, we also advise on maintenance and long-term care for your Thor appliance.</li>
+    </ul>
+
+    <h2>Areas We Serve for Thor Appliance Repair</h2>
+
+    <Areas client:visible />
+
+    <h2>Pro-Style Service for a Professional Kitchen Appliance Brand</h2>
+
+    <p>Thor appliances are known for professional-style design, stainless steel cooking appliances, refrigeration, dishwashing, ventilation, wine cooling, ice making, and coordinated kitchen suites. They are not always serviced the same way as ordinary residential appliances. Whether you own a Thor range, rangetop, cooktop, refrigerator, dishwasher, range hood, wine cooler, ice maker, microwave, or outdoor appliance, choosing a company familiar with pro-style appliance service can make a meaningful difference in diagnosis, repair planning, and long-term performance.</p>
+
+    <p>At <strong>Luxury Appliance Repair by Zaricci</strong>, we provide service designed for homeowners who expect careful workmanship, clear communication, and respect for their kitchen, outdoor entertaining area, cabinetry, flooring, and home.</p>
+
+    <h2>Schedule Thor Appliance Repair in Los Angeles & Nearby Areas</h2>
+
+    <p>If your <strong>Thor range, rangetop, cooktop, refrigerator, dishwasher, range hood, wine cooler, ice maker, microwave, or outdoor appliance</strong> is not performing the way it should, do not wait for the issue to worsen. Prompt service can help restore performance and reduce the risk of more expensive repairs later.</p>
+
+    <p><strong>Call Luxury Appliance Repair by Zaricci</strong> to schedule professional <strong>Thor appliance repair in Los Angeles and nearby areas</strong>, or book service online for expert help with repair, maintenance, and installation support.</p>
+  </div>
+</Layout>
