@@ -20,7 +20,9 @@ const ParallaxHeader = () => {
         Your browser does not support the video tag.
       </video>
       <div className="maintext">
-        <h1 class="gold-embossed" data-text="Wolf">Wolf Appliance Repair in Los Angeles and Nearby Areas</h1>
+        <h1 class="gold-embossed" data-text="Wolf">Wolf Appliance Repair<br/> <span className="h1-location">
+    in Los Angeles, Orange County & Ventura County
+  </span></h1>
         <img className="header-image" width="1200" height="630" src="/wolf/wolf-appliance-repair-los-angeles-and-nearby-areas.webp" alt="Wolf Appliance Repair in Los Angeles and Nearby Areas"  fetchpriority="high"
   decoding="async"/>
        <p>Local, expert technicians specializing in high-end Wolf appliance repair in Los Angeles and nearby areas.</p>

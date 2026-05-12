@@ -25,7 +25,9 @@ const ParallaxHeader = () => {
           className="gold-embossed"
           data-text="U-Line Appliance Repair"
         >
-          U-Line Appliance Repair by Zaricci
+          U-Line Appliance Repair<br/> <span className="h1-location">
+    in Los Angeles, Orange County & Ventura County
+  </span>
         </h1>
 
         <img
