@@ -143,6 +143,9 @@ export const MegaMenu = () => {
     ],
     [
       {type: "heading", label: "Luxury Appliance Repair", href: "/luxury-appliance-repair/", },
+      { label: "American Range", href: "/american-range-repair/" },
+      { label: "Asko", href: "/asko-appliance-repair/" },
+      { label: "JennAir", href: "/jenn-air-appliance-repair/" },
       { label: "Sub-Zero", href: "/sub-zero-repair/" },
       { label: "Wolf", href: "/wolf-appliance-repair/" },
       { label: "Thermador", href: "/thermador-appliance-repair/" },
@@ -153,22 +156,19 @@ export const MegaMenu = () => {
       { label: "Hestan", href: "/hestan-appliance-repair/" },
       { label: "Dacor", href: "/dacor-appliance-repair/" },
       { label: "Cove", href: "/cove-dishwasher-repair/" },
+      { label: "Fisher & Paykel", href: "/fisher-and-paykel-appliance-repair/" },
      
     ],
     [{type: "heading", label: "High-End Appliance Repair", href: "/high-end-appliance-repair/", },
     { label: "Bosch", href: "/bosch-appliance-repair/" },
-    { label: "JennAir", href: "/jenn-air-appliance-repair/" },
+    
     { label: "Miele", href: "/miele-appliance-repair/" },
-
-    { label: "Fisher & Paykel", href: "/fisher-and-paykel-appliance-repair/" },
-    { label: "Asko", href: "/asko-appliance-repair/" },
     { label: "Liebherr", href: "/liebherr-appliance-repair/" },
     { label: "Perlick", href: "/perlick-appliance-repair/" },
     { label: "U-Line", href: "/u-line-appliance-repair/" },
     { label: "Zephyr", href: "/zephyr-appliance-repair/" },
 
       {type: "heading", label: "Pro-Style Appliance Repair", href: "/pro-style-appliance-repair/", },
-    { label: "American Range", href: "/american-range-repair/" },
     { label: "BlueStar", href: "/bluestar-appliance-repair/" },
     { label: "FiveStar", href: "/fivestar-appliance-repair/" },
     { label: "Thor", href: "/thor-appliance-repair/" },
