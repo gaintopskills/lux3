@@ -162,10 +162,10 @@ export const MegaMenu = () => {
     [{type: "heading", label: "High-End Appliance Repair", href: "/high-end-appliance-repair/", },
     { label: "Bosch", href: "/bosch-appliance-repair/" },
     { label: "Miele", href: "/miele-appliance-repair/" },
-    { label: "Liebherr", href: "/liebherr-appliance-repair/" },
-    { label: "Perlick", href: "/perlick-appliance-repair/" },
+    { label: "Liebherr", href: "/liebherr-repair/" },
+    { label: "Perlick", href: "/perlick-repair/" },
     { label: "U-Line", href: "/u-line-appliance-repair/" },
-    { label: "Zephyr", href: "/zephyr-appliance-repair/" },
+    { label: "Zephyr", href: "/zephyr-repair/" },
 
       {type: "heading", label: "Pro-Style Appliance Repair", href: "/pro-style-appliance-repair/", },
     { label: "BlueStar", href: "/bluestar-appliance-repair/" },
