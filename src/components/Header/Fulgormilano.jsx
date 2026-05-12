@@ -25,7 +25,9 @@ const ParallaxHeader = () => {
           className="gold-embossed"
           data-text="Fulgor Milano Repair"
         >
-          Fulgor Milano Repair in Los Angeles & Nearby Areas
+          Fulgor Milano Repair<br/> <span className="h1-location">
+    in Los Angeles, Orange County & Ventura County
+  </span>
         </h1>
 
         <img

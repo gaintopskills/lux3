@@ -21,7 +21,9 @@ const ParallaxHeader = () => {
       </video>
 
       <div className="maintext">
-        <h1 class="gold-embossed" data-text="SUB-ZERO">High-End Applliance Repair Los Angeles</h1>
+        <h1 class="gold-embossed" data-text="SUB-ZERO">High-End Applliance Repair<br/> <span className="h1-location">
+    in Los Angeles, Orange County & Ventura County
+  </span></h1>
         <img className="header-image" width="400" height="189" src="/cities/luxury-appliance-repair-los-angeles-519x272.webp" alt="High-end appliance repair Los Angeles" fetchpriority="high"
   decoding="async"/>
         <p>

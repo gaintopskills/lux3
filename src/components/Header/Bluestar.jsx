@@ -24,7 +24,9 @@ const ParallaxHeader = () => {
           className="gold-embossed"
           data-text="BlueStar Appliance Repair & Nearby Areas"
         >
-          BlueStar Appliance Repair in Los Angeles & Nearby Areas
+          BlueStar Appliance Repair<br/> <span className="h1-location">
+    in Los Angeles, Orange County & Ventura County
+  </span>
         </h1>
 
         <img

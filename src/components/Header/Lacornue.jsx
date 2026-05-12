@@ -20,7 +20,9 @@ const ParallaxHeader = () => {
         Your browser does not support the video tag.
       </video>
       <div className="maintext">
-        <h1 class="gold-embossed" data-text="La Cornue Appliance Repair">La Cornue Repair Los Angeles | Château, CornuFé, Range & Oven Service</h1>
+        <h1 class="gold-embossed" data-text="La Cornue Appliance Repair">La Cornue Repair<br/> <span className="h1-location">
+    in Los Angeles, Orange County & Ventura County
+  </span></h1>
         <img className="header-image" width="1200" height="630" src="/la-cornue/la-cornue-appliance-repair-los-angeles-and-nearby-areas.webp" alt="La Cornue Appliance Repair Services Los Angeles and Nearby Areas"  fetchpriority="high"
   decoding="async"/>
  <p>

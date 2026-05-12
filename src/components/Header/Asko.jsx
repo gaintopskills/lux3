@@ -25,8 +25,9 @@ const ParallaxHeader = () => {
           className="gold-embossed"
           data-text="ASKO Appliance Repair"
         >
-          ASKO Appliance Repair by Zaricci
-        </h1>
+          ASKO Appliance Repair<br/> <span className="h1-location">
+    in Los Angeles, Orange County & Ventura County
+  </span></h1>
 
         <img
           className="header-image"

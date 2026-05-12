@@ -25,7 +25,9 @@ const ParallaxHeader = () => {
           className="gold-embossed"
           data-text="Heartland Appliance Repair"
         >
-          Heartland Appliance Repair by Zaricci
+          Heartland Appliance Repair<br/> <span className="h1-location">
+    in Los Angeles, Orange County & Ventura County
+  </span>
         </h1>
 
         <img

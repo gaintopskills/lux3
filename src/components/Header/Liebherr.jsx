@@ -25,7 +25,9 @@ const ParallaxHeader = () => {
           className="gold-embossed"
           data-text="Liebherr Appliance Repair"
         >
-          Liebherr Appliance Repair by Zaricci
+          Liebherr Appliance Repair<br/> <span className="h1-location">
+    in Los Angeles, Orange County & Ventura County
+  </span>
         </h1>
 
         <img

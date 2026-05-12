@@ -23,7 +23,9 @@ const ParallaxHeader = () => {
           className="gold-embossed"
           data-text="Lacanche Appliance Repair"
         >
-          Lacanche Appliance Repair in Los Angeles & Nearby Areas
+          Lacanche Appliance Repair<br/> <span className="h1-location">
+    in Los Angeles, Orange County & Ventura County
+  </span>
         </h1>
 
         <img

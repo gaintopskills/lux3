@@ -25,7 +25,9 @@ const ParallaxHeader = () => {
           className="gold-embossed"
           data-text="Officine Gullo Appliance Repair"
         >
-          Officine Gullo Appliance Repair by Zaricci
+          Officine Gullo Appliance Repair<br/> <span className="h1-location">
+    in Los Angeles, Orange County & Ventura County
+  </span>
         </h1>
 
         <img

@@ -25,7 +25,9 @@ const ParallaxHeader = () => {
           className="gold-embossed"
           data-text="Bosch Appliance Repair"
         >
-          Bosch Appliance Repair in Los Angeles & Nearby Areas
+          Bosch Appliance Repair<br/> <span className="h1-location">
+    in Los Angeles, Orange County & Ventura County
+  </span>
         </h1>
 
         <img

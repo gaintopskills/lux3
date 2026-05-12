@@ -25,7 +25,9 @@ const ParallaxHeader = () => {
           className="gold-embossed"
           data-text="Elmira Stove Works Repair"
         >
-          Elmira Stove Works Repair in Los Angeles & Nearby Areas
+          Elmira Stove Works Repair<br/> <span className="h1-location">
+    in Los Angeles, Orange County & Ventura County
+  </span>
         </h1>
 
         <img

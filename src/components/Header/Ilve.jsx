@@ -22,7 +22,9 @@ const ParallaxHeader = () => {
 
       <div className="maintext">
       <h1 class="gold-embossed" data-text="ILVE Appliance Repair">
-  ILVE Appliance Repair in Los Angeles & Nearby Areas
+  ILVE Appliance Repair<br/> <span className="h1-location">
+    in Los Angeles, Orange County & Ventura County
+  </span>
 </h1>
 
 <img
