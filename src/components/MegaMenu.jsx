@@ -165,9 +165,7 @@ export const MegaMenu = () => {
       { label: "Big Chill", href: "/big-chill-appliance-repair/" },
       {  label: "Elmira Stove Works",  href: "/elmira-stove-works-appliance-repair/",},
       { label: "Smeg", href: "/smeg-appliance-repair/" },
-      { label: "Heartland", href: "/heartland-appliance-repair/" },
-
-      
+      { label: "Heartland", href: "/heartland-appliance-repair/" },  
     ],
     [ {type: "heading", label: "High-End", href: "/high-end-appliance-repair/", },
     { label: "Asko", href: "/asko-appliance-repair/" },
