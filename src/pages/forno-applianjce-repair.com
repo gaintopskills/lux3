@@ -1,0 +1,387 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ParallaxHeader from '../components/Header/Forno.jsx'
+import '../components/Areas.css';
+import Areas from '../components/Areas.jsx';
+import '../styles/global.css';
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/forno-appliance-repair/#webpage",
+      "url": "https://luxuryappliance.repair/forno-appliance-repair/",
+      "name": "Forno Appliance Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Expert Forno appliance repair, installation, and maintenance in Los Angeles for Forno ranges, ovens, cooktops, refrigerators, freezers, dishwashers, range hoods, wine coolers, microwaves, dry agers, and outdoor kitchen appliances.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/forno-appliance-repair/#service"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/forno/forno-appliance-repair-services-trained-technicians.webp"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/forno-appliance-repair/#service",
+      "name": "Forno Appliance Repair",
+      "url": "https://luxuryappliance.repair/forno-appliance-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/forno-appliance-repair/#webpage"
+      },
+      "serviceType": "Forno appliance repair, installation, and maintenance",
+      "description": "Luxury Appliance Repair by Zaricci specializes in Forno appliance repair, maintenance, and installation support for Forno ranges, freestanding ranges, built-in ovens, cooktops, refrigerators, freezers, dishwashers, range hoods, wine coolers, microwaves, dry agers, and outdoor kitchen appliances. Our technicians use careful diagnostics and premium service practices for Forno appliances across Los Angeles and surrounding communities.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "FORNO",
+        "sameAs": "https://forno.ca/"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Los Angeles",
+          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Brentwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Pasadena",
+          "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California"
+        },
+        {
+          "@type": "Place",
+          "name": "Bel Air",
+          "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Pacific Palisades",
+          "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Santa Monica"
+        },
+        {
+          "@type": "City",
+          "name": "Beverly Hills"
+        },
+        {
+          "@type": "City",
+          "name": "Calabasas"
+        },
+        {
+          "@type": "City",
+          "name": "Thousand Oaks"
+        },
+        {
+          "@type": "City",
+          "name": "West Hollywood"
+        },
+        {
+          "@type": "City",
+          "name": "San Marino"
+        },
+        {
+          "@type": "City",
+          "name": "Malibu"
+        },
+        {
+          "@type": "City",
+          "name": "Manhattan Beach"
+        },
+        {
+          "@type": "Place",
+          "name": "Encino",
+          "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Rancho Palos Verdes"
+        },
+        {
+          "@type": "City",
+          "name": "Palos Verdes Estates"
+        },
+        {
+          "@type": "City",
+          "name": "Rolling Hills Estates"
+        },
+        {
+          "@type": "Place",
+          "name": "Westwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Century City",
+          "sameAs": "https://en.wikipedia.org/wiki/Century_City"
+        },
+        {
+          "@type": "City",
+          "name": "La Cañada Flintridge"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Orange County",
+          "sameAs": "https://en.wikipedia.org/wiki/Orange_County,_California"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ventura County",
+          "sameAs": "https://en.wikipedia.org/wiki/Ventura_County,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Irvine",
+          "sameAs": "https://en.wikipedia.org/wiki/Irvine,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Newport Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Newport_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Laguna Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Laguna_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Huntington Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Huntington_Beach,_California"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Forno Appliance Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Forno Appliance Repair",
+              "description": "Repair for Forno appliances with range heating problems, burner ignition issues, oven temperature inconsistency, refrigerator cooling problems, freezer temperature concerns, dishwasher performance issues, range hood ventilation problems, wine cooler temperature issues, microwave faults, dry ager performance concerns, control failures, and maintenance-related decline."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Forno Appliance Installation",
+              "description": "Professional installation support for Forno ranges, built-in ovens, cooktops, refrigerators, freezers, dishwashers, range hoods, wine coolers, microwaves, dry agers, and outdoor kitchen appliances where applicable, including setup, leveling, ventilation review, connection review, integration, and performance checks."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Forno Appliance Maintenance",
+              "description": "Preventive maintenance for Forno appliances including inspection, cleaning, calibration checks, burner and oven performance testing, refrigeration temperature testing, door gasket inspection, airflow review, filter review, drain review, and appliance performance assessment."
+            }
+          }
+        ]
+      },
+      "keywords": [
+        "Forno appliance repair",
+        "FORNO appliance repair",
+        "Forno range repair",
+        "Forno oven repair",
+        "Forno gas range repair",
+        "Forno dual fuel range repair",
+        "Forno electric range repair",
+        "Forno induction range repair",
+        "Forno cooktop repair",
+        "Forno refrigerator repair",
+        "Forno freezer repair",
+        "Forno dishwasher repair",
+        "Forno range hood repair",
+        "Forno wine cooler repair",
+        "Forno microwave repair",
+        "Forno dry ager repair",
+        "Forno outdoor appliance repair",
+        "Forno appliance installation",
+        "Forno appliance maintenance",
+        "Los Angeles Forno appliance repair"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      ]
+    }
+  ]
+};
+---
+
+<Layout
+  title="Forno Appliance Repair | (424) 499-7788"
+  description="Expert Forno appliance repair for ranges, ovens, cooktops, refrigerators, freezers, dishwashers, range hoods, wine coolers, microwaves, dry agers, and outdoor kitchen appliances. Professional Forno repair, maintenance, and installation support."
+  ogImage="/forno/forno-appliance-repair-los-angeles-orange-county-ventura-county.webp"
+  structuredData={structuredData}
+>
+  <ParallaxHeader client:idle />
+
+  <div class="maincontent" id="webpage">
+    <h2>Expert Forno Appliance Repair</h2>
+
+    <img
+      width="500"
+      height="500"
+      loading="lazy"
+      class="image-left"
+      src="/forno/forno-appliance-repair-technician.webp"
+      alt="Forno appliance repair technician servicing a pro-style Forno kitchen appliance in Los Angeles"
+    >
+
+    <p>Luxury Appliance Repair by Zaricci provides professional <strong>Forno appliance repair</strong> for homeowners who own pro-style kitchen appliances with a premium stainless steel look. We service <strong>Forno ranges, ovens, cooktops, refrigerators, freezers, dishwashers, range hoods, wine coolers, microwaves, dry agers, and outdoor kitchen appliances</strong> with careful diagnostics, detail-focused workmanship, and respect for the appliance’s design and installation.</p>
+
+    <p>Forno appliances are different from standard residential appliances because they are built around professional-style kitchen appearance, full appliance-suite design, cooking performance, refrigeration, ventilation, dishwashing, and specialty cooling. If your <strong>Forno range is not heating properly</strong>, your burners are not igniting, your refrigerator is not cooling, your dishwasher is not cleaning, or your range hood is not ventilating properly, our technicians work to identify the cause and restore dependable operation while protecting the appliance’s fit, finish, and function.</p>
+
+    <h2>Why Homeowners Choose Zaricci for Forno Appliance Repair</h2>
+
+    <ul>
+      <li><strong>Experienced with Pro-Style Appliances:</strong> We understand that Forno appliances are often chosen for professional-style appearance, stainless steel design, coordinated kitchen suites, and premium cooking and cooling functionality.</li>
+
+      <li><strong>Focused Diagnostic Approach:</strong> We do not treat a Forno appliance like a basic household unit. Our service is centered on diagnosing the real cause of heating, ignition, cooling, airflow, draining, control, sensor, or temperature issues before recommending repair.</li>
+
+      <li><strong>Repair, Installation & Maintenance:</strong> In addition to <strong>Forno appliance repair</strong>, we also provide <strong>Forno appliance maintenance</strong> and installation-related support where applicable.</li>
+
+      <li><strong>Cooking, Cooling, Dishwashing & Ventilation Care:</strong> Forno appliances can include several major kitchen systems. We service cooking appliances, refrigeration, dishwashers, hoods, wine coolers, dry agers, microwaves, and supported outdoor appliances with a complete appliance-service approach.</li>
+
+      <li><strong>Luxury Home Service Experience:</strong> We provide careful service designed for premium kitchens, custom cabinetry, pro-style cooking spaces, outdoor kitchens, wine areas, and high-end homes throughout Los Angeles and surrounding communities.</li>
+    </ul>
+
+    <h2 id="service">Common Forno Appliance Problems We Repair</h2>
+
+    <p>We repair many of the issues homeowners commonly experience with <strong>Forno appliances</strong>, from range and oven problems to refrigeration, dishwashing, ventilation, wine cooling, microwaves, dry agers, and outdoor appliance concerns. Our service is tailored to the appliance type, model, installation style, and symptoms involved.</p>
+
+    <ul>
+      <li><strong>Forno range not heating properly:</strong> We diagnose oven igniters, bake and broil components, heating elements, gas supply symptoms, sensors, thermostats, controls, and wiring issues that affect cooking performance.</li>
+
+      <li><strong>Forno burner ignition problems:</strong> If your burners are clicking, not lighting, producing weak flame, or heating unevenly, we inspect igniters, burner caps, valves, electrodes, switches, and related gas or electrical components.</li>
+
+      <li><strong>Forno oven temperature problems:</strong> We diagnose temperature inconsistency, overheating, underheating, sensor issues, control faults, calibration concerns, convection problems, and components that affect baking and roasting results.</li>
+
+      <li><strong>Forno built-in oven issues:</strong> We service supported built-in ovens with heating failures, temperature swings, fan concerns, control response problems, door sealing issues, and electrical faults.</li>
+
+      <li><strong>Forno cooktop issues:</strong> We service supported gas, electric, and induction cooktops with burner issues, heating interruptions, touch control problems, power faults, and performance concerns.</li>
+
+      <li><strong>Forno refrigerator not cooling:</strong> We inspect airflow restrictions, evaporator fan issues, condenser problems, sensor faults, control issues, door sealing problems, compressor-related symptoms, and temperature regulation concerns.</li>
+
+      <li><strong>Forno freezer problems:</strong> If your freezer is too warm, frosting, leaking, or not freezing properly, we inspect door seals, airflow, defrost-related symptoms, fans, sensors, and control response.</li>
+
+      <li><strong>Forno dishwasher not cleaning or draining:</strong> We diagnose poor cleaning, water circulation issues, drain restrictions, pump concerns, spray arm problems, leaking, drying issues, and control faults.</li>
+
+      <li><strong>Forno range hood not ventilating properly:</strong> We inspect filters, blower performance, ducting concerns, airflow restrictions, fan motors, lighting, controls, and installation-related issues.</li>
+
+      <li><strong>Forno wine cooler temperature problems:</strong> We inspect sensors, fans, controls, door sealing, airflow, condenser performance, and cooling issues affecting wine storage conditions.</li>
+
+      <li><strong>Forno dry ager problems:</strong> We inspect temperature control, humidity behavior, airflow, sensors, door sealing, fan operation, drainage, and performance issues affecting dry-aging conditions.</li>
+
+      <li><strong>Forno microwave issues:</strong> We diagnose control response problems, heating concerns, turntable issues, unusual noise, door switch behavior, drawer or built-in installation concerns, and electrical symptoms affecting supported Forno microwave appliances.</li>
+
+      <li><strong>Outdoor Forno appliance issues:</strong> Outdoor appliances may be affected by heat exposure, airflow restrictions, grease buildup, weather exposure, dust, sealing problems, and environmental wear. We inspect the appliance for performance, ventilation, and safety-related concerns.</li>
+
+      <li><strong>Door gasket and sealing issues:</strong> Proper sealing is important for refrigerators, freezers, wine coolers, dishwashers, dry agers, and outdoor units. We inspect worn gaskets, air leaks, water leaks, door alignment, hinge behavior, and closure problems that affect performance.</li>
+
+      <li><strong>Water leaks and drain issues:</strong> We diagnose blocked drains, condensation issues, dishwasher leaks, refrigerator water line concerns, ice-related leaks, and moisture problems inside or around the appliance.</li>
+
+      <li><strong>Control and electrical faults:</strong> We service touch controls, displays, boards, switches, sensors, wiring-related issues, error codes, temperature alarms, lighting controls, and electrical malfunctions affecting supported Forno appliances.</li>
+
+      <li><strong>Maintenance-related performance decline:</strong> If your Forno appliance is operating less efficiently over time, we inspect for grease buildup, dust buildup, airflow restrictions, clogged filters, worn seals, calibration issues, drain concerns, and age-related component wear.</li>
+    </ul>
+
+    <h2>Forno Appliances We Service</h2>
+
+    <p>We service a wide range of <strong>Forno appliances</strong> and pro-style kitchen products, including:</p>
+
+    <ul>
+      <li>Forno gas ranges</li>
+      <li>Forno dual fuel ranges</li>
+      <li>Forno electric ranges</li>
+      <li>Forno induction ranges</li>
+      <li>Forno freestanding ranges</li>
+      <li>Forno built-in ovens</li>
+      <li>Forno cooktops</li>
+      <li>Forno refrigerators</li>
+      <li>Forno French door refrigerators</li>
+      <li>Forno side-by-side refrigerators</li>
+      <li>Forno built-in refrigerators</li>
+      <li>Forno column refrigerators</li>
+      <li>Forno freezers</li>
+      <li>Forno dishwashers</li>
+      <li>Forno range hoods</li>
+      <li>Forno wall mount hoods</li>
+      <li>Forno island hoods</li>
+      <li>Forno microwaves</li>
+      <li>Forno wine coolers</li>
+      <li>Forno dry agers</li>
+      <li>Forno outdoor kitchen appliances</li>
+      <li>Supported Forno cooking, refrigeration, ventilation, dishwashing, wine, and specialty cooling components</li>
+    </ul>
+
+    <h2>Forno Appliance Installation and Maintenance</h2>
+
+    <p>In addition to <strong>Forno appliance repair</strong>, we provide <strong>Forno appliance maintenance</strong> and installation-related support for homeowners who want to protect the performance, safety, and appearance of their appliance. Proper setup, leveling, ventilation clearance, ducting review, gas and electrical connection review, door adjustment, and routine service are especially important for pro-style appliances installed into premium kitchens and outdoor spaces.</p>
+
+    <p>Our maintenance service may include visual inspection, burner and oven performance testing, calibration checks, ignition review, temperature testing, door gasket inspection, condenser and airflow review, filter inspection, dishwasher drain review, range hood airflow assessment, wine cooler temperature checks, dry ager performance review, and identification of worn components. For homeowners with Forno appliances, preventive service can help preserve cooking performance, cooling performance, ventilation efficiency, dishwashing quality, wine storage conditions, and dependable daily use.</p>
+
+    <h2>Pro-Style Forno Cooking, Refrigeration, and Kitchen Appliance Service</h2>
+
+    <p>Forno appliances have a strong place in pro-style residential kitchens. Many homeowners choose Forno for stainless steel ranges, built-in ovens, refrigerators, dishwashers, range hoods, wine cooling, dry aging, microwaves, and coordinated kitchen appliance suites. When a Forno appliance develops a problem, proper diagnosis matters because cooking, refrigeration, ventilation, dishwashing, and specialty cooling systems each require a different repair approach.</p>
+
+    <p>Our technicians focus on identifying the appliance model, understanding the symptoms, reviewing part availability when needed, and recommending a repair path that makes sense for the age, installation style, and value of the appliance.</p>
+
+    <h2>Our Forno Repair Process</h2>
+
+    <ul>
+      <li><strong>Schedule Service:</strong> Contact us by phone or online and tell us the model, appliance type, issue, and location.</li>
+
+      <li><strong>In-Home Diagnosis:</strong> A technician inspects the appliance and identifies the source of the problem.</li>
+
+      <li><strong>Repair Recommendation:</strong> We explain the issue, the recommended solution, and the expected repair scope.</li>
+
+      <li><strong>Parts Review:</strong> When replacement parts are needed, we help identify the correct compatible components for your Forno appliance.</li>
+
+      <li><strong>Professional Service:</strong> We complete the repair with care and test the appliance for proper operation.</li>
+
+      <li><strong>Support for Ongoing Performance:</strong> When appropriate, we also advise on maintenance and long-term care for your Forno appliance.</li>
+    </ul>
+
+    <h2>Areas We Serve for Forno Appliance Repair</h2>
+
+    <Areas client:visible />
+
+    <h2>Pro-Style Service for a Modern Kitchen Appliance Brand</h2>
+
+    <p>Forno appliances are known for professional-style design, stainless steel cooking appliances, refrigeration, dishwashing, ventilation, wine cooling, specialty cooling, and coordinated kitchen suites. They are not always serviced the same way as ordinary residential appliances. Whether you own a Forno range, oven, cooktop, refrigerator, dishwasher, range hood, wine cooler, microwave, dry ager, or outdoor appliance, choosing a company familiar with pro-style appliance service can make a meaningful difference in diagnosis, repair planning, and long-term performance.</p>
+
+    <p>At <strong>Luxury Appliance Repair by Zaricci</strong>, we provide service designed for homeowners who expect careful workmanship, clear communication, and respect for their kitchen, outdoor entertaining area, cabinetry, flooring, and home.</p>
+
+    <h2>Schedule Forno Appliance Repair in Los Angeles & Nearby Areas</h2>
+
+    <p>If your <strong>Forno range, oven, cooktop, refrigerator, freezer, dishwasher, range hood, wine cooler, microwave, dry ager, or outdoor appliance</strong> is not performing the way it should, do not wait for the issue to worsen. Prompt service can help restore performance and reduce the risk of more expensive repairs later.</p>
+
+    <p><strong>Call Luxury Appliance Repair by Zaricci</strong> to schedule professional <strong>Forno appliance repair in Los Angeles and nearby areas</strong>, or book service online for expert help with repair, maintenance, and installation support.</p>
+  </div>
+</Layout>

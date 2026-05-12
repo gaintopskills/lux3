@@ -1,0 +1,392 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ParallaxHeader from '../components/Header/Garland.jsx'
+import '../components/Areas.css';
+import Areas from '../components/Areas.jsx';
+import '../styles/global.css';
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/garland-appliance-repair/#webpage",
+      "url": "https://luxuryappliance.repair/garland-appliance-repair/",
+      "name": "Garland Appliance Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Expert Garland appliance repair, installation, and maintenance in Los Angeles for Garland commercial ranges, ovens, griddles, grills, charbroilers, fryers, broilers, induction units, countertop equipment, and professional kitchen appliances.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/garland-appliance-repair/#service"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/garland/garland-appliance-repair-services-trained-technicians.webp"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/garland-appliance-repair/#service",
+      "name": "Garland Appliance Repair",
+      "url": "https://luxuryappliance.repair/garland-appliance-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/garland-appliance-repair/#webpage"
+      },
+      "serviceType": "Garland appliance repair, installation, and maintenance",
+      "description": "Luxury Appliance Repair by Zaricci specializes in Garland appliance repair, maintenance, and installation support for Garland commercial ranges, gas ranges, electric ranges, convection ovens, deck ovens, griddles, grills, charbroilers, fryers, broilers, salamanders, cheesemelters, induction units, countertop equipment, and professional kitchen appliances. Our technicians use careful diagnostics and premium service practices for Garland appliances across Los Angeles and surrounding communities.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Garland",
+        "alternateName": "Garland US Range",
+        "sameAs": "https://www.garland-group.com/"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Los Angeles",
+          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Brentwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Pasadena",
+          "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California"
+        },
+        {
+          "@type": "Place",
+          "name": "Bel Air",
+          "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Pacific Palisades",
+          "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Santa Monica"
+        },
+        {
+          "@type": "City",
+          "name": "Beverly Hills"
+        },
+        {
+          "@type": "City",
+          "name": "Calabasas"
+        },
+        {
+          "@type": "City",
+          "name": "Thousand Oaks"
+        },
+        {
+          "@type": "City",
+          "name": "West Hollywood"
+        },
+        {
+          "@type": "City",
+          "name": "San Marino"
+        },
+        {
+          "@type": "City",
+          "name": "Malibu"
+        },
+        {
+          "@type": "City",
+          "name": "Manhattan Beach"
+        },
+        {
+          "@type": "Place",
+          "name": "Encino",
+          "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Rancho Palos Verdes"
+        },
+        {
+          "@type": "City",
+          "name": "Palos Verdes Estates"
+        },
+        {
+          "@type": "City",
+          "name": "Rolling Hills Estates"
+        },
+        {
+          "@type": "Place",
+          "name": "Westwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Century City",
+          "sameAs": "https://en.wikipedia.org/wiki/Century_City"
+        },
+        {
+          "@type": "City",
+          "name": "La Cañada Flintridge"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Orange County",
+          "sameAs": "https://en.wikipedia.org/wiki/Orange_County,_California"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ventura County",
+          "sameAs": "https://en.wikipedia.org/wiki/Ventura_County,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Irvine",
+          "sameAs": "https://en.wikipedia.org/wiki/Irvine,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Newport Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Newport_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Laguna Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Laguna_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Huntington Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Huntington_Beach,_California"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Garland Appliance Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Garland Appliance Repair",
+              "description": "Repair for Garland appliances with range heating problems, burner ignition issues, oven temperature inconsistency, convection fan problems, griddle heating issues, charbroiler performance problems, fryer temperature faults, broiler issues, induction errors, countertop equipment failures, control problems, gas flow concerns, and maintenance-related decline."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Garland Appliance Installation",
+              "description": "Professional installation support for Garland commercial ranges, ovens, griddles, grills, fryers, broilers, induction units, and countertop cooking equipment where applicable, including setup, leveling, ventilation review, gas and electrical connection review, clearance review, integration, and performance checks."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Garland Appliance Maintenance",
+              "description": "Preventive maintenance for Garland appliances including inspection, cleaning, burner performance testing, oven calibration checks, griddle surface review, fryer temperature testing, ignition review, airflow review, ventilation review, safety inspection, and professional kitchen equipment performance assessment."
+            }
+          }
+        ]
+      },
+      "keywords": [
+        "Garland appliance repair",
+        "Garland commercial appliance repair",
+        "Garland range repair",
+        "Garland gas range repair",
+        "Garland electric range repair",
+        "Garland commercial range repair",
+        "Garland oven repair",
+        "Garland convection oven repair",
+        "Garland deck oven repair",
+        "Garland griddle repair",
+        "Garland grill repair",
+        "Garland charbroiler repair",
+        "Garland fryer repair",
+        "Garland broiler repair",
+        "Garland salamander repair",
+        "Garland cheesemelter repair",
+        "Garland induction repair",
+        "Garland countertop equipment repair",
+        "Garland appliance installation",
+        "Garland appliance maintenance",
+        "Los Angeles Garland appliance repair"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      ]
+    }
+  ]
+};
+---
+
+<Layout
+  title="Garland Appliance Repair | (424) 499-7788"
+  description="Expert Garland appliance repair for commercial ranges, ovens, griddles, grills, charbroilers, fryers, broilers, induction units, countertop equipment, and professional kitchen appliances. Professional Garland repair, maintenance, and installation support."
+  ogImage="/garland/garland-appliance-repair-los-angeles-orange-county-ventura-county.webp"
+  structuredData={structuredData}
+>
+  <ParallaxHeader client:idle />
+
+  <div class="maincontent" id="webpage">
+    <h2>Expert Garland Appliance Repair</h2>
+
+    <img
+      width="500"
+      height="500"
+      loading="lazy"
+      class="image-left"
+      src="/garland/garland-appliance-repair-technician.webp"
+      alt="Garland appliance repair technician servicing a commercial Garland range in Los Angeles"
+    >
+
+    <p>Luxury Appliance Repair by Zaricci provides professional <strong>Garland appliance repair</strong> for restaurants, commercial kitchens, luxury homes with professional cooking equipment, hospitality spaces, private chefs, catering kitchens, and foodservice environments. We service <strong>Garland commercial ranges, gas ranges, electric ranges, convection ovens, deck ovens, griddles, grills, charbroilers, fryers, broilers, salamanders, cheesemelters, induction units, countertop equipment, and professional kitchen appliances</strong> with careful diagnostics, detail-focused workmanship, and respect for the appliance’s performance demands.</p>
+
+    <p>Garland appliances are different from ordinary residential appliances because they are designed for professional kitchens, high-volume cooking, heavy-duty use, precise heat control, and demanding daily performance. If your <strong>Garland range is not heating properly</strong>, your burners are not igniting, your convection oven is not holding temperature, your griddle has cold spots, or your fryer is not recovering heat correctly, our technicians work to identify the cause and restore dependable operation while protecting the safety, workflow, and performance of your kitchen.</p>
+
+    <h2>Why Homeowners and Businesses Choose Zaricci for Garland Appliance Repair</h2>
+
+    <ul>
+      <li><strong>Experienced with Commercial Cooking Equipment:</strong> We understand that Garland appliances are commonly used in restaurants, commercial kitchens, catering operations, luxury outdoor kitchens, chef-grade cooking spaces, and high-demand foodservice environments.</li>
+
+      <li><strong>Focused Diagnostic Approach:</strong> We do not treat a Garland appliance like a basic household unit. Our service is centered on diagnosing the real cause of heating, ignition, gas flow, airflow, thermostat, control, electrical, ventilation, or performance issues before recommending repair.</li>
+
+      <li><strong>Repair, Installation & Maintenance:</strong> In addition to <strong>Garland appliance repair</strong>, we also provide <strong>Garland appliance maintenance</strong> and installation-related support where applicable.</li>
+
+      <li><strong>Professional Kitchen Equipment Care:</strong> Garland appliances can include several major cooking systems. We service supported ranges, ovens, griddles, grills, fryers, broilers, induction units, countertop cooking equipment, and professional kitchen appliances with a complete equipment-service approach.</li>
+
+      <li><strong>Luxury and Commercial Service Experience:</strong> We provide careful service designed for high-end homes, professional kitchens, restaurants, custom cooking areas, hospitality spaces, commercial properties, and chef-driven environments throughout Los Angeles and surrounding communities.</li>
+    </ul>
+
+    <h2 id="service">Common Garland Appliance Problems We Repair</h2>
+
+    <p>We repair many of the issues homeowners and businesses commonly experience with <strong>Garland appliances</strong>, from commercial range and oven problems to griddle, fryer, broiler, grill, induction, and countertop equipment concerns. Our service is tailored to the appliance type, model, installation style, fuel type, kitchen environment, and symptoms involved.</p>
+
+    <ul>
+      <li><strong>Garland range not heating properly:</strong> We diagnose burner assemblies, gas valves, regulators, thermostats, pilot systems, ignition components, electrical faults, and controls that affect cooking performance.</li>
+
+      <li><strong>Garland burner ignition problems:</strong> If your burners are clicking, not lighting, producing weak flame, shutting off, or heating unevenly, we inspect pilots, igniters, electrodes, valves, gas flow, burner caps, orifices, and related gas or electrical components.</li>
+
+      <li><strong>Garland gas range issues:</strong> We service supported Garland gas ranges with flame irregularities, ignition failure, pilot problems, oven heating concerns, thermostat issues, burner output problems, and control failures.</li>
+
+      <li><strong>Garland electric range issues:</strong> We diagnose electric range elements, wiring, controls, selector switches, temperature regulation issues, power faults, and component failures affecting Garland electric cooking equipment.</li>
+
+      <li><strong>Garland convection oven problems:</strong> We diagnose ovens that are not heating, overheating, baking unevenly, making unusual fan noise, failing to circulate air, or showing thermostat and control-related symptoms.</li>
+
+      <li><strong>Garland deck oven issues:</strong> We service supported deck ovens with temperature inconsistency, poor heat recovery, thermostat issues, burner or element faults, door sealing problems, and baking performance concerns.</li>
+
+      <li><strong>Garland griddle heating problems:</strong> If your Garland griddle has cold spots, uneven heat, ignition issues, surface temperature problems, thermostat faults, or poor recovery, we inspect controls, burners, elements, sensors, and related components.</li>
+
+      <li><strong>Garland grill and charbroiler problems:</strong> We service supported grills and charbroilers with weak flame, uneven heating, burner problems, clogged components, ignition concerns, flare-up issues, grease-related buildup, and airflow problems.</li>
+
+      <li><strong>Garland fryer temperature problems:</strong> We diagnose fryers that are not heating, overheating, failing to recover temperature, producing inconsistent results, showing thermostat problems, or experiencing ignition and gas flow concerns.</li>
+
+      <li><strong>Garland broiler and salamander issues:</strong> We inspect broilers, salamanders, and cheesemelters with weak heat, uneven heating, burner problems, ignition failure, control issues, or maintenance-related performance decline.</li>
+
+      <li><strong>Garland induction equipment faults:</strong> We diagnose supported induction units with power issues, error codes, control response problems, heating interruptions, pan detection issues, cooling fan problems, and electrical symptoms.</li>
+
+      <li><strong>Garland countertop equipment problems:</strong> Countertop cooking equipment can experience burner faults, thermostat issues, wiring problems, uneven heating, control failures, and cleaning-related performance decline.</li>
+
+      <li><strong>Gas flow and regulator concerns:</strong> Commercial cooking equipment depends on proper gas pressure, connection condition, regulator performance, and safe operation. We inspect relevant gas-related symptoms and recommend the proper repair path.</li>
+
+      <li><strong>Door gasket and sealing issues:</strong> Proper sealing is important for ovens and certain heated cooking appliances. We inspect worn gaskets, heat loss, door alignment, hinge behavior, and closure problems that affect temperature stability.</li>
+
+      <li><strong>Control and electrical faults:</strong> We service switches, thermostats, control boards, relays, wiring-related issues, lights, displays, sensors, and electrical malfunctions affecting supported Garland appliances.</li>
+
+      <li><strong>Maintenance-related performance decline:</strong> Commercial appliances may be affected by grease buildup, clogged burners, dust, heavy use, airflow restrictions, worn controls, weak ignition, ventilation problems, and age-related component wear. We inspect the appliance for performance, safety, and long-term reliability concerns.</li>
+    </ul>
+
+    <h2>Garland Appliances We Service</h2>
+
+    <p>We service a wide range of <strong>Garland appliances</strong> and professional cooking equipment, including:</p>
+
+    <ul>
+      <li>Garland commercial gas ranges</li>
+      <li>Garland commercial electric ranges</li>
+      <li>Garland heavy-duty ranges</li>
+      <li>Garland medium-duty ranges</li>
+      <li>Garland restaurant ranges</li>
+      <li>Garland convection ovens</li>
+      <li>Garland deck ovens</li>
+      <li>Garland pizza ovens</li>
+      <li>Garland griddles</li>
+      <li>Garland production griddles</li>
+      <li>Garland flat top grills</li>
+      <li>Garland charbroilers</li>
+      <li>Garland grills</li>
+      <li>Garland fryers</li>
+      <li>Garland broilers</li>
+      <li>Garland salamanders</li>
+      <li>Garland cheesemelters</li>
+      <li>Garland induction units</li>
+      <li>Garland induction hobs</li>
+      <li>Garland induction woks</li>
+      <li>Garland countertop cooking equipment</li>
+      <li>Garland gas counter equipment</li>
+      <li>Garland electric counter equipment</li>
+      <li>Garland island suite cooking equipment</li>
+      <li>Supported Garland commercial kitchen and professional cooking equipment</li>
+    </ul>
+
+    <h2>Garland Appliance Installation and Maintenance</h2>
+
+    <p>In addition to <strong>Garland appliance repair</strong>, we provide <strong>Garland appliance maintenance</strong> and installation-related support for homeowners, restaurants, commercial kitchens, and professional cooking spaces that want to protect equipment performance, safety, and reliability. Proper setup, leveling, ventilation clearance, gas and electrical connection review, heat clearance, equipment placement, and routine service are especially important for Garland cooking appliances used in demanding kitchen environments.</p>
+
+    <p>Our maintenance service may include visual inspection, burner and oven performance testing, ignition review, thermostat checks, griddle surface inspection, fryer temperature testing, broiler performance review, airflow assessment, ventilation review, safety inspection, control testing, and identification of worn components. For Garland appliances, preventive service can help preserve cooking consistency, heat recovery, burner performance, oven accuracy, griddle quality, fryer output, and dependable daily use.</p>
+
+    <h2>Commercial Garland Cooking Equipment Service</h2>
+
+    <p>Garland appliances have a strong place in professional kitchens because they are built for power, precision, and repeated use. Many restaurants, hospitality kitchens, catering operations, commercial properties, and serious home chefs use Garland equipment for ranges, ovens, griddles, grills, fryers, broilers, induction cooking, and countertop cooking stations. When Garland equipment develops a problem, proper diagnosis matters because each cooking system has different heat, fuel, airflow, electrical, control, and safety requirements.</p>
+
+    <p>Our technicians focus on identifying the appliance model, understanding the symptoms, reviewing installation conditions, checking part availability when needed, and recommending a repair path that makes sense for the equipment’s age, usage level, kitchen environment, and value.</p>
+
+    <h2>Our Garland Repair Process</h2>
+
+    <ul>
+      <li><strong>Schedule Service:</strong> Contact us by phone or online and tell us the model, appliance type, issue, and location.</li>
+
+      <li><strong>On-Site Diagnosis:</strong> A technician inspects the appliance and identifies the source of the problem.</li>
+
+      <li><strong>Installation Review:</strong> For commercial and professional cooking equipment, we also review ventilation, clearance, airflow, leveling, gas connection, electrical connection, and surrounding installation conditions when relevant.</li>
+
+      <li><strong>Repair Recommendation:</strong> We explain the issue, the recommended solution, and the expected repair scope.</li>
+
+      <li><strong>Parts Review:</strong> When replacement parts are needed, we help identify the correct compatible components for your Garland appliance.</li>
+
+      <li><strong>Professional Service:</strong> We complete the repair with care and test the appliance for proper operation.</li>
+
+      <li><strong>Support for Ongoing Performance:</strong> When appropriate, we also advise on maintenance and long-term care for your Garland appliance.</li>
+    </ul>
+
+    <h2>Areas We Serve for Garland Appliance Repair</h2>
+
+    <Areas client:visible />
+
+    <h2>Professional Cooking Equipment Service for a Demanding Brand</h2>
+
+    <p>Garland appliances are known for commercial cooking performance, durable construction, restaurant-grade heat output, professional ranges, ovens, griddles, grills, fryers, broilers, induction units, and countertop cooking equipment. They are not always serviced the same way as ordinary residential appliances. Whether you own a Garland range, convection oven, deck oven, griddle, fryer, charbroiler, broiler, induction unit, or commercial cooking appliance, choosing a company familiar with professional kitchen equipment can make a meaningful difference in diagnosis, repair planning, and long-term performance.</p>
+
+    <p>At <strong>Luxury Appliance Repair by Zaricci</strong>, we provide service designed for clients who expect careful workmanship, clear communication, and respect for their home, restaurant, commercial kitchen, flooring, cabinetry, equipment layout, and business operations.</p>
+
+    <h2>Schedule Garland Appliance Repair in Los Angeles & Nearby Areas</h2>
+
+    <p>If your <strong>Garland range, oven, griddle, grill, charbroiler, fryer, broiler, salamander, cheesemelter, induction unit, countertop equipment, or professional kitchen appliance</strong> is not performing the way it should, do not wait for the issue to worsen. Prompt service can help restore performance and reduce the risk of more expensive repairs later.</p>
+
+    <p><strong>Call Luxury Appliance Repair by Zaricci</strong> to schedule professional <strong>Garland appliance repair in Los Angeles and nearby areas</strong>, or book service online for expert help with repair, maintenance, and installation support.</p>
+  </div>
+</Layout>

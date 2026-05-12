@@ -1,0 +1,383 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ParallaxHeader from '../components/Header/Caliber.jsx'
+import '../components/Areas.css';
+import Areas from '../components/Areas.jsx';
+import '../styles/global.css';
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/caliber-appliance-repair/#webpage",
+      "url": "https://luxuryappliance.repair/caliber-appliance-repair/",
+      "name": "Caliber Appliance Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Expert Caliber appliance repair, installation, and maintenance in Los Angeles for Caliber outdoor grills, Rockwell grills, outdoor refrigerators, freezer drawers, wine cabinets, beverage centers, clear ice machines, griddles, and outdoor kitchen appliances.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/caliber-appliance-repair/#service"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/caliber/caliber-appliance-repair-services-trained-technicians.webp"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/caliber-appliance-repair/#service",
+      "name": "Caliber Appliance Repair",
+      "url": "https://luxuryappliance.repair/caliber-appliance-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/caliber-appliance-repair/#webpage"
+      },
+      "serviceType": "Caliber appliance repair, installation, and maintenance",
+      "description": "Luxury Appliance Repair by Zaricci specializes in Caliber appliance repair, maintenance, and installation support for Caliber outdoor grills, Rockwell built-in grills, outdoor-rated refrigerators, refrigerator drawers, freezer drawers, wine cabinets, beverage centers, beverage dispensers, clear ice machines, outdoor griddles, and custom outdoor kitchen appliances. Our technicians use careful diagnostics and premium service practices for Caliber appliances across Los Angeles and surrounding communities.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Caliber",
+        "alternateName": "True Caliber",
+        "sameAs": "https://true-caliber.com/"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Los Angeles",
+          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Brentwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Pasadena",
+          "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California"
+        },
+        {
+          "@type": "Place",
+          "name": "Bel Air",
+          "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Pacific Palisades",
+          "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Santa Monica"
+        },
+        {
+          "@type": "City",
+          "name": "Beverly Hills"
+        },
+        {
+          "@type": "City",
+          "name": "Calabasas"
+        },
+        {
+          "@type": "City",
+          "name": "Thousand Oaks"
+        },
+        {
+          "@type": "City",
+          "name": "West Hollywood"
+        },
+        {
+          "@type": "City",
+          "name": "San Marino"
+        },
+        {
+          "@type": "City",
+          "name": "Malibu"
+        },
+        {
+          "@type": "City",
+          "name": "Manhattan Beach"
+        },
+        {
+          "@type": "Place",
+          "name": "Encino",
+          "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Rancho Palos Verdes"
+        },
+        {
+          "@type": "City",
+          "name": "Palos Verdes Estates"
+        },
+        {
+          "@type": "City",
+          "name": "Rolling Hills Estates"
+        },
+        {
+          "@type": "Place",
+          "name": "Westwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Century City",
+          "sameAs": "https://en.wikipedia.org/wiki/Century_City"
+        },
+        {
+          "@type": "City",
+          "name": "La Cañada Flintridge"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Orange County",
+          "sameAs": "https://en.wikipedia.org/wiki/Orange_County,_California"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ventura County",
+          "sameAs": "https://en.wikipedia.org/wiki/Ventura_County,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Irvine",
+          "sameAs": "https://en.wikipedia.org/wiki/Irvine,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Newport Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Newport_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Laguna Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Laguna_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Huntington Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Huntington_Beach,_California"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Caliber Appliance Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Caliber Appliance Repair",
+              "description": "Repair for Caliber appliances with grill ignition problems, burner issues, uneven heating, outdoor refrigeration temperature problems, freezer drawer issues, wine cabinet temperature concerns, beverage center cooling problems, clear ice machine faults, griddle performance concerns, control failures, airflow problems, door sealing issues, and maintenance-related decline."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Caliber Appliance Installation",
+              "description": "Professional installation support for Caliber outdoor grills, Rockwell grills, outdoor refrigerators, refrigerator drawers, freezer drawers, wine cabinets, beverage centers, beverage dispensers, clear ice machines, outdoor griddles, and outdoor kitchen appliances where applicable, including setup, leveling, ventilation review, clearance review, connection review, integration, and performance checks."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Caliber Appliance Maintenance",
+              "description": "Preventive maintenance for Caliber appliances including inspection, cleaning, burner and grill performance testing, ignition review, refrigeration temperature testing, door gasket inspection, condenser and airflow review, ice machine review, griddle surface inspection, drainage review, and outdoor appliance performance assessment."
+            }
+          }
+        ]
+      },
+      "keywords": [
+        "Caliber appliance repair",
+        "True Caliber appliance repair",
+        "Caliber grill repair",
+        "Caliber outdoor grill repair",
+        "Caliber Rockwell grill repair",
+        "Caliber built-in grill repair",
+        "Caliber outdoor refrigerator repair",
+        "Caliber refrigerator drawer repair",
+        "Caliber freezer drawer repair",
+        "Caliber wine cabinet repair",
+        "Caliber wine cooler repair",
+        "Caliber beverage center repair",
+        "Caliber clear ice machine repair",
+        "Caliber griddle repair",
+        "Caliber outdoor kitchen repair",
+        "Caliber appliance installation",
+        "Caliber appliance maintenance",
+        "Los Angeles Caliber appliance repair"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      ]
+    }
+  ]
+};
+---
+
+<Layout
+  title="Caliber Appliance Repair | (424) 499-7788"
+  description="Expert Caliber appliance repair for outdoor grills, Rockwell grills, outdoor refrigerators, freezer drawers, wine cabinets, beverage centers, clear ice machines, griddles, and outdoor kitchen appliances. Professional Caliber repair, maintenance, and installation support."
+  ogImage="/caliber/caliber-appliance-repair-los-angeles-orange-county-ventura-county.webp"
+  structuredData={structuredData}
+>
+  <ParallaxHeader client:idle />
+
+  <div class="maincontent" id="webpage">
+    <h2>Expert Caliber Appliance Repair</h2>
+
+    <img
+      width="500"
+      height="500"
+      loading="lazy"
+      class="image-left"
+      src="/caliber/caliber-appliance-repair-technician.webp"
+      alt="Caliber appliance repair technician servicing a luxury outdoor Caliber grill and outdoor kitchen appliance in Los Angeles"
+    >
+
+    <p>Luxury Appliance Repair by Zaricci provides professional <strong>Caliber appliance repair</strong> for homeowners with premium outdoor cooking, refrigeration, wine, beverage, ice, and outdoor kitchen appliances. We service <strong>Caliber outdoor grills, Rockwell grills, built-in grills, outdoor refrigerators, refrigerator drawers, freezer drawers, wine cabinets, beverage centers, beverage dispensers, clear ice machines, outdoor griddles, and custom outdoor kitchen appliances</strong> with careful diagnostics, detail-focused workmanship, and respect for the appliance’s design, finish, and installation.</p>
+
+    <p>Caliber appliances are different from ordinary outdoor appliances because they are built around high-performance outdoor cooking, outdoor-rated refrigeration, custom finishes, premium hardware, and integrated luxury outdoor kitchen design. If your <strong>Caliber grill is not igniting properly</strong>, your Rockwell grill is heating unevenly, your outdoor refrigerator is not cooling, your wine cabinet is not holding temperature, or your clear ice machine is not producing ice, our technicians work to identify the cause and restore dependable operation while protecting the appliance’s fit, finish, and outdoor kitchen integration.</p>
+
+    <h2>Why Homeowners Choose Zaricci for Caliber Appliance Repair</h2>
+
+    <ul>
+      <li><strong>Experienced with Luxury Outdoor Appliances:</strong> We understand that Caliber appliances are often installed in high-end outdoor kitchens, custom patios, poolside entertainment areas, and luxury home spaces where appearance and performance both matter.</li>
+
+      <li><strong>Focused Diagnostic Approach:</strong> We do not treat a Caliber appliance like a basic backyard grill or standard refrigerator. Our service is centered on diagnosing the real cause of ignition, heating, cooling, airflow, drainage, ice production, control, sensor, or sealing issues before recommending repair.</li>
+
+      <li><strong>Repair, Installation & Maintenance:</strong> In addition to <strong>Caliber appliance repair</strong>, we also provide <strong>Caliber appliance maintenance</strong> and installation-related support where applicable.</li>
+
+      <li><strong>Outdoor Cooking, Refrigeration, Wine, Beverage & Ice Care:</strong> Caliber and True Caliber systems can include several major outdoor kitchen categories. We service supported cooking appliances, outdoor refrigeration, wine storage, beverage cooling, ice machines, freezer drawers, refrigerator drawers, and griddle systems with a complete appliance-service approach.</li>
+
+      <li><strong>Luxury Home Service Experience:</strong> We provide careful service designed for premium outdoor kitchens, custom cabinetry, stone countertops, built-in grill islands, designer finishes, outdoor entertaining spaces, and high-end homes throughout Los Angeles and surrounding communities.</li>
+    </ul>
+
+    <h2 id="service">Common Caliber Appliance Problems We Repair</h2>
+
+    <p>We repair many of the issues homeowners commonly experience with <strong>Caliber appliances</strong>, from outdoor grill problems to refrigeration, wine, beverage, freezer, ice, griddle, and outdoor kitchen appliance concerns. Our service is tailored to the appliance type, model, installation style, outdoor exposure, and symptoms involved.</p>
+
+    <ul>
+      <li><strong>Caliber grill not igniting:</strong> We diagnose ignition modules, electrodes, wiring, switches, gas supply symptoms, burner assemblies, and related components that affect proper startup.</li>
+
+      <li><strong>Caliber grill heating unevenly:</strong> If your grill has hot spots, weak flame, poor searing performance, or inconsistent heat distribution, we inspect burners, radiant systems, grill racks, valves, gas flow, airflow, and buildup that can affect cooking performance.</li>
+
+      <li><strong>Caliber Rockwell grill problems:</strong> We service supported Rockwell grill issues involving ignition, burners, heat output, lid movement, controls, grease management, uneven cooking, and performance decline.</li>
+
+      <li><strong>Caliber built-in grill issues:</strong> Built-in outdoor grills can be affected by clearance problems, ventilation restrictions, grease buildup, gas connection concerns, weather exposure, and installation-related airflow issues. We inspect the appliance and surrounding installation for proper performance.</li>
+
+      <li><strong>Caliber griddle performance problems:</strong> We diagnose supported griddle systems with uneven heating, ignition issues, grease management concerns, surface temperature problems, burner faults, and outdoor-use wear.</li>
+
+      <li><strong>Caliber outdoor refrigerator not cooling:</strong> We inspect airflow restrictions, condenser condition, evaporator fan issues, sensor faults, control issues, door sealing problems, compressor-related symptoms, and temperature regulation concerns.</li>
+
+      <li><strong>Caliber refrigerator drawer problems:</strong> If your refrigerator drawer is too warm, not closing properly, leaking, frosting, or making noise, we inspect drawer alignment, gaskets, fans, controls, sensors, airflow, and outdoor installation conditions.</li>
+
+      <li><strong>Caliber freezer drawer issues:</strong> We diagnose freezer drawers that are too warm, frosting, leaking, running constantly, not freezing properly, or experiencing door seal and airflow problems.</li>
+
+      <li><strong>Caliber wine cabinet temperature problems:</strong> Wine storage requires stable temperature control. We inspect sensors, fans, controls, door sealing, airflow, condenser performance, and cooling issues affecting wine storage conditions.</li>
+
+      <li><strong>Caliber beverage center not cooling:</strong> We diagnose beverage centers with warm temperatures, fan issues, door seal problems, control faults, condenser restrictions, noisy operation, and inconsistent cooling.</li>
+
+      <li><strong>Caliber beverage dispenser issues:</strong> We inspect cooling performance, dispensing problems, temperature irregularities, line concerns, airflow issues, and maintenance-related decline affecting supported beverage dispenser units.</li>
+
+      <li><strong>Caliber clear ice machine problems:</strong> We diagnose poor ice production, no ice, cloudy ice, water flow issues, drain problems, pump concerns, sensor faults, scale buildup, and cleaning-related performance issues.</li>
+
+      <li><strong>Door gasket and sealing issues:</strong> Proper sealing is important for outdoor refrigerators, freezer drawers, wine cabinets, beverage centers, and ice machines. We inspect worn gaskets, air leaks, water leaks, door alignment, hinge behavior, drawer alignment, and closure problems that affect performance.</li>
+
+      <li><strong>Water leaks and drain issues:</strong> We diagnose blocked drains, condensation problems, ice machine drain faults, outdoor refrigerator leaks, water line concerns, and moisture problems inside or around the appliance.</li>
+
+      <li><strong>Control and electrical faults:</strong> We service supported touch controls, displays, switches, sensors, wiring-related issues, error codes, temperature alarms, lighting controls, ignition controls, and electrical malfunctions affecting Caliber appliances.</li>
+
+      <li><strong>Outdoor exposure and maintenance-related decline:</strong> Outdoor appliances may be affected by heat, dust, salt air, weather exposure, grease buildup, moisture, airflow restrictions, clogged filters, worn seals, insects, and age-related component wear. We inspect the appliance for performance, ventilation, and safety-related concerns.</li>
+    </ul>
+
+    <h2>Caliber Appliances We Service</h2>
+
+    <p>We service a wide range of <strong>Caliber appliances</strong> and premium outdoor kitchen products, including:</p>
+
+    <ul>
+      <li>Caliber outdoor grills</li>
+      <li>Caliber Rockwell grills</li>
+      <li>Caliber built-in grills</li>
+      <li>Caliber freestanding social grills</li>
+      <li>Caliber 36-inch Rockwell grills</li>
+      <li>Caliber 42-inch Rockwell grills</li>
+      <li>Caliber 48-inch Rockwell grills</li>
+      <li>Caliber outdoor griddles</li>
+      <li>Caliber outdoor refrigerators</li>
+      <li>Caliber undercounter refrigerators</li>
+      <li>Caliber refrigerator drawers</li>
+      <li>Caliber freezer drawers</li>
+      <li>Caliber wine cabinets</li>
+      <li>Caliber beverage centers</li>
+      <li>Caliber beverage dispensers</li>
+      <li>Caliber clear ice machines</li>
+      <li>Caliber low-profile outdoor refrigeration units</li>
+      <li>Caliber custom outdoor kitchen appliances</li>
+      <li>Supported Caliber cooking, refrigeration, wine, beverage, ice, freezer, drawer, griddle, and outdoor kitchen components</li>
+    </ul>
+
+    <h2>Caliber Appliance Installation and Maintenance</h2>
+
+    <p>In addition to <strong>Caliber appliance repair</strong>, we provide <strong>Caliber appliance maintenance</strong> and installation-related support for homeowners who want to protect the performance, safety, and appearance of their outdoor kitchen appliances. Proper setup, leveling, ventilation clearance, gas and electrical connection review, drainage review, door and drawer alignment, outdoor airflow, and routine service are especially important for appliances installed into custom outdoor kitchens.</p>
+
+    <p>Our maintenance service may include visual inspection, burner and grill performance testing, ignition review, griddle inspection, temperature testing, gasket inspection, condenser and airflow review, filter inspection, ice machine cleaning review, drain review, drawer alignment check, wine cabinet temperature assessment, beverage center performance testing, and identification of worn components. For homeowners with Caliber appliances, preventive service can help preserve grilling performance, refrigeration performance, wine storage conditions, ice production, beverage cooling, and dependable outdoor entertaining use.</p>
+
+    <h2>Luxury Outdoor Cooking, Refrigeration, Wine, Beverage, and Ice Service</h2>
+
+    <p>Caliber appliances have a strong place in luxury outdoor kitchen design. Many homeowners choose Caliber and True Caliber products for high-performance grills, Rockwell social grills, outdoor-rated refrigeration, wine cabinets, beverage centers, clear ice machines, refrigerator drawers, freezer drawers, griddles, custom finishes, and integrated outdoor entertaining spaces. When a Caliber appliance develops a problem, proper diagnosis matters because outdoor cooking, refrigeration, ice, beverage, and wine systems each require a different repair approach.</p>
+
+    <p>Our technicians focus on identifying the appliance model, understanding the symptoms, reviewing installation conditions, checking part availability when needed, and recommending a repair path that makes sense for the appliance’s age, location, outdoor exposure, installation style, and value.</p>
+
+    <h2>Our Caliber Repair Process</h2>
+
+    <ul>
+      <li><strong>Schedule Service:</strong> Contact us by phone or online and tell us the model, appliance type, issue, and location.</li>
+
+      <li><strong>In-Home Diagnosis:</strong> A technician inspects the appliance and identifies the source of the problem.</li>
+
+      <li><strong>Installation Review:</strong> For outdoor appliances, we also review ventilation, clearance, airflow, drainage, leveling, and surrounding installation conditions when relevant.</li>
+
+      <li><strong>Repair Recommendation:</strong> We explain the issue, the recommended solution, and the expected repair scope.</li>
+
+      <li><strong>Parts Review:</strong> When replacement parts are needed, we help identify the correct compatible components for your Caliber appliance.</li>
+
+      <li><strong>Professional Service:</strong> We complete the repair with care and test the appliance for proper operation.</li>
+
+      <li><strong>Support for Ongoing Performance:</strong> When appropriate, we also advise on maintenance and long-term care for your Caliber appliance.</li>
+    </ul>
+
+    <h2>Areas We Serve for Caliber Appliance Repair</h2>
+
+    <Areas client:visible />
+
+    <h2>Premium Outdoor Kitchen Service for a High-End Appliance Brand</h2>
+
+    <p>Caliber appliances are known for outdoor entertaining, premium grill design, Rockwell social grilling, outdoor-rated refrigeration, wine cooling, beverage storage, freezer drawers, clear ice machines, griddles, custom finishes, and integrated luxury outdoor kitchen systems. They are not always serviced the same way as ordinary residential appliances. Whether you own a Caliber grill, outdoor refrigerator, wine cabinet, beverage center, freezer drawer, ice machine, griddle, or custom outdoor kitchen appliance, choosing a company familiar with high-end outdoor appliance service can make a meaningful difference in diagnosis, repair planning, and long-term performance.</p>
+
+    <p>At <strong>Luxury Appliance Repair by Zaricci</strong>, we provide service designed for homeowners who expect careful workmanship, clear communication, and respect for their outdoor kitchen, patio, cabinetry, stonework, flooring, landscaping, and home.</p>
+
+    <h2>Schedule Caliber Appliance Repair in Los Angeles & Nearby Areas</h2>
+
+    <p>If your <strong>Caliber grill, Rockwell grill, outdoor refrigerator, refrigerator drawer, freezer drawer, wine cabinet, beverage center, clear ice machine, griddle, or outdoor kitchen appliance</strong> is not performing the way it should, do not wait for the issue to worsen. Prompt service can help restore performance and reduce the risk of more expensive repairs later.</p>
+
+    <p><strong>Call Luxury Appliance Repair by Zaricci</strong> to schedule professional <strong>Caliber appliance repair in Los Angeles and nearby areas</strong>, or book service online for expert help with repair, maintenance, and installation support.</p>
+  </div>
+</Layout>
