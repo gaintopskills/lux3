@@ -1,0 +1,353 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ParallaxHeader from '../components/Header/Heartland.jsx'
+import '../components/Areas.css';
+import Areas from '../components/Areas.jsx';
+import '../styles/global.css';
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/heartland-appliance-repair/#webpage",
+      "url": "https://luxuryappliance.repair/heartland-appliance-repair/",
+      "name": "Heartland Appliance Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Expert Heartland appliance repair, installation, and maintenance in Los Angeles for retro-style Heartland ranges, ovens, refrigerators, dishwashers, cooktops, and classic kitchen appliances.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/heartland-appliance-repair/#service"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/heartland/heartland-appliance-repair-services-trained-technicians.webp"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/heartland-appliance-repair/#service",
+      "name": "Heartland Appliance Repair",
+      "url": "https://luxuryappliance.repair/heartland-appliance-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/heartland-appliance-repair/#webpage"
+      },
+      "serviceType": "Heartland appliance repair, installation, and maintenance",
+      "description": "Luxury Appliance Repair by Zaricci specializes in Heartland appliance repair, maintenance, and legacy appliance service for Heartland classic ranges, gas ranges, electric ranges, dual fuel ranges, ovens, refrigerators, dishwashers, cooktops, and retro-style kitchen appliances. Our technicians use careful diagnostics and premium service practices for Heartland appliances across Los Angeles and surrounding communities.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Heartland",
+        "sameAs": "https://www.heartlandapp.com/"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Los Angeles",
+          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Brentwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Pasadena",
+          "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California"
+        },
+        {
+          "@type": "Place",
+          "name": "Bel Air",
+          "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Pacific Palisades",
+          "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Santa Monica"
+        },
+        {
+          "@type": "City",
+          "name": "Beverly Hills"
+        },
+        {
+          "@type": "City",
+          "name": "Calabasas"
+        },
+        {
+          "@type": "City",
+          "name": "Thousand Oaks"
+        },
+        {
+          "@type": "City",
+          "name": "West Hollywood"
+        },
+        {
+          "@type": "City",
+          "name": "San Marino"
+        },
+        {
+          "@type": "City",
+          "name": "Malibu"
+        },
+        {
+          "@type": "City",
+          "name": "Manhattan Beach"
+        },
+        {
+          "@type": "Place",
+          "name": "Encino",
+          "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Rancho Palos Verdes"
+        },
+        {
+          "@type": "City",
+          "name": "Palos Verdes Estates"
+        },
+        {
+          "@type": "City",
+          "name": "Rolling Hills Estates"
+        },
+        {
+          "@type": "Place",
+          "name": "Westwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Century City",
+          "sameAs": "https://en.wikipedia.org/wiki/Century_City"
+        },
+        {
+          "@type": "City",
+          "name": "La Cañada Flintridge"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Orange County",
+          "sameAs": "https://en.wikipedia.org/wiki/Orange_County,_California"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ventura County",
+          "sameAs": "https://en.wikipedia.org/wiki/Ventura_County,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Irvine",
+          "sameAs": "https://en.wikipedia.org/wiki/Irvine,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Newport Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Newport_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Laguna Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Laguna_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Huntington Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Huntington_Beach,_California"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Heartland Appliance Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Heartland Appliance Repair",
+              "description": "Repair for Heartland appliances with oven heating problems, burner ignition issues, temperature inconsistency, refrigerator cooling problems, dishwasher performance issues, control failures, gasket wear, and maintenance-related decline."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Heartland Appliance Installation",
+              "description": "Professional installation support for Heartland ranges, refrigerators, dishwashers, and retro-style kitchen appliances where applicable, including setup, leveling, integration, and performance checks."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Heartland Appliance Maintenance",
+              "description": "Preventive maintenance for Heartland appliances including inspection, cleaning, calibration checks, burner and oven performance testing, door gasket inspection, airflow review, and refrigeration performance assessment."
+            }
+          }
+        ]
+      },
+      "keywords": [
+        "Heartland appliance repair",
+        "Heartland range repair",
+        "Heartland oven repair",
+        "Heartland gas range repair",
+        "Heartland electric range repair",
+        "Heartland dual fuel range repair",
+        "Heartland refrigerator repair",
+        "Heartland dishwasher repair",
+        "Heartland cooktop repair",
+        "Heartland retro appliance repair",
+        "Heartland classic appliance repair",
+        "Heartland appliance installation",
+        "Heartland appliance maintenance",
+        "Los Angeles Heartland repair"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      ]
+    }
+  ]
+};
+---
+
+<Layout
+  title="Heartland Appliance Repair | (424) 499-7788"
+  description="Expert Heartland appliance repair for retro-style ranges, ovens, refrigerators, dishwashers, cooktops, and classic kitchen appliances. Professional Heartland repair, maintenance, and legacy appliance service."
+  ogImage="/heartland/heartland-appliance-repair-services-trained-technicians.webp"
+  structuredData={structuredData}
+>
+  <ParallaxHeader client:idle />
+
+  <div class="maincontent" id="webpage">
+    <h2>Expert Heartland Appliance Repair</h2>
+
+    <img
+      width="500"
+      height="500"
+      loading="lazy"
+      class="image-left"
+      src="/heartland/heartland-appliance-repair-technician.webp"
+      alt="Heartland appliance repair technician servicing a retro luxury Heartland range in Los Angeles"
+    >
+
+    <p>Luxury Appliance Repair by Zaricci provides professional <strong>Heartland appliance repair</strong> for homeowners who own distinctive retro-style and classic kitchen appliances. We service <strong>Heartland ranges, ovens, cooktops, refrigerators, dishwashers, and classic kitchen appliances</strong> with careful diagnostics, detail-focused workmanship, and respect for the original style of the appliance.</p>
+
+    <p>Heartland appliances are different from standard residential appliances because they combine nostalgic design with functional cooking, refrigeration, and dishwashing systems. If your <strong>Heartland range is not heating properly</strong>, your burners are not igniting, your refrigerator is not cooling, or your dishwasher is not cleaning correctly, our technicians work to identify the issue and restore dependable performance while protecting the appliance’s distinctive appearance.</p>
+
+    <h2>Why Homeowners Choose Zaricci for Heartland Appliance Repair</h2>
+
+    <ul>
+      <li><strong>Experienced with Retro Luxury Appliances:</strong> We understand that Heartland appliances are often chosen for their design, craftsmanship, and classic kitchen appearance, not just their function.</li>
+
+      <li><strong>Focused Diagnostic Approach:</strong> We do not treat a Heartland appliance like a basic mass-market unit. Our service is centered on diagnosing the real cause of heating, cooling, ignition, control, airflow, or performance issues before recommending repair.</li>
+
+      <li><strong>Repair, Installation & Maintenance:</strong> In addition to <strong>Heartland appliance repair</strong>, we also provide <strong>Heartland appliance maintenance</strong> and installation-related support where applicable.</li>
+
+      <li><strong>Legacy Appliance Support:</strong> Because Heartland appliances may involve older models, discontinued parts, or specialty components, we take a careful approach to parts identification, compatibility, and repair planning.</li>
+
+      <li><strong>Luxury Home Service Experience:</strong> We provide careful service designed for premium kitchens, custom cabinetry, retro kitchen designs, and high-end homes throughout Los Angeles and surrounding communities.</li>
+    </ul>
+
+    <h2 id="service">Common Heartland Appliance Problems We Repair</h2>
+
+    <p>We repair many of the issues homeowners commonly experience with <strong>Heartland appliances</strong>, from retro-style cooking appliances to refrigeration and dishwashing systems. Our service is tailored to the appliance type, model, age, and symptoms involved.</p>
+
+    <ul>
+      <li><strong>Heartland oven not heating or overheating:</strong> We diagnose heating elements, thermostats, temperature controls, sensors, wiring issues, and components that affect baking and roasting performance.</li>
+
+      <li><strong>Heartland range burner problems:</strong> If your burners are not igniting, clicking continuously, producing weak flame, or heating unevenly, we inspect ignition components, valves, burner assemblies, and related gas or electrical systems.</li>
+
+      <li><strong>Heartland gas range and dual fuel range issues:</strong> We service gas and dual fuel cooking appliances with heating, ignition, temperature, and control-related problems.</li>
+
+      <li><strong>Heartland electric range issues:</strong> We diagnose surface elements, oven elements, thermostats, selector switches, controls, and electrical faults affecting performance.</li>
+
+      <li><strong>Heartland refrigerator not cooling:</strong> We inspect airflow issues, door gaskets, fans, controls, temperature regulation, sealed-system symptoms, and maintenance-related cooling problems.</li>
+
+      <li><strong>Heartland dishwasher problems:</strong> We diagnose poor cleaning, draining issues, leaking, unusual noise, door seal problems, control faults, and water circulation concerns.</li>
+
+      <li><strong>Door gasket and sealing issues:</strong> Retro-style appliances often rely on proper door fit and sealing. We inspect worn gaskets, air leaks, alignment issues, and closure problems that affect performance.</li>
+
+      <li><strong>Control and electrical faults:</strong> We service switches, controls, wiring-related issues, display or response problems, and electrical malfunctions affecting supported Heartland appliances.</li>
+
+      <li><strong>Maintenance-related performance decline:</strong> If your Heartland appliance is operating less efficiently over time, we inspect for buildup, wear, airflow restrictions, calibration concerns, and age-related component issues.</li>
+    </ul>
+
+    <h2>Heartland Appliances We Service</h2>
+
+    <p>We service a wide range of <strong>Heartland appliances</strong> and classic kitchen products, including:</p>
+
+    <ul>
+      <li>Heartland gas ranges</li>
+      <li>Heartland electric ranges</li>
+      <li>Heartland dual fuel ranges</li>
+      <li>Heartland ovens</li>
+      <li>Heartland cooktops</li>
+      <li>Heartland refrigerators</li>
+      <li>Heartland dishwashers</li>
+      <li>Heartland classic kitchen appliances</li>
+      <li>Heartland retro-style appliance suites</li>
+      <li>Supported Heartland ventilation and related kitchen components</li>
+    </ul>
+
+    <h2>Heartland Appliance Installation and Maintenance</h2>
+
+    <p>In addition to <strong>Heartland appliance repair</strong>, we provide <strong>Heartland appliance maintenance</strong> and installation-related support for homeowners who want to protect the performance, safety, and appearance of their appliance. Proper setup, leveling, inspection, and routine service are especially important for specialty appliances that may be older, discontinued, or more difficult to replace.</p>
+
+    <p>Our maintenance service may include visual inspection, performance testing, calibration checks, burner and oven evaluation, gasket inspection, refrigerator airflow review, dishwasher performance assessment, and identification of worn components. For homeowners with a retro or heritage kitchen design, preventive service can help preserve both function and appearance.</p>
+
+    <h2>Legacy Heartland Appliance Service</h2>
+
+    <p>Heartland appliances have a unique place in luxury and retro kitchen design. Many homeowners choose to repair and maintain these appliances because replacing them may affect the entire look of the kitchen. When a Heartland appliance develops a problem, proper diagnosis matters because parts, trim, finishes, and model-specific components may require more careful planning than a standard appliance repair.</p>
+
+    <p>Our technicians focus on identifying the appliance model, understanding the symptoms, reviewing part availability when needed, and recommending a repair path that makes sense for the age, condition, and value of the appliance.</p>
+
+    <h2>Our Heartland Repair Process</h2>
+
+    <ul>
+      <li><strong>Schedule Service:</strong> Contact us by phone or online and tell us the model, appliance type, issue, and location.</li>
+
+      <li><strong>In-Home Diagnosis:</strong> A technician inspects the appliance and identifies the source of the problem.</li>
+
+      <li><strong>Repair Recommendation:</strong> We explain the issue, the recommended solution, and the expected repair scope.</li>
+
+      <li><strong>Parts Review:</strong> When replacement parts are needed, we help identify the correct compatible components for your Heartland appliance.</li>
+
+      <li><strong>Professional Service:</strong> We complete the repair with care and test the appliance for proper operation.</li>
+
+      <li><strong>Support for Ongoing Performance:</strong> When appropriate, we also advise on maintenance and long-term care for your Heartland appliance.</li>
+    </ul>
+
+    <h2>Areas We Serve for Heartland Appliance Repair</h2>
+
+    <Areas client:visible />
+
+    <h2>Retro Luxury Service for a Distinctive Appliance</h2>
+
+    <p>Heartland appliances are known for their nostalgic styling, classic colors, distinctive trim, and heritage-inspired kitchen presence. They are not always serviced the same way as ordinary residential appliances. Whether you own a Heartland range, refrigerator, dishwasher, or full classic kitchen suite, choosing a company familiar with specialty appliance service can make a meaningful difference in diagnosis, repair planning, and long-term performance.</p>
+
+    <p>At <strong>Luxury Appliance Repair by Zaricci</strong>, we provide service designed for homeowners who expect careful workmanship, clear communication, and respect for their kitchen and home.</p>
+
+    <h2>Schedule Heartland Appliance Repair in Los Angeles & Nearby Areas</h2>
+
+    <p>If your <strong>Heartland range, oven, refrigerator, dishwasher, cooktop, or classic kitchen appliance</strong> is not performing the way it should, do not wait for the issue to worsen. Prompt service can help restore performance and reduce the risk of more expensive repairs later.</p>
+
+    <p><strong>Call Luxury Appliance Repair by Zaricci</strong> to schedule professional <strong>Heartland appliance repair in Los Angeles and nearby areas</strong>, or book service online for expert help with repair, maintenance, and legacy appliance support.</p>
+  </div>
+</Layout>
