@@ -293,9 +293,6 @@ const EuropeanLuxuryLanding = () => {
       </div>
      
     </section>
-
-    
   );
 };
-
 export default EuropeanLuxuryLanding;
