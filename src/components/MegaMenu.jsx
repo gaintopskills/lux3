@@ -161,7 +161,6 @@ export const MegaMenu = () => {
     ],
     [{type: "heading", label: "High-End Appliance Repair", href: "/high-end-appliance-repair/", },
     { label: "Bosch", href: "/bosch-appliance-repair/" },
-    
     { label: "Miele", href: "/miele-appliance-repair/" },
     { label: "Liebherr", href: "/liebherr-appliance-repair/" },
     { label: "Perlick", href: "/perlick-appliance-repair/" },
