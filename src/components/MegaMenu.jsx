@@ -171,6 +171,10 @@ export const MegaMenu = () => {
     { label: "American Range", href: "/american-range-repair/" },
     { label: "BlueStar", href: "/bluestar-appliance-repair/" },
     { label: "FiveStar", href: "/fivestar-appliance-repair/" },
+    { label: "Thor", href: "/thor-appliance-repair/" },
+    { label: "Forno", href: "/forno-appliance-repair/" },
+    { label: "Caliber", href: "/caliber-appliance-repair/" },
+    { label: "Garland", href: "/garland-appliance-repair/" },
       { label: "ZLINE", href: "/zline-appliance-repair/" },
       
     ],
