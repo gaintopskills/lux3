@@ -68,16 +68,17 @@ const ServiceForm = ({
 
 const EuropeanLuxuryLanding = () => {
   const brands = [
-    { name: 'Sub-Zero', image: '/logo/sub-zero.png', width: 180, height: 70 },
+    { name: 'Sub-Zero', image: '/logo/sub-zero-logo.png', width: 180, height: 70 },
     { name: 'Wolf', image: '/logo/wolf.png', width: 180, height: 70 },
     { name: 'Thermador', image: '/logo/thermador.png', width: 180, height: 70 },
     { name: 'true Residential', image: '/logo/true-residential.png', width: 190, height: 70 },
     { name: 'Viking', image: '/logo/viking.png', width: 150, height: 70 },
-    { name: 'Monogram', image: '/logo/Monogram.png', width: 220, height: 70 },
+    { name: 'Monogram', image: '/logo/monogram-logo.png', width: 220, height: 70 },
     { name: 'Signature Kitchen Suite', image: '/logo/signature.png', width: 220, height: 70 },
     { name: 'Hestan', image: '/logo/hestan.png', width: 220, height: 70 },
     { name: 'Dacor', image: '/logo/dacor.png', width: 220, height: 70 },
     { name: 'Cove', image: '/logo/cove.png', width: 220, height: 70 },
+    { name: 'Fisher & Paykel', image: '/logo/fisher-and-paykel.png', width: 220, height: 70 },
   ];
 
   const features = [
@@ -127,7 +128,7 @@ const EuropeanLuxuryLanding = () => {
                 <p className="european-luxury-subtext">
   CERTIFIED LEVEL REPAIR FOR:</p>
   <p className="hero-brand-list">
-  Sub-Zero <span>·</span> Wolf <span>·</span> Thermador <span>·</span> True Residential <span>·</span> Viking <span>·</span> Monogram <span>·</span> Signature Kitchen Suite <span>·</span> Hestan <span>·</span> Dacor <span>·</span> Cove
+  Sub-Zero <span>·</span> Wolf <span>·</span> Thermador <span>·</span> True Residential <span>·</span> Viking <span>·</span> Monogram <span>·</span> Signature Kitchen Suite <span>·</span> Hestan <span>·</span> Dacor <span>·</span> Cove <span>·</span> Fisher & Paykel
 </p>
               </div>
             </div>
