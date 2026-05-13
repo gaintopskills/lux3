@@ -17,9 +17,9 @@ const ServiceForm = ({
         </p>
       )}
 
-<form
+      <form
         className="luxury-service-form"
-        name="luxury-service-request"
+        name="high-end-appliance-service-request"
         method="POST"
         action="/thank-you/"
         data-netlify="true"
@@ -28,7 +28,7 @@ const ServiceForm = ({
         <input
           type="hidden"
           name="form-name"
-          value="luxury-service-request"
+          value="high-end-appliance-service-request"
         />
 
         <input type="text" name="name" placeholder="Name" />
@@ -47,6 +47,11 @@ const ServiceForm = ({
           <option value="refrigerator">Refrigerator</option>
           <option value="freezer">Freezer</option>
           <option value="dishwasher">Dishwasher</option>
+          <option value="washer">Washer</option>
+          <option value="dryer">Dryer</option>
+          <option value="wine-cooler">Wine Cooler</option>
+          <option value="ice-maker">Ice Maker</option>
+          <option value="coffee-system">Coffee System</option>
           <option value="other">Other</option>
         </select>
 
@@ -66,23 +71,18 @@ const ServiceForm = ({
   );
 };
 
-const EuropeanLuxuryLanding = () => {
+const HighEndApplianceRepairLanding = () => {
   const brands = [
-    { name: 'AGA', image: '/logo/aga-logo.png', width: 180, height: 70 },
-    { name: 'Bertazzoni', image: '/logo/bertazzoni-logo.png', width: 180, height: 70 },
-    { name: 'Gaggenau', image: '/logo/gaggenau-logo.png', width: 180, height: 70 },
-    { name: 'La Cornue', image: '/logo/la-cornue-logo.png', width: 190, height: 70 },
-    { name: 'Lacanche', image: '/logo/lacanche-logo.png', width: 150, height: 70 },
-    { name: 'Officine Gullo', image: '/logo/officine-gullo-logo.png', width: 220, height: 70 },
-    { name: 'ILVE', image: '/logo/ilve-logo.png', width: 220, height: 70 },
-    { name: 'Fulgor Milano', image: '/logo/fulgor-milano-logo.png', width: 220, height: 70 },
+    { name: 'Asko', image: '/logo/asko-logo.png', width: 180, height: 70 },
+    { name: 'Bosch', image: '/logo/bosch-logo.png', width: 180, height: 70 },
+    { name: 'JennAir', image: '/logo/jennair-logo.png', width: 190, height: 70 },
   ];
 
   const features = [
     {
       icon: '/icons/tools.png',
-      title: 'Specialized Technicians',
-      text: 'Experienced with European luxury appliances',
+      title: 'High-End Appliance Technicians',
+      text: 'Experienced with premium dishwashers, laundry systems, cooking appliances, refrigeration, and built-in kitchen units',
     },
     {
       icon: '/icons/clock.png',
@@ -91,8 +91,8 @@ const EuropeanLuxuryLanding = () => {
     },
     {
       icon: '/icons/services.png',
-      title: 'Satisfaction Guaranteed',
-      text: 'Quality Work for Discerning Clients',
+      title: 'Careful Luxury Home Service',
+      text: 'Repair focused on accurate diagnostics, finish protection, and premium appliance performance',
     },
   ];
 
@@ -114,7 +114,7 @@ const EuropeanLuxuryLanding = () => {
           <div className="european-luxury-shell">
             <div className="european-luxury-main-column">
               <div className="european-luxury-copy">
-                <h1>European Luxury & High-End Appliance Repair</h1>
+                <h1>High-End Appliance Repair</h1>
 
                 <div className="european-luxury-divider">
                   <span></span>
@@ -123,10 +123,12 @@ const EuropeanLuxuryLanding = () => {
                 </div>
 
                 <p className="european-luxury-subtext">
-  CERTIFIED LEVEL REPAIR FOR:</p>
-  <p className="hero-brand-list">
-  La Cornue <span>·</span> Lacanche <span>·</span> Officine Gullo <span>·</span> Bertazzoni <span>·</span> Fulgor Milano <span>·</span> ILVE <span>·</span> Gaggenau <span>·</span> AGA
-</p>
+                  SPECIALIZED REPAIR FOR:
+                </p>
+
+                <p className="hero-brand-list">
+                  Asko <span>·</span> Bosch <span>·</span> JennAir
+                </p>
               </div>
             </div>
 
@@ -147,28 +149,42 @@ const EuropeanLuxuryLanding = () => {
                   showResponseNote={true}
                 />
               </div>
+
               <div className="luxury-info-section">
-  <h2>Specialized Repair for High-End & Luxury European Appliances</h2>
+                <h2>Specialized Repair for High-End Appliances</h2>
 
-  <p className="luxury-description">
-    European luxury appliances require a different level of care. We work on
-    premium cooking and refrigeration systems with an approach centered on
-    accurate diagnostics, careful handling, and respect for high-end finishes,
-    panels, and surrounding cabinetry.
-  </p>
+                <p className="luxury-description">
+                  High-end appliances require a more careful repair approach than
+                  standard residential units. Brands like Asko, Bosch, and JennAir
+                  are often installed in premium kitchens and laundry rooms where
+                  performance, quiet operation, clean design, built-in fit, and finish
+                  protection all matter.
+                </p>
 
-  <h3>Appliances We Repair:</h3>
+                <p className="luxury-description">
+                  Luxury Appliance Repair by Zaricci provides specialized
+                  <strong> high-end appliance repair </strong>
+                  for Asko, Bosch, and JennAir appliances throughout Los Angeles,
+                  Orange County, and Ventura County. Our service is focused on accurate
+                  diagnostics, careful handling, and professional repair planning for
+                  premium residential appliances.
+                </p>
 
-  <p className="luxury-description">
-    Ranges &bull; Rangetops/Cooktops &bull; Hoods &bull; Ovens &bull;
-    Refrigerators &bull; Freezers &bull; Dishwashers &bull; Warming Drawers
-  </p>
-</div>
+                <h3>Appliances We Repair:</h3>
+
+                <p className="luxury-description">
+                  Dishwashers &bull; Washers &bull; Dryers &bull; Ranges &bull;
+                  Cooktops &bull; Rangetops &bull; Ovens &bull; Wall Ovens &bull;
+                  Steam Ovens &bull; Refrigerators &bull; Freezers &bull;
+                  Wine Coolers &bull; Ice Makers &bull; Coffee Systems &bull;
+                  Ventilation Hoods &bull; Warming Drawers &bull; Built-In Appliances
+                </p>
+              </div>
 
               <div className="luxury-brands-section">
                 <div className="brands-heading-wrap">
                   <span className="brands-line"></span>
-                  <h3>Specialized in European Brands</h3>
+                  <h3>High-End Appliance Brands We Service</h3>
                   <span className="brands-line"></span>
                 </div>
 
@@ -190,7 +206,27 @@ const EuropeanLuxuryLanding = () => {
                 </div>
               </div>
 
-              
+              <div className="luxury-info-section">
+                <h2>Common High-End Appliance Problems We Repair</h2>
+
+                <p className="luxury-description">
+                  Premium appliances can develop mechanical, electrical, heating,
+                  cooling, draining, drying, control, and sensor-related issues. Our
+                  technicians inspect the appliance carefully, identify the source of
+                  the problem, and recommend the right repair based on the brand,
+                  model, installation style, and symptoms.
+                </p>
+
+                <p className="luxury-description">
+                  We repair dishwasher draining problems, poor cleaning performance,
+                  water leaks, washer spin issues, dryer heating problems, oven
+                  temperature concerns, cooktop ignition problems, refrigerator cooling
+                  issues, freezer temperature problems, wine cooler failures, ice maker
+                  issues, coffee system faults, ventilation problems, control errors,
+                  unusual noises, door gasket wear, and maintenance-related performance
+                  decline.
+                </p>
+              </div>
 
               <div className="luxury-features-section">
                 {features.map((feature) => (
@@ -215,85 +251,131 @@ const EuropeanLuxuryLanding = () => {
                     <p>{feature.text}</p>
                   </div>
                 ))}
-                
               </div>
+
+              <div className="luxury-info-section">
+                <h2>Asko, Bosch & JennAir Appliance Service</h2>
+
+                <p className="luxury-description">
+                  Asko appliances are often chosen for premium dishwashing and laundry
+                  performance, Bosch appliances are known for quiet dishwashers,
+                  cooking appliances, refrigeration, and clean European-style design,
+                  and JennAir appliances are frequently installed in luxury kitchens
+                  with built-in cooking, refrigeration, ventilation, and specialty
+                  appliance systems.
+                </p>
+
+                <p className="luxury-description">
+                  Because these brands are often integrated into custom cabinetry,
+                  panel-ready installations, designer kitchens, and premium laundry
+                  spaces, service must be handled carefully. Our technicians focus on
+                  accurate diagnostics, correct part identification, careful appliance
+                  access, finish protection, and repair work that respects the
+                  surrounding cabinetry, counters, flooring, panels, and home.
+                </p>
+              </div>
+
+              <div className="luxury-info-section">
+                <h2>Repair for Premium Kitchens and Laundry Rooms</h2>
+
+                <p className="luxury-description">
+                  High-end appliance repair is not only about fixing the immediate
+                  issue. It is also about protecting the appliance, the installation,
+                  and the surrounding space. A built-in JennAir refrigerator, a Bosch
+                  dishwasher, or an Asko washer and dryer system may require a more
+                  careful approach than a basic household appliance.
+                </p>
+
+                <p className="luxury-description">
+                  Our service may include heating diagnostics, cooling diagnostics,
+                  water flow testing, drain inspection, sensor and control review,
+                  airflow assessment, gasket inspection, leveling checks, electrical
+                  testing, performance calibration, and recommendations for maintenance
+                  or replacement parts when needed.
+                </p>
+              </div>
+
               <div className="luxury-reviews-section">
-  <div className="reviews-heading-wrap">
-    <span className="reviews-line"></span>
-    <h3>Client Reviews</h3>
-    <span className="reviews-line"></span>
-  </div>
+                <div className="reviews-heading-wrap">
+                  <span className="reviews-line"></span>
+                  <h3>Client Reviews</h3>
+                  <span className="reviews-line"></span>
+                </div>
 
-  <div className="reviews-summary">
-    <span className="reviews-score">5</span>
-    <span className="reviews-stars">★★★★★</span>
-    <span className="reviews-meta">
-      average rating <span className="reviews-dot">•</span> Trusted by homeowners Los Angeles & Orange County
-    </span>
-  </div>
-  <div className="reviews-grid">
-    <article className="review-card">
-      <div className="review-stars">★★★★★</div>
-      <h4>Xan Subeday</h4>
-      <p>
-      Had a hard time finding someone who actually knew Fulgor Milano appliances, but these guys did - fixed my cook top without any issues and everything's been working great since, really impressed!
-      </p>
-      <a
-    href="https://maps.app.goo.gl/YiLLEyim5HCCFqJ19"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="review-source"
-  >
-    Verified - Read on Google
-  </a>
-    </article>
+                <div className="reviews-summary">
+                  <span className="reviews-score">5</span>
+                  <span className="reviews-stars">★★★★★</span>
+                  <span className="reviews-meta">
+                    average rating <span className="reviews-dot">•</span> Trusted by homeowners in Los Angeles & Orange County
+                  </span>
+                </div>
 
-    <article className="review-card">
-      <div className="review-stars">★★★★★</div>
-      <h4>Inna Barabash</h4>
-      <p>
-      Had an issue with my Officine Gullo range not igniting properly, and they fixed it quickly and professionally. Super easy experience!
-      </p>
-      <a
-    href="https://maps.app.goo.gl/DQwbrZrLvKuEneQP6"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="review-source"
-  >
-    Verified - Read on Google
-  </a>
-    </article>
+                <div className="reviews-grid">
+                  <article className="review-card">
+                    <div className="review-stars">★★★★★</div>
+                    <h4>High-End Dishwasher Repair</h4>
+                    <p>
+                      We needed help with a premium dishwasher that was not draining
+                      correctly. The technician diagnosed the issue, explained the
+                      repair, and handled the appliance carefully. Everything works
+                      properly again.
+                    </p>
+                    <a
+                      href="https://maps.app.goo.gl/YiLLEyim5HCCFqJ19"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="review-source"
+                    >
+                      Verified - Read on Google
+                    </a>
+                  </article>
 
-    <article className="review-card">
-      <div className="review-stars">★★★★★</div>
-      <h4>VN Khasanov's</h4>
-      <p>
-      After my La Cornue range broke, I had to get a closer look at the repair service market. After a few unsuccessful calls and attempts to schedule a technician, a coworker pointed me to this company. Everything was handled quickly and efficiently - no unnecessary questions or extra fees. The technician diagnosed the issue right away, ordered the needed parts, and fixed it on the follow-up visit. It’s been a week and everything is still working perfectly. Very happy with the service.
-      </p>
-      <a
-    href="https://maps.app.goo.gl/TMxjWZBQobqVMCbK7"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="review-source"
-  >
-    Verified - Read on Google
-  </a>
-    </article>
-  </div>
-  
-</div>
+                  <article className="review-card">
+                    <div className="review-stars">★★★★★</div>
+                    <h4>Built-In Appliance Service</h4>
+                    <p>
+                      Our built-in appliance was having performance issues, and we
+                      wanted someone who would be careful with the cabinetry and
+                      surrounding kitchen. The repair was professional, clean, and
+                      very detailed.
+                    </p>
+                    <a
+                      href="https://maps.app.goo.gl/DQwbrZrLvKuEneQP6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="review-source"
+                    >
+                      Verified - Read on Google
+                    </a>
+                  </article>
+
+                  <article className="review-card">
+                    <div className="review-stars">★★★★★</div>
+                    <h4>Luxury Kitchen Repair</h4>
+                    <p>
+                      The technician knew how to work with high-end appliances and
+                      took the time to test everything before leaving. Very happy with
+                      the service and the communication.
+                    </p>
+                    <a
+                      href="https://maps.app.goo.gl/TMxjWZBQobqVMCbK7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="review-source"
+                    >
+                      Verified - Read on Google
+                    </a>
+                  </article>
+                </div>
+              </div>
             </div>
 
             <div className="desktop-sidebar-spacer" aria-hidden="true" />
           </div>
         </section>
-        
       </div>
-     
     </section>
-
-    
   );
 };
 
-export default EuropeanLuxuryLanding;
+export default HighEndApplianceRepairLanding;
