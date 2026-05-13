@@ -177,7 +177,7 @@ export const MegaMenu = () => {
       {type: "heading", label: "Outdoor Kitchen", href: "/outdoor-kitchen-appliance-repair/", },
      
       { label: "Kalamazoo", href: "/kalamazoo-appliance-repair/" },
-      { label: "Lynx", href: "/lynx-appliance-repair/" },
+      { label: "Lynx", href: "/lynx-repair/" },
       { label: "Hestan Outdoor", href: "/hestan-appliance-repair/" },
       { label: "Viking Outdoor", href: "/viking-appliance-repair/" },
       { label: "DCS", href: "/dcs-appliance-repair/" },
