@@ -76,6 +76,8 @@ const EuropeanLuxuryLanding = () => {
     { name: 'Officine Gullo', image: '/logo/officine-gullo-logo.png', width: 220, height: 70 },
     { name: 'ILVE', image: '/logo/ilve-logo.png', width: 220, height: 70 },
     { name: 'Fulgor Milano', image: '/logo/fulgor-milano-logo.png', width: 220, height: 70 },
+    { name: 'Miele', image: '/logo/miele.png', width: 220, height: 70 },
+    { name: 'Liebherr', image: '/logo/liebherr.png', width: 220, height: 70 },
   ];
 
   const features = [
@@ -125,7 +127,7 @@ const EuropeanLuxuryLanding = () => {
                 <p className="european-luxury-subtext">
   CERTIFIED LEVEL REPAIR FOR:</p>
   <p className="hero-brand-list">
-  La Cornue <span>·</span> Lacanche <span>·</span> Officine Gullo <span>·</span> Bertazzoni <span>·</span> Fulgor Milano <span>·</span> ILVE <span>·</span> Gaggenau <span>·</span> AGA
+  La Cornue <span>·</span> Lacanche <span>·</span> Officine Gullo <span>·</span> Bertazzoni <span>·</span> Fulgor Milano <span>·</span> ILVE <span>·</span> Gaggenau <span>·</span> AGA <span>·</span> Miele <span>·</span> Liebherr
 </p>
               </div>
             </div>
