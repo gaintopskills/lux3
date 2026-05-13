@@ -149,6 +149,8 @@ export const MegaMenu = () => {
     [
       {type: "heading", label: "Luxury", href: "/luxury-appliance-repair/", },
       { label: "Sub-Zero", href: "/sub-zero-repair/" },
+      { label: "Fisher & Paykel", href: "/fisher-paykel-appliance-repair/" },
+      
       { label: "Wolf", href: "/wolf-appliance-repair/" },
       { label: "Thermador", href: "/thermador-appliance-repair/" },
       { label: "True Residential", href: "/true-residential-appliance-repair/" },
