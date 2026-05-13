@@ -17,9 +17,9 @@ const ServiceForm = ({
         </p>
       )}
 
-<form
+      <form
         className="luxury-service-form"
-        name="luxury-service-request"
+        name="retro-appliance-service-request"
         method="POST"
         action="/thank-you/"
         data-netlify="true"
@@ -28,7 +28,7 @@ const ServiceForm = ({
         <input
           type="hidden"
           name="form-name"
-          value="luxury-service-request"
+          value="retro-appliance-service-request"
         />
 
         <input type="text" name="name" placeholder="Name" />
@@ -47,6 +47,8 @@ const ServiceForm = ({
           <option value="refrigerator">Refrigerator</option>
           <option value="freezer">Freezer</option>
           <option value="dishwasher">Dishwasher</option>
+          <option value="ice-maker">Ice Maker</option>
+          <option value="wine-cooler">Wine Cooler</option>
           <option value="other">Other</option>
         </select>
 
@@ -66,23 +68,19 @@ const ServiceForm = ({
   );
 };
 
-const EuropeanLuxuryLanding = () => {
+const RetroApplianceRepairLanding = () => {
   const brands = [
-    { name: 'AGA', image: '/logo/aga-logo.png', width: 180, height: 70 },
-    { name: 'Bertazzoni', image: '/logo/bertazzoni-logo.png', width: 180, height: 70 },
-    { name: 'Gaggenau', image: '/logo/gaggenau-logo.png', width: 180, height: 70 },
-    { name: 'La Cornue', image: '/logo/la-cornue-logo.png', width: 190, height: 70 },
-    { name: 'Lacanche', image: '/logo/lacanche-logo.png', width: 150, height: 70 },
-    { name: 'Officine Gullo', image: '/logo/officine-gullo-logo.png', width: 220, height: 70 },
-    { name: 'ILVE', image: '/logo/ilve-logo.png', width: 220, height: 70 },
-    { name: 'Fulgor Milano', image: '/logo/fulgor-milano-logo.png', width: 220, height: 70 },
+    { name: 'Big Chill', image: '/logo/big-chill-logo.png', width: 190, height: 70 },
+    { name: 'Elmira Stove Works', image: '/logo/elmira-stove-works-logo.png', width: 220, height: 70 },
+    { name: 'Smeg', image: '/logo/smeg-logo.png', width: 170, height: 70 },
+    { name: 'Heartland', image: '/logo/heartland-logo.png', width: 200, height: 70 },
   ];
 
   const features = [
     {
       icon: '/icons/tools.png',
-      title: 'Specialized Technicians',
-      text: 'Experienced with European luxury appliances',
+      title: 'Retro Appliance Technicians',
+      text: 'Experienced with vintage-inspired ranges, ovens, refrigerators, dishwashers, and specialty kitchen appliances',
     },
     {
       icon: '/icons/clock.png',
@@ -91,8 +89,8 @@ const EuropeanLuxuryLanding = () => {
     },
     {
       icon: '/icons/services.png',
-      title: 'Satisfaction Guaranteed',
-      text: 'Quality Work for Discerning Clients',
+      title: 'Careful Service for Distinctive Kitchens',
+      text: 'Repair focused on performance, finish protection, and preserving the look of retro-style appliances',
     },
   ];
 
@@ -114,7 +112,7 @@ const EuropeanLuxuryLanding = () => {
           <div className="european-luxury-shell">
             <div className="european-luxury-main-column">
               <div className="european-luxury-copy">
-                <h1>European Luxury & High-End Appliance Repair</h1>
+                <h1>Retro Appliance Repair</h1>
 
                 <div className="european-luxury-divider">
                   <span></span>
@@ -123,10 +121,12 @@ const EuropeanLuxuryLanding = () => {
                 </div>
 
                 <p className="european-luxury-subtext">
-  CERTIFIED LEVEL REPAIR FOR:</p>
-  <p className="hero-brand-list">
-  La Cornue <span>·</span> Lacanche <span>·</span> Officine Gullo <span>·</span> Bertazzoni <span>·</span> Fulgor Milano <span>·</span> ILVE <span>·</span> Gaggenau <span>·</span> AGA
-</p>
+                  SPECIALIZED REPAIR FOR:
+                </p>
+
+                <p className="hero-brand-list">
+                  Big Chill <span>·</span> Elmira Stove Works <span>·</span> Smeg <span>·</span> Heartland
+                </p>
               </div>
             </div>
 
@@ -147,28 +147,41 @@ const EuropeanLuxuryLanding = () => {
                   showResponseNote={true}
                 />
               </div>
+
               <div className="luxury-info-section">
-  <h2>Specialized Repair for High-End & Luxury European Appliances</h2>
+                <h2>Specialized Repair for Retro & Vintage-Inspired Appliances</h2>
 
-  <p className="luxury-description">
-    European luxury appliances require a different level of care. We work on
-    premium cooking and refrigeration systems with an approach centered on
-    accurate diagnostics, careful handling, and respect for high-end finishes,
-    panels, and surrounding cabinetry.
-  </p>
+                <p className="luxury-description">
+                  Retro appliances require a careful repair approach because they are
+                  often chosen for both performance and design. Brands like Big Chill,
+                  Elmira Stove Works, Smeg, and Heartland are not ordinary kitchen
+                  appliances. They are often part of a complete design vision, with
+                  distinctive colors, curved doors, polished trim, heritage styling,
+                  and custom kitchen integration.
+                </p>
 
-  <h3>Appliances We Repair:</h3>
+                <p className="luxury-description">
+                  Luxury Appliance Repair by Zaricci provides specialized
+                  <strong> retro appliance repair </strong>
+                  for homeowners who want to preserve the look, performance, and
+                  character of their vintage-inspired appliances throughout Los Angeles,
+                  Orange County, and Ventura County.
+                </p>
 
-  <p className="luxury-description">
-    Ranges &bull; Rangetops/Cooktops &bull; Hoods &bull; Ovens &bull;
-    Refrigerators &bull; Freezers &bull; Dishwashers &bull; Warming Drawers
-  </p>
-</div>
+                <h3>Appliances We Repair:</h3>
+
+                <p className="luxury-description">
+                  Ranges &bull; Stoves &bull; Ovens &bull; Cooktops &bull;
+                  Rangetops &bull; Refrigerators &bull; Freezers &bull;
+                  Dishwashers &bull; Range Hoods &bull; Ventilation Systems &bull;
+                  Wine Coolers &bull; Ice Makers &bull; Specialty Kitchen Appliances
+                </p>
+              </div>
 
               <div className="luxury-brands-section">
                 <div className="brands-heading-wrap">
                   <span className="brands-line"></span>
-                  <h3>Specialized in European Brands</h3>
+                  <h3>Retro Appliance Brands We Service</h3>
                   <span className="brands-line"></span>
                 </div>
 
@@ -190,7 +203,26 @@ const EuropeanLuxuryLanding = () => {
                 </div>
               </div>
 
-              
+              <div className="luxury-info-section">
+                <h2>Common Retro Appliance Problems We Repair</h2>
+
+                <p className="luxury-description">
+                  Retro-style appliances can develop many of the same mechanical,
+                  electrical, heating, cooling, and control issues as modern appliances,
+                  but their design and construction often require more careful handling.
+                  Our technicians inspect the appliance, identify the real cause of the
+                  issue, and recommend the right repair based on the brand, model,
+                  condition, and installation.
+                </p>
+
+                <p className="luxury-description">
+                  We repair oven heating problems, burner ignition issues, weak flame,
+                  uneven baking, slow preheating, refrigerator cooling problems,
+                  freezer temperature issues, dishwasher draining concerns, leaking,
+                  control failures, door gasket wear, unusual noises, ventilation
+                  problems, airflow issues, and maintenance-related performance decline.
+                </p>
+              </div>
 
               <div className="luxury-features-section">
                 {features.map((feature) => (
@@ -215,85 +247,131 @@ const EuropeanLuxuryLanding = () => {
                     <p>{feature.text}</p>
                   </div>
                 ))}
-                
               </div>
+
+              <div className="luxury-info-section">
+                <h2>Repair for Statement Kitchens and Heritage-Inspired Appliances</h2>
+
+                <p className="luxury-description">
+                  Big Chill, Elmira Stove Works, Smeg, and Heartland appliances are
+                  often installed in kitchens where appearance matters just as much as
+                  function. These appliances may feature custom colors, retro panels,
+                  specialty handles, enamel finishes, curved doors, chrome-style trim,
+                  or vintage-inspired design details that must be handled carefully
+                  during service.
+                </p>
+
+                <p className="luxury-description">
+                  Because these appliances are often part of a highly designed kitchen,
+                  proper service requires more than a basic repair approach. Our
+                  technicians focus on accurate diagnostics, correct part identification,
+                  careful handling of decorative finishes, and repair planning that
+                  respects the surrounding cabinetry, flooring, counters, and overall
+                  kitchen design.
+                </p>
+              </div>
+
+              <div className="luxury-info-section">
+                <h2>Big Chill, Elmira Stove Works, Smeg & Heartland Service</h2>
+
+                <p className="luxury-description">
+                  We service retro and heritage-style appliances across several
+                  appliance categories. Whether you own a colorful Big Chill refrigerator,
+                  an Elmira Stove Works range, a Smeg dishwasher, or a Heartland classic
+                  kitchen appliance, we approach the repair with attention to both
+                  appliance performance and visual preservation.
+                </p>
+
+                <p className="luxury-description">
+                  Our service may include heating diagnostics, ignition testing,
+                  thermostat and sensor inspection, airflow review, refrigeration
+                  performance checks, gasket inspection, control testing, drain review,
+                  leveling assessment, and recommendations for maintenance or parts
+                  replacement when needed.
+                </p>
+              </div>
+
               <div className="luxury-reviews-section">
-  <div className="reviews-heading-wrap">
-    <span className="reviews-line"></span>
-    <h3>Client Reviews</h3>
-    <span className="reviews-line"></span>
-  </div>
+                <div className="reviews-heading-wrap">
+                  <span className="reviews-line"></span>
+                  <h3>Client Reviews</h3>
+                  <span className="reviews-line"></span>
+                </div>
 
-  <div className="reviews-summary">
-    <span className="reviews-score">5</span>
-    <span className="reviews-stars">★★★★★</span>
-    <span className="reviews-meta">
-      average rating <span className="reviews-dot">•</span> Trusted by homeowners Los Angeles & Orange County
-    </span>
-  </div>
-  <div className="reviews-grid">
-    <article className="review-card">
-      <div className="review-stars">★★★★★</div>
-      <h4>Xan Subeday</h4>
-      <p>
-      Had a hard time finding someone who actually knew Fulgor Milano appliances, but these guys did - fixed my cook top without any issues and everything's been working great since, really impressed!
-      </p>
-      <a
-    href="https://maps.app.goo.gl/YiLLEyim5HCCFqJ19"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="review-source"
-  >
-    Verified - Read on Google
-  </a>
-    </article>
+                <div className="reviews-summary">
+                  <span className="reviews-score">5</span>
+                  <span className="reviews-stars">★★★★★</span>
+                  <span className="reviews-meta">
+                    average rating <span className="reviews-dot">•</span> Trusted by homeowners in Los Angeles & Orange County
+                  </span>
+                </div>
 
-    <article className="review-card">
-      <div className="review-stars">★★★★★</div>
-      <h4>Inna Barabash</h4>
-      <p>
-      Had an issue with my Officine Gullo range not igniting properly, and they fixed it quickly and professionally. Super easy experience!
-      </p>
-      <a
-    href="https://maps.app.goo.gl/DQwbrZrLvKuEneQP6"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="review-source"
-  >
-    Verified - Read on Google
-  </a>
-    </article>
+                <div className="reviews-grid">
+                  <article className="review-card">
+                    <div className="review-stars">★★★★★</div>
+                    <h4>Retro Refrigerator Repair</h4>
+                    <p>
+                      We needed help with our retro-style refrigerator that was not
+                      cooling properly. The technician was careful with the finish,
+                      found the issue, and got it working again without damaging the
+                      surrounding kitchen.
+                    </p>
+                    <a
+                      href="https://maps.app.goo.gl/YiLLEyim5HCCFqJ19"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="review-source"
+                    >
+                      Verified - Read on Google
+                    </a>
+                  </article>
 
-    <article className="review-card">
-      <div className="review-stars">★★★★★</div>
-      <h4>VN Khasanov's</h4>
-      <p>
-      After my La Cornue range broke, I had to get a closer look at the repair service market. After a few unsuccessful calls and attempts to schedule a technician, a coworker pointed me to this company. Everything was handled quickly and efficiently - no unnecessary questions or extra fees. The technician diagnosed the issue right away, ordered the needed parts, and fixed it on the follow-up visit. It’s been a week and everything is still working perfectly. Very happy with the service.
-      </p>
-      <a
-    href="https://maps.app.goo.gl/TMxjWZBQobqVMCbK7"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="review-source"
-  >
-    Verified - Read on Google
-  </a>
-    </article>
-  </div>
-  
-</div>
+                  <article className="review-card">
+                    <div className="review-stars">★★★★★</div>
+                    <h4>Vintage-Style Range Service</h4>
+                    <p>
+                      Our range was having ignition problems and uneven heating. The
+                      technician explained everything clearly, repaired the issue, and
+                      treated the appliance very carefully.
+                    </p>
+                    <a
+                      href="https://maps.app.goo.gl/DQwbrZrLvKuEneQP6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="review-source"
+                    >
+                      Verified - Read on Google
+                    </a>
+                  </article>
+
+                  <article className="review-card">
+                    <div className="review-stars">★★★★★</div>
+                    <h4>Specialty Appliance Repair</h4>
+                    <p>
+                      It was hard to find someone comfortable working on a specialty
+                      retro appliance. The service was professional, detailed, and the
+                      technician knew how to handle the appliance without scratching or
+                      damaging the finish.
+                    </p>
+                    <a
+                      href="https://maps.app.goo.gl/TMxjWZBQobqVMCbK7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="review-source"
+                    >
+                      Verified - Read on Google
+                    </a>
+                  </article>
+                </div>
+              </div>
             </div>
 
             <div className="desktop-sidebar-spacer" aria-hidden="true" />
           </div>
         </section>
-        
       </div>
-     
     </section>
-
-    
   );
 };
 
-export default EuropeanLuxuryLanding;
+export default RetroApplianceRepairLanding;
