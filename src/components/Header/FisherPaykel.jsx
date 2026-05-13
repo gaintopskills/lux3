@@ -34,7 +34,7 @@ const ParallaxHeader = () => {
           className="header-image"
           width="1200"
           height="630"
-          src="/fisher-paykel/fisher-paykel-appliance-repair-los-angeles-orange-county-ventura-county.webp"
+          src="/fisherpaykel/fisher-and-paykel-appliance-repair-los-angeles-orange-county-ventura-county.webp"
           alt="Fisher & Paykel appliance repair services for Los Angeles, Ventura County, and Orange County"
           fetchPriority="high"
           decoding="async"
