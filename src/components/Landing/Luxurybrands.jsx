@@ -78,7 +78,7 @@ const EuropeanLuxuryLanding = () => {
     { name: 'Hestan', image: '/logo/hestan.png', width: 220, height: 70 },
     { name: 'Dacor', image: '/logo/dacor.png', width: 220, height: 70 },
     { name: 'Cove', image: '/logo/cove.png', width: 220, height: 70 },
-    { name: 'Fisher & Paykel', image: '/logo/fisher-and-paykel.png', width: 220, height: 70 },
+    { name: 'Fisher & Paykel', image: '/logo/fisher-and-paykel-logo.png', width: 220, height: 70 },
   ];
 
   const features = [
