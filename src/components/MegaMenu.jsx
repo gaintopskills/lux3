@@ -158,7 +158,7 @@ export const MegaMenu = () => {
       { label: "Hestan", href: "/hestan-appliance-repair/" },
       { label: "Dacor", href: "/dacor-appliance-repair/" },
       { label: "Cove", href: "/cove-dishwasher-repair/" },
-      { label: "Fisher & Paykel 1", href: "/fisher-paykel-appliance-repair/" },
+      { label: "Fisher & Paykel 1", href: "/fisher-and-paykel-appliance-repair/" },
       
 
       {type: "heading", label: "Retro", href: "/retro-appliance-repair/", },
