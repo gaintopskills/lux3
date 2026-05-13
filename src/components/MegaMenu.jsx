@@ -182,8 +182,8 @@ export const MegaMenu = () => {
       { label: "Alfresco", href: "/alfresco-appliance-repair/" },
       { label: "Twin Eagles", href: "/twin-eagles-appliance-repair/" },
       { label: "Fire Magic", href: "/fire-magic-appliance-repair/" },
-      { label: "Wolf Outdoors", href: "/wof-appliance-repair/" },
-      { label: "True Residential Outdoor", href: "/zline-appliance-repair/" },
+      { label: "Wolf Outdoors", href: "/wolf-appliance-repair/" },
+      { label: "True Residential Outdoor", href: "/true-residential-appliance-repair/" },
       { label: "Caliber", href: "/caliber-appliance-repair/" },
     ],
   ];
