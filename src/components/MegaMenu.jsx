@@ -150,7 +150,6 @@ export const MegaMenu = () => {
       {type: "heading", label: "Luxury", href: "/luxury-appliance-repair/", },
       { label: "Sub-Zero", href: "/sub-zero-repair/" },
       { label: "Fisher & Paykel", href: "/fisher-and-paykel-appliance-repair/" },
-      
       { label: "Wolf", href: "/wolf-appliance-repair/" },
       { label: "Thermador", href: "/thermador-appliance-repair/" },
       { label: "True Residential", href: "/true-residential-appliance-repair/" },
@@ -160,8 +159,6 @@ export const MegaMenu = () => {
       { label: "Hestan", href: "/hestan-appliance-repair/" },
       { label: "Dacor", href: "/dacor-appliance-repair/" },
       { label: "Cove", href: "/cove-dishwasher-repair/" },
-      
-
       {type: "heading", label: "Retro", href: "/retro-appliance-repair/", },
       { label: "Big Chill", href: "/big-chill-appliance-repair/" },
       {  label: "Elmira Stove Works",  href: "/elmira-stove-works-appliance-repair/",},
