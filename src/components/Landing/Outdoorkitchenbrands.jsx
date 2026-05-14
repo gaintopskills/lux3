@@ -71,17 +71,17 @@ const ServiceForm = ({
 
 const OutdoorKitchenLanding = () => {
   const brands = [
-    { name: 'Kalamazoo', image: '/logo/kalamazoo.png', width: 220, height: 70 },
-    { name: 'Lynx', image: '/logo/lynx.png', width: 180, height: 70 },
+    { name: 'Kalamazoo', image: '/logo/kalamazoo-logo.png', width: 220, height: 70 },
+    { name: 'Lynx', image: '/logo/lynx-logo.png', width: 180, height: 70 },
     { name: 'Hestan', image: '/logo/hestan.png', width: 220, height: 70 },
     { name: 'Viking', image: '/logo/viking.png', width: 150, height: 70 },
-    { name: 'DCS', image: '/logo/dcs.png', width: 160, height: 70 },
-    { name: 'Alfresco', image: '/logo/alfresco.png', width: 220, height: 70 },
-    { name: 'Twin Eagles', image: '/logo/twin-eagles.png', width: 220, height: 70 },
-    { name: 'Fire Magic', image: '/logo/fire-magic.png', width: 220, height: 70 },
+    { name: 'DCS', image: '/logo/dcs-logo.png', width: 160, height: 70 },
+    { name: 'Alfresco', image: '/logo/alfresco-logo.png', width: 220, height: 70 },
+    { name: 'Twin Eagles', image: '/logo/twin-eagles-logo.png', width: 220, height: 70 },
+    { name: 'Fire Magic', image: '/logo/fire-magic-logo.png', width: 220, height: 70 },
     { name: 'Wolf', image: '/logo/wolf.png', width: 180, height: 70 },
     { name: 'True Residential Outdoor', image: '/logo/true-residential.png', width: 190, height: 70 },
-    { name: 'Caliber', image: '/logo/caliber.png', width: 220, height: 70 },
+    { name: 'Caliber', image: '/logo/caliber-logo.png', width: 220, height: 70 },
   ];
 
   const features = [
