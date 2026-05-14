@@ -69,7 +69,7 @@ const ServiceForm = ({
 
 const ProStyleApplianceRepairLanding = () => {
   const brands = [
-    { name: 'American Range', image: '/logo/american-range-logo.png', width: 220, height: 70 },
+    { name: 'American Range', image: '/logo/american-range.png', width: 220, height: 70 },
     { name: 'BlueStar', image: '/logo/bluestar-logo.png', width: 190, height: 70 },
     { name: 'FiveStar', image: '/logo/fivestar-logo.png', width: 190, height: 70 },
     { name: 'Thor', image: '/logo/thor-logo.png', width: 170, height: 70 },
