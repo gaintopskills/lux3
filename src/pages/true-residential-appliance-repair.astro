@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import '../components/Areas.css';
+import Areas from '../components/Areas.jsx';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -200,18 +202,9 @@ const structuredData = {
     <li><strong>Final Testing & Immaculate Clean-Up</strong><br>We test functionality thoroughly and leave your space as we found it—clean, quiet, and pristine.</li>
   </ol>
 </section>
+    <h2>Areas We Serve for True Residential Appliance Repair</h2>
 
-<section>
-  <h3>📍 Serving Luxury Homes Across Southern California</h3>
-  <p><strong>ZARICCI</strong> offers white-glove True Residential appliance repair in:</p>
-  <ul>
-    <li><strong>Los Angeles County</strong> – Beverly Hills, Bel Air, West Hollywood, Brentwood, Pacific Palisades</li>
-    <li><strong>Orange County</strong> – Newport Beach, Laguna Beach, Irvine</li>
-    <li><strong>Ventura County</strong> – Thousand Oaks, Westlake Village, Calabasas</li>
-  </ul>
-  <p>Whether your True fridge is part of a chef’s kitchen, an entertainer’s wet bar, or a curated wine room, <strong>ZARICCI</strong> delivers service that complements the space it protects.</p>
-</section>
-
+    <Areas client:visible />
 <section>
   <h3>When Only Flawless Matters, Trust ZARICCI</h3>
   <p>True Residential appliances were built for uncompromising performance and bold, commercial-inspired design. At <strong>ZARICCI</strong>, we bring that same level of integrity to every service call—with certified care, technical precision, and white-glove handling that respects your time and space.</p>

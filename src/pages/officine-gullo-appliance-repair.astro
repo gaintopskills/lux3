@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ParallaxHeader from '../components/Header/OfficineGullo.jsx'
+import '../components/Areas.css';
+import Areas from '../components/Areas.jsx';
 import '../styles/global.css';
 
 const structuredData = {
@@ -344,41 +346,9 @@ const structuredData = {
         <li><strong>Maintenance Guidance:</strong> When appropriate, we provide recommendations to help protect long-term performance.</li>
       </ul>
     </section>
+    <h2>Areas We Serve for Officine Gullo Appliance Repair</h2>
 
-    <section>
-      <h2>Areas We Serve for Officine Gullo Appliance Repair</h2>
-      <p>
-        We provide <strong>Officine Gullo appliance repair across Los Angeles, Ventura County, and Orange County</strong>,
-        including
-        <strong>
-          <a href="/los-angeles/">Los Angeles</a>,
-          <a href="/brentwood/">Brentwood</a>,
-          <a href="/pasadena/">Pasadena</a>,
-          <a href="/bel-air/">Bel Air</a>,
-          <a href="/pacific-palisades/">Pacific Palisades</a>,
-          <a href="/santa-monica/">Santa Monica</a>,
-          <a href="/beverly-hills/">Beverly Hills</a>,
-          <a href="/calabasas/">Calabasas</a>,
-          <a href="/thousand-oaks/">Thousand Oaks</a>,
-          <a href="/west-hollywood/">West Hollywood</a>,
-          <a href="/san-marino/">San Marino</a>,
-          <a href="/malibu/">Malibu</a>,
-          <a href="/manhattan-beach/">Manhattan Beach</a>,
-          <a href="/encino/">Encino</a>,
-          <a href="/rancho-palos-verdes/">Rancho Palos Verdes</a>,
-          <a href="/palos-verdes-estates/">Palos Verdes Estates</a>,
-          <a href="/rolling-hills-estates/">Rolling Hills Estates</a>,
-          <a href="/westwood/">Westwood</a>,
-          <a href="/century-city/">Century City</a>,
-          <a href="/la-canada-flintridge/">La Cañada Flintridge</a>,
-          Irvine,
-          Newport Beach,
-          Laguna Beach,
-          and Huntington Beach
-        </strong>.
-      </p>
-    </section>
-
+    <Areas client:visible />
     <section>
       <h2>Luxury Service for a Rare Italian Appliance Brand</h2>
       <p>Officine Gullo appliances are distinctive because they combine Italian design, custom kitchen craftsmanship, and professional-style cooking performance. These appliances are often installed in high-value homes where appearance, function, and careful handling all matter.</p>

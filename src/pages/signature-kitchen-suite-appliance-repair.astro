@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import '../components/Areas.css';
+import Areas from '../components/Areas.jsx';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -206,17 +208,9 @@ const structuredData = {
     <li><strong>Final Testing & Immaculate Clean-Up</strong><br>We test functionality, sanitize surfaces, and leave your kitchen exactly as we found it—spotless and undisturbed.</li>
   </ol>
 </section>
+    <h2>Areas We Serve for Signature Kitchen Suite Appliance Repair</h2>
 
-<section>
-  <h3>📍 Signature Kitchen Suite Service Areas</h3>
-  <p><strong>ZARICCI</strong> provides expert SKS appliance repair throughout:</p>
-  <ul>
-    <li><strong>Los Angeles County</strong> – Beverly Hills, Bel Air, Pacific Palisades, Brentwood, West Hollywood</li>
-    <li><strong>Orange County</strong> – Newport Beach, Laguna Niguel, Irvine</li>
-    <li><strong>Ventura County</strong> – Calabasas, Westlake Village, Thousand Oaks</li>
-  </ul>
-  <p>Whether your SKS kitchen is part of a smart estate or a culinary showpiece, <strong>ZARICCI</strong> delivers white-glove service worthy of the architecture that surrounds it.</p>
-</section>
+    <Areas client:visible />
 
 <section>
   <h3>When Only Flawless Matters, Trust ZARICCI</h3>

@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import '../components/Areas.css';
+import Areas from '../components/Areas.jsx';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -173,12 +175,11 @@ const structuredData = {
     <li><strong>Energy Efficiency:</strong> A well-tuned Thermador appliance runs more efficiently, reducing overall energy costs.</li>
   </ul>
 </section>
-
 <section>
   <h3>Schedule Your Thermador Repair Today</h3>
   <p>Don’t let a malfunctioning Thermador appliance hamper your culinary creativity. Contact us now to book a Thermador repair appointment with <strong>Luxury Appliance Repair by Zaricci</strong>. Our certified technicians, genuine parts, and unwavering commitment to quality ensure your appliance continues to deliver the professional-grade performance you expect from this prestigious brand.</p>
 </section>
-
+    <h2>Areas We Serve for Thermador Appliance Repair</h2>
+    <Areas client:visible />
 </div>
 </Layout>
-

@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import '../components/Areas.css';
+import Areas from '../components/Areas.jsx';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -194,12 +196,9 @@ const structuredData = {
     <li><strong>Final Testing & Warranty Guarantee:</strong> We verify your appliance is working perfectly, clean up, and back our work with a warranty for your peace of mind.</li>
   </ul>
 </section>
+    <h2>Areas We Serve for Smeg Appliance Repair</h2>
 
-<section>
-  <h3>🌎 Serving Los Angeles & Surrounding Design-Conscious Communities</h3>
-  <p>From the style-centric homes of Beverly Hills, Santa Monica, and West Hollywood to the minimalist modern spaces of Pasadena and Malibu, <strong>Zaricci</strong> is the trusted name in Smeg appliance repair across Los Angeles and beyond.</p>
-</section>
-
+    <Areas client:visible />
 <section>
   <h3>Designed to Stand Out. Repaired to Last.</h3>
   <p>Smeg appliances make a bold statement—and deserve a service experience that matches their elegance. At <strong>Luxury Appliance Repair by Zaricci</strong>, we deliver precision workmanship, style-conscious repairs, and white-glove care designed specifically for Smeg owners who demand more than the basics.</p>

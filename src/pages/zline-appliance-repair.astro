@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 import ParallaxHeader from '../components/Header/Zline.jsx'
+import '../components/Areas.css';
+import Areas from '../components/Areas.jsx';
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -246,33 +248,9 @@ const structuredData = {
     ZLINE appliances combine bold design with high-performance cooking, and when something stops working properly, accurate repair matters. At <strong>Luxury Appliance Repair by Zaricci</strong>, we provide professional ZLINE appliance repair with careful diagnosis, quality workmanship, and respect for your appliance, cabinetry, and surrounding kitchen finishes.
   </p>
 </section>
-<section>
-  <h2>Areas We Serve for ZLINE Appliance Repair</h2>
-<p>
-  We provide <strong>ZLINE appliance repair in Los Angeles and nearby communities</strong>,
-  including
-  <strong>
-  <a href="/los-angeles/">Los Angeles</a>,
-    <a href="/brentwood/">Brentwood</a>,
-    <a href="/pasadena/">Pasadena</a>,
-    <a href="/bel-air/">Bel Air</a>,
-    <a href="/pacific-palisades/">Pacific Palisades</a>,
-    <a href="/santa-monica/">Santa Monica</a>,
-    <a href="/beverly-hills/">Beverly Hills</a>,
-    <a href="/calabasas/">Calabasas</a>,
-    <a href="/thousand-oaks/">Thousand Oaks</a>,
-    <a href="/west-hollywood/">West Hollywood</a>,
-    <a href="/san-marino/">San Marino</a>,
-    <a href="/malibu/">Malibu</a>,
-    <a href="/manhattan-beach/">Manhattan Beach</a>,
-    <a href="/encino/">Encino</a>,
-    <a href="/rancho-palos-verdes/">Rancho Palos Verdes</a>,
-    <a href="/palos-verdes-estates/">Palos Verdes Estates</a>,
-    <a href="/rolling-hills-estates/">Rolling Hills Estates</a>,
-    <a href="/westwood/">Westwood</a>,
-    <a href="/century-city/">Century City</a>,
-    and <a href="/la-canada-flintridge/">La Cañada Flintridge</a></strong>.</p> 
-</section>
+    <h2>Areas We Serve for ZLINE Appliance Repair</h2>
+
+    <Areas client:visible />
 <section>
   <h2>📞 Schedule Your ZLINE Appliance Repair Today</h2>
   <p>Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online now.<br>Experience white-glove service, rapid diagnostics, and lasting performance from certified ZLINE professionals.</p>

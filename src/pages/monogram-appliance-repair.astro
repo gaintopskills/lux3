@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import '../components/Areas.css';
+import Areas from '../components/Areas.jsx';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -202,17 +204,9 @@ const structuredData = {
     <li><strong>Final Testing & Immaculate Clean-Up</strong><br>After verifying performance, we clean our workspace, polish appliance surfaces, and leave your home exactly as we found it.</li>
   </ol>
 </section>
+    <h2>Areas We Serve for Monogram Appliance Repair</h2>
 
-<section>
-  <h3>📍 Where We Service Monogram Appliances</h3>
-  <p><strong>ZARICCI</strong> proudly offers Monogram appliance repair in luxury communities across:</p>
-  <ul>
-    <li><strong>Los Angeles County</strong> – Beverly Hills, Brentwood, Bel Air, Santa Monica, Studio City, West Hollywood</li>
-    <li><strong>Orange County</strong> – Newport Beach, Irvine, Laguna Beach</li>
-    <li><strong>Ventura County</strong> – Calabasas, Thousand Oaks, Westlake Village</li>
-  </ul>
-  <p>Whether your Monogram appliances are in a hillside estate, coastal retreat, or high-rise penthouse, <strong>ZARICCI</strong> delivers a seamless repair experience worthy of your home.</p>
-</section>
+    <Areas client:visible />
 
 <section>
   <h3>When Performance and Appearance Matter, Trust ZARICCI</h3>
