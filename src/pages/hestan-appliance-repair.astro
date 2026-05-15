@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ParallaxHeader from '../components/Header/Hestan.jsx'
+import '../components/Areas.css';
+import Areas from '../components/Areas.jsx';
 import '../styles/global.css';
 const structuredData ={ 
 "@context": "https://schema.org", "@graph": [ { "@type": "WebPage", "@id": "https://luxuryappliance.repair/hestan-appliance-repair/#webpage", "url": "https://luxuryappliance.repair/hestan-appliance-repair/", "name": "Hestan Appliance Repair | Luxury Appliance Repair by Zaricci", "description": "Expert Hestan appliance repair in Los Angeles for Hestan ranges, rangetops, cooktops, ovens, refrigerators, and ventilation systems.", "mainEntity": { "@id": "https://luxuryappliance.repair/hestan-appliance-repair/#service" }, "primaryImageOfPage": { "@type": "ImageObject", "url": "https://luxuryappliance.repair/hestan/hestan-appliance-repair-services.webp" } }, { "@type": "Service", "@id": "https://luxuryappliance.repair/hestan-appliance-repair/#service", "name": "Hestan Appliance Repair", "url": "https://luxuryappliance.repair/hestan-appliance-repair/", "mainEntityOfPage": { "@id": "https://luxuryappliance.repair/hestan-appliance-repair/#webpage" }, "serviceType": "Hestan appliance repair", "description": "Luxury Appliance Repair by Zaricci specializes in Hestan appliance repair, and maintenance for Hestan gas ranges, induction ranges, gas rangetops, induction rangetops, cooktops, ovens, refrigerators, and ventilation systems. Our technicians use precision diagnostics and premium parts for Hestan appliances across Los Angeles and surrounding communities.", "provider": { "@id": "https://luxuryappliance.repair/#localbusiness" }, "brand": { "@type": "Brand", "name": "Hestan", "sameAs": "https://hestanappliances.com/" }, 
@@ -172,37 +174,8 @@ const structuredData ={
         </li>
       </ol>
     </section>
-
-    <section>
-      <h2>Areas We Serve for Hestan Appliance Repair</h2>
-      <p>
-        We provide <strong>Hestan appliance repair in Los Angeles and nearby communities</strong>,
-        including
-        <strong>
-          <a href="/los-angeles/">Los Angeles</a>,
-          <a href="/brentwood/">Brentwood</a>,
-          <a href="/pasadena/">Pasadena</a>,
-          <a href="/bel-air/">Bel Air</a>,
-          <a href="/pacific-palisades/">Pacific Palisades</a>,
-          <a href="/santa-monica/">Santa Monica</a>,
-          <a href="/beverly-hills/">Beverly Hills</a>,
-          <a href="/calabasas/">Calabasas</a>,
-          <a href="/thousand-oaks/">Thousand Oaks</a>,
-          <a href="/west-hollywood/">West Hollywood</a>,
-          <a href="/san-marino/">San Marino</a>,
-          <a href="/malibu/">Malibu</a>,
-          <a href="/manhattan-beach/">Manhattan Beach</a>,
-          <a href="/encino/">Encino</a>,
-          <a href="/rancho-palos-verdes/">Rancho Palos Verdes</a>,
-          <a href="/palos-verdes-estates/">Palos Verdes Estates</a>,
-          <a href="/rolling-hills-estates/">Rolling Hills Estates</a>,
-          <a href="/westwood/">Westwood</a>,
-          <a href="/century-city/">Century City</a>,
-          and <a href="/la-canada-flintridge/">La Cañada Flintridge</a>
-        </strong>.
-      </p>
-    </section>
-
+   <h2>Areas We Serve for Hestan Appliance Repair</h2>
+    <Areas client:visible />
     <section>
       <h2>Schedule Hestan Appliance Repair in Los Angeles</h2>
       <p>

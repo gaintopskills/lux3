@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ParallaxHeader from '../components/Header/Elmira.jsx'
+import '../components/Areas.css';
+import Areas from '../components/Areas.jsx';
 import '../styles/global.css';
 const structuredData = { "@context": "https://schema.org", "@graph": [ { "@type": "WebPage", "@id": "https://luxuryappliance.repair/elmira-stove-works-appliance-repair/#webpage", "url": "https://luxuryappliance.repair/elmira-stove-works-appliance-repair/", "name": "Elmira Stove Works Appliance Repair | Luxury Appliance Repair by Zaricci", "description": "Expert Elmira Stove Works appliance repair, installation, and maintenance in Los Angeles for Elmira Stove Works ranges, refrigerators, wall ovens, dishwasher panel systems, and hoods.", "mainEntity": { "@id": "https://luxuryappliance.repair/elmira-stove-works-appliance-repair/#service" }, "primaryImageOfPage": { "@type": "ImageObject", "url": "https://luxuryappliance.repair/elmira/elmira-stove-works-repair-services.webp" } }, { "@type": "Service", "@id": "https://luxuryappliance.repair/elmira-stove-works-appliance-repair/#service", "name": "Elmira Stove Works Appliance Repair", "url": "https://luxuryappliance.repair/elmira-stove-works-appliance-repair/", "mainEntityOfPage": { "@id": "https://luxuryappliance.repair/elmira-stove-works-appliance-repair/#webpage" }, "serviceType": "Elmira Stove Works appliance repair", "description": "Luxury Appliance Repair by Zaricci specializes in Elmira Stove Works appliance repair, installation, and maintenance for Elmira Stove Works Heritage and Northstar ranges, refrigerators, wall ovens, dishwasher panel systems, and hoods. Our technicians use precision diagnostics and premium parts for Elmira Stove Works appliances across Los Angeles and surrounding communities.", "provider": { "@id": "https://luxuryappliance.repair/#localbusiness" }, "brand": { "@type": "Brand", "name": "Elmira Stove Works", "sameAs": "https://elmirastoveworks.com/" }, 
     "areaServed": [
@@ -163,32 +165,9 @@ const structuredData = { "@context": "https://schema.org", "@graph": [ { "@type"
   </p>
 </section>
 <section>
-  <h2>Areas We Serve for Elmira Stove Works Appliance Repair</h2>
-<p>
-  We provide <strong>Elmira Stove Works appliance repair in Los Angeles and nearby communities</strong>,
-  including
-  <strong>
-  <a href="/los-angeles/">Los Angeles</a>,
-    <a href="/brentwood/">Brentwood</a>,
-    <a href="/pasadena/">Pasadena</a>,
-    <a href="/bel-air/">Bel Air</a>,
-    <a href="/pacific-palisades/">Pacific Palisades</a>,
-    <a href="/santa-monica/">Santa Monica</a>,
-    <a href="/beverly-hills/">Beverly Hills</a>,
-    <a href="/calabasas/">Calabasas</a>,
-    <a href="/thousand-oaks/">Thousand Oaks</a>,
-    <a href="/west-hollywood/">West Hollywood</a>,
-    <a href="/san-marino/">San Marino</a>,
-    <a href="/malibu/">Malibu</a>,
-    <a href="/manhattan-beach/">Manhattan Beach</a>,
-    <a href="/encino/">Encino</a>,
-    <a href="/rancho-palos-verdes/">Rancho Palos Verdes</a>,
-    <a href="/palos-verdes-estates/">Palos Verdes Estates</a>,
-    <a href="/rolling-hills-estates/">Rolling Hills Estates</a>,
-    <a href="/westwood/">Westwood</a>,
-    <a href="/century-city/">Century City</a>,
-    and <a href="/la-canada-flintridge/">La Cañada Flintridge</a></strong>.</p> 
-</section>
+   <h2>Areas We Serve for Elmira Stove Works Appliance Repair</h2>
+
+    <Areas client:visible />
 <section>
   <h2>Schedule Elmira Stove Works Appliance Repair Today</h2>
   <p>
