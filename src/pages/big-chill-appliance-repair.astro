@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ParallaxHeader from '../components/Header/Big-Chill.jsx'
+import '../components/Areas.css';
+import Areas from '../components/Areas.jsx';
 import '../styles/global.css';
 
 const structuredData = {
@@ -682,36 +684,8 @@ const structuredData = {
 </section>
 
 <section>
-  <h2>
-    Schedule Big Chill Appliance Repair in Los Angeles & Nearby Areas
-  </h2>
-
-  <p>
-    If your
-    <strong>
-      Big Chill refrigerator,
-      range,
-      stove,
-      oven,
-      dishwasher,
-      or hood
-    </strong>
-    is not performing the way it should,
-    prompt service can help restore performance and reduce the risk of more expensive repairs later.
-  </p>
-
-  <p>
-    <strong>
-      Call Luxury Appliance Repair by Zaricci
-    </strong>
-    or book online for professional
-    <strong>
-      Big Chill appliance repair in Los Angeles and nearby areas
-    </strong>,
-    including repair,
-    installation,
-    and maintenance for luxury kitchens.
-  </p>
+  <h2>Big Chill Appliance Repair Service Areas</h2>
+ <Areas client:visible />
 </section>
 </div>
 </Layout>
