@@ -2,16 +2,548 @@
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 const structuredData = {
-	"@context": "https://schema.org",
-	"@type": "WebPage",
-	"name": "Welcome to Luxury Appliance Repair by Zaricci",
-	"description": "High-End Appliance Repair services",
-	"publisher": {
-		"@type": "Organization",
-		"name": "Zaricci",
-	},
-	"datePublished": new Date().toISOString(),
-	"dateModified": new Date().toISOString()
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/oven-repair/#webpage",
+      "url": "https://luxuryappliance.repair/oven-repair/",
+      "name": "High-End Oven Repair | Luxury Appliance Repair by Zaricci",
+      "description": "High-end oven repair for luxury ovens, wall ovens, steam ovens, convection ovens, dual-fuel ovens, and professional-grade ovens from brands like Wolf, Thermador, La Cornue, Miele, Gaggenau, Viking, JennAir, Bosch, and Dacor.",
+      "isPartOf": {
+        "@id": "https://luxuryappliance.repair/#website"
+      },
+      "about": {
+        "@id": "https://luxuryappliance.repair/oven-repair/#service"
+      },
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/oven-repair/#service"
+      },
+      "breadcrumb": {
+        "@id": "https://luxuryappliance.repair/oven-repair/#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://luxuryappliance.repair/oven-repair/#primaryimage"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://luxuryappliance.repair/#website",
+      "url": "https://luxuryappliance.repair/",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "publisher": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://luxuryappliance.repair/oven-repair/#primaryimage",
+      "url": "https://luxuryappliance.repair/og-default.webp",
+      "contentUrl": "https://luxuryappliance.repair/og-default.webp",
+      "caption": "High-end oven repair by Luxury Appliance Repair by Zaricci"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://luxuryappliance.repair/oven-repair/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://luxuryappliance.repair/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Oven Repair",
+          "item": "https://luxuryappliance.repair/oven-repair/"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/oven-repair/#service",
+      "name": "High-End Oven Repair",
+      "alternateName": [
+        "Luxury Oven Repair",
+        "Premium Oven Repair",
+        "Wall Oven Repair",
+        "Convection Oven Repair",
+        "Steam Oven Repair",
+        "Dual Fuel Oven Repair",
+        "Professional Oven Repair"
+      ],
+      "url": "https://luxuryappliance.repair/oven-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/oven-repair/#webpage"
+      },
+      "serviceType": "High-end oven repair",
+      "category": [
+        "Luxury appliance repair",
+        "Oven repair",
+        "High-end appliance repair",
+        "Residential appliance repair"
+      ],
+      "description": "Luxury Appliance Repair by Zaricci provides high-end oven repair for luxury ovens, wall ovens, convection ovens, steam ovens, smart ovens, dual-fuel ovens, and professional-grade ovens. Services include diagnostics and repair for ovens not heating, slow preheating, uneven baking, convection fan problems, smart display issues, damaged gaskets, broken hinges, self-cleaning failure, thermostat problems, and control panel malfunctions.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "brand": [
+        {
+          "@type": "Brand",
+          "name": "Wolf"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thermador"
+        },
+        {
+          "@type": "Brand",
+          "name": "La Cornue"
+        },
+        {
+          "@type": "Brand",
+          "name": "Gaggenau"
+        },
+        {
+          "@type": "Brand",
+          "name": "Miele"
+        },
+        {
+          "@type": "Brand",
+          "name": "Viking"
+        },
+        {
+          "@type": "Brand",
+          "name": "JennAir"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bosch"
+        },
+        {
+          "@type": "Brand",
+          "name": "Dacor"
+        },
+        {
+          "@type": "Brand",
+          "name": "AGA"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bertazzoni"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fulgor Milano"
+        },
+        {
+          "@type": "Brand",
+          "name": "ILVE"
+        },
+        {
+          "@type": "Brand",
+          "name": "Lacanche"
+        },
+        {
+          "@type": "Brand",
+          "name": "Officine Gullo"
+        },
+        {
+          "@type": "Brand",
+          "name": "American Range"
+        },
+        {
+          "@type": "Brand",
+          "name": "BlueStar"
+        },
+        {
+          "@type": "Brand",
+          "name": "FiveStar"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thor"
+        },
+        {
+          "@type": "Brand",
+          "name": "Forno"
+        },
+        {
+          "@type": "Brand",
+          "name": "Garland"
+        },
+        {
+          "@type": "Brand",
+          "name": "ZLINE"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fisher & Paykel"
+        },
+        {
+          "@type": "Brand",
+          "name": "Monogram"
+        },
+        {
+          "@type": "Brand",
+          "name": "Signature Kitchen Suite"
+        },
+        {
+          "@type": "Brand",
+          "name": "Hestan"
+        },
+        {
+          "@type": "Brand",
+          "name": "Big Chill"
+        },
+        {
+          "@type": "Brand",
+          "name": "Elmira Stove Works"
+        },
+        {
+          "@type": "Brand",
+          "name": "Smeg"
+        },
+        {
+          "@type": "Brand",
+          "name": "Heartland"
+        },
+        {
+          "@type": "Brand",
+          "name": "Asko"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Los Angeles",
+          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Beverly Hills"
+        },
+        {
+          "@type": "City",
+          "name": "Santa Monica"
+        },
+        {
+          "@type": "Place",
+          "name": "Brentwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Pasadena",
+          "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Malibu"
+        },
+        {
+          "@type": "City",
+          "name": "West Hollywood"
+        },
+        {
+          "@type": "Place",
+          "name": "Bel Air",
+          "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Pacific Palisades",
+          "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Calabasas"
+        },
+        {
+          "@type": "City",
+          "name": "San Marino"
+        },
+        {
+          "@type": "Place",
+          "name": "Encino",
+          "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Manhattan Beach"
+        },
+        {
+          "@type": "City",
+          "name": "Rancho Palos Verdes"
+        },
+        {
+          "@type": "City",
+          "name": "Palos Verdes Estates"
+        },
+        {
+          "@type": "City",
+          "name": "Rolling Hills Estates"
+        },
+        {
+          "@type": "Place",
+          "name": "Westwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Century City",
+          "sameAs": "https://en.wikipedia.org/wiki/Century_City"
+        },
+        {
+          "@type": "City",
+          "name": "La Cañada Flintridge"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Orange County",
+          "sameAs": "https://en.wikipedia.org/wiki/Orange_County,_California"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ventura County",
+          "sameAs": "https://en.wikipedia.org/wiki/Ventura_County,_California"
+        }
+      ],
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://luxuryappliance.repair/oven-repair/",
+        "servicePhone": {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "High-End Oven Repair Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Luxury Oven Repair",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Luxury Oven Repair",
+              "serviceType": "High-end oven repair",
+              "description": "Repair for luxury ovens that are not heating, preheating slowly, baking unevenly, overheating, failing to maintain temperature, or showing performance problems."
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Wall Oven Repair",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wall Oven Repair",
+              "serviceType": "Wall oven repair",
+              "description": "Diagnosis and repair for built-in wall ovens with heating problems, control faults, door issues, display problems, temperature sensor failures, and convection performance issues."
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Convection Oven Repair",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Convection Oven Repair",
+              "serviceType": "Convection oven repair",
+              "description": "Repair for convection ovens with fan problems, airflow issues, uneven baking, heating failures, sensor faults, and control board malfunctions."
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Steam Oven Repair",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Steam Oven Repair",
+              "serviceType": "Steam oven repair",
+              "description": "Repair for premium steam ovens with water system issues, heating problems, steam generation failure, touch control issues, sensor faults, and performance problems."
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Smart Oven Repair",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Smart Oven Repair",
+              "serviceType": "Smart oven repair",
+              "description": "Repair for smart ovens with display glitches, connectivity problems, control panel malfunctions, software-related response issues, and electronic control failures."
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Dual Fuel Oven Repair",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dual Fuel Oven Repair",
+              "serviceType": "Dual fuel oven repair",
+              "description": "Repair for dual fuel ovens and professional ranges with oven heating problems, thermostat issues, ignition problems, control failures, and inconsistent baking performance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Oven Door, Gasket, and Hinge Repair",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Oven Door, Gasket, and Hinge Repair",
+              "serviceType": "Oven door repair",
+              "description": "Repair for broken oven door hinges, damaged gaskets, poor sealing, heat loss, door alignment problems, and related oven performance concerns."
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Oven Control Panel and Thermostat Repair",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Oven Control Panel and Thermostat Repair",
+              "serviceType": "Oven electronic control repair",
+              "description": "Diagnosis and repair for oven control panel failures, thermostat malfunctions, temperature sensor problems, display issues, and electronic control board faults."
+            }
+          }
+        ]
+      },
+      "knowsAbout": [
+        "High-end oven repair",
+        "Luxury oven repair",
+        "Wall oven repair",
+        "Convection oven repair",
+        "Steam oven repair",
+        "Smart oven repair",
+        "Dual fuel oven repair",
+        "Professional oven repair",
+        "Oven not heating",
+        "Oven preheating slowly",
+        "Uneven oven temperature",
+        "Oven convection fan repair",
+        "Oven control panel repair",
+        "Oven thermostat repair",
+        "Oven gasket repair",
+        "Oven door hinge repair",
+        "Self-cleaning oven failure",
+        "Wolf oven repair",
+        "Thermador oven repair",
+        "La Cornue oven repair",
+        "Gaggenau oven repair",
+        "Miele oven repair",
+        "Viking oven repair",
+        "JennAir oven repair",
+        "Bosch oven repair",
+        "Dacor oven repair"
+      ],
+      "keywords": [
+        "high-end oven repair",
+        "luxury oven repair",
+        "oven repair Los Angeles",
+        "Wolf oven repair",
+        "Thermador oven repair",
+        "La Cornue oven repair",
+        "Gaggenau oven repair",
+        "Miele oven repair",
+        "Viking oven repair",
+        "JennAir oven repair",
+        "Bosch oven repair",
+        "Dacor oven repair",
+        "wall oven repair",
+        "steam oven repair",
+        "convection oven repair",
+        "smart oven repair",
+        "dual fuel oven repair"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp"
+      },
+      "image": "https://luxuryappliance.repair/cities/los-angeles/oven-repair-los-angeles.webp",
+      "telephone": "+1-424-499-7788",
+      "email": "info@luxuryappliance.repair",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "814 S. Westgate Ave #119",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA",
+        "postalCode": "90049",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Los Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Beverly Hills"
+        },
+        {
+          "@type": "City",
+          "name": "Santa Monica"
+        },
+        {
+          "@type": "City",
+          "name": "Pasadena"
+        },
+        {
+          "@type": "City",
+          "name": "Malibu"
+        },
+        {
+          "@type": "City",
+          "name": "West Hollywood"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Orange County"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ventura County"
+        }
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service",
+          "areaServed": [
+            "Los Angeles",
+            "Orange County",
+            "Ventura County"
+          ],
+          "availableLanguage": [
+            "English"
+          ]
+        }
+      ],
+      "knowsAbout": [
+        "Luxury appliance repair",
+        "High-end appliance repair",
+        "Oven repair",
+        "Wall oven repair",
+        "Steam oven repair",
+        "Convection oven repair",
+        "Professional-grade oven repair",
+        "European appliance repair",
+        "Premium kitchen appliance repair"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@id": "https://luxuryappliance.repair/oven-repair/#service"
+          }
+        }
+      ]
+    }
+  ]
 };
 // Example breadcrumbs for the home page
 const breadcrumbs = [
