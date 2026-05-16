@@ -64,7 +64,7 @@ const brands = [
   },
   {
     name: "American Range",
-    href: "/american-range-appliance-repair/",
+    href: "/american-range-repair/",
     img: "/logo/american-range.png",
     alt: "American Range appliance repair logo"
   },
