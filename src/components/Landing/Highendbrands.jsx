@@ -73,7 +73,7 @@ const ServiceForm = ({
 
 const HighEndApplianceRepairLanding = () => {
   const brands = [
-    { name: 'Asko', image: '/logo/asco-logo.png', width: 180, height: 70 },
+    { name: 'Asko', image: '/logo/asko-logo.png', width: 180, height: 70 },
     { name: 'Bosch', image: '/logo/bosch-logo.png', width: 180, height: 70 },
     { name: 'JennAir', image: '/logo/jennair-logo.png', width: 190, height: 70 },
   ];
