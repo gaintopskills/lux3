@@ -249,18 +249,6 @@ const brands = [
     alt: "Fire Magic appliance repair logo"
   },
   {
-    name: "Wolf Outdoors",
-    href: "/wolf-outdoor-appliance-repair/",
-    img: "/logo/wolf-appliance-repair.png",
-    alt: "Wolf outdoor appliance repair logo"
-  },
-  {
-    name: "True Residential Outdoor",
-    href: "/true-residential-outdoor-appliance-repair/",
-    img: "/logo/true-residential-appliance-repair.png",
-    alt: "True Residential outdoor appliance repair logo"
-  },
-  {
     name: "Caliber",
     href: "/caliber-appliance-repair/",
     img: "/logo/caliber-logo.png",
