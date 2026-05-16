@@ -52,7 +52,7 @@ const brands = [
   },
   {
     name: "Liebherr",
-    href: "/liebherr-appliance-repair/",
+    href: "/liebherr-repair/",
     img: "/logo/liebherr-logo.png",
     alt: "Liebherr appliance repair logo"
   },
