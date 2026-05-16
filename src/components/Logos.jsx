@@ -251,13 +251,13 @@ const brands = [
   {
     name: "Wolf Outdoors",
     href: "/wolf-outdoor-appliance-repair/",
-    img: "/logo/wolf.png",
+    img: "/logo/wolf-appliance-repair.png",
     alt: "Wolf outdoor appliance repair logo"
   },
   {
     name: "True Residential Outdoor",
     href: "/true-residential-outdoor-appliance-repair/",
-    img: "/logo/true-residential.png",
+    img: "/logo/true-residential-appliance-repair.png",
     alt: "True Residential outdoor appliance repair logo"
   },
   {
