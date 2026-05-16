@@ -106,7 +106,7 @@ const brands = [
   },
   {
     name: "Sub-Zero",
-    href: "/sub-zero-appliance-repair/",
+    href: "/sub-zero-repair/",
     img: "/logo/sub-zero-logo.png",
     alt: "Sub-Zero appliance repair logo"
   },
