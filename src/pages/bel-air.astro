@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Logos from '../components/Logos.jsx';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -235,6 +236,7 @@ const structuredData = {
   <p><strong>👉 ZARICCI — Because Bel Air Homes Deserve World-Class Repair.</strong></p>
 </section>
 
+  <Logos client:visible />
 
 </div>
 </Layout>
