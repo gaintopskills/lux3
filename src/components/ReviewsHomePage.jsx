@@ -416,7 +416,7 @@ export default function GoogleReviews() {
 
             <div className="summary-text">
               <strong>
-                30+ Google reviews
+                40+ Google reviews
               </strong>
 
               <span>
