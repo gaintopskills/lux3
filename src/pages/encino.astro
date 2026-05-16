@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Logos from '../components/Logos.jsx';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -247,7 +248,6 @@ const structuredData = {
   <p>Don’t let a broken appliance disrupt the elegance of your home.<br/>Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online now for same-day or next-day service in Encino.</p>
   <p><strong>👉 ZARICCI — Elite Appliance Repair for Encino’s Most Exceptional Homes.</strong></p>
 </section>
-
-
+ <Logos client:visible />
 </div>
 </Layout>

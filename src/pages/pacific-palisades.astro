@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Logos from '../components/Logos.jsx';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -266,6 +267,6 @@ const structuredData = {
   <p>Restore your premium appliances with the expertise they deserve.<br>Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online now for white-glove service in Pacific Palisades.</p>
   <p><strong>👉 ZARICCI — Precision Repairs for Pacific Palisades’ Most Beautiful Homes.</strong></p>
 </section>
-
+ <Logos client:visible />
 </div>
 </Layout>

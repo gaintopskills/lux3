@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Logos from '../components/Logos.jsx';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -248,5 +249,6 @@ const structuredData = {
       <p>Don’t wait until a minor issue becomes a major problem. Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online today for prompt, certified appliance repair in Beverly Hills.</p>
       <p><strong>👉 ZARICCI — Trusted by Beverly Hills’ Most Prestigious Homes.</strong></p>
     </section>
+     <Logos client:visible />
   </div>
 </Layout>

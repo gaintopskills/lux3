@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Logos from '../components/Logos.jsx';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -264,5 +265,6 @@ const structuredData = {
   <p>Protect your investment with the service it deserves.<br>Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online now for expert, white-glove service in Playa del Rey.</p>
   <p><strong>👉 ZARICCI — Precision Repairs for Playa del Rey’s Most Elegant Homes.</strong></p>
 </section>
+ <Logos client:visible />
 </div>
 </Layout>

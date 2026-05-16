@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Logos from '../components/Logos.jsx';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -246,6 +247,6 @@ const structuredData = {
   <p>If your premium appliance is underperforming, don’t wait for it to become a bigger problem.<br/>Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online now for trusted, local service that keeps your kitchen and laundry running flawlessly.</p>
   <p><strong>👉 ZARICCI — Precision Repairs for the Most Beautiful Homes in Thousand Oaks.</strong></p>
 </section>
-
+ <Logos client:visible />
 </div>
 </Layout>

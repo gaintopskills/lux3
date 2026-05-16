@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Logos from '../components/Logos.jsx';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -268,6 +269,6 @@ const structuredData = {
   <p>Don’t trust your high-end appliances to just anyone.<br>Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online now for expert, white-glove appliance service in Los Feliz.</p>
   <p><strong>👉 ZARICCI — Precision Repairs for Los Feliz’ Most Distinctive Homes.</strong></p>
 </section>
-
+ <Logos client:visible />
 </div>
 </Layout>

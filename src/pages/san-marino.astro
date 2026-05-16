@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Logos from '../components/Logos.jsx';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -264,6 +265,6 @@ const structuredData = {
   <p>Experience elite, precision repair service for the most prestigious homes in San Marino.<br>Call <strong>Luxury Appliance Repair by Zaricci</strong> or schedule your appointment online today.</p>
   <p><strong>👉 ZARICCI — Precision Repairs for San Marino’s Most Prestigious Homes.</strong></p>
 </section>
-
+ <Logos client:visible />
 </div>
 </Layout>

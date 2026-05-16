@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Logos from '../components/Logos.jsx';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -248,5 +249,6 @@ const structuredData = {
   <p>Experience elite, precision service crafted for West Hollywood’s most sophisticated homes.<br>Call <strong>Luxury Appliance Repair by Zaricci</strong> or schedule your appointment online today.</p>
   <p><strong>👉 ZARICCI — Precision Repairs for West Hollywood’s Most Prestigious Residences.</strong></p>
 </section>
+ <Logos client:visible />
 </div>
 </Layout>

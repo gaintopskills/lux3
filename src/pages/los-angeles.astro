@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import ParallaxHeader from '../components/Header/Los-Angeles.jsx';
 import Tabs from '../components/Tabs/LosAngeles.jsx'
 import Services from '../components/Services.jsx'
+import Logos from '../components/Logos.jsx';
 import '../styles/global.css';
 const structuredData = {
   "@context": "https://schema.org",
@@ -281,6 +282,6 @@ const structuredData = {
   <p>Don’t let anything disrupt the rhythm of your home.<br>Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online now for expert service trusted across Los Angeles.</p>
   <p><strong>👉 ZARICCI — Precision Repairs for Los Angeles’ Most Iconic Homes.</strong></p>
 </section>
-
+ <Logos client:visible />
 </div>
 </Layout>

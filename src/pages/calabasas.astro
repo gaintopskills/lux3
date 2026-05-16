@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Logos from '../components/Logos.jsx';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -253,7 +254,6 @@ const structuredData = {
   <p>Don’t let a broken appliance disrupt the rhythm of your home.<br/>Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online now for the expert service Calabasas trusts.</p>
   <p><strong>👉 ZARICCI — Elite Appliance Repair for Calabasas’ Finest Homes.</strong></p>
 </section>
-
-
+ <Logos client:visible />
 </div>
 </Layout>

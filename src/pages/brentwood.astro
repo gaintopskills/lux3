@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Logos from '../components/Logos.jsx';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -249,7 +250,6 @@ const structuredData = {
   <p>Don’t let a minor issue become a major disruption.<br/>Call <strong>Luxury Appliance Repair by Zaricci</strong> or schedule your appointment online to restore the performance your home was built around.</p>
   <p><strong>👉 ZARICCI — Elite Appliance Repair for Brentwood’s Finest Homes.</strong></p>
 </section>
-
-
+ <Logos client:visible />
 </div>
 </Layout>

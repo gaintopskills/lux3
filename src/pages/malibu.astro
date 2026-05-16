@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Logos from '../components/Logos.jsx';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -269,6 +270,6 @@ const structuredData = {
   <p>Don't trust your luxury appliances to anything less than the best.<br>Call <strong>Luxury Appliance Repair by Zaricci</strong> or book your appointment online for trusted, elite service in Malibu.</p>
   <p><strong>👉 ZARICCI — Precision Repairs for Malibu’s Most Beautiful Homes.</strong></p>
 </section>
-
+ <Logos client:visible />
 </div>
 </Layout>
