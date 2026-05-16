@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 import Logos from '../components/Logos.jsx';
+import Reviews from "../components/ReviewsHomePage.jsx";
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -269,5 +270,6 @@ const structuredData = {
   <p><strong>👉 ZARICCI — Precision Repairs for Hermosa Beach’s Most Elegant Homes.</strong></p>
 </section>
  <Logos client:visible />
+ <Reviews client:idle />
 </div>
 </Layout>
