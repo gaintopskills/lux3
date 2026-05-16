@@ -22,7 +22,7 @@ const brands = [
   },
   {
     name: "Gaggenau",
-    href: "/gaggenau-appliance-repair/",
+    href: "/gaggenau-repair/",
     img: "/logo/gaggenau-logo.png",
     alt: "Gaggenau appliance repair logo"
   },
