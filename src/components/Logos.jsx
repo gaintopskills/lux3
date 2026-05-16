@@ -100,7 +100,7 @@ const brands = [
   },
   {
     name: "ZLINE",
-    href: "/zline-appliance-repair/",
+    href: "/zline-repair/",
     img: "/logo/zline-logo.png",
     alt: "ZLINE appliance repair logo"
   },
