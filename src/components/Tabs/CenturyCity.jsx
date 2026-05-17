@@ -6,34 +6,33 @@ export const Tabs = () => {
   const [activeTab, setActiveTab] = useState(null);
   const containerRef = useRef(null);
   const itemRefs = useRef([]);
-
   const items = [
     {
       id: "range",
       title: "Range Repair",
-      heading: "Range Repair in Calabasas",
+      heading: "Range Repair in Century City",
       img: "/cities/range-repair.webp",
-      alt: "Range repair in Calabasas",
+      alt: "Range repair in Century City",
       description: (
         <>
           <p>
             Luxury Appliance Repair by Zaricci provides professional{" "}
-            <strong>range repair in Calabasas</strong> for gas ranges, dual-fuel
+            <strong>range repair in Century City</strong> for gas ranges, dual-fuel
             ranges, electric ranges, induction ranges, European ranges, retro
-            ranges, and professional-style cooking appliances. Calabasas homes
-            often feature custom kitchens, large islands, stone countertops,
-            premium ventilation, and built-in appliance suites, so we approach
-            every range repair with attention to safety, performance, and the
-            appearance of the kitchen.
+            ranges, and professional-style cooking appliances. Century City homes,
+            condos, penthouses, and high-rise residences often feature built-in
+            appliance suites, custom kitchen layouts, premium ventilation, and
+            carefully finished interiors, so we approach every range repair with
+            attention to safety, performance, and the surrounding design.
           </p>
   
           <p>
             Whether your range has weak burners, ignition problems, uneven oven
             temperatures, error codes, electrical failures, or a burner that keeps
             clicking, our technicians inspect the appliance carefully before
-            recommending repair. We focus on finding the real cause of the issue
-            while protecting surrounding cabinetry, floors, countertops, and
-            built-in installation details.
+            recommending repair. We focus on identifying the real cause of the
+            issue while protecting floors, cabinetry, countertops, and built-in
+            installation details.
           </p>
   
           <h3>Common Range Problems We Repair</h3>
@@ -54,7 +53,7 @@ export const Tabs = () => {
             <li>✅ Oven door not closing, sealing, or locking correctly</li>
             <li>✅ Range tripping the breaker</li>
             <li>✅ Igniters, spark modules, relays, thermostats, or sensors failing</li>
-            <li>✅ Luxury range maintenance and performance issues</li>
+            <li>✅ High-end range maintenance and performance issues</li>
           </ul>
   
           <h3>Range Brands We Repair</h3>
@@ -66,7 +65,7 @@ export const Tabs = () => {
               Range, BlueStar, FiveStar, Thor, Forno, Garland, ZLINE, Monogram,
               Signature Kitchen Suite, Hestan, Dacor, Fisher & Paykel, JennAir,
               Bosch, Smeg, Big Chill, Elmira Stove Works, Heartland, and other
-              luxury, European, retro, and pro-style range brands.
+              European, retro, premium, and pro-style range brands.
             </strong>
           </p>
   
@@ -106,7 +105,7 @@ export const Tabs = () => {
   
             <li>
               <strong>Kitchen protection:</strong> We work carefully around custom
-              cabinetry, stone countertops, designer floors, oversized range
+              cabinetry, stone countertops, designer floors, built-in range
               installations, and high-end kitchen finishes.
             </li>
           </ul>
@@ -117,19 +116,18 @@ export const Tabs = () => {
     {
       id: "oven",
       title: "Oven Repair",
-      heading: "Oven Repair in Calabasas",
+      heading: "Oven Repair in Century City",
       img: "/cities/oven-repair.webp",
-      alt: "Oven repair in Calabasas",
+      alt: "Oven repair in Century City",
       description: (
         <>
           <p>
-            We provide <strong>oven repair in Calabasas</strong> for wall ovens,
+            We provide <strong>oven repair in Century City</strong> for wall ovens,
             double ovens, steam ovens, speed ovens, convection ovens, French-door
             ovens, built-in ovens, and oven sections inside premium ranges. In
-            Calabasas homes, ovens are often built into custom cabinetry or paired
-            with Sub-Zero, Wolf, Miele, Thermador, Monogram, or other premium
-            appliance suites, so proper diagnosis and careful handling are
-            essential.
+            Century City condos, penthouses, and designer residences, ovens are
+            often installed into custom cabinetry or paired with full high-end
+            appliance suites, so careful diagnosis and clean service are essential.
           </p>
   
           <p>
@@ -208,18 +206,18 @@ export const Tabs = () => {
     {
       id: "cooktop",
       title: "Cooktop Repair",
-      heading: "Cooktop Repair in Calabasas",
+      heading: "Cooktop Repair in Century City",
       img: "/cities/cooktop-repair.webp",
-      alt: "Cooktop repair in Calabasas",
+      alt: "Cooktop repair in Century City",
       description: (
         <>
           <p>
-            Our technicians provide <strong>cooktop repair in Calabasas</strong>{" "}
+            Our technicians provide <strong>cooktop repair in Century City</strong>{" "}
             for gas cooktops, electric cooktops, induction cooktops, rangetops,
             modular cooktops, and high-end built-in cooking surfaces. Cooktops in
-            Calabasas kitchens are often installed into stone countertops, custom
-            islands, flush-mounted surfaces, and open-concept layouts, so we repair
-            them with care for both performance and surrounding finishes.
+            Century City homes are often installed into stone countertops, custom
+            islands, compact designer kitchens, or flush-mounted surfaces, so we
+            repair them with care for both performance and surrounding finishes.
           </p>
   
           <p>
@@ -290,18 +288,18 @@ export const Tabs = () => {
     {
       id: "hood",
       title: "Ventilation Hood Repair",
-      heading: "Ventilation & Range Hood Repair in Calabasas",
+      heading: "Ventilation & Range Hood Repair in Century City",
       img: "/cities/range-hood-repair.webp",
-      alt: "Ventilation and range hood repair in Calabasas",
+      alt: "Ventilation and range hood repair in Century City",
       description: (
         <>
           <p>
-            We provide <strong>range hood repair in Calabasas</strong> for
+            We provide <strong>range hood repair in Century City</strong> for
             ventilation hoods, custom hood inserts, island hoods, wall hoods,
             downdraft systems, and built-in ventilation systems. Proper ventilation
-            is especially important in Calabasas kitchens with powerful gas
-            ranges, pro-style burners, grills, griddles, and high-BTU cooking
-            equipment.
+            is especially important in high-rise residences and designer kitchens
+            where smoke, cooking odors, grease, and airflow problems need to be
+            controlled efficiently.
           </p>
   
           <p>
@@ -367,19 +365,19 @@ export const Tabs = () => {
     {
       id: "refrigerator",
       title: "Refrigerator Repair",
-      heading: "Refrigerator Repair in Calabasas",
+      heading: "Refrigerator Repair in Century City",
       img: "/cities/refrigerator-repair.webp",
-      alt: "Refrigerator repair in Calabasas",
+      alt: "Refrigerator repair in Century City",
       description: (
         <>
           <p>
             Luxury Appliance Repair by Zaricci provides{" "}
-            <strong>refrigerator repair in Calabasas</strong> for built-in,
+            <strong>refrigerator repair in Century City</strong> for built-in,
             panel-ready, integrated, column, French door, bottom freezer,
             side-by-side, and high-end residential refrigeration systems. Many
-            Calabasas kitchens feature refrigerators built into custom cabinetry or
-            concealed behind matching panels, so we repair them carefully while
-            protecting surrounding finishes.
+            Century City residences feature refrigerators built into custom
+            cabinetry or concealed behind matching panels, so we repair them
+            carefully while protecting surrounding finishes.
           </p>
   
           <p>
@@ -455,18 +453,18 @@ export const Tabs = () => {
     {
       id: "freezer",
       title: "Freezer Repair",
-      heading: "Freezer Repair in Calabasas",
+      heading: "Freezer Repair in Century City",
       img: "/cities/freezer-repair.webp",
-      alt: "Freezer repair in Calabasas",
+      alt: "Freezer repair in Century City",
       description: (
         <>
           <p>
-            We provide <strong>freezer repair in Calabasas</strong> for built-in
-            freezers, freezer columns, undercounter freezer drawers, integrated
-            freezer units, upright freezers, and freezer sections inside premium
-            refrigerators. High-end freezers require stable temperature control,
-            proper airflow, and reliable defrost operation to protect food,
-            specialty ingredients, and long-term performance.
+            We provide <strong>freezer repair in Century City</strong> for
+            built-in freezers, freezer columns, undercounter freezer drawers,
+            integrated freezer units, upright freezers, and freezer sections inside
+            premium refrigerators. High-end freezers require stable temperature
+            control, proper airflow, and reliable defrost operation to protect
+            food, specialty ingredients, and long-term performance.
           </p>
   
           <h3>Common Freezer Problems We Repair</h3>
@@ -525,17 +523,17 @@ export const Tabs = () => {
     {
       id: "beverage",
       title: "Beverage Center Repair",
-      heading: "Beverage Center Repair in Calabasas",
+      heading: "Beverage Center Repair in Century City",
       img: "/cities/beverage-center-repair.webp",
-      alt: "Beverage center repair in Calabasas",
+      alt: "Beverage center repair in Century City",
       description: (
         <>
           <p>
-            We repair <strong>beverage centers in Calabasas</strong> for kitchens,
-            home bars, entertainment rooms, media rooms, pool areas, guest spaces,
-            and undercounter installations. Beverage centers may look simple, but
-            they rely on precise temperature control, quiet operation, proper
-            airflow, and clean integration with cabinetry.
+            We repair <strong>beverage centers in Century City</strong> for
+            kitchens, home bars, media rooms, entertainment spaces, offices,
+            undercounter installations, and high-rise residences. Beverage centers
+            may look simple, but they rely on precise temperature control, quiet
+            operation, proper airflow, and clean integration with cabinetry.
           </p>
   
           <h3>Common Beverage Center Problems We Repair</h3>
@@ -594,17 +592,17 @@ export const Tabs = () => {
     {
       id: "icemaker",
       title: "Ice Maker Repair",
-      heading: "Ice Maker Repair in Calabasas",
+      heading: "Ice Maker Repair in Century City",
       img: "/cities/ice-maker-repair.webp",
-      alt: "Ice maker repair in Calabasas",
+      alt: "Ice maker repair in Century City",
       description: (
         <>
           <p>
-            We provide <strong>ice maker repair in Calabasas</strong> for built-in
-            ice machines, undercounter ice makers, panel-ready ice machines, and
-            refrigerator ice maker systems. In kitchens, home bars, pool areas,
-            guest spaces, and entertaining areas, clear ice production, proper
-            drainage, and quiet operation are all important.
+            We provide <strong>ice maker repair in Century City</strong> for
+            built-in ice machines, undercounter ice makers, panel-ready ice
+            machines, and refrigerator ice maker systems. In kitchens, home bars,
+            entertainment spaces, offices, and high-rise residences, clear ice
+            production, proper drainage, and quiet operation are all important.
           </p>
   
           <h3>Common Ice Maker Problems We Repair</h3>
@@ -664,18 +662,18 @@ export const Tabs = () => {
     {
       id: "dryer",
       title: "Dryer Repair",
-      heading: "Dryer Repair in Calabasas",
+      heading: "Dryer Repair in Century City",
       img: "/cities/dryer-repair.webp",
-      alt: "Dryer repair in Calabasas",
+      alt: "Dryer repair in Century City",
       description: (
         <>
           <p>
-            We provide <strong>dryer repair in Calabasas</strong> for vented
+            We provide <strong>dryer repair in Century City</strong> for vented
             dryers, ventless dryers, heat pump dryers, condenser dryers, stacked
-            laundry systems, and premium laundry appliances. Dryers are often
-            installed in dedicated laundry rooms, closets, guest houses, staff
-            areas, or stacked spaces, so airflow, access, leak prevention, and
-            quiet operation matter.
+            laundry systems, and premium laundry appliances. Dryers in Century City
+            are often installed in condos, laundry closets, utility rooms, compact
+            spaces, or stacked configurations, so airflow, access, quiet operation,
+            and moisture control matter.
           </p>
   
           <h3>Common Dryer Problems We Repair</h3>
@@ -735,19 +733,19 @@ export const Tabs = () => {
     {
       id: "washing",
       title: "Washing Machine Repair",
-      heading: "Washing Machine Repair in Calabasas",
+      heading: "Washing Machine Repair in Century City",
       img: "/cities/washing-machine-repair.webp",
-      alt: "Washing machine repair in Calabasas",
+      alt: "Washing machine repair in Century City",
       description: (
         <>
           <p>
             Our technicians provide{" "}
-            <strong>washing machine repair in Calabasas</strong> for front-load
+            <strong>washing machine repair in Century City</strong> for front-load
             washers, top-load washers, compact washers, stacked laundry systems,
-            and premium laundry appliances. We service laundry systems in custom
-            laundry rooms, closets, guest houses, staff areas, and high-end
-            residences where quiet operation and leak prevention are especially
-            important.
+            and premium laundry appliances. We service laundry systems in condos,
+            high-rise residences, utility closets, laundry rooms, and stacked
+            spaces where quiet operation, leak prevention, and careful access are
+            especially important.
           </p>
   
           <h3>Common Washing Machine Problems We Repair</h3>
@@ -806,18 +804,18 @@ export const Tabs = () => {
     {
       id: "dishwasher",
       title: "Dishwasher Repair",
-      heading: "Dishwasher Repair in Calabasas",
+      heading: "Dishwasher Repair in Century City",
       img: "/cities/dishwasher-repair.webp",
-      alt: "Dishwasher repair in Calabasas",
+      alt: "Dishwasher repair in Century City",
       description: (
         <>
           <p>
-            We provide <strong>dishwasher repair in Calabasas</strong> for
+            We provide <strong>dishwasher repair in Century City</strong> for
             integrated dishwashers, panel-ready dishwashers, drawer dishwashers,
-            quiet luxury dishwashers, and high-end built-in models. Many
-            dishwashers in Calabasas kitchens are hidden behind custom cabinetry,
-            so we service them carefully without disturbing the design of the
-            kitchen.
+            quiet dishwashers, and high-end built-in models. Many dishwashers in
+            Century City residences are installed behind custom panels or within
+            compact designer kitchens, so we service them carefully without
+            disturbing the surrounding cabinetry.
           </p>
   
           <h3>Common Dishwasher Problems We Repair</h3>
@@ -876,13 +874,13 @@ export const Tabs = () => {
     {
       id: "warming",
       title: "Warming Drawer Repair",
-      heading: "Warming Drawer Repair in Calabasas",
+      heading: "Warming Drawer Repair in Century City",
       img: "/cities/warming-drawer-repair.webp",
-      alt: "Warming drawer repair in Calabasas",
+      alt: "Warming drawer repair in Century City",
       description: (
         <>
           <p>
-            We provide <strong>warming drawer repair in Calabasas</strong> for
+            We provide <strong>warming drawer repair in Century City</strong> for
             built-in warming drawers, panel-matched drawers, stainless steel
             warming drawers, and high-end kitchen warming systems. These appliances
             may look simple, but they rely on precise low-temperature control,
@@ -942,13 +940,13 @@ export const Tabs = () => {
     {
       id: "winecooler",
       title: "Wine Cooler Repair",
-      heading: "Wine Cooler Repair in Calabasas",
+      heading: "Wine Cooler Repair in Century City",
       img: "/cities/wine-cooler-repair.webp",
-      alt: "Wine cooler repair in Calabasas",
+      alt: "Wine cooler repair in Century City",
       description: (
         <>
           <p>
-            We provide <strong>wine cooler repair in Calabasas</strong> for
+            We provide <strong>wine cooler repair in Century City</strong> for
             built-in wine coolers, undercounter wine refrigerators, dual-zone wine
             units, column wine storage, and panel-ready wine preservation systems.
             Wine coolers require more than basic cooling — they need stable
@@ -1012,18 +1010,18 @@ export const Tabs = () => {
     {
       id: "winecellar",
       title: "Wine Cellar Repair",
-      heading: "Wine Cellar Cooling System Repair in Calabasas",
+      heading: "Wine Cellar Cooling System Repair in Century City",
       img: "/cities/wine-cellar-repair.webp",
-      alt: "Wine cellar cooling system repair in Calabasas",
+      alt: "Wine cellar cooling system repair in Century City",
       description: (
         <>
           <p>
             We service{" "}
-            <strong>wine cellar cooling systems in Calabasas</strong> for
-            residential wine rooms, climate-controlled wine cellars, custom wine
-            storage spaces, and private home collections. A wine cellar cooling
-            system must maintain stable temperature, humidity balance, and quiet
-            operation to protect wine over time.
+            <strong>wine cellar cooling systems in Century City</strong> for
+            residential wine rooms, climate-controlled wine storage, custom wine
+            spaces, penthouse wine displays, and private home collections. A wine
+            cellar cooling system must maintain stable temperature, humidity
+            balance, and quiet operation to protect wine over time.
           </p>
   
           <h3>Common Wine Cellar Problems We Service</h3>
@@ -1080,19 +1078,19 @@ export const Tabs = () => {
     {
       id: "grill",
       title: "BBQ Grill Repair",
-      heading: "BBQ Grill Repair in Calabasas",
+      heading: "BBQ Grill Repair in Century City",
       img: "/cities/bbq-grill-repair.webp",
-      alt: "BBQ grill repair in Calabasas",
+      alt: "BBQ grill repair in Century City",
       description: (
         <>
           <p>
-            We provide <strong>BBQ grill repair in Calabasas</strong> for built-in
-            grills, outdoor kitchen grills, pro-style gas grills, freestanding
-            grills, sear stations, rotisserie systems, and outdoor cooking
-            appliances. Many Calabasas homes include patios, outdoor entertaining
-            areas, poolside kitchens, hillside properties, and built-in grilling
-            stations that require reliable ignition, even heat, and safe gas
-            performance.
+            We provide <strong>BBQ grill repair in Century City</strong> for
+            built-in grills, outdoor kitchen grills, pro-style gas grills,
+            freestanding grills, sear stations, rotisserie systems, and outdoor
+            cooking appliances. In Century City residences, grill systems may be
+            located on terraces, patios, rooftop spaces, or outdoor entertaining
+            areas where reliable ignition, safe gas performance, and even heat are
+            especially important.
           </p>
   
           <h3>Common BBQ Grill Problems We Repair</h3>
@@ -1152,16 +1150,17 @@ export const Tabs = () => {
     {
       id: "pizzaoven",
       title: "Pizza Oven Repair",
-      heading: "Pizza Oven Repair in Calabasas",
+      heading: "Pizza Oven Repair in Century City",
       img: "/cities/pizza-oven-repair.webp",
-      alt: "Pizza oven repair in Calabasas",
+      alt: "Pizza oven repair in Century City",
       description: (
         <>
           <p>
-            We service <strong>pizza ovens in Calabasas</strong> for indoor
-            gourmet kitchens, outdoor kitchens, built-in cooking areas, and
-            entertainment spaces. Pizza ovens require high heat, stable temperature
-            control, proper ignition, and safe ventilation to perform correctly.
+            We service <strong>pizza ovens in Century City</strong> for indoor
+            gourmet kitchens, outdoor kitchens, built-in cooking areas, terraces,
+            and entertainment spaces. Pizza ovens require high heat, stable
+            temperature control, proper ignition, and safe ventilation to perform
+            correctly.
           </p>
   
           <h3>Common Pizza Oven Problems We Repair</h3>
@@ -1218,19 +1217,19 @@ export const Tabs = () => {
     {
       id: "outdoor",
       title: "Outdoor Kitchen Repair",
-      heading: "Outdoor Kitchen Repair in Calabasas",
+      heading: "Outdoor Kitchen Repair in Century City",
       img: "/cities/outdoor-kitchen-repair.webp",
-      alt: "Outdoor kitchen appliance repair in Calabasas",
+      alt: "Outdoor kitchen appliance repair in Century City",
       description: (
         <>
           <p>
-            We provide <strong>outdoor kitchen repair in Calabasas</strong> for
+            We provide <strong>outdoor kitchen repair in Century City</strong> for
             built-in grills, outdoor refrigerators, beverage centers, ice makers,
             warming drawers, pizza ovens, side burners, outdoor ventilation, and
-            premium backyard cooking systems. Calabasas outdoor kitchens are often
-            designed for family gatherings, poolside dining, hillside properties,
-            private patios, and entertaining spaces, so reliable appliance
-            performance and careful service matter.
+            premium outdoor cooking systems. Century City outdoor kitchens may be
+            part of terraces, patios, rooftop spaces, penthouse entertaining areas,
+            or private outdoor living spaces, so reliable appliance performance
+            and careful service matter.
           </p>
   
           <h3>Common Outdoor Kitchen Problems We Repair</h3>
