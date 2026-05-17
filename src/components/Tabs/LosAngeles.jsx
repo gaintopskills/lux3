@@ -11,23 +11,100 @@ export const Tabs = () => {
     {
         id: "range",
         title: "Range Repair",
-        heading: "High-End Range Repair Los Angeles",
+        heading: "Range Repair Los Angeles",
         img: "/cities/los-angeles/range-repair-los-angeles.webp",
         alt: "Luxury Range Repair Los Angeles",
         description: (
           <>
-            <p>Your range is the heart of the kitchen. Our technicians have extensive expirience repairing everything from <strong>dual-fuel SKS ranges</strong> to <strong>BlueStar professional cookers</strong>. No matter the issue, we restore performance without sacrificing design.</p>
-            <h3>Common Problems We Fix:</h3>
+            <p>
+              A luxury range is one of the most important appliances in the kitchen, especially in homes with
+              professional-style cooking equipment, custom cabinetry, premium ventilation, and high-end finishes.
+              Our technicians provide <strong>luxury range repair</strong> for gas ranges, dual-fuel ranges,
+              electric ranges, induction ranges, pro-style ranges, European ranges, and retro-style ranges.
+              Whether your range has weak burners, ignition problems, uneven oven temperatures, error codes,
+              or electrical control issues, we diagnose the system carefully and repair it with attention to
+              safety, performance, and design.
+            </p>
+        
+            <h3>Common Range Problems We Fix:</h3>
+        
             <ul>
-              <li>✅ Burners not igniting</li>
-              <li>✅ Oven not heating</li>
-              <li>✅ Electrical panel issues</li>
-              <li>✅ Overheating or error codes</li>
+              <li>✅ Burners not igniting or clicking continuously</li>
+              <li>✅ Weak flame, uneven flame, or yellow flame</li>
+              <li>✅ Gas burners lighting slowly or not staying lit</li>
+              <li>✅ Oven not heating, overheating, or heating unevenly</li>
+              <li>✅ Dual-fuel range oven issues</li>
+              <li>✅ Electric range elements not turning on</li>
+              <li>✅ Induction range not detecting cookware</li>
+              <li>✅ Convection fan not working properly</li>
+              <li>✅ Bake or broil function not working</li>
+              <li>✅ Temperature calibration problems</li>
+              <li>✅ Control panel, display, or keypad failure</li>
+              <li>✅ Error codes or communication faults</li>
+              <li>✅ Oven door not closing, sealing, or locking correctly</li>
+              <li>✅ Range tripping the breaker</li>
+              <li>✅ Burners sparking but not lighting</li>
+              <li>✅ Igniters, spark modules, relays, thermostats, or sensors failing</li>
+              <li>✅ Luxury range maintenance and performance issues</li>
             </ul>
-            <h3>Brands We Repair:</h3>
-            <p><strong>Wolf, Viking, SKS, Thermador, La Cornue, AGA, Dacor, Bertazzoni, BlueStar, Elmira Stove Works, Fulgor Milano, La Canche.</strong></p>
-            <h3>How We Fix It:</h3>
-            <p>We test spark modules, gas valves, relays, and thermostats. Safety, performance, and elegance — we repair with all three in mind.</p>
+        
+            <h3>Range Brands We Repair:</h3>
+        
+            <p>
+              <strong>
+                Wolf, Viking, Thermador, La Cornue, Lacanche, AGA, Bertazzoni, Fulgor Milano,
+                Gaggenau, ILVE, Miele, Officine Gullo, American Range, BlueStar, FiveStar,
+                Thor, Forno, Garland, ZLINE, Monogram, Signature Kitchen Suite, Hestan,
+                Dacor, Fisher & Paykel, JennAir, Bosch, Smeg, Big Chill, Elmira Stove Works,
+                Heartland, and other luxury, European, retro, and pro-style range brands.
+              </strong>
+            </p>
+        
+            <h3>How We Diagnose and Repair Luxury Ranges:</h3>
+        
+            <ul>
+              <li>
+                <strong>Ignition system testing:</strong> We inspect spark modules, igniters,
+                electrodes, burner switches, wiring, and ignition response to find the reason
+                burners are not lighting correctly.
+              </li>
+        
+              <li>
+                <strong>Gas burner and valve inspection:</strong> We check burner caps, ports,
+                flame quality, gas valves, regulators, and related components that affect burner
+                performance and safety.
+              </li>
+        
+              <li>
+                <strong>Oven heating diagnosis:</strong> We test bake elements, broil elements,
+                gas igniters, temperature sensors, thermostats, relays, control boards, and
+                heating cycles to correct uneven or failed oven performance.
+              </li>
+        
+              <li>
+                <strong>Dual-fuel and electric system repair:</strong> We inspect electrical
+                connections, control boards, relays, switches, elements, and communication faults
+                common in premium dual-fuel and electric ranges.
+              </li>
+        
+              <li>
+                <strong>Temperature calibration:</strong> We verify actual oven temperature,
+                heat recovery, cycling behavior, and sensor accuracy so the range performs
+                properly for baking, roasting, and high-heat cooking.
+              </li>
+        
+              <li>
+                <strong>Luxury kitchen protection:</strong> We work carefully around custom
+                cabinetry, stone countertops, designer floors, and built-in range installations
+                to protect the appearance of your kitchen during service.
+              </li>
+        
+              <li>
+                <strong>Final performance testing:</strong> After repair, we test burners,
+                oven functions, controls, fans, heating response, and safety-related operation
+                before completing the service.
+              </li>
+            </ul>
           </>
         ),
       },
