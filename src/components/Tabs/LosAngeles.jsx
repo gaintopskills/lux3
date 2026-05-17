@@ -295,7 +295,7 @@ export const Tabs = () => {
       id: "winecooler",
       title: "Wine Cooler Repair",
       heading: "Wine Preservation Unit Repair Los Angeles",
-      img: "/cities/los-angeles/wine-cooler-repair-los-angeles.webp",
+      img: "/cities/sub-zero-wine-cooler-repair.webp",
       alt: "Wine Cooler Repair Los Angeles",
       description: (
         <>
@@ -345,7 +345,7 @@ export const Tabs = () => {
         id: "grill",
         title: "BBQ Grill Repair",
         heading: "High-End BBQ Grill Repair Los Angeles",
-        img: "/cities/los-angeles/bbq-grill-repair-los-angeles.webp",
+        img: "/cities/bbq-grill-repair.webp",
         alt: "High-End BBQ Grill Repai Los Angeles",
         description: (
           <>
