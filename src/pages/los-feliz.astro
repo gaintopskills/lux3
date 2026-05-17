@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Tabs from '../components/Tabs/LosFeliz.jsx'
 import Logos from '../components/Logos.jsx';
 import Reviews from "../components/ReviewsHomePage.jsx";
 const structuredData = {
@@ -176,14 +177,13 @@ const structuredData = {
 	description="High-end appliances repair - Los Feliz by certified technicians. Same-day appointments are available. Call today!"
 	structuredData={structuredData}
 >
-<div style="margin: 50px">
 <section>
   <h1>Luxury Appliance Repair in Los Feliz, CA</h1>
   <p><strong>Precision Repairs for Homes Where Character Meets Luxury</strong></p>
   <p>In Los Feliz, charm, style, and sophistication define the neighborhood. From historic Spanish Colonial estates to ultra-modern architectural homes tucked into the hillside, luxury living is everywhere—and so are premium appliances. When they need service, your appliances deserve attention from a company that knows how to blend performance, precision, and discretion.</p>
   <p>At <strong>Luxury Appliance Repair by Zaricci</strong>, we proudly offer luxury appliance repair in Los Feliz, specializing in elite brands like Sub-Zero, Wolf, Thermador, Miele, La Cornue, Gaggenau, Viking, and more. We deliver certified repairs, OEM parts, and white-glove service trusted by homeowners who expect the very best.</p>
 </section>
-
+<Tabs client:visible />
 <section>
   <h3>🔧 Why Los Feliz Homeowners Trust ZARICCI</h3>
   <ul>
@@ -272,5 +272,4 @@ const structuredData = {
 </section>
  <Logos client:visible />
  <Reviews client:idle />
-</div>
 </Layout>

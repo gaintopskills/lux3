@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Tabs from '../components/Tabs/Malibu.jsx'
 import Logos from '../components/Logos.jsx';
 import Reviews from "../components/ReviewsHomePage.jsx";
 const structuredData = {
@@ -175,14 +176,13 @@ const structuredData = {
 	description="High-end appliances repair - Malibu by certified technicians. Same-day appointments are available. Call today!"
 	structuredData={structuredData}
 >
-<div style="margin: 50px">
 <section>
   <h1>Luxury Appliance Repair in Malibu, CA</h1>
   <p><strong>White-Glove Service for Oceanfront Estates and Cliffside Retreats</strong></p>
   <p>In Malibu, luxury is effortless—sweeping ocean views, architectural masterpieces, and interiors curated with the finest details. Your high-end appliances are a crucial part of this experience, blending beauty with performance to support your lifestyle. When something needs repair, you deserve a service that honors the investment you’ve made in your home.</p>
   <p>At <strong>Luxury Appliance Repair by Zaricci</strong>, we provide elite appliance repair in Malibu, specializing in prestigious brands like Sub-Zero, Wolf, Thermador, Miele, La Cornue, Gaggenau, Viking, and more. Our technicians deliver brand-certified expertise, genuine OEM parts, and a white-glove experience tailored for Malibu’s most discerning residents.</p>
 </section>
-
+<Tabs client:visible />
 <section>
   <h3>🔧 Why Malibu Homeowners Trust ZARICCI</h3>
   <ul>
@@ -273,5 +273,4 @@ const structuredData = {
 </section>
  <Logos client:visible />
  <Reviews client:idle />
-</div>
 </Layout>
