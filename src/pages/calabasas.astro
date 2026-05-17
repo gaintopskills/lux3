@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Tabs from '../components/Tabs/Calabasas.jsx'
 import Logos from '../components/Logos.jsx';
 import Reviews from "../components/ReviewsHomePage.jsx";
 const structuredData = {
@@ -155,6 +156,7 @@ const structuredData = {
 	description="HTrusted appliance repair in Calabasas. We fix Sub-Zero, Thermador, Wolf & more. Same-day service by certified technicians."
 	structuredData={structuredData}
 >
+<Tabs client:visible />
 <div style="margin: 50px">
 <section>
   <h1>Luxury Appliance Repair in Calabasas, CA</h1>

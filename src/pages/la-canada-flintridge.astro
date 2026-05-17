@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Tabs from '../components/Tabs/LaCanadaFlintridge.jsx'
 import Logos from '../components/Logos.jsx';
 const structuredData = {
   "@context": "https://schema.org",
@@ -156,14 +157,13 @@ const structuredData = {
 	description="High-end appliances repair - La Cañada Flintridge by certified technicians. Same-day appointments are available. Call today!"
 	structuredData={structuredData}
 >
-<div style="margin: 50px">
 <section>
   <h1>Luxury Appliance Repair in La Cañada Flintridge, CA</h1>
   <p><strong>Precision Service for Homes That Expect the Best</strong></p>
   <p>In La Cañada Flintridge, elegance is woven into every aspect of life—from the beautiful estates nestled against the San Gabriel Mountains to the meticulously designed modern homes throughout the city. Here, premium appliances from brands like Sub-Zero, Wolf, Thermador, Miele, La Cornue, Gaggenau, and Viking are not just a convenience—they are an essential part of everyday living.</p>
   <p>At <strong>Luxury Appliance Repair by Zaricci</strong>, we proudly offer high-end appliance repair in La Cañada Flintridge, delivering white-glove service, certified brand expertise, and genuine OEM parts to homes where only the best will do.</p>
 </section>
-
+<Tabs client:visible />
 <section>
   <h3>🔧 Why La Cañada Flintridge Homeowners Trust ZARICCI</h3>
   <ul>
@@ -251,5 +251,4 @@ const structuredData = {
   <p><strong>👉 ZARICCI — Precision Repairs for La Cañada Flintridge’s Finest Homes.</strong></p>
 </section>
  <Logos client:visible />
-</div>
 </Layout>

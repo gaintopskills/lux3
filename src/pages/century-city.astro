@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Tabs from '../components/Tabs/CenturyCity.jsx'
 import Logos from '../components/Logos.jsx';
 import Reviews from "../components/ReviewsHomePage.jsx";
 const structuredData = {
@@ -154,6 +155,7 @@ const structuredData = {
 	description="High-end appliances repair - Century City by certified technicians. Same-day appointments are available. Call today!"
 	structuredData={structuredData}
 >
+<Tabs client:visible />
 <div style="margin: 50px">
 <section>
   <h1>Luxury Appliance Repair in Century City, CA</h1>

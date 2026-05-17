@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Tabs from '../components/Tabs/Encino.jsx'
 import Logos from '../components/Logos.jsx';
 import Reviews from "../components/ReviewsHomePage.jsx";
 const structuredData = {
@@ -146,14 +147,13 @@ const structuredData = {
     }
    ]
 }
-
-
 ---
 <Layout
 	title="Local Luxury Appliance Repair – Enchino"
 	description="High-end appliances repair - Encino by certified technicians. Same-day appointments are available. Call today!"
 	structuredData={structuredData}
 >
+<Tabs client:visible />
 <div style="margin: 50px">
 <section>
   <h1>Luxury Appliance Repair in Encino, CA</h1>
