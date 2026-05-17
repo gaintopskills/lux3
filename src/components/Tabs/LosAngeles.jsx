@@ -388,11 +388,11 @@ export const Tabs = () => {
         ),
       },
       {
-        id: "coffee",
-        title: "Coffee Machine Repair",
-        heading: "Built-In Coffee System Repair Los Angeles",
+        id: "outdoor",
+        title: "Outdoor Kitchen Repair",
+        heading: "Outdoor Kitchen Repair Los Angeles",
         img: "/cities/los-angeles/coffee-machine-repair-los-angeles.webp",
-        alt: "Built-In Coffee System Repair Los Angeles",
+        alt: "Outdoor Kitchen Repair Los Angeles",
         description: (
           <>
             <p>We love repairing these machines. From <strong>Miele plumbed coffee makers</strong> to <strong>Thermador built-ins</strong>, these systems require a trained hand.</p>
