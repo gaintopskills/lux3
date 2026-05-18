@@ -113,12 +113,10 @@ export const MegaMenu = () => {
       { label: "Washing Machine Repair", href: "/washing-machine-repair/" },
       { label: "Dryer Repair", href: "/dryer-repair/" },
       { label: "Dishwasher Repair", href: "/dishwasher-repair/" },
-      { label: "Microwave Repair", href: "/microwave-repair/" },
       { label: "Refrigerator Repair", href: "/refrigerator-repair/" },
     ],
     [
       { label: "Freezer Repair", href: "/freezer-repair/" },
-      { label: "Fireplace repair", href: "/fireplace-repair/" },
       { label: "BBQ Repair", href: "/bbq-repair/" },
       { label: "Wine Cooler", href: "/wine-cooler-repair/" },
       { label: "Wine Cellar Repair", href: "/wine-cellar-repair/" },
