@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 import '../styles/global.css';
+import Areas from '../components/Areas.jsx';
+import '../components/Areas.css';
 const structuredData = {
 	"@context": "https://schema.org",
 	"@type": "WebPage",
@@ -95,7 +97,8 @@ const breadcrumbs = [
   <h3>🛠️ Preventative Maintenance for High-End Ranges</h3>
   <p>Luxury appliances are an investment. We offer custom maintenance packages to preserve peak performance, extend lifespan, and avoid costly breakdowns — all scheduled around your convenience.</p>
 </section>
-
 </div>
+<h2>Areas We Serve For Range Repair</h2>
+<Areas client:visible/>
 </Layout>
 

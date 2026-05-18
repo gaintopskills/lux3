@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Areas from '../components/Areas.jsx';
+import '../components/Areas.css';
 const structuredData = {
 	"@context": "https://schema.org",
 	"@type": "WebPage",
@@ -75,7 +77,8 @@ const breadcrumbs = [
   <h3>Schedule Your Dishwasher Repair Today</h3>
   <p>Don’t let a faulty dishwasher disrupt your home life. Contact us now to book your appointment with <strong>Luxury Appliance Repair by Zaricci</strong>. Our high-end appliance service focuses on quick turnaround, genuine parts, and unparalleled customer care—ensuring your kitchen runs smoothly, every single day.</p>
 </section>
-
 </div>
+<h2>Areas We Serve For Dishwasher Repair</h2>
+<Areas client:visible/>
 </Layout>
 

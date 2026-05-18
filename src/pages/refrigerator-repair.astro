@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Areas from '../components/Areas.jsx';
+import '../components/Areas.css';
 const structuredData = {
 };
 // Example breadcrumbs for the home page
@@ -93,4 +95,6 @@ const breadcrumbs = [
   <p>Luxury refrigerators are engineered for performance, but they still require seasonal checks. We offer custom maintenance programs that protect your investment and help avoid costly repairs, especially for wine and food storage environments.</p>
 </section>
 </div>
+<h2>Areas We Serve For Refrigerator Repair</h2>
+<Areas client:visible/>
 </Layout>

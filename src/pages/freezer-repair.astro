@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Areas from '../components/Areas.jsx';
+import '../components/Areas.css';
 const structuredData = {
 };
 // Example breadcrumbs for the home page
@@ -93,4 +95,6 @@ const breadcrumbs = [
   <p>Premium freezers deserve proactive care. Our maintenance service includes temperature checks, fan calibration, defrost cycle monitoring, and inspection of seals — all tailored to your unique appliance. Preserve your investment and extend its lifespan with Zaricci's freezer wellness plans.</p>
 </section>
 </div>
+<h2>Areas We Serve For Freezer Repair</h2>
+<Areas client:visible/>
 </Layout>

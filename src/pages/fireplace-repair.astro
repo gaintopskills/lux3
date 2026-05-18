@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Areas from '../components/Areas.jsx';
+import '../components/Areas.css';
 const structuredData = {
 };
 // Example breadcrumbs for the home page
@@ -96,4 +98,6 @@ const breadcrumbs = [
   <p>Keep your fireplace running beautifully with seasonal tune-ups that include burner cleaning, pilot assembly checks, vent inspections, and control testing. Our maintenance plans are tailored to premium brands and designer installations, ensuring year-round performance and safety.</p>
 </section>
 </div>
+<h2>Areas We Serve For Fireplace Repair</h2>
+<Areas client:visible/>
 </Layout>

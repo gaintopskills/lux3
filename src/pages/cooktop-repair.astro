@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Areas from '../components/Areas.jsx';
+import '../components/Areas.css';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -263,4 +265,6 @@ const breadcrumbs = [
 </section>
 
 </div>
+<h2>Areas We Serve For Cooktop Repair</h2>
+<Areas client:visible/>
 </Layout>

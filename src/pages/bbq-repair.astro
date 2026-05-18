@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Areas from '../components/Areas.jsx';
+import '../components/Areas.css';
 const structuredData = {
 };
 // Example breadcrumbs for the home page
@@ -93,4 +95,6 @@ const breadcrumbs = [
   <p>Don’t wait for your next event to find out your BBQ isn’t working. Our luxury maintenance plans include burner cleaning, valve inspections, ignition testing, and full system calibration — tailored for elite outdoor appliances.</p>
 </section>
 </div>
+<h2>Areas We Serve For BBQ Grill Repair</h2>
+<Areas client:visible/>
 </Layout>

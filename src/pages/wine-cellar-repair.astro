@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Areas from '../components/Areas.jsx';
+import '../components/Areas.css';
 const structuredData = {
 };
 // Example breadcrumbs for the home page
@@ -85,6 +87,7 @@ const breadcrumbs = [
   <h2>🧰 Preventative Wine Cellar Maintenance</h2>
   <p>Climate consistency is everything. We offer custom maintenance programs to regularly test your system’s calibration, airflow, refrigerant levels, and backup power — ensuring your wine stays protected through every season.</p>
 </section>
-
 </div>
+<h2>Areas We Serve For Wine Cooler Repair</h2>
+<Areas client:visible/>
 </Layout>

@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Areas from '../components/Areas.jsx';
+import '../components/Areas.css';
 const structuredData = {
 };
 // Example breadcrumbs for the home page
@@ -99,6 +101,7 @@ const breadcrumbs = [
   <p><strong>Call <a href="tel:4244997788">(424) 499-7788</a> or <a href="#">Book Online</a> now.</strong></p>
   <p>Because even your laundry routine deserves five-star performance.</p>
 </section>
-
 </div>
+<h2>Areas We Serve For Dryer Repair</h2>
+<Areas client:visible/>
 </Layout>

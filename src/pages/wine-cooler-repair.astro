@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Areas from '../components/Areas.jsx';
+import '../components/Areas.css';
 const structuredData = {
 	"@context": "https://schema.org",
 	"@type": "WebPage",
@@ -75,6 +77,7 @@ const breadcrumbs = [
   <h3>Book Your Wine Cooler Repair Appointment Today</h3>
   <p>Don’t let a malfunctioning wine cooler compromise your cherished collection. Turn to <strong>Luxury Appliance Repair by Zaricci</strong> for luxury appliance repair you can trust. Contact us now to schedule an appointment and experience our commitment to quality and customer satisfaction. Whether it’s a simple fix or a complex overhaul, we have you covered—ensuring every pour lives up to its full potential.</p>
 </section>
-
 </div>
+<h2>Areas We Serve For Wine Cooler Repair</h2>
+<Areas client:visible/>
 </Layout>

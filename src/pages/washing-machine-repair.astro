@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import Areas from '../components/Areas.jsx';
+import '../components/Areas.css';
 const structuredData = {
 	"@context": "https://schema.org",
 	"@type": "WebPage",
@@ -74,7 +76,8 @@ const breadcrumbs = [
   <h3>Schedule Your High-End Washing Machine Repair Today</h3>
   <p>Don’t let a malfunctioning washer derail your day. Contact us now to book an appointment with <strong>Luxury Appliance Repair by Zaricci</strong>, and experience luxury appliance service designed to keep your home running smoothly. With our certified expertise and commitment to quality, you can trust us to restore your high-end washing machine to its original, exceptional standard.</p>
 </section>
-
 </div>
+<h2>Areas We Serve For Washing Machine Repair</h2>
+<Areas client:visible/>
 </Layout>
 
