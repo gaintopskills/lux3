@@ -36,7 +36,7 @@ const ParallaxHeader = () => {
           className="header-image"
           width="1200"
           height="630"
-          src="/oven/oven-repair-services.webp.webp"
+          src="/oven/oven-repair-services.webp"
           alt="Oven repair services in Los Angeles, Orange County and Ventura County"
           fetchPriority="high"
           decoding="async"

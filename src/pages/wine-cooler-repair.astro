@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import ParallaxHeader from '../components/Header/WineCooler.jsx'
 import Areas from '../components/Areas.jsx';
 import '../components/Areas.css';
 const structuredData = {
@@ -25,6 +26,7 @@ const breadcrumbs = [
 	description="A wine cooler is more than just an appliance—it’s a sophisticated tool for preserving and enhancing your favorite vintages. At <strong>Luxury Appliance Repair by Zaricci</strong>, we deliver specialized high-end appliance service for premium wine coolers, helping you maintain the ideal storage conditions for every bottle. Whether you own a Sub-Zero, Miele, Viking, or Thermador unit, our expert team has the training, tools, and dedication to keep your wines at the perfect temperature."
 	structuredData={structuredData}
 >
+<ParallaxHeader client:idle />
 <div style="margin: 50px">
 <section>
   <h1>High-End Wine Cooler Repair – Preserving the Perfect Pour for Every Occasion</h1>

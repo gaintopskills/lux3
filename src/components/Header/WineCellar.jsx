@@ -23,9 +23,9 @@ const ParallaxHeader = () => {
       <div className="maintext">
         <h1
           className="gold-embossed"
-          data-text="Range Repair"
+          data-text="Wine Cellar Repair"
         >
-          Range Repair
+          Wine Cellar Repair
           <br />
           <span className="h1-location">
             in Los Angeles, Orange County & Ventura County
@@ -36,16 +36,16 @@ const ParallaxHeader = () => {
           className="header-image"
           width="1200"
           height="630"
-          src="/range/range-repair-services.webp"
-          alt="Range repair services in Los Angeles, Orange County and Ventura County"
+          src="/wine-cellar/wine-cellar-repair-services.webp"
+          alt="Wine cellar repair services in Los Angeles, Orange County and Ventura County"
           fetchPriority="high"
           decoding="async"
         />
 
         <p>
-          Experienced technicians specializing in professional range repair for
-          high-end, luxury, gas range, electric range, dual fuel range, built-in range,
-          freestanding range, sealed burner, open burner, and pro-style cooking systems.
+          Experienced technicians specializing in professional wine cellar repair for
+          high-end, luxury, built-in wine cellar, wine room cooling, ducted wine cellar,
+          split wine cellar, temperature control, humidity control, and premium wine storage systems.
         </p>
 
         <p>

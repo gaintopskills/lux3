@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import ParallaxHeader from '../components/Header/WashingMachine.jsx'
 import Areas from '../components/Areas.jsx';
 import '../components/Areas.css';
 const structuredData = {
@@ -25,6 +26,7 @@ const breadcrumbs = [
 	description="Today’s high-end washing machines combine cutting-edge technology with superior build quality, making laundry more efficient and convenient than ever. If your premium washer begins to malfunction, trust <strong>Luxury Appliance Repair by Zaricci</strong> to deliver the specialized repair it needs. Our brand-certified technicians service top-tier manufacturers like Miele, Bosch, Electrolux, LG, Samsung, and more, ensuring reliable solutions tailored to your specific appliance."
 	structuredData={structuredData}
 >
+<ParallaxHeader client:idle />
 <div style="margin: 50px">
 <section>
   <h1>High-End Washing Machine Repair – Expert Solutions for Your Luxury Laundry Appliance</h1>
