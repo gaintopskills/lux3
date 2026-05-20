@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 import ParallaxHeader from '../components/Header/Oven.jsx'
+import Tabs from '../components/Tabs/Oven.jsx'
 import Areas from '../components/Areas.jsx';
 import '../components/Areas.css';
 const structuredData = {
@@ -430,6 +431,7 @@ const breadcrumbs = [
 ogImage="/oven/oven-repair-services.webp"
 >
 <ParallaxHeader client:idle />
+<Tabs client:visible/>
 <div style="margin: 50px">
 <section>
   <h2>High-End Oven Repair – Precision Repair for the Heart of Your Luxury Kitchen</h2>
@@ -464,7 +466,7 @@ ogImage="/oven/oven-repair-services.webp"
 <section>
   <h3>🔥 Luxury Brands We Service</h3>
   <ul>
-    <li><strong>Wolf:</strong> Precision temperature control, dual-stacked burners, and convection excellence</li>
+    <li><strong>Wolf:</strong> Precision temperature control, dual-stacked burners, and convection excellence </li>
     <li><strong>Thermador:</strong> Star Burners™, steam ovens, and smart home integration</li>
     <li><strong>La Cornue:</strong> Château Series craftsmanship and custom configurations</li>
     <li><strong>Gaggenau:</strong> European minimalism with cutting-edge tech</li>
