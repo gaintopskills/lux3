@@ -6,174 +6,390 @@ import Areas from '../components/Areas.jsx';
 import '../components/Areas.css';
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Luxury Appliance Repair by Zaricci",
-  "image": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
-  "logo": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
-  "url": "https://luxuryappliance.repair/cooktop-repair/",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-  },
-  "telephone": "+1-424-499-7788",
-  "priceRange": "$$$",
-  "description": "Luxury Appliance Repair by Zaricci provides expert cooktop repair services. We fix gas, electric, induction, and glass cooktops from top brands like Whirlpool, LG, Samsung, GE, Bosch, Thermador, and more. Same-day appointments available.",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "11352 Elderwood St",
-    "addressLocality": "Los Angeles",
-    "addressRegion": "CA",
-    "postalCode": "90049",
-    "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 34.073571,
-    "longitude": -118.467634
-  },
-  "sameAs": [
-    
-  ],
-  "openingHoursSpecification": [
+  "@graph": [
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
-      ],
-      "opens": "08:00",
-      "closes": "20:00"
-    }
-  ],
-    "areaServed": [
-    { "@type": "City", "name": "Los Angeles", "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles" },
-        { "@type": "Place", "name": "Brentwood", "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles" },
-        { "@type": "City", "name": "Pasadena", "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California" },
-        { "@type": "Place", "name": "Bel Air", "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles" },
-        { "@type": "Place", "name": "Pacific Palisades", "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles" },
-        { "@type": "City", "name": "Santa Monica" },
-        { "@type": "City", "name": "Beverly Hills" },
-        { "@type": "City", "name": "Calabasas" },
-        { "@type": "City", "name": "Thousand Oaks" },
-        { "@type": "City", "name": "West Hollywood" },
-        { "@type": "City", "name": "San Marino" },
-        { "@type": "City", "name": "Malibu" },
-        { "@type": "City", "name": "Manhattan Beach" },
-        { "@type": "Place", "name": "Encino", "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles" },
-        { "@type": "City", "name": "Rancho Palos Verdes" },
-        { "@type": "City", "name": "Palos Verdes Estates" },
-        { "@type": "City", "name": "Rolling Hills Estates" },
-        { "@type": "Place", "name": "Westwood", "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles" },
-        { "@type": "Place", "name": "Century City", "sameAs": "https://en.wikipedia.org/wiki/Century_City" },
-        { "@type": "City", "name": "La Cañada Flintridge" },
-        {"@type": "AdministrativeArea", "name": "Orange County", "sameAs": "https://en.wikipedia.org/wiki/Orange_County,_California"},
-{"@type": "AdministrativeArea","name": "Ventura County","sameAs": "https://en.wikipedia.org/wiki/Ventura_County,_California"},
-{"@type": "City", "name": "Irvine", "sameAs": "https://en.wikipedia.org/wiki/Irvine,_California" },
-{"@type": "City", "name": "Newport Beach", "sameAs": "https://en.wikipedia.org/wiki/Newport_Beach,_California"},
-{"@type": "City", "name": "Laguna Beach", "sameAs": "https://en.wikipedia.org/wiki/Laguna_Beach,_California"},
-{"@type": "City", "name": "Huntington Beach", "sameAs": "https://en.wikipedia.org/wiki/Huntington_Beach,_California"}
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Dryer Repair Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Dryer Repair",
-          "description": "Professional dryer repair for gas and electric models. We resolve issues such as no heat, not spinning, overheating, loud noises, and broken belts. Same-day service available for major brands including Whirlpool, LG, Samsung, GE, Maytag, and more."
-        }
-      }
-    ]
-  },
-  "knowsAbout": [
-    "Dryer not heating",
-    "Dryer not spinning",
-    "Gas dryer repair",
-    "Electric dryer repair",
-    "Dryer drum not turning",
-    "Dryer overheating",
-    "Dryer makes loud noises",
-    "Dryer won't start",
-    "Dryer maintenance and diagnostics",
-    "Same-day dryer repair Los Angeles"
-  ],
-"brand": [
-  { "@type": "Brand", "name": "Bertazzoni" },
-  { "@type": "Brand", "name": "Fulgor Milano" },
-  { "@type": "Brand", "name": "Gaggenau" },
-  { "@type": "Brand", "name": "ILVE" },
-  { "@type": "Brand", "name": "Miele" },
-  { "@type": "Brand", "name": "Officine Gullo" },
-
-  { "@type": "Brand", "name": "American Range" },
-  { "@type": "Brand", "name": "BlueStar" },
-  { "@type": "Brand", "name": "FiveStar" },
-  { "@type": "Brand", "name": "Thor" },
-  { "@type": "Brand", "name": "Forno" },
-  { "@type": "Brand", "name": "Garland" },
-  { "@type": "Brand", "name": "ZLINE" },
-
-  { "@type": "Brand", "name": "Fisher & Paykel" },
-  { "@type": "Brand", "name": "Wolf" },
-  { "@type": "Brand", "name": "Thermador" },
-  { "@type": "Brand", "name": "Viking" },
-  { "@type": "Brand", "name": "Monogram" },
-  { "@type": "Brand", "name": "Signature Kitchen Suite" },
-  { "@type": "Brand", "name": "Hestan" },
-  { "@type": "Brand", "name": "Dacor" },
-
-  { "@type": "Brand", "name": "Big Chill" },
-  { "@type": "Brand", "name": "Smeg" },
-
-  { "@type": "Brand", "name": "Asko" },
-  { "@type": "Brand", "name": "Bosch" },
-  { "@type": "Brand", "name": "JennAir" },
-
-  { "@type": "Brand", "name": "Kalamazoo" },
-  { "@type": "Brand", "name": "Lynx" },
-  { "@type": "Brand", "name": "Hestan Outdoor" },
-  { "@type": "Brand", "name": "Viking Outdoor" },
-  { "@type": "Brand", "name": "DCS" },
-  { "@type": "Brand", "name": "Alfresco" },
-  { "@type": "Brand", "name": "Twin Eagles" },
-  { "@type": "Brand", "name": "Fire Magic" },
-  { "@type": "Brand", "name": "Wolf Outdoor" },
-  { "@type": "Brand", "name": "Caliber" }
-],
-  "potentialAction": [
-    {
-      "@type": "ReserveAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://same-day-appliance.repair/book/",
-        "inLanguage": "en",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/cooktop-repair/#webpage",
+      "url": "https://luxuryappliance.repair/cooktop-repair/",
+      "name": "Cooktop Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Professional cooktop repair for luxury, European, pro-style, high-end, and retro cooktops in Los Angeles, Orange County, and Ventura County. We service premium cooktop brands including Wolf, Thermador, Viking, Miele, Gaggenau, Bertazzoni, Bosch, JennAir, Monogram, Dacor, Fisher & Paykel, and more.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/cooktop-repair/#service"
       },
-      "result": {
-        "@type": "Reservation",
-        "name": "Service Appointment"
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/cooktop/cooktop-repair-services.webp"
       }
     },
     {
-      "@type": "CommunicateAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "tel:+14243250520",
-        "actionPlatform": [
-          "http://schema.org/MobileWebPlatform"
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/cooktop-repair/#service",
+      "name": "Cooktop Repair",
+      "url": "https://luxuryappliance.repair/cooktop-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/cooktop-repair/#webpage"
+      },
+      "serviceType": "Luxury cooktop repair, gas cooktop repair, electric cooktop repair, induction cooktop repair, rangetop repair, and pro-style cooking surface repair",
+      "description": "Luxury Appliance Repair by Zaricci provides professional cooktop repair for high-end residential kitchens, European appliance brands, pro-style rangetops, gas cooktops, electric cooktops, induction cooktops, modular cooktops, and luxury cooking surfaces. Our technicians service premium cooktop brands across Los Angeles, Orange County, Ventura County, and surrounding communities.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Los Angeles",
+          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Brentwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Pasadena",
+          "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California"
+        },
+        {
+          "@type": "Place",
+          "name": "Bel Air",
+          "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Pacific Palisades",
+          "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Santa Monica"
+        },
+        {
+          "@type": "City",
+          "name": "Beverly Hills"
+        },
+        {
+          "@type": "City",
+          "name": "Calabasas"
+        },
+        {
+          "@type": "City",
+          "name": "Thousand Oaks"
+        },
+        {
+          "@type": "City",
+          "name": "West Hollywood"
+        },
+        {
+          "@type": "City",
+          "name": "San Marino"
+        },
+        {
+          "@type": "City",
+          "name": "Malibu"
+        },
+        {
+          "@type": "City",
+          "name": "Manhattan Beach"
+        },
+        {
+          "@type": "Place",
+          "name": "Encino",
+          "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Rancho Palos Verdes"
+        },
+        {
+          "@type": "City",
+          "name": "Palos Verdes Estates"
+        },
+        {
+          "@type": "City",
+          "name": "Rolling Hills Estates"
+        },
+        {
+          "@type": "Place",
+          "name": "Westwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Century City",
+          "sameAs": "https://en.wikipedia.org/wiki/Century_City"
+        },
+        {
+          "@type": "City",
+          "name": "La Cañada Flintridge"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Orange County",
+          "sameAs": "https://en.wikipedia.org/wiki/Orange_County,_California"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ventura County",
+          "sameAs": "https://en.wikipedia.org/wiki/Ventura_County,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Irvine",
+          "sameAs": "https://en.wikipedia.org/wiki/Irvine,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Newport Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Newport_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Laguna Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Laguna_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Huntington Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Huntington_Beach,_California"
+        }
+      ],
+      "brand": [
+        {
+          "@type": "Brand",
+          "name": "Bertazzoni"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fulgor Milano"
+        },
+        {
+          "@type": "Brand",
+          "name": "Gaggenau"
+        },
+        {
+          "@type": "Brand",
+          "name": "ILVE"
+        },
+        {
+          "@type": "Brand",
+          "name": "Miele"
+        },
+        {
+          "@type": "Brand",
+          "name": "Officine Gullo"
+        },
+        {
+          "@type": "Brand",
+          "name": "American Range"
+        },
+        {
+          "@type": "Brand",
+          "name": "BlueStar"
+        },
+        {
+          "@type": "Brand",
+          "name": "FiveStar"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thor"
+        },
+        {
+          "@type": "Brand",
+          "name": "Forno"
+        },
+        {
+          "@type": "Brand",
+          "name": "Garland"
+        },
+        {
+          "@type": "Brand",
+          "name": "ZLINE"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fisher & Paykel"
+        },
+        {
+          "@type": "Brand",
+          "name": "Wolf"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thermador"
+        },
+        {
+          "@type": "Brand",
+          "name": "Viking"
+        },
+        {
+          "@type": "Brand",
+          "name": "Monogram"
+        },
+        {
+          "@type": "Brand",
+          "name": "Signature Kitchen Suite"
+        },
+        {
+          "@type": "Brand",
+          "name": "Hestan"
+        },
+        {
+          "@type": "Brand",
+          "name": "Dacor"
+        },
+        {
+          "@type": "Brand",
+          "name": "Smeg"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bosch"
+        },
+        {
+          "@type": "Brand",
+          "name": "JennAir"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Cooktop Repair Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Gas Cooktop Repair",
+              "description": "Repair for luxury gas cooktops with ignition failure, weak flame, clicking igniters, burner problems, gas valve issues, flame adjustment concerns, and control knob issues."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Electric Cooktop Repair",
+              "description": "Repair for electric cooktops with burners not heating, glass surface heating issues, failed switches, damaged wiring, power problems, and temperature control concerns."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Induction Cooktop Repair",
+              "description": "Repair for induction cooktops with cookware detection issues, sensor faults, error codes, overheating, power failure, touch control problems, and electronic control board faults."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Rangetop Repair",
+              "description": "Repair for pro-style rangetops with burner ignition problems, weak flame, uneven heating, griddle issues, control valve problems, and burner assembly concerns."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Modular Cooktop Repair",
+              "description": "Service for modular luxury cooktops with individual cooking module issues, electronic control problems, heating failure, ignition faults, and performance inconsistencies."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Luxury Cooking Surface Repair",
+              "description": "Repair for high-end cooking surfaces in custom kitchens, including gas, electric, induction, and pro-style cooktop systems from premium appliance brands."
+            }
+          }
         ]
-      }
+      },
+      "knowsAbout": [
+        "Luxury cooktop repair",
+        "European cooktop repair",
+        "Gas cooktop repair",
+        "Electric cooktop repair",
+        "Induction cooktop repair",
+        "Rangetop repair",
+        "Pro-style rangetop repair",
+        "Cooktop burner repair",
+        "Cooktop igniter repair",
+        "Cooktop control board repair",
+        "Cooktop sensor repair",
+        "Cooktop knob repair",
+        "Cooktop valve repair",
+        "Glass cooktop repair",
+        "Modular cooktop repair",
+        "Induction cooktop error codes",
+        "Cookware detection issues",
+        "Weak burner flame repair",
+        "Clicking igniter repair",
+        "Luxury kitchen appliance repair"
+      ],
+      "keywords": [
+        "cooktop repair",
+        "luxury cooktop repair",
+        "high-end cooktop repair",
+        "European cooktop repair",
+        "gas cooktop repair",
+        "electric cooktop repair",
+        "induction cooktop repair",
+        "rangetop repair",
+        "pro-style cooktop repair",
+        "Wolf cooktop repair",
+        "Thermador cooktop repair",
+        "Viking cooktop repair",
+        "Miele cooktop repair",
+        "Gaggenau cooktop repair",
+        "Bertazzoni cooktop repair",
+        "Fisher Paykel cooktop repair",
+        "Bosch cooktop repair",
+        "JennAir cooktop repair",
+        "Monogram cooktop repair",
+        "Dacor cooktop repair",
+        "Los Angeles cooktop repair",
+        "Orange County cooktop repair",
+        "Ventura County cooktop repair"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://luxuryappliance.repair/cooktop-repair/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://luxuryappliance.repair/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cooktop Repair",
+          "item": "https://luxuryappliance.repair/cooktop-repair/"
+        }
+      ]
     }
   ]
-}
+};
 // Example breadcrumbs for the home page
 const breadcrumbs = [
 	{ text: 'Welcome' }
