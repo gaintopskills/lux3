@@ -19,24 +19,27 @@ export const Tabs = () => {
       alt: "AGA oven repair technician servicing a luxury AGA cooker",
       description: (
         <>
-          <p>We provide <strong>AGA oven repair</strong> for traditional cast-iron AGA cookers, AGA Total Control, AGA Dual Control, AGA eR7, AGA R7, AGA Mercury, and AGA Elise range ovens. These ovens rely on radiant heat, insulated cavities, multiple oven zones, and model-specific controls that require a more careful diagnostic approach than a standard oven.</p>
-          <h3>Common AGA Oven Problems We Repair:</h3>
+          <p>
+            We provide <strong>AGA oven repair</strong> for traditional cast-iron AGA cookers, AGA Total Control, AGA Dual Control, AGA eR7, AGA R7, AGA Mercury, and AGA Elise range ovens. AGA ovens are not serviced like ordinary wall ovens because many models depend on stored radiant heat, insulated cast-iron cavities, multiple heat zones, and model-specific temperature controls.
+          </p>
+  
+          <h3>AGA Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Baking oven, roasting oven, or simmering oven not holding temperature</li>
-            <li>✅ Slow heat-up, weak radiant heat, or uneven cooking results</li>
-            <li>✅ Electric module, thermostat, thermal fuse, or control failure</li>
-            <li>✅ Burner ignition or gas regulation issues on gas AGA models</li>
-            <li>✅ Door seal wear, heat loss, or oven cavity temperature drift</li>
+            <li>The roasting, baking, simmering, or warming oven no longer feels as strong as it used to.</li>
+            <li>The cooker takes longer to recover heat after the doors have been opened.</li>
+            <li>One oven cavity performs differently from the others, even though the cooker appears to be running.</li>
+            <li>Newer Total Control, Dual Control, eR7, or R7 models may show control or heat-zone problems instead of simple element failure.</li>
+            <li>Older AGA cookers may need careful parts identification because fuel conversions, age, and model generation can change the repair path.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ Our <strong>AGA oven repair technicians</strong> test heating elements, thermostats, controls, ignition systems, safety components, and wiring</li>
-            <li>✅ We diagnose radiant heat performance, oven zone temperature balance, and door sealing issues</li>
-            <li>✅ We service legacy and modern AGA ovens with extra care for cast-iron construction, enamel surfaces, and specialty parts</li>
-          </ul>
+  
+          <h3>How We Repair AGA Ovens</h3>
+          <p>
+            We check heat retention, oven-zone temperature behavior, door rope and gasket condition, thermostats, heating elements, control modules, thermal limits, ignition components where applicable, and model-specific wiring. For traditional AGA cookers, we focus on restoring radiant heat performance and proper door sealing instead of treating the unit like a standard oven.
+          </p>
         </>
       )
     },
+  
     {
       id: "bertazzoni-oven-repair",
       title: "Bertazzoni Oven Repair",
@@ -45,24 +48,27 @@ export const Tabs = () => {
       alt: "Bertazzoni oven repair technician servicing an Italian luxury range oven",
       description: (
         <>
-          <p>Our <strong>Bertazzoni oven repair</strong> service covers Professional Series, Master Series, and Heritage Series ovens, including Bertazzoni wall ovens, gas ranges, dual fuel ranges, induction ranges, and speed or convection oven combinations. Bertazzoni ovens often combine Italian design with dual convection, electronic controls, temperature probes, and specialty bake modes.</p>
-          <h3>Common Bertazzoni Oven Problems We Repair:</h3>
+          <p>
+            Our <strong>Bertazzoni oven repair</strong> service covers Professional Series, Master Series, Heritage Series, built-in wall ovens, gas range ovens, dual fuel range ovens, induction range ovens, speed ovens, and convection oven combinations. Bertazzoni ovens often combine Italian styling with dual convection, mechanical selectors, electronic controls, and series-specific parts.
+          </p>
+  
+          <h3>Bertazzoni Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Oven not reaching set temperature or overheating</li>
-            <li>✅ Dual convection fan not running, noisy, or failing intermittently</li>
-            <li>✅ Broiler, bake element, igniter, or gas oven burner failure</li>
-            <li>✅ Error codes, control display problems, or selector knob issues</li>
-            <li>✅ Door gasket wear, hinge sag, or heat escaping from the cavity</li>
+            <li>The oven preheats but does not hold the selected temperature accurately.</li>
+            <li>Dual convection fans become noisy, slow, or inconsistent during baking.</li>
+            <li>Gas range ovens may click, delay ignition, or heat weakly even when the cooktop still works.</li>
+            <li>Selector knobs, temperature knobs, or function controls may feel loose, inconsistent, or unresponsive.</li>
+            <li>Built-in Bertazzoni ovens may develop cooling fan or cabinet heat issues when installed tightly into cabinetry.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We inspect <strong>Bertazzoni wall oven and range oven components</strong>, including sensors, fans, boards, igniters, valves, and heating elements</li>
-            <li>✅ We test temperature accuracy and airflow to correct uneven baking or roasting</li>
-            <li>✅ We identify model-specific parts for Professional, Master, and Heritage Series units</li>
-          </ul>
+  
+          <h3>How We Repair Bertazzoni Ovens</h3>
+          <p>
+            We identify the exact Bertazzoni series before replacing parts, then test the igniter, gas valve, oven sensor, thermostat, selector switch, convection fans, relay board, cooling fan, and door gasket. Because Professional, Master, and Heritage Series parts may differ, we verify compatibility before ordering components.
+          </p>
         </>
       )
     },
+  
     {
       id: "fulgor-milano-oven-repair",
       title: "Fulgor Milano Oven Repair",
@@ -71,24 +77,27 @@ export const Tabs = () => {
       alt: "Fulgor Milano oven repair technician working on a premium Italian oven",
       description: (
         <>
-          <p>We service <strong>Fulgor Milano oven repair</strong> needs for built-in ovens, combi ovens, Sofia professional ranges, Sofia induction ranges, Distinto ovens, and Fulgor Milano dual fuel or all-gas range ovens. These appliances often include advanced convection systems, touch controls, meat probes, cooling fans, and precision European-style cooking modes.</p>
-          <h3>Common Fulgor Milano Oven Problems We Repair:</h3>
+          <p>
+            We service <strong>Fulgor Milano oven repair</strong> for Sofia professional ranges, Sofia induction ranges, Fulgor Milano wall ovens, combi ovens, Distinto ovens, and dual fuel or all-gas range ovens. These ovens often require attention to European-style controls, cooling airflow, meat probes, touch displays, and model-specific Italian parts.
+          </p>
+  
+          <h3>Fulgor Milano Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Oven not heating, heating unevenly, or shutting off during cooking</li>
-            <li>✅ Convection fan, cooling fan, or airflow problems</li>
-            <li>✅ Control panel, display, relay board, or selector malfunction</li>
-            <li>✅ Steam, combi, or specialty cooking mode not working correctly</li>
-            <li>✅ Range oven ignition, bake burner, broil element, or temperature sensor failure</li>
+            <li>The oven shuts off during cooking or does not maintain temperature under longer cooking cycles.</li>
+            <li>The cooling fan runs unusually long, becomes noisy, or does not protect the surrounding cabinet from heat.</li>
+            <li>Touch controls, relay boards, or selector controls may respond intermittently.</li>
+            <li>Meat probe faults can interrupt cooking programs or make the oven behave as if a probe is connected.</li>
+            <li>Sofia range ovens may need exact model verification before parts are ordered because components can vary by generation.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We diagnose <strong>Fulgor Milano built-in ovens and range ovens</strong> with electrical, heating, airflow, and sensor testing</li>
-            <li>✅ We calibrate temperature performance and verify safe operation after repair</li>
-            <li>✅ We help source compatible parts for current and less common Fulgor Milano models</li>
-          </ul>
+  
+          <h3>How We Repair Fulgor Milano Ovens</h3>
+          <p>
+            We test temperature sensors, relays, cooling fans, control boards, probe circuits, selector controls, bake and broil elements, gas ignition components, and cabinet ventilation. We also confirm the model and serial number carefully before sourcing Fulgor Milano parts.
+          </p>
         </>
       )
     },
+  
     {
       id: "gaggenau-oven-repair",
       title: "Gaggenau Oven Repair",
@@ -97,24 +106,27 @@ export const Tabs = () => {
       alt: "Gaggenau oven repair technician servicing a luxury built-in oven",
       description: (
         <>
-          <p>Our <strong>Gaggenau oven repair</strong> service is designed for 400 Series and 200 Series wall ovens, combi-steam ovens, combi-microwave ovens, warming drawers, and Gaggenau built-in cooking columns. Gaggenau ovens are highly engineered appliances with precise controls, steam systems, temperature probes, complex ventilation, and premium built-in installation requirements.</p>
-          <h3>Common Gaggenau Oven Problems We Repair:</h3>
+          <p>
+            Our <strong>Gaggenau oven repair</strong> service is designed for 400 Series and 200 Series wall ovens, combi-steam ovens, combi-microwave ovens, warming drawers, and Gaggenau built-in cooking columns. These appliances are highly engineered and often need precise diagnosis of steam systems, drain filters, descaling condition, probes, ventilation, and electronic modules.
+          </p>
+  
+          <h3>Gaggenau Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Combi-steam oven not producing steam or not draining properly</li>
-            <li>✅ Oven not heating, slow preheat, or temperature inaccuracy</li>
-            <li>✅ Moisture, descaling, water tank, or pump-related problems</li>
-            <li>✅ Display, touch control, selector ring, or module failure</li>
-            <li>✅ Door lock, cooling fan, probe, or sensor issues</li>
+            <li>The combi-steam oven leaves water behind, drains slowly, rattles, or asks for cleaning/descaling more often.</li>
+            <li>Steam performance becomes weak because the water path, pump, drain filter, or limescale buildup needs attention.</li>
+            <li>The rotary selector, display, or touch controls stop responding correctly.</li>
+            <li>A cooking column may run hot inside the cabinet if cooling airflow is restricted.</li>
+            <li>Probe, door lock, sensor, or module faults can interrupt advanced cooking modes.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ Our <strong>Gaggenau oven technicians</strong> test steam generation, heating circuits, sensors, fans, pumps, and electronic modules</li>
-            <li>✅ We diagnose built-in ventilation and cabinetry-related heat issues</li>
-            <li>✅ We service high-end Gaggenau cooking columns with careful protection of panels, trim, and surrounding cabinetry</li>
-          </ul>
+  
+          <h3>How We Repair Gaggenau Ovens</h3>
+          <p>
+            We inspect the steam generator, water tank system, pump, drain filter, descaling condition, probe circuit, door lock, sensors, cooling fan, and control electronics. On built-in Gaggenau cooking columns, we also check cabinet ventilation because heat and moisture management are critical.
+          </p>
         </>
       )
     },
+  
     {
       id: "ilve-oven-repair",
       title: "ILVE Oven Repair",
@@ -123,24 +135,27 @@ export const Tabs = () => {
       alt: "ILVE oven repair technician servicing an Italian dual fuel range oven",
       description: (
         <>
-          <p>We provide <strong>ILVE oven repair</strong> for Majestic, Nostalgie, Panoramagic, Professional Plus, and ILVE dual fuel or all-gas range ovens. ILVE ovens may include multiple oven cavities, French tops, griddles, brass burners, rotisserie systems, warming drawers, and European-style multifunction oven controls.</p>
-          <h3>Common ILVE Oven Problems We Repair:</h3>
+          <p>
+            We provide <strong>ILVE oven repair</strong> for Majestic, Nostalgie, Panoramagic, Professional Plus, and ILVE dual fuel or all-gas range ovens. ILVE ovens often include heavy doors, decorative finishes, brass burners, rotisserie systems, multiple cavities, and European multifunction oven controls.
+          </p>
+  
+          <h3>ILVE Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Main oven or secondary oven not heating correctly</li>
-            <li>✅ Uneven baking, weak broil, or convection fan failure</li>
-            <li>✅ Gas oven ignition, safety valve, or burner flame problems</li>
-            <li>✅ Control knob, thermostat, timer, or selector switch issues</li>
-            <li>✅ Door hinge, gasket, interior light, or rotisserie malfunction</li>
+            <li>The oven door does not sit evenly, does not close flush, or begins losing heat around the gasket.</li>
+            <li>Large ILVE doors can become sensitive to hinge seating, leveling, gasket condition, or frame alignment.</li>
+            <li>The main oven and secondary oven may heat differently because each cavity has separate airflow and controls.</li>
+            <li>Rotisserie, interior light, selector switch, timer, or thermostat issues may appear before a full heating failure.</li>
+            <li>Decorative trim, brass details, and custom colors require extra care during disassembly.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We service <strong>ILVE range ovens</strong> with testing for thermostats, igniters, gas valves, elements, fans, and control switches</li>
-            <li>✅ We inspect dual-cavity oven performance and airflow balance</li>
-            <li>✅ We protect custom finishes, brass details, and decorative trim during service</li>
-          </ul>
+  
+          <h3>How We Repair ILVE Ovens</h3>
+          <p>
+            We inspect hinge engagement, door alignment, gasket contact, frame fit, thermostat response, selector switches, rotisserie components, igniters, gas valves, and heating elements. When a door issue is involved, we correct the mechanical fit first because poor sealing can make the oven seem like it has a temperature-control problem.
+          </p>
         </>
       )
     },
+  
     {
       id: "lacanche-oven-repair",
       title: "Lacanche Oven Repair",
@@ -149,24 +164,27 @@ export const Tabs = () => {
       alt: "Lacanche oven repair technician servicing a French luxury range oven",
       description: (
         <>
-          <p>Our <strong>Lacanche oven repair</strong> service supports French range models such as Cluny, Sully, Savigny, Volnay, Chagny, Cormatin, Citeaux, and other Lacanche classic and modern configurations. Lacanche ranges may include gas ovens, electric ovens, warming cupboards, ambient cabinets, simmer ovens, and custom cooktop combinations.</p>
-          <h3>Common Lacanche Oven Problems We Repair:</h3>
+          <p>
+            Our <strong>Lacanche oven repair</strong> service supports French range models such as Cluny, Sully, Savigny, Volnay, Chagny, Cormatin, Citeaux, and custom Lacanche configurations. Lacanche ranges may include gas ovens, electric ovens, warming cupboards, simmer ovens, ambient cabinets, and custom cooktop combinations.
+          </p>
+  
+          <h3>Lacanche Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Gas oven not lighting, flame dropping out, or weak bake performance</li>
-            <li>✅ Electric oven not reaching temperature or tripping power</li>
-            <li>✅ Thermostat, thermocouple, safety valve, or selector failure</li>
-            <li>✅ Warming oven or secondary oven not heating properly</li>
-            <li>✅ Door seal, hinge, enamel, or knob-related concerns</li>
+            <li>A gas oven flame drops out, lights slowly, or does not hold steady during baking.</li>
+            <li>An electric oven cavity heats differently from the gas cavity or secondary oven.</li>
+            <li>The warming cupboard or simmer oven no longer reaches the expected gentle heat.</li>
+            <li>Heavy doors, hinges, and seals may affect heat retention over time.</li>
+            <li>Custom configurations can make parts identification more complex than on standard ranges.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ Our <strong>Lacanche oven repair technicians</strong> test gas safety systems, electrical circuits, thermostats, and oven controls</li>
-            <li>✅ We diagnose multi-oven French range layouts and verify each cavity separately</li>
-            <li>✅ We take a careful approach with custom finishes, brass trim, and hand-built range construction</li>
-          </ul>
+  
+          <h3>How We Repair Lacanche Ovens</h3>
+          <p>
+            We diagnose each Lacanche oven cavity separately, confirm whether the cavity is gas or electric, then inspect thermocouples, thermostats, safety valves, selectors, elements, door seals, and hinges. We also protect enamel, brass, chrome, and custom finishes during service.
+          </p>
         </>
       )
     },
+  
     {
       id: "la-cornue-oven-repair",
       title: "La Cornue Oven Repair",
@@ -175,24 +193,27 @@ export const Tabs = () => {
       alt: "La Cornue oven repair technician servicing a luxury French range oven",
       description: (
         <>
-          <p>We specialize in <strong>La Cornue oven repair</strong> for Château, CornuFé, CornuChef, Grand Palais, Le Château 75, Château 90, Château 120, Château 150, Château 165, and other La Cornue range oven configurations. La Cornue ovens are known for vaulted oven cavities, natural convection, gas and electric oven options, and highly customized finishes.</p>
-          <h3>Common La Cornue Oven Problems We Repair:</h3>
+          <p>
+            We specialize in <strong>La Cornue oven repair</strong> for Château, CornuFé, CornuChef, Grand Palais, Le Château 75, Château 90, Château 120, Château 150, Château 165, and other La Cornue range oven configurations. La Cornue ovens are known for vaulted oven cavities, natural convection, gas and electric oven options, and custom finishes.
+          </p>
+  
+          <h3>La Cornue Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ La Cornue oven not heating, overheating, or baking unevenly</li>
-            <li>✅ Gas oven ignition failure, delayed ignition, or burner shutoff</li>
-            <li>✅ Electric oven element, thermostat, selector, or relay issue</li>
-            <li>✅ Door gasket wear, hinge tension problems, or heat escaping</li>
-            <li>✅ CornuFé control issues, indicator lights, fans, or temperature calibration problems</li>
+            <li>The oven bakes unevenly because the vaulted cavity moves heat differently than a standard fan-driven oven.</li>
+            <li>Gas oven ignition may be delayed, weak, or shut off due to thermocouple or safety-valve issues.</li>
+            <li>Electric cavities may develop selector, thermostat, element, relay, or wiring faults.</li>
+            <li>Door gasket wear or hinge tension can cause heat loss and make the oven feel underpowered.</li>
+            <li>CornuFé models may have indicator light, fan, calibration, or control issues that differ from Château models.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ Our <strong>La Cornue range repair technicians</strong> test gas valves, thermocouples, igniters, elements, thermostats, controls, and wiring</li>
-            <li>✅ We evaluate vaulted oven heat movement and cooking performance</li>
-            <li>✅ We service luxury French ranges with extra care for enamel, brass, chrome, polished metal, and custom color finishes</li>
-          </ul>
+  
+          <h3>How We Repair La Cornue Ovens</h3>
+          <p>
+            We test each cavity by fuel type, inspect vaulted heat movement, verify gas safety components, check electric elements and controls, and evaluate door sealing. We work carefully around enamel, brass, chrome, polished metal, and custom color finishes.
+          </p>
         </>
       )
     },
+  
     {
       id: "miele-oven-repair",
       title: "Miele Oven Repair",
@@ -201,24 +222,27 @@ export const Tabs = () => {
       alt: "Miele oven repair technician servicing a built-in speed or steam oven",
       description: (
         <>
-          <p>We provide <strong>Miele oven repair</strong> for Generation 7000 ovens, MasterCool kitchen installations, M Touch ovens, convection ovens, speed ovens, combi-steam ovens, steam ovens, microwave combination ovens, and warming drawers. Miele cooking appliances often include precision sensors, automatic programs, moisture controls, DirectWater options, and advanced user interfaces.</p>
-          <h3>Common Miele Oven Problems We Repair:</h3>
+          <p>
+            We provide <strong>Miele oven repair</strong> for Generation 7000 ovens, M Touch ovens, steam ovens, combi-steam ovens, speed ovens, microwave combination ovens, convection ovens, and warming drawers. Miele ovens often need mode-specific diagnosis because steam, speed, convection, and automatic programs use different systems inside the same appliance stack.
+          </p>
+  
+          <h3>Miele Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Miele oven not heating, preheating slowly, or showing fault codes</li>
-            <li>✅ Combi-steam oven water intake, draining, steam, or descaling issues</li>
-            <li>✅ Speed oven microwave/convection combination not working correctly</li>
-            <li>✅ Cooling fan, convection fan, door lock, probe, or sensor failure</li>
-            <li>✅ Touch display, M Touch interface, relay, or control board malfunction</li>
+            <li>Steam ovens may show water intake, drain, descaling, or pump-related faults.</li>
+            <li>Combi-steam ovens may stop steaming properly because of limescale, blocked nozzles, drain issues, or valve problems.</li>
+            <li>Speed ovens may heat in convection mode but fail in microwave-assist or combination cooking.</li>
+            <li>M Touch controls, relay boards, probes, sensors, or cooling fans may interrupt automatic programs.</li>
+            <li>Stacked Miele oven installations may run hot if cabinet ventilation is restricted.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We diagnose <strong>Miele wall ovens, speed ovens, and steam ovens</strong> with model-specific testing</li>
-            <li>✅ We inspect water systems, pumps, valves, sensors, heating elements, and ventilation pathways</li>
-            <li>✅ We verify cooking modes, temperature stability, steam performance, and safe operation before completion</li>
-          </ul>
+  
+          <h3>How We Repair Miele Ovens</h3>
+          <p>
+            We test the water path, drain system, pump, valves, descaling condition, sensors, probes, relays, fans, heating elements, and M Touch interface. For Miele steam and speed ovens, we verify each cooking mode separately instead of assuming the issue is a basic heating failure.
+          </p>
         </>
       )
     },
+  
     {
       id: "officine-gullo-oven-repair",
       title: "Officine Gullo Oven Repair",
@@ -227,24 +251,27 @@ export const Tabs = () => {
       alt: "Officine Gullo oven repair technician servicing a bespoke luxury range",
       description: (
         <>
-          <p>Our <strong>Officine Gullo oven repair</strong> service is designed for bespoke Italian ranges, cooking suites, custom ovens, professional range ovens, and luxury kitchen installations. Officine Gullo appliances may combine heavy-duty cooking equipment, handcrafted metal finishes, custom dimensions, gas burners, electric ovens, warming modules, and professional-style controls.</p>
-          <h3>Common Officine Gullo Oven Problems We Repair:</h3>
+          <p>
+            Our <strong>Officine Gullo oven repair</strong> service is designed for bespoke Italian ranges, custom cooking suites, professional ovens, and luxury kitchen installations. Officine Gullo appliances often combine handcrafted metal finishes, custom dimensions, commercial-style components, and made-to-order layouts.
+          </p>
+  
+          <h3>Officine Gullo Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Oven cavity not heating or not maintaining accurate temperature</li>
-            <li>✅ Gas ignition, flame stability, safety valve, or burner issues</li>
-            <li>✅ Electric element, thermostat, selector, relay, or wiring failure</li>
-            <li>✅ Convection fan, cooling fan, or airflow problems</li>
-            <li>✅ Custom trim, door, gasket, hinge, or finish-sensitive service needs</li>
+            <li>One custom oven cavity performs differently from another because each section may use different controls or heat sources.</li>
+            <li>Heavy doors, gaskets, hinges, and professional trim may need adjustment to maintain heat retention.</li>
+            <li>Gas oven systems may develop flame stability, thermocouple, or safety-valve issues.</li>
+            <li>Electric oven sections may need selector, thermostat, relay, element, or wiring diagnosis.</li>
+            <li>Parts identification can require extra research because many installations are custom-built.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We inspect <strong>Officine Gullo range ovens</strong> with attention to custom appliance layouts and professional components</li>
-            <li>✅ We test fuel, electrical, temperature, and ventilation systems</li>
-            <li>✅ We protect brass, copper, stainless steel, nickel, and custom finish details during service</li>
-          </ul>
+  
+          <h3>How We Repair Officine Gullo Ovens</h3>
+          <p>
+            We document the layout, fuel type, oven cavities, controls, access points, and custom finishes before repair. Then we test gas, electric, temperature, ventilation, and door systems while protecting brass, copper, nickel, stainless steel, and custom metalwork.
+          </p>
         </>
       )
     },
+  
     {
       id: "american-range-oven-repair",
       title: "American Range Oven Repair",
@@ -253,24 +280,27 @@ export const Tabs = () => {
       alt: "American Range oven repair technician servicing a pro-style range oven",
       description: (
         <>
-          <p>We provide <strong>American Range oven repair</strong> for residential pro-style ranges, Performer Series, Cuisine Series, Legend Series, Medallion Series, wall ovens, and commercial-style cooking equipment. American Range ovens are built around high-output burners, heavy-duty oven cavities, convection systems, and professional temperature demands.</p>
-          <h3>Common American Range Oven Problems We Repair:</h3>
+          <p>
+            We provide <strong>American Range oven repair</strong> for Performer Series, Cuisine Series, Legend Series, Medallion Series, residential pro-style ranges, wall ovens, and commercial-style cooking equipment used in private homes and chef kitchens. American Range ovens are built around heavy-duty gas systems, high-output cooking, and professional oven cavities.
+          </p>
+  
+          <h3>American Range Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Gas oven not lighting, delayed ignition, or weak flame</li>
-            <li>✅ Oven temperature too low, too high, or inconsistent</li>
-            <li>✅ Convection fan, thermostat, safety valve, or igniter failure</li>
-            <li>✅ Broiler, bake burner, door gasket, or hinge problems</li>
-            <li>✅ Commercial-style range oven performance decline from heavy use</li>
+            <li>The gas oven glows or clicks but does not ignite reliably.</li>
+            <li>Heavy-use ovens lose heat recovery after the door is opened repeatedly.</li>
+            <li>Convection fan wear or airflow restriction causes uneven browning.</li>
+            <li>Door gaskets, hinges, latches, and broiler components wear from high-temperature use.</li>
+            <li>Residential and commercial-style American Range units may use different parts and service access.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ Our <strong>American Range oven repair technicians</strong> test ignition systems, gas pressure, thermostats, fans, and safety components</li>
-            <li>✅ We inspect oven cavities, burner assemblies, and airflow for even baking and roasting</li>
-            <li>✅ We service both luxury residential kitchens and light commercial-style cooking setups</li>
-          </ul>
+  
+          <h3>How We Repair American Range Ovens</h3>
+          <p>
+            We test gas pressure, igniter amp draw, bake burner performance, thermostats, convection fans, broiler systems, door seals, and heat recovery. We also confirm whether the unit is residential, commercial-style, or true commercial equipment before ordering parts.
+          </p>
         </>
       )
     },
+  
     {
       id: "bluestar-oven-repair",
       title: "BlueStar Oven Repair",
@@ -279,24 +309,27 @@ export const Tabs = () => {
       alt: "BlueStar oven repair technician servicing a pro-style range oven",
       description: (
         <>
-          <p>Our <strong>BlueStar oven repair</strong> service covers Platinum Series, RNB Series, RCS Series, Precious Metals, built-in wall ovens, gas ranges, and dual fuel ranges. BlueStar ovens are known for high-output open burners, professional-style oven cavities, powerful broilers, and customizable color finishes.</p>
-          <h3>Common BlueStar Oven Problems We Repair:</h3>
+          <p>
+            Our <strong>BlueStar oven repair</strong> service covers Platinum Series, RNB Series, RCS Series, Precious Metals, gas ranges, dual fuel ranges, and built-in wall ovens. BlueStar ovens are known for pro-style open-burner cooking, powerful broilers, convection performance, and custom color finishes.
+          </p>
+  
+          <h3>BlueStar Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Oven not heating, overheating, or failing to maintain temperature</li>
-            <li>✅ Infrared broiler not igniting or producing weak heat</li>
-            <li>✅ Bake burner, igniter, safety valve, or thermostat problems</li>
-            <li>✅ Convection fan noise, fan failure, or uneven baking</li>
-            <li>✅ Door gasket, hinge, kick plate, or enamel/finish-sensitive concerns</li>
+            <li>The infrared broiler becomes weak, uneven, or difficult to ignite.</li>
+            <li>The bake burner may light slowly, cycle poorly, or fail because of igniter or safety-valve issues.</li>
+            <li>Convection fans may become noisy or weak inside the professional-style oven cavity.</li>
+            <li>Heavy doors, hinges, kick plates, and gaskets can affect heat retention over time.</li>
+            <li>Custom color panels and enamel finishes require careful handling during repair.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We diagnose <strong>BlueStar range ovens and wall ovens</strong> with gas, electrical, and temperature testing</li>
-            <li>✅ We inspect broiler systems, oven burners, thermostats, fans, and ignition components</li>
-            <li>✅ We handle custom color panels and pro-style trim with careful service practices</li>
-          </ul>
+  
+          <h3>How We Repair BlueStar Ovens</h3>
+          <p>
+            We inspect the broiler system, bake burner, igniter, gas valve, thermostat, convection fan, door seal, and hinge alignment. We also protect custom panels and verify the exact BlueStar series before matching parts.
+          </p>
         </>
       )
     },
+  
     {
       id: "fivestar-oven-repair",
       title: "FiveStar Oven Repair",
@@ -305,24 +338,27 @@ export const Tabs = () => {
       alt: "FiveStar oven repair technician servicing a professional range oven",
       description: (
         <>
-          <p>We service <strong>FiveStar oven repair</strong> for FiveStar gas ranges, dual fuel ranges, side-by-side dual-fuel oven models, sealed burner ranges, griddle/grill configurations, and legacy pro-style FiveStar cooking appliances. FiveStar ranges may include gas oven heat, electric oven heat, or dual oven layouts that need separate diagnostics for each cavity.</p>
-          <h3>Common FiveStar Oven Problems We Repair:</h3>
+          <p>
+            We service <strong>FiveStar oven repair</strong> for gas ranges, dual fuel ranges, side-by-side oven layouts, sealed burner ranges, griddle/grill configurations, and legacy FiveStar cooking appliances. Many FiveStar ranges have older controls, separate oven cavities, and parts that must be matched carefully.
+          </p>
+  
+          <h3>FiveStar Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Gas oven not lighting, flame cutting out, or taking too long to heat</li>
-            <li>✅ Electric oven section not heating or tripping power</li>
-            <li>✅ Thermostat, selector, igniter, thermocouple, or valve failure</li>
-            <li>✅ Side-by-side oven cavities cooking at different temperatures</li>
-            <li>✅ Broiler, door gasket, hinge, or control knob issues</li>
+            <li>One side of a side-by-side range heats correctly while the other side does not.</li>
+            <li>Gas oven flame may drop out, light slowly, or fail because of thermocouple, igniter, or safety-valve issues.</li>
+            <li>Electric oven sections may trip power or stop heating due to elements, selectors, thermostats, or wiring.</li>
+            <li>Older knobs, doors, hinges, broilers, and gaskets can become harder to source.</li>
+            <li>Large ranges with griddle or grill sections may need heat and gas systems checked together.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ Our <strong>FiveStar range repair technicians</strong> test gas and electric oven systems independently</li>
-            <li>✅ We inspect thermostats, oven burners, heating elements, safety valves, wiring, and controls</li>
-            <li>✅ We service older FiveStar models with attention to parts compatibility and safe operation</li>
-          </ul>
+  
+          <h3>How We Repair FiveStar Ovens</h3>
+          <p>
+            We test each oven cavity independently and confirm whether the issue is gas, electric, control-related, or door-related. For older FiveStar units, we verify parts compatibility before replacing components.
+          </p>
         </>
       )
     },
+  
     {
       id: "thor-oven-repair",
       title: "Thor Oven Repair",
@@ -331,24 +367,27 @@ export const Tabs = () => {
       alt: "Thor Kitchen oven repair technician servicing a professional range oven",
       description: (
         <>
-          <p>We provide <strong>Thor Kitchen oven repair</strong> for professional gas ranges, dual fuel ranges, electric ranges, induction ranges, 30-inch wall ovens, double ovens, and commercial-style cooking suites. Thor ovens often include convection cooking, infrared broilers, electronic ignition, air fry features, and stainless pro-style construction.</p>
-          <h3>Common Thor Oven Problems We Repair:</h3>
+          <p>
+            We provide <strong>Thor Kitchen oven repair</strong> for professional gas ranges, dual fuel ranges, electric ranges, induction ranges, wall ovens, double ovens, and pro-style cooking suites. Thor ovens often include electronic ignition, convection fans, infrared broilers, air fry modes, and stainless commercial-style construction.
+          </p>
+  
+          <h3>Thor Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Thor oven not heating, not igniting, or preheating slowly</li>
-            <li>✅ Convection fan, air fry mode, or broiler not working</li>
-            <li>✅ Gas oven flame issues, safety valve failure, or igniter problems</li>
-            <li>✅ Electric element, relay, display, or control board malfunction</li>
-            <li>✅ Door gasket, hinge, temperature sensor, or thermostat failure</li>
+            <li>The oven does not ignite reliably even though the cooktop burners still work.</li>
+            <li>Air fry or convection modes run but do not circulate heat evenly.</li>
+            <li>Displays, relays, or selector controls may fail on newer electronic models.</li>
+            <li>Infrared broilers or broil elements may stop producing strong top heat.</li>
+            <li>Parts must be matched carefully because Thor gas, dual fuel, electric, and induction platforms differ.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We diagnose <strong>Thor range ovens and wall ovens</strong> across gas, electric, dual fuel, and induction models</li>
-            <li>✅ We test fans, elements, igniters, valves, sensors, switches, and control boards</li>
-            <li>✅ We verify oven temperature, airflow, and safety operation after repair</li>
-          </ul>
+  
+          <h3>How We Repair Thor Ovens</h3>
+          <p>
+            We confirm the fuel type and platform first, then test ignition, gas valves, elements, fans, relays, sensors, selector controls, air fry circuits, and door seals so the repair matches the exact Thor model.
+          </p>
         </>
       )
     },
+  
     {
       id: "forno-oven-repair",
       title: "Forno Oven Repair",
@@ -357,24 +396,27 @@ export const Tabs = () => {
       alt: "Forno oven repair technician servicing a modern wall oven",
       description: (
         <>
-          <p>Our <strong>Forno oven repair</strong> service covers Forno ranges, Forno dual fuel ranges, gas ranges, induction ranges, Vomero wall ovens, single wall ovens, double wall ovens, convection ovens, and built-in cooking appliances. Forno ovens often include large-capacity oven cavities, convection fans, self-clean features, mechanical or electronic controls, and stainless or colored finishes.</p>
-          <h3>Common Forno Oven Problems We Repair:</h3>
+          <p>
+            Our <strong>Forno oven repair</strong> service covers Forno ranges, dual fuel ranges, gas ranges, induction ranges, Vomero wall ovens, single wall ovens, double wall ovens, and convection ovens. Forno units often require careful model verification because product lines, controls, and replacement parts can vary significantly by series.
+          </p>
+  
+          <h3>Forno Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Oven not heating, heating unevenly, or shutting off</li>
-            <li>✅ Convection fan noise, failed fan motor, or weak airflow</li>
-            <li>✅ Bake element, broil element, igniter, or thermostat failure</li>
-            <li>✅ Control knob, display, timer, or selector switch malfunction</li>
-            <li>✅ Self-clean, door lock, gasket, or cooling fan problems</li>
+            <li>Large oven cavities may heat unevenly if the sensor, fan, thermostat, or control is off.</li>
+            <li>Convection fans may become noisy, weak, or fail to move enough air.</li>
+            <li>Door locks, gaskets, and self-clean components may create problems on built-in oven models.</li>
+            <li>Gas and dual fuel ranges may need ignition, valve, or burner diagnosis.</li>
+            <li>Exact model numbers matter because parts can vary across Forno series and generations.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We inspect <strong>Forno wall ovens and range ovens</strong> for heating, airflow, control, and safety issues</li>
-            <li>✅ We test elements, fans, sensors, boards, switches, igniters, and gas valves</li>
-            <li>✅ We calibrate performance and confirm proper oven function before handoff</li>
-          </ul>
+  
+          <h3>How We Repair Forno Ovens</h3>
+          <p>
+            We verify the model and series, then test airflow, sensors, controls, locks, gas ignition, heating circuits, fans, and door sealing. Accurate parts matching is especially important before repair work begins.
+          </p>
         </>
       )
     },
+  
     {
       id: "garland-oven-repair",
       title: "Garland Oven Repair",
@@ -383,24 +425,27 @@ export const Tabs = () => {
       alt: "Garland commercial oven repair technician servicing a convection oven",
       description: (
         <>
-          <p>We provide <strong>Garland oven repair</strong> for commercial ranges, Master Series heavy-duty ranges, convection ovens, gas ovens, electric ovens, and restaurant-style cooking equipment installed in private estates, chef kitchens, event spaces, and commercial kitchens. Garland ovens are built for heavy use and require accurate diagnosis of gas, electrical, airflow, and control systems.</p>
-          <h3>Common Garland Oven Problems We Repair:</h3>
+          <p>
+            We provide <strong>Garland oven repair</strong> for commercial ranges, Master Series heavy-duty ranges, convection ovens, gas ovens, electric ovens, and restaurant-style equipment installed in private estates, chef kitchens, event spaces, and commercial kitchens. Garland equipment is built for high-volume cooking, so repair often centers on heat recovery, gas flow, fan systems, and safety controls.
+          </p>
+  
+          <h3>Garland Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Convection oven not heating, baking unevenly, or running too hot</li>
-            <li>✅ Gas range oven ignition, pilot, safety valve, or thermostat issue</li>
-            <li>✅ Fan motor, belt, door switch, or timer failure</li>
-            <li>✅ Electric oven element, contactor, relay, or control malfunction</li>
-            <li>✅ Heavy-use oven cavity, door gasket, or hinge wear</li>
+            <li>The oven loses heat recovery after repeated door openings.</li>
+            <li>Convection fans, belts, door switches, or timers wear from heavy use.</li>
+            <li>Gas ovens may have pilot, ignition, safety-valve, thermostat, or burner issues.</li>
+            <li>Electric ovens may develop element, relay, contactor, or high-load electrical faults.</li>
+            <li>Door gaskets, hinges, latches, and oven cavities can wear faster in demanding environments.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ Our <strong>Garland oven repair technicians</strong> test gas flow, ignition, fan systems, thermostats, controls, and electrical loads</li>
-            <li>✅ We inspect commercial-grade ovens for safe operation and consistent heat recovery</li>
-            <li>✅ We service Garland equipment used in professional and high-demand residential cooking environments</li>
-          </ul>
+  
+          <h3>How We Repair Garland Ovens</h3>
+          <p>
+            We inspect fan motors, belts, gas flow, pilots, burners, thermostats, contactors, relays, door switches, gaskets, and hinges. We also confirm whether the installation is residential, commercial-style, or true commercial before sourcing parts.
+          </p>
         </>
       )
     },
+  
     {
       id: "zline-oven-repair",
       title: "ZLINE Oven Repair",
@@ -409,24 +454,27 @@ export const Tabs = () => {
       alt: "ZLINE oven repair technician servicing a professional wall oven",
       description: (
         <>
-          <p>Our <strong>ZLINE oven repair</strong> service covers ZLINE gas ranges, dual fuel ranges, induction ranges, single wall ovens, double wall ovens, Autograph Edition ovens, and professional-style cooking appliances. ZLINE ovens commonly include true convection, self-cleaning, air fry options, stainless construction, and decorative handle or accent finishes.</p>
-          <h3>Common ZLINE Oven Problems We Repair:</h3>
+          <p>
+            Our <strong>ZLINE oven repair</strong> service covers ZLINE gas ranges, dual fuel ranges, induction ranges, single wall ovens, double wall ovens, Autograph Edition ovens, and pro-style cooking appliances. ZLINE ovens often combine decorative finishes, true convection, air fry functions, self-clean systems, and modern controls.
+          </p>
+  
+          <h3>ZLINE Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Oven not reaching temperature or burning food</li>
-            <li>✅ True convection fan, air fry mode, or broiler not working</li>
-            <li>✅ Bake element, igniter, gas valve, relay, or sensor failure</li>
-            <li>✅ Display, control board, selector knob, or timer issue</li>
-            <li>✅ Door lock, self-clean, gasket, or hinge malfunction</li>
+            <li>Air fry or true convection mode runs but does not cook evenly.</li>
+            <li>Self-clean or door lock functions may fail on wall ovens and newer range ovens.</li>
+            <li>Gas range ovens may need igniter, safety-valve, bake burner, or broiler diagnosis.</li>
+            <li>Autograph Edition handles, brass accents, and decorative trim need careful protection during service.</li>
+            <li>Gas, dual fuel, induction, and wall oven models may use different controls and parts.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We diagnose <strong>ZLINE wall ovens and range ovens</strong> using heating, airflow, and control-system testing</li>
-            <li>✅ We service gas, electric, dual fuel, and induction cooking platforms</li>
-            <li>✅ We verify temperature accuracy, fan operation, safety controls, and full cooking performance</li>
-          </ul>
+  
+          <h3>How We Repair ZLINE Ovens</h3>
+          <p>
+            We test the exact failed mode, including bake, broil, convection, air fry, self-clean, and gas ignition. We inspect fans, sensors, relays, locks, elements, valves, and decorative trim before completing the repair.
+          </p>
         </>
       )
     },
+  
     {
       id: "fisher-paykel-oven-repair",
       title: "Fisher & Paykel Oven Repair",
@@ -435,24 +483,27 @@ export const Tabs = () => {
       alt: "Fisher and Paykel oven repair technician servicing a combi-steam wall oven",
       description: (
         <>
-          <p>We provide <strong>Fisher & Paykel oven repair</strong> for Series 7, Series 9, and Series 11 ovens, including Contemporary, Minimal, and Professional wall ovens, combi-steam ovens, convection ovens, speed ovens, microwave combination ovens, and range ovens. Fisher & Paykel ovens often use AeroTech airflow, guided cooking, steam functions, and precision sensors.</p>
-          <h3>Common Fisher & Paykel Oven Problems We Repair:</h3>
+          <p>
+            We provide <strong>Fisher & Paykel oven repair</strong> for Series 7, Series 9, and Series 11 ovens, including Contemporary, Minimal, Professional, combi-steam, convection, speed, microwave combination, and range oven models. Fisher & Paykel ovens often use AeroTech airflow, guided cooking, steam functions, precision sensors, and flush integrated design.
+          </p>
+  
+          <h3>Fisher & Paykel Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Oven not heating, heating unevenly, or showing fault codes</li>
-            <li>✅ Combi-steam oven not steaming, draining, or filling correctly</li>
-            <li>✅ AeroTech fan, cooling fan, sensor, or temperature probe failure</li>
-            <li>✅ Speed oven microwave/convection functions not working</li>
-            <li>✅ Touchscreen, control module, door lock, or self-clean issue</li>
+            <li>AeroTech airflow problems can cause food to brown unevenly even when the oven heats.</li>
+            <li>Combi-steam ovens may stop filling, draining, steaming, or descaling correctly.</li>
+            <li>Series 9 and Series 11 touch controls or guided cooking features may stop responding properly.</li>
+            <li>Speed ovens may fail in microwave, convection, or combination mode while another mode still works.</li>
+            <li>Flush Minimal and Contemporary installations may need cabinet ventilation checked during repair.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We diagnose <strong>Fisher & Paykel wall ovens and steam ovens</strong> with detailed electrical, airflow, and water-system testing</li>
-            <li>✅ We inspect pumps, valves, sensors, fans, heating elements, boards, and door locks</li>
-            <li>✅ We test cooking modes and temperature accuracy after repair</li>
-          </ul>
+  
+          <h3>How We Repair Fisher & Paykel Ovens</h3>
+          <p>
+            We test AeroTech fans, rear elements, sensors, probes, steam pumps, valves, drains, control modules, touch interfaces, and cooling fans. For built-in units, we also inspect airflow around the cabinet opening.
+          </p>
         </>
       )
     },
+  
     {
       id: "wolf-oven-repair",
       title: "Wolf Oven Repair",
@@ -461,24 +512,27 @@ export const Tabs = () => {
       alt: "Wolf oven repair technician servicing a luxury built-in oven",
       description: (
         <>
-          <p>Our <strong>Wolf oven repair</strong> service covers Wolf M Series, E Series, L Series legacy ovens, built-in convection ovens, convection steam ovens, speed ovens, dual fuel range ovens, gas range ovens, and professional-style wall ovens. Wolf ovens are known for Gourmet Mode, Dual VertiCross convection, temperature probes, and precision cooking performance.</p>
-          <h3>Common Wolf Oven Problems We Repair:</h3>
+          <p>
+            Our <strong>Wolf oven repair</strong> service covers Wolf M Series, E Series, L Series legacy ovens, built-in convection ovens, convection steam ovens, speed ovens, dual fuel range ovens, gas range ovens, and professional-style wall ovens. Wolf service often involves Dual VertiCross convection, relay faults, probes, steam systems, cooling fans, and built-in ventilation.
+          </p>
+  
+          <h3>Wolf Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Wolf oven not heating, overheating, or cooking unevenly</li>
-            <li>✅ Convection fan, cooling fan, relay, sensor, or probe failure</li>
-            <li>✅ Steam oven water, drain, pump, or descaling problems</li>
-            <li>✅ Speed oven microwave/convection issue or display fault</li>
-            <li>✅ Door lock, gasket, hinge, control board, or error code problems</li>
+            <li>M Series ovens may show convection-element relay-related faults or stop heating in specific zones.</li>
+            <li>The oven may not recognize the probe, or probe cooking may stop unexpectedly.</li>
+            <li>Dual VertiCross convection problems can create uneven baking or roasting in built-in ovens.</li>
+            <li>Convection steam ovens may develop water, drain, pump, descaling, or sensor issues.</li>
+            <li>Speed ovens may fail in microwave-assist or combination cooking while standard convection still works.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ Our <strong>Wolf oven repair technicians</strong> test heating circuits, fans, sensors, modules, steam systems, and range oven ignition components</li>
-            <li>✅ We diagnose airflow and temperature consistency for high-end baking and roasting performance</li>
-            <li>✅ We service built-in Wolf appliances with care for cabinetry, panels, and luxury kitchen finishes</li>
-          </ul>
+  
+          <h3>How We Repair Wolf Ovens</h3>
+          <p>
+            We test convection circuits, relays, probes, fans, sensors, steam components, drains, pumps, control modules, door locks, and range oven ignition systems. For built-in Wolf ovens, we also inspect cabinet ventilation and cooling airflow.
+          </p>
         </>
       )
     },
+  
     {
       id: "thermador-oven-repair",
       title: "Thermador Oven Repair",
@@ -487,24 +541,27 @@ export const Tabs = () => {
       alt: "Thermador oven repair technician servicing a professional wall oven",
       description: (
         <>
-          <p>We provide <strong>Thermador oven repair</strong> for Professional Series, Masterpiece Series, built-in wall ovens, steam ovens, speed ovens, double ovens, combination ovens, Pro Harmony ranges, and Pro Grand ranges. Thermador ovens can include steam convection, speed cooking, true convection, temperature probes, WiFi controls, and professional-grade stainless construction.</p>
-          <h3>Common Thermador Oven Problems We Repair:</h3>
+          <p>
+            We provide <strong>Thermador oven repair</strong> for Professional Series, Masterpiece Series, built-in wall ovens, steam ovens, speed ovens, double ovens, combination ovens, Pro Harmony ranges, and Pro Grand ranges. Thermador ovens often require attention to steam descaling, speed-cooking functions, temperature probes, WiFi controls, and professional range oven systems.
+          </p>
+  
+          <h3>Thermador Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Oven not heating, temperature swing, or uneven baking</li>
-            <li>✅ Steam oven not filling, draining, steaming, or descaling correctly</li>
-            <li>✅ Speed oven microwave/convection failure or turntable issue</li>
-            <li>✅ Control panel, relay board, sensor, probe, or fan malfunction</li>
-            <li>✅ Door lock, self-clean, gasket, hinge, or cooling fan problems</li>
+            <li>Steam ovens may need descaling when limescale affects performance or the appliance requests a descale cycle.</li>
+            <li>Speed ovens may fail in microwave, convection, turntable, or combination cooking modes.</li>
+            <li>Pro Harmony and Pro Grand range ovens may develop ignition, bake burner, broiler, or sensor issues.</li>
+            <li>Control panels, relays, probes, sensors, or Home Connect communication may interrupt cooking programs.</li>
+            <li>Condensation, cooling fan, door seal, or cabinet heat issues may appear in built-in steam and wall ovens.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ Our <strong>Thermador oven repair technicians</strong> test heating, airflow, control, water, and safety systems</li>
-            <li>✅ We diagnose Pro Harmony and Pro Grand range oven issues separately from wall oven systems</li>
-            <li>✅ We verify each cooking mode and temperature response before the appliance is returned to use</li>
-          </ul>
+  
+          <h3>How We Repair Thermador Ovens</h3>
+          <p>
+            We separate wall oven diagnosis from Pro range diagnosis, then inspect steam systems, descaling condition, water flow, sensors, probes, relays, fans, locks, ignition components, and built-in ventilation.
+          </p>
         </>
       )
     },
+  
     {
       id: "viking-oven-repair",
       title: "Viking Oven Repair",
@@ -513,24 +570,27 @@ export const Tabs = () => {
       alt: "Viking oven repair technician servicing a luxury range oven",
       description: (
         <>
-          <p>Our <strong>Viking oven repair</strong> service covers Viking 3 Series, 5 Series, 7 Series, RVL, Professional ranges, wall ovens, French-door ovens, double ovens, gas ranges, dual fuel ranges, and legacy Viking cooking appliances. Viking ovens often include high-output burners, convection systems, infrared broilers, and heavy-duty doors and hinges.</p>
-          <h3>Common Viking Oven Problems We Repair:</h3>
+          <p>
+            Our <strong>Viking oven repair</strong> service covers Viking 3 Series, 5 Series, 7 Series, RVL, Professional ranges, wall ovens, French-door ovens, double ovens, gas ranges, dual fuel ranges, and legacy Viking cooking appliances. Viking repairs often involve gas igniters, oven sensors, convection fans, heavy hinges, and pro-style oven cavities.
+          </p>
+  
+          <h3>Viking Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Viking oven not heating, preheating slowly, or baking unevenly</li>
-            <li>✅ Gas oven ignition, bake burner, safety valve, or broiler issue</li>
-            <li>✅ Convection fan, thermostat, sensor, relay, or control board failure</li>
-            <li>✅ French-door oven alignment, hinge, or gasket problems</li>
-            <li>✅ Self-clean, door lock, cooling fan, or temperature probe malfunction</li>
+            <li>A gas oven igniter may glow but still be too weak to open the gas valve properly.</li>
+            <li>French-door oven hinges, alignment, or gaskets may cause heat loss or uneven closing.</li>
+            <li>Convection fan, thermostat, sensor, or relay faults can cause uneven baking.</li>
+            <li>Professional range ovens may need bake burner, broiler, safety-valve, or gas-supply diagnosis.</li>
+            <li>Legacy Viking units may use parts that differ from newer 3, 5, and 7 Series models.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We diagnose <strong>Viking wall ovens and range ovens</strong> across gas, electric, and dual fuel platforms</li>
-            <li>✅ We test ignition, gas flow, elements, controls, fans, sensors, and oven safety systems</li>
-            <li>✅ We restore reliable cooking performance while protecting stainless, colored, and custom kitchen finishes</li>
-          </ul>
+  
+          <h3>How We Repair Viking Ovens</h3>
+          <p>
+            We test igniter amp draw, gas valve response, oven sensors, relays, fans, hinges, gaskets, door locks, and temperature probes. For older Viking ranges, we confirm the exact series before sourcing replacement parts.
+          </p>
         </>
       )
     },
+  
     {
       id: "monogram-oven-repair",
       title: "Monogram Oven Repair",
@@ -539,24 +599,27 @@ export const Tabs = () => {
       alt: "Monogram oven repair technician servicing a luxury Advantium wall oven",
       description: (
         <>
-          <p>We provide <strong>Monogram oven repair</strong> for Statement and Minimalist wall ovens, Advantium 5-in-1 ovens, convection ovens, double ovens, range ovens, and microwave combination ovens. Monogram ovens may combine speedcook, convection, microwave, warming, proofing, precision cooking, smart controls, and premium built-in installation.</p>
-          <h3>Common Monogram Oven Problems We Repair:</h3>
+          <p>
+            We provide <strong>Monogram oven repair</strong> for Statement and Minimalist wall ovens, Advantium 5-in-1 ovens, convection ovens, double ovens, range ovens, and microwave combination ovens. Monogram repairs often require Advantium speedcook diagnostics, premium built-in ventilation checks, and mode-by-mode testing.
+          </p>
+  
+          <h3>Monogram Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Advantium speedcook, microwave, or convection mode failure</li>
-            <li>✅ Wall oven not heating, overheating, or baking unevenly</li>
-            <li>✅ Touchscreen, display, control board, relay, or sensor malfunction</li>
-            <li>✅ Cooling fan, convection fan, door lock, or self-clean issue</li>
-            <li>✅ Range oven ignition, broiler, bake element, or temperature probe problems</li>
+            <li>Advantium speedcook may stop working because halogen, microwave, and convection systems must coordinate properly.</li>
+            <li>A microwave/convection combination oven may fail in one mode while another mode still works.</li>
+            <li>Statement and Minimalist wall ovens may develop touchscreen, relay, sensor, or probe issues.</li>
+            <li>Range oven cavities may need ignition, broiler, bake element, or temperature-control service.</li>
+            <li>Cooling fans and built-in ventilation need attention in integrated Monogram installations.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We service <strong>Monogram wall ovens and Advantium ovens</strong> with detailed mode-by-mode diagnostics</li>
-            <li>✅ We test microwave, convection, sensor, fan, relay, and high-voltage related systems where applicable</li>
-            <li>✅ We verify safe operation, cooking performance, and built-in ventilation after repair</li>
-          </ul>
+  
+          <h3>How We Repair Monogram Ovens</h3>
+          <p>
+            We diagnose Monogram ovens by platform: Advantium, wall oven, combination oven, or range oven. We test speedcook, convection, microwave, bake, broil, self-clean, cooling fan, sensor, relay, and ventilation systems separately.
+          </p>
         </>
       )
     },
+  
     {
       id: "signature-kitchen-suite-oven-repair",
       title: "Signature Kitchen Suite Oven Repair",
@@ -565,24 +628,27 @@ export const Tabs = () => {
       alt: "Signature Kitchen Suite oven repair technician servicing a steam-combi wall oven",
       description: (
         <>
-          <p>Our <strong>Signature Kitchen Suite oven repair</strong> service covers SKS wall ovens, steam-combi ovens, transitional combi-wall ovens, pro ranges, 36-inch and 48-inch dual fuel ranges, speed ovens, and ranges with built-in sous vide and induction features. SKS ovens can include True Steam-Combi, ProHeat convection, Speed-Clean, steam sous vide, and connected controls.</p>
-          <h3>Common Signature Kitchen Suite Oven Problems We Repair:</h3>
+          <p>
+            Our <strong>Signature Kitchen Suite oven repair</strong> service covers SKS wall ovens, steam-combi ovens, transitional combi-wall ovens, pro ranges, 36-inch and 48-inch dual fuel ranges, speed ovens, and ovens paired with sous vide and induction features. SKS ovens require attention to True Steam-Combi systems, ProHeat convection, connected controls, and professional range oven systems.
+          </p>
+  
+          <h3>Signature Kitchen Suite Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Steam-combi oven not filling, steaming, draining, or heating correctly</li>
-            <li>✅ Pro range oven not maintaining temperature or baking unevenly</li>
-            <li>✅ Speed oven, convection, microwave, or broil mode not working</li>
-            <li>✅ Touchscreen, control board, relay, pump, valve, or sensor failure</li>
-            <li>✅ Self-clean, Speed-Clean, door lock, gasket, or fan problems</li>
+            <li>Steam-combi ovens may stop filling, draining, steaming, or heating correctly.</li>
+            <li>ProHeat convection issues may affect airflow, rear heat, or baking consistency.</li>
+            <li>Speed ovens may fail in microwave, convection, or broil mode.</li>
+            <li>Touchscreen, connected control, relay, pump, valve, probe, or sensor issues may interrupt cooking modes.</li>
+            <li>Dual fuel ranges require separate diagnosis of the gas cooking system and electric oven cavity.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We diagnose <strong>SKS wall ovens and pro range ovens</strong> with steam, convection, speed, and control testing</li>
-            <li>✅ We inspect water systems, fans, heating circuits, sensors, probes, and electronic modules</li>
-            <li>✅ We confirm each cooking mode and safety function after repair</li>
-          </ul>
+  
+          <h3>How We Repair Signature Kitchen Suite Ovens</h3>
+          <p>
+            We test steam, convection, speed, probe, self-clean, connected-control, water, fan, relay, sensor, and range oven systems separately so the failed cooking mode is accurately identified.
+          </p>
         </>
       )
     },
+  
     {
       id: "hestan-oven-repair",
       title: "Hestan Oven Repair",
@@ -591,24 +657,27 @@ export const Tabs = () => {
       alt: "Hestan oven repair technician servicing a luxury gas range oven",
       description: (
         <>
-          <p>We provide <strong>Hestan oven repair</strong> for Hestan all-gas ranges, dual fuel ranges, KRG and KRD range models, professional-style ovens, and luxury residential cooking suites. Hestan ovens may include PureVection technology, high-performance convection, heavy-duty doors, temperature probes, and powerful professional burners.</p>
-          <h3>Common Hestan Oven Problems We Repair:</h3>
+          <p>
+            We provide <strong>Hestan oven repair</strong> for Hestan all-gas ranges, dual fuel ranges, KRG and KRD models, professional-style ovens, and luxury residential cooking suites. Hestan ovens often require diagnosis of PureVection airflow, high-output gas systems, heavy-duty doors, probes, and professional burner assemblies.
+          </p>
+  
+          <h3>Hestan Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Hestan oven not heating, losing heat, or cooking unevenly</li>
-            <li>✅ PureVection fan, heating system, or airflow issue</li>
-            <li>✅ Gas ignition, safety valve, bake burner, or broiler failure</li>
-            <li>✅ Electric oven element, relay, sensor, or thermostat problem</li>
-            <li>✅ Door gasket, hinge, probe, knob, or control malfunction</li>
+            <li>PureVection airflow problems may create uneven baking or slow heat recovery.</li>
+            <li>All-gas range ovens may need ignition, safety valve, bake burner, or broiler repair.</li>
+            <li>Dual fuel models may require separate testing of electric oven components and gas systems.</li>
+            <li>Temperature probe, thermostat, relay, and sensor issues may affect precision cooking modes.</li>
+            <li>Heavy doors, hinges, gaskets, and ventilation clearances can affect oven performance.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ Our <strong>Hestan oven repair technicians</strong> test gas, electrical, convection, temperature, and control systems</li>
-            <li>✅ We inspect range oven cavities, burner assemblies, fans, and ventilation clearances</li>
-            <li>✅ We restore precision cooking performance for high-end Hestan kitchen installations</li>
-          </ul>
+  
+          <h3>How We Repair Hestan Ovens</h3>
+          <p>
+            We test PureVection fans, gas ignition, oven burners, elements, sensors, probes, relays, hinges, gaskets, and installation ventilation to restore Hestan’s high-output cooking performance.
+          </p>
         </>
       )
     },
+  
     {
       id: "dacor-oven-repair",
       title: "Dacor Oven Repair",
@@ -617,24 +686,27 @@ export const Tabs = () => {
       alt: "Dacor oven repair technician servicing a luxury wall oven",
       description: (
         <>
-          <p>Our <strong>Dacor oven repair</strong> service covers Modernist, Contemporary, Heritage, Discovery, Renaissance, built-in wall ovens, range ovens, steam ovens, speed ovens, and Dacor dual fuel or gas cooking appliances. Dacor ovens often use Four-Part Pure Convection, touch controls, temperature probes, self-clean systems, and premium built-in installation.</p>
-          <h3>Common Dacor Oven Problems We Repair:</h3>
+          <p>
+            Our <strong>Dacor oven repair</strong> service covers Modernist, Contemporary, Heritage, Discovery, Renaissance, built-in wall ovens, range ovens, steam ovens, speed ovens, and Dacor dual fuel or gas cooking appliances. Dacor repairs often involve legacy parts, Pure Convection systems, touch controls, probes, and built-in installation issues.
+          </p>
+  
+          <h3>Dacor Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Dacor oven not heating, overheating, or baking unevenly</li>
-            <li>✅ Four-Part Pure Convection fan, relay, element, or sensor issue</li>
-            <li>✅ Control panel, display, touchpad, relay board, or error code problems</li>
-            <li>✅ Door lock, self-clean, cooling fan, gasket, or hinge failure</li>
-            <li>✅ Gas range oven ignition, broiler, bake burner, or valve malfunction</li>
+            <li>Four-Part Pure Convection systems may develop fan, element, relay, or sensor issues.</li>
+            <li>Legacy Discovery, Renaissance, and Heritage controls or touchpads may fail differently from newer Modernist units.</li>
+            <li>Door lock, self-clean, cooling fan, gasket, and hinge issues are common service points on built-in ovens.</li>
+            <li>Gas range ovens may need ignition, bake burner, broiler, or safety-valve diagnosis.</li>
+            <li>Older Dacor units may have parts availability differences from newer Samsung-era Dacor products.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We diagnose <strong>Dacor built-in ovens and range ovens</strong> with heating, control, fan, and sensor testing</li>
-            <li>✅ We service both current and legacy Dacor cooking appliances</li>
-            <li>✅ We verify even airflow, temperature stability, and safe operation after service</li>
-          </ul>
+  
+          <h3>How We Repair Dacor Ovens</h3>
+          <p>
+            We identify the Dacor generation first, then test convection components, control boards, touchpads, probes, sensors, gas ignition, locks, and door systems. Legacy Dacor parts are verified carefully before repair.
+          </p>
         </>
       )
     },
+  
     {
       id: "big-chill-oven-repair",
       title: "Big Chill Oven Repair",
@@ -643,24 +715,27 @@ export const Tabs = () => {
       alt: "Big Chill oven repair technician servicing a retro luxury oven",
       description: (
         <>
-          <p>We provide <strong>Big Chill oven repair</strong> for Retro, Classic, and Pro-style ranges, gas stoves, induction stoves, electric wall ovens, and colorful luxury kitchen installations. Big Chill ovens combine retro design with modern heating systems, convection cooking, electronic controls, and custom color finishes that need careful handling during service.</p>
-          <h3>Common Big Chill Oven Problems We Repair:</h3>
+          <p>
+            We provide <strong>Big Chill oven repair</strong> for Retro, Classic, and Pro-style ranges, gas stoves, induction stoves, electric wall ovens, and colorful luxury kitchen installations. Big Chill ovens combine retro styling with modern heating systems, so the finish and trim must be protected while the mechanical issue is diagnosed.
+          </p>
+  
+          <h3>Big Chill Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Wall oven or range oven not heating correctly</li>
-            <li>✅ Gas oven ignition, bake burner, or broiler issue</li>
-            <li>✅ Electric element, convection fan, relay, or sensor failure</li>
-            <li>✅ Temperature drift, uneven baking, or slow preheat</li>
-            <li>✅ Door gasket, hinge, control knob, or finish-sensitive service concerns</li>
+            <li>The retro-style door may lose heat because of gasket, hinge, or alignment wear.</li>
+            <li>Gas range ovens may need ignition, bake burner, broiler, or safety-valve service.</li>
+            <li>Pro-style and wall oven models may develop convection fan, sensor, relay, or element issues.</li>
+            <li>Custom color panels, chrome details, and handles can be damaged if service is rushed.</li>
+            <li>Parts differ between Retro, Classic, and Pro-style product lines.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ Our <strong>Big Chill oven repair technicians</strong> test elements, igniters, valves, fans, sensors, boards, and thermostats</li>
-            <li>✅ We protect retro panels, chrome details, and custom color finishes</li>
-            <li>✅ We service both decorative retro ranges and built-in wall oven configurations</li>
-          </ul>
+  
+          <h3>How We Repair Big Chill Ovens</h3>
+          <p>
+            We protect the finish first, then test ignition, elements, fans, sensors, controls, relays, door seals, and hinges. We verify the product line before matching parts.
+          </p>
         </>
       )
     },
+  
     {
       id: "elmira-stove-works-oven-repair",
       title: "Elmira Stove Works Oven Repair",
@@ -669,24 +744,27 @@ export const Tabs = () => {
       alt: "Elmira Stove Works oven repair technician servicing a vintage style range oven",
       description: (
         <>
-          <p>Our <strong>Elmira Stove Works oven repair</strong> service supports Northstar, Heritage, 1880-style, vintage-inspired ranges, convection wall ovens, dual fuel ranges, and retro appliance suites. Elmira ovens are often installed in custom kitchens where appearance, trim, color, and period-style design matter as much as cooking performance.</p>
-          <h3>Common Elmira Oven Problems We Repair:</h3>
+          <p>
+            Our <strong>Elmira Stove Works oven repair</strong> service supports Northstar, Heritage, 1880-style, vintage-inspired ranges, convection wall ovens, dual fuel ranges, and retro appliance suites. Elmira ovens often combine modern cooking systems with vintage styling, specialty panels, and trim details.
+          </p>
+  
+          <h3>Elmira Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Convection wall oven not heating or not cooking evenly</li>
-            <li>✅ Range oven ignition, thermostat, burner, or element issue</li>
-            <li>✅ Self-clean, door lock, timer, or control failure</li>
-            <li>✅ Door gasket, hinge, chrome trim, or panel alignment concerns</li>
-            <li>✅ Older or specialty model parts identification needs</li>
+            <li>Vintage-style doors, hinges, chrome trim, or gaskets may affect heat retention and appearance.</li>
+            <li>Northstar and Heritage range ovens may need ignition, thermostat, burner, or element repair.</li>
+            <li>Convection wall ovens may develop fan, sensor, relay, or self-clean problems.</li>
+            <li>Timer, selector, and control issues can appear on retro-style cooking appliances.</li>
+            <li>Older or specialty Elmira models may need careful parts identification.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We diagnose <strong>Elmira range ovens and wall ovens</strong> with careful heating, airflow, and control testing</li>
-            <li>✅ We inspect gas and electric oven systems depending on the model</li>
-            <li>✅ We handle vintage-style appliance finishes carefully during repair and maintenance</li>
-          </ul>
+  
+          <h3>How We Repair Elmira Ovens</h3>
+          <p>
+            We diagnose the oven system while preserving the vintage look. Door alignment, gasket condition, trim protection, model identification, and parts compatibility are especially important on Elmira appliances.
+          </p>
         </>
       )
     },
+  
     {
       id: "smeg-oven-repair",
       title: "Smeg Oven Repair",
@@ -695,24 +773,27 @@ export const Tabs = () => {
       alt: "Smeg oven repair technician servicing an Italian built-in oven",
       description: (
         <>
-          <p>We provide <strong>Smeg oven repair</strong> for Smeg built-in ovens, wall ovens, steam ovens, speed ovens, convection ovens, microwave ovens, all-gas ranges, dual fuel ranges, induction ranges, and retro-inspired cooking appliances. Smeg ovens often include European controls, fan-assisted cooking, specialty modes, and design-forward panels.</p>
-          <h3>Common Smeg Oven Problems We Repair:</h3>
+          <p>
+            We provide <strong>Smeg oven repair</strong> for built-in ovens, steam ovens, speed ovens, convection ovens, microwave ovens, all-gas ranges, dual fuel ranges, induction ranges, and retro-inspired cooking appliances. Smeg ovens often use European controls, designer panels, compact layouts, and specialty cooking modes.
+          </p>
+  
+          <h3>Smeg Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Smeg oven not heating, overheating, or cooking unevenly</li>
-            <li>✅ Fan, grill, broil, steam, or speed cooking function not working</li>
-            <li>✅ Element, thermostat, relay, selector, or control board failure</li>
-            <li>✅ Gas range oven ignition, burner, or flame safety issue</li>
-            <li>✅ Door gasket, hinge, interior light, or timer malfunction</li>
+            <li>Function selector, thermostat, timer, or European-control issues may stop specific cooking modes.</li>
+            <li>Fan-assisted cooking, grill, steam, or speed cooking may fail while basic heating still works.</li>
+            <li>Compact built-in ovens may need cabinet ventilation checked if they run hot or shut down.</li>
+            <li>Gas range ovens may need thermocouple, burner, igniter, or flame-safety service.</li>
+            <li>Designer, retro, or stainless panels require careful handling during repair.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ Our <strong>Smeg oven repair technicians</strong> test heating elements, controls, sensors, fans, valves, igniters, and wiring</li>
-            <li>✅ We inspect both built-in European ovens and range-style oven cavities</li>
-            <li>✅ We protect retro, stainless, and designer panels during service</li>
-          </ul>
+  
+          <h3>How We Repair Smeg Ovens</h3>
+          <p>
+            We test the exact cooking function, selector, thermostat, fan, grill, steam or speed system, ignition components, cabinet ventilation, hinges, gaskets, and interior light while protecting Smeg’s design-forward finish.
+          </p>
         </>
       )
     },
+  
     {
       id: "heartland-oven-repair",
       title: "Heartland Oven Repair",
@@ -721,24 +802,27 @@ export const Tabs = () => {
       alt: "Heartland oven repair technician servicing a retro classic range oven",
       description: (
         <>
-          <p>Our <strong>Heartland oven repair</strong> service is designed for legacy Heartland ranges, classic gas ranges, electric ranges, dual fuel ranges, retro-style ovens, and discontinued Heartland cooking appliances. Because Heartland appliances may involve older components or harder-to-source parts, proper model identification and careful diagnosis are especially important.</p>
-          <h3>Common Heartland Oven Problems We Repair:</h3>
+          <p>
+            Our <strong>Heartland oven repair</strong> service is designed for legacy Heartland ranges, classic gas ranges, electric ranges, dual fuel ranges, retro-style ovens, and discontinued Heartland cooking appliances. Heartland oven service often involves older controls, discontinued parts, and preserving a retro kitchen design that homeowners may not want to replace.
+          </p>
+  
+          <h3>Heartland Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Oven not heating, overheating, or taking too long to preheat</li>
-            <li>✅ Gas ignition, bake burner, broiler, or safety valve issue</li>
-            <li>✅ Electric element, thermostat, selector, or wiring failure</li>
-            <li>✅ Temperature control problems or uneven baking</li>
-            <li>✅ Door gasket, hinge, timer, or legacy control concerns</li>
+            <li>The oven takes longer to preheat or no longer holds temperature like it used to.</li>
+            <li>Older gas models may need ignition, bake burner, broiler, thermocouple, or safety-valve service.</li>
+            <li>Electric models may develop element, thermostat, selector, timer, or wiring issues.</li>
+            <li>Door gaskets, hinges, control knobs, and trim may be harder to replace on discontinued models.</li>
+            <li>Repair planning often depends on parts availability and the value of preserving the original kitchen look.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We inspect <strong>Heartland oven and range components</strong> for heating, ignition, airflow, and control issues</li>
-            <li>✅ We help identify compatible parts for older or discontinued models</li>
-            <li>✅ We protect retro finishes and classic design details during service</li>
-          </ul>
+  
+          <h3>How We Repair Heartland Ovens</h3>
+          <p>
+            We identify the exact model, review parts availability, inspect heating and ignition systems, check door sealing, and recommend a repair path that makes sense for the appliance’s age, condition, and design value.
+          </p>
         </>
       )
     },
+  
     {
       id: "asko-oven-repair",
       title: "ASKO Oven Repair",
@@ -747,24 +831,27 @@ export const Tabs = () => {
       alt: "ASKO oven repair technician servicing a European built-in oven",
       description: (
         <>
-          <p>We provide <strong>ASKO oven repair</strong> for ASKO built-in ovens, pyrolytic ovens, multifunction ovens, combined steam ovens, compact microwave ovens, and European kitchen installations where ASKO cooking products are installed. ASKO ovens may include touchscreen controls, pyrolytic self-cleaning, steam systems, telescopic guides, and compact built-in layouts.</p>
-          <h3>Common ASKO Oven Problems We Repair:</h3>
+          <p>
+            We provide <strong>ASKO oven repair</strong> for built-in ovens, pyrolytic ovens, multifunction ovens, combined steam ovens, compact microwave ovens, and European kitchen installations. ASKO ovens often require attention to flush installation, pyrolytic self-cleaning, steam systems, telescopic guides, and compact European layouts.
+          </p>
+  
+          <h3>ASKO Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ ASKO oven not heating, not self-cleaning, or showing error codes</li>
-            <li>✅ Steam oven not producing steam, filling, or draining correctly</li>
-            <li>✅ Microwave combination oven not heating or not switching modes</li>
-            <li>✅ Fan, sensor, element, door lock, or control display failure</li>
-            <li>✅ Built-in ventilation, cabinet heat, or door alignment issues</li>
+            <li>Pyrolytic self-clean may fail because of door lock, heat-limit, or control issues.</li>
+            <li>Combined steam ovens may have fill, drain, pump, valve, or limescale-related problems.</li>
+            <li>Compact microwave ovens may fail in mode switching, fan operation, or controls.</li>
+            <li>Telescopic guides, rack supports, door alignment, and gaskets may need adjustment.</li>
+            <li>Flush European installations can create ventilation or cabinet heat concerns.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We diagnose <strong>ASKO built-in ovens</strong> with heating, airflow, water-system, and electronic control testing</li>
-            <li>✅ We inspect self-clean locks, steam components, elements, sensors, and fans</li>
-            <li>✅ We service European-format oven installations with care for flush cabinetry and trim</li>
-          </ul>
+  
+          <h3>How We Repair ASKO Ovens</h3>
+          <p>
+            We check the self-clean lock, steam path, compact oven controls, door alignment, airflow, telescopic guides, elements, sensors, fans, and cabinet ventilation so the repair fits the specific ASKO installation.
+          </p>
         </>
       )
     },
+  
     {
       id: "bosch-oven-repair",
       title: "Bosch Oven Repair",
@@ -773,24 +860,27 @@ export const Tabs = () => {
       alt: "Bosch oven repair technician servicing a wall oven",
       description: (
         <>
-          <p>Our <strong>Bosch oven repair</strong> service covers Bosch 500 Series, 800 Series, Benchmark Series, wall ovens, speed ovens, steam ovens, combination ovens, single ovens, double ovens, and slide-in range ovens. Bosch ovens are commonly installed in high-end remodels and often include European-style controls, convection systems, side-opening doors, and built-in ventilation requirements.</p>
-          <h3>Common Bosch Oven Problems We Repair:</h3>
+          <p>
+            Our <strong>Bosch oven repair</strong> service covers Bosch 500 Series, 800 Series, Benchmark Series, wall ovens, speed ovens, steam ovens, combination ovens, single ovens, double ovens, and slide-in range ovens. Bosch ovens are often installed in remodels where flush fit, cooling airflow, European controls, side-opening doors, and compact combination designs matter.
+          </p>
+  
+          <h3>Bosch Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Bosch oven not heating, overheating, or baking unevenly</li>
-            <li>✅ Speed oven microwave/convection function not working</li>
-            <li>✅ Steam oven water, pump, valve, or descaling issue</li>
-            <li>✅ Control panel, relay board, sensor, door lock, or error code problem</li>
-            <li>✅ Cooling fan, convection fan, self-clean, or hinge malfunction</li>
+            <li>Speed ovens may fail in microwave, convection, or combination cooking while other modes still work.</li>
+            <li>Steam ovens may need water, pump, valve, drain, or descaling diagnosis.</li>
+            <li>Benchmark and 800 Series ovens may develop control panel, relay, sensor, or cooling fan issues.</li>
+            <li>Side-opening doors may need hinge, gasket, latch, or alignment service.</li>
+            <li>Stacked or flush-mounted Bosch ovens may run hot if ventilation is restricted.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We diagnose <strong>Bosch wall ovens and speed ovens</strong> using mode-specific testing</li>
-            <li>✅ We inspect elements, fans, sensors, locks, water systems, relays, and control boards</li>
-            <li>✅ We confirm temperature accuracy, ventilation, and safe operation after repair</li>
-          </ul>
+  
+          <h3>How We Repair Bosch Ovens</h3>
+          <p>
+            We diagnose Bosch ovens by platform: steam, speed, wall oven, double oven, or range oven. We inspect controls, water systems, fans, sensors, relays, door locks, hinges, and installation airflow before replacing parts.
+          </p>
         </>
       )
     },
+  
     {
       id: "jennair-oven-repair",
       title: "JennAir Oven Repair",
@@ -799,24 +889,27 @@ export const Tabs = () => {
       alt: "JennAir oven repair technician servicing a luxury wall oven",
       description: (
         <>
-          <p>We provide <strong>JennAir oven repair</strong> for RISE and NOIR wall ovens, single ovens, double ovens, microwave combination ovens, steam and convection ovens, professional-style ranges, and built-in cooking appliances. JennAir ovens can include V2 Dual-Fan Convection, assisted cooking, Culinary Center features, remote access, temperature probes, and premium design panels.</p>
-          <h3>Common JennAir Oven Problems We Repair:</h3>
+          <p>
+            We provide <strong>JennAir oven repair</strong> for RISE and NOIR wall ovens, single ovens, double ovens, microwave combination ovens, steam and convection ovens, professional-style ranges, and built-in cooking appliances. JennAir ovens often involve V2 Dual-Fan Convection, Culinary Center features, connected controls, probes, and premium design panels.
+          </p>
+  
+          <h3>JennAir Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ JennAir oven not heating, cooking unevenly, or displaying errors</li>
-            <li>✅ Dual-fan convection, steam plus convection, or microwave combination issue</li>
-            <li>✅ Touch display, control board, relay, sensor, or temperature probe failure</li>
-            <li>✅ Self-clean, door lock, cooling fan, or hinge malfunction</li>
-            <li>✅ Range oven ignition, broiler, bake element, or gasket problems</li>
+            <li>V2 Dual-Fan Convection problems may affect fan synchronization, rear heat, or baking consistency.</li>
+            <li>Culinary Center, assisted cooking, probe, or connected-control faults may interrupt automatic programs.</li>
+            <li>Microwave combination ovens may fail in microwave, convection, or broil mode.</li>
+            <li>Touch display, relay, control board, and sensor issues may appear on RISE and NOIR models.</li>
+            <li>RISE and NOIR handles, panels, and trim need careful protection during repair.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ Our <strong>JennAir oven repair technicians</strong> test heating, airflow, steam, microwave, and control systems</li>
-            <li>✅ We inspect V2 convection fans, sensors, elements, door locks, probes, and electronic modules</li>
-            <li>✅ We restore luxury cooking performance while protecting RISE and NOIR finishes</li>
-          </ul>
+  
+          <h3>How We Repair JennAir Ovens</h3>
+          <p>
+            We test the exact JennAir cooking mode, including convection, steam, microwave-combination, probe cooking, and assisted cooking. We inspect fans, sensors, relays, locks, controls, hinges, and finish-sensitive panels.
+          </p>
         </>
       )
     },
+  
     {
       id: "kalamazoo-outdoor-oven-repair",
       title: "Kalamazoo Outdoor Oven Repair",
@@ -825,24 +918,27 @@ export const Tabs = () => {
       alt: "Kalamazoo outdoor oven repair technician servicing a luxury pizza oven",
       description: (
         <>
-          <p>Our <strong>Kalamazoo outdoor oven repair</strong> service covers Kalamazoo Artisan Fire Pizza Ovens, outdoor cooking stations, hybrid fire systems, built-in outdoor kitchens, and premium gas-fired outdoor oven installations. Kalamazoo outdoor ovens operate at very high heat and require careful attention to burners, refractory surfaces, gas supply, ventilation, and weather exposure.</p>
-          <h3>Common Kalamazoo Outdoor Oven Problems We Repair:</h3>
+          <p>
+            Our <strong>Kalamazoo outdoor oven repair</strong> service covers Kalamazoo Artisan Fire Pizza Ovens, hybrid fire outdoor cooking systems, built-in outdoor kitchens, and premium gas-fired outdoor oven installations. These ovens operate at high temperatures and are affected by gas delivery, refractory surfaces, ventilation, and weather exposure.
+          </p>
+  
+          <h3>Kalamazoo Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Outdoor pizza oven not lighting or not reaching high temperature</li>
-            <li>✅ Burner, igniter, regulator, flame sensor, or gas valve issue</li>
-            <li>✅ Uneven stone heat, weak flame, or poor heat recovery</li>
-            <li>✅ Door, thermometer, control, or weather-related corrosion concern</li>
-            <li>✅ Built-in outdoor kitchen ventilation or clearance problems</li>
+            <li>The pizza oven lights but does not reach high temperature or recover heat quickly.</li>
+            <li>Burners, igniters, regulators, gas valves, or flame patterns may need service.</li>
+            <li>Refractory stone or deck heat may become uneven after heavy use.</li>
+            <li>Outdoor kitchen enclosure ventilation, gas-line sizing, and clearance can affect performance.</li>
+            <li>Weather exposure can affect controls, fasteners, burners, and thermometer accuracy.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We diagnose <strong>Kalamazoo pizza ovens and outdoor cooking appliances</strong> for fuel, ignition, heat, and airflow issues</li>
-            <li>✅ We inspect gas lines, burners, regulators, igniters, refractory surfaces, and weather exposure points</li>
-            <li>✅ We verify safe operation in the outdoor kitchen environment</li>
-          </ul>
+  
+          <h3>How We Repair Kalamazoo Outdoor Ovens</h3>
+          <p>
+            We inspect gas delivery, burner output, ignition, regulators, refractory surfaces, ventilation, and weather-related wear so the oven can safely reach and hold high cooking temperatures.
+          </p>
         </>
       )
     },
+  
     {
       id: "lynx-outdoor-oven-repair",
       title: "Lynx Outdoor Oven Repair",
@@ -851,24 +947,27 @@ export const Tabs = () => {
       alt: "Lynx Napoli outdoor oven repair technician servicing a luxury pizza oven",
       description: (
         <>
-          <p>We provide <strong>Lynx outdoor oven repair</strong> for Lynx Napoli Outdoor Oven models, built-in outdoor ovens, countertop pizza ovens, freestanding cart installations, and luxury outdoor kitchen cooking systems. The Lynx Napoli oven uses high-heat outdoor cooking, refractory surfaces, variable infrared heat, and gas-fired performance that needs specialized troubleshooting.</p>
-          <h3>Common Lynx Outdoor Oven Problems We Repair:</h3>
+          <p>
+            We provide <strong>Lynx outdoor oven repair</strong> for Lynx Napoli Outdoor Oven models, built-in outdoor ovens, countertop pizza ovens, freestanding cart installations, and luxury outdoor kitchen cooking systems. Lynx Napoli ovens require careful diagnosis of infrared heat, refractory surfaces, gas delivery, and outdoor installation conditions.
+          </p>
+  
+          <h3>Lynx Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Napoli outdoor oven not lighting or failing to reach baking temperature</li>
-            <li>✅ Infrared burner, igniter, gas valve, regulator, or flame issue</li>
-            <li>✅ Uneven pizza stone heat or poor recovery between cooks</li>
-            <li>✅ Interior light, thermometer, door, or control malfunction</li>
-            <li>✅ Built-in ventilation, clearance, or weather-related corrosion concerns</li>
+            <li>The Napoli oven does not light consistently or does not reach pizza-baking temperature.</li>
+            <li>Infrared burner, igniter, regulator, gas valve, or flame pattern issues may reduce heat output.</li>
+            <li>The pizza stone may heat unevenly or recover slowly between cooks.</li>
+            <li>Cart-mounted and built-in installations can behave differently because of gas supply and airflow.</li>
+            <li>Outdoor corrosion may affect burners, fasteners, lights, controls, or thermometers.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ Our <strong>Lynx outdoor oven repair technicians</strong> test ignition, fuel delivery, infrared heat, airflow, and safety systems</li>
-            <li>✅ We inspect refractory dome surfaces, burners, controls, and outdoor installation conditions</li>
-            <li>✅ We restore safe high-heat performance for premium outdoor kitchens</li>
-          </ul>
+  
+          <h3>How We Repair Lynx Outdoor Ovens</h3>
+          <p>
+            We test infrared heat output, gas pressure, ignition, airflow, refractory surfaces, burner condition, and installation clearances before recommending parts or adjustment.
+          </p>
         </>
       )
     },
+  
     {
       id: "alfresco-outdoor-oven-repair",
       title: "Alfresco Outdoor Oven Repair",
@@ -877,24 +976,27 @@ export const Tabs = () => {
       alt: "Alfresco outdoor pizza oven repair technician servicing a built-in oven",
       description: (
         <>
-          <p>Our <strong>Alfresco outdoor oven repair</strong> service covers Alfresco Pizza Oven Plus, built-in outdoor pizza ovens, countertop pizza ovens, and premium outdoor kitchen oven installations. Alfresco outdoor ovens are designed for pizza, baking, broiling, roasting, searing, and high-temperature cooking, so burner performance and insulation are critical.</p>
-          <h3>Common Alfresco Outdoor Oven Problems We Repair:</h3>
+          <p>
+            Our <strong>Alfresco outdoor oven repair</strong> service covers Alfresco Pizza Oven Plus, built-in outdoor pizza ovens, countertop pizza ovens, and premium outdoor kitchen oven installations. Alfresco ovens are designed for pizza, baking, roasting, searing, and broiling, so burner output and insulation are critical.
+          </p>
+  
+          <h3>Alfresco Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Pizza Oven Plus not lighting or not reaching high temperature</li>
-            <li>✅ Rear burner, infrared hearth system, igniter, or gas valve failure</li>
-            <li>✅ Uneven heat from the hearth or ceramic ceiling surface</li>
-            <li>✅ Thermometer, controls, door, gasket, or insulation issue</li>
-            <li>✅ Outdoor exposure, corrosion, ventilation, or clearance problems</li>
+            <li>Pizza Oven Plus may not light or may not reach high temperature.</li>
+            <li>Rear burner, infrared hearth, igniter, gas valve, or regulator issues can weaken heat output.</li>
+            <li>The hearth or ceramic ceiling surface may heat unevenly.</li>
+            <li>Door, thermometer, gasket, insulation, or control issues may cause temperature swings.</li>
+            <li>Outdoor corrosion, ventilation, and clearance problems can affect built-in installations.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We inspect <strong>Alfresco pizza ovens</strong> for burner output, ignition, gas pressure, airflow, and high-heat performance</li>
-            <li>✅ We test safety systems, controls, regulators, ceramic components, and built-in installation conditions</li>
-            <li>✅ We restore dependable outdoor oven performance for luxury outdoor kitchens</li>
-          </ul>
+  
+          <h3>How We Repair Alfresco Outdoor Ovens</h3>
+          <p>
+            We inspect burner output, infrared heat, hearth performance, gas pressure, ignition, insulation, ventilation, controls, and weather-exposed parts to restore dependable outdoor oven performance.
+          </p>
         </>
       )
     },
+  
     {
       id: "fire-magic-outdoor-oven-repair",
       title: "Fire Magic Outdoor Oven Repair",
@@ -903,24 +1005,27 @@ export const Tabs = () => {
       alt: "Fire Magic outdoor pizza oven repair technician servicing a built-in oven",
       description: (
         <>
-          <p>We provide <strong>Fire Magic outdoor oven repair</strong> for Fire Magic built-in pizza ovens, Aurora pizza ovens, Echelon outdoor pizza ovens, black glass outdoor oven models, and luxury outdoor kitchen cooking appliances. Fire Magic ovens may include thermostatic controls, electronic ignition, ceramic glass doors, pizza stones, baking racks, and smart temperature features.</p>
-          <h3>Common Fire Magic Outdoor Oven Problems We Repair:</h3>
+          <p>
+            We provide <strong>Fire Magic outdoor oven repair</strong> for Fire Magic built-in pizza ovens, Aurora pizza ovens, Echelon outdoor pizza ovens, black glass outdoor oven models, and luxury outdoor kitchen cooking appliances. Fire Magic ovens may include thermostatic controls, electronic ignition, ceramic glass doors, pizza stones, baking racks, and smart temperature features.
+          </p>
+  
+          <h3>Fire Magic Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Outdoor pizza oven not lighting, not heating, or shutting off</li>
-            <li>✅ Thermostatic control, igniter, gas valve, or flame rectification issue</li>
-            <li>✅ Pizza stone, baking rack, door glass, or interior heat problem</li>
-            <li>✅ Control panel, smart feature, wiring, or power supply malfunction</li>
-            <li>✅ Outdoor corrosion, installation clearance, or ventilation concern</li>
+            <li>The outdoor oven lights but shuts off or swings in temperature.</li>
+            <li>Thermostatic control, electronic ignition, flame sensing, or gas valve issues may interrupt heating.</li>
+            <li>Pizza stone, baking rack, ceramic glass door, or gasket condition may affect heat retention.</li>
+            <li>Control panel, smart feature, wiring, or power supply problems may appear on newer models.</li>
+            <li>Outdoor corrosion and enclosure clearance can affect safety and performance.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ Our <strong>Fire Magic outdoor oven repair technicians</strong> test gas, ignition, electrical, and temperature systems</li>
-            <li>✅ We inspect ceramic glass, stone surfaces, thermostats, burners, and control wiring</li>
-            <li>✅ We verify safe performance in built-in outdoor kitchen enclosures</li>
-          </ul>
+  
+          <h3>How We Repair Fire Magic Outdoor Ovens</h3>
+          <p>
+            We test ignition, flame sensing, gas delivery, thermostats, controls, wiring, ceramic glass, stone surfaces, and built-in enclosure conditions so the oven performs safely outdoors.
+          </p>
         </>
       )
     },
+  
     {
       id: "dcs-oven-repair",
       title: "DCS Oven Repair",
@@ -929,24 +1034,27 @@ export const Tabs = () => {
       alt: "DCS oven repair technician servicing a premium oven or outdoor cooking appliance",
       description: (
         <>
-          <p>Our <strong>DCS oven repair</strong> service supports legacy DCS wall ovens, DCS cooking appliances, DCS outdoor grills with roasting and baking performance issues, and premium DCS outdoor kitchen systems. DCS has produced high-end cooking products for both indoor and outdoor kitchens, so the correct repair approach depends on the model and installation.</p>
-          <h3>Common DCS Oven Problems We Repair:</h3>
+          <p>
+            Our <strong>DCS oven repair</strong> service supports legacy DCS wall ovens, DCS cooking appliances, and DCS outdoor kitchen systems used for roasting, baking, rotisserie cooking, and high-heat outdoor cooking. DCS diagnosis depends on whether the appliance is an indoor legacy oven, a range oven, or part of an outdoor cooking setup.
+          </p>
+  
+          <h3>DCS Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Legacy DCS wall oven not heating, not self-cleaning, or cooking unevenly</li>
-            <li>✅ Bake, roast, fan bake, grill, or pizza bake function not working</li>
-            <li>✅ Door lock, temperature sensor, element, fan, or control failure</li>
-            <li>✅ Outdoor grill oven-style cooking, roasting, or rotisserie heat problems</li>
-            <li>✅ Gas supply, burner, ignition, regulator, or weather-related outdoor issues</li>
+            <li>Legacy DCS wall ovens may fail in bake, broil, fan bake, pizza bake, self-clean, or door-lock modes.</li>
+            <li>Older indoor ovens may need sensor, relay, element, fan, or control diagnosis.</li>
+            <li>Outdoor DCS systems may lose roasting or rotisserie heat because of burner, regulator, ignition, or airflow issues.</li>
+            <li>Infrared burner and grill-lid heat retention problems can affect oven-style cooking outdoors.</li>
+            <li>Parts availability differs between legacy indoor ovens and current outdoor cooking products.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We diagnose <strong>DCS ovens and outdoor cooking systems</strong> by model, fuel type, and cooking function</li>
-            <li>✅ We inspect heating elements, gas components, fans, controls, sensors, and built-in ventilation</li>
-            <li>✅ We restore safe operation for both legacy indoor ovens and premium outdoor DCS installations</li>
-          </ul>
+  
+          <h3>How We Repair DCS Ovens</h3>
+          <p>
+            We identify the DCS platform first, then test heating elements, gas systems, sensors, relays, fans, ignition, regulators, rotisserie components, and outdoor ventilation depending on the model.
+          </p>
         </>
       )
     },
+  
     {
       id: "twin-eagles-outdoor-oven-repair",
       title: "Twin Eagles Outdoor Oven Repair",
@@ -955,25 +1063,28 @@ export const Tabs = () => {
       alt: "Twin Eagles outdoor oven repair technician servicing a premium outdoor cooking appliance",
       description: (
         <>
-          <p>We provide <strong>Twin Eagles outdoor oven repair</strong> for premium outdoor cooking appliances used for baking, roasting, pizza-style cooking, salamander-style cooking, and high-heat outdoor kitchen performance. This includes Twin Eagles outdoor grills, specialty cooking accessories, and related luxury outdoor cooking systems where oven-like heat control is part of the cooking setup.</p>
-          <h3>Common Twin Eagles Outdoor Oven Problems We Repair:</h3>
+          <p>
+            We provide <strong>Twin Eagles outdoor oven repair</strong> for premium outdoor cooking systems used for baking, roasting, rotisserie cooking, searing, pizza-style cooking, and high-heat outdoor kitchen performance. Twin Eagles service often involves gas delivery, infrared components, rotisserie systems, lighting, controls, and outdoor exposure.
+          </p>
+  
+          <h3>Twin Eagles Oven Issues Our Techs See Most Frequently</h3>
           <ul>
-            <li>✅ Outdoor cooking appliance not reaching proper baking or roasting temperature</li>
-            <li>✅ Ignition, burner, regulator, gas valve, or flame stability issues</li>
-            <li>✅ Infrared burner, rotisserie, searing, or pizza-stone heat problems</li>
-            <li>✅ Control knob, thermometer, wiring, or lighting malfunction</li>
-            <li>✅ Outdoor corrosion, ventilation, enclosure clearance, or weather-related issues</li>
+            <li>Infrared burners, rotisserie burners, or searing zones may lose strong heat output.</li>
+            <li>Gas valves, regulators, igniters, burners, or flame stability may need service.</li>
+            <li>Pizza-stone, roasting, or oven-style heat performance may decline inside outdoor cooking systems.</li>
+            <li>Control knobs, thermometers, wiring, and lighting may fail from outdoor exposure.</li>
+            <li>Ventilation and enclosure clearance can affect performance in built-in outdoor kitchens.</li>
           </ul>
-          <h3>How We Fix It</h3>
-          <ul>
-            <li>✅ We inspect <strong>Twin Eagles outdoor cooking systems</strong> for gas delivery, burner performance, ignition, airflow, and heat retention</li>
-            <li>✅ We service high-heat outdoor kitchen components used for oven-style cooking</li>
-            <li>✅ We confirm safe operation and proper performance in luxury outdoor kitchen installations</li>
-          </ul>
+  
+          <h3>How We Repair Twin Eagles Outdoor Ovens</h3>
+          <p>
+            We inspect gas delivery, burner output, infrared heat, ignition, rotisserie components, airflow, enclosure ventilation, wiring, lighting, and corrosion-prone areas so the outdoor cooking system performs safely and consistently.
+          </p>
         </>
       )
     }
   ];
+  
 
   useEffect(() => {
     const handleResize = () => {
