@@ -1054,7 +1054,7 @@ export const Tabs = () => {
         </>
       )
     },
-  
+
     {
       id: "twin-eagles-outdoor-oven-repair",
       title: "Twin Eagles Outdoor Oven Repair",
