@@ -16,7 +16,6 @@ export const Tabs = () => {
           id: "aga-stove-repair",
           title: "AGA Stove Repair",
           heading: "AGA Stove Repair",
-          img: "/stove-repair/aga-stove-repair.webp",
           alt: "AGA stove repair technician servicing a luxury AGA cooker",
           description: (
             <>
@@ -226,7 +225,7 @@ export const Tabs = () => {
     const handleResize = () => {
       const mobile = window.innerWidth <= 768;
       setIsMobile(mobile);
-      setActiveTab(mobile ? null : "aga-oven-repair");
+      setActiveTab(mobile ? null : items[0].id);
     };
 
     handleResize();
