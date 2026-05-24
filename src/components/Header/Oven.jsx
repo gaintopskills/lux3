@@ -25,7 +25,7 @@ const ParallaxHeader = () => {
           className="gold-embossed"
           data-text="Oven Repair"
         >
-          Oven Repair
+          Oven Repair by ZARICCI
           <br />
           <span className="h1-location">
             in Los Angeles, Orange County & Ventura County

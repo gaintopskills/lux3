@@ -2,6 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 import ParallaxHeader from '../components/Header/Stove.jsx'
+import Tabs1 from '../components/Tabs/EuropeanStove.jsx'
+import Tabs2 from '../components/Tabs/LuxuryStove.jsx'
+import Tabs3 from '../components/Tabs/ProStyleStove.jsx'
+import Tabs4 from '../components/Tabs/HighEndStove.jsx'
+import Tabs5 from '../components/Tabs/RetroStove.jsx'
+import Tabs6 from '../components/Tabs/OutdoorStove.jsx'
 import Areas from '../components/Areas.jsx';
 import '../components/Areas.css';
 const structuredData = {
@@ -423,16 +429,46 @@ const breadcrumbs = [
 ];
 ---
 <Layout
-	title="High-End Stove Repair – Precision Repairs for the Most Powerful Kitchen Workhorses"
-	description="A high-end stove is the heart of any serious kitchen—built not only to perform at a professional level but to inspire creativity and confidence in every meal. Whether you’re working with a gas cooktop, dual-fuel range, or induction stove, performance matters. When something goes wrong, you need more than a fix—you need a team who understands the precision and craftsmanship behind your luxury appliance."
+	title="High-End & Luxury Stove Repair | (424) 499-7788"
+	description="High-End & Luxury Stove Repair for La Cornue, Bertazzoni, Fisher & Paykel, Wolf, Thermador, Viking, Signature, Dacor & more."
 	structuredData={structuredData}
   ogImage="/stove/stove-repair-services.webp"
 >
 <ParallaxHeader client:idle />
+<div class="maincontent" id="webpage">
+<h2>European Oven Repair</h2>
+<p>
+  Our technicians service European ovens with issues such as weak heating, uneven baking, delayed ignition, steam failure, temperature swings, cooling fan problems, worn door gaskets, selector switch failure, and control board faults. Because many European ovens use specialty parts, custom finishes, and unique cooking systems, we carefully identify the model, inspect the oven by fuel type and cooking mode, and recommend a repair path that protects both performance and the appearance of the appliance.
+</p>
+</div>
+<Tabs1 client:visible/>
+<div class="maincontent">
+<h2>Luxury Oven Repair</h2>
+<p>
+  If your luxury oven is not heating, overheating, cooking unevenly, showing error codes, failing in steam or speed mode, or having problems with the probe, fan, relay, ignition, door lock, or control panel, our technicians diagnose the exact system causing the failure. We focus on restoring the oven’s cooking performance while respecting surrounding cabinetry, luxury finishes, custom panels, and the high-end kitchen environment where these appliances are installed.
+</p>
+</div>
+<Tabs2 client:visible/>
+<div class="maincontent">
+<h2>Pro-Style Oven Repair</h2>
+<p>
+  We repair pro-style oven problems including delayed ignition, weak bake burners, broiler failure, uneven convection, inaccurate temperature, noisy fans, failing relays, damaged door gaskets, worn hinges, and control issues. Because pro-style ranges and wall ovens can vary widely by brand, fuel type, and series, we inspect the complete oven system before replacing parts, including gas flow, igniter amp draw, oven sensors, safety valves, thermostats, elements, fans, and door sealing.
+</p>
+</div>
+<Tabs3 client:visible/>
+<div class="maincontent">
+<h2>High-End Oven Repair</h2>
+<p>
+  Our technicians repair high-end ovens with problems such as failed self-clean locks, steam system faults, speed oven heating issues, convection fan failure, touch display problems, sensor errors, relay faults, door alignment issues, and overheating from restricted cabinet ventilation. We check the oven’s installation, airflow, controls, heating circuits, steam components, fans, locks, hinges, and gaskets to restore dependable performance without damaging the surrounding luxury kitchen design.
+</p>
+</div>
+<Tabs4 client:visible/>
+<Tabs5 client:visible/>
+<Tabs6 client:visible/>
+
 <div style="margin: 50px">
 <section>
-  <h1>High-End Stove Repair – Precision Repairs for the Most Powerful Kitchen Workhorses</h1>
-  <p>A high-end stove is the heart of any serious kitchen—built not only to perform at a professional level but to inspire creativity and confidence in every meal. Whether you’re working with a gas cooktop, dual-fuel range, or induction stove, performance matters. When something goes wrong, you need more than a fix—you need a team who understands the precision and craftsmanship behind your luxury appliance.</p>
+  <h2>High-End & Luxury Stove Repair - Professional & Reliable</h2>
   <p>At <strong>Luxury Appliance Repair by Zaricci</strong>, we specialize in high-end stove repair, delivering trusted, discreet, and brand-specific service for discerning homeowners across Los Angeles and beyond.</p>
 </section>
 
