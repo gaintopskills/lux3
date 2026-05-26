@@ -15,7 +15,6 @@ export const Tabs = () => {
       id: "aga-range-repair",
       title: "AGA Range Repair",
       heading: "AGA Range Repair",
-      img: "/range-repair/aga-range-repair.webp",
       alt: "AGA range repair technician servicing a luxury AGA cooker",
       description: (
         <>
