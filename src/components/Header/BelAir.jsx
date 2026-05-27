@@ -27,7 +27,7 @@ const ParallaxHeader = () => {
         <img className="header-image" width="400" height="189" src="/high-end-and-luxury-appliance-repair-by-zaricci.webp" alt="High-end appliance repair Bel Air" fetchpriority="high"
   decoding="async"/>
        <p>
-          Professional repair for luxury and high-end appliances in Bel Air, including La Cornue, Lacanche, Bertazzoni, Sub-Zero, Wolf, Viking, Thermador, Miele, Bosch, Cove, and other premium brands.
+          Professional repair for high-end and luxury appliances in Bel Air, including La Cornue, Lacanche, Gaggenau, Bertazzoni, Monogram, Dacor, Fisher & Paykel, True, Sub-Zero, Wolf, Viking, Thermador, Miele, Bosch, Cove, and other premium brands.
         </p>
         <p>✅ Licensed & Insured<br />
         ✅ 3-month warranty on parts and labor<br />
