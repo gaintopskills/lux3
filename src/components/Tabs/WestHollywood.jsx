@@ -20,7 +20,7 @@ export const Tabs = () => {
     const handleResize = () => {
       const mobile = window.innerWidth <= 768;
       setIsMobile(mobile);
-      setActiveTab(mobile ? null : "refrigerator");
+      setActiveTab(mobile ? null : items[0].id);
     };
     handleResize();
     window.addEventListener("resize", handleResize);
