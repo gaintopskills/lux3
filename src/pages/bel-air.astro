@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import ParallaxHeader from '../components/Header/BelAir.jsx';
 import Tabs from '../components/Tabs/BelAir.jsx'
 import Logos from '../components/Logos.jsx';
 import Reviews from "../components/ReviewsHomePage.jsx";
@@ -152,7 +153,9 @@ const structuredData = {
 	title="Bel Air High-End & Luxury Appliance Repair"
 	<meta name="description" content="Luxury Appliance Repair by Zaricci provides high-end appliance repair in Bel Air, Los Angeles for Sub-Zero, Wolf, Thermador, Miele, Viking, Gaggenau, La Cornue, and other premium brands."
 	structuredData={structuredData}
+  	ogImage="/high-end-and-luxury-appliance-repair-by-zaricci.webp"
 >
+<ParallaxHeader client:idle/>
 <div class="maincontent" >
   <h2>Luxury Appliance Repair in Bel Air, CA</h2>
 <p>
