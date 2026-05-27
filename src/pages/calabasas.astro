@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import ParallaxHeader from '../components/Header/Calabasas.jsx';
 import Tabs from '../components/Tabs/Calabasas.jsx'
 import Logos from '../components/Logos.jsx';
 import Reviews from "../components/ReviewsHomePage.jsx";
@@ -156,6 +157,7 @@ const structuredData = {
 	description="HTrusted appliance repair in Calabasas. We fix Sub-Zero, Thermador, Wolf & more. Same-day service by certified technicians."
 	structuredData={structuredData}
 >
+<ParallaxHeader client:idle/>
 <div class="maincontent" >
 <h1>Luxury Appliance Repair in Calabasas, CA</h1>
 <p>

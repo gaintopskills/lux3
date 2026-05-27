@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import ParallaxHeader from '../components/Header/Encino.jsx';
 import Tabs from '../components/Tabs/Encino.jsx'
 import Logos from '../components/Logos.jsx';
 import Reviews from "../components/ReviewsHomePage.jsx";
@@ -153,6 +154,7 @@ const structuredData = {
 	description="High-end appliances repair - Encino by certified technicians. Same-day appointments are available. Call today!"
 	structuredData={structuredData}
 >
+<ParallaxHeader client:idle/>
 <Tabs client:visible />
 <div style="margin: 50px">
 <section>

@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import ParallaxHeader from '../components/Header/LaCanafaFlintridge.jsx';
 import Tabs from '../components/Tabs/LaCanadaFlintridge.jsx'
 import Logos from '../components/Logos.jsx';
 const structuredData = {
@@ -157,6 +158,7 @@ const structuredData = {
 	description="High-end appliances repair - La Cañada Flintridge by certified technicians. Same-day appointments are available. Call today!"
 	structuredData={structuredData}
 >
+<ParallaxHeader client:idle/>
 <section>
   <h1>Luxury Appliance Repair in La Cañada Flintridge, CA</h1>
   <p><strong>Precision Service for Homes That Expect the Best</strong></p>
