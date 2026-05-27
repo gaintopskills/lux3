@@ -20,8 +20,8 @@ const ParallaxHeader = () => {
         Your browser does not support the video tag.
       </video>
 
-      <div className="maintext">
-        <h1>Luxury Appliance Repair by ZARICCI<br/> <span className="h1-location">
+      <div className="maintext" id="website">
+        <h1 id="localbusiness">Luxury Appliance Repair by ZARICCI<br/> <span className="h1-location">
     in Los Angeles, Orange County & Ventura County
   </span></h1>
         <img className="header-image" width="1200" height="630" src="/high-end-and-luxury-appliance-repair-by-zaricci.webp" alt="High-End and Luxury Appliance Repair Los Angeles, Orange county, and Ventura County"  fetchpriority="high"
