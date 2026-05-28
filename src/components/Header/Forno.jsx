@@ -23,9 +23,9 @@ const ParallaxHeader = () => {
       <div className="maintext">
         <h1
           className="gold-embossed"
-          data-text="Thor Appliance Repair"
+          data-text="Forno Appliance Repair"
         >
-          Thor Appliance Repair<br/> <span className="h1-location">
+          Forno Appliance Repair<br/> <span className="h1-location">
     in Los Angeles, Orange County & Ventura County
   </span>
         </h1>
@@ -34,18 +34,14 @@ const ParallaxHeader = () => {
           className="header-image"
           width="1200"
           height="630"
-          src="/thor/thor-appliance-repair-los-angeles-orange-county-ventura-county.webp"
-          alt="Thor appliance repair services for Los Angeles, Ventura County, and Orange County"
+          src="/forno/forno-appliance-repair-los-angeles-orange-county-ventura-county.webp"
+          alt="Forno appliance repair services for Los Angeles, Ventura County, and Orange County"
           fetchPriority="high"
           decoding="async"
         />
 
         <p>
-          Experienced technicians specializing in Thor appliance repair.
-          We service Thor professional ranges, gas ranges, electric ranges,
-          induction ranges, rangetops, cooktops, range hoods, wall ovens,
-          warming drawers, microwaves, refrigerators, dishwashers, wine coolers,
-          undercounter appliances, ice makers, and outdoor appliances.
+          Experienced technicians specializing in Forno freestanding gas ranges, dual fuel ranges, electric ranges, induction ranges, professional gas rangetops, induction cooktops, built-in wall ovens, range hoods, refrigerators, freezers, French door refrigerators, side-by-side refrigerators, bottom-freezer refrigerators, panel-ready refrigeration, drawer refrigerators, drawer freezers, built-in dishwashers, wine coolers, beverage coolers, outdoor kitchen appliances, BBQ grill modules, outdoor beverage centers, commercial-style Forno ranges, commercial dishwashers, commercial ice makers, and select Forno Commerciale equipment.
         </p>
 
         <p>
