@@ -25,7 +25,7 @@ const ParallaxHeader = () => {
           className="gold-embossed"
           data-text="Range Repair"
         >
-          Range Repair by ZARICCI
+          High-End & Luxry Range Repair
           <br />
           <span className="h1-location">
             in Los Angeles, Orange County & Ventura County

@@ -25,7 +25,7 @@ const ParallaxHeader = () => {
           className="gold-embossed"
           data-text="Stove Repair"
         >
-          Stove Repair by ZARICCI
+          High-End & Luxury Stove Repair
           <br />
           <span className="h1-location">
             in Los Angeles, Orange County & Ventura County
