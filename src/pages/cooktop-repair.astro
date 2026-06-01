@@ -2,6 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 import ParallaxHeader from '../components/Header/Cooktop.jsx'
+import Tabs1 from '../components/Tabs/EuropeanRange.jsx'
+import Tabs2 from '../components/Tabs/LuxuryRange.jsx'
+import Tabs3 from '../components/Tabs/ProStyleRange.jsx'
+import Tabs4 from '../components/Tabs/HighEndRange.jsx'
+import Tabs5 from '../components/Tabs/RetroRange.jsx'
+import Tabs6 from '../components/Tabs/OutdoorRange.jsx'
 import Areas from '../components/Areas.jsx';
 import '../components/Areas.css';
 const structuredData = {
@@ -402,88 +408,129 @@ const breadcrumbs = [
   ogImage="/cooktop/cooktop-repair-services.webp"
 >
 <ParallaxHeader client:idle />
-<div style="margin: 50px">
-<section>
-  <h1>🔧 Cooktop Repair by Zaricci</h1>
-  <p><strong>White-Glove Service for Luxury Gas, Induction &amp; Electric Cooktops</strong></p>
-  <p>A luxury cooktop is the engine of a gourmet kitchen — sleek, responsive, and designed for precision. When it fails, even slightly, it disrupts the flow of your day. At Zaricci, we offer expert cooktop repair services for luxury homes, chefs, and design-conscious homeowners who expect nothing less than performance perfection.</p>
-  <p>Whether it's a smart induction cooktop or a custom gas range top, we treat every repair with care, discretion, and industry-leading expertise.</p>
-</section>
+<div class="maincontent" id="webpage">
+  <h2>High-End &amp; Luxury Cooktop Repair - Professional &amp; Reliable</h2>
+  <p>
+    Luxury Appliance Repair by Zaricci provides professional <strong>cooktop repair</strong> for high-end, luxury, European,
+    pro-style, retro, indoor, and outdoor built-in cooking appliances throughout Los Angeles, Orange County, and Ventura County.
+    Our technicians service <strong>gas cooktops, electric cooktops, induction cooktops, modular cooktops, downdraft cooktops,
+    built-in cooktops, radiant cooktops, sealed-burner cooktops, and professional-style cooking surfaces</strong> from premium brands.
+  </p>
 
-<section>
-  <h2>🛠️ Specializing in Elite Cooktop Brands</h2>
-  <p>Our technicians are certified in the repair and calibration of the world’s finest cooktop brands, including:</p>
-  <ul>
-    <li>Wolf</li>
-    <li>Thermador</li>
-    <li>Miele</li>
-    <li>Gaggenau</li>
-    <li>JennAir</li>
-    <li>Monogram</li>
-    <li>Bosch Benchmark</li>
-    <li>La Cornue</li>
-    <li>Viking</li>
-    <li>Bertazzoni</li>
-    <li>Café by GE</li>
-    <li>Electrolux ICON</li>
-    <li>Fisher &amp; Paykel</li>
-    <li>Smeg</li>
-    <li>Samsung Chef Collection</li>
-    <li>KitchenAid Architect Series</li>
-  </ul>
-  <p>We’re equipped to repair induction, gas, electric, glass-ceramic, and hybrid cooktops with full respect for your cabinetry, surfaces, and home environment.</p>
-</section>
+  <h2>European Cooktop Repair</h2>
 
-<section>
-  <h2>🔍 Common Luxury Cooktop Issues We Fix</h2>
-  <ul>
-    <li>Burners won’t ignite or heat evenly</li>
-    <li>Induction cooktop not detecting cookware</li>
-    <li>Cracked glass or ceramic surface</li>
-    <li>Inconsistent temperature control</li>
-    <li>Touch controls unresponsive</li>
-    <li>Gas smell or clicking without ignition</li>
-    <li>Error codes or smart sensor issues</li>
-    <li>Downdraft vent not operating properly</li>
-  </ul>
-</section>
-
-<section>
-  <h2>🌟 Why Homeowners Trust Zaricci</h2>
-  <ul>
-    <li>Same-Day Cooktop Repair in high-end Los Angeles neighborhoods</li>
-    <li>Certified Luxury Appliance Technicians</li>
-    <li>No Subcontractors — Only In-House Experts</li>
-    <li>Discreet, No-Trace Repairs using protective coverings and care</li>
-    <li>OEM Parts Only for longevity and brand integrity</li>
-    <li>Post-Repair Testing to ensure every feature functions flawlessly</li>
-  </ul>
-</section>
-
-<section>
-  <h2>🌍 We Proudly Serve</h2>
-  <p>Zaricci provides luxury cooktop repair to homes and estates in:</p>
-  <ul>
-    <li>Los Angeles</li>
-    <li>Beverly Hills</li>
-    <li>Brentwood</li>
-    <li>Malibu</li>
-    <li>Calabasas</li>
-    <li>Pasadena</li>
-    <li>Santa Monica</li>
-    <li>Newport Beach</li>
-    <li>Irvine</li>
-    <li>Ventura County</li>
-    <li>and more</li>
-  </ul>
-</section>
-
-<section>
-  <h2>🧰 Preventative Maintenance for Premium Cooktops</h2>
-  <p>Luxury cooktops perform best with seasonal maintenance. We offer custom tune-up services to clean, inspect, and recalibrate burners, sensors, vents, and glass surfaces — all aligned with your brand’s standards and warranty recommendations.</p>
-</section>
-
+  <p>
+    European cooktops are often designed with precision burners, induction zones, cast-iron grates, brass components,
+    specialty controls, integrated ventilation, and handcrafted finishes that require a more detailed repair approach than
+    standard residential cooktops. At <strong>Luxury Appliance Repair by Zaricci</strong>, we provide
+    <strong>European cooktop repair</strong> for premium brands. These built-in cooking surfaces may include gas burners,
+    induction zones, electric elements, bridge zones, wok burners, teppanyaki modules, simmer burners, modular cooking zones,
+    flush-mounted installations, and integrated downdraft ventilation. See below the issues we encounter most frequently.
+  </p>
 </div>
-<h2>Areas We Serve For Cooktop Repair</h2>
-<Areas client:visible/>
+
+<Tabs1 client:visible />
+
+<div class="maincontent">
+  <h2>Luxury Cooktop Repair</h2>
+
+  <p>
+    Luxury cooktops are designed for powerful cooking performance, precise temperature control, premium materials, and
+    seamless integration into high-end kitchen countertops. We provide <strong>luxury cooktop repair</strong> for brands such as
+    Fisher &amp; Paykel, Wolf, Thermador, Viking, Monogram, Signature Kitchen Suite, Hestan, and Dacor. These cooktops may
+    include dual-stacked burners, extra-low simmer settings, induction bridge zones, flex cooking areas, touch controls,
+    griddle modules, specialty burner configurations, downdraft ventilation, and professional-style cooking features.
+  </p>
+</div>
+
+<Tabs2 client:visible />
+
+<div class="maincontent">
+  <h2>Pro-Style Cooktop Repair</h2>
+
+  <p>
+    Pro-style cooktops and built-in rangetop-style cooking surfaces are made for homeowners who want restaurant-inspired
+    cooking power, high-BTU burners, heavy cast-iron grates, stainless-steel construction, griddles, charbroilers, and
+    commercial-style controls. Our <strong>pro-style cooktop repair</strong> service covers brands such as American Range,
+    BlueStar, FiveStar, Thor Kitchen, Forno, Garland, and ZLINE. These cooking surfaces often include powerful gas burners,
+    heavy-duty valves, sealed or open burner systems, electronic ignition, manual controls, simmer burners, wok burners,
+    and professional cooking modules.
+  </p>
+</div>
+
+<Tabs3 client:visible />
+
+<div class="maincontent">
+  <h2>High-End Cooktop Repair</h2>
+
+  <p>
+    High-end cooktops often combine modern cooking technology with minimalist design, flush installation, advanced controls,
+    and precise heating systems. We provide <strong>high-end cooktop repair</strong> for premium brands such as Bosch and
+    JennAir, including gas cooktops, electric cooktops, induction cooktops, downdraft cooktops, radiant cooktops, and
+    modular built-in cooking surfaces. These appliances often require mode-specific diagnosis because one burner, heating
+    element, induction zone, touch-control function, or ventilation feature can fail while the rest of the cooktop continues
+    to operate.
+  </p>
+</div>
+
+<Tabs4 client:visible />
+
+<div class="maincontent">
+  <h2>Retro &amp; Legacy Cooktop Repair</h2>
+
+  <p>
+    Retro and legacy cooktops are often valued for their distinctive design, color, chrome trim, knobs, grates, and
+    vintage-inspired appearance, so repair requires careful handling as well as accurate diagnosis. We provide
+    <strong>retro cooktop repair</strong> for supported built-in cooking surfaces, including classic gas cooktops, electric
+    cooktops, specialty cooking modules, and older cooktop models that may be difficult to replace without changing the
+    appearance of the kitchen or modifying the countertop opening.
+  </p>
+</div>
+
+<Tabs5 client:visible />
+
+<div class="maincontent">
+  <h2>Outdoor Cooktop Repair</h2>
+
+  <p>
+    Outdoor cooktops and built-in outdoor cooking surfaces are exposed to moisture, wind, heat, corrosion, grease buildup,
+    weather changes, and gas-supply issues, which makes repair different from indoor cooktop service. We provide
+    <strong>outdoor cooktop repair</strong> for premium outdoor kitchen brands such as Kalamazoo, Lynx, Alfresco, Fire Magic,
+    DCS, and Twin Eagles. These systems may include built-in burners, power burners, side burners, wok burners, griddles,
+    sear stations, specialty cooking modules, and custom outdoor kitchen configurations.
+  </p>
+</div>
+
+<Tabs6 client:visible />
+
+<div class="maincontent">
+  <h2>What to Expect with Zaricci</h2>
+
+  <ul>
+    <li>Same-day luxury repair in most areas of Los Angeles, Ventura County &amp; Orange County</li>
+    <li>Technicians trained to diagnose luxury, high-end &amp; European cooktops</li>
+    <li>Careful handling of custom countertops, cabinetry &amp; premium appliance finishes</li>
+    <li>Discreet service that respects your home, kitchen &amp; schedule</li>
+    <li>Follow-up support to ensure your cooktop performs reliably</li>
+  </ul>
+
+  <h3>Preventative Maintenance for High-End Cooktops</h3>
+
+  <p>
+    Luxury cooktops are an investment. We offer custom maintenance packages to preserve reliable ignition, consistent
+    heating, responsive controls, clean burner performance, and safe operation. Routine service can help extend the lifespan
+    of your appliance and reduce the risk of costly breakdowns.
+  </p>
+
+  <h2>Cooktop Repair in Los Angeles, Orange County &amp; Ventura County</h2>
+
+  <p>
+    We service high-end cooktops in custom homes, hillside properties, coastal residences, luxury condos, and designer
+    kitchens throughout Los Angeles County, Orange County, and Ventura County. Many of these kitchens include stone
+    countertops, custom cabinetry, flush-mounted appliance installations, integrated ventilation, professional gas lines,
+    dedicated electrical circuits, and premium appliance packages that require careful service and clean workmanship.
+  </p>
+</div>
+
+<Areas client:visible />
 </Layout>
