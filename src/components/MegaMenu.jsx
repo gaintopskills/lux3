@@ -316,8 +316,7 @@ export const MegaMenu = () => {
             >
               <CloseMenuBar />
               <h3>
-                10% of the revenues goes towards helping low-income families fix
-                their appliances!
+              10% of revenue goes toward helping low-income families repair essential appliances.
               </h3>
             </div>
           </div>
