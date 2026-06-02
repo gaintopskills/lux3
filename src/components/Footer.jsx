@@ -50,7 +50,7 @@ export const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        &copy; 2025 Zaricci. All rights reserved.
+        &copy; 2026 Zaricci. All rights reserved.
       </div>
     </footer>
   );
