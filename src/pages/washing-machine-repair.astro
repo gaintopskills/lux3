@@ -1,0 +1,647 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+
+import ParallaxHeader from '../components/Header/WashingMachine.jsx';
+import Tabs1 from '../components/Tabs/WashingMachine.jsx';
+
+import Areas from '../components/Areas.jsx';
+import '../components/Areas.css';
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://luxuryappliance.repair/#website",
+      "url": "https://luxuryappliance.repair/",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "publisher": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/washing-machine-repair/#webpage",
+      "url": "https://luxuryappliance.repair/washing-machine-repair/",
+      "name": "High-End Washing Machine Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Professional high-end washing machine repair for Miele, ASKO, Bosch, Fisher & Paykel, and Smeg washers in Los Angeles County, Orange County, and Ventura County.",
+      "isPartOf": {
+        "@id": "https://luxuryappliance.repair/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://luxuryappliance.repair/washing-machine-repair/#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/washing-machine-repair/#service"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "@id": "https://luxuryappliance.repair/washing-machine-repair/#primaryimage",
+        "url": "https://luxuryappliance.repair/washer/washing-machine-repair-services.webp",
+        "contentUrl": "https://luxuryappliance.repair/washer/washing-machine-repair-services.webp",
+        "caption": "High-end washing machine repair services in Los Angeles County, Orange County, and Ventura County"
+      },
+      "keywords": [
+        "washing machine repair",
+        "washer repair",
+        "high-end washing machine repair",
+        "luxury washing machine repair",
+        "premium washing machine repair",
+        "European washing machine repair",
+        "front-load washing machine repair",
+        "compact washing machine repair",
+        "stacked washing machine repair",
+        "smart washing machine repair",
+        "washing machine not draining",
+        "washing machine not spinning",
+        "washing machine leaking",
+        "washing machine vibration repair",
+        "washing machine door lock repair",
+        "washing machine control board repair",
+        "washing machine pump repair",
+        "washing machine maintenance",
+        "Miele washing machine repair",
+        "ASKO washing machine repair",
+        "Bosch washing machine repair",
+        "Fisher Paykel washing machine repair",
+        "Smeg washing machine repair",
+        "Los Angeles washing machine repair",
+        "Los Angeles County washing machine repair",
+        "Orange County washing machine repair",
+        "Ventura County washing machine repair"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/washing-machine-repair/#service",
+      "url": "https://luxuryappliance.repair/washing-machine-repair/",
+      "name": "High-End Washing Machine Repair",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/washing-machine-repair/#webpage"
+      },
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "serviceType": [
+        "High-end washing machine repair",
+        "Luxury washing machine repair",
+        "European washing machine repair",
+        "Front-load washing machine repair",
+        "Compact washing machine repair",
+        "Stacked washing machine repair",
+        "Smart washing machine repair",
+        "Washing machine drainage repair",
+        "Washing machine spin-cycle repair",
+        "Washing machine leak repair",
+        "Washing machine vibration diagnostics",
+        "Washing machine preventive maintenance"
+      ],
+      "description": "Luxury Appliance Repair by Zaricci provides professional washing machine repair for European and premium laundry appliances, including Miele, ASKO, Bosch, Fisher & Paykel, and Smeg washers. Our technicians service front-load washing machines, compact European washers, stacked laundry systems, smart washers, and supported premium residential laundry appliances across Los Angeles County, Orange County, Ventura County, and surrounding communities.",
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Los Angeles County",
+          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles_County,_California"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Orange County",
+          "sameAs": "https://en.wikipedia.org/wiki/Orange_County,_California"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ventura County",
+          "sameAs": "https://en.wikipedia.org/wiki/Ventura_County,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Los Angeles",
+          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Bel Air",
+          "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Beverly Hills",
+          "sameAs": "https://en.wikipedia.org/wiki/Beverly_Hills,_California"
+        },
+        {
+          "@type": "Place",
+          "name": "Brentwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Calabasas",
+          "sameAs": "https://en.wikipedia.org/wiki/Calabasas,_California"
+        },
+        {
+          "@type": "Place",
+          "name": "Century City",
+          "sameAs": "https://en.wikipedia.org/wiki/Century_City"
+        },
+        {
+          "@type": "Place",
+          "name": "Encino",
+          "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Huntington Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Huntington_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Irvine",
+          "sameAs": "https://en.wikipedia.org/wiki/Irvine,_California"
+        },
+        {
+          "@type": "City",
+          "name": "La Cañada Flintridge",
+          "sameAs": "https://en.wikipedia.org/wiki/La_Cañada_Flintridge,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Laguna Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Laguna_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Malibu",
+          "sameAs": "https://en.wikipedia.org/wiki/Malibu,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Manhattan Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Manhattan_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Newport Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Newport_Beach,_California"
+        },
+        {
+          "@type": "Place",
+          "name": "Pacific Palisades",
+          "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Palos Verdes Estates",
+          "sameAs": "https://en.wikipedia.org/wiki/Palos_Verdes_Estates,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Pasadena",
+          "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Rancho Palos Verdes",
+          "sameAs": "https://en.wikipedia.org/wiki/Rancho_Palos_Verdes,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Rolling Hills Estates",
+          "sameAs": "https://en.wikipedia.org/wiki/Rolling_Hills_Estates,_California"
+        },
+        {
+          "@type": "City",
+          "name": "San Marino",
+          "sameAs": "https://en.wikipedia.org/wiki/San_Marino,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Santa Monica",
+          "sameAs": "https://en.wikipedia.org/wiki/Santa_Monica,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Thousand Oaks",
+          "sameAs": "https://en.wikipedia.org/wiki/Thousand_Oaks,_California"
+        },
+        {
+          "@type": "City",
+          "name": "West Hollywood",
+          "sameAs": "https://en.wikipedia.org/wiki/West_Hollywood,_California"
+        },
+        {
+          "@type": "Place",
+          "name": "Westwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles"
+        }
+      ],
+      "brand": [
+        {
+          "@type": "Brand",
+          "name": "Miele"
+        },
+          {
+          "@type": "Brand",
+          "name": "Gaggenau"
+        },
+        {
+          "@type": "Brand",
+          "name": "ASKO"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bosch"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fisher & Paykel"
+        },
+        {
+          "@type": "Brand",
+          "name": "Smeg"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "High-End Washing Machine Repair Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Front-Load Washing Machine Repair",
+              "description": "Repair for premium front-load washing machines with drainage problems, spin-cycle issues, vibration, door-lock faults, gasket leaks, detergent-dispenser problems, sensor errors, and electronic-control failures."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Compact European Washing Machine Repair",
+              "description": "Specialized repair for compact European washers with drainage, pump, filter, door-lock, vibration, installation-clearance, sensor, and electronic-control concerns."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Stacked Washing Machine Repair",
+              "description": "Repair for washing machines installed in stacked laundry systems, compact laundry closets, custom cabinetry, and limited-access laundry rooms."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Washing Machine Drainage and Pump Repair",
+              "description": "Diagnosis and repair for washing machines that are not draining properly, stopping with water inside the drum, displaying drain warnings, or experiencing pump, filter, hose, or water-management problems."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Washing Machine Spin-Cycle and Vibration Repair",
+              "description": "Diagnosis and repair for washers with excessive vibration, loud spinning, unstable movement, incomplete spin cycles, suspension wear, shock-absorber concerns, leveling problems, and installation-related issues."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Washing Machine Leak Repair",
+              "description": "Repair for washing machines with water leaks caused by door-gasket wear, drain-hose problems, inlet-hose concerns, detergent-dispenser issues, pump leaks, internal hose failures, or door-alignment problems."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Washing Machine Door-Lock and Gasket Repair",
+              "description": "Diagnosis and repair for front-load washers with door-lock faults, latch problems, gasket damage, sealing issues, door-alignment concerns, and water leakage around the washer door."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Washing Machine Sensor and Electronic-Control Repair",
+              "description": "Diagnosis and repair for washers with water-level sensor problems, temperature-sensor faults, motor-control concerns, smart-connectivity issues, error codes, display problems, wiring faults, and electronic-control failures."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Smart Washing Machine Repair",
+              "description": "Repair for premium smart washing machines with connectivity issues, electronic-control errors, display faults, automated-cycle concerns, sensor problems, and model-specific diagnostic codes."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "High-End Washing Machine Preventive Maintenance",
+              "description": "Preventive maintenance for premium washing machines, including inspection of drain filters, pumps, hoses, door gaskets, detergent dispensers, suspension components, leveling, sensors, water connections, drum condition, and overall washing performance."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "description": "Luxury Appliance Repair by Zaricci provides high-end appliance repair, maintenance, and installation services for luxury, European, specialty, and premium residential appliances across Los Angeles County, Orange County, and Ventura County.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp"
+      },
+      "image": "https://luxuryappliance.repair/washer/washing-machine-repair-services.webp",
+      "telephone": "+1-424-499-7788",
+      "email": "info@luxuryappliance.repair",
+      "priceRange": "$$$",
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Los Angeles County",
+          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles_County,_California"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Orange County",
+          "sameAs": "https://en.wikipedia.org/wiki/Orange_County,_California"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ventura County",
+          "sameAs": "https://en.wikipedia.org/wiki/Ventura_County,_California"
+        }
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service",
+          "areaServed": [
+            "Los Angeles County",
+            "Orange County",
+            "Ventura County"
+          ],
+          "availableLanguage": [
+            "English"
+          ]
+        }
+      ],
+      "sameAs": [
+        "https://www.yelp.com/biz/luxury-appliance-repair-by-zaricci-los-angeles"
+      ],
+      "knowsAbout": [
+        "Luxury appliance repair",
+        "High-end appliance repair",
+        "European appliance repair",
+        "Washing machine repair",
+        "Washer repair",
+        "High-end washing machine repair",
+        "Luxury washing machine repair",
+        "European washing machine repair",
+        "Front-load washing machine repair",
+        "Compact washing machine repair",
+        "Stacked washing machine repair",
+        "Smart washing machine repair",
+        "Washing machine preventive maintenance",
+        "Washing machine not draining",
+        "Washing machine not spinning",
+        "Washing machine leaking",
+        "Washing machine excessive vibration",
+        "Washing machine drainage repair",
+        "Washing machine pump repair",
+        "Washing machine filter cleaning",
+        "Washing machine door-lock repair",
+        "Washing machine gasket replacement",
+        "Washing machine suspension repair",
+        "Washing machine shock-absorber repair",
+        "Washing machine motor repair",
+        "Washing machine sensor repair",
+        "Washing machine control-board repair",
+        "Luxury laundry-room appliance repair",
+        "Miele washing machine repair",
+        "ASKO washing machine repair",
+        "Bosch washing machine repair",
+        "Fisher Paykel washing machine repair",
+        "Smeg washing machine repair"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://luxuryappliance.repair/washing-machine-repair/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://luxuryappliance.repair/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Washing Machine Repair",
+          "item": "https://luxuryappliance.repair/washing-machine-repair/"
+        }
+      ]
+    }
+  ]
+};
+---
+
+<Layout
+  title="High-End Washing Machine Repair | (424) 499-7788"
+  description="High-end washing machine repair for Miele, ASKO, Bosch, Fisher & Paykel, Gaggenau, and Smeg washers in Los Angeles County, Orange County, and Ventura County."
+  structuredData={structuredData}
+  ogImage="/washer/washing-machine-repair-services.webp"
+>
+  <ParallaxHeader client:idle />
+
+  <div
+    class="maincontent"
+    id="webpage"
+  >
+    <h2>
+      High-End &amp; Luxury Washing Machine Repair – Professional &amp; Reliable
+    </h2>
+
+    <p>
+      At <strong>Luxury Appliance Repair by Zaricci</strong>, we specialize in
+      professional <strong>high-end washing machine repair</strong> for
+      <strong> Miele, ASKO, Bosch, Fisher &amp; Paykel, and Smeg washers</strong>.
+      Our technicians combine careful diagnostics with white-glove service to
+      restore reliable washing performance while working respectfully around
+      your laundry room, custom cabinetry, flooring, stacked appliances, and
+      surrounding finishes.
+    </p>
+
+    <p>
+      Today’s premium washing machines are designed with advanced sensors,
+      electronic controls, specialized wash programs, high-speed spin cycles,
+      water-management systems, smart features, and compact European
+      installations. When a luxury washer begins leaking, stops draining, fails
+      to spin correctly, or displays an error code, accurate diagnosis matters.
+      Our technicians inspect the complete system before recommending the most
+      appropriate repair.
+    </p>
+
+    <h2>
+      European, Compact &amp; Smart Washing Machine Repair
+    </h2>
+
+    <p>
+      European and high-end washing machines are often engineered differently
+      from standard residential washers. Many models feature compact front-load
+      designs, stacked installations, drain filters, recirculation systems,
+      automatic detergent dispensing, water-level sensors, door-lock systems,
+      high-speed spin cycles, smart controls, and model-specific electronics.
+      At <strong>Luxury Appliance Repair by Zaricci</strong>, we provide
+      specialized repair for premium washing machines from Miele, ASKO, Bosch,
+      Fisher &amp; Paykel, and Smeg. See below for common issues we diagnose and
+      repair for each brand.
+    </p>
+  </div>
+
+  <Tabs1 client:visible />
+
+  <div class="maincontent">
+    <h2>
+      What to Expect with Zaricci
+    </h2>
+
+    <ul>
+      <li>
+        Same-day luxury washing machine repair in most areas of Los Angeles,
+        Ventura &amp; Orange County
+      </li>
+
+      <li>
+        Experienced technicians familiar with premium, European, front-load,
+        compact, stacked &amp; smart washing machine models
+      </li>
+
+      <li>
+        Careful diagnostics for drainage, pump, filter, spin-cycle, vibration,
+        gasket, door-lock, sensor, motor &amp; electronic-control issues
+      </li>
+
+      <li>
+        Discreet service that respects your laundry room, cabinetry, flooring,
+        stacked appliances &amp; schedule
+      </li>
+
+      <li>
+        Follow-up support to help ensure your washing machine continues to
+        perform reliably
+      </li>
+    </ul>
+
+    <h3>
+      Preventive Maintenance for High-End Washing Machines
+    </h3>
+
+    <p>
+      Luxury and European washing machines are an investment. We offer
+      preventive maintenance services designed to preserve washing performance,
+      reduce the risk of drainage problems, help prevent leaks, support stable
+      spin cycles, extend appliance lifespan, and reduce the likelihood of
+      costly breakdowns.
+    </p>
+
+    <p>
+      Depending on the model, washing machine maintenance may include inspection
+      of the drain filter, pump, hoses, water connections, detergent dispenser,
+      door gasket, door-lock system, suspension components, leveling, sensors,
+      drum condition, and electronic controls. For compact or stacked laundry
+      installations, we also inspect access limitations and surrounding
+      clearances that may affect operation and future service.
+    </p>
+
+    <h2>
+      Washing Machine Repair in Los Angeles, Orange County &amp; Ventura County
+    </h2>
+
+    <p>
+      We service high-end washing machines in custom homes, hillside estates,
+      coastal residences, luxury condos, and designer laundry rooms throughout
+      Los Angeles County, Orange County, and Ventura County. Many of these homes
+      feature compact European washing machines, front-load washers, stacked
+      washer-dryer systems, premium laundry appliances, direct-drain
+      connections, specialized water hookups, integrated smart controls, and
+      custom cabinetry that require careful diagnostics, precise repair work,
+      and clean, respectful service inside the home.
+    </p>
+
+    <h2>
+      Common High-End Washing Machine Problems We Repair
+    </h2>
+
+    <ul>
+      <li>
+        <strong>Washing machine not draining:</strong> We inspect the drain
+        filter, pump, drain hose, internal hoses, water-management system, and
+        electronic controls.
+      </li>
+
+      <li>
+        <strong>Washing machine not spinning:</strong> We diagnose motor,
+        suspension, drum, door-lock, sensor, balance-detection, and
+        control-related issues.
+      </li>
+
+      <li>
+        <strong>Washing machine leaking:</strong> We inspect the door gasket,
+        hoses, pump, water connections, detergent dispenser, seals, and
+        appliance leveling.
+      </li>
+
+      <li>
+        <strong>Excessive vibration or loud operation:</strong> We check
+        leveling, installation stability, shock absorbers, suspension
+        components, drum movement, load-balance concerns, and internal wear.
+      </li>
+
+      <li>
+        <strong>Door not locking or opening correctly:</strong> We diagnose the
+        door latch, lock mechanism, gasket, alignment, wiring, and related
+        electronic controls.
+      </li>
+
+      <li>
+        <strong>Washer stopping during the cycle:</strong> We inspect drainage,
+        water supply, sensors, motor operation, door-lock response, error codes,
+        and electronic controls.
+      </li>
+
+      <li>
+        <strong>Washer not filling properly:</strong> We examine water inlet
+        valves, hoses, filters, water pressure, sensors, and control-related
+        concerns.
+      </li>
+
+      <li>
+        <strong>Detergent dispenser problems:</strong> We inspect dispenser
+        components, automatic detergent-dosing systems where applicable,
+        buildup, water flow, hoses, and model-specific controls.
+      </li>
+
+      <li>
+        <strong>Error codes or display issues:</strong> We use the appliance
+        model and symptoms to trace sensor faults, wiring problems, control-board
+        issues, and smart-feature concerns.
+      </li>
+    </ul>
+
+    <h2>
+      Areas We Serve for Washing Machine Repair
+    </h2>
+  </div>
+
+  <Areas client:visible />
+</Layout>
