@@ -3,7 +3,13 @@ import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 
 import ParallaxHeader from '../components/Header/Dishwasher.jsx';
-import Tabs1 from '../components/Tabs/Dishwasher.jsx';
+
+import Tabs1 from '../components/Tabs/EuropeanDishwashers.jsx';
+import Tabs2 from '../components/Tabs/LuxuryDishwashers.jsx';
+import Tabs3 from '../components/Tabs/ProStyleDishwashers.jsx';
+import Tabs4 from '../components/Tabs/HighEndDishwashers.jsx';
+import Tabs5 from '../components/Tabs/RetroDishwashers.jsx';
+import Tabs6 from '../components/Tabs/OutdoorDishwashers.jsx';
 
 import Areas from '../components/Areas.jsx';
 import '../components/Areas.css';
@@ -12,112 +18,120 @@ const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebSite",
-      "@id": "https://luxuryappliance.repair/#website",
-      "url": "https://luxuryappliance.repair/",
-      "name": "Luxury Appliance Repair by Zaricci",
-      "publisher": {
-        "@id": "https://luxuryappliance.repair/#localbusiness"
-      }
-    },
-    {
       "@type": "WebPage",
       "@id": "https://luxuryappliance.repair/dishwasher-repair/#webpage",
       "url": "https://luxuryappliance.repair/dishwasher-repair/",
-      "name": "High-End Dishwasher Repair | Luxury Appliance Repair by Zaricci",
-      "description": "Professional high-end dishwasher repair for Miele, Gaggenau, Cove, ASKO, Bosch, Fisher & Paykel, Thermador, JennAir, and Smeg dishwashers in Los Angeles County, Orange County, and Ventura County.",
-      "isPartOf": {
-        "@id": "https://luxuryappliance.repair/#website"
-      },
-      "breadcrumb": {
-        "@id": "https://luxuryappliance.repair/dishwasher-repair/#breadcrumb"
-      },
+      "name": "Dishwasher Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Professional dishwasher repair for luxury, European, high-end, panel-ready, integrated, drawer, and outdoor dishwashers in Los Angeles, Orange County, and Ventura County. We service premium dishwasher brands including Miele, Cove, Gaggenau, Bosch, ASKO, Thermador, Fisher & Paykel, Monogram, JennAir, Dacor, Viking, and more.",
       "mainEntity": {
         "@id": "https://luxuryappliance.repair/dishwasher-repair/#service"
       },
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "@id": "https://luxuryappliance.repair/dishwasher-repair/#primaryimage",
-        "url": "https://luxuryappliance.repair/dishwasher/dishwasher-repair-services.webp",
-        "contentUrl": "https://luxuryappliance.repair/dishwasher/dishwasher-repair-services.webp",
-        "caption": "High-end dishwasher repair services in Los Angeles County, Orange County, and Ventura County"
-      },
-      "keywords": [
-        "dishwasher repair",
-        "high-end dishwasher repair",
-        "luxury dishwasher repair",
-        "premium dishwasher repair",
-        "European dishwasher repair",
-        "integrated dishwasher repair",
-        "panel-ready dishwasher repair",
-        "built-in dishwasher repair",
-        "smart dishwasher repair",
-        "dishwasher not cleaning dishes",
-        "dishwasher not draining",
-        "dishwasher leaking",
-        "dishwasher not drying dishes",
-        "dishwasher leaving residue",
-        "dishwasher making unusual noises",
-        "dishwasher circulation-pump repair",
-        "dishwasher drain-pump repair",
-        "dishwasher water-inlet repair",
-        "dishwasher spray-arm repair",
-        "dishwasher filter cleaning",
-        "dishwasher heating-system repair",
-        "dishwasher leak-detection repair",
-        "dishwasher door-latch repair",
-        "dishwasher rack repair",
-        "dishwasher control-board repair",
-        "dishwasher maintenance",
-        "Miele dishwasher repair",
-        "Gaggenau dishwasher repair",
-        "Cove dishwasher repair",
-        "ASKO dishwasher repair",
-        "Bosch dishwasher repair",
-        "Fisher Paykel dishwasher repair",
-        "Thermador dishwasher repair",
-        "JennAir dishwasher repair",
-        "Smeg dishwasher repair",
-        "Los Angeles dishwasher repair",
-        "Los Angeles County dishwasher repair",
-        "Orange County dishwasher repair",
-        "Ventura County dishwasher repair"
-      ]
+        "url": "https://luxuryappliance.repair/dishwasher/dishwasher-repair-services.webp"
+      }
     },
     {
       "@type": "Service",
       "@id": "https://luxuryappliance.repair/dishwasher-repair/#service",
+      "name": "Dishwasher Repair",
       "url": "https://luxuryappliance.repair/dishwasher-repair/",
-      "name": "High-End Dishwasher Repair",
       "mainEntityOfPage": {
         "@id": "https://luxuryappliance.repair/dishwasher-repair/#webpage"
       },
+      "serviceType": "Luxury dishwasher repair, built-in dishwasher repair, panel-ready dishwasher repair, fully integrated dishwasher repair, drawer dishwasher repair, DishDrawer repair, European dishwasher repair, outdoor dishwasher repair, and high-end dishwasher maintenance",
+      "description": "Luxury Appliance Repair by Zaricci provides professional dishwasher repair for high-end residential kitchens, European appliance brands, panel-ready dishwashers, fully integrated dishwashers, built-in dishwashers, double-drawer dishwashers, DishDrawer models, retro-style dishwashers, and selected outdoor kitchen dishwashers. Our technicians diagnose drainage problems, leaks, poor cleaning performance, drying issues, pump failures, error codes, control faults, and other dishwasher problems throughout Los Angeles, Orange County, Ventura County, and surrounding communities.",
       "provider": {
         "@id": "https://luxuryappliance.repair/#localbusiness"
       },
-      "serviceType": [
-        "High-end dishwasher repair",
-        "Luxury dishwasher repair",
-        "European dishwasher repair",
-        "Integrated dishwasher repair",
-        "Panel-ready dishwasher repair",
-        "Built-in dishwasher repair",
-        "Smart dishwasher repair",
-        "Dishwasher cleaning-performance diagnostics",
-        "Dishwasher circulation-system repair",
-        "Dishwasher drainage repair",
-        "Dishwasher leak diagnostics",
-        "Dishwasher drying-system repair",
-        "Dishwasher rack and door repair",
-        "Dishwasher electronic-control repair",
-        "High-end dishwasher preventive maintenance"
-      ],
-      "description": "Luxury Appliance Repair by Zaricci provides professional dishwasher repair for European and premium kitchen appliances, including Miele, Gaggenau, Cove, ASKO, Bosch, Fisher & Paykel, Thermador, JennAir, and Smeg dishwashers. Our technicians service integrated dishwashers, panel-ready dishwashers, built-in dishwashers, smart dishwashers, custom-panel installations, and supported premium residential dishwashing appliances across Los Angeles County, Orange County, Ventura County, and surrounding communities.",
       "areaServed": [
         {
-          "@type": "AdministrativeArea",
-          "name": "Los Angeles County",
-          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles_County,_California"
+          "@type": "City",
+          "name": "Los Angeles",
+          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Brentwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Pasadena",
+          "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California"
+        },
+        {
+          "@type": "Place",
+          "name": "Bel Air",
+          "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Pacific Palisades",
+          "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Santa Monica"
+        },
+        {
+          "@type": "City",
+          "name": "Beverly Hills"
+        },
+        {
+          "@type": "City",
+          "name": "Calabasas"
+        },
+        {
+          "@type": "City",
+          "name": "Thousand Oaks"
+        },
+        {
+          "@type": "City",
+          "name": "West Hollywood"
+        },
+        {
+          "@type": "City",
+          "name": "San Marino"
+        },
+        {
+          "@type": "City",
+          "name": "Malibu"
+        },
+        {
+          "@type": "City",
+          "name": "Manhattan Beach"
+        },
+        {
+          "@type": "Place",
+          "name": "Encino",
+          "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Rancho Palos Verdes"
+        },
+        {
+          "@type": "City",
+          "name": "Palos Verdes Estates"
+        },
+        {
+          "@type": "City",
+          "name": "Rolling Hills Estates"
+        },
+        {
+          "@type": "Place",
+          "name": "Westwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Century City",
+          "sameAs": "https://en.wikipedia.org/wiki/Century_City"
+        },
+        {
+          "@type": "City",
+          "name": "La Cañada Flintridge"
         },
         {
           "@type": "AdministrativeArea",
@@ -131,53 +145,13 @@ const structuredData = {
         },
         {
           "@type": "City",
-          "name": "Los Angeles",
-          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles"
-        },
-        {
-          "@type": "Place",
-          "name": "Bel Air",
-          "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles"
-        },
-        {
-          "@type": "City",
-          "name": "Beverly Hills",
-          "sameAs": "https://en.wikipedia.org/wiki/Beverly_Hills,_California"
-        },
-        {
-          "@type": "Place",
-          "name": "Brentwood",
-          "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles"
-        },
-        {
-          "@type": "City",
-          "name": "Calabasas",
-          "sameAs": "https://en.wikipedia.org/wiki/Calabasas,_California"
-        },
-        {
-          "@type": "Place",
-          "name": "Century City",
-          "sameAs": "https://en.wikipedia.org/wiki/Century_City"
-        },
-        {
-          "@type": "Place",
-          "name": "Encino",
-          "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles"
-        },
-        {
-          "@type": "City",
-          "name": "Huntington Beach",
-          "sameAs": "https://en.wikipedia.org/wiki/Huntington_Beach,_California"
-        },
-        {
-          "@type": "City",
           "name": "Irvine",
           "sameAs": "https://en.wikipedia.org/wiki/Irvine,_California"
         },
         {
           "@type": "City",
-          "name": "La Cañada Flintridge",
-          "sameAs": "https://en.wikipedia.org/wiki/La_Cañada_Flintridge,_California"
+          "name": "Newport Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Newport_Beach,_California"
         },
         {
           "@type": "City",
@@ -186,74 +160,18 @@ const structuredData = {
         },
         {
           "@type": "City",
-          "name": "Malibu",
-          "sameAs": "https://en.wikipedia.org/wiki/Malibu,_California"
-        },
-        {
-          "@type": "City",
-          "name": "Manhattan Beach",
-          "sameAs": "https://en.wikipedia.org/wiki/Manhattan_Beach,_California"
-        },
-        {
-          "@type": "City",
-          "name": "Newport Beach",
-          "sameAs": "https://en.wikipedia.org/wiki/Newport_Beach,_California"
-        },
-        {
-          "@type": "Place",
-          "name": "Pacific Palisades",
-          "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles"
-        },
-        {
-          "@type": "City",
-          "name": "Palos Verdes Estates",
-          "sameAs": "https://en.wikipedia.org/wiki/Palos_Verdes_Estates,_California"
-        },
-        {
-          "@type": "City",
-          "name": "Pasadena",
-          "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California"
-        },
-        {
-          "@type": "City",
-          "name": "Rancho Palos Verdes",
-          "sameAs": "https://en.wikipedia.org/wiki/Rancho_Palos_Verdes,_California"
-        },
-        {
-          "@type": "City",
-          "name": "Rolling Hills Estates",
-          "sameAs": "https://en.wikipedia.org/wiki/Rolling_Hills_Estates,_California"
-        },
-        {
-          "@type": "City",
-          "name": "San Marino",
-          "sameAs": "https://en.wikipedia.org/wiki/San_Marino,_California"
-        },
-        {
-          "@type": "City",
-          "name": "Santa Monica",
-          "sameAs": "https://en.wikipedia.org/wiki/Santa_Monica,_California"
-        },
-        {
-          "@type": "City",
-          "name": "Thousand Oaks",
-          "sameAs": "https://en.wikipedia.org/wiki/Thousand_Oaks,_California"
-        },
-        {
-          "@type": "City",
-          "name": "West Hollywood",
-          "sameAs": "https://en.wikipedia.org/wiki/West_Hollywood,_California"
-        },
-        {
-          "@type": "Place",
-          "name": "Westwood",
-          "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles"
+          "name": "Huntington Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Huntington_Beach,_California"
         }
       ],
       "brand": [
         {
           "@type": "Brand",
-          "name": "Miele"
+          "name": "Bertazzoni"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fulgor Milano"
         },
         {
           "@type": "Brand",
@@ -261,15 +179,11 @@ const structuredData = {
         },
         {
           "@type": "Brand",
-          "name": "Cove"
+          "name": "Miele"
         },
         {
           "@type": "Brand",
-          "name": "ASKO"
-        },
-        {
-          "@type": "Brand",
-          "name": "Bosch"
+          "name": "Smeg"
         },
         {
           "@type": "Brand",
@@ -281,183 +195,187 @@ const structuredData = {
         },
         {
           "@type": "Brand",
+          "name": "Viking"
+        },
+        {
+          "@type": "Brand",
+          "name": "Monogram"
+        },
+        {
+          "@type": "Brand",
+          "name": "Signature Kitchen Suite"
+        },
+        {
+          "@type": "Brand",
+          "name": "Dacor"
+        },
+        {
+          "@type": "Brand",
+          "name": "Cove"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thor Kitchen"
+        },
+        {
+          "@type": "Brand",
+          "name": "Forno"
+        },
+        {
+          "@type": "Brand",
+          "name": "ZLINE"
+        },
+        {
+          "@type": "Brand",
+          "name": "ASKO"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bosch"
+        },
+        {
+          "@type": "Brand",
           "name": "JennAir"
         },
         {
           "@type": "Brand",
-          "name": "Smeg"
+          "name": "Big Chill"
+        },
+        {
+          "@type": "Brand",
+          "name": "Kalamazoo"
+        },
+        {
+          "@type": "Brand",
+          "name": "Lynx"
         }
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "High-End Dishwasher Repair Services",
+        "name": "Dishwasher Repair Services",
         "itemListElement": [
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Integrated and Panel-Ready Dishwasher Repair",
-              "description": "Repair for integrated and panel-ready dishwashers with cleaning problems, drainage concerns, leaks, drying issues, control faults, custom-panel alignment problems, door-balance concerns, and model-specific error codes."
+              "name": "Built-In Dishwasher Repair",
+              "description": "Repair for built-in dishwashers with drainage problems, standing water, leaking, poor cleaning performance, drying issues, unusual noise, door-latch faults, pump failures, and electronic control problems."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Dishwasher Cleaning-Performance Diagnostics",
-              "description": "Diagnosis for dishwashers leaving residue, redepositing debris, failing to dissolve detergent correctly, producing cloudy glassware, or cleaning inconsistently because of filtration, spray-arm, circulation, water-inlet, heating, detergent-dispensing, or maintenance concerns."
+              "name": "Panel-Ready Dishwasher Repair",
+              "description": "Careful repair for panel-ready dishwashers installed behind custom cabinetry, including diagnosis of leaks, alignment issues, door problems, drainage faults, circulation-pump problems, and control errors while protecting the surrounding kitchen finishes."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Dishwasher Drain-Pump and Drainage Repair",
-              "description": "Diagnosis and repair for dishwashers with standing water, slow draining, drain-pump noise, drain-hose concerns, filter obstructions, air-gap issues, disposal-connection concerns, and drainage-related error codes."
+              "name": "Fully Integrated Dishwasher Repair",
+              "description": "Repair for fully integrated and hidden-control dishwashers with control-panel faults, error codes, door-switch problems, leak-detection alerts, poor washing results, drying issues, and cycle interruptions."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Dishwasher Circulation-Pump and Spray-Arm Repair",
-              "description": "Diagnosis and repair for poor washing performance, weak spray pressure, unusual circulation noise, inconsistent cleaning, blocked spray arms, circulation-pump wear, and water-distribution concerns."
+              "name": "DishDrawer and Drawer Dishwasher Repair",
+              "description": "Repair for Fisher & Paykel DishDrawer models, double-drawer dishwashers, and single-drawer dishwashers with drainage issues, lid-seal problems, rotor faults, pump problems, water-flow errors, unusual noise, and cycle interruptions."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Dishwasher Leak Detection and Water-Inlet Repair",
-              "description": "Diagnosis and repair for dishwashers with visible leaks, water-inlet concerns, overfilling, underfilling, base-pan water, leak-detection alerts, hose problems, seal wear, valve issues, and water-management faults."
+              "name": "European Dishwasher Repair",
+              "description": "Repair for European dishwashers with advanced filtration systems, water-softening features, circulation-pump problems, heating faults, leak-detection warnings, drain errors, sensor issues, and electronic control malfunctions."
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Dishwasher Drying-System and Heating Repair",
-              "description": "Diagnosis and repair for dishwashers leaving dishes wet, failing to heat correctly, producing poor drying results, or displaying temperature-related faults because of heating-system, sensor, fan, venting, rinse-aid, or electronic-control concerns."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Dishwasher Door, Rack, and Custom-Panel Repair",
-              "description": "Repair for premium dishwashers with door-latch issues, hinge wear, door-balance concerns, custom-panel alignment problems, gasket issues, rack-adjustment faults, worn rollers, rail problems, and loading-system damage."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Smart Dishwasher and Electronic-Control Repair",
-              "description": "Repair for premium smart dishwashers with display faults, connectivity concerns, cycle-selection problems, error codes, sensor faults, wiring issues, electronic-control failures, and model-specific diagnostic alerts."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "High-End Dishwasher Preventive Maintenance",
-              "description": "Preventive maintenance for premium dishwashers, including inspection and cleaning of filters, spray arms, sump areas, door gaskets, racks, rails, drain components, inlet components, detergent dispensers, rinse-aid systems, leak-detection areas, and overall washing performance."
+              "name": "Outdoor Dishwasher Repair",
+              "description": "Repair for selected built-in outdoor kitchen dishwashers affected by drainage problems, water-supply issues, weather exposure, corrosion, leaks, pump failures, and installation-related performance concerns."
             }
           }
         ]
-      }
+      },
+      "knowsAbout": [
+        "Luxury dishwasher repair",
+        "European dishwasher repair",
+        "Built-in dishwasher repair",
+        "Panel-ready dishwasher repair",
+        "Fully integrated dishwasher repair",
+        "DishDrawer repair",
+        "Double-drawer dishwasher repair",
+        "Outdoor dishwasher repair",
+        "Dishwasher not draining",
+        "Dishwasher standing water repair",
+        "Dishwasher leak repair",
+        "Dishwasher not cleaning dishes",
+        "Dishwasher not drying dishes",
+        "Dishwasher circulation pump repair",
+        "Dishwasher drain pump repair",
+        "Dishwasher heating element repair",
+        "Dishwasher control board repair",
+        "Dishwasher inlet valve repair",
+        "Dishwasher door latch repair",
+        "Dishwasher gasket replacement",
+        "Dishwasher filter cleaning",
+        "Dishwasher error-code diagnosis",
+        "Luxury kitchen appliance repair"
+      ],
+      "keywords": [
+        "dishwasher repair",
+        "luxury dishwasher repair",
+        "high-end dishwasher repair",
+        "European dishwasher repair",
+        "built-in dishwasher repair",
+        "panel-ready dishwasher repair",
+        "fully integrated dishwasher repair",
+        "drawer dishwasher repair",
+        "DishDrawer repair",
+        "outdoor dishwasher repair",
+        "dishwasher leak repair",
+        "dishwasher drain-pump repair",
+        "dishwasher circulation-pump repair",
+        "dishwasher not draining",
+        "dishwasher not cleaning dishes",
+        "dishwasher not drying dishes",
+        "Miele dishwasher repair",
+        "Cove dishwasher repair",
+        "Gaggenau dishwasher repair",
+        "Bosch dishwasher repair",
+        "ASKO dishwasher repair",
+        "Thermador dishwasher repair",
+        "Fisher & Paykel dishwasher repair",
+        "Monogram dishwasher repair",
+        "JennAir dishwasher repair",
+        "Dacor dishwasher repair",
+        "Viking dishwasher repair",
+        "Los Angeles dishwasher repair",
+        "Orange County dishwasher repair",
+        "Ventura County dishwasher repair"
+      ]
     },
     {
       "@type": "LocalBusiness",
       "@id": "https://luxuryappliance.repair/#localbusiness",
       "name": "Luxury Appliance Repair by Zaricci",
       "url": "https://luxuryappliance.repair/",
-      "description": "Luxury Appliance Repair by Zaricci provides high-end appliance repair, maintenance, and installation services for luxury, European, specialty, and premium residential appliances across Los Angeles County, Orange County, and Ventura County.",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp"
-      },
-      "image": "https://luxuryappliance.repair/dishwasher/dishwasher-repair-services.webp",
+      "logo": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
       "telephone": "+1-424-499-7788",
-      "email": "info@luxuryappliance.repair",
       "priceRange": "$$$",
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "Los Angeles County",
-          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles_County,_California"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Orange County",
-          "sameAs": "https://en.wikipedia.org/wiki/Orange_County,_California"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Ventura County",
-          "sameAs": "https://en.wikipedia.org/wiki/Ventura_County,_California"
-        }
-      ],
       "contactPoint": [
         {
           "@type": "ContactPoint",
           "telephone": "+1-424-499-7788",
-          "contactType": "customer service",
-          "areaServed": [
-            "Los Angeles County",
-            "Orange County",
-            "Ventura County"
-          ],
-          "availableLanguage": [
-            "English"
-          ]
+          "contactType": "customer service"
         }
-      ],
-      "sameAs": [
-        "https://www.yelp.com/biz/luxury-appliance-repair-by-zaricci-los-angeles"
-      ],
-      "knowsAbout": [
-        "Luxury appliance repair",
-        "High-end appliance repair",
-        "European appliance repair",
-        "Dishwasher repair",
-        "High-end dishwasher repair",
-        "Luxury dishwasher repair",
-        "Premium dishwasher repair",
-        "European dishwasher repair",
-        "Integrated dishwasher repair",
-        "Panel-ready dishwasher repair",
-        "Built-in dishwasher repair",
-        "Smart dishwasher repair",
-        "Dishwasher preventive maintenance",
-        "Dishwasher not cleaning dishes",
-        "Dishwasher not draining",
-        "Dishwasher leaking",
-        "Dishwasher not drying dishes",
-        "Dishwasher leaving residue",
-        "Dishwasher making unusual noises",
-        "Dishwasher filter cleaning",
-        "Dishwasher circulation-pump repair",
-        "Dishwasher drain-pump repair",
-        "Dishwasher water-inlet repair",
-        "Dishwasher spray-arm repair",
-        "Dishwasher heating-system repair",
-        "Dishwasher leak-detection repair",
-        "Dishwasher door-latch repair",
-        "Dishwasher custom-panel alignment",
-        "Dishwasher rack repair",
-        "Dishwasher rail repair",
-        "Dishwasher control-board repair",
-        "Luxury kitchen appliance repair",
-        "Miele dishwasher repair",
-        "Gaggenau dishwasher repair",
-        "Cove dishwasher repair",
-        "ASKO dishwasher repair",
-        "Bosch dishwasher repair",
-        "Fisher Paykel dishwasher repair",
-        "Thermador dishwasher repair",
-        "JennAir dishwasher repair",
-        "Smeg dishwasher repair"
       ]
     },
     {
@@ -480,11 +398,18 @@ const structuredData = {
     }
   ]
 };
+
+const breadcrumbs = [
+  {
+    text: 'Welcome'
+  }
+];
 ---
 
 <Layout
-  title="High-End Dishwasher Repair | (424) 499-7788"
-content="High-end dishwasher repair for Miele, Gaggenau, Cove, ASKO, Bosch, Thermador, JennAir, Smeg and Fisher & Paykel in Los Angeles, Orange and Ventura counties."  structuredData={structuredData}
+  title="High-End & Luxury Dishwasher Repair | (424) 499-7788"
+  description="Zaricci provides professional high-end and luxury dishwasher repair for Miele, Cove, Gaggenau, Bosch, ASKO, Thermador, Fisher & Paykel, Monogram, JennAir, Dacor, Viking, and more."
+  structuredData={structuredData}
   ogImage="/dishwasher/dishwasher-repair-services.webp"
 >
   <ParallaxHeader client:idle />
@@ -493,205 +418,281 @@ content="High-end dishwasher repair for Miele, Gaggenau, Cove, ASKO, Bosch, Ther
     class="maincontent"
     id="webpage"
   >
-    <h2>
-      High-End &amp; Luxury Dishwasher Repair – Professional &amp; Reliable
-    </h2>
+    <h2>High-End & Luxury Dishwasher Repair – Professional & Reliable</h2>
 
     <p>
       At <strong>Luxury Appliance Repair by Zaricci</strong>, we specialize in
-      professional <strong>high-end dishwasher repair</strong> for
-      <strong>
-        Miele, Gaggenau, Cove, ASKO, Bosch, Fisher &amp; Paykel, Thermador,
-        JennAir, and Smeg dishwashers
-      </strong>.
-      Our technicians combine careful diagnostics with white-glove service to
-      restore reliable cleaning performance while working respectfully around
-      your kitchen cabinetry, custom panels, stone flooring, countertops, and
-      surrounding finishes.
+      <strong>high-end dishwasher repair</strong> for luxury kitchens with
+      built-in, panel-ready, fully integrated, and drawer-style dishwashers.
+      Our technicians diagnose drainage problems, leaks, poor cleaning
+      performance, drying issues, unusual noise, error codes, pump failures,
+      and electronic control problems while taking care to protect your
+      cabinetry, flooring, and surrounding kitchen finishes.
     </p>
 
-    <p>
-      Today’s premium dishwashers are designed with advanced circulation
-      systems, precision spray arms, filtration assemblies, drain pumps,
-      leak-detection systems, water-inlet controls, sensors, specialized wash
-      programs, drying technologies, electronic controls, smart features, and
-      fully integrated installations. When a luxury dishwasher begins leaving
-      residue on dishes, stops draining, leaks, makes unusual noises, fails to
-      dry properly, or displays an error code, accurate diagnosis matters. Our
-      technicians inspect the complete system before recommending the most
-      appropriate repair.
-    </p>
-
-    <h2>
-      Integrated, Panel-Ready &amp; European Dishwasher Repair
-    </h2>
+    <h2>European Dishwasher Repair</h2>
 
     <p>
-      European and high-end dishwashers are often engineered differently from
-      standard residential dishwashers. Many models feature fully integrated
-      controls, panel-ready doors, custom cabinet fronts, advanced filtration,
-      third racks, adjustable loading systems, quiet circulation pumps,
-      leak-detection technology, water-management systems, smart controls, and
-      model-specific electronics. At
-      <strong> Luxury Appliance Repair by Zaricci</strong>, we provide
-      specialized dishwasher repair for Miele, Gaggenau, Cove, ASKO, Bosch,
-      Fisher &amp; Paykel, Thermador, JennAir, and Smeg appliances. See below
-      for common issues we diagnose and repair for each brand.
+      European dishwashers often use advanced filtration systems, hidden
+      controls, water-management sensors, leak-detection systems, specialized
+      circulation pumps, and tightly integrated cabinetry installations.
+      At <strong>Luxury Appliance Repair by Zaricci</strong>, we provide
+      <strong>European dishwasher repair</strong> for premium brands such as
+      Bertazzoni, Fulgor Milano, Gaggenau, Miele, and Smeg. See below for
+      some of the most common brand-specific issues we diagnose and repair.
     </p>
   </div>
 
   <Tabs1 client:visible />
 
   <div class="maincontent">
-    <h2>
-      What to Expect with Zaricci
-    </h2>
+    <h2>Luxury Dishwasher Repair</h2>
+
+    <p>
+      Luxury dishwashers are designed to operate quietly, integrate cleanly
+      into custom kitchens, and deliver precise washing and drying performance.
+      Many premium models include panel-ready doors, concealed controls,
+      advanced wash zones, specialized racks, smart diagnostics, water
+      sensors, and leak-protection systems. We provide
+      <strong>luxury dishwasher repair</strong> for Fisher &amp; Paykel,
+      Thermador, Viking, Monogram, Signature Kitchen Suite, Dacor, and Cove
+      dishwashers. See below for the primary issues our technicians repair.
+    </p>
+  </div>
+
+  <Tabs2 client:visible />
+
+  <div class="maincontent">
+    <h2>Pro-Style Kitchen Dishwasher Repair</h2>
+
+    <p>
+      Many pro-style appliance collections include dishwashers designed to
+      coordinate with commercial-inspired ranges, oversized refrigerators,
+      bold kitchen finishes, and full luxury appliance packages. We provide
+      <strong>pro-style kitchen dishwasher repair</strong> for Thor Kitchen,
+      Forno, and ZLINE dishwashers. Our technicians diagnose problems such as
+      drainage failure, weak water circulation, leaking, poor cleaning
+      results, drying issues, control faults, and cycle interruptions.
+    </p>
+  </div>
+
+  <Tabs3 client:visible />
+
+  <div class="maincontent">
+    <h2>High-End Dishwasher Repair</h2>
+
+    <p>
+      High-end dishwashers often combine quiet operation, flush installation,
+      stainless-steel interiors, concealed controls, adjustable rack systems,
+      advanced wash cycles, and integrated drying technologies. We provide
+      <strong>high-end dishwasher repair</strong> for ASKO, Bosch, and JennAir
+      dishwashers, including built-in, panel-ready, fully integrated, top-control,
+      and specialty dishwasher models. See below for the main issues we fix.
+    </p>
+  </div>
+
+  <Tabs4 client:visible />
+
+  <div class="maincontent">
+    <h2>Retro-Style Dishwasher Repair</h2>
+
+    <p>
+      Retro-style dishwashers are chosen for their distinctive appearance as
+      much as their cleaning performance. Repair work should protect the
+      appliance’s color, finish, exterior panels, handles, trim, and surrounding
+      cabinetry. We provide <strong>retro-style dishwasher repair</strong> for
+      brands such as Big Chill and Smeg, including dishwashers with drainage
+      problems, leaks, drying issues, unusual noise, door-alignment problems,
+      and cleaning-performance concerns.
+    </p>
+  </div>
+
+  <Tabs5 client:visible />
+
+  <div class="maincontent">
+    <h2>Outdoor Dishwasher Repair</h2>
+
+    <p>
+      Outdoor dishwashers operate in a more demanding environment than indoor
+      models. Moisture, weather exposure, temperature fluctuations, hard-water
+      buildup, corrosion, drainage limitations, and outdoor plumbing conditions
+      can all affect performance. We provide
+      <strong>outdoor dishwasher repair</strong> for selected outdoor kitchen
+      dishwashers, including premium Kalamazoo and Lynx models where applicable.
+      Our technicians inspect the appliance, installation, water supply,
+      drainage system, pump operation, seals, and electrical components to
+      identify the source of the problem.
+    </p>
+  </div>
+
+  <Tabs6 client:visible />
+
+  <div class="maincontent">
+    <h3>Why Choose ZARICCI for High-End Dishwasher Repair?</h3>
 
     <ul>
       <li>
-        Same-day luxury dishwasher repair in most areas of Los Angeles,
-        Ventura &amp; Orange County
+        <strong>✅ Brand-Focused Diagnostic Experience:</strong>
+        Premium dishwashers can include advanced water-management systems,
+        concealed controls, specialized pumps, filtration systems, custom
+        panels, and model-specific error codes. We use a careful diagnostic
+        process before recommending repair.
       </li>
 
       <li>
-        Experienced technicians familiar with premium, European, integrated,
-        panel-ready, built-in &amp; smart dishwasher models
+        <strong>✅ Careful Service Inside Luxury Kitchens:</strong>
+        Many high-end dishwashers are installed behind custom cabinetry,
+        beneath stone countertops, or alongside premium flooring. Our
+        technicians work carefully to protect the appliance and the
+        surrounding kitchen finishes.
       </li>
 
       <li>
-        Careful diagnostics for filtration, circulation-pump, spray-arm,
-        drain-pump, water-inlet, leak-detection, drying, door, rack, sensor
-        &amp; electronic-control issues
+        <strong>✅ Model-Appropriate Replacement Parts:</strong>
+        When a replacement component is required, we identify compatible
+        parts based on the dishwasher brand, model, symptoms, and repair scope.
       </li>
 
       <li>
-        Discreet service that respects your kitchen cabinetry, custom panels,
-        countertops, flooring &amp; schedule
+        <strong>✅ Fast & Flexible Scheduling:</strong>
+        We offer same-day and next-day appointments whenever availability
+        allows, with clear communication throughout the scheduling process.
       </li>
 
       <li>
-        Follow-up support to help ensure your dishwasher continues to perform
-        reliably
+        <strong>✅ Transparent Repair Recommendations:</strong>
+        We explain the issue clearly, outline the recommended repair, and
+        provide pricing information before beginning the work.
       </li>
     </ul>
 
-    <h3>
-      Preventive Maintenance for High-End Dishwashers
-    </h3>
+    <h3>Our High-End Dishwasher Repair Process</h3>
+
+    <ul>
+      <li>
+        <strong>Schedule a Visit:</strong>
+        Call or book online and tell us the dishwasher brand, model, symptoms,
+        and location.
+      </li>
+
+      <li>
+        <strong>In-Home Diagnosis:</strong>
+        A technician inspects the dishwasher, reviews the symptoms, and checks
+        the relevant systems, which may include the drain pump, circulation
+        pump, inlet valve, filtration system, heating components, sensors,
+        control board, door latch, seals, and installation.
+      </li>
+
+      <li>
+        <strong>Detailed Repair Recommendation:</strong>
+        We explain what is causing the problem and provide a clear repair plan.
+      </li>
+
+      <li>
+        <strong>Professional Repair:</strong>
+        When replacement parts are required, we identify the appropriate
+        components and complete the approved repair carefully.
+      </li>
+
+      <li>
+        <strong>Performance Testing:</strong>
+        After the repair, we test the dishwasher for proper filling,
+        circulation, drainage, sealing, and cycle operation.
+      </li>
+    </ul>
+
+    <h3>Repair That Protects Your Dishwasher—and Your Kitchen</h3>
 
     <p>
-      Luxury and European dishwashers are an investment. We offer preventive
-      maintenance services designed to preserve cleaning performance, reduce
-      the risk of drainage problems, support filtration and circulation
-      efficiency, help prevent leaks, extend appliance lifespan, and reduce the
-      likelihood of costly breakdowns.
+      A high-end dishwasher is often installed as part of a carefully designed
+      kitchen with custom cabinetry, premium countertops, panel-ready
+      appliances, and luxury finishes. At <strong>ZARICCI</strong>, our
+      dishwasher repair service is designed to restore reliable performance
+      while treating your kitchen with the care it deserves.
+    </p>
+
+    <h3>Common Dishwasher Problems We Repair</h3>
+
+    <ul>
+      <li>
+        Dishwasher not draining or leaving standing water at the bottom
+      </li>
+
+      <li>
+        Dishwasher leaking beneath the unit or around the door
+      </li>
+
+      <li>
+        Dishwasher not cleaning dishes properly
+      </li>
+
+      <li>
+        Dishwasher not drying dishes after the cycle
+      </li>
+
+      <li>
+        Dishwasher not filling with enough water
+      </li>
+
+      <li>
+        Dishwasher making unusual grinding, humming, or rattling noises
+      </li>
+
+      <li>
+        Dishwasher stopping in the middle of a wash cycle
+      </li>
+
+      <li>
+        Dishwasher displaying an error code
+      </li>
+
+      <li>
+        Circulation pump or drain pump failure
+      </li>
+
+      <li>
+        Water inlet valve, float switch, or leak sensor problems
+      </li>
+
+      <li>
+        Door latch, hinge, gasket, or panel-alignment issues
+      </li>
+
+      <li>
+        Filter, spray-arm, dispenser, rack, or drainage-system problems
+      </li>
+    </ul>
+
+    <h3>Ready to Restore Your Dishwasher’s Performance?</h3>
+
+    <p>
+      Do not let a leaking, noisy, or poorly performing dishwasher damage
+      your kitchen or interrupt your routine.
     </p>
 
     <p>
-      Depending on the dishwasher model, maintenance may include inspection and
-      cleaning of filters, sump areas, spray arms, drain components, inlet
-      components, door gaskets, detergent dispensers, rinse-aid systems, racks,
-      rails, leak-detection areas, visible hoses, installation clearances, and
-      electronic controls. For integrated or panel-ready dishwasher
-      installations, we also inspect custom-panel alignment, door balance, and
-      surrounding cabinetry conditions that may affect operation and future
-      service.
+      <strong>Call Luxury Appliance Repair by Zaricci</strong> or schedule
+      online for professional high-end dishwasher repair that combines careful
+      diagnostics, clean workmanship, and respectful in-home service.
     </p>
 
-    <h2>
-      Dishwasher Repair in Los Angeles, Orange County &amp; Ventura County
-    </h2>
+    <p>
+      <strong>ZARICCI — Where Precision Repair Meets White-Glove Service.</strong>
+    </p>
+
+    <h2>Dishwasher Repair in Los Angeles, Orange County & Ventura County</h2>
 
     <p>
       We service high-end dishwashers in custom homes, hillside estates,
-      coastal residences, luxury condos, and designer kitchens throughout Los
-      Angeles County, Orange County, and Ventura County. Many of these homes
-      feature integrated dishwashers, panel-ready appliances, custom cabinetry,
-      stone flooring, premium kitchen packages, water-filtration systems,
-      specialized plumbing connections, and smart-home integrations that
-      require careful diagnostics, precise repair work, and clean, respectful
-      service inside the home.
+      coastal residences, luxury condos, and designer kitchens throughout
+      Los Angeles County, Orange County, and Ventura County. Many of these
+      kitchens feature panel-ready dishwashers, fully integrated appliances,
+      drawer dishwashers, custom cabinetry, stone countertops, premium
+      plumbing connections, hardwood flooring, and luxury appliance packages
+      that require careful diagnostics, precise repair work, and clean,
+      respectful service inside the home.
     </p>
 
-    <h2>
-      Common High-End Dishwasher Problems We Repair
-    </h2>
-
-    <ul>
-      <li>
-        <strong>Dishwasher not cleaning dishes properly:</strong> We inspect
-        filters, sump areas, circulation performance, spray arms, water-inlet
-        operation, heating response, detergent dispensing, loading conditions,
-        and maintenance-related buildup.
-      </li>
-
-      <li>
-        <strong>Dishwasher leaving residue or cloudy glassware:</strong> We
-        diagnose filtration issues, redepositing debris, spray-arm concerns,
-        detergent-dispensing problems, rinse-aid settings, water-temperature
-        response, water-quality factors, and cycle performance.
-      </li>
-
-      <li>
-        <strong>Dishwasher not draining:</strong> We inspect filters, sump
-        areas, the drain pump, drain hose, air gap, disposal connection,
-        internal obstructions, wiring, and drainage-related controls.
-      </li>
-
-      <li>
-        <strong>Dishwasher leaking:</strong> We examine door gaskets, hoses,
-        inlet components, circulation components, drain components, seals,
-        base-pan areas, leak-detection systems, installation alignment, and
-        related controls.
-      </li>
-
-      <li>
-        <strong>Dishwasher not drying dishes:</strong> We evaluate heating
-        response, sensors, drying-system components, rinse-aid operation,
-        venting or fan performance where applicable, cycle selection, and
-        electronic-control response.
-      </li>
-
-      <li>
-        <strong>Dishwasher making unusual noises:</strong> We check the
-        circulation pump, drain pump, spray arms, filters, sump areas, racks,
-        rails, installation stability, and internal components that may cause
-        humming, grinding, rattling, knocking, or buzzing.
-      </li>
-
-      <li>
-        <strong>Dishwasher not filling or filling incorrectly:</strong> We
-        inspect the water-inlet valve, supply connection, inlet hose, water
-        pressure, sensors, float-related components where applicable, wiring,
-        and electronic controls.
-      </li>
-
-      <li>
-        <strong>Dishwasher door not closing correctly:</strong> We diagnose the
-        door latch, hinges, springs, door balance, gasket condition,
-        custom-panel alignment, racks, rails, wiring, and control-related
-        issues.
-      </li>
-
-      <li>
-        <strong>Dishwasher rack or rail problems:</strong> We inspect rack
-        adjusters, rollers, rails, stops, loading components, third-rack
-        hardware, and model-specific parts that affect smooth operation.
-      </li>
-
-      <li>
-        <strong>Error codes or display issues:</strong> We use the appliance
-        model and symptoms to trace sensor faults, water-management problems,
-        leak-detection alerts, drainage issues, wiring problems, smart-feature
-        concerns, electronic-control issues, and model-specific diagnostic
-        codes.
-      </li>
-    </ul>
-
-    <h2>
-      Areas We Serve for Dishwasher Repair
-    </h2>
+    <Areas client:visible />
   </div>
-
-  <Areas client:visible />
 </Layout>
