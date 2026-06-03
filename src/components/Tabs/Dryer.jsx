@@ -15,7 +15,6 @@ export const Tabs = () => {
       id: "miele-dryer-repair",
       title: "Miele Dryer Repair",
       heading: "Miele Dryer Repair",
-      img: "/dryer-repair/miele-dryer-repair.webp",
       alt: "Miele dryer repair technician servicing a premium Miele T1 heat-pump dryer",
       description: (
         <>
@@ -334,7 +333,75 @@ export const Tabs = () => {
           </p>
         </>
       )
-    }
+    },
+    {
+      id: "gaggenau-dryer-repair",
+      title: "Gaggenau Dryer Repair",
+      heading: "Gaggenau Dryer Repair",
+      /* img: "/dryer-repair/gaggenau-dryer-repair.webp", */
+      alt: "Gaggenau dryer repair technician servicing a premium 200 Series heat-pump tumble dryer",
+      description: (
+        <>
+          <p>
+            We provide <strong>Gaggenau dryer repair</strong> for 200 Series
+            WT260 heat-pump tumble dryers, condenser dryers, stackable laundry
+            installations, self-cleaning-condenser models, Smart Dry-equipped
+            dryers, Steam Refresh models, and supported legacy Gaggenau laundry
+            appliances. Gaggenau dryers combine heat-pump technology,
+            condensate handling, automatic condenser maintenance, fabric-care
+            programs, sensors, and electronic controls, so accurate service
+            requires a model-specific diagnostic approach.
+          </p>
+
+          <h3>Gaggenau Dryer Issues Our Techs See Most Frequently</h3>
+
+          <ul>
+            <li>
+              ✅ Heat-pump dryer taking too long to dry or leaving laundry damp
+              after the cycle
+            </li>
+
+            <li>
+              ✅ Self-cleaning condenser, lint-filter, or internal airflow path
+              requiring inspection because drying performance has declined
+            </li>
+
+            <li>
+              ✅ Condensate container, drain hose, pump, or direct-drain issue
+              interrupting the drying program
+            </li>
+
+            <li>
+              ✅ Smart Dry, moisture-sensor, or temperature-sensor problem
+              causing incorrect cycle selection or premature cycle completion
+            </li>
+
+            <li>
+              ✅ Steam Refresh function not operating correctly because of a
+              water-management, sensor, or control-related concern
+            </li>
+
+            <li>
+              ✅ Touch display, illuminated control knob, door switch, wiring,
+              or electronic-control fault affecting normal operation
+            </li>
+          </ul>
+
+          <h3>How We Fix These Gaggenau Dryer Issues</h3>
+
+          <p>
+            We confirm the exact Gaggenau WT260 model first, then inspect the
+            lint-filter system, self-cleaning condenser, heat-pump airflow path,
+            condensate container, drain hose, pump, direct-drain connection,
+            moisture sensors, temperature sensors, Steam Refresh components,
+            drum drive, belt, motor, door switch, wiring, display, controls,
+            and installation clearances. For supported legacy Gaggenau dryers,
+            we also verify component compatibility and parts availability before
+            recommending repair.
+          </p>
+        </>
+      )
+    },
   ];
 
   useEffect(() => {

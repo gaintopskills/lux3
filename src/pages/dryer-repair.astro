@@ -1,0 +1,678 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+
+import ParallaxHeader from '../components/Header/Dryer.jsx';
+import Tabs1 from '../components/Tabs/Dryer.jsx';
+
+import Areas from '../components/Areas.jsx';
+import '../components/Areas.css';
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://luxuryappliance.repair/#website",
+      "url": "https://luxuryappliance.repair/",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "publisher": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/dryer-repair/#webpage",
+      "url": "https://luxuryappliance.repair/dryer-repair/",
+      "name": "High-End Dryer Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Professional high-end dryer repair for Miele, Gaggenau, ASKO, Bosch, Fisher & Paykel, and Smeg dryers in Los Angeles County, Orange County, and Ventura County.",
+      "isPartOf": {
+        "@id": "https://luxuryappliance.repair/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://luxuryappliance.repair/dryer-repair/#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/dryer-repair/#service"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "@id": "https://luxuryappliance.repair/dryer-repair/#primaryimage",
+        "url": "https://luxuryappliance.repair/dryer-repair/dryer-repair-services.webp",
+        "contentUrl": "https://luxuryappliance.repair/dryer-repair/dryer-repair-services.webp",
+        "caption": "High-end dryer repair services in Los Angeles County, Orange County, and Ventura County"
+      },
+      "keywords": [
+        "dryer repair",
+        "high-end dryer repair",
+        "luxury dryer repair",
+        "premium dryer repair",
+        "European dryer repair",
+        "ventless dryer repair",
+        "heat-pump dryer repair",
+        "condenser dryer repair",
+        "compact dryer repair",
+        "stacked dryer repair",
+        "smart dryer repair",
+        "dryer not heating",
+        "dryer taking too long to dry",
+        "dryer leaving clothes damp",
+        "dryer airflow repair",
+        "dryer lint-filter cleaning",
+        "dryer plinth-filter cleaning",
+        "dryer condenser cleaning",
+        "dryer heat-pump repair",
+        "dryer condensate-pump repair",
+        "dryer drainage repair",
+        "dryer drum repair",
+        "dryer belt repair",
+        "dryer pulley repair",
+        "dryer motor repair",
+        "dryer moisture-sensor repair",
+        "dryer temperature-sensor repair",
+        "dryer control-board repair",
+        "dryer maintenance",
+        "Miele dryer repair",
+        "Gaggenau dryer repair",
+        "ASKO dryer repair",
+        "Bosch dryer repair",
+        "Fisher Paykel dryer repair",
+        "Smeg dryer repair",
+        "Los Angeles dryer repair",
+        "Los Angeles County dryer repair",
+        "Orange County dryer repair",
+        "Ventura County dryer repair"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/dryer-repair/#service",
+      "url": "https://luxuryappliance.repair/dryer-repair/",
+      "name": "High-End Dryer Repair",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/dryer-repair/#webpage"
+      },
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "serviceType": [
+        "High-end dryer repair",
+        "Luxury dryer repair",
+        "European dryer repair",
+        "Ventless heat-pump dryer repair",
+        "Condenser dryer repair",
+        "Compact dryer repair",
+        "Stacked dryer repair",
+        "Smart dryer repair",
+        "Dryer airflow diagnostics",
+        "Dryer filter maintenance",
+        "Dryer drainage repair",
+        "Dryer drum-drive repair",
+        "Dryer sensor repair",
+        "Dryer electronic-control repair",
+        "High-end dryer preventive maintenance"
+      ],
+      "description": "Luxury Appliance Repair by Zaricci provides professional dryer repair for European and premium laundry appliances, including Miele, Gaggenau, ASKO, Bosch, Fisher & Paykel, and Smeg dryers. Our technicians service ventless heat-pump dryers, condenser dryers, compact European dryers, stacked laundry systems, smart dryers, and supported premium residential drying appliances across Los Angeles County, Orange County, Ventura County, and surrounding communities.",
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Los Angeles County",
+          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles_County,_California"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Orange County",
+          "sameAs": "https://en.wikipedia.org/wiki/Orange_County,_California"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ventura County",
+          "sameAs": "https://en.wikipedia.org/wiki/Ventura_County,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Los Angeles",
+          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Bel Air",
+          "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Beverly Hills",
+          "sameAs": "https://en.wikipedia.org/wiki/Beverly_Hills,_California"
+        },
+        {
+          "@type": "Place",
+          "name": "Brentwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Calabasas",
+          "sameAs": "https://en.wikipedia.org/wiki/Calabasas,_California"
+        },
+        {
+          "@type": "Place",
+          "name": "Century City",
+          "sameAs": "https://en.wikipedia.org/wiki/Century_City"
+        },
+        {
+          "@type": "Place",
+          "name": "Encino",
+          "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Huntington Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Huntington_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Irvine",
+          "sameAs": "https://en.wikipedia.org/wiki/Irvine,_California"
+        },
+        {
+          "@type": "City",
+          "name": "La Cañada Flintridge",
+          "sameAs": "https://en.wikipedia.org/wiki/La_Cañada_Flintridge,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Laguna Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Laguna_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Malibu",
+          "sameAs": "https://en.wikipedia.org/wiki/Malibu,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Manhattan Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Manhattan_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Newport Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Newport_Beach,_California"
+        },
+        {
+          "@type": "Place",
+          "name": "Pacific Palisades",
+          "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Palos Verdes Estates",
+          "sameAs": "https://en.wikipedia.org/wiki/Palos_Verdes_Estates,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Pasadena",
+          "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Rancho Palos Verdes",
+          "sameAs": "https://en.wikipedia.org/wiki/Rancho_Palos_Verdes,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Rolling Hills Estates",
+          "sameAs": "https://en.wikipedia.org/wiki/Rolling_Hills_Estates,_California"
+        },
+        {
+          "@type": "City",
+          "name": "San Marino",
+          "sameAs": "https://en.wikipedia.org/wiki/San_Marino,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Santa Monica",
+          "sameAs": "https://en.wikipedia.org/wiki/Santa_Monica,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Thousand Oaks",
+          "sameAs": "https://en.wikipedia.org/wiki/Thousand_Oaks,_California"
+        },
+        {
+          "@type": "City",
+          "name": "West Hollywood",
+          "sameAs": "https://en.wikipedia.org/wiki/West_Hollywood,_California"
+        },
+        {
+          "@type": "Place",
+          "name": "Westwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles"
+        }
+      ],
+      "brand": [
+        {
+          "@type": "Brand",
+          "name": "Miele"
+        },
+        {
+          "@type": "Brand",
+          "name": "Gaggenau"
+        },
+        {
+          "@type": "Brand",
+          "name": "ASKO"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bosch"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fisher & Paykel"
+        },
+        {
+          "@type": "Brand",
+          "name": "Smeg"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "High-End Dryer Repair Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ventless Heat-Pump Dryer Repair",
+              "description": "Repair for premium ventless heat-pump dryers with long drying times, damp laundry, filter warnings, restricted airflow, heat-pump performance concerns, condensate-pump issues, drain-hose problems, moisture-sensor faults, and electronic-control errors."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Condenser Dryer Repair",
+              "description": "Repair for condenser dryers with restricted airflow, condenser maintenance warnings, water-container issues, condensate drainage problems, sensor faults, and reduced drying performance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Compact European Dryer Repair",
+              "description": "Specialized repair for compact European dryers with heat-pump, condenser, airflow, drainage, filter, moisture-sensor, stacking, access, and electronic-control concerns."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Stacked Dryer Repair",
+              "description": "Repair for dryers installed in stacked laundry systems, compact laundry closets, custom cabinetry, and limited-access laundry rooms."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dryer Airflow and Filter Diagnostics",
+              "description": "Diagnosis for dryers with extended drying cycles, restricted airflow, lint buildup, filter warnings, blocked internal airflow paths, overheating, or reduced drying performance."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dryer Condensate Pump and Drainage Repair",
+              "description": "Diagnosis and repair for dryers with water-container warnings, condensate-pump failures, drain-hose concerns, direct-drain problems, and moisture-management issues."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dryer Drum, Belt, Pulley, and Motor Repair",
+              "description": "Diagnosis and repair for dryers that are not tumbling correctly or are making squeaking, scraping, thumping, rumbling, or grinding noises because of belt, pulley, drum-support, bearing, or motor wear."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dryer Moisture-Sensor and Temperature-Sensor Repair",
+              "description": "Diagnosis and repair for dryers with moisture-sensor, temperature-sensor, cycle-timing, drying-level, overheating, damp-laundry, or premature-cycle-completion concerns."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Smart Dryer and Electronic-Control Repair",
+              "description": "Repair for premium smart dryers with connectivity concerns, electronic-control errors, display faults, error codes, door-switch problems, wiring issues, and model-specific diagnostic alerts."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "High-End Dryer Preventive Maintenance",
+              "description": "Preventive maintenance for premium dryers, including inspection of lint filters, plinth filters, internal airflow paths, condenser or heat-pump areas, condensate drainage, moisture sensors, temperature sensors, drum-drive components, door switches, and overall drying performance."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "description": "Luxury Appliance Repair by Zaricci provides high-end appliance repair, maintenance, and installation services for luxury, European, specialty, and premium residential appliances across Los Angeles County, Orange County, and Ventura County.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp"
+      },
+      "image": "https://luxuryappliance.repair/dryer-repair/dryer-repair-services.webp",
+      "telephone": "+1-424-499-7788",
+      "email": "info@luxuryappliance.repair",
+      "priceRange": "$$$",
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Los Angeles County",
+          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles_County,_California"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Orange County",
+          "sameAs": "https://en.wikipedia.org/wiki/Orange_County,_California"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ventura County",
+          "sameAs": "https://en.wikipedia.org/wiki/Ventura_County,_California"
+        }
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service",
+          "areaServed": [
+            "Los Angeles County",
+            "Orange County",
+            "Ventura County"
+          ],
+          "availableLanguage": [
+            "English"
+          ]
+        }
+      ],
+      "sameAs": [
+        "https://www.yelp.com/biz/luxury-appliance-repair-by-zaricci-los-angeles"
+      ],
+      "knowsAbout": [
+        "Luxury appliance repair",
+        "High-end appliance repair",
+        "European appliance repair",
+        "Dryer repair",
+        "High-end dryer repair",
+        "Luxury dryer repair",
+        "Premium dryer repair",
+        "European dryer repair",
+        "Ventless dryer repair",
+        "Heat-pump dryer repair",
+        "Condenser dryer repair",
+        "Compact dryer repair",
+        "Stacked dryer repair",
+        "Smart dryer repair",
+        "Dryer preventive maintenance",
+        "Dryer not heating",
+        "Dryer taking too long to dry",
+        "Dryer leaving clothes damp",
+        "Dryer overheating",
+        "Dryer airflow diagnostics",
+        "Dryer lint-filter cleaning",
+        "Dryer plinth-filter cleaning",
+        "Dryer condenser maintenance",
+        "Dryer heat-pump repair",
+        "Dryer condensate-pump repair",
+        "Dryer drain-hose repair",
+        "Dryer drum repair",
+        "Dryer belt repair",
+        "Dryer pulley repair",
+        "Dryer motor repair",
+        "Dryer moisture-sensor repair",
+        "Dryer temperature-sensor repair",
+        "Dryer door-switch repair",
+        "Dryer control-board repair",
+        "Luxury laundry-room appliance repair",
+        "Miele dryer repair",
+        "Gaggenau dryer repair",
+        "ASKO dryer repair",
+        "Bosch dryer repair",
+        "Fisher Paykel dryer repair",
+        "Smeg dryer repair"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://luxuryappliance.repair/dryer-repair/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://luxuryappliance.repair/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Dryer Repair",
+          "item": "https://luxuryappliance.repair/dryer-repair/"
+        }
+      ]
+    }
+  ]
+};
+---
+
+<Layout
+  title="High-End Dryer Repair | (424) 499-7788"
+  description="High-end dryer repair for Miele, Gaggenau, ASKO, Bosch, Fisher & Paykel, and Smeg dryers in Los Angeles County, Orange County, and Ventura County."
+  structuredData={structuredData}
+  ogImage="/dryer-repair/dryer-repair-services.webp"
+>
+  <ParallaxHeader client:idle />
+
+  <div
+    class="maincontent"
+    id="webpage"
+  >
+    <h2>
+      High-End &amp; Luxury Dryer Repair – Professional &amp; Reliable
+    </h2>
+
+    <p>
+      At <strong>Luxury Appliance Repair by Zaricci</strong>, we specialize in
+      professional <strong>high-end dryer repair</strong> for
+      <strong>
+        Miele, Gaggenau, ASKO, Bosch, Fisher &amp; Paykel, and Smeg dryers
+      </strong>.
+      Our technicians combine careful diagnostics with white-glove service to
+      restore reliable drying performance while working respectfully around
+      your laundry room, custom cabinetry, flooring, stacked appliances, and
+      surrounding finishes.
+    </p>
+
+    <p>
+      Today’s premium dryers are designed with advanced moisture sensors,
+      electronic controls, specialized fabric-care programs, heat-pump
+      technology, condenser systems, internal airflow paths, condensate pumps,
+      smart features, and compact European installations. When a luxury dryer
+      begins leaving clothing damp, takes too long to dry, stops tumbling, makes
+      unusual noises, or displays an error code, accurate diagnosis matters.
+      Our technicians inspect the complete system before recommending the most
+      appropriate repair.
+    </p>
+
+    <h2>
+      European, Ventless &amp; Heat-Pump Dryer Repair
+    </h2>
+
+    <p>
+      European and high-end dryers are often engineered differently from
+      standard residential dryers. Many models feature compact installations,
+      ventless heat-pump systems, condenser drying technology, lint filters,
+      plinth filters, moisture sensors, condensate pumps, direct-drain
+      connections, smart controls, and model-specific electronics. At
+      <strong> Luxury Appliance Repair by Zaricci</strong>, we provide
+      specialized dryer repair for Miele, Gaggenau, ASKO, Bosch,
+      Fisher &amp; Paykel, and Smeg appliances. See below for common issues we
+      diagnose and repair for each brand.
+    </p>
+  </div>
+
+  <Tabs1 client:visible />
+
+  <div class="maincontent">
+    <h2>
+      What to Expect with Zaricci
+    </h2>
+
+    <ul>
+      <li>
+        Same-day luxury dryer repair in most areas of Los Angeles,
+        Ventura &amp; Orange County
+      </li>
+
+      <li>
+        Experienced technicians familiar with premium, European, ventless,
+        heat-pump, condenser, compact, stacked &amp; smart dryer models
+      </li>
+
+      <li>
+        Careful diagnostics for airflow, lint-filter, plinth-filter, condenser,
+        heat-pump, condensate, drainage, sensor, drum-drive, motor
+        &amp; electronic-control issues
+      </li>
+
+      <li>
+        Discreet service that respects your laundry room, cabinetry, flooring,
+        stacked appliances &amp; schedule
+      </li>
+
+      <li>
+        Follow-up support to help ensure your dryer continues to perform
+        reliably
+      </li>
+    </ul>
+
+    <h3>
+      Preventive Maintenance for High-End Dryers
+    </h3>
+
+    <p>
+      Luxury and European dryers are an investment. We offer preventive
+      maintenance services designed to preserve drying performance, reduce the
+      risk of restricted airflow, support heat-pump and condenser efficiency,
+      help prevent overheating, extend appliance lifespan, and reduce the
+      likelihood of costly breakdowns.
+    </p>
+
+    <p>
+      Depending on the dryer model, maintenance may include inspection of lint
+      filters, plinth filters, condenser areas, heat-pump airflow paths,
+      condensate containers, pumps, drain hoses, moisture sensors, temperature
+      sensors, drum-drive components, door switches, installation clearances,
+      and electronic controls. For compact or stacked laundry installations,
+      we also inspect surrounding access limitations that may affect operation
+      and future service.
+    </p>
+
+    <h2>
+      Dryer Repair in Los Angeles, Orange County &amp; Ventura County
+    </h2>
+
+    <p>
+      We service high-end dryers in custom homes, hillside estates, coastal
+      residences, luxury condos, and designer laundry rooms throughout
+      Los Angeles County, Orange County, and Ventura County. Many of these homes
+      feature compact European laundry systems, stacked washer-dryer
+      installations, ventless heat-pump dryers, condenser dryers, direct-drain
+      connections, specialized ventilation, integrated smart controls, and
+      custom cabinetry that require careful diagnostics, precise repair work,
+      and clean, respectful service inside the home.
+    </p>
+
+    <h2>
+      Common High-End Dryer Problems We Repair
+    </h2>
+
+    <ul>
+      <li>
+        <strong>Dryer taking too long to dry:</strong> We inspect lint filters,
+        plinth filters, condenser areas, internal airflow paths, heat-pump
+        performance, moisture sensors, drainage components, and installation
+        clearances.
+      </li>
+
+      <li>
+        <strong>Dryer leaving clothes damp:</strong> We diagnose restricted
+        airflow, sensor problems, temperature-control issues, condenser
+        concerns, heat-pump performance, and incorrect cycle response.
+      </li>
+
+      <li>
+        <strong>Dryer displaying filter warnings:</strong> We inspect the lint
+        filtration system, plinth filter, condenser area, heat-pump airflow
+        path, internal buildup, maintenance requirements, and related sensors.
+      </li>
+
+      <li>
+        <strong>Dryer displaying water-container or drainage warnings:</strong>
+        We examine the condensate container, pump, drain hose, direct-drain
+        connection, internal water-management components, and controls.
+      </li>
+
+      <li>
+        <strong>Dryer not tumbling:</strong> We inspect the drum belt, motor,
+        pulley, drum supports, bearings, door switch, wiring, and electronic
+        controls.
+      </li>
+
+      <li>
+        <strong>Dryer making unusual noises:</strong> We check belt wear,
+        pulley condition, drum supports, bearings, motor operation, installation
+        stability, and internal components that may cause scraping, squeaking,
+        thumping, or rumbling.
+      </li>
+
+      <li>
+        <strong>Dryer overheating:</strong> We evaluate restricted airflow,
+        filter buildup, temperature sensors, internal ventilation, installation
+        clearances, and electronic-control response.
+      </li>
+
+      <li>
+        <strong>Dryer door not closing correctly:</strong> We diagnose the door
+        latch, door switch, hinge alignment, gasket condition, wiring, and
+        control-related issues.
+      </li>
+
+      <li>
+        <strong>Error codes or display issues:</strong> We use the appliance
+        model and symptoms to trace sensor faults, wiring problems,
+        smart-feature concerns, electronic-control issues, and model-specific
+        diagnostic codes.
+      </li>
+    </ul>
+
+    <h2>
+      Areas We Serve for Dryer Repair
+    </h2>
+  </div>
+
+  <Areas client:visible />
+</Layout>
