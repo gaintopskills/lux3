@@ -6,23 +6,22 @@ export const Tabs = () => {
   const [activeTab, setActiveTab] = useState(null);
   const containerRef = useRef(null);
   const itemRefs = useRef([]);
-
   const items = [
     {
       id: "range",
       title: "Range Repair",
-      heading: "Range Repair in Pacific Palisades",
+      heading: "Range Repair in Rolling Hills Estates",
       img: "/cities/range-repair.webp",
-      alt: "Range repair in Pacific Palisades",
+      alt: "Range repair in Rolling Hills Estates",
       description: (
         <>
           <p>
             Luxury Appliance Repair by Zaricci provides professional{" "}
-            <strong>range repair in Pacific Palisades</strong> for gas ranges, dual-fuel
+            <strong>range repair in Rolling Hills Estates</strong> for gas ranges, dual-fuel
             ranges, electric ranges, induction ranges, European ranges, retro
-            ranges, and professional-style cooking appliances. Pacific Palisades homes
-            often feature custom kitchens, hillside and canyon residences,
-            coastal properties, stone countertops, premium ventilation, and
+            ranges, and professional-style cooking appliances. Rolling Hills Estates homes
+            often feature custom kitchens, hillside estate homes, equestrian-area properties,
+            stone countertops, premium ventilation, and
             built-in appliance suites, so we approach every range repair with attention to safety,
             performance, and the appearance of the kitchen.
           </p>
@@ -116,16 +115,16 @@ export const Tabs = () => {
     {
       id: "oven",
       title: "Oven Repair",
-      heading: "Oven Repair in Pacific Palisades",
+      heading: "Oven Repair in Rolling Hills Estates",
       img: "/cities/oven-repair.webp",
-      alt: "Oven repair in Pacific Palisades",
+      alt: "Oven repair in Rolling Hills Estates",
       description: (
         <>
           <p>
-            We provide <strong>oven repair in Pacific Palisades</strong> for wall ovens,
+            We provide <strong>oven repair in Rolling Hills Estates</strong> for wall ovens,
             double ovens, steam ovens, speed ovens, convection ovens, French-door
             ovens, built-in ovens, and oven sections inside premium ranges. In
-            Pacific Palisades homes, ovens are often integrated into custom cabinetry or
+            Rolling Hills Estates homes, ovens are often integrated into custom cabinetry or
             paired with Sub-Zero, Wolf, Miele, Thermador, Monogram, or other
             premium appliance suites. Careful diagnosis and clean workmanship are
             especially important in kitchens designed around built-in appliances.
@@ -207,16 +206,16 @@ export const Tabs = () => {
     {
       id: "cooktop",
       title: "Cooktop Repair",
-      heading: "Cooktop Repair in Pacific Palisades",
+      heading: "Cooktop Repair in Rolling Hills Estates",
       img: "/cities/cooktop-repair.webp",
-      alt: "Cooktop repair in Pacific Palisades",
+      alt: "Cooktop repair in Rolling Hills Estates",
       description: (
         <>
           <p>
-            Our technicians provide <strong>cooktop repair in Pacific Palisades</strong>{" "}
+            Our technicians provide <strong>cooktop repair in Rolling Hills Estates</strong>{" "}
             for gas cooktops, electric cooktops, induction cooktops, rangetops,
             modular cooktops, and high-end built-in cooking surfaces. Cooktops in
-            Pacific Palisades kitchens are often designed with stone countertops, custom
+            Rolling Hills Estates kitchens are often designed with stone countertops, custom
             islands, flush-mounted surfaces, and open-concept layouts that connect
             indoor cooking spaces with patios, terraces, and entertaining areas. We repair cooktops with
             care for both performance and surrounding finishes.
@@ -289,16 +288,16 @@ export const Tabs = () => {
     {
       id: "hood",
       title: "Ventilation Hood Repair",
-      heading: "Ventilation & Range Hood Repair in Pacific Palisades",
+      heading: "Ventilation & Range Hood Repair in Rolling Hills Estates",
       img: "/cities/range-hood-repair.webp",
-      alt: "Ventilation and range hood repair in Pacific Palisades",
+      alt: "Ventilation and range hood repair in Rolling Hills Estates",
       description: (
         <>
           <p>
-            We provide <strong>range hood repair in Pacific Palisades</strong> for
+            We provide <strong>range hood repair in Rolling Hills Estates</strong> for
             ventilation hoods, custom hood inserts, island hoods, wall hoods,
             downdraft systems, and built-in ventilation systems. Proper ventilation
-            is especially important in Pacific Palisades kitchens with powerful gas
+            is especially important in Rolling Hills Estates kitchens with powerful gas
             ranges, pro-style burners, grills, griddles, high-BTU cooking equipment,
             and indoor-outdoor entertaining layouts.
           </p>
@@ -368,17 +367,17 @@ export const Tabs = () => {
     {
       id: "refrigerator",
       title: "Refrigerator Repair",
-      heading: "Refrigerator Repair in Pacific Palisades",
+      heading: "Refrigerator Repair in Rolling Hills Estates",
       img: "/cities/refrigerator-repair.webp",
-      alt: "Refrigerator repair in Pacific Palisades",
+      alt: "Refrigerator repair in Rolling Hills Estates",
       description: (
         <>
           <p>
             Luxury Appliance Repair by Zaricci provides{" "}
-            <strong>refrigerator repair in Pacific Palisades</strong> for built-in,
+            <strong>refrigerator repair in Rolling Hills Estates</strong> for built-in,
             panel-ready, integrated, column, French door, bottom freezer,
             side-by-side, and high-end residential refrigeration systems. Many
-            Pacific Palisades homes feature refrigerators built into custom cabinetry or
+            Rolling Hills Estates homes feature refrigerators built into custom cabinetry or
             concealed behind matching panels. We repair these systems carefully
             while protecting surrounding millwork, floors, and kitchen finishes.
           </p>
@@ -455,13 +454,13 @@ export const Tabs = () => {
     {
       id: "freezer",
       title: "Freezer Repair",
-      heading: "Freezer Repair in Pacific Palisades",
+      heading: "Freezer Repair in Rolling Hills Estates",
       img: "/cities/freezer-repair.webp",
-      alt: "Freezer repair in Pacific Palisades",
+      alt: "Freezer repair in Rolling Hills Estates",
       description: (
         <>
           <p>
-            We provide <strong>freezer repair in Pacific Palisades</strong> for built-in
+            We provide <strong>freezer repair in Rolling Hills Estates</strong> for built-in
             freezers, freezer columns, undercounter freezer drawers, integrated
             freezer units, upright freezers, and freezer sections inside premium
             refrigerators. High-end freezers require stable temperature control,
@@ -524,13 +523,13 @@ export const Tabs = () => {
     {
       id: "beverage",
       title: "Beverage Center Repair",
-      heading: "Beverage Center Repair in Pacific Palisades",
+      heading: "Beverage Center Repair in Rolling Hills Estates",
       img: "/cities/beverage-center-repair.webp",
-      alt: "Beverage center repair in Pacific Palisades",
+      alt: "Beverage center repair in Rolling Hills Estates",
       description: (
         <>
           <p>
-            We repair <strong>beverage centers in Pacific Palisades</strong> for kitchens,
+            We repair <strong>beverage centers in Rolling Hills Estates</strong> for kitchens,
             home bars, entertainment rooms, guest spaces, patios, pool areas,
             and undercounter installations. Beverage centers may look simple, but
             they rely on precise temperature control, quiet operation, proper
@@ -593,15 +592,15 @@ export const Tabs = () => {
     {
       id: "icemaker",
       title: "Ice Maker Repair",
-      heading: "Ice Maker Repair in Pacific Palisades",
+      heading: "Ice Maker Repair in Rolling Hills Estates",
       img: "/cities/ice-maker-repair.webp",
-      alt: "Ice maker repair in Pacific Palisades",
+      alt: "Ice maker repair in Rolling Hills Estates",
       description: (
         <>
           <p>
-            We provide <strong>ice maker repair in Pacific Palisades</strong> for built-in
+            We provide <strong>ice maker repair in Rolling Hills Estates</strong> for built-in
             ice machines, undercounter ice makers, panel-ready ice machines, and
-            refrigerator ice maker systems. In Pacific Palisades kitchens, home bars,
+            refrigerator ice maker systems. In Rolling Hills Estates kitchens, home bars,
             patios, poolside entertaining areas, and guest spaces, reliable ice
             production, proper drainage, and quiet operation are all important.
           </p>
@@ -663,13 +662,13 @@ export const Tabs = () => {
     {
       id: "dryer",
       title: "Dryer Repair",
-      heading: "Dryer Repair in Pacific Palisades",
+      heading: "Dryer Repair in Rolling Hills Estates",
       img: "/cities/dryer-repair.webp",
-      alt: "Dryer repair in Pacific Palisades",
+      alt: "Dryer repair in Rolling Hills Estates",
       description: (
         <>
           <p>
-            We provide <strong>dryer repair in Pacific Palisades</strong> for vented
+            We provide <strong>dryer repair in Rolling Hills Estates</strong> for vented
             dryers, ventless dryers, heat pump dryers, condenser dryers, stacked
             laundry systems, and premium laundry appliances. Dryers are often
             installed in dedicated laundry rooms, closets, guest spaces, or compact
@@ -732,14 +731,14 @@ export const Tabs = () => {
     {
       id: "washing",
       title: "Washing Machine Repair",
-      heading: "Washing Machine Repair in Pacific Palisades",
+      heading: "Washing Machine Repair in Rolling Hills Estates",
       img: "/cities/washing-machine-repair.webp",
-      alt: "Washing machine repair in Pacific Palisades",
+      alt: "Washing machine repair in Rolling Hills Estates",
       description: (
         <>
           <p>
             Our technicians provide{" "}
-            <strong>washing machine repair in Pacific Palisades</strong> for front-load
+            <strong>washing machine repair in Rolling Hills Estates</strong> for front-load
             washers, top-load washers, compact washers, stacked laundry systems,
             and premium laundry appliances. We service laundry systems in custom
             laundry rooms, closets, guest houses, staff areas, and high-end
@@ -801,16 +800,16 @@ export const Tabs = () => {
     {
       id: "dishwasher",
       title: "Dishwasher Repair",
-      heading: "Dishwasher Repair in Pacific Palisades",
+      heading: "Dishwasher Repair in Rolling Hills Estates",
       img: "/cities/dishwasher-repair.webp",
-      alt: "Dishwasher repair in Pacific Palisades",
+      alt: "Dishwasher repair in Rolling Hills Estates",
       description: (
         <>
           <p>
-            We provide <strong>dishwasher repair in Pacific Palisades</strong> for
+            We provide <strong>dishwasher repair in Rolling Hills Estates</strong> for
             integrated dishwashers, panel-ready dishwashers, drawer dishwashers,
             quiet luxury dishwashers, and high-end built-in models. Many
-            dishwashers in Pacific Palisades kitchens are hidden behind custom cabinetry,
+            dishwashers in Rolling Hills Estates kitchens are hidden behind custom cabinetry,
             so we service them carefully without disturbing surrounding panels,
             floors, or the design of the kitchen.
           </p>
@@ -871,13 +870,13 @@ export const Tabs = () => {
     {
       id: "warming",
       title: "Warming Drawer Repair",
-      heading: "Warming Drawer Repair in Pacific Palisades",
+      heading: "Warming Drawer Repair in Rolling Hills Estates",
       img: "/cities/warming-drawer-repair.webp",
-      alt: "Warming drawer repair in Pacific Palisades",
+      alt: "Warming drawer repair in Rolling Hills Estates",
       description: (
         <>
           <p>
-            We provide <strong>warming drawer repair in Pacific Palisades</strong> for
+            We provide <strong>warming drawer repair in Rolling Hills Estates</strong> for
             built-in warming drawers, panel-matched drawers, stainless steel
             warming drawers, and high-end kitchen warming systems. These appliances
             may look simple, but they rely on precise low-temperature control,
@@ -937,13 +936,13 @@ export const Tabs = () => {
     {
       id: "winecooler",
       title: "Wine Cooler Repair",
-      heading: "Wine Cooler Repair in Pacific Palisades",
+      heading: "Wine Cooler Repair in Rolling Hills Estates",
       img: "/cities/wine-cooler-repair.webp",
-      alt: "Wine cooler repair in Pacific Palisades",
+      alt: "Wine cooler repair in Rolling Hills Estates",
       description: (
         <>
           <p>
-            We provide <strong>wine cooler repair in Pacific Palisades</strong> for
+            We provide <strong>wine cooler repair in Rolling Hills Estates</strong> for
             built-in wine coolers, undercounter wine refrigerators, dual-zone wine
             units, column wine storage, and panel-ready wine preservation systems.
             Wine coolers require more than basic cooling — they need stable
@@ -1006,14 +1005,14 @@ export const Tabs = () => {
     {
       id: "winecellar",
       title: "Wine Storage System Repair",
-      heading: "Wine Storage & Preservation System Repair in Pacific Palisades",
+      heading: "Wine Storage & Preservation System Repair in Rolling Hills Estates",
       img: "/cities/wine-cellar-repair.webp",
-      alt: "Wine storage and preservation system repair in Pacific Palisades",
+      alt: "Wine storage and preservation system repair in Rolling Hills Estates",
       description: (
         <>
           <p>
             We service{" "}
-            <strong>wine storage and preservation systems in Pacific Palisades</strong> for
+            <strong>wine storage and preservation systems in Rolling Hills Estates</strong> for
             residential wine rooms, custom wine storage spaces, built-in wine
             columns, and private home collections. These systems must maintain
             stable temperature, proper airflow, controlled vibration, and quiet
@@ -1075,20 +1074,20 @@ export const Tabs = () => {
     {
       id: "grill",
       title: "BBQ Grill Repair",
-      heading: "BBQ Grill Repair in Pacific Palisades",
+      heading: "BBQ Grill Repair in Rolling Hills Estates",
       img: "/cities/bbq-grill-repair.webp",
-      alt: "BBQ grill repair in Pacific Palisades",
+      alt: "BBQ grill repair in Rolling Hills Estates",
       description: (
         <>
           <p>
-            We provide <strong>BBQ grill repair in Pacific Palisades</strong> for built-in
+            We provide <strong>BBQ grill repair in Rolling Hills Estates</strong> for built-in
             grills, outdoor kitchen grills, pro-style gas grills, freestanding
             grills, sear stations, rotisserie systems, and outdoor cooking
-            appliances. Many Pacific Palisades homes include patios, terraces, poolside
-            entertaining spaces, hillside properties, and built-in grilling stations
+            appliances. Many Rolling Hills Estates homes include patios, terraces, poolside
+            entertaining spaces, hillside estate properties, and built-in grilling stations
             that require reliable ignition, even heat, and safe gas performance.
             Outdoor components may also need closer inspection for moisture exposure,
-            salt-air exposure, and coastal corrosion.
+            dust, heat, and seasonal wear.
           </p>
   
           <h3>Common BBQ Grill Problems We Repair</h3>
@@ -1148,13 +1147,13 @@ export const Tabs = () => {
     {
       id: "pizzaoven",
       title: "Pizza Oven Repair",
-      heading: "Pizza Oven Repair in Pacific Palisades",
+      heading: "Pizza Oven Repair in Rolling Hills Estates",
       img: "/cities/pizza-oven-repair.webp",
-      alt: "Pizza oven repair in Pacific Palisades",
+      alt: "Pizza oven repair in Rolling Hills Estates",
       description: (
         <>
           <p>
-            We service <strong>pizza ovens in Pacific Palisades</strong> for indoor
+            We service <strong>pizza ovens in Rolling Hills Estates</strong> for indoor
             gourmet kitchens, outdoor kitchens, built-in cooking areas, and
             entertainment spaces. Pizza ovens require high heat, stable temperature
             control, proper ignition, and safe ventilation to perform correctly.
@@ -1215,20 +1214,20 @@ export const Tabs = () => {
     {
       id: "outdoor",
       title: "Outdoor Kitchen Repair",
-      heading: "Outdoor Kitchen Repair in Pacific Palisades",
+      heading: "Outdoor Kitchen Repair in Rolling Hills Estates",
       img: "/cities/outdoor-kitchen-repair.webp",
-      alt: "Outdoor kitchen appliance repair in Pacific Palisades",
+      alt: "Outdoor kitchen appliance repair in Rolling Hills Estates",
       description: (
         <>
           <p>
-            We provide <strong>outdoor kitchen repair in Pacific Palisades</strong> for
+            We provide <strong>outdoor kitchen repair in Rolling Hills Estates</strong> for
             built-in grills, outdoor refrigerators, beverage centers, ice makers,
             warming drawers, pizza ovens, side burners, outdoor ventilation, and
-            premium backyard cooking systems. Pacific Palisades outdoor kitchens are often
-            designed for patios, terraces, pool areas, hillside properties, family
+            premium backyard cooking systems. Rolling Hills Estates outdoor kitchens are often
+            designed for patios, terraces, pool areas, hillside estate properties, family
             gatherings, and indoor-outdoor entertaining spaces. Reliable appliance
-            performance, careful service, and inspection for moisture or coastal
-            corrosion all matter.
+            performance, careful service, and inspection for heat, moisture, dust,
+            and seasonal wear all matter.
           </p>
   
           <h3>Common Outdoor Kitchen Problems We Repair</h3>
@@ -1278,8 +1277,8 @@ export const Tabs = () => {
             </li>
   
             <li>
-              <strong>Coastal and weather-related repair planning:</strong> We look
-              for corrosion, salt-air exposure, moisture damage, grease buildup,
+              <strong>Weather-related repair planning:</strong> We look
+              for corrosion, moisture damage, dust exposure, grease buildup,
               wiring problems, and worn outdoor components.
             </li>
           </ul>
@@ -1287,7 +1286,6 @@ export const Tabs = () => {
       ),
     },
   ];
-  
   useEffect(() => {
     const handleResize = () => {
       const mobile = window.innerWidth <= 768;
