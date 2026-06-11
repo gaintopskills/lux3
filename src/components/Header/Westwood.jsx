@@ -38,7 +38,6 @@ const ParallaxHeader = () => {
           fetchPriority="high"
           decoding="async"
         />
-
         <p>
           Professional high-end appliance repair in Westwood for luxury
           built-in refrigerators, ranges, ovens, cooktops, dishwashers, wine
@@ -51,7 +50,6 @@ const ParallaxHeader = () => {
           Bosch, Kalamazoo, Lynx, Hestan, DCS, Alfresco, Twin Eagles, Fire
           Magic, and other high-end appliance brands.
         </p>
-
         <p>
           ✅ Licensed &amp; Insured
           <br />
