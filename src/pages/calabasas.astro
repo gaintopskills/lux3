@@ -2,263 +2,605 @@
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 import ParallaxHeader from '../components/Header/Calabasas.jsx';
-import Tabs from '../components/Tabs/Calabasas.jsx'
+import Tabs from '../components/Tabs/Calabasas.jsx';
 import Logos from '../components/Logos.jsx';
-import Reviews from "../components/ReviewsHomePage.jsx";
+import Reviews from '../components/ReviewsHomePage.jsx';
+
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Luxury Appliance Repair by Zaricci",
-  "image": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
-  "@id": "https://luxuryappliance.repair/calabasas/",
-  "url": "https://luxuryappliance.repair/calabasas/",
-  "telephone": "+1-424-499-7788",
-  "priceRange": "$$$",
-  "openingHoursSpecification": [
+  "@graph": [
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
-      ],
-      "opens": "08:00",
-      "closes": "20:00"
-    }
-  ],
-  "description": "Luxury Appliance Repair by Zaricci offers white-glove appliance repair services in Calabasas. We specialize in elite brands like Wolf, Sub-Zero, La Cornue, and Miele. Our certified technicians deliver same-day service to the high-end homes of Calabasas.",
-  "areaServed": {
-    "@type": "Place",
-    "name": "Calabasas, CA"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 34.144194,
-    "longitude": -118.649621
-
-  },
-  "serviceType": "Luxury Appliance Repair",
-  "makesOffer": {
-    "@type": "OfferCatalog",
-    "name": "Luxury Appliance Repair Services",
-    "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair" } }
-    ]
-  },
-  "brand": [
-    { "@type": "Brand", "name": "AGA" },
-    { "@type": "Brand", "name": "American Range" },
-    { "@type": "Brand", "name": "Bertazzoni" },
-    { "@type": "Brand", "name": "Fulgor Milano" },
-    { "@type": "Brand", "name": "Gaggenau" },
-    { "@type": "Brand", "name": "ILVE" },
-    { "@type": "Brand", "name": "Lacanche" },
-    { "@type": "Brand", "name": "La Cornue" },
-    { "@type": "Brand", "name": "Big Chill" },
-    { "@type": "Brand", "name": "BlueStar" },
-    { "@type": "Brand", "name": "Bosch" },
-    { "@type": "Brand", "name": "Cove" },
-    { "@type": "Brand", "name": "Dacor" },
-    { "@type": "Brand", "name": "Elmira Stove Works" },
-    { "@type": "Brand", "name": "FiveStar" },
-    { "@type": "Brand", "name": "Hestan" },
-    { "@type": "Brand", "name": "JennAir" },
-    { "@type": "Brand", "name": "Miele" },
-    { "@type": "Brand", "name": "Signature Kitchen Suite" },
-    { "@type": "Brand", "name": "Smeg" },
-    { "@type": "Brand", "name": "Sub-Zero" },
-    { "@type": "Brand", "name": "Thermador" },
-    { "@type": "Brand", "name": "True Residential" },
-    { "@type": "Brand", "name": "Viking" },
-    { "@type": "Brand", "name": "Wolf" },
-    { "@type": "Brand", "name": "ZLINE" },
-    { "@type": "Brand", "name": "Monogram" },
-    { "@type": "Brand", "name": "Fisher & Paykel" },  
-    { "@type": "Brand", "name": "Forno" },  
-    { "@type": "Brand", "name": "Thor" },  
-    { "@type": "Brand", "name": "Asko" },  
-    { "@type": "Brand", "name": "Liebherr" },  
-    { "@type": "Brand", "name": "Officine Gullo" }, 
-    { "@type": "Brand", "name": "Zephyr" }, 
-    { "@type": "Brand", "name": "Wine Guardian" }, 
-    { "@type": "Brand", "name": "Garland" },
-    { "@type": "Brand", "name": "Heartland" },
-    { "@type": "Brand", "name": "Kalamazoo" },
-    { "@type": "Brand", "name": "Lynx" },
-    { "@type": "Brand", "name": "Hestan Outdoor" },
-    { "@type": "Brand", "name": "Viking Outdoor" },
-    { "@type": "Brand", "name": "DCS" },
-    { "@type": "Brand", "name": "Alfresco" },
-    { "@type": "Brand", "name": "Twin Eagles" },
-    { "@type": "Brand", "name": "Fire Magic" },
-    { "@type": "Brand", "name": "Wolf Outdoors" },
-    { "@type": "Brand", "name": "True Residential Outdoor" },
-    { "@type": "Brand", "name": "Caliber" }
-  ],
- "potentialAction": [
-    {
-      "@type": "ReserveAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://luxuryappliance.repair/book/",
-        "inLanguage": "en",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/calabasas/#webpage",
+      "url": "https://luxuryappliance.repair/calabasas/",
+      "name": "Calabasas High-End & Luxury Appliance Repair",
+      "description": "Luxury appliance repair in Calabasas for Sub-Zero, Wolf, Thermador, Miele, Viking, Gaggenau, La Cornue and other high-end appliance brands.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/calabasas/#service"
       },
-      "result": {
-        "@type": "Reservation",
-        "name": "Service Appointment"
+      "isPartOf": {
+        "@id": "https://luxuryappliance.repair/#website"
       }
     },
     {
-      "@type": "CommunicateAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "tel:+14244997788",
-        "actionPlatform": [
-          "http://schema.org/MobileWebPlatform"
-        ]
+      "@type": "WebSite",
+      "@id": "https://luxuryappliance.repair/#website",
+      "url": "https://luxuryappliance.repair/",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "publisher": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
       }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/calabasas/#service",
+      "name": "Calabasas Luxury Appliance Repair",
+      "serviceType": "High-end and luxury appliance repair in Calabasas",
+      "url": "https://luxuryappliance.repair/calabasas/",
+      "description": "Luxury Appliance Repair by Zaricci provides high-end appliance repair in Calabasas for built-in refrigerators, ranges, ovens, cooktops, dishwashers, wine coolers, outdoor kitchen appliances, and other premium home appliances.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Calabasas, CA"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Calabasas Luxury Appliance Repair Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Range Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Oven Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cooktop Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Range Hood Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Refrigerator Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Freezer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dishwasher Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dryer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Washing Machine Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wine Cooler Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wine Cellar Cooling System Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Beverage Center Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ice Maker Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "BBQ Grill Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pizza Oven Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Outdoor Kitchen Appliance Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Steam Oven Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Warming Drawer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Speed Oven / Combi-Oven Repair"
+            }
+          }
+        ]
+      },
+      "brand": [
+        {
+          "@type": "Brand",
+          "name": "Sub-Zero"
+        },
+        {
+          "@type": "Brand",
+          "name": "Wolf"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thermador"
+        },
+        {
+          "@type": "Brand",
+          "name": "Miele"
+        },
+        {
+          "@type": "Brand",
+          "name": "Viking"
+        },
+        {
+          "@type": "Brand",
+          "name": "Gaggenau"
+        },
+        {
+          "@type": "Brand",
+          "name": "La Cornue"
+        },
+        {
+          "@type": "Brand",
+          "name": "Lacanche"
+        },
+        {
+          "@type": "Brand",
+          "name": "AGA"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bertazzoni"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fulgor Milano"
+        },
+        {
+          "@type": "Brand",
+          "name": "ILVE"
+        },
+        {
+          "@type": "Brand",
+          "name": "Officine Gullo"
+        },
+        {
+          "@type": "Brand",
+          "name": "American Range"
+        },
+        {
+          "@type": "Brand",
+          "name": "BlueStar"
+        },
+        {
+          "@type": "Brand",
+          "name": "FiveStar"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thor"
+        },
+        {
+          "@type": "Brand",
+          "name": "Forno"
+        },
+        {
+          "@type": "Brand",
+          "name": "Garland"
+        },
+        {
+          "@type": "Brand",
+          "name": "ZLINE"
+        },
+        {
+          "@type": "Brand",
+          "name": "Monogram"
+        },
+        {
+          "@type": "Brand",
+          "name": "Dacor"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fisher & Paykel"
+        },
+        {
+          "@type": "Brand",
+          "name": "True Residential"
+        },
+        {
+          "@type": "Brand",
+          "name": "JennAir"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bosch"
+        },
+        {
+          "@type": "Brand",
+          "name": "Asko"
+        },
+        {
+          "@type": "Brand",
+          "name": "Cove"
+        },
+        {
+          "@type": "Brand",
+          "name": "Liebherr"
+        },
+        {
+          "@type": "Brand",
+          "name": "Signature Kitchen Suite"
+        },
+        {
+          "@type": "Brand",
+          "name": "Hestan"
+        },
+        {
+          "@type": "Brand",
+          "name": "Big Chill"
+        },
+        {
+          "@type": "Brand",
+          "name": "Elmira Stove Works"
+        },
+        {
+          "@type": "Brand",
+          "name": "Smeg"
+        },
+        {
+          "@type": "Brand",
+          "name": "Heartland"
+        },
+        {
+          "@type": "Brand",
+          "name": "Kalamazoo"
+        },
+        {
+          "@type": "Brand",
+          "name": "Lynx"
+        },
+        {
+          "@type": "Brand",
+          "name": "DCS"
+        },
+        {
+          "@type": "Brand",
+          "name": "Alfresco"
+        },
+        {
+          "@type": "Brand",
+          "name": "Twin Eagles"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fire Magic"
+        },
+        {
+          "@type": "Brand",
+          "name": "Caliber"
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "image": "https://luxuryappliance.repair/high-end-and-luxury-appliance-repair-by-zaricci.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "description": "Luxury Appliance Repair by Zaricci provides high-end appliance repair for luxury homes, custom kitchens, built-in refrigerators, pro-style ranges, ovens, cooktops, dishwashers, wine coolers, and outdoor kitchen appliances.",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Calabasas, CA"
+        },
+        {
+          "@type": "City",
+          "name": "Los Angeles"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Los Angeles County"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Orange County"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ventura County"
+        }
+      ],
+      "potentialAction": [
+        {
+          "@type": "ReserveAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://luxuryappliance.repair/book/",
+            "inLanguage": "en",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          },
+          "result": {
+            "@type": "Reservation",
+            "name": "Service Appointment"
+          }
+        },
+        {
+          "@type": "CommunicateAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "tel:+14244997788",
+            "actionPlatform": [
+              "http://schema.org/MobileWebPlatform"
+            ]
+          }
+        }
+      ]
     }
-   ]
-}
-
-
+  ]
+};
 ---
+
 <Layout
-	title="High-End & Luxury Appliance Repair – Calabasas"
-	description="High-End & Luxury Appliance Repair - Calabasas for La Cornue, Lacanche, Gaggenau, Bertazzoni, Monogram, Dacor, Fisher & Paykel, True, Sub-Zero, Wolf, Viking, Thermador, Miele, Bosch & other premium brands."
-	structuredData={structuredData}
+  title="Calabasas High-End & Luxury Appliance Repair | (424) 499-7788"
+  description="Luxury appliance repair in Calabasas for Sub-Zero, Wolf, Miele, Thermador, La Cornue and other premium brands. Same-day or next-day service."
+  structuredData={structuredData}
+  ogImage="/high-end-and-luxury-appliance-repair-by-zaricci.webp"
 >
-<ParallaxHeader client:idle/>
-<div class="maincontent" >
-<h1>Luxury Appliance Repair in Calabasas, CA</h1>
-<p>
-  In Calabasas, appliance repair often means working inside homes shaped by the area’s mix of gated estates, hillside properties, canyon residences, custom family homes, and luxury kitchens built for privacy, entertaining, and everyday convenience. Many Calabasas properties include built-in refrigerators, panel-ready dishwashers, pro-style ranges, wine storage, outdoor kitchens, and European appliance brands that require precise diagnostics, clean workmanship, and a more careful repair approach.
-</p>
-</div>
-<Tabs client:visible />
-<div style="margin: 50px">
-<section>
-  <h3>🔧 Why Calabasas Homeowners Choose ZARICCI</h3>
-  <ul>
-    <li><strong>✅ Certified in All Premium Brands</strong><br/>Your luxury appliance deserves a technician who understands it inside and out. Our team is trained and certified in the world’s leading brands—ensuring fast, accurate repairs with zero guesswork.</li>
-    <li><strong>✅ OEM Parts Only</strong><br/>We use authentic manufacturer-approved parts to protect your appliance’s warranty, functionality, and elegant finish.</li>
-    <li><strong>✅ Discreet, Same-Day or Next-Day Service</strong><br/>We offer fast appointments in Calabasas, arrive on time, and work respectfully in your space with total professionalism.</li>
-    <li><strong>✅ White-Glove Experience, Always</strong><br/>From boot covers to spotless cleanup, we ensure every repair is seamless and stress-free—for you and your home.</li>
-  </ul>
-</section>
-<section>
-  <h3>🌴 Calabasas Living, Elevated — Appliance Care That Matches</h3>
-  <p>Calabasas is more than a luxury enclave—it’s a lifestyle defined by privacy, design, and innovation. From the gated estates of Hidden Hills to the modern eco-conscious builds of The Oaks, homes here often feature fully integrated smart kitchens, designer appliance suites, and commercial-grade culinary tools.</p>
-  <p>Our technicians understand what it takes to service these sophisticated systems. Whether your <strong>Sub-Zero fridge</strong> is part of a seamless paneled kitchen, or your <strong>La Cornue range</strong> anchors a showpiece island, we bring the specialized care and discretion required in Calabasas homes. We also work closely with estate managers and concierge services to ensure seamless scheduling and minimal disruption.</p>
-  <p><strong>We don't just fix appliances—we preserve your lifestyle and investment.</strong></p>
-</section>
+  <ParallaxHeader client:idle />
 
-<section>
-  <h3>🛠️ What We Repair in Calabasas</h3>
-  <h4>❄️ Luxury Refrigeration</h4>
-  <ul>
-    <li>Sub-Zero, Thermador, Miele</li>
-    <li>Temperature fluctuations or frost buildup</li>
-    <li>Ice maker or water line malfunctions</li>
-    <li>Door seal or compressor problems</li>
-  </ul>
-  <h4>🔥 Ranges, Ovens & Cooktops</h4>
-  <ul>
-    <li>Wolf, Gaggenau, La Cornue, Viking</li>
-    <li>Igniters not sparking</li>
-    <li>Uneven cooking or oven not heating</li>
-    <li>Touchscreen, smart feature, or self-cleaning issues</li>
-  </ul>
-  <h4>🚿 High-End Dishwashers</h4>
-  <ul>
-    <li>Miele, Bosch, Cove</li>
-    <li>Not draining or starting</li>
-    <li>Poor cleaning or drying performance</li>
-    <li>Control panel or display failure</li>
-  </ul>
-  <h4>🧺 Luxury Washers & Dryers</h4>
-  <ul>
-    <li>Miele, LG Signature, Fisher & Paykel</li>
-    <li>Drum not spinning or draining</li>
-    <li>Smart sensors malfunctioning</li>
-    <li>Dryer not heating or overheating</li>
-  </ul>
-  <h4>☕ Built-In & Specialty Units</h4>
-  <ul>
-    <li>Wine coolers, espresso machines, steam ovens</li>
-    <li>Inconsistent temps, motor failure, power issues</li>
-    <li>Smart integration errors</li>
-    <li>Part replacements or integration refinements</li>
-  </ul>
-</section>
+  <div class="maincontent" id="webpage">
+    <h2>Luxury Appliance Repair in Calabasas, CA</h2>
 
-<section>
-  <h3>👨‍🔧 Our Luxury Repair Process</h3>
-  <ol>
-    <li><strong>Book Your Appointment</strong><br/>Call or schedule online. We’ll confirm your details and send a technician trained in your brand.</li>
-    <li><strong>On-Site Diagnosis</strong><br/>A certified ZARICCI technician arrives on time and performs a complete inspection of the issue.</li>
-    <li><strong>Transparent Estimate</strong><br/>We walk you through the issue and provide a clear, detailed quote before any work begins.</li>
-    <li><strong>Precision Repair Using OEM Parts</strong><br/>We perform the repair using genuine parts and test for full function and efficiency.</li>
-    <li><strong>Clean-Up & Warranty Protection</strong><br/>We leave your space spotless, and all work is backed by a satisfaction guarantee.</li>
-  </ol>
-</section>
+    <p>
+      In Calabasas, appliance repair is often performed inside gated communities,
+      hillside properties, canyon-adjacent homes, and carefully planned residences
+      with custom kitchens and outdoor entertaining areas. Homes around Parkway
+      Calabasas, Calabasas Road, Mulholland Highway, Las Virgenes Road, and Lost
+      Hills Road frequently include built-in refrigerators, professional ranges,
+      panel-ready dishwashers, wine storage systems, outdoor kitchens, and European
+      appliances that require precise diagnostics and careful workmanship.
+    </p>
 
-<section>
-  <h3>🏡 Serving the Most Exclusive Areas of Calabasas</h3>
-  <p>We proudly serve:</p>
-  <ul>
-    <li>The Oaks of Calabasas</li>
-    <li>Hidden Hills</li>
-    <li>Mountain View Estates</li>
-    <li>Calabasas Park Estates</li>
-    <li>Vista Pointe</li>
-    <li>Mulholland Heights</li>
-    <li>Classic Calabasas & Bellagio</li>
-    <li>Park Moderne and more</li>
-  </ul>
-  <p>Whether you're in a gated enclave or a custom home overlooking the canyon, ZARICCI brings professional, discreet service to your door.</p>
-</section>
+    <p>
+      From estate kitchens in The Oaks and Calabasas Park Estates to homes in
+      Calabasas Hills, Calabasas Highlands, Mulwood, Mont Calabasas, Saratoga Hills,
+      and the areas surrounding Old Town Calabasas, we provide appliance service
+      designed around premium equipment and the custom finishes that surround it.
+    </p>
+  </div>
 
-<section>
-  <h3>Appliances This Exceptional Deserve Service That Matches</h3>
-  <p>Your appliances were chosen for their engineering, design, and reliability. At <strong>ZARICCI</strong>, we elevate the repair experience with technicians who are respectful, efficient, and focused on restoring performance without disrupting your day.</p>
-</section>
+  <Tabs client:visible />
 
-<section>
-  <h3>📞 Schedule Luxury Appliance Repair in Calabasas Today</h3>
-  <p>Don’t let a broken appliance disrupt the rhythm of your home.<br/>Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online now for the expert service Calabasas trusts.</p>
-  <p><strong>👉 ZARICCI — Elite Appliance Repair for Calabasas’ Finest Homes.</strong></p>
-</section>
- <Logos client:visible />
- <Reviews client:idle />
-</div>
+  <div class="maincontent" id="service">
+    <section>
+      <h3>Why Calabasas Homeowners Rely on ZARICCI</h3>
+
+      <ul>
+        <li>
+          <strong>✅ Experienced with Major Luxury Brands</strong>
+          <br />
+          We service high-performance, fully integrated, and smart appliances—whether
+          you are working with a dual-fuel Wolf range, a panel-ready Sub-Zero
+          refrigerator, a Miele steam oven, or a premium outdoor kitchen system.
+          Our technicians use a careful, brand-conscious diagnostic approach.
+        </li>
+
+        <li>
+          <strong>✅ Careful Service for Custom Kitchens</strong>
+          <br />
+          Many Calabasas homes include custom cabinetry, stone countertops, built-in
+          refrigeration, premium flooring, designer ventilation, and outdoor
+          entertaining spaces. We work carefully around the installation and
+          surrounding finishes.
+        </li>
+
+        <li>
+          <strong>✅ OEM Parts Whenever Available</strong>
+          <br />
+          Your appliances are an investment. When replacement components are needed,
+          we identify the appropriate OEM, manufacturer-approved, or compatible part
+          for the specific appliance and model.
+        </li>
+
+        <li>
+          <strong>✅ Same-Day or Next-Day Scheduling</strong>
+          <br />
+          We offer priority scheduling in Calabasas whenever appointment availability
+          allows, with respect for your time, privacy, and home.
+        </li>
+
+        <li>
+          <strong>✅ Discreet, White-Glove Repair Experience</strong>
+          <br />
+          We maintain a clean workspace, communicate clearly, and provide the
+          professional service expected in a carefully maintained home.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Our Luxury Repair Process</h3>
+
+      <ol>
+        <li>
+          <strong>Book Your Appointment</strong>
+          <br />
+          Call or schedule online. We will confirm your preferred time and gather
+          basic information about your appliance.
+        </li>
+
+        <li>
+          <strong>On-Time Arrival & Brand-Specific Diagnosis</strong>
+          <br />
+          Your ZARICCI technician arrives promptly and performs a careful inspection
+          using the diagnostic approach appropriate for the appliance type and symptoms.
+        </li>
+
+        <li>
+          <strong>Clear, Upfront Estimate</strong>
+          <br />
+          We explain the issue and provide a transparent quote before proceeding
+          with the recommended repair.
+        </li>
+
+        <li>
+          <strong>Precision Repair & Performance Testing</strong>
+          <br />
+          We complete the approved repair, restore appliance function, and test
+          the relevant systems for proper performance.
+        </li>
+
+        <li>
+          <strong>Final Walkthrough & Service Warranty</strong>
+          <br />
+          We clean the work area, answer your questions, and explain the warranty
+          that applies to the completed service.
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Serving Calabasas Homes, Estates & Outdoor Kitchens</h3>
+
+      <p>
+        We serve residences throughout The Oaks, Calabasas Hills, Calabasas Park
+        Estates, Calabasas Highlands, Mulwood, Mont Calabasas, Saratoga Hills, and
+        areas near Parkway Calabasas, Mulholland Highway, Las Virgenes Road, Lost
+        Hills Road, and Old Town Calabasas. Our service is designed for gated
+        communities, hillside homes, canyon-adjacent properties, and custom residences
+        where precise diagnostics, clean workmanship, and discretion matter.
+      </p>
+
+      <p>
+        Calabasas homes often include outdoor entertaining spaces with built-in grills,
+        outdoor refrigerators, ice makers, beverage centers, side burners, pizza ovens,
+        and warming drawers. We provide repair service for these outdoor kitchen
+        appliances alongside the refrigeration, cooking, dishwashing, and laundry
+        systems inside the home.
+      </p>
+    </section>
+
+    <section>
+      <h3>Your Home Deserves More Than a Quick Fix</h3>
+
+      <p>
+        Your luxury appliances were selected for their performance, craftsmanship,
+        and style. At <strong>ZARICCI</strong>, we deliver a repair experience that
+        reflects those same values—with skill, discretion, and careful service from
+        start to finish.
+      </p>
+    </section>
+
+    <section>
+      <h3>📞 Schedule Your Luxury Appliance Repair in Calabasas Today</h3>
+
+      <p>
+        Do not wait for a small appliance issue to become a major disruption.
+        <br />
+        Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online now
+        to schedule expert service in Calabasas, CA.
+      </p>
+
+      <p>
+        <strong>ZARICCI — Because Calabasas Homes Deserve World-Class Repair.</strong>
+      </p>
+    </section>
+
+    <Logos client:visible />
+    <Reviews client:idle />
+  </div>
 </Layout>
