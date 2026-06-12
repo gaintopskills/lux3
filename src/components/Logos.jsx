@@ -166,7 +166,7 @@ const brands = [
   },
   {
     name: "Cove",
-    href: "/cove-appliance-repair/",
+    href: "/cove-dishwasher-repair/",
     img: "/logo/cove.png",
     alt: "Cove appliance repair"
   },

@@ -166,7 +166,7 @@ export const MegaMenu = () => {
     [ {type: "heading", label: "High-End", href: "/high-end-appliance-repair/", },
     { label: "Asko", href: "/asko-appliance-repair/" },
     { label: "Bosch", href: "/bosch-appliance-repair/" },
-    { label: "JennAir", href: "/jenn-air-appliance-repair/" },
+    { label: "JennAir", href: "/jennair-appliance-repair/" },
      
       {type: "heading", label: "Outdoor Kitchen", href: "/outdoor-kitchen-appliance-repair/", },
      
