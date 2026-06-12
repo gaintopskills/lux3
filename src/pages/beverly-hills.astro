@@ -2,257 +2,589 @@
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 import ParallaxHeader from '../components/Header/BeverlyHills.jsx';
+import Tabs from '../components/Tabs/BeverlyHills.jsx';
 import Logos from '../components/Logos.jsx';
-import Reviews from "../components/ReviewsHomePage.jsx";
+import Reviews from '../components/ReviewsHomePage.jsx';
+
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Luxury Appliance Repair by Zaricci",
-  "image": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
-  "@id": "https://luxuryappliance.repair/beverly-hills/",
-  "url": "https://luxuryappliance.repair/beverly-hills/",
-  "telephone": "+1-424-499-7788",
-  "priceRange": "$$$",
-  "openingHoursSpecification": [
+  "@graph": [
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
-      ],
-      "opens": "08:00",
-      "closes": "20:00"
-    }
-  ],
-  "description": "Luxury Appliance Repair by Zaricci delivers white-glove appliance repair services to discerning homeowners in Beverly Hills. We specialize in high-end brands like Sub-Zero, Wolf, Miele, Thermador, and more, offering same-day appointments and brand-certified expertise.",
-  "areaServed": {
-    "@type": "Place",
-    "name": "Beverly Hills, CA"
-  },
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/beverly-hills/#webpage",
+      "url": "https://luxuryappliance.repair/beverly-hills/",
+      "name": "Beverly Hills High-End & Luxury Appliance Repair",
+      "description": "Luxury appliance repair in Beverly Hills for Sub-Zero, Wolf, Thermador, Miele, Viking, Gaggenau, La Cornue and other high-end appliance brands.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/beverly-hills/#service"
+      },
+      "isPartOf": {
+        "@id": "https://luxuryappliance.repair/#website"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://luxuryappliance.repair/#website",
+      "url": "https://luxuryappliance.repair/",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "publisher": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/beverly-hills/#service",
+      "name": "Beverly Hills Luxury Appliance Repair",
+      "serviceType": "High-end and luxury appliance repair in Beverly Hills",
+      "url": "https://luxuryappliance.repair/beverly-hills/",
+      "description": "Luxury Appliance Repair by Zaricci provides high-end appliance repair in Beverly Hills for built-in refrigerators, ranges, ovens, cooktops, dishwashers, wine coolers, outdoor kitchen appliances, and other premium home appliances.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Beverly Hills, CA"
+      },
   "geo": {
     "@type": "GeoCoordinates",
     "latitude": 34.076059,
     "longitude": -118.402110
   },
-  "serviceType": "Luxury Appliance Repair",
-  "makesOffer": {
-    "@type": "OfferCatalog",
-    "name": "Luxury Appliance Repair Services",
-    "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair" } }
-    ]
-  },
-  "brand": [
-    { "@type": "Brand", "name": "AGA" },
-    { "@type": "Brand", "name": "American Range" },
-    { "@type": "Brand", "name": "Bertazzoni" },
-    { "@type": "Brand", "name": "Fulgor Milano" },
-    { "@type": "Brand", "name": "Gaggenau" },
-    { "@type": "Brand", "name": "ILVE" },
-    { "@type": "Brand", "name": "Lacanche" },
-    { "@type": "Brand", "name": "La Cornue" },
-    { "@type": "Brand", "name": "Big Chill" },
-    { "@type": "Brand", "name": "BlueStar" },
-    { "@type": "Brand", "name": "Bosch" },
-    { "@type": "Brand", "name": "Cove" },
-    { "@type": "Brand", "name": "Dacor" },
-    { "@type": "Brand", "name": "Elmira Stove Works" },
-    { "@type": "Brand", "name": "FiveStar" },
-    { "@type": "Brand", "name": "Hestan" },
-    { "@type": "Brand", "name": "JennAir" },
-    { "@type": "Brand", "name": "Miele" },
-    { "@type": "Brand", "name": "Signature Kitchen Suite" },
-    { "@type": "Brand", "name": "Smeg" },
-    { "@type": "Brand", "name": "Sub-Zero" },
-    { "@type": "Brand", "name": "Thermador" },
-    { "@type": "Brand", "name": "True Residential" },
-    { "@type": "Brand", "name": "Viking" },
-    { "@type": "Brand", "name": "Wolf" },
-    { "@type": "Brand", "name": "ZLINE" },
-    { "@type": "Brand", "name": "Monogram" },
-    { "@type": "Brand", "name": "Fisher & Paykel" },  
-    { "@type": "Brand", "name": "Forno" },  
-    { "@type": "Brand", "name": "Thor" },  
-    { "@type": "Brand", "name": "Asko" },  
-    { "@type": "Brand", "name": "Liebherr" },  
-    { "@type": "Brand", "name": "Officine Gullo" }, 
-    { "@type": "Brand", "name": "Zephyr" }, 
-    { "@type": "Brand", "name": "Wine Guardian" }, 
-    { "@type": "Brand", "name": "Garland" },
-    { "@type": "Brand", "name": "Heartland" },
-    { "@type": "Brand", "name": "Kalamazoo" },
-    { "@type": "Brand", "name": "Lynx" },
-    { "@type": "Brand", "name": "Hestan Outdoor" },
-    { "@type": "Brand", "name": "Viking Outdoor" },
-    { "@type": "Brand", "name": "DCS" },
-    { "@type": "Brand", "name": "Alfresco" },
-    { "@type": "Brand", "name": "Twin Eagles" },
-    { "@type": "Brand", "name": "Fire Magic" },
-    { "@type": "Brand", "name": "Wolf Outdoors" },
-    { "@type": "Brand", "name": "True Residential Outdoor" },
-    { "@type": "Brand", "name": "Caliber" }
-  ],
- "potentialAction": [
-    {
-      "@type": "ReserveAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://luxuryappliance.repair/book/",
-        "inLanguage": "en",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Beverly Hills Luxury Appliance Repair Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Range Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Oven Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cooktop Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Range Hood Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Refrigerator Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Freezer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dishwasher Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dryer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Washing Machine Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wine Cooler Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wine Cellar Cooling System Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Beverage Center Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ice Maker Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "BBQ Grill Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pizza Oven Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Outdoor Kitchen Appliance Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Steam Oven Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Warming Drawer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Speed Oven / Combi-Oven Repair"
+            }
+          }
         ]
       },
-      "result": {
-        "@type": "Reservation",
-        "name": "Service Appointment"
-      }
+      "brand": [
+        {
+          "@type": "Brand",
+          "name": "Sub-Zero"
+        },
+        {
+          "@type": "Brand",
+          "name": "Wolf"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thermador"
+        },
+        {
+          "@type": "Brand",
+          "name": "Miele"
+        },
+        {
+          "@type": "Brand",
+          "name": "Viking"
+        },
+        {
+          "@type": "Brand",
+          "name": "Gaggenau"
+        },
+        {
+          "@type": "Brand",
+          "name": "La Cornue"
+        },
+        {
+          "@type": "Brand",
+          "name": "Lacanche"
+        },
+        {
+          "@type": "Brand",
+          "name": "AGA"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bertazzoni"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fulgor Milano"
+        },
+        {
+          "@type": "Brand",
+          "name": "ILVE"
+        },
+        {
+          "@type": "Brand",
+          "name": "Officine Gullo"
+        },
+        {
+          "@type": "Brand",
+          "name": "American Range"
+        },
+        {
+          "@type": "Brand",
+          "name": "BlueStar"
+        },
+        {
+          "@type": "Brand",
+          "name": "FiveStar"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thor"
+        },
+        {
+          "@type": "Brand",
+          "name": "Forno"
+        },
+        {
+          "@type": "Brand",
+          "name": "Garland"
+        },
+        {
+          "@type": "Brand",
+          "name": "ZLINE"
+        },
+        {
+          "@type": "Brand",
+          "name": "Monogram"
+        },
+        {
+          "@type": "Brand",
+          "name": "Dacor"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fisher & Paykel"
+        },
+        {
+          "@type": "Brand",
+          "name": "True Residential"
+        },
+        {
+          "@type": "Brand",
+          "name": "JennAir"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bosch"
+        },
+        {
+          "@type": "Brand",
+          "name": "Asko"
+        },
+        {
+          "@type": "Brand",
+          "name": "Cove"
+        },
+        {
+          "@type": "Brand",
+          "name": "Liebherr"
+        },
+        {
+          "@type": "Brand",
+          "name": "Signature Kitchen Suite"
+        },
+        {
+          "@type": "Brand",
+          "name": "Hestan"
+        },
+        {
+          "@type": "Brand",
+          "name": "Big Chill"
+        },
+        {
+          "@type": "Brand",
+          "name": "Elmira Stove Works"
+        },
+        {
+          "@type": "Brand",
+          "name": "Smeg"
+        },
+        {
+          "@type": "Brand",
+          "name": "Heartland"
+        },
+        {
+          "@type": "Brand",
+          "name": "Kalamazoo"
+        },
+        {
+          "@type": "Brand",
+          "name": "Lynx"
+        },
+        {
+          "@type": "Brand",
+          "name": "DCS"
+        },
+        {
+          "@type": "Brand",
+          "name": "Alfresco"
+        },
+        {
+          "@type": "Brand",
+          "name": "Twin Eagles"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fire Magic"
+        },
+        {
+          "@type": "Brand",
+          "name": "Caliber"
+        }
+      ]
     },
     {
-      "@type": "CommunicateAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "tel:+14244997788",
-        "actionPlatform": [
-          "http://schema.org/MobileWebPlatform"
-        ]
-      }
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "image": "https://luxuryappliance.repair/high-end-and-luxury-appliance-repair-by-zaricci.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "description": "Luxury Appliance Repair by Zaricci provides high-end appliance repair for luxury homes, custom kitchens, built-in refrigerators, pro-style ranges, ovens, cooktops, dishwashers, wine coolers, and outdoor kitchen appliances.",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Beverly Hills, CA"
+        },
+        {
+          "@type": "City",
+          "name": "Los Angeles"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Los Angeles County"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Orange County"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ventura County"
+        }
+      ],
+      "potentialAction": [
+        {
+          "@type": "ReserveAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://luxuryappliance.repair/book/",
+            "inLanguage": "en",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          },
+          "result": {
+            "@type": "Reservation",
+            "name": "Service Appointment"
+          }
+        },
+        {
+          "@type": "CommunicateAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "tel:+14244997788",
+            "actionPlatform": [
+              "http://schema.org/MobileWebPlatform"
+            ]
+          }
+        }
+      ]
     }
-   ]
-}
-
-
+  ]
+};
 ---
+
 <Layout
-	title="High-End & Luxury Appliance Repair – Beverly Hills"
-	description="Book Online (424) 499-7788 ★★★★★ High-End & Luxury Appliance Repair - Beverly Hills for La Cornue, Lacanche, Gaggenau, Bertazzoni, Monogram, Dacor, Fisher & Paykel, True, Sub-Zero, Wolf, Viking, Thermador, Miele, Bosch & other premium brands."
-	structuredData={structuredData}
+  title="Beverly Hills High-End & Luxury Appliance Repair | (424) 499-7788"
+  description="Luxury appliance repair in Beverly Hills for Sub-Zero, Wolf, Miele, Thermador, La Cornue and other premium brands. Same-day or next-day service."
+  structuredData={structuredData}
+  ogImage="/high-end-and-luxury-appliance-repair-by-zaricci.webp"
 >
-<ParallaxHeader client:idle/>
-<div style="margin: 50px">
+  <ParallaxHeader client:idle />
+
+  <div class="maincontent" id="webpage">
+    <h2>Luxury Appliance Repair in Beverly Hills, CA</h2>
+
+    <p>
+      In Beverly Hills, appliance repair is often performed inside carefully designed estates,
+      hillside residences, renovated luxury homes, and high-end condos with premium built-in
+      kitchens. Homes throughout the Central Area, Hillside Area, and Trousdale Estates frequently
+      feature panel-ready refrigerators, professional ranges, wall ovens, wine storage systems,
+      outdoor kitchens, and European appliance brands that require precise diagnostics, clean
+      workmanship, and a careful repair approach.
+    </p>
+
+    <p>
+      From residences near Beverly Gardens Park and the streets surrounding the Rodeo Drive
+      corridor to hillside properties and custom homes in Trousdale Estates, we provide service
+      designed around the needs of luxury appliances and the finishes that surround them.
+    </p>
+  </div>
+
+  <Tabs client:visible />
+
+  <div class="maincontent" id="service">
     <section>
-      <h1>Luxury Appliance Repair in Beverly Hills</h1>
-      <p><strong>White-Glove Service for Iconic Estates and Designer Kitchens</strong></p>
-      <p>Beverly Hills isn’t just a zip code—it’s a symbol of excellence. From the mansions of Trousdale Estates to the architectural gems of The Flats, luxury living defines the standard. In homes where performance meets prestige, appliances aren’t just tools—they’re statements. And when they need expert care, they deserve nothing less than perfection.</p>
-      <p>At <strong>Luxury Appliance Repair by Zaricci</strong>, we provide discreet, same-day repair for Beverly Hills’ most elite residences. Whether you own a Sub-Zero fridge, a La Cornue range, or a Miele dishwasher, our trained technicians are equipped to service them with precision and care.</p>
+      <h3>Why Beverly Hills Homeowners Rely on ZARICCI</h3>
+
+      <ul>
+        <li>
+          <strong>✅ Trained in Major Luxury Brands</strong>
+          <br />
+          We specialize in high-performance, fully integrated, and smart appliances—whether
+          you are working with a dual-fuel Wolf range, a panel-ready Sub-Zero refrigerator,
+          or a Miele steam oven. Our technicians use a careful, brand-conscious diagnostic
+          approach for premium appliances.
+        </li>
+
+        <li>
+          <strong>✅ OEM Parts Whenever Available</strong>
+          <br />
+          Your appliances are an investment. When replacement components are needed, we
+          identify the appropriate OEM, manufacturer-approved, or compatible part for the
+          specific appliance and model.
+        </li>
+
+        <li>
+          <strong>✅ Same-Day or Next-Day Scheduling</strong>
+          <br />
+          We offer priority scheduling in Beverly Hills whenever appointment availability
+          allows, with respect for your time, privacy, and home.
+        </li>
+
+        <li>
+          <strong>✅ Discreet, White-Glove Repair Experience</strong>
+          <br />
+          We maintain a clean workspace, work carefully around cabinetry and flooring, and
+          communicate with the professionalism expected in a luxury home.
+        </li>
+      </ul>
     </section>
 
     <section>
-      <h3>🔧 Why Beverly Hills Chooses ZARICCI</h3>
-      <ul>
-        <li><strong>✅ Certified in Premium Brands</strong><br/>From Wolf and Gaggenau to Miele and Thermador, our specialists are trained in the nuances of each luxury appliance brand—ensuring factory-level service every time.</li>
-        <li><strong>✅ Same-Day and Emergency Service</strong><br/>We offer priority scheduling for clients in Beverly Hills, including appointments for high-profile and time-sensitive situations.</li>
-        <li><strong>✅ OEM Parts & Lasting Repairs</strong><br/>We use only genuine parts to maintain performance, aesthetics, and manufacturer warranty compliance.</li>
-        <li><strong>✅ White-Glove Protocol</strong><br/>Our team wears shoe covers, uses padded mats, and performs a spotless clean-up—so your home stays pristine while your appliance is restored.</li>
-      </ul>
-    </section>
+      <h3>Our Luxury Repair Process</h3>
 
-    <section>
-      <h3>🛠️ Luxury Appliances We Service</h3>
-      <h4>❄️ Refrigerators & Freezers</h4>
-      <ul>
-        <li>Sub-Zero, Miele, Thermador, Viking</li>
-        <li>Cooling inconsistencies and compressor issues</li>
-        <li>Ice maker and water system repairs</li>
-        <li>Noise, leaks, or panel malfunctions</li>
-      </ul>
-
-      <h4>🔥 Ovens, Ranges & Cooktops</h4>
-      <ul>
-        <li>La Cornue, Wolf, Gaggenau, Bertazzoni</li>
-        <li>Gas or induction burner issues</li>
-        <li>Temperature calibration and uneven cooking</li>
-        <li>Steam oven or smart display failures</li>
-      </ul>
-
-      <h4>🚿 Dishwashers</h4>
-      <ul>
-        <li>Miele, Bosch, Smeg, Cove</li>
-        <li>Poor cleaning or draining</li>
-        <li>Leak detection and error codes</li>
-        <li>Cycle failures and UI problems</li>
-      </ul>
-
-      <h4>🧺 Washers & Dryers</h4>
-      <ul>
-        <li>LG Signature, Miele, Fisher & Paykel</li>
-        <li>Drum not turning or draining</li>
-        <li>Overheating or no heat</li>
-        <li>Smart sensor and interface diagnostics</li>
-      </ul>
-
-      <h4>☕ Built-In Specialty Appliances</h4>
-      <ul>
-        <li>Warming drawers, espresso machines, wine coolers</li>
-        <li>Motor, pump, and sensor replacements</li>
-        <li>Connectivity and touch screen fixes</li>
-        <li>Temperature or steam system errors</li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>👨‍🔧 Service Experience Tailored for Beverly Hills</h3>
       <ol>
-        <li><strong>Step 1: Book Your Visit</strong><br/>Call or schedule online. We confirm availability based on your needs and property access.</li>
-        <li><strong>Step 2: On-Time Diagnosis</strong><br/>Your technician arrives in uniform, ready to assess and explain every detail of the issue.</li>
-        <li><strong>Step 3: Transparent Quote</strong><br/>Receive a detailed estimate that includes parts, labor, and repair timeline—no surprises.</li>
-        <li><strong>Step 4: Expert Repairs</strong><br/>We complete the repair using OEM parts and precision tools, then test and verify all functions.</li>
-        <li><strong>Step 5: Clean Exit & Warranty</strong><br/>Your appliance is fully restored, the workspace spotless, and your service backed by warranty.</li>
+        <li>
+          <strong>Book Your Appointment</strong>
+          <br />
+          Call or schedule online. We will confirm your preferred time and gather basic
+          information about your appliance.
+        </li>
+
+        <li>
+          <strong>On-Time Arrival & Brand-Specific Diagnosis</strong>
+          <br />
+          Your ZARICCI technician arrives promptly and performs a careful inspection using
+          the diagnostic approach appropriate for the appliance type and symptoms.
+        </li>
+
+        <li>
+          <strong>Clear, Upfront Estimate</strong>
+          <br />
+          We explain the issue and provide a transparent quote before proceeding with the
+          recommended repair.
+        </li>
+
+        <li>
+          <strong>Precision Repair & Performance Testing</strong>
+          <br />
+          We complete the approved repair, restore appliance function, and test the relevant
+          systems for proper performance.
+        </li>
+
+        <li>
+          <strong>Final Walkthrough & Service Warranty</strong>
+          <br />
+          We clean the work area, answer your questions, and explain the warranty that applies
+          to the completed service.
+        </li>
       </ol>
     </section>
 
     <section>
-      <h3>🏡 Serving Beverly Hills’ Finest Communities</h3>
-      <p>Our clients include residents in:</p>
-      <ul>
-        <li>Trousdale Estates</li>
-        <li>The Flats</li>
-        <li>Benedict Canyon</li>
-        <li>Beverly Park</li>
-        <li>Coldwater Canyon</li>
-        <li>Rodeo Drive District</li>
-      </ul>
-      <p>We also serve luxury condominiums, estates under management, and production clients seeking quiet, discreet repairs.</p>
+      <h3>Serving Beverly Hills Homes and Estates</h3>
+
+      <p>
+        We serve residences throughout the Central Area, Hillside Area, Trousdale Estates,
+        the Beverly Hills Flats, and residential streets near Beverly Gardens Park, Roxbury
+        Drive, North Beverly Drive, Canon Drive, and Coldwater Canyon Drive. Our service is
+        designed for custom estates, hillside properties, luxury condos, and carefully
+        renovated kitchens where precise diagnostics, clean workmanship, and discretion matter.
+      </p>
     </section>
 
     <section>
-      <h3>Because Beverly Hills Doesn’t Settle for Less</h3>
-      <p>Your appliances reflect your lifestyle—and your expectations. At <strong>ZARICCI</strong>, we offer concierge-level care, high-end repair expertise, and unmatched discretion to protect your investment and your peace of mind.</p>
+      <h3>Your Home Deserves More Than a Quick Fix</h3>
+
+      <p>
+        Your luxury appliances were selected for their performance, craftsmanship, and style.
+        At <strong>ZARICCI</strong>, we deliver a repair experience that reflects those same
+        values—with skill, discretion, and careful service from start to finish.
+      </p>
     </section>
 
     <section>
-      <h3>📞 Schedule Your Beverly Hills Appliance Repair Today</h3>
-      <p>Don’t wait until a minor issue becomes a major problem. Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online today for prompt, certified appliance repair in Beverly Hills.</p>
-      <p><strong>👉 ZARICCI — Trusted by Beverly Hills’ Most Prestigious Homes.</strong></p>
+      <h3>📞 Schedule Your Luxury Appliance Repair in Beverly Hills Today</h3>
+
+      <p>
+        Do not wait for a small appliance issue to become a major disruption.
+        <br />
+        Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online now to
+        schedule expert service in Beverly Hills, CA.
+      </p>
+
+      <p>
+        <strong>ZARICCI — Because Beverly Hills Homes Deserve World-Class Repair.</strong>
+      </p>
     </section>
-     <Logos client:visible />
-     <Reviews client:idle />
+
+    <Logos client:visible />
+    <Reviews client:idle />
   </div>
 </Layout>
