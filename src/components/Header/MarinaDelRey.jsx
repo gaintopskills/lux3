@@ -25,7 +25,7 @@ const ParallaxHeader = () => {
           className="gold-embossed"
           data-text="MARINA DEL REY"
         >
-          Marina del Rey High-End &amp; Luxury Appliance Repair
+        High-End &amp; Luxury Appliance Repair Marina del Rey
           <br />
         </h1>
 

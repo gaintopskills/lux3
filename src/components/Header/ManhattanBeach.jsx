@@ -25,7 +25,7 @@ const ParallaxHeader = () => {
           className="gold-embossed"
           data-text="MANHATTAN BEACH"
         >
-          Manhattan Beach High-End &amp; Luxury Appliance Repair
+        High-End &amp; Luxury Appliance Repair Manhattan Beach
           <br />
         </h1>
 

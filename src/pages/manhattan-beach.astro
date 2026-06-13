@@ -1,274 +1,548 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import ParallaxHeader from '../components/Header/ManhattanBeach.jsx';
+import Tabs from '../components/Tabs/ManhattanBeach.jsx'
 import Logos from '../components/Logos.jsx';
 import Reviews from "../components/ReviewsHomePage.jsx";
+
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://luxuryappliance.repair/manhattan-beach/",
-  "name": "Luxury Appliance Repair by Zaricci",
-  "image": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
-  "url": "https://luxuryappliance.repair/manhattan-beach/",
-  "telephone": "+1-424-499-7788",
-  "priceRange": "$$$",
-  "description": "Luxury Appliance Repair by Zaricci provides white-glove, same-day appliance repair services for luxury coastal homes and estates in Manhattan Beach. Our factory-certified technicians specialize in premium brands like Sub-Zero, Wolf, Thermador, Miele, La Cornue, and more, ensuring precision, discretion, and lasting quality.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Manhattan Beach",
-    "addressRegion": "CA",
-    "postalCode": "90266",
-    "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 33.8847,
-    "longitude": -118.4109
-  },
-  "openingHoursSpecification": [
+  "@graph": [
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
-      ],
-      "opens": "08:00",
-      "closes": "20:00"
-    }
-  ],
-  "areaServed": {
-    "@type": "City",
-    "name": "Manhattan Beach",
-    "sameAs": "https://en.wikipedia.org/wiki/Manhattan_Beach,_California"
-  },
-  "makesOffer": {
-    "@type": "Offer",
-    "itemOffered": {
-      "@type": "Service",
-      "name": "Luxury Appliance Repair Services",
-      "description": "In-home repair services for high-end appliances such as refrigerators, ovens, cooktops, dishwashers, and laundry units. Brands serviced include Sub-Zero, Wolf, Thermador, Miele, Viking, and more. Available throughout Manhattan Beach and surrounding coastal areas.",
-      "areaServed": {
-        "@type": "Place",
-        "name": "Manhattan Beach Metropolitan Area"
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/manhattan-beach/#webpage",
+      "url": "https://luxuryappliance.repair/manhattan-beach/",
+      "name": "Manhattan Beach High-End & Luxury Appliance Repair",
+      "description": "Luxury appliance repair in Manhattan Beach for Sub-Zero, Wolf, Thermador, Miele, Viking, Gaggenau, La Cornue and other high-end appliance brands.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/manhattan-beach/#service"
       },
-      "provider": {
-        "@type": "Organization",
-        "name": "Luxury Appliance Repair by Zaricci"
-      }
-    }
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Appliance Repair Services",
-    "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair", "description": "Precision oven repair services for luxury brands, including convection, steam, and wall-mounted ovens." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair", "description": "High-end stove repair, including gas and electric models from premium manufacturers like Wolf and Viking." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair", "description": "Expert range repair for dual-fuel, gas, and induction units from top-tier brands." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair", "description": "Professional repair for gas, electric, and induction cooktops by brands like Bosch, Miele, and KitchenAid." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair", "description": "Servicing designer and built-in range hoods with issues such as lighting, motors, or venting." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair", "description": "Luxury washer repair for front-load, top-load, and smart models, including Miele and LG Signature." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair", "description": "In-home dryer repair for gas and electric units with vent or heating issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair", "description": "Dishwasher repair services for built-in and panel-ready units from Miele, Bosch, and more." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair", "description": "Built-in microwave repair for drawer, over-the-range, and luxury convection microwave models." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair", "description": "Certified refrigerator repair for built-in and integrated models, including Sub-Zero and Thermador." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair", "description": "Freezer repair for upright, drawer, and column units with cooling or defrost issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair", "description": "Repair services for electric and gas fireplaces, including ignition, remote control, and burner issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair", "description": "Outdoor BBQ and grill repair for built-in and freestanding models, including burner and ignition repair." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair", "description": "Luxury wine cooler repair services for dual-zone and built-in models from brands like Sub-Zero and Liebherr." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair", "description": "Specialized wine cellar repair for climate control systems, lighting, and humidity regulation." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair", "description": "Repair for integrated coffee systems from brands like Miele and Gaggenau, including grinder, brew unit, and steam wand issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair", "description": "Expert steam oven repair for luxury models with water tank, sensor, or steam generation problems." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair", "description": "Warming drawer repair for built-in units, including thermostat and heating element issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair", "description": "Repair services for combination microwave and convection ovens with high-end control systems." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair", "description": "In-home repair for built-in and undercounter ice makers from Sub-Zero, Scotsman, and other luxury brands." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair", "description": "Repair for premium trash compactors with drawer, motor, or compression issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair", "description": "Service for built-in beverage centers and drink fridges from U-Line, Perlick, and True Residential." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair", "description": "Commercial and residential kegerator repair including cooling, taps, and CO2 systems." }}
-    ]
-  },
-  "brand": [
-    { "@type": "Brand", "name": "AGA" },
-    { "@type": "Brand", "name": "American Range" },
-    { "@type": "Brand", "name": "Bertazzoni" },
-    { "@type": "Brand", "name": "Fulgor Milano" },
-    { "@type": "Brand", "name": "Gaggenau" },
-    { "@type": "Brand", "name": "ILVE" },
-    { "@type": "Brand", "name": "Lacanche" },
-    { "@type": "Brand", "name": "La Cornue" },
-    { "@type": "Brand", "name": "Big Chill" },
-    { "@type": "Brand", "name": "BlueStar" },
-    { "@type": "Brand", "name": "Bosch" },
-    { "@type": "Brand", "name": "Cove" },
-    { "@type": "Brand", "name": "Dacor" },
-    { "@type": "Brand", "name": "Elmira Stove Works" },
-    { "@type": "Brand", "name": "FiveStar" },
-    { "@type": "Brand", "name": "Hestan" },
-    { "@type": "Brand", "name": "JennAir" },
-    { "@type": "Brand", "name": "Miele" },
-    { "@type": "Brand", "name": "Signature Kitchen Suite" },
-    { "@type": "Brand", "name": "Smeg" },
-    { "@type": "Brand", "name": "Sub-Zero" },
-    { "@type": "Brand", "name": "Thermador" },
-    { "@type": "Brand", "name": "True Residential" },
-    { "@type": "Brand", "name": "Viking" },
-    { "@type": "Brand", "name": "Wolf" },
-    { "@type": "Brand", "name": "ZLINE" },
-    { "@type": "Brand", "name": "Monogram" },
-    { "@type": "Brand", "name": "Fisher & Paykel" },  
-    { "@type": "Brand", "name": "Forno" },  
-    { "@type": "Brand", "name": "Thor" },  
-    { "@type": "Brand", "name": "Asko" },  
-    { "@type": "Brand", "name": "Liebherr" },  
-    { "@type": "Brand", "name": "Officine Gullo" }, 
-    { "@type": "Brand", "name": "Zephyr" }, 
-    { "@type": "Brand", "name": "Wine Guardian" }, 
-    { "@type": "Brand", "name": "Garland" },
-    { "@type": "Brand", "name": "Heartland" },
-    { "@type": "Brand", "name": "Kalamazoo" },
-    { "@type": "Brand", "name": "Lynx" },
-    { "@type": "Brand", "name": "Hestan Outdoor" },
-    { "@type": "Brand", "name": "Viking Outdoor" },
-    { "@type": "Brand", "name": "DCS" },
-    { "@type": "Brand", "name": "Alfresco" },
-    { "@type": "Brand", "name": "Twin Eagles" },
-    { "@type": "Brand", "name": "Fire Magic" },
-    { "@type": "Brand", "name": "Wolf Outdoors" },
-    { "@type": "Brand", "name": "True Residential Outdoor" },
-    { "@type": "Brand", "name": "Caliber" }
-  ],
-  "potentialAction": [
-    {
-      "@type": "ReserveAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://luxuryappliance.repair/book/",
-        "inLanguage": "en",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
-      },
-      "result": {
-        "@type": "Reservation",
-        "name": "Service Appointment"
+      "isPartOf": {
+        "@id": "https://luxuryappliance.repair/#website"
       }
     },
     {
-      "@type": "CommunicateAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "tel:+14244997788",
-        "actionPlatform": [
-          "http://schema.org/MobileWebPlatform"
-        ]
+      "@type": "WebSite",
+      "@id": "https://luxuryappliance.repair/#website",
+      "url": "https://luxuryappliance.repair/",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "publisher": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
       }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/manhattan-beach/#service",
+      "name": "Manhattan Beach Luxury Appliance Repair",
+      "serviceType": "High-end and luxury appliance repair in Manhattan Beach",
+      "url": "https://luxuryappliance.repair/manhattan-beach/",
+      "description": "Luxury Appliance Repair by Zaricci provides high-end appliance repair in Manhattan Beach for built-in refrigerators, ranges, ovens, cooktops, dishwashers, wine coolers, outdoor kitchen appliances, and other premium home appliances.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Manhattan Beach, CA"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Manhattan Beach Luxury Appliance Repair Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Range Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Oven Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cooktop Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Range Hood Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Refrigerator Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Freezer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dishwasher Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dryer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Washing Machine Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wine Cooler Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wine Cellar Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Beverage Center Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ice Maker Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "BBQ Grill Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Outdoor Kitchen Appliance Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Steam Oven Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Warming Drawer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Speed Oven / Combi-Oven Repair"
+            }
+          }
+        ]
+      },
+      "brand": [
+        {
+          "@type": "Brand",
+          "name": "Sub-Zero"
+        },
+        {
+          "@type": "Brand",
+          "name": "Wolf"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thermador"
+        },
+        {
+          "@type": "Brand",
+          "name": "Miele"
+        },
+        {
+          "@type": "Brand",
+          "name": "Viking"
+        },
+        {
+          "@type": "Brand",
+          "name": "Gaggenau"
+        },
+        {
+          "@type": "Brand",
+          "name": "La Cornue"
+        },
+        {
+          "@type": "Brand",
+          "name": "Lacanche"
+        },
+        {
+          "@type": "Brand",
+          "name": "AGA"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bertazzoni"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fulgor Milano"
+        },
+        {
+          "@type": "Brand",
+          "name": "ILVE"
+        },
+        {
+          "@type": "Brand",
+          "name": "Officine Gullo"
+        },
+        {
+          "@type": "Brand",
+          "name": "Monogram"
+        },
+        {
+          "@type": "Brand",
+          "name": "Dacor"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fisher & Paykel"
+        },
+        {
+          "@type": "Brand",
+          "name": "True Residential"
+        },
+        {
+          "@type": "Brand",
+          "name": "JennAir"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bosch"
+        },
+        {
+          "@type": "Brand",
+          "name": "Cove"
+        },
+        {
+          "@type": "Brand",
+          "name": "Liebherr"
+        },
+        {
+          "@type": "Brand",
+          "name": "Signature Kitchen Suite"
+        },
+        {
+          "@type": "Brand",
+          "name": "Hestan"
+        },
+        {
+          "@type": "Brand",
+          "name": "BlueStar"
+        },
+        {
+          "@type": "Brand",
+          "name": "American Range"
+        },
+        {
+          "@type": "Brand",
+          "name": "Big Chill"
+        },
+        {
+          "@type": "Brand",
+          "name": "Smeg"
+        },
+        {
+          "@type": "Brand",
+          "name": "Heartland"
+        },
+        {
+          "@type": "Brand",
+          "name": "Kalamazoo"
+        },
+        {
+          "@type": "Brand",
+          "name": "Lynx"
+        },
+        {
+          "@type": "Brand",
+          "name": "DCS"
+        },
+        {
+          "@type": "Brand",
+          "name": "Alfresco"
+        },
+        {
+          "@type": "Brand",
+          "name": "Twin Eagles"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fire Magic"
+        },
+        {
+          "@type": "Brand",
+          "name": "Caliber"
+        },
+        {
+          "@type": "Brand",
+          "name": "Asko"
+        },
+        {
+          "@type": "Brand",
+          "name": "Elmira Stove Works"
+        },
+        {
+          "@type": "Brand",
+          "name": "FiveStar"
+        },
+        {
+          "@type": "Brand",
+          "name": "Forno"
+        },
+        {
+          "@type": "Brand",
+          "name": "Garland"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thor"
+        },
+        {
+          "@type": "Brand",
+          "name": "ZLINE"
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "image": "https://luxuryappliance.repair/high-end-and-luxury-appliance-repair-by-zaricci.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "description": "Luxury Appliance Repair by Zaricci provides high-end appliance repair for luxury homes, custom kitchens, built-in refrigerators, pro-style ranges, ovens, cooktops, dishwashers, wine coolers, and outdoor kitchen appliances.",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Manhattan Beach, CA"
+        },
+        {
+          "@type": "City",
+          "name": "Los Angeles"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Los Angeles County"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Orange County"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ventura County"
+        }
+      ],
+      "potentialAction": [
+        {
+          "@type": "ReserveAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://luxuryappliance.repair/book/",
+            "inLanguage": "en",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          },
+          "result": {
+            "@type": "Reservation",
+            "name": "Service Appointment"
+          }
+        },
+        {
+          "@type": "CommunicateAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "tel:+14244997788",
+            "actionPlatform": [
+              "http://schema.org/MobileWebPlatform"
+            ]
+          }
+        }
+      ]
     }
   ]
 }
-
 ---
+
 <Layout
-	title="High-End & Luxury Appliance Repair – Manhattan Beach"
-	description="High-End & Luxury Appliance Repair - Manhattan Beach for La Cornue, Lacanche, Gaggenau, Bertazzoni, Monogram, Dacor, Fisher & Paykel, True, Sub-Zero, Wolf, Viking, Thermador, Miele, Bosch & other premium brands."
-	structuredData={structuredData}
+  title="Manhattan Beach High-End & Luxury Appliance Repair Manhattan Beach"
+  description="Book Online ★★★★★ High-End & Luxury Appliance Repair - Manhattan Beach for La Cornue, Lacanche, Gaggenau, Bertazzoni, Monogram, Dacor, Fisher & Paykel, True, Sub-Zero, Wolf, Viking, Thermador, Miele, Bosch & other premium brands."
+  structuredData={structuredData}
+  ogImage="/high-end-and-luxury-appliance-repair-by-zaricci.webp"
 >
-<div style="margin: 50px">
-<section>
-  <h1>Luxury Appliance Repair in Manhattan Beach, CA</h1>
-  <p><strong>White-Glove Service for Coastal Elegance and Modern Luxury</strong></p>
-  <p>In Manhattan Beach, life is all about effortless luxury—whether you're entertaining in a custom modern home near The Strand or enjoying quiet elegance in the Hill Section. Your premium appliances are at the heart of your home’s functionality and beauty. When something goes wrong, you deserve service that reflects the same attention to detail and excellence.</p>
-  <p>At <strong>Luxury Appliance Repair by Zaricci</strong>, we proudly offer high-end appliance repair in Manhattan Beach, specializing in prestigious brands like Sub-Zero, Wolf, Thermador, Miele, Gaggenau, La Cornue, Viking, and more. With certified expertise, OEM parts, and a white-glove approach, we deliver repairs trusted by those who expect the very best.</p>
-</section>
+  <ParallaxHeader client:idle />
 
-<section>
-  <h3>🔧 Why Manhattan Beach Homeowners Choose ZARICCI</h3>
-  <ul>
-    <li><strong>✅ Certified in the World's Leading Brands</strong><br>From smart kitchen systems to panel-ready built-ins and professional cooking ranges, our technicians are trained and certified by top luxury manufacturers.</li>
-    <li><strong>✅ Only Genuine Manufacturer Parts</strong><br>We use authentic OEM parts to ensure that your appliance operates exactly as it was designed to—maintaining its performance, warranty, and longevity.</li>
-    <li><strong>✅ Priority Same-Day and Next-Day Service</strong><br>We understand how important fast, discreet service is for busy homeowners. That's why we offer prompt scheduling across all of Manhattan Beach.</li>
-    <li><strong>✅ White-Glove Treatment at Every Step</strong><br>From careful floor protection to respectful clean-up, we treat your home and appliances with the same level of care and precision they were built with.</li>
-  </ul>
-</section>
+  <div class="maincontent" id="webpage">
+    <h2>Luxury Appliance Repair in Manhattan Beach, CA</h2>
 
-<section>
-  <h3>🛠️ What We Repair in Manhattan Beach</h3>
-  <h4>❄️ Luxury Refrigerators & Freezers</h4>
-  <ul>
-    <li>Sub-Zero, Thermador, Miele</li>
-    <li>Cooling issues or frost buildup</li>
-    <li>Water dispenser, ice maker, and compressor repairs</li>
-    <li>Door alignment, seal replacements, and custom panel solutions</li>
-  </ul>
-  <h4>🔥 Ranges, Wall Ovens & Cooktops</h4>
-  <ul>
-    <li>Wolf, La Cornue, Gaggenau, Viking</li>
-    <li>Gas ignition failures or uneven heating</li>
-    <li>Convection oven and steam oven malfunctions</li>
-    <li>Smart oven connectivity issues</li>
-  </ul>
-  <h4>🚿 High-End Dishwashers</h4>
-  <ul>
-    <li>Miele, Bosch, Cove</li>
-    <li>Drainage problems, incomplete cycles, or leaks</li>
-    <li>Poor drying or control panel errors</li>
-    <li>Smart diagnostics and Wi-Fi system repairs</li>
-  </ul>
-  <h4>🧺 Luxury Washers & Dryers</h4>
-  <ul>
-    <li>Miele, LG Signature, Fisher & Paykel</li>
-    <li>Drum not spinning or water not draining</li>
-    <li>Dryer not heating or overheating</li>
-    <li>Error codes, sensor, and app integration troubleshooting</li>
-  </ul>
-  <h4>☕ Built-In Specialty Appliances</h4>
-  <ul>
-    <li>Wine coolers, espresso machines, warming drawers, and speed ovens</li>
-    <li>Temperature regulation failures</li>
-    <li>Water supply or flow issues</li>
-    <li>Smart home integration system repairs</li>
-  </ul>
-</section>
+    <p>
+      In Manhattan Beach, appliance repair is often performed inside beachfront homes, walk-street residences, ocean-view properties, remodeled coastal houses, and custom kitchens designed around premium appliances. Homes near The Strand and throughout the Sand Section, Tree Section, Hill Section, East Manhattan Beach, and Manhattan Village frequently include built-in refrigerators, panel-ready appliances, pro-style ranges, wine storage, outdoor kitchens, and premium European appliance brands that require precise diagnostics, clean workmanship, and a more careful repair approach.
+    </p>
+  </div>
 
-<section>
-  <h3>👨‍🔧 The ZARICCI Signature Repair Process</h3>
-  <ol>
-    <li><strong>Effortless Booking</strong><br>Call or schedule online. We’ll coordinate around your schedule and ensure a discreet appointment.</li>
-    <li><strong>On-Time, Certified Diagnosis</strong><br>Your certified technician arrives fully prepared to diagnose the issue professionally and efficiently.</li>
-    <li><strong>Transparent, Detailed Quote</strong><br>We provide a clear, upfront quote before starting any repairs—no hidden fees, no surprises.</li>
-    <li><strong>OEM-Grade Repairs with Precision</strong><br>Using genuine parts, we complete your repair to the highest factory specifications and standards.</li>
-    <li><strong>Final Testing & White-Glove Clean-Up</strong><br>After a thorough quality check, we leave your home pristine and your appliance running flawlessly—with our work backed by a satisfaction guarantee.</li>
-  </ol>
-</section>
+  <Tabs client:visible />
 
-<section>
-  <h3>🏡 Serving All Areas of Manhattan Beach</h3>
-  <p><strong>ZARICCI</strong> proudly serves luxury homes throughout:</p>
-  <ul>
-    <li>The Strand</li>
-    <li>Sand Section</li>
-    <li>Hill Section</li>
-    <li>Tree Section</li>
-    <li>Manhattan Village</li>
-    <li>East Manhattan Beach</li>
-  </ul>
-  <p>Whether you live in an oceanfront estate, a designer-built smart home, or a classic California contemporary, <strong>ZARICCI</strong> is the name trusted by Manhattan Beach homeowners who expect premium service.</p>
-</section>
+  <div class="maincontent" id="service">
+    <section>
+      <h3>Why Manhattan Beach Homeowners Rely on ZARICCI</h3>
 
-<section>
-  <h3>Service as Flawless as the Homes We Serve</h3>
-  <p>Your home reflects the best in architecture, craftsmanship, and design. At <strong>ZARICCI</strong>, we deliver a repair experience that matches—with certified expertise, meticulous care, and genuine passion for excellence.</p>
-</section>
+      <ul>
+        <li>
+          <strong>✅ Trained in All Major Luxury Brands</strong>
+          <br />
+          We specialize in high-performance, fully integrated, and smart appliances—whether you’re working with a dual-fuel Wolf range, a panel-ready Sub-Zero, or a Miele steam oven. Our technicians are licensed and highly trained in each brand’s technology.
+        </li>
 
-<section>
-  <h3>📞 Schedule Your Luxury Appliance Repair in Manhattan Beach Today</h3>
-  <p>Don't let appliance issues interrupt your lifestyle.<br>Call <strong>Luxury Appliance Repair by Zaricci</strong> or book your appointment online now for trusted, discreet, white-glove service in Manhattan Beach.</p>
-  <p><strong>👉 ZARICCI — Precision Repairs for Manhattan Beach’s Most Exceptional Homes.</strong></p>
-</section>
- <Logos client:visible />
- <Reviews client:idle />
-</div>
+        <li>
+          <strong>✅ OEM Parts. No Compromises.</strong>
+          <br />
+          Your appliances are an investment—we protect them using genuine manufacturer parts that meet original specifications for safety, longevity, and performance.
+        </li>
+
+        <li>
+          <strong>✅ Same-Day or Next-Day Service</strong>
+          <br />
+          We offer priority scheduling in Manhattan Beach and always arrive on time, with full respect for your time, privacy, and space.
+        </li>
+
+        <li>
+          <strong>✅ Discreet, White-Glove Repair Experience</strong>
+          <br />
+          We wear protective gear, maintain clean workspaces, and communicate with the level of professionalism expected in beachfront homes, walk-street residences, ocean-view properties, remodeled coastal houses, and carefully designed kitchens.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Our Luxury Repair Process</h3>
+
+      <ol>
+        <li>
+          <strong>Book Your Appointment</strong>
+          <br />
+          Call or schedule online. We’ll confirm your preferred time and gather basic info about your appliance.
+        </li>
+
+        <li>
+          <strong>On-Time Arrival & Brand-Specific Diagnosis</strong>
+          <br />
+          Your trained ZARICCI technician arrives promptly and performs a detailed inspection using specialized diagnostic tools.
+        </li>
+
+        <li>
+          <strong>Clear, Upfront Estimate</strong>
+          <br />
+          We walk you through the issue and provide a transparent quote—no pressure, no surprises.
+        </li>
+
+        <li>
+          <strong>Precision Repair Using OEM Parts</strong>
+          <br />
+          We complete the repair using authentic parts, restore function, and run comprehensive performance testing.
+        </li>
+
+        <li>
+          <strong>Final Walkthrough & Service Warranty</strong>
+          <br />
+          We clean up, answer your questions, and back our work with a warranty—because confidence is part of the experience.
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Trusted Across Manhattan Beach’s Coastal Neighborhoods</h3>
+
+      <p>
+        We serve Manhattan Beach residences near The Strand and throughout the Sand Section, Tree Section, Hill Section, East Manhattan Beach, Manhattan Village, Manhattan Beach Heights, Liberty Village, and the surrounding residential neighborhoods. Our service is designed for beachfront homes, walk-street residences, ocean-view properties, remodeled coastal houses, and custom kitchens where careful diagnostics, clean workmanship, and discretion matter.
+      </p>
+    </section>
+
+    <section>
+      <h3>Your Home Deserves More Than a Quick Fix</h3>
+
+      <p>
+        Your luxury appliances were chosen for their performance, craftsmanship, and style. At <strong>ZARICCI</strong>, we deliver a repair experience that reflects those same values—with skill, discretion, and white-glove care from start to finish.
+      </p>
+    </section>
+
+    <section>
+      <h3>📞 Schedule Your Luxury Appliance Repair in Manhattan Beach Today</h3>
+
+      <p>
+        Don’t wait for a small issue to become a major disruption.
+        <br />
+        Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online now to schedule expert service in Manhattan Beach, CA.
+      </p>
+
+      <p>
+        <strong>ZARICCI — Because Manhattan Beach Homes Deserve World-Class Repair.</strong>
+      </p>
+    </section>
+
+    <Logos client:visible />
+    <Reviews client:idle />
+  </div>
 </Layout>

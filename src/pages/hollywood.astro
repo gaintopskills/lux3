@@ -1,282 +1,689 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
-import ParallaxHeader from '../components/Header/Glendale.jsx';
-import Tabs from '../components/Tabs/Hollywood.jsx'
+import ParallaxHeader from '../components/Header/Hollywood.jsx';
+import Tabs from '../components/Tabs/Hollywood.jsx';
 import Logos from '../components/Logos.jsx';
-import Reviews from "../components/ReviewsHomePage.jsx";
+import Reviews from '../components/ReviewsHomePage.jsx';
+
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://luxuryappliance.repair/hollywood/",
-  "name": "Luxury Appliance Repair by Zaricci",
-  "image": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
-  "url": "https://luxuryappliance.repair/hollywood/",
-  "telephone": "+1-424-499-7788",
-  "priceRange": "$$$",
-  "description": "Luxury Appliance Repair by Zaricci delivers white-glove appliance repair services for luxury homes, high-rises, and estates in Hollywood. Specializing in elite brands like Sub-Zero, Wolf, Thermador, and Miele, we offer same-day expert service tailored for discerning clients.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Hollywood",
-    "addressRegion": "CA",
-    "postalCode": "90028",
-    "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 34.0928,
-    "longitude": -118.3287
-  },
-  "openingHoursSpecification": [
+  "@graph": [
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
-      ],
-      "opens": "08:00",
-      "closes": "20:00"
-    }
-  ],
-  "areaServed": {
-    "@type": "City",
-    "name": "Hollywood",
-    "sameAs": "https://en.wikipedia.org/wiki/Hollywood"
-  },
-  "makesOffer": {
-    "@type": "Offer",
-    "itemOffered": {
-      "@type": "Service",
-      "name": "Luxury Appliance Repair Services",
-      "description": "In-home repair services for high-end appliances such as refrigerators, ovens, cooktops, dishwashers, and laundry units. Brands serviced include Sub-Zero, Wolf, Thermador, Miele, Viking, and more. Available across Hollywood and surrounding areas.",
-      "areaServed": {
-        "@type": "Place",
-        "name": "Hollywood Metropolitan Area"
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/hollywood/#webpage",
+      "url": "https://luxuryappliance.repair/hollywood/",
+      "name": "Hollywood High-End & Luxury Appliance Repair",
+      "description": "Luxury appliance repair in Hollywood for Sub-Zero, Wolf, Thermador, Miele, Viking, Gaggenau, La Cornue and other high-end appliance brands.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/hollywood/#service"
       },
-      "provider": {
-        "@type": "Organization",
-        "name": "Luxury Appliance Repair by Zaricci"
-      }
-    }
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Appliance Repair Services",
-    "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair", "description": "Precision oven repair services for luxury brands, including convection, steam, and wall-mounted ovens." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair", "description": "High-end stove repair, including gas and electric models from premium manufacturers like Wolf and Viking." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair", "description": "Expert range repair for dual-fuel, gas, and induction units from top-tier brands." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair", "description": "Professional repair for gas, electric, and induction cooktops by brands like Bosch, Miele, and KitchenAid." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair", "description": "Servicing designer and built-in range hoods with issues such as lighting, motors, or venting." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair", "description": "Luxury washer repair for front-load, top-load, and smart models, including Miele and LG Signature." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair", "description": "In-home dryer repair for gas and electric units with vent or heating issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair", "description": "Dishwasher repair services for built-in and panel-ready units from Miele, Bosch, and more." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair", "description": "Built-in microwave repair for drawer, over-the-range, and luxury convection microwave models." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair", "description": "Certified refrigerator repair for built-in and integrated models, including Sub-Zero and Thermador." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair", "description": "Freezer repair for upright, drawer, and column units with cooling or defrost issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair", "description": "Repair services for electric and gas fireplaces, including ignition, remote control, and burner issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair", "description": "Outdoor BBQ and grill repair for built-in and freestanding models, including burner and ignition repair." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair", "description": "Luxury wine cooler repair services for dual-zone and built-in models from brands like Sub-Zero and Liebherr." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair", "description": "Specialized wine cellar repair for climate control systems, lighting, and humidity regulation." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair", "description": "Repair for integrated coffee systems from brands like Miele and Gaggenau, including grinder, brew unit, and steam wand issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair", "description": "Expert steam oven repair for luxury models with water tank, sensor, or steam generation problems." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair", "description": "Warming drawer repair for built-in units, including thermostat and heating element issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair", "description": "Repair services for combination microwave and convection ovens with high-end control systems." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair", "description": "In-home repair for built-in and undercounter ice makers from Sub-Zero, Scotsman, and other luxury brands." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair", "description": "Repair for premium trash compactors with drawer, motor, or compression issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair", "description": "Service for built-in beverage centers and drink fridges from U-Line, Perlick, and True Residential." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair", "description": "Commercial and residential kegerator repair including cooling, taps, and CO2 systems." }}
-    ]
-  },
-  "brand": [
-    { "@type": "Brand", "name": "AGA" },
-    { "@type": "Brand", "name": "American Range" },
-    { "@type": "Brand", "name": "Bertazzoni" },
-    { "@type": "Brand", "name": "Fulgor Milano" },
-    { "@type": "Brand", "name": "Gaggenau" },
-    { "@type": "Brand", "name": "ILVE" },
-    { "@type": "Brand", "name": "Lacanche" },
-    { "@type": "Brand", "name": "La Cornue" },
-    { "@type": "Brand", "name": "Big Chill" },
-    { "@type": "Brand", "name": "BlueStar" },
-    { "@type": "Brand", "name": "Bosch" },
-    { "@type": "Brand", "name": "Cove" },
-    { "@type": "Brand", "name": "Dacor" },
-    { "@type": "Brand", "name": "Elmira Stove Works" },
-    { "@type": "Brand", "name": "FiveStar" },
-    { "@type": "Brand", "name": "Hestan" },
-    { "@type": "Brand", "name": "JennAir" },
-    { "@type": "Brand", "name": "Miele" },
-    { "@type": "Brand", "name": "Signature Kitchen Suite" },
-    { "@type": "Brand", "name": "Smeg" },
-    { "@type": "Brand", "name": "Sub-Zero" },
-    { "@type": "Brand", "name": "Thermador" },
-    { "@type": "Brand", "name": "True Residential" },
-    { "@type": "Brand", "name": "Viking" },
-    { "@type": "Brand", "name": "Wolf" },
-    { "@type": "Brand", "name": "ZLINE" },
-    { "@type": "Brand", "name": "Monogram" },
-    { "@type": "Brand", "name": "Fisher & Paykel" },  
-    { "@type": "Brand", "name": "Forno" },  
-    { "@type": "Brand", "name": "Thor" },  
-    { "@type": "Brand", "name": "Asko" },  
-    { "@type": "Brand", "name": "Liebherr" },  
-    { "@type": "Brand", "name": "Officine Gullo" }, 
-    { "@type": "Brand", "name": "Zephyr" }, 
-    { "@type": "Brand", "name": "Wine Guardian" }, 
-    { "@type": "Brand", "name": "Garland" },
-    { "@type": "Brand", "name": "Heartland" },
-    { "@type": "Brand", "name": "Kalamazoo" },
-    { "@type": "Brand", "name": "Lynx" },
-    { "@type": "Brand", "name": "Hestan Outdoor" },
-    { "@type": "Brand", "name": "Viking Outdoor" },
-    { "@type": "Brand", "name": "DCS" },
-    { "@type": "Brand", "name": "Alfresco" },
-    { "@type": "Brand", "name": "Twin Eagles" },
-    { "@type": "Brand", "name": "Fire Magic" },
-    { "@type": "Brand", "name": "Wolf Outdoors" },
-    { "@type": "Brand", "name": "True Residential Outdoor" },
-    { "@type": "Brand", "name": "Caliber" }
-  ],
-  "potentialAction": [
-    {
-      "@type": "ReserveAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://luxuryappliance.repair/book/",
-        "inLanguage": "en",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
-      },
-      "result": {
-        "@type": "Reservation",
-        "name": "Service Appointment"
+      "isPartOf": {
+        "@id": "https://luxuryappliance.repair/#website"
       }
     },
     {
-      "@type": "CommunicateAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "tel:+14244997788",
-        "actionPlatform": [
-          "http://schema.org/MobileWebPlatform"
-        ]
+      "@type": "WebSite",
+      "@id": "https://luxuryappliance.repair/#website",
+      "url": "https://luxuryappliance.repair/",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "publisher": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
       }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/hollywood/#service",
+      "name": "Hollywood Luxury Appliance Repair",
+      "serviceType": "High-end and luxury appliance repair in Hollywood",
+      "url": "https://luxuryappliance.repair/hollywood/",
+      "description": "Luxury Appliance Repair by Zaricci provides high-end appliance repair in Hollywood for built-in refrigerators, ranges, wall ovens, cooktops, dishwashers, wine coolers, beverage centers, laundry appliances, outdoor kitchen appliances, and other premium home appliances.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Hollywood, Los Angeles, CA"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Hollywood Luxury Appliance Repair Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Range Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Oven Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cooktop Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Range Hood Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Refrigerator Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Freezer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dishwasher Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dryer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Washing Machine Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wine Cooler Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wine Cellar Cooling System Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Beverage Center Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ice Maker Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "BBQ Grill Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pizza Oven Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Outdoor Kitchen Appliance Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Steam Oven Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Warming Drawer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Speed Oven / Combi-Oven Repair"
+            }
+          }
+        ]
+      },
+      "brand": [
+        {
+          "@type": "Brand",
+          "name": "Sub-Zero"
+        },
+        {
+          "@type": "Brand",
+          "name": "Wolf"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thermador"
+        },
+        {
+          "@type": "Brand",
+          "name": "Miele"
+        },
+        {
+          "@type": "Brand",
+          "name": "Viking"
+        },
+        {
+          "@type": "Brand",
+          "name": "Gaggenau"
+        },
+        {
+          "@type": "Brand",
+          "name": "La Cornue"
+        },
+        {
+          "@type": "Brand",
+          "name": "Lacanche"
+        },
+        {
+          "@type": "Brand",
+          "name": "AGA"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bertazzoni"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fulgor Milano"
+        },
+        {
+          "@type": "Brand",
+          "name": "ILVE"
+        },
+        {
+          "@type": "Brand",
+          "name": "Officine Gullo"
+        },
+        {
+          "@type": "Brand",
+          "name": "American Range"
+        },
+        {
+          "@type": "Brand",
+          "name": "BlueStar"
+        },
+        {
+          "@type": "Brand",
+          "name": "FiveStar"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thor"
+        },
+        {
+          "@type": "Brand",
+          "name": "Forno"
+        },
+        {
+          "@type": "Brand",
+          "name": "Garland"
+        },
+        {
+          "@type": "Brand",
+          "name": "ZLINE"
+        },
+        {
+          "@type": "Brand",
+          "name": "Monogram"
+        },
+        {
+          "@type": "Brand",
+          "name": "Dacor"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fisher & Paykel"
+        },
+        {
+          "@type": "Brand",
+          "name": "True Residential"
+        },
+        {
+          "@type": "Brand",
+          "name": "JennAir"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bosch"
+        },
+        {
+          "@type": "Brand",
+          "name": "Asko"
+        },
+        {
+          "@type": "Brand",
+          "name": "Cove"
+        },
+        {
+          "@type": "Brand",
+          "name": "Liebherr"
+        },
+        {
+          "@type": "Brand",
+          "name": "Signature Kitchen Suite"
+        },
+        {
+          "@type": "Brand",
+          "name": "Hestan"
+        },
+        {
+          "@type": "Brand",
+          "name": "Big Chill"
+        },
+        {
+          "@type": "Brand",
+          "name": "Elmira Stove Works"
+        },
+        {
+          "@type": "Brand",
+          "name": "Smeg"
+        },
+        {
+          "@type": "Brand",
+          "name": "Heartland"
+        },
+        {
+          "@type": "Brand",
+          "name": "Kalamazoo"
+        },
+        {
+          "@type": "Brand",
+          "name": "Lynx"
+        },
+        {
+          "@type": "Brand",
+          "name": "DCS"
+        },
+        {
+          "@type": "Brand",
+          "name": "Alfresco"
+        },
+        {
+          "@type": "Brand",
+          "name": "Twin Eagles"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fire Magic"
+        },
+        {
+          "@type": "Brand",
+          "name": "Caliber"
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "image": "https://luxuryappliance.repair/high-end-and-luxury-appliance-repair-by-zaricci.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "description": "Luxury Appliance Repair by Zaricci provides high-end appliance repair for luxury homes, custom kitchens, built-in refrigerators, pro-style ranges, ovens, cooktops, dishwashers, wine coolers, and outdoor kitchen appliances.",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Hollywood, Los Angeles, CA"
+        },
+      ],
+      "potentialAction": [
+        {
+          "@type": "ReserveAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://luxuryappliance.repair/book/",
+            "inLanguage": "en",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          },
+          "result": {
+            "@type": "Reservation",
+            "name": "Service Appointment"
+          }
+        },
+        {
+          "@type": "CommunicateAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "tel:+14244997788",
+            "actionPlatform": [
+              "http://schema.org/MobileWebPlatform"
+            ]
+          }
+        }
+      ]
     }
   ]
-}
-
-
+};
 ---
+
 <Layout
-	title="High-End & Luxury Appliance Repair – Hollywood"
-	description="High-End & Luxury Appliance Repair - Hollywood for La Cornue, Lacanche, Gaggenau, Bertazzoni, Monogram, Dacor, Fisher & Paykel, True, Sub-Zero, Wolf, Viking, Thermador, Miele, Bosch & other premium brands."
-	structuredData={structuredData}
+  title="High-End & Luxury Appliance Repair Hollywood"
+  description="Book Online (424) 499-7788 ★★★★★ High-End & Luxury appliance repair in Hollywood for Sub-Zero, Wolf, Miele, Thermador, Gaggenau and other premium brands. Same-day or next-day service."
+  structuredData={structuredData}
+  ogImage="/high-end-and-luxury-appliance-repair-by-zaricci.webp"
 >
-<ParallaxHeader client:idle/>
-<Tabs client:visible />
-<div style="margin: 50px">
-<section>
-  <h1>Luxury Appliance Repair in Hollywood, CA</h1>
-  <p><strong>Five-Star Service for Homes That Set the Standard</strong></p>
-  <p>In Hollywood, everything is elevated—from the historic mansions in the Hills to the modern penthouses overlooking Sunset Boulevard. High-end appliances are part of the lifestyle, built to support the beauty, creativity, and fast pace of life here. When they need expert care, you deserve a repair service that matches the sophistication and performance you expect.</p>
-  <p>At <strong>Luxury Appliance Repair by Zaricci</strong>, we proudly offer high-end appliance repair in Hollywood, specializing in elite brands like Sub-Zero, Wolf, Thermador, Miele, Gaggenau, La Cornue, Viking, and more. With certified expertise, genuine parts, and white-glove service, we deliver repairs that protect both your investment—and your home’s style.</p>
-</section>
+  <ParallaxHeader client:idle />
 
-<section>
-  <h3>🔧 Why Hollywood Homeowners and Designers Trust ZARICCI</h3>
-  <ul>
-    <li><strong>✅ Brand-Certified Technicians</strong><br/>We specialize in luxury appliances, with factory training across today's most innovative brands. Whether it’s a smart dual-fuel range or a panel-ready refrigeration system, we repair it right—the first time.</li>
-    <li><strong>✅ Genuine OEM Parts Only</strong><br/>We use manufacturer-approved parts to ensure your appliance maintains optimal performance and preserves its warranty.</li>
-    <li><strong>✅ Same-Day and Next-Day Service in Hollywood</strong><br/>Life moves fast in Hollywood—and so do we. We offer fast scheduling with punctual arrivals and full transparency.</li>
-    <li><strong>✅ White-Glove Experience from Start to Finish</strong><br/>Our service is designed for high-end homes: clean, discreet, respectful, and seamless. We protect your flooring, your counters, and your time.</li>
-  </ul>
-</section>
+  <div class="maincontent" id="webpage">
+    <h2>Luxury Appliance Repair in Hollywood, Los Angeles</h2>
 
-<section>
-  <h3>🛠️ Luxury Appliances We Repair in Hollywood</h3>
-  <h4>❄️ Refrigerators & Freezers</h4>
-  <ul>
-    <li>Sub-Zero, Thermador, Miele</li>
-    <li>Cooling inconsistencies or no cooling</li>
-    <li>Ice maker malfunctions</li>
-    <li>Water dispenser or door seal repairs</li>
-    <li>Integrated panel and smart tech diagnostics</li>
-  </ul>
-  <h4>🔥 Ranges, Wall Ovens & Cooktops</h4>
-  <ul>
-    <li>Wolf, La Cornue, Gaggenau, Viking</li>
-    <li>Burners not igniting</li>
-    <li>Oven not reaching correct temperature</li>
-    <li>Convection, steam, or self-cleaning failures</li>
-    <li>Smart system or control panel errors</li>
-  </ul>
-  <h4>🚿 High-End Dishwashers</h4>
-  <ul>
-    <li>Miele, Bosch, Cove</li>
-    <li>Not draining, drying, or cleaning properly</li>
-    <li>Leaks, electrical issues, or broken controls</li>
-    <li>Cycle errors and water heating problems</li>
-  </ul>
-  <h4>🧺 Washer & Dryer Repairs</h4>
-  <ul>
-    <li>Miele, Fisher & Paykel, LG Signature</li>
-    <li>Drum not spinning, draining, or drying</li>
-    <li>Overheating, noise, or smart sensor malfunctions</li>
-    <li>Control module and touchscreen repairs</li>
-  </ul>
-  <h4>☕ Built-In Specialty Appliances</h4>
-  <ul>
-    <li>Wine coolers, espresso machines, warming drawers, speed ovens</li>
-    <li>Temperature control failures</li>
-    <li>Motor, pump, or integration issues</li>
-    <li>Wi-Fi connectivity and smart function troubleshooting</li>
-  </ul>
-</section>
+    <p>
+      In Hollywood, luxury appliance repair often means working inside
+      renovated residences, condominium buildings, modern apartments,
+      historic homes, hillside properties, and carefully designed kitchens
+      with premium built-in appliances. Homes and residences near Hollywood
+      Boulevard, Sunset Boulevard, Franklin Avenue, Highland Avenue, Vine
+      Street, Cahuenga Boulevard, and the residential streets leading toward
+      the Hollywood Hills may include integrated refrigerators,
+      professional-style ranges, double wall ovens, panel-ready dishwashers,
+      wine coolers, beverage centers, and compact laundry systems that require
+      precise diagnostics and careful workmanship.
+    </p>
 
-<section>
-  <h3>👨‍🔧 The ZARICCI Repair Process</h3>
-  <ol>
-    <li><strong>Schedule Your Appointment</strong><br/>Book online or by phone—we offer flexible times to fit your schedule.</li>
-    <li><strong>On-Time, In-Home Diagnosis</strong><br/>Your certified technician arrives promptly, professionally dressed, and ready to diagnose with precision.</li>
-    <li><strong>Transparent Estimate</strong><br/>We walk you through a clear, itemized quote—no pressure, no surprises.</li>
-    <li><strong>Expert Repairs with OEM Parts</strong><br/>We repair with genuine parts, restoring full function while respecting the look and feel of your kitchen or laundry room.</li>
-    <li><strong>Final Testing & Service Guarantee</strong><br/>After thorough testing, we leave your home clean—and your appliance backed by a warranty.</li>
-  </ol>
-</section>
+    <p>
+      Hollywood properties can vary significantly in layout and access. Some
+      appliances are installed inside condominium residences or mixed-use
+      buildings with elevators, security desks, loading procedures, and
+      scheduled service windows. Others are located inside hillside homes,
+      restored residences, or custom kitchens with narrow driveways, stairs,
+      decorative cabinetry, and finished flooring. We plan carefully for the
+      property and protect the surrounding areas of your home while diagnosing
+      the appliance.
+    </p>
+  </div>
 
-<section>
-  <h3>🏡 Serving All of Hollywood's Premier Areas</h3>
-  <p><strong>ZARICCI</strong> proudly serves luxury homes throughout:</p>
-  <ul>
-    <li>Hollywood Hills</li>
-    <li>Sunset Plaza</li>
-    <li>Beachwood Canyon</li>
-    <li>Outpost Estates</li>
-    <li>Hollywood Dell</li>
-    <li>The Bird Streets (bordering West Hollywood)</li>
-    <li>Laurel Canyon Estates</li>
-  </ul>
-  <p>Whether you live in a classic mid-century, a brand-new architectural estate, or a penthouse overlooking Runyon Canyon, ZARICCI brings high-end appliance service to your doorstep.</p>
-</section>
+  <Tabs client:visible />
 
-<section>
-  <h3>Performance Matters—Service Should Too</h3>
-  <p>Your appliances were selected for their cutting-edge design, reliability, and beauty. Trust <strong>ZARICCI</strong> to maintain that standard—with service as refined as the homes we’re honored to work in.</p>
-</section>
+  <div class="maincontent" id="service">
+    <section>
+      <h3>Why Hollywood Residents Rely on ZARICCI</h3>
 
-<section>
-  <h3>📞 Book Your Luxury Appliance Repair in Hollywood Today</h3>
-  <p>Don’t let appliance issues disrupt your Hollywood lifestyle.<br/>Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online now for elite service you can trust.</p>
-  <p><strong>👉 ZARICCI — Precision Repairs for Hollywood’s Most Iconic Homes.</strong></p>
-</section>
- <Logos client:visible />
- <Reviews client:idle />
-</div>
+      <ul>
+        <li>
+          <strong>✅ Experienced with Luxury Built-In Appliances</strong>
+          <br />
+          We service premium appliances installed in carefully designed
+          Hollywood kitchens, including Sub-Zero refrigerators and freezer
+          columns, Wolf cooking appliances, Miele dishwashers and laundry
+          systems, Thermador appliances, Gaggenau appliances, and other
+          high-end brands.
+        </li>
+
+        <li>
+          <strong>✅ Careful Service for Condominiums and Apartment Residences</strong>
+          <br />
+          Appliance repair inside a condominium or apartment building may
+          require attention to security procedures, elevators, parking,
+          loading areas, scheduled service windows, shared hallways, and
+          surrounding residential spaces.
+        </li>
+
+        <li>
+          <strong>✅ Service for Historic and Hillside Homes</strong>
+          <br />
+          Hollywood also includes historic residences and hillside properties
+          where narrow streets, sloped driveways, stairs, gates, and custom
+          kitchen installations may require additional planning and care.
+        </li>
+
+        <li>
+          <strong>✅ Built-In Kitchen Diagnostic Experience</strong>
+          <br />
+          Integrated appliances may require a more careful diagnostic approach
+          because ventilation, cabinet clearances, panel alignment, electrical
+          access, water connections, gas lines, and installation conditions
+          can affect performance.
+        </li>
+
+        <li>
+          <strong>✅ OEM Parts Whenever Available</strong>
+          <br />
+          Your appliances are an investment. When replacement components are
+          needed, we identify the appropriate OEM, manufacturer-approved, or
+          compatible part for the specific appliance and model.
+        </li>
+
+        <li>
+          <strong>✅ Same-Day or Next-Day Scheduling</strong>
+          <br />
+          We offer priority scheduling in Hollywood whenever appointment
+          availability and property access allow, with respect for your time,
+          privacy, and home.
+        </li>
+
+        <li>
+          <strong>✅ Discreet, White-Glove Repair Experience</strong>
+          <br />
+          We maintain a clean workspace, communicate clearly, and provide the
+          professional service expected in a carefully maintained residence.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Our Luxury Repair Process</h3>
+
+      <ol>
+        <li>
+          <strong>Book Your Appointment</strong>
+          <br />
+          Call or schedule online. We will confirm your preferred time and
+          gather basic information about your appliance, residence, and any
+          parking, stairway, elevator, security-desk, loading-area, gate, or
+          property-access requirements.
+        </li>
+
+        <li>
+          <strong>Arrival & Property Access</strong>
+          <br />
+          Your ZARICCI technician arrives for the scheduled appointment and
+          follows the appropriate parking, building-entry, security, elevator,
+          driveway, and property-access procedures for your residence.
+        </li>
+
+        <li>
+          <strong>Brand-Specific Diagnosis</strong>
+          <br />
+          We inspect the appliance carefully and use the diagnostic approach
+          appropriate for the appliance type, symptoms, installation, and
+          surrounding cabinetry.
+        </li>
+
+        <li>
+          <strong>Clear, Upfront Estimate</strong>
+          <br />
+          We explain the issue and provide a transparent quote before
+          proceeding with the recommended repair.
+        </li>
+
+        <li>
+          <strong>Precision Repair & Performance Testing</strong>
+          <br />
+          We complete the approved repair, restore appliance function, and
+          test the relevant systems for proper performance.
+        </li>
+
+        <li>
+          <strong>Final Walkthrough & Service Warranty</strong>
+          <br />
+          We clean the work area, answer your questions, and explain the
+          warranty that applies to the completed service.
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Serving Hollywood Condos, Apartments, Historic Homes & Hillside Residences</h3>
+
+      <p>
+        We serve Hollywood residences near Hollywood Boulevard, Sunset
+        Boulevard, Franklin Avenue, Highland Avenue, Vine Street, Cahuenga
+        Boulevard, Wilcox Avenue, and the surrounding residential streets.
+        Our service is designed for condominium residences, apartments,
+        historic homes, renovated properties, mixed-use buildings, and
+        hillside residences where clean workmanship, discretion, and precise
+        diagnostics matter.
+      </p>
+
+      <p>
+        Hollywood kitchens may include integrated refrigeration, refrigerator
+        and freezer columns, professional-style ranges, double ovens, steam
+        ovens, induction cooktops, panel-ready dishwashers, wine storage,
+        built-in coffee systems, and undercounter beverage centers. These
+        appliances may be installed within custom cabinetry or compact kitchen
+        layouts that require an especially careful repair approach.
+      </p>
+    </section>
+
+    <section>
+      <h3>Careful Service for Built-In and Panel-Ready Appliances</h3>
+
+      <p>
+        Built-in luxury appliances require more than a quick visual inspection.
+        A refrigerator cooling issue may involve ventilation, airflow,
+        temperature sensors, condenser access, door alignment, or installation
+        conditions. A dishwasher leak may require careful inspection around
+        decorative panels, flooring, and cabinetry. A range, wall oven, or
+        cooktop issue may involve electrical access, ignition components, gas
+        connections, ventilation, or precise cabinet integration.
+      </p>
+
+      <p>
+        At <strong>ZARICCI</strong>, we approach each appliance with attention
+        to its installation, surrounding finishes, and the practical needs of
+        the residence.
+      </p>
+    </section>
+
+    <section>
+      <h3>Luxury Appliance Service for Condominiums and Mixed-Use Buildings</h3>
+
+      <p>
+        Many Hollywood residences are located inside condominium buildings,
+        apartment properties, or mixed-use developments. Service visits may
+        require coordination with a security desk, concierge, property
+        manager, building engineer, parking attendant, or loading-area
+        schedule.
+      </p>
+
+      <p>
+        When booking your appointment, let us know about any elevator
+        reservations, parking instructions, entry procedures, or service-hour
+        restrictions. We plan the appointment carefully so that the repair can
+        be completed with minimal disruption to your residence and building.
+      </p>
+    </section>
+
+    <section>
+      <h3>Careful Repair for Historic and Hillside Hollywood Homes</h3>
+
+      <p>
+        Hollywood also includes historic homes and hillside residences where
+        appliance access can require additional care. Properties near Franklin
+        Avenue and the residential streets leading toward the hills may include
+        narrow roads, sloped driveways, stairways, gated entrances, older
+        layouts, or renovated kitchens with custom appliance installations.
+      </p>
+
+      <p>
+        Whether your appliance is installed inside a restored residence, a
+        custom hillside home, or a contemporary remodeled kitchen, our goal is
+        to provide careful service while protecting the character and finishes
+        of the property.
+      </p>
+    </section>
+
+    <section>
+      <h3>Your Home Deserves More Than a Quick Fix</h3>
+
+      <p>
+        Your luxury appliances were selected for their performance,
+        craftsmanship, and design. At <strong>ZARICCI</strong>, we deliver a
+        repair experience that reflects those same values—with skill,
+        discretion, and careful service from start to finish.
+      </p>
+    </section>
+
+    <section>
+      <h3>📞 Schedule Your Luxury Appliance Repair in Hollywood Today</h3>
+
+      <p>
+        Do not wait for a small appliance issue to become a major disruption.
+        <br />
+        Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online
+        now to schedule expert service in Hollywood, Los Angeles.
+      </p>
+
+      <p>
+        <strong>
+          ZARICCI — Because Hollywood Homes Deserve World-Class Repair.
+        </strong>
+      </p>
+    </section>
+
+    <Logos client:visible />
+    <Reviews client:idle />
+  </div>
 </Layout>

@@ -25,7 +25,7 @@ const ParallaxHeader = () => {
           className="gold-embossed"
           data-text="LOS FELIZ"
         >
-          Los Feliz High-End & Luxury Appliance Repair
+          High-End & Luxury Appliance Repair Los Feliz
           <br />
         </h1>
 

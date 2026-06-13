@@ -25,7 +25,7 @@ const ParallaxHeader = () => {
           className="gold-embossed"
           data-text="MALIBU"
         >
-          Malibu High-End &amp; Luxury Appliance Repair
+        High-End &amp; Luxury Appliance Repair Malibu
           <br />
         </h1>
 

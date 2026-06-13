@@ -2,276 +2,722 @@
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 import ParallaxHeader from '../components/Header/HolmbyHills.jsx';
-import Tabs from '../components/Tabs/HolmbyHills.jsx'
+import Tabs from '../components/Tabs/HolmbyHills.jsx';
 import Logos from '../components/Logos.jsx';
-import Reviews from "../components/ReviewsHomePage.jsx";
+import Reviews from '../components/ReviewsHomePage.jsx';
+
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://luxuryappliance.repair/holmby-hills/",
-  "name": "Luxury Appliance Repair by Zaricci",
-  "image": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
-  "url": "https://luxuryappliance.repair/holmby-hills/",
-  "telephone": "+1-424-499-7788",
-  "priceRange": "$$$",
-  "description": "Luxury Appliance Repair by Zaricci specializes in servicing the prestigious homes and estates of Holmby Hills. We provide same-day, white-glove repair services for high-end brands like Sub-Zero, Wolf, Thermador, Miele, La Cornue, and more, with unmatched precision and discretion.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Holmby Hills",
-    "addressRegion": "CA",
-    "postalCode": "90024",
-    "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 34.0806,
-    "longitude": -118.4232
-  },
-  "openingHoursSpecification": [
+  "@graph": [
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
-      ],
-      "opens": "08:00",
-      "closes": "20:00"
-    }
-  ],
-  "areaServed": {
-    "@type": "City",
-    "name": "Holmby Hills",
-    "sameAs": "https://en.wikipedia.org/wiki/Holmby_Hills,_Los_Angeles"
-  },
-  "makesOffer": {
-    "@type": "Offer",
-    "itemOffered": {
-      "@type": "Service",
-      "name": "Luxury Appliance Repair Services",
-      "description": "In-home repair services for high-end appliances such as refrigerators, ovens, cooktops, dishwashers, and laundry units. Brands serviced include Sub-Zero, Wolf, Thermador, Miele, Viking, and more. Available across Holmby Hills and surrounding areas.",
-      "areaServed": {
-        "@type": "Place",
-        "name": "Holmby Hills Metropolitan Area"
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/holmby-hills/#webpage",
+      "url": "https://luxuryappliance.repair/holmby-hills/",
+      "name": "Holmby Hills High-End & Luxury Appliance Repair",
+      "description": "Luxury appliance repair in Holmby Hills for Sub-Zero, Wolf, Thermador, Miele, Viking, Gaggenau, La Cornue and other high-end appliance brands.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/holmby-hills/#service"
       },
-      "provider": {
-        "@type": "Organization",
-        "name": "Luxury Appliance Repair by Zaricci"
-      }
-    }
-  },
-  "hasOfferCatalog": { 
-    "@type": "OfferCatalog",
-    "name": "Appliance Repair Services",
-    "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair", "description": "Precision oven repair services for luxury brands, including convection, steam, and wall-mounted ovens." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair", "description": "High-end stove repair, including gas and electric models from premium manufacturers like Wolf and Viking." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair", "description": "Expert range repair for dual-fuel, gas, and induction units from top-tier brands." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair", "description": "Professional repair for gas, electric, and induction cooktops by brands like Bosch, Miele, and KitchenAid." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair", "description": "Servicing designer and built-in range hoods with issues such as lighting, motors, or venting." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair", "description": "Luxury washer repair for front-load, top-load, and smart models, including Miele and LG Signature." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair", "description": "In-home dryer repair for gas and electric units with vent or heating issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair", "description": "Dishwasher repair services for built-in and panel-ready units from Miele, Bosch, and more." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair", "description": "Built-in microwave repair for drawer, over-the-range, and luxury convection microwave models." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair", "description": "Certified refrigerator repair for built-in and integrated models, including Sub-Zero and Thermador." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair", "description": "Freezer repair for upright, drawer, and column units with cooling or defrost issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair", "description": "Repair services for electric and gas fireplaces, including ignition, remote control, and burner issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair", "description": "Outdoor BBQ and grill repair for built-in and freestanding models, including burner and ignition repair." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair", "description": "Luxury wine cooler repair services for dual-zone and built-in models from brands like Sub-Zero and Liebherr." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair", "description": "Specialized wine cellar repair for climate control systems, lighting, and humidity regulation." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair", "description": "Repair for integrated coffee systems from brands like Miele and Gaggenau, including grinder, brew unit, and steam wand issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair", "description": "Expert steam oven repair for luxury models with water tank, sensor, or steam generation problems." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair", "description": "Warming drawer repair for built-in units, including thermostat and heating element issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair", "description": "Repair services for combination microwave and convection ovens with high-end control systems." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair", "description": "In-home repair for built-in and undercounter ice makers from Sub-Zero, Scotsman, and other luxury brands." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair", "description": "Repair for premium trash compactors with drawer, motor, or compression issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair", "description": "Service for built-in beverage centers and drink fridges from U-Line, Perlick, and True Residential." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair", "description": "Commercial and residential kegerator repair including cooling, taps, and CO2 systems." }}
-    ]
-  },
-  "brand": [
-    { "@type": "Brand", "name": "AGA" },
-    { "@type": "Brand", "name": "American Range" },
-    { "@type": "Brand", "name": "Bertazzoni" },
-    { "@type": "Brand", "name": "Fulgor Milano" },
-    { "@type": "Brand", "name": "Gaggenau" },
-    { "@type": "Brand", "name": "ILVE" },
-    { "@type": "Brand", "name": "Lacanche" },
-    { "@type": "Brand", "name": "La Cornue" },
-    { "@type": "Brand", "name": "Big Chill" },
-    { "@type": "Brand", "name": "BlueStar" },
-    { "@type": "Brand", "name": "Bosch" },
-    { "@type": "Brand", "name": "Cove" },
-    { "@type": "Brand", "name": "Dacor" },
-    { "@type": "Brand", "name": "Elmira Stove Works" },
-    { "@type": "Brand", "name": "FiveStar" },
-    { "@type": "Brand", "name": "Hestan" },
-    { "@type": "Brand", "name": "JennAir" },
-    { "@type": "Brand", "name": "Miele" },
-    { "@type": "Brand", "name": "Signature Kitchen Suite" },
-    { "@type": "Brand", "name": "Smeg" },
-    { "@type": "Brand", "name": "Sub-Zero" },
-    { "@type": "Brand", "name": "Thermador" },
-    { "@type": "Brand", "name": "True Residential" },
-    { "@type": "Brand", "name": "Viking" },
-    { "@type": "Brand", "name": "Wolf" },
-    { "@type": "Brand", "name": "ZLINE" },
-    { "@type": "Brand", "name": "Monogram" },
-    { "@type": "Brand", "name": "Fisher & Paykel" },  
-    { "@type": "Brand", "name": "Forno" },  
-    { "@type": "Brand", "name": "Thor" },  
-    { "@type": "Brand", "name": "Asko" },  
-    { "@type": "Brand", "name": "Liebherr" },  
-    { "@type": "Brand", "name": "Officine Gullo" }, 
-    { "@type": "Brand", "name": "Zephyr" }, 
-    { "@type": "Brand", "name": "Wine Guardian" }, 
-    { "@type": "Brand", "name": "Garland" },
-    { "@type": "Brand", "name": "Heartland" },
-    { "@type": "Brand", "name": "Kalamazoo" },
-    { "@type": "Brand", "name": "Lynx" },
-    { "@type": "Brand", "name": "Hestan Outdoor" },
-    { "@type": "Brand", "name": "Viking Outdoor" },
-    { "@type": "Brand", "name": "DCS" },
-    { "@type": "Brand", "name": "Alfresco" },
-    { "@type": "Brand", "name": "Twin Eagles" },
-    { "@type": "Brand", "name": "Fire Magic" },
-    { "@type": "Brand", "name": "Wolf Outdoors" },
-    { "@type": "Brand", "name": "True Residential Outdoor" },
-    { "@type": "Brand", "name": "Caliber" }
-  ],
-  "potentialAction": [
-    {
-      "@type": "ReserveAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://luxuryappliance.repair/book/",
-        "inLanguage": "en",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
-      },
-      "result": {
-        "@type": "Reservation",
-        "name": "Service Appointment"
+      "isPartOf": {
+        "@id": "https://luxuryappliance.repair/#website"
       }
     },
     {
-      "@type": "CommunicateAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "tel:+14244997788",
-        "actionPlatform": [
-          "http://schema.org/MobileWebPlatform"
-        ]
+      "@type": "WebSite",
+      "@id": "https://luxuryappliance.repair/#website",
+      "url": "https://luxuryappliance.repair/",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "publisher": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
       }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/holmby-hills/#service",
+      "name": "Holmby Hills Luxury Appliance Repair",
+      "serviceType": "High-end and luxury appliance repair in Holmby Hills",
+      "url": "https://luxuryappliance.repair/holmby-hills/",
+      "description": "Luxury Appliance Repair by Zaricci provides high-end appliance repair in Holmby Hills for built-in refrigerators, freezer columns, ranges, wall ovens, cooktops, dishwashers, wine coolers, beverage centers, laundry appliances, outdoor kitchen appliances, and other premium home appliances.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Holmby Hills, Los Angeles, CA"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Holmby Hills Luxury Appliance Repair Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Range Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Oven Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cooktop Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Range Hood Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Refrigerator Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Freezer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dishwasher Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dryer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Washing Machine Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wine Cooler Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wine Cellar Cooling System Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Beverage Center Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ice Maker Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "BBQ Grill Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pizza Oven Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Outdoor Kitchen Appliance Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Steam Oven Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Warming Drawer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Speed Oven / Combi-Oven Repair"
+            }
+          }
+        ]
+      },
+      "brand": [
+        {
+          "@type": "Brand",
+          "name": "Sub-Zero"
+        },
+        {
+          "@type": "Brand",
+          "name": "Wolf"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thermador"
+        },
+        {
+          "@type": "Brand",
+          "name": "Miele"
+        },
+        {
+          "@type": "Brand",
+          "name": "Viking"
+        },
+        {
+          "@type": "Brand",
+          "name": "Gaggenau"
+        },
+        {
+          "@type": "Brand",
+          "name": "La Cornue"
+        },
+        {
+          "@type": "Brand",
+          "name": "Lacanche"
+        },
+        {
+          "@type": "Brand",
+          "name": "AGA"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bertazzoni"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fulgor Milano"
+        },
+        {
+          "@type": "Brand",
+          "name": "ILVE"
+        },
+        {
+          "@type": "Brand",
+          "name": "Officine Gullo"
+        },
+        {
+          "@type": "Brand",
+          "name": "American Range"
+        },
+        {
+          "@type": "Brand",
+          "name": "BlueStar"
+        },
+        {
+          "@type": "Brand",
+          "name": "FiveStar"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thor"
+        },
+        {
+          "@type": "Brand",
+          "name": "Forno"
+        },
+        {
+          "@type": "Brand",
+          "name": "Garland"
+        },
+        {
+          "@type": "Brand",
+          "name": "ZLINE"
+        },
+        {
+          "@type": "Brand",
+          "name": "Monogram"
+        },
+        {
+          "@type": "Brand",
+          "name": "Dacor"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fisher & Paykel"
+        },
+        {
+          "@type": "Brand",
+          "name": "True Residential"
+        },
+        {
+          "@type": "Brand",
+          "name": "JennAir"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bosch"
+        },
+        {
+          "@type": "Brand",
+          "name": "Asko"
+        },
+        {
+          "@type": "Brand",
+          "name": "Cove"
+        },
+        {
+          "@type": "Brand",
+          "name": "Liebherr"
+        },
+        {
+          "@type": "Brand",
+          "name": "Signature Kitchen Suite"
+        },
+        {
+          "@type": "Brand",
+          "name": "Hestan"
+        },
+        {
+          "@type": "Brand",
+          "name": "Big Chill"
+        },
+        {
+          "@type": "Brand",
+          "name": "Elmira Stove Works"
+        },
+        {
+          "@type": "Brand",
+          "name": "Smeg"
+        },
+        {
+          "@type": "Brand",
+          "name": "Heartland"
+        },
+        {
+          "@type": "Brand",
+          "name": "Kalamazoo"
+        },
+        {
+          "@type": "Brand",
+          "name": "Lynx"
+        },
+        {
+          "@type": "Brand",
+          "name": "DCS"
+        },
+        {
+          "@type": "Brand",
+          "name": "Alfresco"
+        },
+        {
+          "@type": "Brand",
+          "name": "Twin Eagles"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fire Magic"
+        },
+        {
+          "@type": "Brand",
+          "name": "Caliber"
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "image": "https://luxuryappliance.repair/high-end-and-luxury-appliance-repair-by-zaricci.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "description": "Luxury Appliance Repair by Zaricci provides high-end appliance repair for luxury homes, custom kitchens, built-in refrigerators, pro-style ranges, ovens, cooktops, dishwashers, wine coolers, and outdoor kitchen appliances.",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Holmby Hills, Los Angeles, CA"
+        },
+        {
+          "@type": "City",
+          "name": "Los Angeles"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Los Angeles County"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Orange County"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ventura County"
+        }
+      ],
+      "potentialAction": [
+        {
+          "@type": "ReserveAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://luxuryappliance.repair/book/",
+            "inLanguage": "en",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          },
+          "result": {
+            "@type": "Reservation",
+            "name": "Service Appointment"
+          }
+        },
+        {
+          "@type": "CommunicateAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "tel:+14244997788",
+            "actionPlatform": [
+              "http://schema.org/MobileWebPlatform"
+            ]
+          }
+        }
+      ]
     }
   ]
-}
+};
 ---
+
 <Layout
-	title="High-End & Luxury Appliance Repair – Holmby Hills"
-	description="High-End & Luxury Appliance Repair - Holmby Hills for La Cornue, Lacanche, Gaggenau, Bertazzoni, Monogram, Dacor, Fisher & Paykel, True, Sub-Zero, Wolf, Viking, Thermador, Miele, Bosch & other premium brands."
-	structuredData={structuredData}
+  title="High-End & Luxury Appliance Repair Holmby Hills"
+  description="Book Online (424) 499-7788 ★★★★★ High-End & Luxury appliance repair in Holmby Hills for Sub-Zero, Wolf, Miele, Thermador, Gaggenau and other premium brands. Same-day or next-day service."
+  structuredData={structuredData}
+  ogImage="/high-end-and-luxury-appliance-repair-by-zaricci.webp"
 >
-<ParallaxHeader client:idle/>
-<div style="margin: 50px">
-<section>
-  <h1>Luxury Appliance Repair in Holmby Hills, CA</h1>
-  <p><strong>White-Glove Service for the World's Most Distinguished Homes</strong></p>
-  <p>In Holmby Hills, luxury is a legacy. Every estate, every detail reflects a commitment to excellence—and your high-end appliances are no exception. Whether it’s a Sub-Zero built-in refrigerator, a Wolf dual-fuel range, or a La Cornue masterpiece oven, your appliances were chosen for their beauty, performance, and prestige.</p>
-  <p>When your appliances need expert care, trust the company that understands luxury not just as a word, but as a standard. At <strong>Luxury Appliance Repair by Zaricci</strong>, we deliver certified, white-glove appliance repair in Holmby Hills, specializing in elite brands with precision craftsmanship, authentic OEM parts, and an unmatched level of discreet, professional service.</p>
-</section>
-<Tabs client:visible />
-<section>
-  <h3>🔧 Why Holmby Hills Residents Choose ZARICCI</h3>
-  <ul>
-    <li><strong>✅ Mastery of Luxury Brands</strong><br>Our technicians are trained and certified by the world’s most exclusive appliance manufacturers, from Sub-Zero and Wolf to Miele, Gaggenau, Thermador, Viking, and La Cornue.</li>
-    <li><strong>✅ Genuine OEM Parts</strong><br>We repair your appliances using only manufacturer-certified parts, maintaining optimal performance, preserving warranties, and ensuring lasting quality.</li>
-    <li><strong>✅ Same-Day or Next-Day Service</strong><br>In a neighborhood where time is a true luxury, we offer priority scheduling with guaranteed punctuality—and service tailored to your needs.</li>
-    <li><strong>✅ White-Glove Standards at Every Step</strong><br>From protective coverings to meticulous clean-up, we treat your home and appliances with the respect and attention they deserve.</li>
-  </ul>
-  <p><strong>Discretion. Precision. Excellence. Always.</strong></p>
-</section>
+  <ParallaxHeader client:idle />
 
-<section>
-  <h3>🛠️ High-End Appliances We Service in Holmby Hills</h3>
-  <h4>❄️ Luxury Refrigerators & Freezers</h4>
-  <ul>
-    <li>Sub-Zero, Thermador, Miele</li>
-    <li>Cooling inconsistencies</li>
-    <li>Ice maker malfunctions</li>
-    <li>Water dispenser or seal issues</li>
-    <li>Integrated and panel-ready unit repairs</li>
-  </ul>
-  <h4>🔥 Ranges, Ovens & Cooktops</h4>
-  <ul>
-    <li>Wolf, La Cornue, Gaggenau, Viking</li>
-    <li>Burners not igniting</li>
-    <li>Oven not heating or cooking unevenly</li>
-    <li>Convection fan, steam oven, or smart connectivity repairs</li>
-  </ul>
-  <h4>🚿 Luxury Dishwashers</h4>
-  <ul>
-    <li>Miele, Bosch, Cove</li>
-    <li>Not draining or drying</li>
-    <li>Leaks or cycle errors</li>
-    <li>Smart feature or touchscreen control issues</li>
-  </ul>
-  <h4>🧺 Luxury Washers & Dryers</h4>
-  <ul>
-    <li>Miele, LG Signature, Fisher & Paykel</li>
-    <li>Drum failures</li>
-    <li>Overheating or non-drying dryers</li>
-    <li>Smart diagnostic and connectivity problems</li>
-  </ul>
-  <h4>☕ Built-In Specialty Appliances</h4>
-  <ul>
-    <li>Espresso machines, wine coolers, warming drawers</li>
-    <li>Temperature regulation issues</li>
-    <li>Motor, fan, or pump replacements</li>
-    <li>Smart home and Wi-Fi integration troubleshooting</li>
-  </ul>
-</section>
+  <div class="maincontent" id="webpage">
+    <h2>Luxury Appliance Repair in Holmby Hills, Los Angeles</h2>
 
-<section>
-  <h3>👨‍🔧 The ZARICCI Signature Repair Experience</h3>
-  <ol>
-    <li><strong>Schedule with Ease</strong><br>Book by phone or online—our concierge team handles every detail professionally and discreetly.</li>
-    <li><strong>On-Time Arrival and Diagnosis</strong><br>Our certified technicians arrive fully prepared, wearing protective gear, and conduct a respectful, thorough evaluation.</li>
-    <li><strong>Clear, Detailed Estimate</strong><br>We provide a transparent, written quote—explaining every step before any work begins.</li>
-    <li><strong>Precision Repairs Using OEM Parts</strong><br>We perform repairs with brand-approved components, restoring the original beauty and functionality of your appliance.</li>
-    <li><strong>Final Testing and White-Glove Clean-Up</strong><br>After meticulous testing, we leave your space spotless—and your appliances operating flawlessly.</li>
-  </ol>
-</section>
+    <p>
+      In Holmby Hills, luxury appliance repair often means working inside
+      private estate residences, gated properties, architecturally distinctive
+      homes, and carefully designed kitchens with premium built-in appliances.
+      Homes near Sunset Boulevard, Beverly Glen Boulevard, Carolwood Drive,
+      Brooklawn Drive, Club View Drive, Comstock Avenue, and the surrounding
+      residential streets may include integrated refrigerators, separate
+      freezer columns, professional-style ranges, double wall ovens, steam
+      ovens, panel-ready dishwashers, wine storage systems, beverage centers,
+      and specialty appliances that require precise diagnostics and careful
+      workmanship.
+    </p>
 
-<section>
-  <h3>🏡 Proudly Serving Every Corner of Holmby Hills</h3>
-  <p><strong>ZARICCI</strong> services estates throughout:</p>
-  <ul>
-    <li>South Mapleton Drive</li>
-    <li>Carolwood Drive</li>
-    <li>Baroda Drive</li>
-    <li>Club View Drive</li>
-    <li>Faring Road and Delfern Drive Estates</li>
-    <li>Beverly Glen Boulevard (Holmby Hills stretch)</li>
-  </ul>
-  <p>We also provide trusted service for estate managers, designers, and luxury property developers managing Holmby Hills' most distinguished properties.</p>
-</section>
+    <p>
+      Holmby Hills homes may include custom cabinetry, stone countertops,
+      hardwood flooring, decorative appliance panels, multiple refrigeration
+      units, secondary kitchens, butler’s pantries, wine rooms, laundry rooms,
+      poolside entertaining spaces, and outdoor kitchens. We work carefully
+      around these finishes and installations while identifying the source of
+      the problem and protecting the surrounding areas of your home.
+    </p>
+  </div>
 
-<section>
-  <h3>Your Appliances Are More Than Machines—They Are Masterpieces</h3>
-  <p>At <strong>ZARICCI</strong>, we treat every service call as a privilege. We know that in a home like yours, only the best craftsmanship, parts, and professionalism are acceptable. That's why discerning homeowners and estate managers across Holmby Hills trust <strong>ZARICCI</strong>.</p>
-</section>
-<section>
-  <h3>📞 Schedule Your Luxury Appliance Repair in Holmby Hills Today</h3>
-  <p>When only flawless service will do, call the experts who deliver it every time.<br>Call <strong>Luxury Appliance Repair by Zaricci</strong> or book your discreet, white-glove appointment online today.</p>
-  <p><strong>👉 ZARICCI — Precision Repairs for Holmby Hills' Most Prestigious Estates.</strong></p>
-</section>
- <Logos client:visible />
- <Reviews client:idle />
-</div>
+  <Tabs client:visible />
+
+  <div class="maincontent" id="service">
+    <section>
+      <h3>Why Holmby Hills Residents Rely on ZARICCI</h3>
+
+      <ul>
+        <li>
+          <strong>✅ Experienced with Luxury Built-In Appliances</strong>
+          <br />
+          We service premium appliances installed in custom Holmby Hills
+          kitchens, including Sub-Zero refrigerators and freezer columns, Wolf
+          cooking appliances, Miele dishwashers and laundry systems, Thermador
+          appliances, Gaggenau appliances, and other high-end brands.
+        </li>
+
+        <li>
+          <strong>✅ Careful Service for Estate Homes and Gated Properties</strong>
+          <br />
+          Appliance repair inside a luxury estate requires attention to more
+          than the appliance itself. We work carefully around custom cabinetry,
+          finished flooring, stone surfaces, decorative panels, kitchen
+          islands, specialty finishes, and surrounding living spaces.
+        </li>
+
+        <li>
+          <strong>✅ Experience with Complex Built-In Installations</strong>
+          <br />
+          Integrated appliances may require a more careful diagnostic approach
+          because ventilation, cabinet clearances, panel alignment, electrical
+          access, water connections, gas lines, drainage, and installation
+          conditions can affect performance.
+        </li>
+
+        <li>
+          <strong>✅ Service for Main Kitchens and Secondary Appliance Areas</strong>
+          <br />
+          Some estate residences include additional refrigeration, a second
+          kitchen, a butler’s pantry, a wine room, a bar area, a laundry room,
+          or an outdoor entertaining space. We provide careful service for
+          supported premium appliances throughout the property.
+        </li>
+
+        <li>
+          <strong>✅ OEM Parts Whenever Available</strong>
+          <br />
+          Your appliances are an investment. When replacement components are
+          needed, we identify the appropriate OEM, manufacturer-approved, or
+          compatible part for the specific appliance and model.
+        </li>
+
+        <li>
+          <strong>✅ Same-Day or Next-Day Scheduling</strong>
+          <br />
+          We offer priority scheduling in Holmby Hills whenever appointment
+          availability allows, with respect for your time, privacy, and home.
+        </li>
+
+        <li>
+          <strong>✅ Discreet, White-Glove Repair Experience</strong>
+          <br />
+          We maintain a clean workspace, communicate clearly, and provide the
+          professional service expected inside a carefully maintained
+          residence.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Our Luxury Repair Process</h3>
+
+      <ol>
+        <li>
+          <strong>Book Your Appointment</strong>
+          <br />
+          Call or schedule online. We will confirm your preferred time and
+          gather basic information about your appliance, residence, and any
+          gate, driveway, parking, staff-coordination, or property-access
+          requirements.
+        </li>
+
+        <li>
+          <strong>Arrival & Property Access</strong>
+          <br />
+          Your ZARICCI technician arrives for the scheduled appointment and
+          follows the appropriate parking, driveway, gate-entry, and
+          property-access procedures for your residence.
+        </li>
+
+        <li>
+          <strong>Brand-Specific Diagnosis</strong>
+          <br />
+          We inspect the appliance carefully and use the diagnostic approach
+          appropriate for the appliance type, symptoms, installation, and
+          surrounding cabinetry.
+        </li>
+
+        <li>
+          <strong>Clear, Upfront Estimate</strong>
+          <br />
+          We explain the issue and provide a transparent quote before
+          proceeding with the recommended repair.
+        </li>
+
+        <li>
+          <strong>Precision Repair & Performance Testing</strong>
+          <br />
+          We complete the approved repair, restore appliance function, and
+          test the relevant systems for proper performance.
+        </li>
+
+        <li>
+          <strong>Final Walkthrough & Service Warranty</strong>
+          <br />
+          We clean the work area, answer your questions, and explain the
+          warranty that applies to the completed service.
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Serving Holmby Hills Estate Homes and Private Residences</h3>
+
+      <p>
+        We serve Holmby Hills homes near Sunset Boulevard, Beverly Glen
+        Boulevard, Carolwood Drive, Brooklawn Drive, Club View Drive, Comstock
+        Avenue, and the surrounding residential streets. Our service is
+        designed for estate homes, gated properties, architecturally
+        distinctive residences, renovated kitchens, and carefully maintained
+        properties where clean workmanship, discretion, and precise
+        diagnostics matter.
+      </p>
+
+      <p>
+        Holmby Hills kitchens may include integrated refrigeration,
+        refrigerator and freezer columns, professional-style ranges, double
+        ovens, steam ovens, induction cooktops, panel-ready dishwashers, wine
+        storage, built-in coffee systems, warming drawers, and undercounter
+        beverage centers. These appliances may be installed within custom
+        cabinetry or surrounded by specialty finishes that require an
+        especially careful repair approach.
+      </p>
+    </section>
+
+    <section>
+      <h3>Careful Service for Built-In and Panel-Ready Appliances</h3>
+
+      <p>
+        Built-in luxury appliances require more than a quick visual
+        inspection. A refrigerator cooling issue may involve ventilation,
+        airflow, temperature sensors, condenser access, door alignment, or
+        installation conditions. A dishwasher leak may require careful
+        inspection around decorative panels, flooring, and cabinetry. A
+        range, wall oven, or cooktop issue may involve electrical access,
+        ignition components, gas connections, ventilation, or precise cabinet
+        integration.
+      </p>
+
+      <p>
+        At <strong>ZARICCI</strong>, we approach each appliance with attention
+        to its installation, surrounding finishes, and the practical needs of
+        the residence.
+      </p>
+    </section>
+
+    <section>
+      <h3>Service for Multiple Refrigeration Units and Specialty Appliances</h3>
+
+      <p>
+        Larger luxury homes may rely on more than one refrigerator. A property
+        may include a main built-in refrigerator, separate freezer columns,
+        refrigerator drawers, a wine storage system, an ice maker, a beverage
+        center, a bar refrigerator, or additional appliances in a secondary
+        kitchen or entertaining area.
+      </p>
+
+      <p>
+        When diagnosing these appliances, we pay attention to the equipment
+        itself as well as the surrounding installation. Ventilation, airflow,
+        water lines, drainage, cabinetry, panel alignment, condenser access,
+        and electrical connections can all influence performance.
+      </p>
+    </section>
+
+    <section>
+      <h3>Outdoor Kitchen and Entertaining-Area Appliance Repair</h3>
+
+      <p>
+        Some Holmby Hills properties include outdoor kitchens, poolside
+        entertaining areas, or covered patios with built-in BBQ grills, side
+        burners, outdoor refrigerators, beverage centers, ice makers, wine
+        coolers, pizza ovens, warming drawers, and ventilation systems.
+      </p>
+
+      <p>
+        Outdoor appliances face different conditions from indoor kitchen
+        equipment. Heat exposure, moisture, grease buildup, airflow
+        restrictions, ignition problems, and weather-related wear can all
+        affect performance. We inspect the appliance carefully and recommend
+        the appropriate repair for the model and installation.
+      </p>
+    </section>
+
+    <section>
+      <h3>Discreet Service for Private Residences</h3>
+
+      <p>
+        Privacy, communication, and careful coordination matter when servicing
+        an appliance inside a private estate residence. When booking your
+        appointment, let us know about gate instructions, driveway access,
+        parking requirements, household-staff coordination, or the location of
+        the appliance within the property.
+      </p>
+
+      <p>
+        Our goal is to complete the service efficiently while minimizing
+        disruption to the home and maintaining a clean, professional workspace
+        from arrival through final testing.
+      </p>
+    </section>
+
+    <section>
+      <h3>Your Home Deserves More Than a Quick Fix</h3>
+
+      <p>
+        Your luxury appliances were selected for their performance,
+        craftsmanship, and design. At <strong>ZARICCI</strong>, we deliver a
+        repair experience that reflects those same values—with skill,
+        discretion, and careful service from start to finish.
+      </p>
+    </section>
+
+    <section>
+      <h3>📞 Schedule Your Luxury Appliance Repair in Holmby Hills Today</h3>
+
+      <p>
+        Do not wait for a small appliance issue to become a major disruption.
+        <br />
+        Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online
+        now to schedule expert service in Holmby Hills, Los Angeles.
+      </p>
+
+      <p>
+        <strong>
+          ZARICCI — Because Holmby Hills Homes Deserve World-Class Repair.
+        </strong>
+      </p>
+    </section>
+
+    <Logos client:visible />
+    <Reviews client:idle />
+  </div>
 </Layout>

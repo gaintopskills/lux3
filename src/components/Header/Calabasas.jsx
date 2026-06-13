@@ -21,7 +21,7 @@ const ParallaxHeader = () => {
       </video>
 
       <div className="maintext">
-        <h1 class="gold-embossed" data-text="SUB-ZERO">Calabasas High-End & Luxury Appliance Repair<br/></h1>
+        <h1 class="gold-embossed" data-text="SUB-ZERO">High-End & Luxury Appliance Repair Calabasas<br/></h1>
         <img className="header-image" width="400" height="189" src="/high-end-and-luxury-appliance-repair-by-zaricci.webp" alt="High-end appliance repair Calabasas" fetchpriority="high"
   decoding="async"/>
         <p>
