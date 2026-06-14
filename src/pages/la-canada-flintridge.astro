@@ -1,256 +1,548 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
-import ParallaxHeader from '../components/Header/LaCanafaFlintridge.jsx';
-import Tabs from '../components/Tabs/LaCanadaFlintridge.jsx'
+import ParallaxHeader from '../components/Header/LaCanadaFlintridge.jsx';
+import Tabs from '../components/Tabs/LaCanadaFlintridge.jsx';
 import Logos from '../components/Logos.jsx';
+import Reviews from "../components/ReviewsHomePage.jsx";
+
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://luxuryappliance.repair/la-canada-flintridge/",
-  "name": "Luxury Appliance Repair by Zaricci",
-  "image": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
-  "url": "https://luxuryappliance.repair/la-canada-flintridge/",
-  "telephone": "+1-424-499-7788",
-  "priceRange": "$$$",
-  "description": "Luxury Appliance Repair by Zaricci provides premium appliance repair services to luxury homes and estates in La Cañada Flintridge. We specialize in high-end brands like Sub-Zero, Wolf, Miele, Thermador, and La Cornue, offering same-day, white-glove service with certified expertise.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "La Cañada Flintridge",
-    "addressRegion": "CA",
-    "postalCode": "91011",
-    "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 34.2068,
-    "longitude": -118.2000
-  },
-  "openingHoursSpecification": [
+  "@graph": [
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
-      ],
-      "opens": "08:00",
-      "closes": "20:00"
-    }
-  ],
-  "areaServed": {
-    "@type": "City",
-    "name": "La Cañada Flintridge",
-    "sameAs": "https://en.wikipedia.org/wiki/La_Cañada_Flintridge,_California"
-  },
-  "makesOffer": {
-    "@type": "Offer",
-    "itemOffered": {
-      "@type": "Service",
-      "name": "Luxury Appliance Repair Services",
-      "description": "In-home repair services for high-end appliances such as refrigerators, ovens, cooktops, dishwashers, and laundry units. Brands serviced include Sub-Zero, Wolf, Thermador, Miele, Viking, and more. Available across La Cañada Flintridge and surrounding areas.",
-      "areaServed": {
-        "@type": "Place",
-        "name": "La Cañada Flintridge Metropolitan Area"
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/la-canada-flintridge/#webpage",
+      "url": "https://luxuryappliance.repair/la-canada-flintridge/",
+      "name": "La Cañada Flintridge High-End & Luxury Appliance Repair",
+      "description": "Luxury appliance repair in La Cañada Flintridge for Sub-Zero, Wolf, Thermador, Miele, Viking, Gaggenau, La Cornue and other high-end appliance brands.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/la-canada-flintridge/#service"
       },
-      "provider": {
-        "@type": "Organization",
-        "name": "Luxury Appliance Repair by Zaricci"
-      }
-    }
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Appliance Repair Services",
-    "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair", "description": "Precision oven repair services for luxury brands, including convection, steam, and wall-mounted ovens." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair", "description": "High-end stove repair, including gas and electric models from premium manufacturers like Wolf and Viking." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair", "description": "Expert range repair for dual-fuel, gas, and induction units from top-tier brands." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair", "description": "Professional repair for gas, electric, and induction cooktops by brands like Bosch, Miele, and KitchenAid." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair", "description": "Servicing designer and built-in range hoods with issues such as lighting, motors, or venting." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair", "description": "Luxury washer repair for front-load, top-load, and smart models, including Miele and LG Signature." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair", "description": "In-home dryer repair for gas and electric units with vent or heating issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair", "description": "Dishwasher repair services for built-in and panel-ready units from Miele, Bosch, and more." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair", "description": "Built-in microwave repair for drawer, over-the-range, and luxury convection microwave models." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair", "description": "Certified refrigerator repair for built-in and integrated models, including Sub-Zero and Thermador." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair", "description": "Freezer repair for upright, drawer, and column units with cooling or defrost issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair", "description": "Repair services for electric and gas fireplaces, including ignition, remote control, and burner issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair", "description": "Outdoor BBQ and grill repair for built-in and freestanding models, including burner and ignition repair." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair", "description": "Luxury wine cooler repair services for dual-zone and built-in models from brands like Sub-Zero and Liebherr." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair", "description": "Specialized wine cellar repair for climate control systems, lighting, and humidity regulation." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair", "description": "Repair for integrated coffee systems from brands like Miele and Gaggenau, including grinder, brew unit, and steam wand issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair", "description": "Expert steam oven repair for luxury models with water tank, sensor, or steam generation problems." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair", "description": "Warming drawer repair for built-in units, including thermostat and heating element issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair", "description": "Repair services for combination microwave and convection ovens with high-end control systems." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair", "description": "In-home repair for built-in and undercounter ice makers from Sub-Zero, Scotsman, and other luxury brands." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair", "description": "Repair for premium trash compactors with drawer, motor, or compression issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair", "description": "Service for built-in beverage centers and drink fridges from U-Line, Perlick, and True Residential." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair", "description": "Commercial and residential kegerator repair including cooling, taps, and CO2 systems." }}
-    ]
-  },
-  "brand": [
-    { "@type": "Brand", "name": "AGA" },
-    { "@type": "Brand", "name": "Big Chill" },
-    { "@type": "Brand", "name": "BlueStar" },
-    { "@type": "Brand", "name": "Bosch" },
-    { "@type": "Brand", "name": "Dacor" },
-    { "@type": "Brand", "name": "Fisher & Paykel" },
-    { "@type": "Brand", "name": "Gaggenau" },
-    { "@type": "Brand", "name": "Jenn-Air" },
-    { "@type": "Brand", "name": "KitchenAid" },
-    { "@type": "Brand", "name": "La Cornue" },
-    { "@type": "Brand", "name": "Miele" },
-    { "@type": "Brand", "name": "Smeg" },
-    { "@type": "Brand", "name": "Sub-Zero" },
-    { "@type": "Brand", "name": "Thermador" },
-    { "@type": "Brand", "name": "Viking" },
-    { "@type": "Brand", "name": "Wolf" },
-    { "@type": "Brand", "name": "Elmira Stove Works" },
-    { "@type": "Brand", "name": "Monogram" },
-    { "@type": "Brand", "name": "Cove" },
-    { "@type": "Brand", "name": "Bertazzoni" },
-    { "@type": "Brand", "name": "ZLINE" },
-    { "@type": "Brand", "name": "ILVE" },
-    { "@type": "Brand", "name": "Fulgor Milano" },
-    { "@type": "Brand", "name": "Lacanche" },
-    { "@type": "Brand", "name": "Robam" },
-    { "@type": "Brand", "name": "Signature Kitchen Suite" },
-    { "@type": "Brand", "name": "True Residential" },
-    { "@type": "Brand", "name": "Hestan" },
-    { "@type": "Brand", "name": "Whirlpool Black Stainless" },
-    { "@type": "Brand", "name": "JennAir Noir" }
-  ],
-  "potentialAction": [
-    {
-      "@type": "ReserveAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://luxuryappliance.repair/book/",
-        "inLanguage": "en",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
-      },
-      "result": {
-        "@type": "Reservation",
-        "name": "Service Appointment"
+      "isPartOf": {
+        "@id": "https://luxuryappliance.repair/#website"
       }
     },
     {
-      "@type": "CommunicateAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "tel:+14244997788",
-        "actionPlatform": [
-          "http://schema.org/MobileWebPlatform"
-        ]
+      "@type": "WebSite",
+      "@id": "https://luxuryappliance.repair/#website",
+      "url": "https://luxuryappliance.repair/",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "publisher": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
       }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/la-canada-flintridge/#service",
+      "name": "La Cañada Flintridge Luxury Appliance Repair",
+      "serviceType": "High-end and luxury appliance repair in La Cañada Flintridge",
+      "url": "https://luxuryappliance.repair/la-canada-flintridge/",
+      "description": "Luxury Appliance Repair by Zaricci provides high-end appliance repair in La Cañada Flintridge for built-in refrigerators, ranges, ovens, cooktops, dishwashers, wine coolers, outdoor kitchen appliances, and other premium home appliances.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "La Cañada Flintridge, CA"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "La Cañada Flintridge Luxury Appliance Repair Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Range Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Oven Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cooktop Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Range Hood Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Refrigerator Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Freezer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dishwasher Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dryer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Washing Machine Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wine Cooler Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wine Cellar Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Beverage Center Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ice Maker Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "BBQ Grill Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Outdoor Kitchen Appliance Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Steam Oven Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Warming Drawer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Speed Oven / Combi-Oven Repair"
+            }
+          }
+        ]
+      },
+      "brand": [
+        {
+          "@type": "Brand",
+          "name": "Sub-Zero"
+        },
+        {
+          "@type": "Brand",
+          "name": "Wolf"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thermador"
+        },
+        {
+          "@type": "Brand",
+          "name": "Miele"
+        },
+        {
+          "@type": "Brand",
+          "name": "Viking"
+        },
+        {
+          "@type": "Brand",
+          "name": "Gaggenau"
+        },
+        {
+          "@type": "Brand",
+          "name": "La Cornue"
+        },
+        {
+          "@type": "Brand",
+          "name": "Lacanche"
+        },
+        {
+          "@type": "Brand",
+          "name": "AGA"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bertazzoni"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fulgor Milano"
+        },
+        {
+          "@type": "Brand",
+          "name": "ILVE"
+        },
+        {
+          "@type": "Brand",
+          "name": "Officine Gullo"
+        },
+        {
+          "@type": "Brand",
+          "name": "Monogram"
+        },
+        {
+          "@type": "Brand",
+          "name": "Dacor"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fisher & Paykel"
+        },
+        {
+          "@type": "Brand",
+          "name": "True Residential"
+        },
+        {
+          "@type": "Brand",
+          "name": "JennAir"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bosch"
+        },
+        {
+          "@type": "Brand",
+          "name": "Cove"
+        },
+        {
+          "@type": "Brand",
+          "name": "Liebherr"
+        },
+        {
+          "@type": "Brand",
+          "name": "Signature Kitchen Suite"
+        },
+        {
+          "@type": "Brand",
+          "name": "Hestan"
+        },
+        {
+          "@type": "Brand",
+          "name": "BlueStar"
+        },
+        {
+          "@type": "Brand",
+          "name": "American Range"
+        },
+        {
+          "@type": "Brand",
+          "name": "Big Chill"
+        },
+        {
+          "@type": "Brand",
+          "name": "Smeg"
+        },
+        {
+          "@type": "Brand",
+          "name": "Heartland"
+        },
+        {
+          "@type": "Brand",
+          "name": "Kalamazoo"
+        },
+        {
+          "@type": "Brand",
+          "name": "Lynx"
+        },
+        {
+          "@type": "Brand",
+          "name": "DCS"
+        },
+        {
+          "@type": "Brand",
+          "name": "Alfresco"
+        },
+        {
+          "@type": "Brand",
+          "name": "Twin Eagles"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fire Magic"
+        },
+        {
+          "@type": "Brand",
+          "name": "Caliber"
+        },
+        {
+          "@type": "Brand",
+          "name": "Asko"
+        },
+        {
+          "@type": "Brand",
+          "name": "Elmira Stove Works"
+        },
+        {
+          "@type": "Brand",
+          "name": "FiveStar"
+        },
+        {
+          "@type": "Brand",
+          "name": "Forno"
+        },
+        {
+          "@type": "Brand",
+          "name": "Garland"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thor"
+        },
+        {
+          "@type": "Brand",
+          "name": "ZLINE"
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "image": "https://luxuryappliance.repair/high-end-and-luxury-appliance-repair-by-zaricci.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "description": "Luxury Appliance Repair by Zaricci provides high-end appliance repair for luxury homes, custom kitchens, built-in refrigerators, pro-style ranges, ovens, cooktops, dishwashers, wine coolers, and outdoor kitchen appliances.",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "La Cañada Flintridge, CA"
+        },
+        {
+          "@type": "City",
+          "name": "Los Angeles"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Los Angeles County"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Orange County"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ventura County"
+        }
+      ],
+      "potentialAction": [
+        {
+          "@type": "ReserveAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://luxuryappliance.repair/book/",
+            "inLanguage": "en",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          },
+          "result": {
+            "@type": "Reservation",
+            "name": "Service Appointment"
+          }
+        },
+        {
+          "@type": "CommunicateAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "tel:+14244997788",
+            "actionPlatform": [
+              "http://schema.org/MobileWebPlatform"
+            ]
+          }
+        }
+      ]
     }
   ]
 }
 ---
+
 <Layout
-	title="Local Luxury Appliance Repair – La Cañada Flintridge"
-	description="High-end appliances repair - La Cañada Flintridge by certified technicians. Same-day appointments are available. Call today!"
-	structuredData={structuredData}
+  title="La Cañada Flintridge High-End & Luxury Appliance Repair | (424) 499-7788"
+  description="Book Online ★★★★★ High-End & Luxury Appliance Repair - La Cañada Flintridge for La Cornue, Lacanche, Gaggenau, Bertazzoni, Monogram, Dacor, Fisher & Paykel, True, Sub-Zero, Wolf, Viking, Thermador, Miele, Bosch & other premium brands."
+  structuredData={structuredData}
+  ogImage="/high-end-and-luxury-appliance-repair-by-zaricci.webp"
 >
-<ParallaxHeader client:idle/>
-<section>
-  <h1>Luxury Appliance Repair in La Cañada Flintridge, CA</h1>
-  <p><strong>Precision Service for Homes That Expect the Best</strong></p>
-  <p>In La Cañada Flintridge, elegance is woven into every aspect of life—from the beautiful estates nestled against the San Gabriel Mountains to the meticulously designed modern homes throughout the city. Here, premium appliances from brands like Sub-Zero, Wolf, Thermador, Miele, La Cornue, Gaggenau, and Viking are not just a convenience—they are an essential part of everyday living.</p>
-  <p>At <strong>Luxury Appliance Repair by Zaricci</strong>, we proudly offer high-end appliance repair in La Cañada Flintridge, delivering white-glove service, certified brand expertise, and genuine OEM parts to homes where only the best will do.</p>
-</section>
-<Tabs client:visible />
-<section>
-  <h3>🔧 Why La Cañada Flintridge Homeowners Trust ZARICCI</h3>
-  <ul>
-    <li><strong>✅ Certified Expertise Across Luxury Brands</strong><br/>Our technicians are trained and specialize in the intricate systems behind today’s most advanced appliances, from custom refrigeration units to smart dual-fuel cooking ranges.</li>
-    <li><strong>✅ Only Genuine Manufacturer Parts</strong><br/>We use OEM parts to ensure optimal performance, maintain warranties, and extend the life of your investment—because your luxury appliances deserve the real thing.</li>
-    <li><strong>✅ Same-Day or Next-Day Service</strong><br/>We offer priority scheduling in La Cañada Flintridge and surrounding areas, arriving on time, fully prepared to complete your repair swiftly and discreetly.</li>
-    <li><strong>✅ White-Glove, Respectful Service</strong><br/>From the moment we arrive, we protect your floors, surfaces, and cabinetry. Our team works cleanly and quietly, providing a truly premium in-home experience.</li>
-  </ul>
-</section>
+  <ParallaxHeader client:idle />
 
-<section>
-  <h3>🛠️ High-End Appliances We Repair in La Cañada Flintridge</h3>
-  <h4>❄️ Luxury Refrigerators & Freezers</h4>
-  <ul>
-    <li>Sub-Zero, Thermador, Miele</li>
-    <li>Temperature inconsistencies</li>
-    <li>Ice maker failures</li>
-    <li>Water dispenser issues</li>
-    <li>Built-in panel alignment and sealing problems</li>
-  </ul>
-  <h4>🔥 Ranges, Wall Ovens & Cooktops</h4>
-  <ul>
-    <li>Wolf, La Cornue, Gaggenau, Viking</li>
-    <li>Burner ignition failures</li>
-    <li>Oven not heating evenly</li>
-    <li>Smart control panel or Wi-Fi connectivity issues</li>
-    <li>Steam oven and convection oven repairs</li>
-  </ul>
-  <h4>🚿 Luxury Dishwashers</h4>
-  <ul>
-    <li>Miele, Bosch, Cove</li>
-    <li>Drainage or filling problems</li>
-    <li>Poor cleaning or drying results</li>
-    <li>Cycle interruptions and control panel malfunctions</li>
-  </ul>
-  <h4>🧺 High-End Washers & Dryers</h4>
-  <ul>
-    <li>Miele, LG Signature, Fisher & Paykel</li>
-    <li>Drum not spinning or draining</li>
-    <li>Dryer overheating or not heating at all</li>
-    <li>Error codes and smart sensor failures</li>
-  </ul>
-  <h4>☕ Specialty Built-In Appliances</h4>
-  <ul>
-    <li>Wine coolers, espresso machines, warming drawers</li>
-    <li>Temperature inconsistencies</li>
-    <li>Water or airflow blockages</li>
-    <li>Smart home integration issues</li>
-  </ul>
-</section>
+  <div class="maincontent" id="webpage">
+    <h2>Luxury Appliance Repair in La Cañada Flintridge, CA</h2>
 
-<section>
-  <h3>👨‍🔧 The ZARICCI Service Process</h3>
-  <ol>
-    <li><strong>Schedule Your Appointment</strong><br/>Book by phone or online. We’ll arrange a visit at your convenience, coordinating any necessary property access requirements.</li>
-    <li><strong>On-Time Diagnosis</strong><br/>A certified ZARICCI technician arrives promptly and conducts a thorough diagnostic assessment.</li>
-    <li><strong>Transparent, Detailed Estimate</strong><br/>We explain the problem clearly and provide a written, upfront quote covering parts, labor, and repair timeline.</li>
-    <li><strong>Precision Repair with OEM Parts</strong><br/>We complete all repairs using genuine manufacturer parts to restore full functionality and longevity.</li>
-    <li><strong>Testing, Clean-Up & Service Guarantee</strong><br/>After repairs, we run comprehensive tests and leave your home as clean as we found it—backed by our satisfaction guarantee.</li>
-  </ol>
-</section>
+    <p>
+      In La Cañada Flintridge, appliance repair is often performed inside custom foothill estates, canyon-adjacent residences, mid-century homes, and carefully remodeled kitchens near Foothill Boulevard, Angeles Crest Highway, Descanso Gardens, and the residential streets extending toward the San Gabriel Mountains. These homes frequently include built-in refrigerators, panel-ready appliances, pro-style ranges, wine storage, outdoor kitchens, and European appliance brands that require precise diagnostics, clean workmanship, and a careful repair approach.
+    </p>
+  </div>
 
-<section>
-  <h3>🏡 Proudly Serving All of La Cañada Flintridge</h3>
-  <p>We serve estates, custom homes, and luxury residences throughout:</p>
-  <ul>
-    <li>Descanso Gardens Area</li>
-    <li>Flintridge Estates</li>
-    <li>Sagebrush Neighborhood</li>
-    <li>Meadow Grove</li>
-    <li>Upper Foothill Boulevard Estates</li>
-    <li>Deodar Area</li>
-  </ul>
-  <p>Whether you’re located near Descanso Drive, Alta Canyada, or tucked into the hills, <strong>ZARICCI</strong> is the trusted choice for homeowners who demand discreet, elite service.</p>
-</section>
+  <Tabs client:visible />
 
-<section>
-  <h3>Expect More from Your Service Provider—And Get It</h3>
-  <p>Your luxury appliances were built to offer reliability, performance, and beauty. At <strong>ZARICCI</strong>, we deliver a service experience that honors that investment—combining precision, professionalism, and genuine care for your home.</p>
-</section>
+  <div class="maincontent" id="service">
+    <section>
+      <h3>Why La Cañada Flintridge Homeowners Rely on ZARICCI</h3>
 
-<section>
-  <h3>📞 Schedule Your Luxury Appliance Repair in La Cañada Flintridge Today</h3>
-  <p>Trust your premium appliances to the experts who understand true luxury.<br/>Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online now for five-star service you can trust.</p>
-  <p><strong>👉 ZARICCI — Precision Repairs for La Cañada Flintridge’s Finest Homes.</strong></p>
-</section>
- <Logos client:visible />
+      <ul>
+        <li>
+          <strong>✅ Trained in All Major Luxury Brands</strong>
+          <br />
+          We specialize in high-performance, fully integrated, and smart appliances—whether you’re working with a dual-fuel Wolf range, a panel-ready Sub-Zero, or a Miele steam oven. Our technicians are licensed and highly trained in each brand’s technology.
+        </li>
+
+        <li>
+          <strong>✅ OEM Parts. No Compromises.</strong>
+          <br />
+          Your appliances are an investment—we protect them using genuine manufacturer parts that meet original specifications for safety, longevity, and performance.
+        </li>
+
+        <li>
+          <strong>✅ Same-Day or Next-Day Service</strong>
+          <br />
+          We offer priority scheduling in La Cañada Flintridge and always arrive on time, with full respect for your time, privacy, and space.
+        </li>
+
+        <li>
+          <strong>✅ Discreet, White-Glove Repair Experience</strong>
+          <br />
+          We wear protective gear, maintain clean workspaces, and communicate with the level of professionalism expected in La Cañada Flintridge’s custom estates, foothill homes, and carefully designed kitchens.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Our Luxury Repair Process</h3>
+
+      <ol>
+        <li>
+          <strong>Book Your Appointment</strong>
+          <br />
+          Call or schedule online. We’ll confirm your preferred time and gather basic info about your appliance.
+        </li>
+
+        <li>
+          <strong>On-Time Arrival & Brand-Specific Diagnosis</strong>
+          <br />
+          Your trained ZARICCI technician arrives promptly and performs a detailed inspection using specialized diagnostic tools.
+        </li>
+
+        <li>
+          <strong>Clear, Upfront Estimate</strong>
+          <br />
+          We walk you through the issue and provide a transparent quote—no pressure, no surprises.
+        </li>
+
+        <li>
+          <strong>Precision Repair Using OEM Parts</strong>
+          <br />
+          We complete the repair using authentic parts, restore function, and run comprehensive performance testing.
+        </li>
+
+        <li>
+          <strong>Final Walkthrough & Service Warranty</strong>
+          <br />
+          We clean up, answer your questions, and back our work with a warranty—because confidence is part of the experience.
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Serving La Cañada Flintridge’s Foothill Residences</h3>
+
+      <p>
+        We serve residences throughout La Cañada Flintridge, including homes near Foothill Boulevard, Angeles Crest Highway, La Cañada Boulevard, Descanso Drive, Gould Avenue, Hillard Avenue, and the residential streets surrounding Descanso Gardens. Our service is designed for custom estates, foothill properties, established family homes, and luxury kitchens where careful diagnostics, clean workmanship, and discretion matter.
+      </p>
+    </section>
+
+    <section>
+      <h3>Your Home Deserves More Than a Quick Fix</h3>
+
+      <p>
+        Your luxury appliances were chosen for their performance, craftsmanship, and style. At <strong>ZARICCI</strong>, we deliver a repair experience that reflects those same values—with skill, discretion, and white-glove care from start to finish.
+      </p>
+    </section>
+
+    <section>
+      <h3>📞 Schedule Your Luxury Appliance Repair in La Cañada Flintridge Today</h3>
+
+      <p>
+        Don’t wait for a small issue to become a major disruption.
+        <br />
+        Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online now to schedule expert service in La Cañada Flintridge, CA.
+      </p>
+
+      <p>
+        <strong>ZARICCI — Because La Cañada Flintridge Homes Deserve World-Class Repair.</strong>
+      </p>
+    </section>
+
+    <Logos client:visible />
+    <Reviews client:idle />
+  </div>
 </Layout>

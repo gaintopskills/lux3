@@ -1,274 +1,563 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
+import ParallaxHeader from '../components/Header/RollingHillsEstates.jsx';
+import Tabs from '../components/Tabs/RollingHillsEstates.jsx';
 import Logos from '../components/Logos.jsx';
+import Reviews from "../components/ReviewsHomePage.jsx";
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://luxuryappliance.repair/rolling-hills-estates/",
-  "name": "Luxury Appliance Repair by Zaricci",
-  "image": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
-  "url": "https://luxuryappliance.repair/rolling-hills-estates/",
-  "telephone": "+1-424-499-7788",
-  "priceRange": "$$$",
-  "description": "Luxury Appliance Repair by Zaricci offers elite, white-glove in-home appliance repair services for equestrian estates and private gated homes in Rolling Hills Estates. We specialize in premium brands like Sub-Zero, Wolf, Thermador, Miele, La Cornue, and more—providing discreet, certified repairs with same-day service available.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Rolling Hills Estates",
-    "addressRegion": "CA",
-    "postalCode": "90274",
-    "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 33.7875,
-    "longitude": -118.3584
-  },
-  "openingHoursSpecification": [
+  "@graph": [
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
-      ],
-      "opens": "08:00",
-      "closes": "20:00"
-    }
-  ],
-  "areaServed": {
-    "@type": "City",
-    "name": "Rolling Hills Estates",
-    "sameAs": "https://en.wikipedia.org/wiki/Rolling_Hills_Estates,_California"
-  },
-  "makesOffer": {
-    "@type": "Offer",
-    "itemOffered": {
-      "@type": "Service",
-      "name": "Luxury Appliance Repair Services",
-      "description": "In-home repair services for high-end appliances including refrigerators, ovens, cooktops, dishwashers, wine coolers, built-in coffee machines, and laundry units. Brands serviced include Sub-Zero, Wolf, Thermador, Miele, Viking, La Cornue, and more. Serving Rolling Hills Estates with precision and discretion.",
-      "areaServed": {
-        "@type": "Place",
-        "name": "Rolling Hills Estates Metropolitan Area"
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/rolling-hills-estates/#webpage",
+      "url": "https://luxuryappliance.repair/rolling-hills-estates/",
+      "name": "Rolling Hills Estates High-End & Luxury Appliance Repair",
+      "description": "Luxury appliance repair in Rolling Hills Estates for Sub-Zero, Wolf, Thermador, Miele, Viking, Gaggenau, La Cornue and other high-end appliance brands.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/rolling-hills-estates/#service"
       },
-      "provider": {
-        "@type": "Organization",
-        "name": "Luxury Appliance Repair by Zaricci"
-      }
-    }
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Appliance Repair Services",
-    "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Repair", "description": "Precision oven repair services for luxury brands, including convection, steam, and wall-mounted ovens." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Repair", "description": "High-end stove repair, including gas and electric models from premium manufacturers like Wolf and Viking." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Repair", "description": "Expert range repair for dual-fuel, gas, and induction units from top-tier brands." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair", "description": "Professional repair for gas, electric, and induction cooktops by Bosch, Miele, and KitchenAid." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Range Hood Repair", "description": "Servicing designer and built-in range hoods with motor, lighting, and venting repairs." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washing Machine Repair", "description": "Luxury washer repair for front-load, top-load, and smart models, including Miele and LG Signature." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair", "description": "In-home dryer repair for gas and electric units with vent or heating issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair", "description": "Built-in and panel-ready dishwasher repair services for premium brands like Miele, Bosch, and Cove." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microwave Repair", "description": "Luxury microwave repair including drawer, built-in, and convection microwave models." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair", "description": "Certified refrigerator repair for built-in and integrated models including Sub-Zero and Thermador." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freezer Repair", "description": "Freezer repair services for upright, drawer, and column units from top brands." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Repair", "description": "Luxury fireplace repair for gas and electric units, including ignition, remote control, and burner issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BBQ Grill Repair", "description": "Outdoor luxury BBQ and built-in grill repair for burners, ignition systems, and controls." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair", "description": "Luxury wine cooler repair services for dual-zone and built-in models by Sub-Zero, Liebherr, and others." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Repair", "description": "Climate control, humidity regulation, and cooling repairs for custom luxury wine cellars." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Built-In Coffee Machine Repair", "description": "Built-in coffee system repair for Miele, Gaggenau, and Wolf brands including grinders and steam units." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Steam Oven Repair", "description": "Steam oven repair including tank, sensor, and steam generation unit repairs." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Warming Drawer Repair", "description": "Repair services for luxury warming drawers including heating elements and thermostats." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Speed Oven / Combi-Oven Repair", "description": "Luxury combi-oven repair for microwave-convection systems from premium brands." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair", "description": "Built-in ice maker repair for brands like Sub-Zero, True, and Scotsman." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trash Compactor Repair", "description": "High-end trash compactor repairs for mechanical and compression issues." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beverage Center Repair", "description": "Repair for built-in beverage centers from True Residential, Perlick, and others." }},
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kegerator Repair", "description": "Luxury kegerator repair services for residential and commercial units." }}
-    ]
-  },
-  "brand": [
-    { "@type": "Brand", "name": "AGA" },
-    { "@type": "Brand", "name": "American Range" },
-    { "@type": "Brand", "name": "Bertazzoni" },
-    { "@type": "Brand", "name": "Fulgor Milano" },
-    { "@type": "Brand", "name": "Gaggenau" },
-    { "@type": "Brand", "name": "ILVE" },
-    { "@type": "Brand", "name": "Lacanche" },
-    { "@type": "Brand", "name": "La Cornue" },
-    { "@type": "Brand", "name": "Big Chill" },
-    { "@type": "Brand", "name": "BlueStar" },
-    { "@type": "Brand", "name": "Bosch" },
-    { "@type": "Brand", "name": "Cove" },
-    { "@type": "Brand", "name": "Dacor" },
-    { "@type": "Brand", "name": "Elmira Stove Works" },
-    { "@type": "Brand", "name": "FiveStar" },
-    { "@type": "Brand", "name": "Hestan" },
-    { "@type": "Brand", "name": "JennAir" },
-    { "@type": "Brand", "name": "Miele" },
-    { "@type": "Brand", "name": "Signature Kitchen Suite" },
-    { "@type": "Brand", "name": "Smeg" },
-    { "@type": "Brand", "name": "Sub-Zero" },
-    { "@type": "Brand", "name": "Thermador" },
-    { "@type": "Brand", "name": "True Residential" },
-    { "@type": "Brand", "name": "Viking" },
-    { "@type": "Brand", "name": "Wolf" },
-    { "@type": "Brand", "name": "ZLINE" },
-    { "@type": "Brand", "name": "Monogram" },
-    { "@type": "Brand", "name": "Fisher & Paykel" },  
-    { "@type": "Brand", "name": "Forno" },  
-    { "@type": "Brand", "name": "Thor" },  
-    { "@type": "Brand", "name": "Asko" },  
-    { "@type": "Brand", "name": "Liebherr" },  
-    { "@type": "Brand", "name": "Officine Gullo" }, 
-    { "@type": "Brand", "name": "Zephyr" }, 
-    { "@type": "Brand", "name": "Wine Guardian" }, 
-    { "@type": "Brand", "name": "Garland" },
-    { "@type": "Brand", "name": "Heartland" },
-    { "@type": "Brand", "name": "Kalamazoo" },
-    { "@type": "Brand", "name": "Lynx" },
-    { "@type": "Brand", "name": "Hestan Outdoor" },
-    { "@type": "Brand", "name": "Viking Outdoor" },
-    { "@type": "Brand", "name": "DCS" },
-    { "@type": "Brand", "name": "Alfresco" },
-    { "@type": "Brand", "name": "Twin Eagles" },
-    { "@type": "Brand", "name": "Fire Magic" },
-    { "@type": "Brand", "name": "Wolf Outdoors" },
-    { "@type": "Brand", "name": "True Residential Outdoor" },
-    { "@type": "Brand", "name": "Caliber" }
-  ],
-  "potentialAction": [
-    {
-      "@type": "ReserveAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://luxuryappliance.repair/book/",
-        "inLanguage": "en",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
-      },
-      "result": {
-        "@type": "Reservation",
-        "name": "Service Appointment"
+      "isPartOf": {
+        "@id": "https://luxuryappliance.repair/#website"
       }
     },
     {
-      "@type": "CommunicateAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "tel:+14244997788",
-        "actionPlatform": [
-          "http://schema.org/MobileWebPlatform"
-        ]
+      "@type": "WebSite",
+      "@id": "https://luxuryappliance.repair/#website",
+      "url": "https://luxuryappliance.repair/",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "publisher": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
       }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/rolling-hills-estates/#service",
+      "name": "Rolling Hills Estates Luxury Appliance Repair",
+      "serviceType": "High-end and luxury appliance repair in Rolling Hills Estates",
+      "url": "https://luxuryappliance.repair/rolling-hills-estates/",
+      "description": "Luxury Appliance Repair by Zaricci provides high-end appliance repair in Rolling Hills Estates for built-in refrigerators, ranges, ovens, cooktops, dishwashers, wine coolers, outdoor kitchen appliances, and other premium home appliances.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Rolling Hills Estates, CA"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Rolling Hills Estates Luxury Appliance Repair Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Range Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Oven Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cooktop Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Range Hood Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Refrigerator Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Freezer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dishwasher Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dryer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Washing Machine Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wine Cooler Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wine Cellar Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Beverage Center Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ice Maker Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "BBQ Grill Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Outdoor Kitchen Appliance Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Steam Oven Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Warming Drawer Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Speed Oven / Combi-Oven Repair"
+            }
+          }
+        ]
+      },
+      "brand": [
+        {
+          "@type": "Brand",
+          "name": "Sub-Zero"
+        },
+        {
+          "@type": "Brand",
+          "name": "Wolf"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thermador"
+        },
+        {
+          "@type": "Brand",
+          "name": "Miele"
+        },
+        {
+          "@type": "Brand",
+          "name": "Viking"
+        },
+        {
+          "@type": "Brand",
+          "name": "Gaggenau"
+        },
+        {
+          "@type": "Brand",
+          "name": "La Cornue"
+        },
+        {
+          "@type": "Brand",
+          "name": "Lacanche"
+        },
+        {
+          "@type": "Brand",
+          "name": "AGA"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bertazzoni"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fulgor Milano"
+        },
+        {
+          "@type": "Brand",
+          "name": "ILVE"
+        },
+        {
+          "@type": "Brand",
+          "name": "Officine Gullo"
+        },
+        {
+          "@type": "Brand",
+          "name": "Monogram"
+        },
+        {
+          "@type": "Brand",
+          "name": "Dacor"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fisher & Paykel"
+        },
+        {
+          "@type": "Brand",
+          "name": "True Residential"
+        },
+        {
+          "@type": "Brand",
+          "name": "JennAir"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bosch"
+        },
+        {
+          "@type": "Brand",
+          "name": "Cove"
+        },
+        {
+          "@type": "Brand",
+          "name": "Liebherr"
+        },
+        {
+          "@type": "Brand",
+          "name": "Signature Kitchen Suite"
+        },
+        {
+          "@type": "Brand",
+          "name": "Hestan"
+        },
+        {
+          "@type": "Brand",
+          "name": "BlueStar"
+        },
+        {
+          "@type": "Brand",
+          "name": "American Range"
+        },
+        {
+          "@type": "Brand",
+          "name": "Big Chill"
+        },
+        {
+          "@type": "Brand",
+          "name": "Smeg"
+        },
+        {
+          "@type": "Brand",
+          "name": "Heartland"
+        },
+        {
+          "@type": "Brand",
+          "name": "Kalamazoo"
+        },
+        {
+          "@type": "Brand",
+          "name": "Lynx"
+        },
+        {
+          "@type": "Brand",
+          "name": "DCS"
+        },
+        {
+          "@type": "Brand",
+          "name": "Alfresco"
+        },
+        {
+          "@type": "Brand",
+          "name": "Twin Eagles"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fire Magic"
+        },
+        {
+          "@type": "Brand",
+          "name": "Caliber"
+        },
+        {
+          "@type": "Brand",
+          "name": "Asko"
+        },
+        {
+          "@type": "Brand",
+          "name": "Elmira Stove Works"
+        },
+        {
+          "@type": "Brand",
+          "name": "FiveStar"
+        },
+        {
+          "@type": "Brand",
+          "name": "Forno"
+        },
+        {
+          "@type": "Brand",
+          "name": "Garland"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thor"
+        },
+        {
+          "@type": "Brand",
+          "name": "ZLINE"
+        }
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "image": "https://luxuryappliance.repair/high-end-and-luxury-appliance-repair-by-zaricci.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "description": "Luxury Appliance Repair by Zaricci provides high-end appliance repair for luxury homes, custom kitchens, built-in refrigerators, pro-style ranges, ovens, cooktops, dishwashers, wine coolers, and outdoor kitchen appliances.",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Rolling Hills Estates, CA"
+        },
+        {
+          "@type": "City",
+          "name": "Los Angeles"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Los Angeles County"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Orange County"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ventura County"
+        }
+      ],
+      "potentialAction": [
+        {
+          "@type": "ReserveAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://luxuryappliance.repair/book/",
+            "inLanguage": "en",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          },
+          "result": {
+            "@type": "Reservation",
+            "name": "Service Appointment"
+          }
+        },
+        {
+          "@type": "CommunicateAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "tel:+14244997788",
+            "actionPlatform": [
+              "http://schema.org/MobileWebPlatform"
+            ]
+          }
+        }
+      ]
     }
   ]
 }
 ---
+
 <Layout
-	title="Local Luxury Appliance Repair – Rolling Hills Estates"
-	description="High-end appliances repair - Rolling Hills Estates by certified technicians. Same-day appointments are available. Call today!"
-	structuredData={structuredData}
+  title="Rolling Hills Estates High-End & Luxury Appliance Repair | (424) 499-7788"
+  description="Book Online ★★★★★ High-End & Luxury Appliance Repair - Rolling Hills Estates for La Cornue, Lacanche, Gaggenau, Bertazzoni, Monogram, Dacor, Fisher & Paykel, True, Sub-Zero, Wolf, Viking, Thermador, Miele, Bosch & other premium brands."
+  structuredData={structuredData}
+  ogImage="/high-end-and-luxury-appliance-repair-by-zaricci.webp"
 >
-<div style="margin: 50px">
-<section>
-  <h1>Luxury Appliance Repair in Rolling Hills Estates, CA</h1>
-  <p><strong>White-Glove Service for Equestrian Estates and Gated Homes</strong></p>
-  <p>In Rolling Hills Estates, where tree-lined lanes, expansive ranch properties, and private gated communities define everyday luxury, your home's appliances are more than conveniences—they are an essential part of your lifestyle. When these high-end systems require service, you deserve repairs that match the quality, precision, and elegance of your surroundings.</p>
-  <p>At <strong>Luxury Appliance Repair by Zaricci</strong>, we proudly offer high-end appliance repair in Rolling Hills Estates, specializing in prestigious brands like Sub-Zero, Wolf, Thermador, Miele, Gaggenau, Viking, La Cornue, and more. We provide certified expertise, genuine OEM parts, and white-glove service trusted by Rolling Hills Estates' most discerning homeowners.</p>
-</section>
+  <ParallaxHeader client:idle />
 
-<section>
-  <h3>🔧 Why Rolling Hills Estates Homeowners Trust ZARICCI</h3>
-  <ul>
-    <li><strong>✅ Factory-Certified Technicians</strong><br>Our specialists are expertly trained to repair luxury built-in refrigeration systems, professional-grade cooking appliances, steam ovens, and more with factory-level precision.</li>
-    <li><strong>✅ Genuine OEM Parts for Lasting Performance</strong><br>We use only authentic manufacturer-approved parts to preserve your appliance’s performance, warranty, and original design integrity.</li>
-    <li><strong>✅ Same-Day or Next-Day Service Available</strong><br>We offer expedited service throughout Rolling Hills Estates, ensuring your appliances are restored quickly and expertly.</li>
-    <li><strong>✅ White-Glove In-Home Care</strong><br>We respect your home’s craftsmanship—protecting floors, working discreetly, and leaving your space immaculate after every visit.</li>
-  </ul>
-</section>
+  <div class="maincontent" id="webpage">
+    <h2>Luxury Appliance Repair in Rolling Hills Estates, CA</h2>
 
-<section>
-  <h3>🛠️ What We Repair in Rolling Hills Estates</h3>
-  <h4>❄️ Luxury Refrigerators & Freezers</h4>
-  <ul>
-    <li><strong>Brands:</strong> Sub-Zero, Thermador, Miele</li>
-    <li>Cooling inconsistencies</li>
-    <li>Ice maker malfunctions</li>
-    <li>Water dispenser and compressor issues</li>
-    <li>Panel repairs and seal replacements</li>
-  </ul>
-  <h4>🔥 Ranges, Wall Ovens & Cooktops</h4>
-  <ul>
-    <li><strong>Brands:</strong> Wolf, La Cornue, Gaggenau, Viking</li>
-    <li>Gas ignition failures</li>
-    <li>Uneven oven temperatures</li>
-    <li>Slow preheating and convection fan issues</li>
-    <li>Smart touch panel troubleshooting</li>
-  </ul>
-  <h4>🚿 Luxury Dishwashers</h4>
-  <ul>
-    <li><strong>Brands:</strong> Miele, Bosch, Cove</li>
-    <li>Poor cleaning or drying results</li>
-    <li>Drainage issues or leaks</li>
-    <li>Smart cycle and control board errors</li>
-  </ul>
-  <h4>🧺 Luxury Washers & Dryers</h4>
-  <ul>
-    <li><strong>Brands:</strong> Miele, LG Signature, Fisher & Paykel</li>
-    <li>Washer spin or drainage problems</li>
-    <li>Dryer not heating or overheating</li>
-    <li>Smart system diagnostics and repairs</li>
-  </ul>
-  <h4>☕ Built-In Specialty Appliances</h4>
-  <ul>
-    <li><strong>Appliances:</strong> Wine Coolers, Espresso Machines, Steam Ovens, Warming Drawers</li>
-    <li>Temperature inconsistencies</li>
-    <li>Water pump, motor, and sensor malfunctions</li>
-    <li>Smart system troubleshooting</li>
-  </ul>
-</section>
+    <p>
+      In Rolling Hills Estates, appliance repair is often performed inside custom peninsula homes, equestrian properties, hillside residences, established family homes, and carefully designed kitchens near Palos Verdes Drive North, Crenshaw Boulevard, Silver Spur Road, Hawthorne Boulevard, Rolling Hills Road, Peninsula Center, and The Promenade on the Peninsula. These homes frequently include built-in refrigerators, panel-ready appliances, pro-style ranges, wine storage, outdoor kitchens, and European appliance brands that require precise diagnostics, clean workmanship, and a careful repair approach.
+    </p>
 
-<section>
-  <h3>👨‍🔧 The ZARICCI White-Glove Repair Process</h3>
-  <ol>
-    <li><strong>Simple Booking</strong><br>Schedule easily by phone or online—our concierge team tailors appointments to your lifestyle.</li>
-    <li><strong>On-Time Diagnosis</strong><br>Your certified technician arrives promptly, fully prepared to diagnose the issue and clearly explain the solution.</li>
-    <li><strong>Transparent, Detailed Quote</strong><br>We provide a written, upfront quote with no hidden fees or surprises.</li>
-    <li><strong>Precision Repairs with Genuine Parts</strong><br>Every repair is performed to factory specifications using genuine OEM parts to ensure lasting results.</li>
-    <li><strong>Final Testing and Pristine Clean-Up</strong><br>We thoroughly test your appliance and leave your home spotless—backed by our satisfaction guarantee.</li>
-  </ol>
-</section>
+    <p>
+      Rolling Hills Estates homes can include unique service conditions such as long driveways, hillside access, custom cabinetry, rural-style property layouts, outdoor kitchens, and appliance installations affected by coastal air and peninsula terrain. Our technicians approach each service call with attention to the appliance, the kitchen design, and the property conditions involved.
+    </p>
+  </div>
 
-<section>
-  <h3>🏡 Proudly Serving All of Rolling Hills Estates</h3>
-  <p><strong>ZARICCI</strong> provides discreet, expert appliance repair services across Rolling Hills Estates, including:</p>
-  <ul>
-    <li>Rolling Hills Park Estates</li>
-    <li>Chandler Ranch</li>
-    <li>Hillcrest Manor</li>
-    <li>Monte Verde</li>
-    <li>The Ranch</li>
-    <li>Crest Road Estates</li>
-    <li>Private equestrian properties along Palos Verdes Drive North and South</li>
-  </ul>
-  <p>Whether your estate is nestled among rolling hills or surrounded by lush equestrian trails, <strong>ZARICCI</strong> delivers precision service tailored to homes of distinction.</p>
-</section>
+  <Tabs client:visible />
 
-<section>
-  <h3>When Only Flawless Matters, Trust ZARICCI</h3>
-  <p>Your luxury appliances were chosen for their performance, craftsmanship, and beauty. At <strong>ZARICCI</strong>, we deliver the same level of care and precision in every service call—treating your home and appliances with the utmost respect.</p>
-</section>
+  <div class="maincontent" id="service">
+    <section>
+      <h3>Why Rolling Hills Estates Homeowners Rely on ZARICCI</h3>
 
-<section>
-  <h3>📞 Schedule Your Luxury Appliance Repair in Rolling Hills Estates Today</h3>
-  <p>Experience elite, white-glove appliance repair tailored for the most prestigious homes in Rolling Hills Estates.<br>Call <strong>Luxury Appliance Repair by Zaricci</strong> or book your appointment online today.</p>
-  <p><strong>👉 ZARICCI — Precision Repairs for Rolling Hills Estates’ Most Elegant Homes.</strong></p>
-</section>
- <Logos client:visible />
-</div>
+      <ul>
+        <li>
+          <strong>✅ Trained in All Major Luxury Brands</strong>
+          <br />
+          We specialize in high-performance, fully integrated, and smart appliances—whether you’re working with a dual-fuel Wolf range, a panel-ready Sub-Zero, or a Miele steam oven. Our technicians are licensed and highly trained in each brand’s technology.
+        </li>
+
+        <li>
+          <strong>✅ OEM Parts. No Compromises.</strong>
+          <br />
+          Your appliances are an investment—we protect them using genuine manufacturer parts that meet original specifications for safety, longevity, and performance.
+        </li>
+
+        <li>
+          <strong>✅ Same-Day or Next-Day Service When Available</strong>
+          <br />
+          We offer priority scheduling in Rolling Hills Estates whenever appointment availability and property access allow. We arrive with full respect for your time, privacy, property, and space.
+        </li>
+
+        <li>
+          <strong>✅ Discreet, White-Glove Repair Experience</strong>
+          <br />
+          We wear protective gear, maintain clean workspaces, and communicate with the level of professionalism expected in Rolling Hills Estates’ custom homes, equestrian properties, hillside residences, and carefully designed kitchens.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Our Luxury Repair Process</h3>
+
+      <ol>
+        <li>
+          <strong>Book Your Appointment</strong>
+          <br />
+          Call or schedule online. We’ll confirm your preferred time, gather basic information about your appliance, and discuss any access considerations that may apply to your property.
+        </li>
+
+        <li>
+          <strong>On-Time Arrival & Brand-Specific Diagnosis</strong>
+          <br />
+          Your trained ZARICCI technician arrives promptly and performs a detailed inspection using specialized diagnostic tools.
+        </li>
+
+        <li>
+          <strong>Clear, Upfront Estimate</strong>
+          <br />
+          We walk you through the issue and provide a transparent quote—no pressure, no surprises.
+        </li>
+
+        <li>
+          <strong>Precision Repair Using OEM Parts</strong>
+          <br />
+          We complete the repair using authentic parts, restore function, and run comprehensive performance testing.
+        </li>
+
+        <li>
+          <strong>Final Walkthrough & Service Warranty</strong>
+          <br />
+          We clean up, answer your questions, and back our work with a warranty—because confidence is part of the experience.
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Serving Rolling Hills Estates Homes and Peninsula Properties</h3>
+
+      <p>
+        We serve residences throughout Rolling Hills Estates, including homes near Palos Verdes Drive North, Crenshaw Boulevard, Silver Spur Road, Hawthorne Boulevard, Rolling Hills Road, Peninsula Center, The Promenade on the Peninsula, George F Canyon, Chandler Preserve, and the equestrian-oriented residential streets across the city. Our service is designed for custom homes, hillside properties, equestrian residences, established family homes, and luxury kitchens where careful diagnostics, clean workmanship, and discretion matter.
+      </p>
+    </section>
+
+    <section>
+      <h3>Careful Service for Hillside, Equestrian, and Custom Kitchen Conditions</h3>
+
+      <p>
+        Luxury appliances in Rolling Hills Estates homes may be affected by coastal moisture, hillside installation conditions, outdoor kitchen exposure, custom cabinetry, integrated panels, longer water lines, ventilation design, or prior remodeling work. Built-in refrigerators, panel-ready dishwashers, pro-style ranges, wine coolers, and outdoor kitchen appliances should be diagnosed methodically before parts are replaced.
+      </p>
+
+      <p>
+        When appropriate, we inspect installation conditions, electrical connections, water supply, drainage, ventilation, appliance leveling, seals, airflow, and performance-related components. For larger properties, gated homes, or residences with special access requirements, appointment details may be confirmed before dispatch so the service visit is handled smoothly.
+      </p>
+    </section>
+
+    <section>
+      <h3>Your Home Deserves More Than a Quick Fix</h3>
+
+      <p>
+        Your luxury appliances were chosen for their performance, craftsmanship, and style. At <strong>ZARICCI</strong>, we deliver a repair experience that reflects those same values—with skill, discretion, and white-glove care from start to finish.
+      </p>
+    </section>
+
+    <section>
+      <h3>📞 Schedule Your Luxury Appliance Repair in Rolling Hills Estates Today</h3>
+
+      <p>
+        Don’t wait for a small issue to become a major disruption.
+        <br />
+        Call <strong>Luxury Appliance Repair by Zaricci</strong> or book online now to schedule expert service in Rolling Hills Estates, CA.
+      </p>
+
+      <p>
+        <strong>ZARICCI — Because Rolling Hills Estates Homes Deserve World-Class Repair.</strong>
+      </p>
+    </section>
+
+    <Logos client:visible />
+    <Reviews client:idle />
+  </div>
 </Layout>
