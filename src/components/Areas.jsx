@@ -43,7 +43,7 @@ export default function CardsGallery() {
                   height="600"
                   decoding="async"
                 />
-                <h2 className="card-title">{card.title}</h2>
+                <h3 className="card-title">{card.title}</h3>
                 <p className="card-desc">{card.desc}</p>
               </a>
             </div>

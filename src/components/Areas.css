@@ -104,7 +104,7 @@
 
 /* FIXED H2 TITLE */
 .cards-section .card .card-title,
-.cards-section .card h2.card-title {
+.cards-section .card h3.card-title {
   position: absolute;
   top: 50%;
   left: 50%;
