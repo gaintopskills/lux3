@@ -224,7 +224,7 @@ export const MegaMenu = () => {
       <nav className="navbar">
         <div className="first-row">
           <a className="logo logo-desktop" href="/">
-            <img width="140" height="37" alt="Logo" src="/logo5.webp" />
+            <img width="140" height="37" alt="Logo" src="/logo5.png" />
           </a>
 
           <a className="logo-mobile" href="/">
