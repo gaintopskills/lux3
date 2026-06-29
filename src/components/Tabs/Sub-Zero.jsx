@@ -155,7 +155,7 @@ export const Tabs = () => {
     {
       id: "content5",
       title: "Why Choose Us?",
-  heading: "Why Homeowners Choose Zaricci for Sub-Zero Repair",
+  heading: "Why Homeowners Choose Luxury Appliance Repair by Zaricci for Sub-Zero Repair",
   img: "/sub-zero/best-sub-zero-repair.webp",
   alt: "Sub-Zero Expert Technicians",
       description: (
