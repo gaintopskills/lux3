@@ -1,5 +1,5 @@
 // SEO-optimized Tabs component for brand-specific refrigerator and refrigeration repair services
-// Rewritten to include only brands from the provided list that actually offer, offered, or support refrigeration products.
+// Ordered by the provided brand taxonomy; cooking-only and dishwasher-only brands are intentionally omitted from refrigerator tabs.
 
 import React, { useState, useEffect, useRef } from "react";
 import "./Tabs.css";
@@ -11,87 +11,115 @@ export const Tabs = () => {
   const itemRefs = useRef([]);
 
   const items = [
+    // PRO-STYLE
     {
-      id: "thor-kitchen-refrigerator-repair",
-      title: "Thor Kitchen Refrigerator Repair",
-      heading: "Thor Kitchen Refrigerator Repair",
-      alt: "Thor Kitchen refrigerator repair technician servicing a professional French door refrigerator",
-      description: (
-        <>
-          <p>
-            Our <strong>Thor Kitchen refrigerator repair</strong> service covers professional French-door refrigerators, counter-depth refrigerators, panel-ready refrigerators, Gordon Ramsay Series refrigeration, wine coolers, beverage centers, and ice maker-equipped models. Thor refrigeration commonly includes multi-zone cooling, flex drawers, dual freezer drawers, internal or external water and ice, and stainless pro-style finishes.
-          </p>
-
-          <h3>Thor Kitchen Refrigerator Issues We Diagnose</h3>
-          <ul>
-            <li>French-door refrigerator not holding temperature because of evaporator fan problems, damper failure, dirty condenser, sensor error, or door gasket leaks.</li>
-            <li>Flex drawer not changing modes properly because of thermistor, damper, fan, or control-board issues.</li>
-            <li>Dual freezer drawers icing, warming, or not sliding closed correctly because of drawer alignment, gasket, defrost, or airflow problems.</li>
-            <li>Ice maker and dispenser issues caused by fill tube freeze-up, water valve failure, filter restriction, or low freezer temperature performance.</li>
-            <li>Wine cooler or beverage refrigerator temperature drift from fan, sensor, compressor, or door seal issues.</li>
-          </ul>
-
-          <h3>Technician Approach for Thor Kitchen</h3>
-          <p>
-            We test Thor refrigerators by zone. We check fresh food, freezer drawers, flex drawer, ice maker, dispenser, and wine or beverage compartments separately. Then we inspect sensors, fans, dampers, defrost operation, condenser airflow, water supply, and control response so the repair matches the exact cooling problem.
-          </p>
-        </>
-      )
-    },
+          id: "blue-star-refrigerator-repair",
+          title: "BlueStar Refrigerator Repair",
+          heading: "BlueStar Refrigerator Repair",
+          alt: "BlueStar refrigerator repair technician servicing a customizable column refrigerator",
+          description: (
+            <>
+              <p>
+                We provide <strong>BlueStar refrigerator repair</strong> for column refrigerators, column freezers, PRO built-in refrigerator/freezers, counter-depth French-door refrigerators, and customized refrigeration with color-matched panels. BlueStar refrigeration is known for customization, stainless interiors, lateral airflow, side-mounted evaporator layouts, and premium panel integration, so the repair must protect both cooling performance and finish quality.
+              </p>
+    
+              <h3>BlueStar Refrigerator Issues We Diagnose</h3>
+              <ul>
+                <li>Column refrigerator not cooling evenly because of lateral airflow restriction, evaporator fan failure, thermistor error, or control-board issue.</li>
+                <li>Column freezer warming, frost buildup, or ice maker failure due to defrost problems, gasket leaks, fan failure, or water supply issues.</li>
+                <li>PRO built-in refrigerator/freezer temperature imbalance caused by dual compressor or evaporator issues, condenser airflow, or door sealing.</li>
+                <li>French-door refrigerator ice and water problems from water valves, filters, fill tubes, or freezer temperature concerns.</li>
+                <li>Custom color panels, handles, and stainless interiors needing careful protection during service access.</li>
+              </ul>
+    
+              <h3>Technician Approach for BlueStar</h3>
+              <p>
+                We check BlueStar cooling from the airflow outward: evaporator frost pattern, fan performance, sensor readings, condenser condition, defrost cycle, compressor behavior, and door sealing. On customized models, we take extra care around panels and finishes, then verify the exact product line before sourcing parts.
+              </p>
+            </>
+          )
+        },
     {
-      id: "forno-refrigerator-repair",
-      title: "Forno Refrigerator Repair",
-      heading: "Forno Refrigerator Repair",
-      alt: "Forno refrigerator repair technician servicing a modern French door refrigerator",
-      description: (
-        <>
-          <p>
-            We service <strong>Forno refrigerator repair</strong> for French-door refrigerators, side-by-side refrigeration, convertible refrigerator/freezer units, retro bottom-freezer refrigerators, wine and beverage coolers, ice makers, dry agers, and Forno refrigeration suites. Forno has many series and model variations, so correct model identification is especially important before parts are ordered.
-          </p>
-
-          <h3>Forno Refrigerator Issues We Diagnose</h3>
-          <ul>
-            <li>Convertible refrigerator/freezer not switching or holding the selected mode because of sensor, control, fan, or sealed-system issues.</li>
-            <li>French-door unit warming, freezing food, or showing temperature swings due to thermistor drift, damper problems, fan failure, or door gasket leaks.</li>
-            <li>Automatic ice maker not producing, leaking, or overflowing because of water valve, fill tube, filter, or freezer temperature problems.</li>
-            <li>Wine and beverage cooler temperature zones drifting because of fan failure, sensor issues, glass door heat load, or compressor cycling problems.</li>
-            <li>Dry ager humidity, airflow, or cooling concerns that require more careful testing than a standard refrigerator.</li>
-          </ul>
-
-          <h3>Technician Approach for Forno</h3>
-          <p>
-            With Forno, we verify the full model number first because similar-looking units can use different controls and parts. We test each temperature zone, inspect fans, sensors, dampers, defrost operation, condenser airflow, ice maker components, water supply, and door seals. For wine coolers and dry agers, we also check humidity, airflow, and cabinet location.
-          </p>
-        </>
-      )
-    },
+          id: "thor-kitchen-refrigerator-repair",
+          title: "Thor Kitchen Refrigerator Repair",
+          heading: "Thor Kitchen Refrigerator Repair",
+          alt: "Thor Kitchen refrigerator repair technician servicing a professional French door refrigerator",
+          description: (
+            <>
+              <p>
+                Our <strong>Thor Kitchen refrigerator repair</strong> service covers professional French-door refrigerators, counter-depth refrigerators, panel-ready refrigerators, Gordon Ramsay Series refrigeration, wine coolers, beverage centers, and ice maker-equipped models. Thor refrigeration commonly includes multi-zone cooling, flex drawers, dual freezer drawers, internal or external water and ice, and stainless pro-style finishes.
+              </p>
+    
+              <h3>Thor Kitchen Refrigerator Issues We Diagnose</h3>
+              <ul>
+                <li>French-door refrigerator not holding temperature because of evaporator fan problems, damper failure, dirty condenser, sensor error, or door gasket leaks.</li>
+                <li>Flex drawer not changing modes properly because of thermistor, damper, fan, or control-board issues.</li>
+                <li>Dual freezer drawers icing, warming, or not sliding closed correctly because of drawer alignment, gasket, defrost, or airflow problems.</li>
+                <li>Ice maker and dispenser issues caused by fill tube freeze-up, water valve failure, filter restriction, or low freezer temperature performance.</li>
+                <li>Wine cooler or beverage refrigerator temperature drift from fan, sensor, compressor, or door seal issues.</li>
+              </ul>
+    
+              <h3>Technician Approach for Thor Kitchen</h3>
+              <p>
+                We test Thor refrigerators by zone. We check fresh food, freezer drawers, flex drawer, ice maker, dispenser, and wine or beverage compartments separately. Then we inspect sensors, fans, dampers, defrost operation, condenser airflow, water supply, and control response so the repair matches the exact cooling problem.
+              </p>
+            </>
+          )
+        },
     {
-      id: "zline-refrigerator-repair",
-      title: "ZLINE Refrigerator Repair",
-      heading: "ZLINE Refrigerator Repair",
-      alt: "ZLINE refrigerator repair technician servicing a built-in French door refrigerator",
-      description: (
-        <>
-          <p>
-            We provide <strong>ZLINE refrigerator repair</strong> for French-door refrigerators, built-in refrigerators, counter-depth refrigerators, standard-depth refrigerators, panel-ready refrigerators, column refrigeration, wine coolers, beverage centers, undercounter refrigerators, ice makers, and Autograph Edition refrigeration. ZLINE often combines decorative finishes with modern dual cooling, internal or external water, ice makers, and customizable handles.
-          </p>
-
-          <h3>ZLINE Refrigerator Issues We Diagnose</h3>
-          <ul>
-            <li>Built-in or French-door refrigerator not cooling because of fan failure, sensor error, damper issue, dirty condenser, control fault, or sealed-system problem.</li>
-            <li>Bottom freezer warming, icing, or not closing properly because of drawer alignment, gasket wear, defrost failure, or airflow restriction.</li>
-            <li>Dual cooling or multi-zone compartments not maintaining settings because of thermistor, fan, damper, or board problems.</li>
-            <li>Water dispenser, internal dispenser, or ice maker not working due to valve, filter, fill tube, water pressure, or freezer temperature issues.</li>
-            <li>Autograph Edition handles, brass accents, matte finishes, and panel-ready trim needing careful protection during service.</li>
-          </ul>
-
-          <h3>Technician Approach for ZLINE</h3>
-          <p>
-            We separate ZLINE cooling problems by section: fresh food, freezer, ice, water, wine, or beverage. We then test fans, dampers, sensors, defrost components, condenser airflow, controls, door seals, and water components. On Autograph Edition and custom-finish models, we protect handles, panels, and trim before accessing internal components.
-          </p>
-        </>
-      )
-    },
+          id: "forno-refrigerator-repair",
+          title: "Forno Refrigerator Repair",
+          heading: "Forno Refrigerator Repair",
+          alt: "Forno refrigerator repair technician servicing a modern French door refrigerator",
+          description: (
+            <>
+              <p>
+                We service <strong>Forno refrigerator repair</strong> for French-door refrigerators, side-by-side refrigeration, convertible refrigerator/freezer units, retro bottom-freezer refrigerators, wine and beverage coolers, ice makers, dry agers, and Forno refrigeration suites. Forno has many series and model variations, so correct model identification is especially important before parts are ordered.
+              </p>
+    
+              <h3>Forno Refrigerator Issues We Diagnose</h3>
+              <ul>
+                <li>Convertible refrigerator/freezer not switching or holding the selected mode because of sensor, control, fan, or sealed-system issues.</li>
+                <li>French-door unit warming, freezing food, or showing temperature swings due to thermistor drift, damper problems, fan failure, or door gasket leaks.</li>
+                <li>Automatic ice maker not producing, leaking, or overflowing because of water valve, fill tube, filter, or freezer temperature problems.</li>
+                <li>Wine and beverage cooler temperature zones drifting because of fan failure, sensor issues, glass door heat load, or compressor cycling problems.</li>
+                <li>Dry ager humidity, airflow, or cooling concerns that require more careful testing than a standard refrigerator.</li>
+              </ul>
+    
+              <h3>Technician Approach for Forno</h3>
+              <p>
+                With Forno, we verify the full model number first because similar-looking units can use different controls and parts. We test each temperature zone, inspect fans, sensors, dampers, defrost operation, condenser airflow, ice maker components, water supply, and door seals. For wine coolers and dry agers, we also check humidity, airflow, and cabinet location.
+              </p>
+            </>
+          )
+        },
+    {
+          id: "zline-refrigerator-repair",
+          title: "ZLINE Refrigerator Repair",
+          heading: "ZLINE Refrigerator Repair",
+          alt: "ZLINE refrigerator repair technician servicing a built-in French door refrigerator",
+          description: (
+            <>
+              <p>
+                We provide <strong>ZLINE refrigerator repair</strong> for French-door refrigerators, built-in refrigerators, counter-depth refrigerators, standard-depth refrigerators, panel-ready refrigerators, column refrigeration, wine coolers, beverage centers, undercounter refrigerators, ice makers, and Autograph Edition refrigeration. ZLINE often combines decorative finishes with modern dual cooling, internal or external water, ice makers, and customizable handles.
+              </p>
+    
+              <h3>ZLINE Refrigerator Issues We Diagnose</h3>
+              <ul>
+                <li>Built-in or French-door refrigerator not cooling because of fan failure, sensor error, damper issue, dirty condenser, control fault, or sealed-system problem.</li>
+                <li>Bottom freezer warming, icing, or not closing properly because of drawer alignment, gasket wear, defrost failure, or airflow restriction.</li>
+                <li>Dual cooling or multi-zone compartments not maintaining settings because of thermistor, fan, damper, or board problems.</li>
+                <li>Water dispenser, internal dispenser, or ice maker not working due to valve, filter, fill tube, water pressure, or freezer temperature issues.</li>
+                <li>Autograph Edition handles, brass accents, matte finishes, and panel-ready trim needing careful protection during service.</li>
+              </ul>
+    
+              <h3>Technician Approach for ZLINE</h3>
+              <p>
+                We separate ZLINE cooling problems by section: fresh food, freezer, ice, water, wine, or beverage. We then test fans, dampers, sensors, defrost components, condenser airflow, controls, door seals, and water components. On Autograph Edition and custom-finish models, we protect handles, panels, and trim before accessing internal components.
+              </p>
+            </>
+          )
+        },
   ];
 
   useEffect(() => {
