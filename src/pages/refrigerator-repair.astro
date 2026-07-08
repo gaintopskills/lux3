@@ -1,103 +1,781 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
-import ParallaxHeader from '../components/Header/Refrigerator.jsx'
+
+import ParallaxHeader from '../components/Header/Refrigerator.jsx';
+
+import Tabs1 from '../components/Tabs/EuropeanRefrigerators.jsx';
+import Tabs2 from '../components/Tabs/LuxuryRefrigerators.jsx';
+import Tabs3 from '../components/Tabs/ProStyleRefrigerators.jsx';
+import Tabs4 from '../components/Tabs/HighEndRefrigerators.jsx';
+import Tabs5 from '../components/Tabs/RetroRefrigerators.jsx';
+import Tabs6 from '../components/Tabs/OutdoorRefrigerators.jsx';
+
 import Areas from '../components/Areas.jsx';
 import '../components/Areas.css';
+
 const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/refrigerator-repair/#webpage",
+      "url": "https://luxuryappliance.repair/refrigerator-repair/",
+      "name": "Refrigerator Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Professional refrigerator repair for luxury, European, built-in, column, integrated, undercounter, wine, freezer, and outdoor refrigeration systems in Los Angeles, Orange County, and Ventura County. We service premium refrigerator brands including Sub-Zero, True Residential, Thermador, Viking, Monogram, Liebherr, Miele, Gaggenau, Fisher & Paykel, Dacor, JennAir, Bosch, and more.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/refrigerator-repair/#service"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/refrigerator/refrigerator-repair-services.webp"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/refrigerator-repair/#service",
+      "name": "Refrigerator Repair",
+      "url": "https://luxuryappliance.repair/refrigerator-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/refrigerator-repair/#webpage"
+      },
+      "serviceType": "Luxury refrigerator repair, built-in refrigerator repair, column refrigerator repair, integrated refrigerator repair, freezer repair, wine cooler repair, beverage center repair, undercounter refrigerator repair, ice maker repair, and outdoor refrigeration repair",
+      "description": "Luxury Appliance Repair by Zaricci provides professional refrigerator repair for high-end residential kitchens, European refrigeration brands, built-in refrigerators, column refrigerators, integrated refrigerator and freezer systems, undercounter units, wine coolers, beverage centers, ice makers, and outdoor refrigeration. Our technicians diagnose cooling problems, warm refrigerator compartments, freezer issues, frost buildup, compressor problems, evaporator fan failures, condenser airflow issues, ice maker problems, water leaks, control faults, and sealed-system symptoms across Los Angeles, Orange County, Ventura County, and surrounding communities.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Los Angeles",
+          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Brentwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Pasadena",
+          "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California"
+        },
+        {
+          "@type": "Place",
+          "name": "Bel Air",
+          "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Pacific Palisades",
+          "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Santa Monica"
+        },
+        {
+          "@type": "City",
+          "name": "Beverly Hills"
+        },
+        {
+          "@type": "City",
+          "name": "Calabasas"
+        },
+        {
+          "@type": "City",
+          "name": "Thousand Oaks"
+        },
+        {
+          "@type": "City",
+          "name": "West Hollywood"
+        },
+        {
+          "@type": "City",
+          "name": "San Marino"
+        },
+        {
+          "@type": "City",
+          "name": "Malibu"
+        },
+        {
+          "@type": "City",
+          "name": "Manhattan Beach"
+        },
+        {
+          "@type": "Place",
+          "name": "Encino",
+          "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Rancho Palos Verdes"
+        },
+        {
+          "@type": "City",
+          "name": "Palos Verdes Estates"
+        },
+        {
+          "@type": "City",
+          "name": "Rolling Hills Estates"
+        },
+        {
+          "@type": "Place",
+          "name": "Westwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Century City",
+          "sameAs": "https://en.wikipedia.org/wiki/Century_City"
+        },
+        {
+          "@type": "City",
+          "name": "La Cañada Flintridge"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Orange County",
+          "sameAs": "https://en.wikipedia.org/wiki/Orange_County,_California"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ventura County",
+          "sameAs": "https://en.wikipedia.org/wiki/Ventura_County,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Irvine",
+          "sameAs": "https://en.wikipedia.org/wiki/Irvine,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Newport Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Newport_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Laguna Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Laguna_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Huntington Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Huntington_Beach,_California"
+        }
+      ],
+      "brand": [
+        {
+          "@type": "Brand",
+          "name": "Bertazzoni"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fulgor Milano"
+        },
+        {
+          "@type": "Brand",
+          "name": "Gaggenau"
+        },
+        {
+          "@type": "Brand",
+          "name": "Liebherr"
+        },
+        {
+          "@type": "Brand",
+          "name": "Miele"
+        },
+        {
+          "@type": "Brand",
+          "name": "Smeg"
+        },
+        {
+          "@type": "Brand",
+          "name": "Sub-Zero"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fisher & Paykel"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thermador"
+        },
+        {
+          "@type": "Brand",
+          "name": "True Residential"
+        },
+        {
+          "@type": "Brand",
+          "name": "Viking"
+        },
+        {
+          "@type": "Brand",
+          "name": "Monogram"
+        },
+        {
+          "@type": "Brand",
+          "name": "Signature Kitchen Suite"
+        },
+        {
+          "@type": "Brand",
+          "name": "Hestan"
+        },
+        {
+          "@type": "Brand",
+          "name": "Dacor"
+        },
+        {
+          "@type": "Brand",
+          "name": "BlueStar"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thor Kitchen"
+        },
+        {
+          "@type": "Brand",
+          "name": "Forno"
+        },
+        {
+          "@type": "Brand",
+          "name": "ZLINE"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bosch"
+        },
+        {
+          "@type": "Brand",
+          "name": "JennAir"
+        },
+        {
+          "@type": "Brand",
+          "name": "Big Chill"
+        },
+        {
+          "@type": "Brand",
+          "name": "Elmira Stove Works"
+        },
+        {
+          "@type": "Brand",
+          "name": "Heartland"
+        },
+        {
+          "@type": "Brand",
+          "name": "Kalamazoo"
+        },
+        {
+          "@type": "Brand",
+          "name": "Lynx"
+        },
+        {
+          "@type": "Brand",
+          "name": "Hestan Outdoor"
+        },
+        {
+          "@type": "Brand",
+          "name": "Viking Outdoor"
+        },
+        {
+          "@type": "Brand",
+          "name": "True Residential Outdoor"
+        },
+        {
+          "@type": "Brand",
+          "name": "DCS"
+        },
+        {
+          "@type": "Brand",
+          "name": "Alfresco"
+        },
+        {
+          "@type": "Brand",
+          "name": "Twin Eagles"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Refrigerator Repair Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Built-In Refrigerator Repair",
+              "description": "Repair for luxury built-in refrigerators with cooling problems, warm compartments, frost buildup, noisy operation, fan failures, compressor concerns, water leaks, ice maker issues, and control faults."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Column Refrigerator and Freezer Repair",
+              "description": "Repair for integrated refrigerator columns and freezer columns with temperature instability, evaporator frost, airflow problems, door-seal issues, sensor faults, compressor concerns, and electronic control problems."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sub-Zero Style Built-In Refrigeration Repair",
+              "description": "Service for premium built-in refrigeration systems with dual refrigeration, sealed-system symptoms, condenser cleaning needs, evaporator fan issues, defrost problems, water leaks, ice maker failures, and temperature-control concerns."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Freezer Repair",
+              "description": "Repair for high-end freezers with frost buildup, soft freezing, warm temperatures, ice accumulation, door-gasket problems, evaporator fan failure, defrost heater issues, sealed-system symptoms, and control errors."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wine Cooler and Beverage Center Repair",
+              "description": "Repair for wine coolers, wine columns, beverage centers, and undercounter refrigeration with temperature swings, fan problems, compressor issues, control faults, condensation, noisy operation, and cooling failure."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Outdoor Refrigerator Repair",
+              "description": "Repair for outdoor refrigerators, outdoor beverage centers, and outdoor kitchen refrigeration systems affected by weather exposure, condenser blockage, corrosion, drainage problems, cooling failure, thermostat issues, fan problems, and electrical faults."
+            }
+          }
+        ]
+      },
+      "knowsAbout": [
+        "Luxury refrigerator repair",
+        "High-end refrigerator repair",
+        "European refrigerator repair",
+        "Built-in refrigerator repair",
+        "Integrated refrigerator repair",
+        "Column refrigerator repair",
+        "Column freezer repair",
+        "Sub-Zero refrigerator repair",
+        "True Residential refrigerator repair",
+        "Liebherr refrigerator repair",
+        "Thermador refrigerator repair",
+        "Viking refrigerator repair",
+        "Monogram refrigerator repair",
+        "Miele refrigerator repair",
+        "Gaggenau refrigerator repair",
+        "JennAir refrigerator repair",
+        "Bosch refrigerator repair",
+        "Wine cooler repair",
+        "Beverage center repair",
+        "Undercounter refrigerator repair",
+        "Outdoor refrigerator repair",
+        "Refrigerator not cooling",
+        "Freezer not freezing",
+        "Refrigerator frost buildup",
+        "Refrigerator water leak",
+        "Refrigerator ice maker repair",
+        "Refrigerator evaporator fan repair",
+        "Refrigerator condenser cleaning",
+        "Refrigerator compressor diagnosis",
+        "Refrigerator sealed-system symptoms",
+        "Luxury kitchen appliance repair"
+      ],
+      "keywords": [
+        "refrigerator repair",
+        "luxury refrigerator repair",
+        "high-end refrigerator repair",
+        "European refrigerator repair",
+        "built-in refrigerator repair",
+        "integrated refrigerator repair",
+        "column refrigerator repair",
+        "column freezer repair",
+        "freezer repair",
+        "wine cooler repair",
+        "beverage center repair",
+        "undercounter refrigerator repair",
+        "outdoor refrigerator repair",
+        "refrigerator not cooling",
+        "freezer not freezing",
+        "refrigerator leaking water",
+        "refrigerator frost buildup",
+        "refrigerator compressor repair",
+        "refrigerator ice maker repair",
+        "Sub-Zero refrigerator repair",
+        "True Residential refrigerator repair",
+        "Liebherr refrigerator repair",
+        "Thermador refrigerator repair",
+        "Viking refrigerator repair",
+        "Monogram refrigerator repair",
+        "Miele refrigerator repair",
+        "Gaggenau refrigerator repair",
+        "Fisher & Paykel refrigerator repair",
+        "Dacor refrigerator repair",
+        "JennAir refrigerator repair",
+        "Bosch refrigerator repair",
+        "Los Angeles refrigerator repair",
+        "Orange County refrigerator repair",
+        "Ventura County refrigerator repair"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://luxuryappliance.repair/refrigerator-repair/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://luxuryappliance.repair/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Refrigerator Repair",
+          "item": "https://luxuryappliance.repair/refrigerator-repair/"
+        }
+      ]
+    }
+  ]
 };
-// Example breadcrumbs for the home page
+
 const breadcrumbs = [
-	{ text: 'Welcome' }
+  {
+    text: 'Welcome'
+  }
 ];
 ---
+
 <Layout
-	title=""
-	description=""
-	structuredData={structuredData}
+  title="High-End & Luxury Refrigerator Repair | (424) 499-7788"
+  description="Zaricci provides professional high-end and luxury refrigerator repair for Sub-Zero, True Residential, Thermador, Viking, Monogram, Liebherr, Miele, Gaggenau, Fisher & Paykel, Dacor, JennAir, Bosch, and more."
+  structuredData={structuredData}
   ogImage="/refrigerator/refrigerator-repair-services.webp"
 >
-<ParallaxHeader client:idle />
-<div style="margin: 50px">
-<section>
-  <h1>❄️ Refrigerator Repair by Luxury Appliance repair by Zaricci</h1>
-  <p><strong>Premium Service for Luxury & Built-In Refrigeration Systems</strong></p>
-  <p>Your refrigerator is the most important appliance in your home — but when it’s a luxury model, repair requires more than just tools. It requires expertise, discretion, and respect for craftsmanship. At Luxury Appliance repair by Zaricci, we specialize in same-day refrigerator repair for high-end brands, integrated systems, and luxury estates across Southern California.</p>
-  <p>From Sub-Zero panel-ready units to European column refrigerators, our technicians are trained to restore function without compromising your design.</p>
-</section>
+  <ParallaxHeader client:idle />
 
-<section>
-  <h3>🛠️ Expert Repair for Luxury Refrigerator Brands</h3>
-  <p>Luxury Appliance repair by Zaricci services the finest residential and designer refrigeration brands, including:</p>
-  <ul>
-    <li>Sub-Zero</li>
-    <li>Thermador</li>
-    <li>Miele</li>
-    <li>Gaggenau</li>
-    <li>Monogram</li>
-    <li>JennAir</li>
-    <li>Fisher &amp; Paykel</li>
-    <li>True Residential</li>
-    <li>Viking</li>
-    <li>Bosch Benchmark</li>
-    <li>Liebherr</li>
-    <li>Smeg</li>
-    <li>Dacor</li>
-    <li>Bertazzoni</li>
-    <li>KitchenAid Built-In</li>
-    <li>Electrolux ICON</li>
-  </ul>
-  <p>We understand how to handle custom cabinetry, panel-ready doors, dual compressor systems, and smart cooling technology without disturbing the flow or finishes of your home.</p>
-</section>
+  <div
+    class="maincontent"
+    id="webpage"
+  >
+    <h2>High-End & Luxury Refrigerator Repair – Professional & Reliable</h2>
 
-<section>
-  <h3>🔍 Common Refrigerator Problems We Resolve</h3>
-  <ul>
-    <li>Refrigerator not cooling properly</li>
-    <li>Ice maker not working or leaking</li>
-    <li>Freezer frosting or over-freezing</li>
-    <li>Water dispenser malfunction</li>
-    <li>Door not sealing or sagging</li>
-    <li>Loud or unusual compressor noises</li>
-    <li>Wi-Fi or smart diagnostics not functioning</li>
-    <li>LED lighting or control panel failure</li>
-  </ul>
-</section>
+    <p>
+      At <strong>Luxury Appliance Repair by Zaricci</strong>, we specialize in
+      <strong>high-end refrigerator repair</strong> for luxury kitchens with
+      built-in refrigerators, integrated refrigeration systems, column
+      refrigerators, column freezers, wine coolers, beverage centers,
+      undercounter refrigerators, and outdoor refrigeration. Our technicians
+      diagnose cooling problems, warm refrigerator compartments, freezer
+      failures, frost buildup, water leaks, noisy operation, ice maker issues,
+      fan failures, compressor concerns, control faults, and sealed-system
+      symptoms with a careful, brand-focused approach.
+    </p>
 
-<section>
-  <h3>🌟 The Luxury Appliance repair by Zaricci Signature Experience</h3>
-  <ul>
-    <li>Same-Day Repair in Beverly Hills, Malibu, Pacific Palisades, and more</li>
-    <li>Certified Technicians trained in premium refrigeration systems</li>
-    <li>No Outsourcing — Only highly vetted, in-house specialists</li>
-    <li>Preservation of Custom Finishes (panels, stainless, glass)</li>
-    <li>Genuine OEM Parts only</li>
-    <li>White-Glove Treatment — quiet, clean, and respectful service</li>
-  </ul>
-</section>
+    <h2>European Refrigerator Repair</h2>
 
-<section>
-  <h3>🌍 Areas We Serve</h3>
-  <p>Luxury Appliance repair by Zaricci proudly services high-end homes, estates, and smart residences across:</p>
-  <ul>
-    <li>Los Angeles</li>
-    <li>Brentwood</li>
-    <li>Santa Monica</li>
-    <li>Pasadena</li>
-    <li>Bel Air</li>
-    <li>Calabasas</li>
-    <li>Newport Beach</li>
-    <li>Irvine</li>
-    <li>Thousand Oaks</li>
-    <li>and more</li>
-  </ul>
-</section>
+    <p>
+      European refrigerators are often designed with compact engineering,
+      precise temperature control, advanced airflow systems, panel-ready
+      installation, integrated columns, and premium refrigeration technology.
+      At <strong>Luxury Appliance Repair by Zaricci</strong>, we provide
+      <strong>European refrigerator repair</strong> for premium brands such as
+      Bertazzoni, Fulgor Milano, Gaggenau, Liebherr, Miele, and Smeg.
+      See below for some of the most common brand-specific issues we diagnose
+      and repair.
+    </p>
+  </div>
 
-<section>
-  <h3>🧊 Preventative Refrigerator Maintenance</h3>
-  <p>Luxury refrigerators are engineered for performance, but they still require seasonal checks. We offer custom maintenance programs that protect your investment and help avoid costly repairs, especially for wine and food storage environments.</p>
-</section>
-</div>
-<h2>Areas We Serve For Refrigerator Repair</h2>
-<Areas client:visible/>
+  <Tabs1 client:visible />
+
+  <div class="maincontent">
+    <h2>Luxury Refrigerator Repair</h2>
+
+    <p>
+      Luxury refrigerators are built for precise food preservation, quiet
+      operation, premium kitchen integration, and long-term performance.
+      Many models include dual refrigeration, air purification, humidity
+      control, advanced sensors, integrated ice makers, panel-ready doors,
+      water filtration, and separate cooling zones. We provide
+      <strong>luxury refrigerator repair</strong> for Sub-Zero,
+      Fisher &amp; Paykel, Thermador, True Residential, Viking, Monogram,
+      Signature Kitchen Suite, Hestan, and Dacor refrigeration systems.
+      See below for the primary issues our technicians repair.
+    </p>
+  </div>
+
+  <Tabs2 client:visible />
+
+  <div class="maincontent">
+    <h2>Pro-Style Refrigerator Repair</h2>
+
+    <p>
+      Pro-style refrigerators are often selected for bold stainless-steel
+      design, larger storage capacity, commercial-inspired appearance, and
+      full kitchen appliance packages that match pro-style ranges and cooking
+      equipment. Our <strong>pro-style refrigerator repair</strong> service
+      covers brands such as BlueStar, Thor Kitchen, Forno, and ZLINE.
+      We diagnose cooling failure, compressor concerns, evaporator frost,
+      fan problems, leaking, ice maker issues, control faults, door-seal
+      problems, and temperature inconsistency.
+    </p>
+  </div>
+
+  <Tabs3 client:visible />
+
+  <div class="maincontent">
+    <h2>High-End Refrigerator Repair</h2>
+
+    <p>
+      High-end refrigerators often combine modern design, quiet performance,
+      flush installation, panel-ready doors, smart controls, advanced
+      temperature management, and premium interior layouts. We provide
+      <strong>high-end refrigerator repair</strong> for Bosch and JennAir
+      refrigerators, including built-in refrigerators, freestanding
+      refrigerators, French-door refrigerators, bottom-freezer models,
+      integrated units, wine storage, and undercounter refrigeration.
+      See below for the main issues we fix.
+    </p>
+  </div>
+
+  <Tabs4 client:visible />
+
+  <div class="maincontent">
+    <h2>Retro Refrigerator Repair</h2>
+
+    <p>
+      Retro refrigerators are chosen for their appearance as much as their
+      cooling performance, so repair requires a careful approach that protects
+      the appliance’s color, finish, trim, handles, hinges, panels, and
+      vintage-inspired design. We provide
+      <strong>retro refrigerator repair</strong> for brands such as Big Chill,
+      Elmira Stove Works, Smeg, and Heartland, including refrigerators,
+      freezers, and classic-style refrigeration appliances with cooling
+      problems, frost buildup, door-seal issues, thermostat concerns, and
+      compressor-related symptoms.
+    </p>
+  </div>
+
+  <Tabs5 client:visible />
+
+  <div class="maincontent">
+    <h2>Outdoor Refrigerator Repair</h2>
+
+    <p>
+      Outdoor refrigerators and beverage centers are exposed to heat, moisture,
+      weather, ventilation limitations, corrosion, and heavy outdoor kitchen
+      use. These conditions can affect cooling performance, condenser airflow,
+      fan motors, thermostats, door seals, drainage, and electrical components.
+      We provide <strong>outdoor refrigerator repair</strong> for premium
+      outdoor kitchen refrigeration brands such as Kalamazoo, Lynx,
+      Hestan Outdoor, Viking Outdoor, DCS, Alfresco, Twin Eagles, and
+      True Residential Outdoor. These systems may include undercounter
+      refrigerators, beverage centers, outdoor freezers, wine storage,
+      ice makers, and built-in outdoor kitchen refrigeration.
+    </p>
+  </div>
+
+  <Tabs6 client:visible />
+
+  <div class="maincontent">
+    <h3>Why Choose ZARICCI for High-End Refrigerator Repair?</h3>
+
+    <ul>
+      <li>
+        <strong>✅ Brand-Focused Diagnostic Experience:</strong>
+        Premium refrigeration systems can include dual compressors, sealed
+        systems, evaporator fans, condenser fans, defrost systems, air
+        purification modules, temperature sensors, water valves, ice makers,
+        and electronic controls. We use a careful diagnostic process before
+        recommending repair.
+      </li>
+
+      <li>
+        <strong>✅ Careful Service Inside Luxury Kitchens:</strong>
+        Many built-in and integrated refrigerators are installed inside custom
+        cabinetry, next to stone countertops, or as part of a full luxury
+        appliance package. Our technicians work carefully to protect your
+        appliance, flooring, cabinetry, panels, and surrounding finishes.
+      </li>
+
+      <li>
+        <strong>✅ Refrigeration-Specific Troubleshooting:</strong>
+        Cooling issues can come from airflow problems, dirty condenser coils,
+        failed fans, defrost failure, faulty sensors, control-board problems,
+        compressor issues, refrigerant leaks, door-seal problems, or
+        installation-related ventilation concerns. We focus on finding the
+        actual cause, not just the obvious symptom.
+      </li>
+
+      <li>
+        <strong>✅ Model-Appropriate Replacement Parts:</strong>
+        When a replacement component is required, we identify compatible parts
+        based on the refrigerator brand, model, serial information, symptoms,
+        and repair scope.
+      </li>
+
+      <li>
+        <strong>✅ Transparent Repair Recommendations:</strong>
+        We explain the issue clearly, outline the recommended repair, and
+        provide pricing information before beginning the work.
+      </li>
+    </ul>
+
+    <h3>Our High-End Refrigerator Repair Process</h3>
+
+    <ul>
+      <li>
+        <strong>Schedule a Visit:</strong>
+        Call or book online and tell us the refrigerator brand, model,
+        symptoms, and location.
+      </li>
+
+      <li>
+        <strong>In-Home Diagnosis:</strong>
+        A technician inspects the refrigerator and checks the relevant systems,
+        which may include the compressor, condenser, evaporator, fan motors,
+        defrost system, door gaskets, controls, sensors, water system,
+        ice maker, and installation ventilation.
+      </li>
+
+      <li>
+        <strong>Detailed Repair Recommendation:</strong>
+        We explain what is causing the problem and provide a clear repair plan.
+      </li>
+
+      <li>
+        <strong>Professional Repair:</strong>
+        When replacement parts are required, we identify the appropriate
+        components and complete the approved repair carefully.
+      </li>
+
+      <li>
+        <strong>Performance Testing:</strong>
+        After the repair, we test cooling, airflow, temperature response,
+        ice maker operation, water flow, drainage, and overall system
+        performance when applicable.
+      </li>
+    </ul>
+
+    <h3>Common Refrigerator Problems We Repair</h3>
+
+    <ul>
+      <li>
+        Refrigerator is not cooling or is getting warm
+      </li>
+
+      <li>
+        Freezer is cold but refrigerator section is warm
+      </li>
+
+      <li>
+        Freezer is not freezing properly
+      </li>
+
+      <li>
+        Frost buildup on the evaporator or back panel
+      </li>
+
+      <li>
+        Refrigerator leaking water inside or onto the floor
+      </li>
+
+      <li>
+        Ice maker not making ice, overflowing, or leaking
+      </li>
+
+      <li>
+        Water dispenser not working or water flow is weak
+      </li>
+
+      <li>
+        Refrigerator making loud buzzing, clicking, rattling, or grinding noise
+      </li>
+
+      <li>
+        Compressor not starting or running too often
+      </li>
+
+      <li>
+        Evaporator fan or condenser fan failure
+      </li>
+
+      <li>
+        Defrost heater, thermostat, sensor, or control-board problems
+      </li>
+
+      <li>
+        Door gasket, hinge, alignment, or sealing problems
+      </li>
+
+      <li>
+        Wine cooler or beverage center temperature instability
+      </li>
+
+      <li>
+        Outdoor refrigerator not cooling in warm weather
+      </li>
+    </ul>
+
+    <h3>Repair That Protects Your Refrigerator—and Your Kitchen</h3>
+
+    <p>
+      A high-end refrigerator is one of the most important appliances in a
+      luxury home. When it stops cooling, leaks, builds frost, or fails to
+      maintain temperature, the problem can affect food storage, flooring,
+      cabinetry, and daily routine. At <strong>ZARICCI</strong>, our
+      refrigerator repair service is designed to restore reliable performance
+      while treating your home with the care it deserves.
+    </p>
+
+    <h3>Ready to Restore Your Refrigerator’s Performance?</h3>
+
+    <p>
+      Do not wait for a cooling issue to become a larger and more expensive
+      repair. Warm temperatures, frost buildup, unusual noise, or water leaks
+      should be diagnosed as soon as possible.
+    </p>
+
+    <p>
+      <strong>Call Luxury Appliance Repair by Zaricci</strong> or schedule
+      online for professional high-end refrigerator repair that combines
+      careful diagnostics, clean workmanship, and respectful in-home service.
+    </p>
+
+    <p>
+      <strong>ZARICCI — Where Precision Repair Meets White-Glove Service.</strong>
+    </p>
+
+    <h2>Refrigerator Repair in Los Angeles, Orange County & Ventura County</h2>
+
+    <p>
+      We service high-end refrigerators in custom homes, hillside estates,
+      coastal residences, luxury condos, and designer kitchens throughout
+      Los Angeles County, Orange County, and Ventura County. Many of these
+      kitchens feature built-in refrigerators, integrated refrigerator columns,
+      freezer columns, wine coolers, undercounter refrigeration, outdoor
+      refrigeration, custom cabinetry, panel-ready doors, stone countertops,
+      hardwood flooring, and luxury appliance packages that require careful
+      diagnostics, precise repair work, and clean, respectful service inside
+      the home.
+    </p>
+
+    <Areas client:visible />
+  </div>
 </Layout>
