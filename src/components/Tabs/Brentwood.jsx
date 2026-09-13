@@ -41,7 +41,7 @@ export const Tabs = () => {
             <a href="/viking-appliance-repair/">Viking</a>,{" "}
             <a href="/la-cornue-appliance-repair/">La Cornue</a>,{" "}
             <a href="/gaggenau-repair/">Gaggenau</a>,  <a href="/lacanche-appliance-repair/">Lacanche</a>, Miele,
-            Bertazzoni, AGA, BlueStar, Hestan, Monogram, Dacor, ILVE and other
+            Bertazzoni, <a href="/aga-appliance-repair/">AGA</a>, BlueStar, Hestan, Monogram, Dacor, ILVE and other
             premium range brands.
           </p>
   
@@ -129,7 +129,7 @@ export const Tabs = () => {
             <a href="/miele-appliance-repair/">Miele</a>,{" "}
             <a href="/thermador-appliance-repair/">Thermador</a>,{" "}
             <a href="/gaggenau-repair/">Gaggenau</a>, Bosch, Viking, Monogram,
-            JennAir, Fisher & Paykel, Dacor, Bertazzoni, BlueStar and other
+            JennAir, Fisher & Paykel, Dacor, <a href="/bertazzoni-appliance-repair/">Bertazzoni</a>, BlueStar and other
             premium cooktop and rangetop manufacturers.
           </p>
   
