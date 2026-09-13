@@ -21,11 +21,11 @@ const ParallaxHeader = () => {
       </video>
 
       <div className="maintext">
-        <h1 class="gold-embossed" data-text="SUB-ZERO">High-End & Luxury Appliance Repair Brentwood<br/></h1>
+        <h1 class="gold-embossed" data-text="SUB-ZERO">High-End & Luxury Appliance Repair Brentwood, Los Angeles<br/></h1>
         <img className="header-image" width="400" height="189" src="/high-end-and-luxury-appliance-repair-by-zaricci.webp" alt="High-end appliance repair Brentwood" fetchpriority="high"
   decoding="async"/>
         <p>
-  Professional high-end appliance repair in Brentwood for luxury built-in refrigerators, ranges, ovens, cooktops, dishwashers, wine coolers, laundry appliances, and outdoor kitchen systems. We service Sub-Zero, Wolf, Thermador, Miele, Viking, Gaggenau, La Cornue, Lacanche, Monogram, Dacor, Fisher & Paykel, Bertazzoni, True Residential, JennAir, Bosch, Kalamazoo, Lynx, Hestan, DCS, Alfresco, Twin Eagles, Fire Magic, and other premium appliance brands.
+  Professional high-end appliance repair in Brentwood, Los Angeles for luxury built-in refrigerators, ranges, ovens, cooktops, dishwashers, wine coolers, laundry appliances, and outdoor kitchen systems. We service Sub-Zero, Wolf, Thermador, Miele, Viking, Gaggenau, La Cornue, Lacanche, Monogram, Dacor, Fisher & Paykel, Bertazzoni, True Residential, JennAir, Bosch, Kalamazoo, Lynx, Hestan, DCS, Alfresco, Twin Eagles, Fire Magic, and other premium appliance brands.
 </p>
         <p>✅ Licensed & Insured<br />
         ✅ 3-month warranty on parts and labor<br />
