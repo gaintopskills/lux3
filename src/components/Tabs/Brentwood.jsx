@@ -292,7 +292,7 @@ export const Tabs = () => {
             Brands include{" "}
             <a href="/true-residential-appliance-repair/">True Residential</a>,{" "}
             <a href="/sub-zero-repair/">Sub-Zero</a>, U-Line, Perlick, <a href="/monogram-appliance-repair/">Monogram</a>,
-            JennAir, Miele, Fisher & Paykel, Viking, Thermador, <a href="/dacor-appliance-repair/">Dacor</a> and Zephyr.
+            <a href="/jennair-appliance-repair/">JennAir</a>, Miele, Fisher & Paykel, Viking, Thermador, <a href="/dacor-appliance-repair/">Dacor</a> and Zephyr.
           </p>
   
           <p>
@@ -528,7 +528,7 @@ export const Tabs = () => {
             <a href="/true-residential-appliance-repair/">True Residential</a>,{" "}
             <a href="/gaggenau-repair/">Gaggenau</a>,{" "}
             <a href="/miele-appliance-repair/">Miele</a>, Thermador, Perlick,
-            U-Line, Monogram, Fisher & Paykel, Viking and Liebherr.
+            U-Line, Monogram, <a href="/fisher-and-paykel-appliance-repair/">Fisher & Paykel</a>, Viking and <a href="/liebherr-appliance-repair/">Liebherr</a>.
           </p>
   
           <p>
