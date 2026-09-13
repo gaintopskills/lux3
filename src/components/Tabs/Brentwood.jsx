@@ -605,7 +605,7 @@ export const Tabs = () => {
             <a href="/hestan-appliance-repair/">Hestan</a>,{" "}
             <a href="/dcs-appliance-repair/">DCS</a>,{" "}
             <a href="/alfresco-appliance-repair/">Alfresco</a>, Twin Eagles,
-            Fire Magic, Viking, Wolf, Caliber and other premium outdoor cooking
+            Fire Magic, Viking, Wolf, <a href="/caliber-appliance-repair/">Caliber</a> and other premium outdoor cooking
             brands.
           </p>
   
@@ -690,7 +690,7 @@ export const Tabs = () => {
             <a href="/hestan-appliance-repair/">Hestan</a>,{" "}
             <a href="/dcs-appliance-repair/">DCS</a>,{" "}
             <a href="/alfresco-appliance-repair/">Alfresco</a>,{" "}
-            <a href="/twin-eagles-repair/">Twin Eagles</a>, Fire Magic, Viking,
+            <a href="/twin-eagles-repair/">Twin Eagles</a>, <a href="/alfresco-appliance-repair/">Fire Magic</a>, Viking,
             Wolf, True Residential Outdoor, Perlick and other premium outdoor
             brands.
           </p>
