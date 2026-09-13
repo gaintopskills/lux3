@@ -41,7 +41,7 @@ export const Tabs = () => {
             <a href="/viking-appliance-repair/">Viking</a>,{" "}
             <a href="/la-cornue-appliance-repair/">La Cornue</a>,{" "}
             <a href="/gaggenau-repair/">Gaggenau</a>,  <a href="/lacanche-appliance-repair/">Lacanche</a>, Miele,
-            Bertazzoni, <a href="/aga-appliance-repair/">AGA</a>, BlueStar, Hestan, Monogram, Dacor, ILVE and other
+            Bertazzoni, <a href="/aga-appliance-repair/">AGA</a>, BlueStar, Hestan, Monogram, Dacor, <a href="/la-cornue-appliance-repair/">ILVE</a> and other
             premium range brands.
           </p>
   
@@ -170,7 +170,7 @@ export const Tabs = () => {
             <a href="/wolf-appliance-repair/">Wolf</a>,{" "}
             <a href="/thermador-appliance-repair/">Thermador</a>,{" "}
             <a href="/miele-appliance-repair/">Miele</a>, Zephyr, Viking,
-            Monogram, JennAir, Gaggenau, Bosch, BlueStar, Bertazzoni and other
+            Monogram, JennAir, Gaggenau, Bosch, <a href="/bluestar-appliance-repair/">BlueStar</a>, Bertazzoni and other
             premium manufacturers.
           </p>
   
@@ -291,8 +291,8 @@ export const Tabs = () => {
           <p>
             Brands include{" "}
             <a href="/true-residential-appliance-repair/">True Residential</a>,{" "}
-            <a href="/sub-zero-repair/">Sub-Zero</a>, U-Line, Perlick, Monogram,
-            JennAir, Miele, Fisher & Paykel, Viking, Thermador, Dacor and Zephyr.
+            <a href="/sub-zero-repair/">Sub-Zero</a>, U-Line, Perlick, <a href="/monogram-appliance-repair/">Monogram</a>,
+            JennAir, Miele, Fisher & Paykel, Viking, Thermador, <a href="/dacor-appliance-repair/">Dacor</a> and Zephyr.
           </p>
   
           <p>
