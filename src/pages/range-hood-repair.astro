@@ -1,0 +1,346 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+import ParallaxHeader from '../components/Header/RangeHood.jsx';
+import Areas from '../components/Areas.jsx';
+import '../components/Areas.css';
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://luxuryappliance.repair/range-hood-repair/#webpage",
+      "url": "https://luxuryappliance.repair/range-hood-repair/",
+      "name": "Range Hood Repair | Luxury Appliance Repair by Zaricci",
+      "description": "Professional high-end range hood, kitchen ventilation, downdraft, blower, and custom hood insert repair across Los Angeles, Orange County, and Ventura County.",
+      "mainEntity": {
+        "@id": "https://luxuryappliance.repair/range-hood-repair/#service"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://luxuryappliance.repair/range-hood/range-hood-repair-services.webp"
+      },
+      "breadcrumb": {
+        "@id": "https://luxuryappliance.repair/range-hood-repair/#breadcrumb"
+      }
+    },
+
+    {
+      "@type": "Service",
+      "@id": "https://luxuryappliance.repair/range-hood-repair/#service",
+      "name": "Range Hood & Kitchen Ventilation Repair",
+      "url": "https://luxuryappliance.repair/range-hood-repair/",
+      "mainEntityOfPage": {
+        "@id": "https://luxuryappliance.repair/range-hood-repair/#webpage"
+      },
+      "serviceType": [
+        "Range hood repair",
+        "Kitchen ventilation repair",
+        "Vent hood repair",
+        "Downdraft vent repair",
+        "Custom hood insert repair",
+        "Island range hood repair",
+        "Wall-mount range hood repair",
+        "Blower motor repair"
+      ],
+      "description": "Luxury Appliance Repair by Zaricci provides professional range hood and kitchen ventilation repair for high-end wall-mount hoods, island hoods, custom hood inserts, built-in ventilation systems, downdrafts, remote blowers, inline blowers, and luxury kitchen exhaust systems throughout Los Angeles, Orange County, Ventura County, and surrounding communities.",
+      "provider": {
+        "@id": "https://luxuryappliance.repair/#localbusiness"
+      },
+
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Los Angeles",
+          "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Brentwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Bel Air",
+          "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Pacific Palisades",
+          "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles"
+        },
+        {
+          "@type": "City",
+          "name": "Beverly Hills"
+        },
+        {
+          "@type": "City",
+          "name": "Santa Monica"
+        },
+        {
+          "@type": "City",
+          "name": "West Hollywood"
+        },
+        {
+          "@type": "City",
+          "name": "Pasadena",
+          "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California"
+        },
+        {
+          "@type": "City",
+          "name": "San Marino"
+        },
+        {
+          "@type": "City",
+          "name": "Calabasas"
+        },
+        {
+          "@type": "City",
+          "name": "Malibu"
+        },
+        {
+          "@type": "City",
+          "name": "Thousand Oaks"
+        },
+        {
+          "@type": "Place",
+          "name": "Encino",
+          "sameAs": "https://en.wikipedia.org/wiki/Encino,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Westwood",
+          "sameAs": "https://en.wikipedia.org/wiki/Westwood,_Los_Angeles"
+        },
+        {
+          "@type": "Place",
+          "name": "Century City",
+          "sameAs": "https://en.wikipedia.org/wiki/Century_City"
+        },
+        {
+          "@type": "City",
+          "name": "Manhattan Beach"
+        },
+        {
+          "@type": "City",
+          "name": "Rancho Palos Verdes"
+        },
+        {
+          "@type": "City",
+          "name": "Palos Verdes Estates"
+        },
+        {
+          "@type": "City",
+          "name": "Rolling Hills Estates"
+        },
+        {
+          "@type": "City",
+          "name": "La Cañada Flintridge"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Orange County",
+          "sameAs": "https://en.wikipedia.org/wiki/Orange_County,_California"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ventura County",
+          "sameAs": "https://en.wikipedia.org/wiki/Ventura_County,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Irvine",
+          "sameAs": "https://en.wikipedia.org/wiki/Irvine,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Newport Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Newport_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Laguna Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Laguna_Beach,_California"
+        },
+        {
+          "@type": "City",
+          "name": "Huntington Beach",
+          "sameAs": "https://en.wikipedia.org/wiki/Huntington_Beach,_California"
+        }
+      ],
+
+      "brand": [
+        {
+          "@type": "Brand",
+          "name": "Wolf"
+        },
+        {
+          "@type": "Brand",
+          "name": "Thermador"
+        },
+        {
+          "@type": "Brand",
+          "name": "Miele"
+        },
+        {
+          "@type": "Brand",
+          "name": "Gaggenau"
+        },
+        {
+          "@type": "Brand",
+          "name": "Viking"
+        },
+        {
+          "@type": "Brand",
+          "name": "Monogram"
+        },
+        {
+          "@type": "Brand",
+          "name": "JennAir"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bosch"
+        },
+        {
+          "@type": "Brand",
+          "name": "Dacor"
+        },
+        {
+          "@type": "Brand",
+          "name": "Bertazzoni"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fulgor Milano"
+        },
+        {
+          "@type": "Brand",
+          "name": "BlueStar"
+        },
+        {
+          "@type": "Brand",
+          "name": "La Cornue"
+        },
+        {
+          "@type": "Brand",
+          "name": "Zephyr"
+        },
+        {
+          "@type": "Brand",
+          "name": "Hestan"
+        },
+        {
+          "@type": "Brand",
+          "name": "Fisher & Paykel"
+        }
+      ],
+
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Range Hood & Kitchen Ventilation Repair Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Range Hood Repair",
+              "description": "Repair for high-end range hoods with failed blower motors, weak airflow, excessive noise, lighting problems, control failures, electrical faults, and ventilation performance issues."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Downdraft Vent Repair",
+              "description": "Repair for retractable and fixed downdraft ventilation systems that will not rise, retract, turn on, move air properly, or respond to controls."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom Hood Insert Repair",
+              "description": "Service for built-in ventilation inserts installed inside custom decorative kitchen hoods, including blower, lighting, switch, control, and airflow problems."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Island Range Hood Repair",
+              "description": "Repair for ceiling-mounted and island range hoods with blower failures, vibration, excessive noise, lighting faults, control problems, and inadequate ventilation."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wall-Mount Range Hood Repair",
+              "description": "Repair for luxury wall-mounted kitchen ventilation systems with fan, blower, lighting, switch, control board, and airflow-related problems."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Range Hood Blower Repair",
+              "description": "Diagnosis and repair of internal, inline, and remote blower systems experiencing motor failure, weak airflow, vibration, excessive noise, or electrical problems."
+            }
+          }
+        ]
+      }
+    },
+
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://luxuryappliance.repair/#localbusiness",
+      "name": "Luxury Appliance Repair by Zaricci",
+      "url": "https://luxuryappliance.repair/",
+      "logo": "https://luxuryappliance.repair/luxury-appliance-repair-by-zaricci-logo.webp",
+      "telephone": "+1-424-499-7788",
+      "priceRange": "$$$",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-424-499-7788",
+          "contactType": "customer service"
+        }
+      ]
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://luxuryappliance.repair/range-hood-repair/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://luxuryappliance.repair/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Range Hood Repair",
+          "item": "https://luxuryappliance.repair/range-hood-repair/"
+        }
+      ]
+    }
+  ]
+};
+---
+
+<Layout
+  title="High-End & Luxury Range Hood Repair | (424) 499-7788"
+  description="Book Online (424) 499-7788. High-end range hood and kitchen ventilation repair in Los Angeles, Orange County & Ventura County. Wolf, Thermador, Miele & more."
+  structuredData={structuredData}
+  ogImage="/range-hood/range-hood-repair-services.webp"
+>
+  <ParallaxHeader client:idle />
+
+
+<Areas client:visible/>
+</Layout>
+
