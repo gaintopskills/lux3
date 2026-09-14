@@ -107,6 +107,7 @@ export const MegaMenu = () => {
       { label: "Oven Repair", href: "/oven-repair/" },
       { label: "Stove Repair", href: "/stove-repair/" },
       { label: "Range Repair", href: "/range-repair/" },
+      { label: "Range Hood Repair", href: "/range-hood-repair/" },
       { label: "Cooktop Repair", href: "/cooktop-repair/" },
     ],
     [
