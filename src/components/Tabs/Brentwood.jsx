@@ -490,7 +490,7 @@ export const Tabs = () => {
             <a href="/true-residential-appliance-repair/">True Residential</a>,{" "}
             <a href="/gaggenau-repair/">Gaggenau</a>,{" "}
             <a href="/miele-appliance-repair/">Miele</a>, Thermador, Perlick,
-            U-Line, Monogram, <a href="/fisher-and-paykel-appliance-repair/">Fisher & Paykel</a>, Viking and <a href="/liebherr-appliance-repair/">Liebherr</a>.
+            U-Line, Monogram, <a href="/fisher-and-paykel-appliance-repair/">Fisher & Paykel</a>, Viking and <a href="/liebherr-repair/">Liebherr</a>.
           </p>
   
           <p>
