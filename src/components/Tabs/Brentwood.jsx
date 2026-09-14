@@ -41,7 +41,7 @@ export const Tabs = () => {
             <a href="/viking-appliance-repair/">Viking</a>,{" "}
             <a href="/la-cornue-appliance-repair/">La Cornue</a>,{" "}
             <a href="/gaggenau-repair/">Gaggenau</a>,  <a href="/lacanche-appliance-repair/">Lacanche</a>, Miele,
-            Bertazzoni, <a href="/aga-appliance-repair/">AGA</a>, BlueStar, Hestan, Monogram, Dacor, <a href="/la-cornue-appliance-repair/">ILVE</a> and other
+            Bertazzoni, <a href="/aga-appliance-repair/">AGA</a>, BlueStar, Hestan, Monogram, Dacor, <a href="/ilve-appliance-repair/">ILVE</a> and other
             premium range brands.
           </p>
   
@@ -652,7 +652,7 @@ export const Tabs = () => {
             <a href="/hestan-appliance-repair/">Hestan</a>,{" "}
             <a href="/dcs-appliance-repair/">DCS</a>,{" "}
             <a href="/alfresco-appliance-repair/">Alfresco</a>,{" "}
-            <a href="/twin-eagles-repair/">Twin Eagles</a>, <a href="/alfresco-appliance-repair/">Fire Magic</a>, Viking,
+            <a href="/twin-eagles-repair/">Twin Eagles</a>, <a href="/fire-magic-repair/">Fire Magic</a>, Viking,
             Wolf, True Residential Outdoor, Perlick and other premium outdoor
             brands.
           </p>
