@@ -306,44 +306,6 @@ export const Tabs = () => {
     },
   
     {
-      id: "icemaker",
-      title: "Ice Maker Repair",
-      heading: "Ice Maker Repair in Brentwood",
-      img: "/cities/ice-maker-repair.webp",
-      alt: "Built-in ice maker repair in Brentwood Los Angeles",
-      description: (
-        <>
-          <p>
-            We provide <strong>ice maker repair in Brentwood</strong> for
-            undercounter ice machines, built-in ice makers, panel-ready units and
-            refrigerator ice-making systems.
-          </p>
-  
-          <p>
-            We diagnose no-ice conditions, slow production, small or malformed
-            cubes, leaking, drainage failures, freeze-ups, noisy operation and
-            water-supply problems. Visit our{" "}
-            <a href="/ice-maker-repair/">ice maker repair page</a> for more
-            information.
-          </p>
-  
-          <h3>Ice Maker Brands We Service</h3>
-          <p>
-            We service{" "}
-            <a href="/sub-zero-repair/">Sub-Zero</a>, True Residential, U-Line,
-            Perlick, Scotsman, Monogram, Viking, Thermador and other residential
-            built-in ice machines.
-          </p>
-  
-          <p>
-            Diagnosis may include water valves, pumps, filters, drains,
-            evaporator plates, sensors, harvest cycles and electronic controls.
-          </p>
-        </>
-      ),
-    },
-  
-    {
       id: "dryer",
       title: "Dryer Repair",
       heading: "Luxury Dryer Repair in Brentwood",
