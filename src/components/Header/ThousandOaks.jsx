@@ -45,9 +45,9 @@ const ParallaxHeader = () => {
           coolers, laundry appliances, and outdoor kitchen systems. We service
           premium appliances in estate homes, gated communities, hillside
           residences, custom properties, and designer kitchens throughout
-          Thousand Oaks and nearby areas. Our technicians work with Sub-Zero,
+          Thousand Oaks and nearby areas. Our technicians work with Bertazzoni, Sub-Zero,
           Wolf, Thermador, Miele, Viking, Gaggenau, La Cornue, Lacanche,
-          Monogram, Dacor, Fisher &amp; Paykel, Bertazzoni, True Residential,
+          Monogram, Dacor, Fisher &amp; Paykel, True Residential,
           JennAir, Bosch, Kalamazoo, Lynx, Hestan, DCS, Alfresco, Twin Eagles,
           Fire Magic, and other high-end appliance brands.
         </p>
